@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "source": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-enriched-v1-multi-unbox.json",
+  "record_count": 8,
+  "ok_count": 7,
+  "records": [
+    {
+      "index": 1,
+      "video_id": "9YjjqMCW7Kw",
+      "url": "https://www.youtube.com/watch?v=9YjjqMCW7Kw",
+      "title": "Xiaomi Pocket PowerBank 10000mAh",
+      "channel": "Xiaomi India",
+      "publish_date": "2024-07-17",
+      "duration_seconds": 57,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi power bank what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/9YjjqMCW7Kw.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/001-9YjjqMCW7Kw.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "-ggrxRcWFxI",
+      "url": "https://www.youtube.com/watch?v=-ggrxRcWFxI",
+      "title": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)",
+      "channel": "Belkin",
+      "publish_date": "2024-09-10",
+      "duration_seconds": 28,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/-ggrxRcWFxI.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/002--ggrxRcWFxI.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "O2aOx8t0GYg",
+      "url": "https://www.youtube.com/watch?v=O2aOx8t0GYg",
+      "title": "BoostCharge Power Bank 20K",
+      "channel": "Belkin EMEA",
+      "publish_date": "2023-09-07",
+      "duration_seconds": 40,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Unboxing",
+          "query": "Belkin Belkin power bank what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "error",
+      "error": "Command '['/Users/hakunamatata/.local/bin/yt-dlp', '-f', 'bv*[height<=360][ext=mp4]/bv*[height<=360]/best[height<=360]/worst', '--no-playlist', '--quiet', '--no-warnings', '-o', '/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/O2aOx8t0GYg.%(ext)s', 'https://www.youtube.com/watch?v=O2aOx8t0GYg']' returned non-zero exit status 1.",
+      "video_path": null,
+      "contact_sheet": null
+    },
+    {
+      "index": 4,
+      "video_id": "oJ9bOZPu1Cw",
+      "url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw",
+      "title": "Beats Studio Buds +: What the Experts are Saying!",
+      "channel": "Beats by Dre",
+      "publish_date": "2023-08-08",
+      "duration_seconds": 72,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Beats Beats earbuds product details official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Unboxing",
+          "query": "Beats Beats earbuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/oJ9bOZPu1Cw.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/004-oJ9bOZPu1Cw.jpg"
+    },
+    {
+      "index": 5,
+      "video_id": "QgsTaSS0CI4",
+      "url": "https://www.youtube.com/watch?v=QgsTaSS0CI4",
+      "title": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green",
+      "channel": "Huawei Mobile",
+      "publish_date": "2023-10-31",
+      "duration_seconds": 28,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/QgsTaSS0CI4.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/005-QgsTaSS0CI4.jpg"
+    },
+    {
+      "index": 6,
+      "video_id": "4ZRBaV5etlA",
+      "url": "https://www.youtube.com/watch?v=4ZRBaV5etlA",
+      "title": "Belkin BoostCharge 3 Port Laptop Power Bank 20K",
+      "channel": "Belkin EMEA",
+      "publish_date": "2024-09-23",
+      "duration_seconds": 24,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/4ZRBaV5etlA.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/006-4ZRBaV5etlA.jpg"
+    },
+    {
+      "index": 7,
+      "video_id": "lsE4YqFVrWs",
+      "url": "https://www.youtube.com/watch?v=lsE4YqFVrWs",
+      "title": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance",
+      "channel": "CUKTECH",
+      "publish_date": "2023-08-07",
+      "duration_seconds": 28,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "CUKTECH",
+          "target_genre": "Unboxing",
+          "query": "CUKTECH CUKTECH power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/lsE4YqFVrWs.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/007-lsE4YqFVrWs.jpg"
+    },
+    {
+      "index": 8,
+      "video_id": "h6DVhHfZMGY",
+      "url": "https://www.youtube.com/watch?v=h6DVhHfZMGY",
+      "title": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus",
+      "channel": "UGREEN Europe",
+      "publish_date": "2024-07-10",
+      "duration_seconds": 30,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "UGREEN UGREEN power bank design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/videos/h6DVhHfZMGY.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-multi-unbox/individual/008-h6DVhHfZMGY.jpg"
+    }
+  ]
+}

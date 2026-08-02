@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "source": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-enriched-v1-earbuds-hard-genres-tail.json",
+  "record_count": 4,
+  "ok_count": 3,
+  "records": [
+    {
+      "index": 1,
+      "video_id": "cUFx_4ZXLCM",
+      "url": "https://www.youtube.com/watch?v=cUFx_4ZXLCM",
+      "title": "OPPO Enco Buds 3 Unboxing : How to Pair and Reset full guide",
+      "channel": "OPPO Care",
+      "publish_date": "2026-02-07",
+      "duration_seconds": 92,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "How-To Tutorial",
+          "query": "OPPO OPPO Enco earbuds official setup guide",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "error",
+      "error": "Command '['/Users/hakunamatata/.local/bin/yt-dlp', '-f', 'bv*[height<=360][ext=mp4]/bv*[height<=360]/best[height<=360]/worst', '--no-playlist', '--quiet', '--no-warnings', '-o', '/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/videos/cUFx_4ZXLCM.%(ext)s', 'https://www.youtube.com/watch?v=cUFx_4ZXLCM']' returned non-zero exit status 1.",
+      "video_path": null,
+      "contact_sheet": null
+    },
+    {
+      "index": 2,
+      "video_id": "Qb7eu0yQK3U",
+      "url": "https://www.youtube.com/watch?v=Qb7eu0yQK3U",
+      "title": "Meet Xiaomi Buds 5 Pro (Wi-Fi)",
+      "channel": "Xiaomi",
+      "publish_date": "2025-03-14",
+      "duration_seconds": 16,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi Buds official vlog",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/videos/Qb7eu0yQK3U.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/individual/002-Qb7eu0yQK3U.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "sCYrElLdURQ",
+      "url": "https://www.youtube.com/watch?v=sCYrElLdURQ",
+      "title": "JBL Tune Beam 2 | Control your Earbuds | How-to",
+      "channel": "JBL India",
+      "publish_date": "2025-04-17",
+      "duration_seconds": 20,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "JBL JBL earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/videos/sCYrElLdURQ.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/individual/003-sCYrElLdURQ.jpg"
+    },
+    {
+      "index": 4,
+      "video_id": "Bt2iH0VaM20",
+      "url": "https://www.youtube.com/watch?v=Bt2iH0VaM20",
+      "title": "Jabra Elite 10 | Our most advanced earbuds for work & life",
+      "channel": "Jabra",
+      "publish_date": "2023-09-04",
+      "duration_seconds": 38,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Daily Routine",
+          "query": "Jabra Jabra Elite earbuds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/videos/Bt2iH0VaM20.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres-tail/individual/004-Bt2iH0VaM20.jpg"
+    }
+  ]
+}

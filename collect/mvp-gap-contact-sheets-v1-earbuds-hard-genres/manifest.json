@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "source": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-enriched-v1-earbuds-hard-genres.json",
+  "record_count": 5,
+  "ok_count": 5,
+  "records": [
+    {
+      "index": 1,
+      "video_id": "IU_q-jVhJsI",
+      "url": "https://www.youtube.com/watch?v=IU_q-jVhJsI",
+      "title": "How to wear your Galaxy Buds3 for the best sound and fit | Samsung US",
+      "channel": "Samsung Care",
+      "publish_date": "2024-10-14",
+      "duration_seconds": 61,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Lookbook",
+          "query": "Samsung Galaxy Buds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/videos/IU_q-jVhJsI.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/individual/001-IU_q-jVhJsI.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "geivoMDgPtc",
+      "url": "https://www.youtube.com/watch?v=geivoMDgPtc",
+      "title": "Sony | How to fit and wear – WF-1000XM5 Earbuds",
+      "channel": "Sony Connect (Sony Electronics Support US)",
+      "publish_date": "2023-09-12",
+      "duration_seconds": 91,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "How-To Tutorial",
+          "query": "Sony WF earbuds official setup guide",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/videos/geivoMDgPtc.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/individual/002-geivoMDgPtc.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "_kfGcwCh8Us",
+      "url": "https://www.youtube.com/watch?v=_kfGcwCh8Us",
+      "title": "Introducing the Sony WF-C510 Truly Wireless Earbuds",
+      "channel": "Sony Europe",
+      "publish_date": "2024-08-29",
+      "duration_seconds": 65,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "Lookbook",
+          "query": "Sony WF earbuds street style campaign",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Sony WF earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/videos/_kfGcwCh8Us.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/individual/003-_kfGcwCh8Us.jpg"
+    },
+    {
+      "index": 4,
+      "video_id": "CDYM7t0fZjE",
+      "url": "https://www.youtube.com/watch?v=CDYM7t0fZjE",
+      "title": "Emma Chamberlain in the Cosmos | Beats Studio Buds +",
+      "channel": "Beats by Dre",
+      "publish_date": "2023-08-22",
+      "duration_seconds": 37,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Beats Beats earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/videos/CDYM7t0fZjE.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/individual/004-CDYM7t0fZjE.jpg"
+    },
+    {
+      "index": 5,
+      "video_id": "oJ9bOZPu1Cw",
+      "url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw",
+      "title": "Beats Studio Buds +: What the Experts are Saying!",
+      "channel": "Beats by Dre",
+      "publish_date": "2023-08-08",
+      "duration_seconds": 72,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Daily Routine",
+          "query": "Beats Beats earbuds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/videos/oJ9bOZPu1Cw.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-hard-genres/individual/005-oJ9bOZPu1Cw.jpg"
+    }
+  ]
+}

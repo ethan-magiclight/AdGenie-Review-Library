@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T08:35:21.732Z",
+  "source": "mvp-gap-candidates-v1.json",
+  "candidate_count": 13,
+  "candidates": [
+    {
+      "video_id": "sg47u6rwOFo",
+      "url": "https://www.youtube.com/watch?v=sg47u6rwOFo",
+      "title": "Mi Powerbank Boost Pro 30000mAh | Crowdfunding Special",
+      "description": "Introducing #MiPowerBankBoostPro 30000mAh(18W). Max Power, Triple Output - Power Delivery(PD) 3.0 - Fast Re-Charging ...",
+      "duration_seconds": 44,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 53886,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi power bank packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "9YjjqMCW7Kw",
+      "url": "https://www.youtube.com/watch?v=9YjjqMCW7Kw",
+      "title": "Xiaomi Pocket PowerBank 10000mAh",
+      "description": "Stay powered up all day with the #XiaomiPocketPowerBank 10000mAh! Compact, powerful, and perfect for charging on the go.",
+      "duration_seconds": 57,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 35888,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi power bank what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "-ggrxRcWFxI",
+      "url": "https://www.youtube.com/watch?v=-ggrxRcWFxI",
+      "title": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)",
+      "description": "Power up your devices with ease using the Belkin BoostCharge Magnetic Foldable Wireless Charger — a compact, ...",
+      "duration_seconds": 29,
+      "channel": "Belkin",
+      "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_url": "https://www.youtube.com/channel/UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_is_verified": true,
+      "view_count": 27291,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "Lz1BTirlGxo",
+      "url": "https://www.youtube.com/watch?v=Lz1BTirlGxo",
+      "title": "Introducing the new BOOST↑CHARGE™ Power Bank 5K with Lightning Connector by Belkin",
+      "description": "Designed especially for iPhone and iPad, this portable power bank is the first-to-market MFi-certified power bank to recharge via ...",
+      "duration_seconds": 33,
+      "channel": "Belkin",
+      "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_url": "https://www.youtube.com/channel/UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_is_verified": true,
+      "view_count": 11497,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank official product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "0fbrWogmwkM",
+      "url": "https://www.youtube.com/watch?v=0fbrWogmwkM",
+      "title": "Shargeek Retro 67W Charger With Power Display",
+      "description": "We're passionate about bringing fun and high-performance products to our customers. This time we get you the Retro 67, ...",
+      "duration_seconds": 59,
+      "channel": "SHARGE",
+      "channel_id": "UCtWMZEAOSWhZIDOdwMG7JaQ",
+      "channel_url": "https://www.youtube.com/channel/UCtWMZEAOSWhZIDOdwMG7JaQ",
+      "channel_is_verified": null,
+      "view_count": 84730,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "SHARGE SHARGE power bank 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "O2aOx8t0GYg",
+      "url": "https://www.youtube.com/watch?v=O2aOx8t0GYg",
+      "title": "BoostCharge Power Bank 20K",
+      "description": "Get over 78 additional hours of battery life for your iPhone 14/13/12, iPad or Samsung Galaxy, so you can stay connected longer.",
+      "duration_seconds": 41,
+      "channel": "Belkin EMEA",
+      "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_is_verified": null,
+      "view_count": 15798,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Unboxing",
+          "query": "Belkin Belkin power bank what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "ZSjB4sOn7Vo",
+      "url": "https://www.youtube.com/watch?v=ZSjB4sOn7Vo",
+      "title": "Baseus Powerbank丨Blade, Made for Laptops",
+      "description": "100W Power Delivery - Crafted with 2 PD USB-C ports certified for PD 3.0 and PPS with a power output going up to 100W, ...",
+      "duration_seconds": 33,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 10851,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Baseus Baseus power bank 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "4ZRBaV5etlA",
+      "url": "https://www.youtube.com/watch?v=4ZRBaV5etlA",
+      "title": "Belkin BoostCharge 3 Port Laptop Power Bank 20K",
+      "description": "Charge your laptop, MacBook and other devices quickly and safely with this power bank with a 20K§ battery capacity. Ideal for ...",
+      "duration_seconds": 24,
+      "channel": "Belkin EMEA",
+      "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_is_verified": null,
+      "view_count": 4899,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "j-BlnKho2C0",
+      "url": "https://www.youtube.com/watch?v=j-BlnKho2C0",
+      "title": "Pocket size and yet powerful | 2 ports ugreen power bank 10 000 mah",
+      "description": "【Large 10000mAh Capacity in Slim Body】 【Power Bank with 2 USB A ports】 【Ultra-fast Recharge in 5 h Over USB C or ...",
+      "duration_seconds": 33,
+      "channel": "UGREEN Official",
+      "channel_id": "UCpB9bqufOA0OyjA85cvywXg",
+      "channel_url": "https://www.youtube.com/channel/UCpB9bqufOA0OyjA85cvywXg",
+      "channel_is_verified": null,
+      "view_count": 3285,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Unboxing",
+          "query": "UGREEN UGREEN power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "4YiBy-zpRJU",
+      "url": "https://www.youtube.com/watch?v=4YiBy-zpRJU",
+      "title": "Baseus 20000Ah Amblight Digital Display Power Bank",
+      "description": "powerbank We just launched a new Powerbank!✨ ✓3 Output+3 Input ✓Supports QC3.0 quick charge ✓Real-time display of ...",
+      "duration_seconds": 39,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 2140,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Unboxing",
+          "query": "Baseus Baseus power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "lsE4YqFVrWs",
+      "url": "https://www.youtube.com/watch?v=lsE4YqFVrWs",
+      "title": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance",
+      "description": "Massive Capacity 25000mAh Power in a Pocket-Sized Energy Pillar 140W Type-C PD3.1Full Power Charging for MacBook Pro ...",
+      "duration_seconds": 29,
+      "channel": "CUKTECH",
+      "channel_id": "UCQ3iK9KQU9e8sfUUP6oRRdA",
+      "channel_url": "https://www.youtube.com/channel/UCQ3iK9KQU9e8sfUUP6oRRdA",
+      "channel_is_verified": null,
+      "view_count": 1984,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "CUKTECH",
+          "target_genre": "Unboxing",
+          "query": "CUKTECH CUKTECH power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "h6DVhHfZMGY",
+      "url": "https://www.youtube.com/watch?v=h6DVhHfZMGY",
+      "title": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus",
+      "description": "Découvrez la batterie externe Nexode, le choix ultime pour charger votre ordinateur par UGREEN ! Avec des sorties de 100W, ...",
+      "duration_seconds": 31,
+      "channel": "UGREEN Europe",
+      "channel_id": "UClXH00XT78IZiON2iscaN-w",
+      "channel_url": "https://www.youtube.com/channel/UClXH00XT78IZiON2iscaN-w",
+      "channel_is_verified": null,
+      "view_count": 1143,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "UGREEN UGREEN power bank design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "JyzjG793SDM",
+      "url": "https://www.youtube.com/watch?v=JyzjG793SDM",
+      "title": "Baseus 10000mAh Power Bank",
+      "description": "Get a boost of power whether you're in the office or on-the-go with our compact Baseus 10000mAh Power Bank   ...",
+      "duration_seconds": 23,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 370,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Baseus Baseus power bank 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    }
+  ]
+}

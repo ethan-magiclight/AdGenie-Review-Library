@@ -1,0 +1,1678 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T10:30:00.668Z",
+  "base_review": "consumer-electronics-review-v4.json",
+  "output_review": "consumer-electronics-review-v5.json",
+  "source_files": [
+    "mvp-gap-enriched-v1-multi-unbox.json",
+    "mvp-gap-enriched-v1-pb-hard-genres.json",
+    "mvp-gap-enriched-v1-earbuds-hard-genres.json",
+    "mvp-gap-enriched-v1-earbuds-multi-unbox-tail.json",
+    "mvp-gap-enriched-v1-pb-hard-genres-tail.json",
+    "mvp-gap-enriched-v1-earbuds-hard-genres-tail.json"
+  ],
+  "decision_count": 23,
+  "accepted_count": 14,
+  "rejected_count": 9,
+  "accepted_additions": [
+    {
+      "video_id": "9YjjqMCW7Kw",
+      "url": "https://www.youtube.com/watch?v=9YjjqMCW7Kw",
+      "product_category": "Power Banks",
+      "brand": "Xiaomi",
+      "title": "Xiaomi Pocket PowerBank 10000mAh",
+      "duration_seconds": 57,
+      "publish_date": "2024-07-17",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "canonical_master_id": "9YjjqMCW7Kw",
+      "visual_notes": "Xiaomi Pocket PowerBank 10000mAh；主题材：TVC / Brand Commercial；次题材：Feature Callout / Product Demo；57s；剧情化西部场景建立用电冲突，22.8s 产品露出，34.2s 高密度电芯卖点，39.9s 双向快充演示，51.3s 产品收束；实际不是 Unboxing。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "TVC / Brand Commercial",
+      "secondary_genres": [
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_story_product_ad",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "4ZRBaV5etlA",
+      "url": "https://www.youtube.com/watch?v=4ZRBaV5etlA",
+      "product_category": "Power Banks",
+      "brand": "Belkin",
+      "title": "Belkin BoostCharge 3 Port Laptop Power Bank 20K",
+      "duration_seconds": 24,
+      "publish_date": "2024-09-23",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Feature Callout",
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "4ZRBaV5etlA",
+      "visual_notes": "Belkin BoostCharge 3 Port Laptop Power Bank 20K；主题材：Feature Callout；次题材：Product Demo / Macro Close-Up / Multi-Angle / 360° Product Showcase；24s；黑底产品英雄镜头、端口/屏幕/容量/65W/多设备充电连续展示，产品多角度和卖点标注证据充足。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "lsE4YqFVrWs",
+      "url": "https://www.youtube.com/watch?v=lsE4YqFVrWs",
+      "product_category": "Power Banks",
+      "brand": "CUKTECH",
+      "title": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance",
+      "duration_seconds": 28,
+      "publish_date": "2023-08-07",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Product Demo",
+        "Feature Callout",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "lsE4YqFVrWs",
+      "visual_notes": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance；主题材：Product Demo；次题材：Feature Callout / Macro Close-Up / Multi-Angle / 360° Product Showcase；28s；工作台场景、接口/屏幕/外观细节、充电使用和产品英雄镜头连续出现；召回词命中 Unboxing，但画面没有开箱过程。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Product Demo",
+      "secondary_genres": [
+        "Feature Callout",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_lifestyle_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "h6DVhHfZMGY",
+      "url": "https://www.youtube.com/watch?v=h6DVhHfZMGY",
+      "product_category": "Power Banks",
+      "brand": "UGREEN",
+      "title": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus",
+      "duration_seconds": 30,
+      "publish_date": "2024-07-10",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Product Demo",
+        "Feature Callout",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "h6DVhHfZMGY",
+      "visual_notes": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus；主题材：Product Demo；次题材：Feature Callout / Macro Close-Up / Multi-Angle / 360° Product Showcase；30s；桌面、户外、摄影、电脑等场景展示 100W 供电和便携使用；属于产品功能/卖点展示，不是连续 Daily Routine。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Product Demo",
+      "secondary_genres": [
+        "Feature Callout",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_lifestyle_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "YMfJjI-RVNA",
+      "url": "https://www.youtube.com/watch?v=YMfJjI-RVNA",
+      "product_category": "Power Banks",
+      "brand": "Belkin",
+      "title": "BoostCharge Power Bank 10K",
+      "duration_seconds": 40,
+      "publish_date": "2023-09-07",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Feature Callout",
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "YMfJjI-RVNA",
+      "visual_notes": "BoostCharge Power Bank 10K；主题材：Feature Callout；次题材：Product Demo / Macro Close-Up / Multi-Angle / 360° Product Showcase；40s；暗场产品台面、不同角度外观、40 小时续航、预充电、LED 状态与附带线材卖点连续展示；不是 Walk-and-Talk UGC。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "7tY2kt-9GhQ",
+      "url": "https://www.youtube.com/watch?v=7tY2kt-9GhQ",
+      "product_category": "Power Banks",
+      "brand": "Xiaomi",
+      "title": "Introducing the Ultra-Slim Power Bank – style meets performance.",
+      "duration_seconds": 20,
+      "publish_date": "2024-12-17",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Feature Callout",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "7tY2kt-9GhQ",
+      "visual_notes": "Introducing the Ultra-Slim Power Bank – style meets performance.；主题材：Feature Callout；次题材：Macro Close-Up / Multi-Angle / 360° Product Showcase；20s；超薄外观、厚度对比、侧面和接口特写、产品英雄镜头构成设计卖点展示；不按 Lookbook 计数。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_design_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "GWJ3aNko7Uw",
+      "url": "https://www.youtube.com/watch?v=GWJ3aNko7Uw",
+      "product_category": "Power Banks",
+      "brand": "Baseus",
+      "title": "Baseus Compact Fast Charging Power Bank Type C Edition 5000mAh 20W #baseus #pocket #powerbank",
+      "duration_seconds": 35,
+      "publish_date": "2024-08-03",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Feature Callout",
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "GWJ3aNko7Uw",
+      "visual_notes": "Baseus Compact Fast Charging Power Bank Type C Edition 5000mAh 20W #baseus #pocket #powerbank；主题材：Feature Callout；次题材：Product Demo / Macro Close-Up / Multi-Angle / 360° Product Showcase；35s；口袋携带、桌面充电、兼容场景、手持产品和动态图形卖点展示；有生活镜头但不构成连续 Daily Routine。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_lifestyle_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "QgsTaSS0CI4",
+      "url": "https://www.youtube.com/watch?v=QgsTaSS0CI4",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green",
+      "duration_seconds": 28,
+      "publish_date": "2023-10-31",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Multi-Angle / 360° Product Showcase",
+        "Macro Close-Up",
+        "Feature Callout"
+      ],
+      "canonical_master_id": "QgsTaSS0CI4",
+      "visual_notes": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green；主题材：Multi-Angle / 360° Product Showcase；次题材：Macro Close-Up / Feature Callout；28s；FreeBuds Pro 3 绿色外观、耳机/充电盒/材质细节和音效卖点连续展示；不是 Unboxing。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Multi-Angle / 360° Product Showcase",
+      "secondary_genres": [
+        "Macro Close-Up",
+        "Feature Callout"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_design_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "F1IPylsD7CI",
+      "url": "https://www.youtube.com/watch?v=F1IPylsD7CI",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "OnePlus",
+      "title": "Introducing, The OnePlus Buds 3",
+      "duration_seconds": 63,
+      "publish_date": "2024-01-23",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Feature Callout",
+        "Product Demo",
+        "Macro Close-Up"
+      ],
+      "canonical_master_id": "F1IPylsD7CI",
+      "visual_notes": "Introducing, The OnePlus Buds 3；主题材：Feature Callout；次题材：Product Demo / Macro Close-Up；63s；录音/生活场景承接 ANC、触控音量、通话和设计卖点；产品多角度证据不够集中，因此不补 Multi-Angle。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo",
+        "Macro Close-Up"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_lifestyle_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "-L5Z-4t3RLA",
+      "url": "https://www.youtube.com/watch?v=-L5Z-4t3RLA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "OnePlus",
+      "title": "OnePlus Buds 4 | An All-New Audio Experience",
+      "duration_seconds": 59,
+      "publish_date": "2025-08-06",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Multi-Angle / 360° Product Showcase",
+        "Macro Close-Up",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "canonical_master_id": "-L5Z-4t3RLA",
+      "visual_notes": "OnePlus Buds 4 | An All-New Audio Experience；主题材：Multi-Angle / 360° Product Showcase；次题材：Macro Close-Up / Feature Callout / Product Demo；59s；前段连续产品造型、佩戴、材质和声学空间展示，后段补充骑行/降噪/音质卖点；不是 Unboxing 或 UGC。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Multi-Angle / 360° Product Showcase",
+      "secondary_genres": [
+        "Macro Close-Up",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_design_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "Qb7eu0yQK3U",
+      "url": "https://www.youtube.com/watch?v=Qb7eu0yQK3U",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Xiaomi",
+      "title": "Meet Xiaomi Buds 5 Pro (Wi-Fi)",
+      "duration_seconds": 16,
+      "publish_date": "2025-03-14",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Multi-Angle / 360° Product Showcase",
+        "Macro Close-Up"
+      ],
+      "canonical_master_id": "Qb7eu0yQK3U",
+      "visual_notes": "Meet Xiaomi Buds 5 Pro (Wi-Fi)；主题材：Multi-Angle / 360° Product Showcase；次题材：Macro Close-Up；16s；16s 高密度暗场产品英雄片，充电盒、耳机单体和材质光影多角度展示；不是 Walk-and-Talk UGC。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Multi-Angle / 360° Product Showcase",
+      "secondary_genres": [
+        "Macro Close-Up"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_design_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "Bt2iH0VaM20",
+      "url": "https://www.youtube.com/watch?v=Bt2iH0VaM20",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Jabra",
+      "title": "Jabra Elite 10 | Our most advanced earbuds for work & life",
+      "duration_seconds": 38,
+      "publish_date": "2023-09-04",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Feature Callout",
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "Bt2iH0VaM20",
+      "visual_notes": "Jabra Elite 10 | Our most advanced earbuds for work & life；主题材：Feature Callout；次题材：Product Demo / Macro Close-Up / Multi-Angle / 360° Product Showcase；38s；Elite 10 以产品渲染、佩戴场景、ANC/空间音频/麦克风卖点构成品宣；不是连续 Daily Routine。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "_kfGcwCh8Us",
+      "url": "https://www.youtube.com/watch?v=_kfGcwCh8Us",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Sony",
+      "title": "Introducing the Sony WF-C510 Truly Wireless Earbuds",
+      "duration_seconds": 65,
+      "publish_date": "2024-08-29",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "Daily Routine",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "canonical_master_id": "_kfGcwCh8Us",
+      "visual_notes": "Introducing the Sony WF-C510 Truly Wireless Earbuds；主题材：Daily Routine；次题材：Feature Callout / Product Demo；65s；通勤、城市步行、咖啡/办公、户外步行和 App 调节等连续日常节点，产品/卖点贯穿；不是 Lookbook 或 Walk-and-Talk。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "Daily Routine",
+      "secondary_genres": [
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_lifestyle_routine_video",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "CDYM7t0fZjE",
+      "url": "https://www.youtube.com/watch?v=CDYM7t0fZjE",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Beats",
+      "title": "Emma Chamberlain in the Cosmos | Beats Studio Buds +",
+      "duration_seconds": 37,
+      "publish_date": "2023-08-22",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "accepted",
+      "reason_codes": [],
+      "genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up"
+      ],
+      "canonical_master_id": "CDYM7t0fZjE",
+      "visual_notes": "Emma Chamberlain in the Cosmos | Beats Studio Buds +；主题材：TVC / Brand Commercial；次题材：Macro Close-Up；37s；Emma Chamberlain 概念视觉广告，产品佩戴和包装收束清晰；不是 Walk-and-Talk UGC，也不硬标 Lookbook。",
+      "ai_template_fit": true,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "OFFICIAL_TOP_BRAND",
+        "CURRENT_VISUAL_STANDARD",
+        "AI_TEMPLATE_VALUE_CONFIRMED",
+        "GAP_REVIEW_VISUAL_CONFIRMED"
+      ],
+      "primary_genre": "TVC / Brand Commercial",
+      "secondary_genres": [
+        "Macro Close-Up"
+      ],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_celebrity_concept_commercial",
+      "recency_status": "within_3_years",
+      "ai_generatable": true,
+      "ai_generation_value": "moderate_to_high",
+      "core_template_eligible": true,
+      "review_batch": "gap-fill-v1"
+    }
+  ],
+  "rejected_additions": [
+    {
+      "video_id": "-ggrxRcWFxI",
+      "url": "https://www.youtube.com/watch?v=-ggrxRcWFxI",
+      "product_category": "Power Banks",
+      "brand": "Belkin",
+      "title": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)",
+      "duration_seconds": 28,
+      "publish_date": "2024-09-10",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "rejected",
+      "reason_codes": [
+        "WRONG_PRIMARY_PRODUCT"
+      ],
+      "genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "-ggrxRcWFxI",
+      "visual_notes": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)；主题材：Multi-Angle / 360° Product Showcase；28s；内容主体是 BoostCharge Magnetic Foldable Wireless Charger，无内置电池移动电源属性；不能计入 Power Banks。",
+      "ai_template_fit": false,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "WRONG_PRIMARY_PRODUCT"
+      ],
+      "primary_genre": "Multi-Angle / 360° Product Showcase",
+      "secondary_genres": [],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "wrong_primary_product",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "not_applicable",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "O2aOx8t0GYg",
+      "url": "https://www.youtube.com/watch?v=O2aOx8t0GYg",
+      "product_category": "Power Banks",
+      "brand": "Belkin",
+      "title": "BoostCharge Power Bank 20K",
+      "duration_seconds": 40,
+      "publish_date": "2023-09-07",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "rejected",
+      "reason_codes": [
+        "FRAME_DOWNLOAD_FAILED",
+        "NOT_VISUALLY_VERIFIED"
+      ],
+      "genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "canonical_master_id": "O2aOx8t0GYg",
+      "visual_notes": "BoostCharge Power Bank 20K；主题材：Multi-Angle / 360° Product Showcase；40s；元数据通过硬门槛，但低清视频下载失败，未完成 10 点视觉审计；本轮不入核心模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 0,
+      "decision_reason_codes": [
+        "FRAME_DOWNLOAD_FAILED",
+        "NOT_VISUALLY_VERIFIED"
+      ],
+      "primary_genre": "Multi-Angle / 360° Product Showcase",
+      "secondary_genres": [],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "not_visually_verified",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "unknown",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "oJ9bOZPu1Cw",
+      "url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Beats",
+      "title": "Beats Studio Buds +: What the Experts are Saying!",
+      "duration_seconds": 72,
+      "publish_date": "2023-08-08",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "rejected",
+      "reason_codes": [
+        "REVIEW_COMPILATION",
+        "TALKING_HEAD_DOMINANT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "genres": [
+        "Testimonial / Review"
+      ],
+      "canonical_master_id": "oJ9bOZPu1Cw",
+      "visual_notes": "Beats Studio Buds +: What the Experts are Saying!；主题材：Testimonial / Review；72s；专家/创作者评价片段主导，品牌官方发布但不是可迁移的品牌品宣模板；不补 Unboxing、Multi-Angle 或 Daily Routine。",
+      "ai_template_fit": false,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "REVIEW_COMPILATION",
+        "TALKING_HEAD_DOMINANT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "primary_genre": "Testimonial / Review",
+      "secondary_genres": [],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "expert_review_compilation",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "low",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "7t_8p4_Ih3k",
+      "url": "https://www.youtube.com/watch?v=7t_8p4_Ih3k",
+      "product_category": "Power Banks",
+      "brand": "Baseus",
+      "title": "Baseus Star-Lord Digital Display Fast Charge Power Bank 22.5W",
+      "duration_seconds": 34,
+      "publish_date": "2024-08-18",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "rejected",
+      "reason_codes": [
+        "FRAME_DOWNLOAD_FAILED",
+        "NOT_VISUALLY_VERIFIED"
+      ],
+      "genres": [
+        "How-To Tutorial"
+      ],
+      "canonical_master_id": "7t_8p4_Ih3k",
+      "visual_notes": "Baseus Star-Lord Digital Display Fast Charge Power Bank 22.5W；主题材：How-To Tutorial；34s；元数据通过硬门槛，但低清视频下载失败，未完成 10 点视觉审计；本轮不入核心模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 0,
+      "decision_reason_codes": [
+        "FRAME_DOWNLOAD_FAILED",
+        "NOT_VISUALLY_VERIFIED"
+      ],
+      "primary_genre": "How-To Tutorial",
+      "secondary_genres": [],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "not_visually_verified",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "unknown",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "e4t5vX14i1Q",
+      "url": "https://www.youtube.com/watch?v=e4t5vX14i1Q",
+      "product_category": "Power Banks",
+      "brand": "Anker",
+      "title": "How to Use Anker Prime 20K 220W Power Bank: Quick Setup Guide | Anker Support",
+      "duration_seconds": 85,
+      "publish_date": "2026-03-03",
+      "source_type": "品牌支持 / 教程频道",
+      "status": "rejected",
+      "reason_codes": [
+        "SUPPORT_CONTENT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "genres": [
+        "How-To Tutorial"
+      ],
+      "canonical_master_id": "e4t5vX14i1Q",
+      "visual_notes": "How to Use Anker Prime 20K 220W Power Bank: Quick Setup Guide | Anker Support；主题材：How-To Tutorial；85s；Anker Support Quick Setup Guide：顺序教程成立，但白底手动操作/支持说明为主，不是品牌品宣核心模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "SUPPORT_CONTENT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "primary_genre": "How-To Tutorial",
+      "secondary_genres": [],
+      "publisher_role": "brand_support_channel",
+      "content_nature": "support_tutorial",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "low",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "IU_q-jVhJsI",
+      "url": "https://www.youtube.com/watch?v=IU_q-jVhJsI",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Samsung",
+      "title": "How to wear your Galaxy Buds3 for the best sound and fit | Samsung US",
+      "duration_seconds": 61,
+      "publish_date": "2024-10-14",
+      "source_type": "品牌支持 / 教程频道",
+      "status": "rejected",
+      "reason_codes": [
+        "SUPPORT_CONTENT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "genres": [
+        "How-To Tutorial"
+      ],
+      "canonical_master_id": "IU_q-jVhJsI",
+      "visual_notes": "How to wear your Galaxy Buds3 for the best sound and fit | Samsung US；主题材：How-To Tutorial；61s；Samsung Care 佩戴教程，解决购买后佩戴/贴合问题；不是 Lookbook，也不进入品牌品宣核心模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "SUPPORT_CONTENT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "primary_genre": "How-To Tutorial",
+      "secondary_genres": [],
+      "publisher_role": "brand_support_channel",
+      "content_nature": "support_tutorial",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "low",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "geivoMDgPtc",
+      "url": "https://www.youtube.com/watch?v=geivoMDgPtc",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "Sony",
+      "title": "Sony | How to fit and wear – WF-1000XM5 Earbuds",
+      "duration_seconds": 91,
+      "publish_date": "2023-09-12",
+      "source_type": "品牌支持 / 教程频道",
+      "status": "rejected",
+      "reason_codes": [
+        "SUPPORT_CONTENT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "genres": [
+        "How-To Tutorial"
+      ],
+      "canonical_master_id": "geivoMDgPtc",
+      "visual_notes": "Sony | How to fit and wear – WF-1000XM5 Earbuds；主题材：How-To Tutorial；91s；Sony Support 佩戴教程，手动操作和说明步骤为主；How-To 成立但不是核心品牌品宣模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "SUPPORT_CONTENT",
+        "LOW_AI_CREATIVE_HEADROOM"
+      ],
+      "primary_genre": "How-To Tutorial",
+      "secondary_genres": [],
+      "publisher_role": "brand_support_channel",
+      "content_nature": "support_tutorial",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "low",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "sCYrElLdURQ",
+      "url": "https://www.youtube.com/watch?v=sCYrElLdURQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "JBL",
+      "title": "JBL Tune Beam 2 | Control your Earbuds | How-to",
+      "duration_seconds": 20,
+      "publish_date": "2025-04-17",
+      "source_type": "品牌官方 / 官方地区或支持频道",
+      "status": "rejected",
+      "reason_codes": [
+        "LOW_AI_CREATIVE_HEADROOM",
+        "QUICK_TIP_NOT_CORE_PROMO"
+      ],
+      "genres": [
+        "How-To Tutorial"
+      ],
+      "canonical_master_id": "sCYrElLdURQ",
+      "visual_notes": "JBL Tune Beam 2 | Control your Earbuds | How-to；主题材：How-To Tutorial；20s；JBL 官方 20s 控制教程，有品牌动效但主体是佩戴/触控/App 步骤，视觉段落单一；本轮不作为品宣核心模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 10,
+      "decision_reason_codes": [
+        "LOW_AI_CREATIVE_HEADROOM",
+        "QUICK_TIP_NOT_CORE_PROMO"
+      ],
+      "primary_genre": "How-To Tutorial",
+      "secondary_genres": [],
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_quick_tip",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "low_to_moderate",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    },
+    {
+      "video_id": "cUFx_4ZXLCM",
+      "url": "https://www.youtube.com/watch?v=cUFx_4ZXLCM",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "brand": "OPPO",
+      "title": "OPPO Enco Buds 3 Unboxing : How to Pair and Reset full guide",
+      "duration_seconds": 92,
+      "publish_date": "2026-02-07",
+      "source_type": "品牌支持 / 教程频道",
+      "status": "rejected",
+      "reason_codes": [
+        "FRAME_DOWNLOAD_FAILED",
+        "SUPPORT_CONTENT",
+        "NOT_VISUALLY_VERIFIED"
+      ],
+      "genres": [
+        "How-To Tutorial"
+      ],
+      "canonical_master_id": "cUFx_4ZXLCM",
+      "visual_notes": "OPPO Enco Buds 3 Unboxing : How to Pair and Reset full guide；主题材：How-To Tutorial；92s；OPPO Care 标题为 Unboxing/Pair/Reset guide，低清视频下载失败且内容性质偏售后支持；本轮不入核心模板。",
+      "ai_template_fit": false,
+      "frames_reviewed": 0,
+      "decision_reason_codes": [
+        "FRAME_DOWNLOAD_FAILED",
+        "SUPPORT_CONTENT",
+        "NOT_VISUALLY_VERIFIED"
+      ],
+      "primary_genre": "How-To Tutorial",
+      "secondary_genres": [],
+      "publisher_role": "brand_support_channel",
+      "content_nature": "support_tutorial",
+      "recency_status": "within_3_years",
+      "ai_generatable": false,
+      "ai_generation_value": "unknown",
+      "core_template_eligible": false,
+      "review_batch": "gap-fill-v1"
+    }
+  ],
+  "hard_excluded_summary": [
+    {
+      "video_id": "PMHkSdkBODE",
+      "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+      "channel": "Huawei Mobile PH",
+      "publish_date": "2020-11-28",
+      "duration_seconds": 30,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "gn4dAE85lPY",
+      "title": "Dimensional audio | Xiaomi Buds 4 Pro",
+      "channel": "Xiaomi",
+      "publish_date": "2023-03-03",
+      "duration_seconds": 54,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "RAJ5RgEBkd0",
+      "title": "Everything about Xiaomi Buds 3T Pro",
+      "channel": "Xiaomi",
+      "publish_date": "2022-03-20",
+      "duration_seconds": 61,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "csltncy9n_k",
+      "title": "JBL | Tour Pro 2 Noise Cancelling true wireless earbuds with smart case",
+      "channel": "JBL",
+      "publish_date": "2022-12-07",
+      "duration_seconds": 21,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "u85a-j-DVU0",
+      "title": "Redmi Buds 3 Pro: Design",
+      "channel": "Xiaomi",
+      "publish_date": "2021-07-20",
+      "duration_seconds": 35,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "0fbrWogmwkM",
+      "title": "Shargeek Retro 67W Charger With Power Display",
+      "channel": "SHARGE",
+      "publish_date": "2022-11-28",
+      "duration_seconds": 59,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "sg47u6rwOFo",
+      "title": "Mi Powerbank Boost Pro 30000mAh | Crowdfunding Special",
+      "channel": "Xiaomi India",
+      "publish_date": "2021-03-30",
+      "duration_seconds": 44,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "Lz1BTirlGxo",
+      "title": "Introducing the new BOOST↑CHARGE™ Power Bank 5K with Lightning Connector by Belkin",
+      "channel": "Belkin",
+      "publish_date": "2018-08-16",
+      "duration_seconds": 32,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "ZSjB4sOn7Vo",
+      "title": "Baseus Powerbank丨Blade, Made for Laptops",
+      "channel": "Baseus",
+      "publish_date": "2023-02-15",
+      "duration_seconds": 32,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "j-BlnKho2C0",
+      "title": "Pocket size and yet powerful | 2 ports ugreen power bank 10 000 mah",
+      "channel": "UGREEN Official",
+      "publish_date": "2019-10-22",
+      "duration_seconds": 32,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "4YiBy-zpRJU",
+      "title": "Baseus 20000Ah Amblight Digital Display Power Bank",
+      "channel": "Baseus",
+      "publish_date": "2019-01-02",
+      "duration_seconds": 39,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "j5cqPl5l258",
+      "title": "HUAWEI FreeBuds 4 - See The Magic",
+      "channel": "Huawei Mobile MY",
+      "publish_date": "2021-09-01",
+      "duration_seconds": 62,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "yYri4qGSdLc",
+      "title": "HUAWEI | FreeBuds 5",
+      "channel": "Huawei Mobile Polska",
+      "publish_date": "2023-04-19",
+      "duration_seconds": 30,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "9XKWfpt8GOA",
+      "title": "World's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro",
+      "channel": "Huawei Mobile MY",
+      "publish_date": "2020-10-05",
+      "duration_seconds": 51,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "JyzjG793SDM",
+      "title": "Baseus 10000mAh Power Bank",
+      "channel": "Baseus",
+      "publish_date": "2019-05-21",
+      "duration_seconds": 22,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "U3SuM8yNLH4",
+      "title": "Galaxy Buds Pro: 360 Audio and Auto Switch | Samsung",
+      "channel": "Samsung Hong Kong",
+      "publish_date": "2021-02-22",
+      "duration_seconds": 73,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "BzgR4cGViYE",
+      "title": "HUAWEI FreeBuds Lipstick - design (1)",
+      "channel": "Huawei Mobile NL",
+      "publish_date": "2022-02-01",
+      "duration_seconds": 36,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "pEzeqMQ5xv0",
+      "title": "HUAWEI FreeBuds Lipstick - design (2)",
+      "channel": "Huawei Mobile NL",
+      "publish_date": "2022-02-01",
+      "duration_seconds": 28,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "47THGfvHvv0",
+      "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+      "channel": "Xiaomi",
+      "publish_date": "2018-04-02",
+      "duration_seconds": 65,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "4YiBy-zpRJU",
+      "title": "Baseus 20000Ah Amblight Digital Display Power Bank",
+      "channel": "Baseus",
+      "publish_date": "2019-01-02",
+      "duration_seconds": 39,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "0bMjY-CSQqc",
+      "title": "Sony | WF-1000XM3 Truly Wireless Noise-Canceling earbuds with up to 24 hours of listening",
+      "channel": "Sony Electronics",
+      "publish_date": "2019-10-03",
+      "duration_seconds": 15,
+      "hard_filter_reasons": [
+        "DURATION_OUT_OF_RANGE",
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "-9hp0yOloSM",
+      "title": "Sony | WF-1000XM3 Truly Wireless Noise-Canceling Earbuds with Premium Sound Quality",
+      "channel": "Sony Electronics",
+      "publish_date": "2019-09-23",
+      "duration_seconds": 17,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "AN8q3EqnI2g",
+      "title": "How to wear your Galaxy Buds Live for the best sound and fit | Samsung US",
+      "channel": "Samsung Care",
+      "publish_date": "2020-11-06",
+      "duration_seconds": 76,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "RJNpfh1QumE",
+      "title": "How to Get the Perfect Fit with Beats Fit Pro | Step by Step Guide",
+      "channel": "Beats by Dre",
+      "publish_date": "2021-11-05",
+      "duration_seconds": 40,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "G6zso2mK0P8",
+      "title": "JBL | Tour Pro 2 How to connect via BT",
+      "channel": "JBL",
+      "publish_date": "2023-05-17",
+      "duration_seconds": 26,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "dOYk93qEy3o",
+      "title": "Beats Studio Buds + iOS Master Guide: 7 Tips & Tricks You Need!",
+      "channel": "Beats by Dre",
+      "publish_date": "2023-06-02",
+      "duration_seconds": 117,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "_97mCpFIY8Q",
+      "title": "Beats Studio Buds +: Ultimate Android Tips, Tricks & Setup Guide",
+      "channel": "Beats by Dre",
+      "publish_date": "2023-06-02",
+      "duration_seconds": 103,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "inZ1x4tD7eU",
+      "title": "Beats Studio Buds by Futura Laboratories | Beats by Dre",
+      "channel": "Beats by Dre",
+      "publish_date": "2022-07-28",
+      "duration_seconds": 46,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "VzBuqqC2eTQ",
+      "title": "Galaxy Buds2 Pro | Recommended by the Pros - BTS SUGA | Samsung",
+      "channel": "Samsung US",
+      "publish_date": "2023-05-16",
+      "duration_seconds": 101,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "pLfZ1z7BDMg",
+      "title": "Galaxy Buds2 Pro: Recommended by the Pros - BTS SUGA | Samsung Indonesia",
+      "channel": "Samsung Indonesia",
+      "publish_date": "2023-05-13",
+      "duration_seconds": 101,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "2zSJHZh_Ndg",
+      "title": "Introducing Galaxy Buds Pro: Pre-order now | Samsung",
+      "channel": "Samsung Philippines",
+      "publish_date": "2021-01-22",
+      "duration_seconds": 40,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "pCpYvx3QikM",
+      "title": "Galaxy Buds Pro: Day in The Life",
+      "channel": "Samsung Retail",
+      "publish_date": "2021-02-17",
+      "duration_seconds": 109,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "r-M5KTEqcm4",
+      "title": "OPPO Enco M32 | Features Revealed",
+      "channel": "OPPO India",
+      "publish_date": "2022-01-05",
+      "duration_seconds": 43,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "mJ_6o5lNJyo",
+      "title": "OPPO Enco Buds | The Best In Class Earbuds",
+      "channel": "OPPO India",
+      "publish_date": "2021-09-15",
+      "duration_seconds": 45,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "VSANrMd4708",
+      "title": "OPPO Enco X | Dynaudio",
+      "channel": "OPPO Philippines",
+      "publish_date": "2021-04-21",
+      "duration_seconds": 80,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "vi4UVXuOpKU",
+      "title": "OnePlus Buds Pro 2 x Hans Zimmer",
+      "channel": "OnePlus",
+      "publish_date": "2023-02-10",
+      "duration_seconds": 113,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "_8iAJ6lCEXc",
+      "title": "OPPO Enco Buds2 | #BestInClassEarbuds",
+      "channel": "OPPO India",
+      "publish_date": "2022-08-25",
+      "duration_seconds": 30,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "TQbWhWpqiqE",
+      "title": "OnePlus Buds Pro 2 | Unlock Pure Harmony",
+      "channel": "OnePlus",
+      "publish_date": "2023-02-07",
+      "duration_seconds": 75,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "LmbXsO8Y-vc",
+      "title": "OPPO Enco X2 | Hear Beyond Sensation",
+      "channel": "OPPO New Zealand",
+      "publish_date": "2022-09-26",
+      "duration_seconds": 73,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "C_lHQP-XTAc",
+      "title": "Introducing OPPO Enco Free",
+      "channel": "OPPO Singapore",
+      "publish_date": "2020-01-29",
+      "duration_seconds": 53,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "6vATB47f23o",
+      "title": "OnePlus Buds Pro | Ear For You",
+      "channel": "OnePlus India",
+      "publish_date": "2021-09-04",
+      "duration_seconds": 52,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "AanUEpT-mg0",
+      "title": "Jabra Elite 2 - Great Sound Wherever You Go",
+      "channel": "Jabra",
+      "publish_date": "2021-10-07",
+      "duration_seconds": 65,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "Jv0CguR9Ur4",
+      "title": "Jabra Elite 10 | Advanced Sound",
+      "channel": "Jabra",
+      "publish_date": "2023-09-06",
+      "duration_seconds": 15,
+      "hard_filter_reasons": [
+        "DURATION_OUT_OF_RANGE"
+      ]
+    },
+    {
+      "video_id": "5c3OOJSSmw4",
+      "title": "Introducing OPPO Enco Free",
+      "channel": "OPPO New Zealand",
+      "publish_date": "2020-02-24",
+      "duration_seconds": 15,
+      "hard_filter_reasons": [
+        "DURATION_OUT_OF_RANGE",
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "dtx3zpybuRE",
+      "title": "OPPO Enco Air3 | True Wireless Earbuds",
+      "channel": "OPPO Malaysia",
+      "publish_date": "2023-02-16",
+      "duration_seconds": 16,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "BDtAOYRT_QQ",
+      "title": "Mi Power Bank | 5 Reasons To Choose | #DiwaliWithMi",
+      "channel": "Xiaomi India",
+      "publish_date": "2018-10-22",
+      "duration_seconds": 119,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "47THGfvHvv0",
+      "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+      "channel": "Xiaomi",
+      "publish_date": "2018-04-02",
+      "duration_seconds": 65,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "ZxBXHZSwlOU",
+      "title": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+      "channel": "ESR Tech",
+      "publish_date": "2022-10-17",
+      "duration_seconds": 23,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "r-M5KTEqcm4",
+      "title": "OPPO Enco M32 | Features Revealed",
+      "channel": "OPPO India",
+      "publish_date": "2022-01-05",
+      "duration_seconds": 43,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "mJ_6o5lNJyo",
+      "title": "OPPO Enco Buds | The Best In Class Earbuds",
+      "channel": "OPPO India",
+      "publish_date": "2021-09-15",
+      "duration_seconds": 45,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "PMHkSdkBODE",
+      "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+      "channel": "Huawei Mobile PH",
+      "publish_date": "2020-11-28",
+      "duration_seconds": 30,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "44pLqhSKVcg",
+      "title": "JBL Tune Flex - World’s First Transformable TWS Earbuds",
+      "channel": "JBL India",
+      "publish_date": "2022-09-06",
+      "duration_seconds": 30,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "8laDdUCvNKM",
+      "title": "OPPO Enco Series | All Day Sound, All Day Style",
+      "channel": "OPPO Indonesia",
+      "publish_date": "2021-08-12",
+      "duration_seconds": 60,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "xkFNoGW0dhc",
+      "title": "HUAWEI FreeBuds 3i I Active Noise Cancellation",
+      "channel": "Huawei Mobile Indonesia",
+      "publish_date": "2020-07-13",
+      "duration_seconds": 16,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "Fh9PyEbOh5s",
+      "title": "HUAWEI FreeBuds 3 | Intelligent Noise Cancellation",
+      "channel": "Huawei Arabia",
+      "publish_date": "2019-09-24",
+      "duration_seconds": 25,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "ISI7jXFJKKI",
+      "title": "OnePlus Buds - Set Your Music Free",
+      "channel": "OnePlus",
+      "publish_date": "2020-07-21",
+      "duration_seconds": 47,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "7MPZlSKjgLk",
+      "title": "OnePlus Buds Pro - Hear the Unheard",
+      "channel": "OnePlus",
+      "publish_date": "2021-07-22",
+      "duration_seconds": 54,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "c2dcUCX6ATA",
+      "title": "HUAWEI FreeBuds Pro | Hello Noise, Now Hush",
+      "channel": "HUAWEI Mobile Canada",
+      "publish_date": "2020-10-30",
+      "duration_seconds": 45,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "62SXHwHHoCs",
+      "title": "Redmi Buds 3 Pro: Hybrid ANC with Transparency Mode | #SmartLivingForEveryone",
+      "channel": "Xiaomi",
+      "publish_date": "2021-07-29",
+      "duration_seconds": 55,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "RAJ5RgEBkd0",
+      "title": "Everything about Xiaomi Buds 3T Pro",
+      "channel": "Xiaomi",
+      "publish_date": "2022-03-20",
+      "duration_seconds": 61,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "lcugvRH0mlc",
+      "title": "Jabra Elite 25e: How to pair | Jabra Support",
+      "channel": "Jabra",
+      "publish_date": "2017-10-02",
+      "duration_seconds": 45,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "SJkoVvcbs1s",
+      "title": "JBL | Tune Buds Noise Cancelling earbuds",
+      "channel": "JBL",
+      "publish_date": "2023-03-30",
+      "duration_seconds": 60,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "yYu0KeYKoaE",
+      "title": "OnePlus Buds Z x Steven Harrington",
+      "channel": "OnePlus",
+      "publish_date": "2020-12-22",
+      "duration_seconds": 24,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "AJ16sC0xi58",
+      "title": "Redmi Buds 4 Active | Rise. Never Fall.",
+      "channel": "Xiaomi India",
+      "publish_date": "2023-06-16",
+      "duration_seconds": 35,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "67WXTRx7sKY",
+      "title": "Jabra Elite 7 Pro: How to pair | Jabra Support",
+      "channel": "Jabra",
+      "publish_date": "2022-02-08",
+      "duration_seconds": 107,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "_8iAJ6lCEXc",
+      "title": "OPPO Enco Buds2 | #BestInClassEarbuds",
+      "channel": "OPPO India",
+      "publish_date": "2022-08-25",
+      "duration_seconds": 30,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "v1GpT-jujHc",
+      "title": "HUAWEI Freebuds Pro 2 – Bizarre Audio-visual Experiments",
+      "channel": "Huawei Mobile",
+      "publish_date": "2022-09-29",
+      "duration_seconds": 113,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "HyDhdsvhVjA",
+      "title": "Jabra Elite 65e: How to pair | Jabra Support",
+      "channel": "Jabra",
+      "publish_date": "2018-04-10",
+      "duration_seconds": 50,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "euXa4qNgh28",
+      "title": "JBL | Live Free 2 NC True Wireless Earbuds",
+      "channel": "JBL",
+      "publish_date": "2022-01-05",
+      "duration_seconds": 61,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "C_lHQP-XTAc",
+      "title": "Introducing OPPO Enco Free",
+      "channel": "OPPO Singapore",
+      "publish_date": "2020-01-29",
+      "duration_seconds": 53,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "CKwjH0Y_0qg",
+      "title": "HUAWEI FreeBuds Pro 2 - Futuristic Colourways",
+      "channel": "Huawei Mobile",
+      "publish_date": "2022-07-27",
+      "duration_seconds": 26,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "yvMfsvYtgKI",
+      "title": "Sport True Wireless #shorts | Sennheiser",
+      "channel": "Sennheiser",
+      "publish_date": "2022-06-19",
+      "duration_seconds": 61,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "PnvtkXdf4DM",
+      "title": "OPPO Enco Air 3 | True Wireless Earbuds",
+      "channel": "OPPO Singapore",
+      "publish_date": "2023-03-17",
+      "duration_seconds": 16,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "ar5N-ylAI28",
+      "title": "OPPO Enco X2 | Hear Beyond Sensation",
+      "channel": "OPPO Malaysia",
+      "publish_date": "2022-05-23",
+      "duration_seconds": 73,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "dtx3zpybuRE",
+      "title": "OPPO Enco Air3 | True Wireless Earbuds",
+      "channel": "OPPO Malaysia",
+      "publish_date": "2023-02-16",
+      "duration_seconds": 16,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "tpIKyD5xeLo",
+      "title": "HUAWEI FreeBuds Lipstick | Visually Extraordinary",
+      "channel": "Huawei Arabia",
+      "publish_date": "2022-01-03",
+      "duration_seconds": 28,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "YYKbwo-Y_4M",
+      "title": "HUAWEI FreeBuds Lipstick | استثنائية في جمالها",
+      "channel": "Huawei Arabia",
+      "publish_date": "2022-01-03",
+      "duration_seconds": 28,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    },
+    {
+      "video_id": "Ch7HSXEZjOk",
+      "title": "Train Like A Pro | HUAWEI Freebuds Pro and HUAWEI Watch GT 2 Pro",
+      "channel": "HUAWEI Mobile Canada",
+      "publish_date": "2021-04-16",
+      "duration_seconds": 66,
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T10:09:07.580Z",
+  "source_files": [
+    "mvp-gap-official-shortlist-v1-pb-hard-genres-tail.json"
+  ],
+  "cutoff_date": "2023-08-01",
+  "candidate_count": 3,
+  "passed_count": 0,
+  "excluded_count": 3,
+  "pending_count": 0,
+  "records": [
+    {
+      "video_id": "BDtAOYRT_QQ",
+      "url": "https://www.youtube.com/watch?v=BDtAOYRT_QQ",
+      "title": "Mi Power Bank | 5 Reasons To Choose | #DiwaliWithMi",
+      "description": "Hello Mi Fans, we are here with the top 5 reasons you should buy Mi Power banks. We realise Power bank has become an ...",
+      "duration_seconds": 119,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 50988,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi power bank commute routine official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Daily Routine",
+          "query": "SHARGE SHARGE power bank commute routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 1,
+      "enriched": {
+        "title": "Mi Power Bank | 5 Reasons To Choose | #DiwaliWithMi",
+        "fulltitle": "Mi Power Bank | 5 Reasons To Choose | #DiwaliWithMi",
+        "description": "Hello Mi Fans, we are here with the top 5 reasons you should buy Mi Power banks. We realise Power bank has become an essential part of our lives and we are making sure we get the best specs, premium quality at an honest pricing just for you. Tell us which Mi Power bank do you have or plan to buy and what is it that you like about it.\n\nRead more about the Mi Powerbanks here - https://bit.ly/2R0yAZY\nSubscribe: https://bit.ly/2CRE45Y\nInstagram: https://bit.ly/2QWTiK0\nFacebook: https://bit.ly/2R0v8OU\nTwitter: https://bit.ly/2q6bVjq",
+        "duration_seconds": 119,
+        "upload_date": "20181022",
+        "publish_date": "2018-10-22",
+        "channel": "Xiaomi India",
+        "uploader": "Xiaomi India",
+        "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+        "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+        "view_count": 50988,
+        "tags": [
+          "power bank",
+          "powerbank",
+          "best power bank",
+          "power bank price",
+          "power bank 10000mah",
+          "power bank 20000mah",
+          "mi power bank",
+          "samsung power bank",
+          "sony power bank",
+          "portable charger",
+          "power bank charger",
+          "mobile power bank",
+          "power bank online"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=BDtAOYRT_QQ"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "47THGfvHvv0",
+      "url": "https://www.youtube.com/watch?v=47THGfvHvv0",
+      "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+      "description": "Some of these are incredible! Others are just a little out there. Take a look...",
+      "duration_seconds": 66,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 40833,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank POV campaign",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank POV campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 1,
+      "enriched": {
+        "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+        "fulltitle": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+        "description": "Some of these are incredible! Others are just a little out there. Take a look...",
+        "duration_seconds": 65,
+        "upload_date": "20180402",
+        "publish_date": "2018-04-02",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 40833,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=47THGfvHvv0"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "ZxBXHZSwlOU",
+      "url": "https://www.youtube.com/watch?v=ZxBXHZSwlOU",
+      "title": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+      "description": "The HaloLock™ Kickstand Wireless Power Bank is a MagSafe wireless power bank with a capacity of 10000mAh that begins ...",
+      "duration_seconds": 23,
+      "channel": "ESR Tech",
+      "channel_id": "UC4HQbA9GYJXOkf0NCae-z8Q",
+      "channel_url": "https://www.youtube.com/channel/UC4HQbA9GYJXOkf0NCae-z8Q",
+      "channel_is_verified": null,
+      "view_count": 6549,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "How-To Tutorial",
+          "query": "ESR ESR power bank official tutorial",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+        "fulltitle": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+        "description": "The HaloLock™ Kickstand Wireless Power Bank is a MagSafe wireless power bank with a capacity of 10,000mAh that begins charging as soon you magnetically attach it to your iPhone. The built-in adjustable kickstand and pass-through charging capability also let you use it as a MagSafe wireless charging stand and ensure that you can find a comfortable angle to FaceTime friends or catch up on your favorite shows. It's the perfect companion for any adventure.\n\nCheck it out at:\nhttps://bit.ly/3VKhAJF\n\nFind us online:\nFacebook | https://www.facebook.com/ESRgear/\nInstagram | https://www.instagram.com/esrgear_official/\nTwitter | https://twitter.com/ESRgear",
+        "duration_seconds": 23,
+        "upload_date": "20221017",
+        "publish_date": "2022-10-17",
+        "channel": "ESR Tech",
+        "uploader": "ESR Tech",
+        "channel_url": "https://www.youtube.com/channel/UC4HQbA9GYJXOkf0NCae-z8Q",
+        "channel_id": "UC4HQbA9GYJXOkf0NCae-z8Q",
+        "view_count": 6549,
+        "tags": [
+          "magsafe battery pack",
+          "MagSafe wireless power bank",
+          "magsafe charger",
+          "magsafe battery pack review",
+          "magsafe power bank"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=ZxBXHZSwlOU"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    }
+  ]
+}

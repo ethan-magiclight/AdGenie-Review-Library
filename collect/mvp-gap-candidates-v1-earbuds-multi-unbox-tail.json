@@ -1,0 +1,859 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T09:54:24.408Z",
+  "source_review": "consumer-electronics-review-v4.json",
+  "duration_rule": "16-119 seconds",
+  "target_fill_rule": "10 unique canonical masters per product_category + genre",
+  "note": "discovery target genres are recall evidence only; official classification still requires visual review",
+  "gaps": [
+    {
+      "category": "Power Banks",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "Power Banks",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Unboxing",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 6,
+      "deficit": 4
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Unboxing",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    }
+  ],
+  "total_query_count": 140,
+  "query_offset": 90,
+  "query_count": 50,
+  "candidate_count": 29,
+  "official_shortlist_count": 15,
+  "discovery_error_count": 0,
+  "candidates": [
+    {
+      "video_id": "mJ_6o5lNJyo",
+      "url": "https://www.youtube.com/watch?v=mJ_6o5lNJyo",
+      "title": "OPPO Enco Buds | The Best In Class Earbuds",
+      "description": "The future of all-day listening is here! With the #BestInClassEarBuds, enjoy the freedom to move about as you like and listen to ...",
+      "duration_seconds": 45,
+      "channel": "OPPO India",
+      "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_is_verified": true,
+      "view_count": 2491680,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds product details official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Unboxing",
+          "query": "OPPO OPPO Enco earbuds unbox official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 2,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "6vATB47f23o",
+      "url": "https://www.youtube.com/watch?v=6vATB47f23o",
+      "title": "OnePlus Buds Pro | Ear For You",
+      "description": "Time to put focus on something where your eyes can't reach. A new era for your ear begins. #EarForYou #HearTheUnheard.",
+      "duration_seconds": 52,
+      "channel": "OnePlus India",
+      "channel_id": "UCZDZuCogQfb1N95KuUOacjw",
+      "channel_url": "https://www.youtube.com/channel/UCZDZuCogQfb1N95KuUOacjw",
+      "channel_is_verified": null,
+      "view_count": 25076,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OnePlus OnePlus Buds official product design",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Unboxing",
+          "query": "OnePlus OnePlus Buds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 2,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "r-M5KTEqcm4",
+      "url": "https://www.youtube.com/watch?v=r-M5KTEqcm4",
+      "title": "OPPO Enco M32 | Features Revealed",
+      "description": "The OPPO Enco M32 features 28hr long battery life, Dual Device Fast Switching, an Independent Bass Chamber and an ...",
+      "duration_seconds": 44,
+      "channel": "OPPO India",
+      "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_is_verified": true,
+      "view_count": 13196742,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Unboxing",
+          "query": "OPPO OPPO Enco earbuds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "VSANrMd4708",
+      "url": "https://www.youtube.com/watch?v=VSANrMd4708",
+      "title": "OPPO Enco X | Dynaudio",
+      "description": "OPPO, in collaboration with Dynaudio, the global leader in sound engineering, is here for you in the new #OPPOEncoX. Be ready ...",
+      "duration_seconds": 81,
+      "channel": "OPPO Philippines",
+      "channel_id": "UC-x_SWfIMLE8KwaDUqQheQQ",
+      "channel_url": "https://www.youtube.com/channel/UC-x_SWfIMLE8KwaDUqQheQQ",
+      "channel_is_verified": true,
+      "view_count": 217261,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "vi4UVXuOpKU",
+      "url": "https://www.youtube.com/watch?v=vi4UVXuOpKU",
+      "title": "OnePlus Buds Pro 2 x Hans Zimmer",
+      "description": "Say hello to the #OnePlusBudsPro2's exclusive @HansZimmer Soundscape Tuning, hand-crafted by the maestro himself.",
+      "duration_seconds": 114,
+      "channel": "OnePlus",
+      "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_is_verified": true,
+      "view_count": 76921,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Unboxing",
+          "query": "OnePlus OnePlus Buds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "_8iAJ6lCEXc",
+      "url": "https://www.youtube.com/watch?v=_8iAJ6lCEXc",
+      "title": "OPPO Enco Buds2 | #BestInClassEarbuds",
+      "description": "Tune out the herd, tune in to sounds unheard! With up to 28hrs listening time & AI Deep Noise Cancellation for calls, the OPPO ...",
+      "duration_seconds": 30,
+      "channel": "OPPO India",
+      "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_is_verified": true,
+      "view_count": 56869,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Unboxing",
+          "query": "OPPO OPPO Enco earbuds what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "TQbWhWpqiqE",
+      "url": "https://www.youtube.com/watch?v=TQbWhWpqiqE",
+      "title": "OnePlus Buds Pro 2 | Unlock Pure Harmony",
+      "description": "Unlock Pure Harmony with the #OnePlusBudsPro2. Don't miss your chance to pre-order ...",
+      "duration_seconds": 75,
+      "channel": "OnePlus",
+      "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_is_verified": true,
+      "view_count": 55929,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Unboxing",
+          "query": "OnePlus OnePlus Buds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "LmbXsO8Y-vc",
+      "url": "https://www.youtube.com/watch?v=LmbXsO8Y-vc",
+      "title": "OPPO Enco X2 | Hear Beyond Sensation",
+      "description": "Earbuds in, world out. Co-created with @Dynaudio , the #OPPOEncoX2 is designed to bring you a flawless listening experience.",
+      "duration_seconds": 74,
+      "channel": "OPPO New Zealand",
+      "channel_id": "UC0twtNru9HeQiF1EVf31IQA",
+      "channel_url": "https://www.youtube.com/channel/UC0twtNru9HeQiF1EVf31IQA",
+      "channel_is_verified": true,
+      "view_count": 51647,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "C_lHQP-XTAc",
+      "url": "https://www.youtube.com/watch?v=C_lHQP-XTAc",
+      "title": "Introducing OPPO Enco Free",
+      "description": "OPPO Enco Free - True wireless headphones Find out more: http://bit.ly/EncoFree.",
+      "duration_seconds": 54,
+      "channel": "OPPO Singapore",
+      "channel_id": "UCNrLpLkfBfGFdlGICDn2sRA",
+      "channel_url": "https://www.youtube.com/channel/UCNrLpLkfBfGFdlGICDn2sRA",
+      "channel_is_verified": true,
+      "view_count": 28292,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Unboxing",
+          "query": "OPPO OPPO Enco earbuds what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "5c3OOJSSmw4",
+      "url": "https://www.youtube.com/watch?v=5c3OOJSSmw4",
+      "title": "Introducing OPPO Enco Free",
+      "description": "Small but mighty, now even greater with no string attached. Free yourself and free your move.",
+      "duration_seconds": 16,
+      "channel": "OPPO New Zealand",
+      "channel_id": "UC0twtNru9HeQiF1EVf31IQA",
+      "channel_url": "https://www.youtube.com/channel/UC0twtNru9HeQiF1EVf31IQA",
+      "channel_is_verified": true,
+      "view_count": 5360,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "dtx3zpybuRE",
+      "url": "https://www.youtube.com/watch?v=dtx3zpybuRE",
+      "title": "OPPO Enco Air3 | True Wireless Earbuds",
+      "description": "Translucent Jelly Case. Lightweight and handy. Better Sound Quality. Give you a new experience! #OPPOEncoAir3 ...",
+      "duration_seconds": 16,
+      "channel": "OPPO Malaysia",
+      "channel_id": "UCVTUBt1Qv4dIDvT41kcUP1A",
+      "channel_url": "https://www.youtube.com/channel/UCVTUBt1Qv4dIDvT41kcUP1A",
+      "channel_is_verified": true,
+      "view_count": 2461,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Unboxing",
+          "query": "OPPO OPPO Enco earbuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "F1IPylsD7CI",
+      "url": "https://www.youtube.com/watch?v=F1IPylsD7CI",
+      "title": "Introducing, The OnePlus Buds 3",
+      "description": "Immerse yourself in high-res audio with touch volume control and Active Noise Cancellation with the all-new #OnePlusBuds3 ...",
+      "duration_seconds": 63,
+      "channel": "OnePlus India",
+      "channel_id": "UCZDZuCogQfb1N95KuUOacjw",
+      "channel_url": "https://www.youtube.com/channel/UCZDZuCogQfb1N95KuUOacjw",
+      "channel_is_verified": null,
+      "view_count": 6431987,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OnePlus OnePlus Buds product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "-L5Z-4t3RLA",
+      "url": "https://www.youtube.com/watch?v=-L5Z-4t3RLA",
+      "title": "OnePlus Buds 4 | An All-New Audio Experience",
+      "description": "Meet the all-new #OnePlusBuds4.",
+      "duration_seconds": 59,
+      "channel": "OnePlus India",
+      "channel_id": "UCZDZuCogQfb1N95KuUOacjw",
+      "channel_url": "https://www.youtube.com/channel/UCZDZuCogQfb1N95KuUOacjw",
+      "channel_is_verified": null,
+      "view_count": 27658,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OnePlus OnePlus Buds product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "AanUEpT-mg0",
+      "url": "https://www.youtube.com/watch?v=AanUEpT-mg0",
+      "title": "Jabra Elite 2 - Great Sound Wherever You Go",
+      "description": "Jabra Elite 2 true wireless earbuds offer rich bass and powerful sound, with a durable noise-isolating design, and secure, ...",
+      "duration_seconds": 65,
+      "channel": "Jabra",
+      "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_is_verified": null,
+      "view_count": 23507,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Unboxing",
+          "query": "Jabra Jabra Elite earbuds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "Jv0CguR9Ur4",
+      "url": "https://www.youtube.com/watch?v=Jv0CguR9Ur4",
+      "title": "Jabra Elite 10 | Advanced Sound",
+      "description": "SPATIAL SOUND WITH DOLBY HEAD TRACKING Dive into fully immersive sound, powered by Dolby. With Elite 10 you get ...",
+      "duration_seconds": 16,
+      "channel": "Jabra",
+      "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_is_verified": null,
+      "view_count": 7771,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Jabra Jabra Elite earbuds design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "hxCUt-zTGwY",
+      "url": "https://www.youtube.com/watch?v=hxCUt-zTGwY",
+      "title": "How to Pair Jabra Elite 2 with any Windows PC & Laptop?",
+      "description": "In this tutorial video, you will learn how to easily connect and pair your Jabra Elite 2 wireless earbuds with any Windows PC.",
+      "duration_seconds": 117,
+      "channel": "HardReset.Info",
+      "channel_id": "UCBviUkaeHb3SQPdtIRTNtJQ",
+      "channel_url": "https://www.youtube.com/channel/UCBviUkaeHb3SQPdtIRTNtJQ",
+      "channel_is_verified": true,
+      "view_count": 13106,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Unboxing",
+          "query": "Jabra Jabra Elite earbuds packaging reveal official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "SrpzcXWrCtY",
+      "url": "https://www.youtube.com/watch?v=SrpzcXWrCtY",
+      "title": "Nothing Ear (3) - Clearly Competent | ASMR Unboxing",
+      "description": "These Nothing Ear (3) buds bring a fresh twist to the transparent-look audio game! You get 12 mm drivers, support for LDAC via ...",
+      "duration_seconds": 32,
+      "channel": "Gio San Pedro",
+      "channel_id": "UC4Sh3cP9IAyDfsrFju0eRdg",
+      "channel_url": "https://www.youtube.com/channel/UC4Sh3cP9IAyDfsrFju0eRdg",
+      "channel_is_verified": true,
+      "view_count": 12377,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Nothing",
+          "target_genre": "Unboxing",
+          "query": "Nothing Nothing Ear earbuds unbox official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "2ZmwG403hZ8",
+      "url": "https://www.youtube.com/watch?v=2ZmwG403hZ8",
+      "title": "CES 2018 First Look: Jabra Elite Active 65t",
+      "description": "Great sound quality, buds built for any element, and lots of battery life make these headphones tough to beat. With Runner's World ...",
+      "duration_seconds": 55,
+      "channel": "Runner's World",
+      "channel_id": "UCx2Xqm8S3Ghqn5puhSKWH4Q",
+      "channel_url": "https://www.youtube.com/channel/UCx2Xqm8S3Ghqn5puhSKWH4Q",
+      "channel_is_verified": true,
+      "view_count": 3865,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Unboxing",
+          "query": "Jabra Jabra Elite earbuds official first look",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "NrjtKl76S6k",
+      "url": "https://www.youtube.com/watch?v=NrjtKl76S6k",
+      "title": "Nothing Ear 2 Unboxing & First Look | Business Insider India",
+      "description": "Nothing has come back with its latest and greatest ear(2) TWS earbud. The successor to their first ever product! Here is our ...",
+      "duration_seconds": 76,
+      "channel": "Business Insider India",
+      "channel_id": "UC62AhAC25Ukuscqux_f1rjA",
+      "channel_url": "https://www.youtube.com/channel/UC62AhAC25Ukuscqux_f1rjA",
+      "channel_is_verified": true,
+      "view_count": 338,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Nothing",
+          "target_genre": "Unboxing",
+          "query": "Nothing Nothing Ear earbuds what's in the box official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "vGY0SATxd6k",
+      "url": "https://www.youtube.com/watch?v=vGY0SATxd6k",
+      "title": "NOTHING ear (2) Product Film",
+      "description": "Crafted by Futhark Studios. https://futharkstudios.com/ contact@futharkstudios.com ...",
+      "duration_seconds": 58,
+      "channel": "FUTHARK STUDIOS",
+      "channel_id": "UC0GvL-MPzBjabbAuaP_GzDQ",
+      "channel_url": "https://www.youtube.com/channel/UC0GvL-MPzBjabbAuaP_GzDQ",
+      "channel_is_verified": null,
+      "view_count": 3502,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Nothing",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Nothing Nothing Ear earbuds design film official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "ji0lMygDk-g",
+      "url": "https://www.youtube.com/watch?v=ji0lMygDk-g",
+      "title": "Elcytec.com OPPO Enco X Wireless Earphones | Actual Product Unboxing/Display video.",
+      "description": "Welcome to our actual product unboxing and display video of the OPPO Enco X Wireless Earphones. Our goal in this video is to ...",
+      "duration_seconds": 88,
+      "channel": "Elcytec",
+      "channel_id": "UCLLYWVAoRjd1D1aoVYFqzrw",
+      "channel_url": "https://www.youtube.com/channel/UCLLYWVAoRjd1D1aoVYFqzrw",
+      "channel_is_verified": null,
+      "view_count": 1113,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds 360 product showcase",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "IL206ccI3iI",
+      "url": "https://www.youtube.com/watch?v=IL206ccI3iI",
+      "title": "Oppo Enco Buds 2 Pro: How to Connect With Android Phone",
+      "description": "Wondering how to connect Oppo Enco Buds 2 Pro to an Android phone? These earbuds are designed for effortless compatibility ...",
+      "duration_seconds": 72,
+      "channel": "HowToDevices ",
+      "channel_id": "UCVmTwhvDNRBFlvlsvEMuIhQ",
+      "channel_url": "https://www.youtube.com/channel/UCVmTwhvDNRBFlvlsvEMuIhQ",
+      "channel_is_verified": null,
+      "view_count": 958,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds design film official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "jd6T_JmCfBQ",
+      "url": "https://www.youtube.com/watch?v=jd6T_JmCfBQ",
+      "title": "Nothing ear (1) Stick - FIRST LOOKS!",
+      "description": "Nothing is coming with its new ear buds tws and its going to be a budget friendly of words and its seen nothing ear (1) stick, now ...",
+      "duration_seconds": 102,
+      "channel": "Tech Phantom",
+      "channel_id": "UCO5uQLuzBHju_O4rXJzALnQ",
+      "channel_url": "https://www.youtube.com/channel/UCO5uQLuzBHju_O4rXJzALnQ",
+      "channel_is_verified": null,
+      "view_count": 667,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Nothing",
+          "target_genre": "Unboxing",
+          "query": "Nothing Nothing Ear earbuds packaging reveal official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "l3f38IHssbU",
+      "url": "https://www.youtube.com/watch?v=l3f38IHssbU",
+      "title": "Nothing Ear(a) Wireless Earbuds First Look & Product Trailer",
+      "description": "nothing #nothingearbuds #wirelessearbuds Nothing Ear(a) Earbuds Price: $99.",
+      "duration_seconds": 49,
+      "channel": "AxRm Tech",
+      "channel_id": "UC3gRRm9PpyggFbgROeTFGYQ",
+      "channel_url": "https://www.youtube.com/channel/UC3gRRm9PpyggFbgROeTFGYQ",
+      "channel_is_verified": null,
+      "view_count": 370,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Nothing",
+          "target_genre": "Unboxing",
+          "query": "Nothing Nothing Ear earbuds official first look",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "qDfKxFDZiRg",
+      "url": "https://www.youtube.com/watch?v=qDfKxFDZiRg",
+      "title": "OPPO Enco W51 official trailer commercial video HD/OPPO w51",
+      "description": "OppoEncoW51#EncoW51 OPPo Enco W51 official trailer OPPo Enco W51 commercial video OPPo Enco W51 ad video OPPo ...",
+      "duration_seconds": 60,
+      "channel": "Digital Tec",
+      "channel_id": "UClQJRaxBOjmTULU_SEsm8UA",
+      "channel_url": "https://www.youtube.com/channel/UClQJRaxBOjmTULU_SEsm8UA",
+      "channel_is_verified": null,
+      "view_count": 175,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds design film official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "IsGuvvGKyHY",
+      "url": "https://www.youtube.com/watch?v=IsGuvvGKyHY",
+      "title": "OPPO Enco X2 Official Trailer",
+      "description": "OPPO Find X5 Pro RAM. 8GB, 12GB, 16GB Storage. 256GB, 512GB https://www.gizmochina.com/product/oppo-find-x5-pro/ ...",
+      "duration_seconds": 79,
+      "channel": "B -tech",
+      "channel_id": "UC8OVaHtZSqmJykNjX6oo7Ww",
+      "channel_url": "https://www.youtube.com/channel/UC8OVaHtZSqmJykNjX6oo7Ww",
+      "channel_is_verified": null,
+      "view_count": 95,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds official product showcase",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Izyr2yeUOe4",
+      "url": "https://www.youtube.com/watch?v=Izyr2yeUOe4",
+      "title": "Oppo Enco Buds Advertisement 😂 #oppo",
+      "description": "oppomobileindia @artist_mind_115 #art #drawing #zayn #harrystyles #shorts #oppo #famous.",
+      "duration_seconds": 22,
+      "channel": "ArtistMind",
+      "channel_id": "UCJIJaFGRUr5FDuNgstdOmfQ",
+      "channel_url": "https://www.youtube.com/channel/UCJIJaFGRUr5FDuNgstdOmfQ",
+      "channel_is_verified": null,
+      "view_count": 92,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OPPO OPPO Enco earbuds design film official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "3mxb9CQTehE",
+      "url": "https://www.youtube.com/watch?v=3mxb9CQTehE",
+      "title": "Oppo Enco buds | First look | Ft. Oppo tech studio",
+      "description": "Introducing the most classic , user-friendly & light weight with an ergonomic design body the brand new Oppo Enco buds.",
+      "duration_seconds": 17,
+      "channel": "Sritam Kumar Sethy",
+      "channel_id": "UCWmKLsbhlLhMDW4CnELU9YQ",
+      "channel_url": "https://www.youtube.com/channel/UCWmKLsbhlLhMDW4CnELU9YQ",
+      "channel_is_verified": null,
+      "view_count": 52,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Unboxing",
+          "query": "OPPO OPPO Enco earbuds official first look",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "M6VEf_cVnzw",
+      "url": "https://www.youtube.com/watch?v=M6VEf_cVnzw",
+      "title": "Nothing Ear (a) Wireless Earbuds, 45dB Adaptive Noise Cancelling Earbuds, Hi-Res Audio with LDAC",
+      "description": "Link to Buy- https://amzn.to/47F2KKR Nothing Ear (a) Wireless Earbuds, 45dB Adaptive Noise Cancelling Earbuds, Hi-Res Audio ...",
+      "duration_seconds": 41,
+      "channel": "WorldShoping",
+      "channel_id": "UC8dMCVIMDD--MPY1Bwe_OKQ",
+      "channel_url": "https://www.youtube.com/channel/UC8dMCVIMDD--MPY1Bwe_OKQ",
+      "channel_is_verified": null,
+      "view_count": 9,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Nothing",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Nothing Nothing Ear earbuds official product showcase",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    }
+  ],
+  "errors": []
+}

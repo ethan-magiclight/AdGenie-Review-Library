@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T10:07:21.660Z",
+  "source": "mvp-gap-candidates-v1.json",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "video_id": "BDtAOYRT_QQ",
+      "url": "https://www.youtube.com/watch?v=BDtAOYRT_QQ",
+      "title": "Mi Power Bank | 5 Reasons To Choose | #DiwaliWithMi",
+      "description": "Hello Mi Fans, we are here with the top 5 reasons you should buy Mi Power banks. We realise Power bank has become an ...",
+      "duration_seconds": 119,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 50988,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi power bank commute routine official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Daily Routine",
+          "query": "SHARGE SHARGE power bank commute routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "47THGfvHvv0",
+      "url": "https://www.youtube.com/watch?v=47THGfvHvv0",
+      "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+      "description": "Some of these are incredible! Others are just a little out there. Take a look...",
+      "duration_seconds": 66,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 40833,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank POV campaign",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank POV campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "ZxBXHZSwlOU",
+      "url": "https://www.youtube.com/watch?v=ZxBXHZSwlOU",
+      "title": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+      "description": "The HaloLock™ Kickstand Wireless Power Bank is a MagSafe wireless power bank with a capacity of 10000mAh that begins ...",
+      "duration_seconds": 23,
+      "channel": "ESR Tech",
+      "channel_id": "UC4HQbA9GYJXOkf0NCae-z8Q",
+      "channel_url": "https://www.youtube.com/channel/UC4HQbA9GYJXOkf0NCae-z8Q",
+      "channel_is_verified": null,
+      "view_count": 6549,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "How-To Tutorial",
+          "query": "ESR ESR power bank official tutorial",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    }
+  ]
+}

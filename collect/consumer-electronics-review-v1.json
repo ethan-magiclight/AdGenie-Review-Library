@@ -1,0 +1,867 @@
+{
+  "version": "v1",
+  "updated_at": "2026-07-28",
+  "sampling_points": [
+    "0%",
+    "10%",
+    "20%",
+    "30%",
+    "40%",
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%"
+  ],
+  "records": [
+    {
+      "url": "https://www.youtube.com/watch?v=ryKkYLXB4jU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DpcXUXtZ4CU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=19QBQw7K9C0",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6K4eUO53-UE",
+      "product_category": "Multi-Product / Cross-Category",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=H3KnMyojEQU",
+      "product_category": "Multi-Product / Cross-Category",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "complete_event",
+        "multi_product"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-avONMmQtlI",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "unavailable_link"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HKphYoxGeRE",
+      "product_category": "Smartwatches",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EMmKs8vMKhU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3gwNezFJuYM",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/playlist?list=PLHFlHpPjgk73fe6pP3vr4j8KcLQhRErrE",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "playlist_not_single_sample"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3m07zMRXXP0",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "unavailable_link"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zF6pTNSGph4",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "behind_the_scenes"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PSS889-qeJQ",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "behind_the_scenes"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XLzx58UrwGs",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VlCspuGbrw8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=poMPwTC1HKY",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2jGFPugdyKo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Qyw9uPO88E8",
+      "product_category": "Multi-Product / Cross-Category",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EtJF5n0I9fM",
+      "product_category": "Bluetooth & Wireless Speakers",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "older_than_10_years"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZPllALdtgFI",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "older_than_10_years"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HsWCmwd094g",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "older_than_8_years"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gD-8GWz-K4I",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qPx4_GuHI4w",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0owNz-UCnew",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hmDJZc_g_MA",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h7Ws8us8f0I",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZxxvYuxilZg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://x.com/Caden_Flux/status/2071509622511513651",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ls1RPIFcwNM",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aqkO905l558",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kQcq3rpne78",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hkoWCX8sQf4",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "long_creator_review",
+        "talking_head_risk"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rPbGsqZoZf8",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iZg6naoxxqA",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sDZUqdijrL4",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=G5Mc_NLjogQ",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7g-F1pBPED0",
+      "product_category": "Bluetooth & Wireless Speakers",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=undwfOwhVsw",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "long_creator_review"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lufmhMtmyWE",
+      "product_category": "Game Consoles",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ocDYMoV2kh0",
+      "product_category": "Game Consoles",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=H0FAYmKfdi4",
+      "product_category": "Game Consoles",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7eRjsOQZEd4",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=abajo3YGMms",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "talking_head_risk",
+        "unboxing_longform"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aDSnSTAXSsE",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "interview_or_design_documentary"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6aSHIYP9F2I",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XpIsrRdKmHI",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "interview_or_talking_head"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XwJ6-84HGTc",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "interview_or_design_documentary"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=W0jOMHaEfzM",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vGY0SATxd6k",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Muen4f4L_6M",
+      "product_category": "Multi-Product / Cross-Category",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "complete_event",
+        "multi_product"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7k1DxGDnT_I",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YWV2XjoRKhk",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ya4mGUX0Ls0",
+      "product_category": "Digital & Instant Cameras",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "documentary_style"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x6vzTKV9Kss",
+      "product_category": "Digital & Instant Cameras",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3nTs5idQvqE",
+      "product_category": "Digital & Instant Cameras",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "interview_or_design_documentary"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PAyci-PVD1c",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=chn5IsMArmE",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oRzKguNWv5w",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iBvfhAuSdUQ",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BSYsXVFzmKA",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IvRPTJBG0iQ",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ggfA3ltufPk",
+      "product_category": "Tablets",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iA80Kb8nthE",
+      "product_category": "Bluetooth & Wireless Speakers",
+      "collection_batch": "existing_v4",
+      "review_status": "pending",
+      "reason_codes": [
+        "not_frame_reviewed_in_this_round"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wtCmdWaXqYo",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ikhlTRhu3IU",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8Lb_wVoX7XQ",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pekdACNHX3w",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mut8kCXYiHo",
+      "product_category": "Over-Ear Headphones",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JbFfpA39lPI",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "collection_batch": "existing_v4",
+      "review_status": "valid",
+      "reason_codes": [
+        "prior_quality_review_or_clear_product_forward_structure"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=C-HJICW6QI8",
+      "product_category": "Smartphones",
+      "collection_batch": "existing_v4",
+      "review_status": "excluded",
+      "reason_codes": [
+        "long_creator_interview"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pkjJxvJo9U4",
+      "product_category": "Wall Chargers",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZoDDEz5Wue8",
+      "product_category": "Power Banks",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ARNxxh91G-4",
+      "product_category": "Wireless Chargers",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4rTfhGwW1bo",
+      "product_category": "Data & Charging Cables",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bBJBC9-jjU4",
+      "product_category": "Open-Ear / Bone-Conduction Headphones",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y9mUyPvLKHY",
+      "product_category": "Smart Bands",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UvmmWeov68s",
+      "product_category": "Game Controllers",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Q1YsGfLy-9g",
+      "product_category": "Routers",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nsDnEPyKzWI",
+      "product_category": "Keyboards",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3-FpSsIbPis",
+      "product_category": "Mice",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=htmbF1m1b_o",
+      "product_category": "Monitors",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "valid",
+      "reason_codes": [
+        "duration_lt_120",
+        "official_or_regional_official",
+        "ten_frame_review_passed"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VFTc6xgfo-4",
+      "product_category": "Docks & Hubs",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "pending",
+      "reason_codes": [
+        "browser_playback_buffering",
+        "insufficient_frame_coverage"
+      ],
+      "note": "标题、频道和时长通过，但浏览器在 5 秒后持续缓冲，未达到 10 点抽帧证据标准，暂不入库。"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D-pf-XcFoO8",
+      "product_category": "Docks & Hubs",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "excluded",
+      "reason_codes": [
+        "duration_gte_120"
+      ],
+      "note": "2:29，超过 120 秒硬门槛，直接不收。"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hB_8ATFkrn4",
+      "product_category": "Open-Ear / Bone-Conduction Headphones",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "pending",
+      "reason_codes": [
+        "browser_playback_buffering",
+        "insufficient_frame_coverage"
+      ],
+      "note": "时长和来源通过，但中后段抽帧未稳定解码；已改收 20 秒同产品配色短片。"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d6J7qa_kT0E",
+      "product_category": "Smart Bands",
+      "collection_batch": "ce_v6_browser_review",
+      "review_status": "pending",
+      "reason_codes": [
+        "video_stream_not_loaded"
+      ],
+      "note": "搜索结果显示品牌区域频道和 0:31 时长，但浏览器未加载视频流，暂不入库。"
+    }
+  ],
+  "candidate_reviews": [
+    {
+      "url": "https://www.youtube.com/watch?v=VFTc6xgfo-4",
+      "product_category": "Docks & Hubs",
+      "title": "Max out your productivity with the UGREEN Revodok Maxidok Thunderbolt 5 Docking Station",
+      "duration_seconds": 52.441,
+      "channel": "UGREEN Official",
+      "decision": "pending",
+      "reason_codes": [
+        "browser_playback_buffering",
+        "insufficient_frame_coverage"
+      ],
+      "note": "标题、频道和时长通过，但浏览器在 5 秒后持续缓冲，未达到 10 点抽帧证据标准，暂不入库。"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D-pf-XcFoO8",
+      "product_category": "Docks & Hubs",
+      "title": "UGREEN X-Kit | World's First Integrated Ergonomic Hub-Stand",
+      "duration_seconds": 149.121,
+      "channel": "UGREEN Official",
+      "decision": "excluded",
+      "reason_codes": [
+        "duration_gte_120"
+      ],
+      "note": "2:29，超过 120 秒硬门槛，直接不收。"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hB_8ATFkrn4",
+      "product_category": "Open-Ear / Bone-Conduction Headphones",
+      "title": "Introducing Shokz OpenRun Pro 2. Redefine the Sound of Sports.",
+      "duration_seconds": 95.041,
+      "channel": "Shokz",
+      "decision": "pending",
+      "reason_codes": [
+        "browser_playback_buffering",
+        "insufficient_frame_coverage"
+      ],
+      "note": "时长和来源通过，但中后段抽帧未稳定解码；已改收 20 秒同产品配色短片。"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d6J7qa_kT0E",
+      "product_category": "Smart Bands",
+      "title": "Fitbit Charge 6. Our best-selling tracker, now even better.",
+      "duration_seconds": 30,
+      "channel": "Fitbit Europe",
+      "decision": "pending",
+      "reason_codes": [
+        "video_stream_not_loaded"
+      ],
+      "note": "搜索结果显示品牌区域频道和 0:31 时长，但浏览器未加载视频流，暂不入库。"
+    }
+  ]
+}

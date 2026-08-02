@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "source": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-enriched-v1-earbuds-multi-unbox-tail.json",
+  "record_count": 2,
+  "ok_count": 2,
+  "records": [
+    {
+      "index": 1,
+      "video_id": "F1IPylsD7CI",
+      "url": "https://www.youtube.com/watch?v=F1IPylsD7CI",
+      "title": "Introducing, The OnePlus Buds 3",
+      "channel": "OnePlus India",
+      "publish_date": "2024-01-23",
+      "duration_seconds": 63,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OnePlus OnePlus Buds product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-multi-unbox-tail/videos/F1IPylsD7CI.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-multi-unbox-tail/individual/001-F1IPylsD7CI.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "-L5Z-4t3RLA",
+      "url": "https://www.youtube.com/watch?v=-L5Z-4t3RLA",
+      "title": "OnePlus Buds 4 | An All-New Audio Experience",
+      "channel": "OnePlus India",
+      "publish_date": "2025-08-06",
+      "duration_seconds": 59,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "OnePlus OnePlus Buds product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-multi-unbox-tail/videos/-L5Z-4t3RLA.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-earbuds-multi-unbox-tail/individual/002--L5Z-4t3RLA.jpg"
+    }
+  ]
+}

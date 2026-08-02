@@ -1,0 +1,1118 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T10:07:21.657Z",
+  "source_review": "consumer-electronics-review-v4.json",
+  "duration_rule": "16-119 seconds",
+  "target_fill_rule": "10 unique canonical masters per product_category + genre",
+  "note": "discovery target genres are recall evidence only; official classification still requires visual review",
+  "gaps": [
+    {
+      "category": "Power Banks",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "Power Banks",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Unboxing",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 6,
+      "deficit": 4
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Unboxing",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    }
+  ],
+  "total_query_count": 242,
+  "query_offset": 100,
+  "query_count": 142,
+  "candidate_count": 37,
+  "official_shortlist_count": 3,
+  "discovery_error_count": 0,
+  "candidates": [
+    {
+      "video_id": "BDtAOYRT_QQ",
+      "url": "https://www.youtube.com/watch?v=BDtAOYRT_QQ",
+      "title": "Mi Power Bank | 5 Reasons To Choose | #DiwaliWithMi",
+      "description": "Hello Mi Fans, we are here with the top 5 reasons you should buy Mi Power banks. We realise Power bank has become an ...",
+      "duration_seconds": 119,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 50988,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi power bank commute routine official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Daily Routine",
+          "query": "SHARGE SHARGE power bank commute routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "47THGfvHvv0",
+      "url": "https://www.youtube.com/watch?v=47THGfvHvv0",
+      "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+      "description": "Some of these are incredible! Others are just a little out there. Take a look...",
+      "duration_seconds": 66,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 40833,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank POV campaign",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank POV campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "ZxBXHZSwlOU",
+      "url": "https://www.youtube.com/watch?v=ZxBXHZSwlOU",
+      "title": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+      "description": "The HaloLock™ Kickstand Wireless Power Bank is a MagSafe wireless power bank with a capacity of 10000mAh that begins ...",
+      "duration_seconds": 23,
+      "channel": "ESR Tech",
+      "channel_id": "UC4HQbA9GYJXOkf0NCae-z8Q",
+      "channel_url": "https://www.youtube.com/channel/UC4HQbA9GYJXOkf0NCae-z8Q",
+      "channel_is_verified": null,
+      "view_count": 6549,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "How-To Tutorial",
+          "query": "ESR ESR power bank official tutorial",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "V9C-B6WI52A",
+      "url": "https://www.youtube.com/watch?v=V9C-B6WI52A",
+      "title": "10,000mAh Battery Pack: Official Introduction | Samsung",
+      "description": "The new Samsung Battery Pack takes charging to another level. Power up your Galaxy device in a flash with 25W Super Fast ...",
+      "duration_seconds": 60,
+      "channel": "Samsung",
+      "channel_id": "UCWwgaK7x0_FR1goeSRazfsQ",
+      "channel_url": "https://www.youtube.com/channel/UCWwgaK7x0_FR1goeSRazfsQ",
+      "channel_is_verified": true,
+      "view_count": 812039,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "aZRJbXWoPsM",
+      "url": "https://www.youtube.com/watch?v=aZRJbXWoPsM",
+      "title": "How To Reset Mophie Power Bank",
+      "description": "In this tutorial video, you will learn step-by-step instructions on how to reset your mophie power bank. Follow along as we guide ...",
+      "duration_seconds": 29,
+      "channel": "Geo Statology",
+      "channel_id": "UCvCdKXqFWU7nK7M8rV-TtkA",
+      "channel_url": "https://www.youtube.com/channel/UCvCdKXqFWU7nK7M8rV-TtkA",
+      "channel_is_verified": true,
+      "view_count": 3950,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "How-To Tutorial",
+          "query": "Mophie Mophie power bank official tutorial",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "EopJp52h_ew",
+      "url": "https://www.youtube.com/watch?v=EopJp52h_ew",
+      "title": "Expert Review by Quiana Green for mophie Powerstation Wireless Slim 15W Power Bank",
+      "description": "The mophie Powerstation Wireless Slim provides fast magnetic charging. Shop now at Best Buy: mophie Powerstation Wireless ...",
+      "duration_seconds": 57,
+      "channel": "Best Buy",
+      "channel_id": "UC5pK3w6QEq1bUMmU2Hs43Pw",
+      "channel_url": "https://www.youtube.com/channel/UC5pK3w6QEq1bUMmU2Hs43Pw",
+      "channel_is_verified": true,
+      "view_count": 1109,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "Daily Routine",
+          "query": "Mophie Mophie power bank workout lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Njh2ohRpXfE",
+      "url": "https://www.youtube.com/watch?v=Njh2ohRpXfE",
+      "title": "How To Reset Your Power Bank With Power Button – Simple Fix For Charging Issues",
+      "description": "In this informative video, we guide you through the simple process of resetting your power bank using the power button. If you're ...",
+      "duration_seconds": 76,
+      "channel": "Wealth Quint",
+      "channel_id": "UCaPLoL1X1ydT83PgZsb7tIA",
+      "channel_url": "https://www.youtube.com/channel/UCaPLoL1X1ydT83PgZsb7tIA",
+      "channel_is_verified": null,
+      "view_count": 39823,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank walk and talk",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "CUKTECH",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "CUKTECH CUKTECH power bank walk and talk",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "KmNR5zEA3Os",
+      "url": "https://www.youtube.com/watch?v=KmNR5zEA3Os",
+      "title": "Power bank charger catches on fire in airport",
+      "description": "A passenger's power bank charger caught on fire in his pocket during a security check at the airport. REF 28795 to license contact ...",
+      "duration_seconds": 17,
+      "channel": "LPE360",
+      "channel_id": "UCQJF3ol9TO6L7Rv8rlVgIKA",
+      "channel_url": "https://www.youtube.com/channel/UCQJF3ol9TO6L7Rv8rlVgIKA",
+      "channel_is_verified": null,
+      "view_count": 36320,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "hALSJ6zfPIU",
+      "url": "https://www.youtube.com/watch?v=hALSJ6zfPIU",
+      "title": "🚀 Unboxing the WIRELESS ChargeCard & First Impressions of this Portable Charger by AquaVault",
+      "description": "Welcome to another exciting video on AquaVault! Today, we're diving into the world of ultra-portable power solutions with a ...",
+      "duration_seconds": 58,
+      "channel": "AquaVault Inc.",
+      "channel_id": "UCXubZWum7Dn0lZo06Anr3Yw",
+      "channel_url": "https://www.youtube.com/channel/UCXubZWum7Dn0lZo06Anr3Yw",
+      "channel_is_verified": null,
+      "view_count": 14755,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Lookbook",
+          "query": "SHARGE SHARGE power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "2S8hmqRD-P4",
+      "url": "https://www.youtube.com/watch?v=2S8hmqRD-P4",
+      "title": "The Fastest Way to Charge Your iPhone on the GO! - Mophie Powerstation PD 10,000 mAh Power Bank",
+      "description": "In this video I talk about the fastest way to charge your iPhone while you are on the go with the Mophie Powerstation PD 10000 ...",
+      "duration_seconds": 69,
+      "channel": "Zadius Tech",
+      "channel_id": "UCpyccToYyxo1HW6en0-UN5w",
+      "channel_url": "https://www.youtube.com/channel/UCpyccToYyxo1HW6en0-UN5w",
+      "channel_is_verified": null,
+      "view_count": 13216,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "Daily Routine",
+          "query": "Mophie Mophie power bank morning routine official",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Mophie Mophie power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "pVv9wLkm8ck",
+      "url": "https://www.youtube.com/watch?v=pVv9wLkm8ck",
+      "title": "First COOLING Power Bank! Sharge ICEBAG Unboxing ASMR #bestpowerbank",
+      "description": "Unbox Yours | https://amzn.to/3sW9Qdt Unboxing the Charge ICEMAG is the world's first magnetic power bank with active cooling.",
+      "duration_seconds": 110,
+      "channel": "Get UNBXD",
+      "channel_id": "UCtRM2zI1SiojYG9DRmQ0zHw",
+      "channel_url": "https://www.youtube.com/channel/UCtRM2zI1SiojYG9DRmQ0zHw",
+      "channel_is_verified": null,
+      "view_count": 6831,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Daily Routine",
+          "query": "SHARGE SHARGE power bank daily routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "N-UL1o6C2Gk",
+      "url": "https://www.youtube.com/watch?v=N-UL1o6C2Gk",
+      "title": "How to charge Smart Fitness Watch in the Powerbank using USB port",
+      "description": "How to charge Smart Fitness Watch in the Powerbank using the USB port. Starting use this option if you see the red color on the ...",
+      "duration_seconds": 37,
+      "channel": "Alfaline Fitness Tracker",
+      "channel_id": "UC16qnbv9PazRrDR-2WRd6EA",
+      "channel_url": "https://www.youtube.com/channel/UC16qnbv9PazRrDR-2WRd6EA",
+      "channel_is_verified": null,
+      "view_count": 2776,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Daily Routine",
+          "query": "SHARGE SHARGE power bank workout lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "aFd0HOLmjGg",
+      "url": "https://www.youtube.com/watch?v=aFd0HOLmjGg",
+      "title": "Zendure Power Bank Supermini Review: Compact Powerhouse for On-The-Go Charging!",
+      "description": "Amazon Affiliate Link: ...",
+      "duration_seconds": 104,
+      "channel": "Mark My Words Reviews",
+      "channel_id": "UCb7IcbMsQZKoXkW8TrWvFng",
+      "channel_url": "https://www.youtube.com/channel/UCb7IcbMsQZKoXkW8TrWvFng",
+      "channel_is_verified": null,
+      "view_count": 2628,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Lookbook",
+          "query": "Zendure Zendure power bank fashion campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Zendure Zendure power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "d1Z5Mu2J_Wc",
+      "url": "https://www.youtube.com/watch?v=d1Z5Mu2J_Wc",
+      "title": "CUKTECH 45W Power Bank 20000mAh | USB-C Charger with Built-in Cable | Fast Charging Battery Pack",
+      "description": "CUKTECH 45W Power Bank 20000mAh | USB-C Charger with Built-in Cable | Fast Charging Battery Pack on Amazon: ...",
+      "duration_seconds": 85,
+      "channel": "Before You Buy with Brooks",
+      "channel_id": "UCyfkJ482Ez4nK0-0mF6CDUg",
+      "channel_url": "https://www.youtube.com/channel/UCyfkJ482Ez4nK0-0mF6CDUg",
+      "channel_is_verified": null,
+      "view_count": 2441,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "CUKTECH",
+          "target_genre": "How-To Tutorial",
+          "query": "CUKTECH CUKTECH power bank official tutorial",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "sdyALgMmT9o",
+      "url": "https://www.youtube.com/watch?v=sdyALgMmT9o",
+      "title": "Magnetic Wireless Power Bank Review: Built-In USB-C & Lightning Cables + LED Display (UGC)",
+      "description": "This power bank is designed for convenience and versatility. With Magnetic wireless charging, a USB-C port, and two attached ...",
+      "duration_seconds": 39,
+      "channel": "TheUrbanGeek",
+      "channel_id": "UC-BNchZJAeZsYs-2uZRrH1g",
+      "channel_url": "https://www.youtube.com/channel/UC-BNchZJAeZsYs-2uZRrH1g",
+      "channel_is_verified": null,
+      "view_count": 1716,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "ZLpHXq1HJK0",
+      "url": "https://www.youtube.com/watch?v=ZLpHXq1HJK0",
+      "title": "Mi power bank 5200 mAh Review",
+      "description": "Mi power bank 5200 mAh review video. It is a great deal power bank available at INR 599 on Flipkart. My first ever review video ...",
+      "duration_seconds": 92,
+      "channel": "AKSHAY BHOPANI",
+      "channel_id": "UCEa9mt1Z840rdClNUHw07hw",
+      "channel_url": "https://www.youtube.com/channel/UCEa9mt1Z840rdClNUHw07hw",
+      "channel_is_verified": null,
+      "view_count": 712,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank walk and talk",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "zVgnbqTFGG8",
+      "url": "https://www.youtube.com/watch?v=zVgnbqTFGG8",
+      "title": "Is this Vexnara Magsafe Portable Charger Worth it?",
+      "description": "Buy this on Amazon: https://amzn.to/49FzxCk Please subscribe to the channel for more great reviews We review products that are ...",
+      "duration_seconds": 108,
+      "channel": "John Muscarello",
+      "channel_id": "UCI_KxyxL-9cWGGEARouAIEw",
+      "channel_url": "https://www.youtube.com/channel/UCI_KxyxL-9cWGGEARouAIEw",
+      "channel_is_verified": null,
+      "view_count": 686,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "68Yf3S6yfkA",
+      "url": "https://www.youtube.com/watch?v=68Yf3S6yfkA",
+      "title": "Mi Powerbank 16000mAh - Review!",
+      "description": "Hey everyone! So, today we are going to take a look at Mi powerbank with 16000 mAh capacity. As Xiaomi's power banks has ...",
+      "duration_seconds": 101,
+      "channel": "TechMeOut",
+      "channel_id": "UCJFW6cFDF1kokRsyvoccj8Q",
+      "channel_url": "https://www.youtube.com/channel/UCJFW6cFDF1kokRsyvoccj8Q",
+      "channel_is_verified": null,
+      "view_count": 495,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi power bank travel lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "5AfC9NNdjOQ",
+      "url": "https://www.youtube.com/watch?v=5AfC9NNdjOQ",
+      "title": "Zendure Mini Power Bank (Review)",
+      "description": "Review of the Zendure Mini Power Bank Get it here: ...",
+      "duration_seconds": 94,
+      "channel": "WeReviewAmz",
+      "channel_id": "UC92JLP3lcMes1WZFlxZWWAA",
+      "channel_url": "https://www.youtube.com/channel/UC92JLP3lcMes1WZFlxZWWAA",
+      "channel_is_verified": null,
+      "view_count": 446,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Lookbook",
+          "query": "Zendure Zendure power bank lifestyle campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Daily Routine",
+          "query": "Zendure Zendure power bank daily routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "WbT_EEX_wYg",
+      "url": "https://www.youtube.com/watch?v=WbT_EEX_wYg",
+      "title": "HALO UltraPack 20,000 mAH Portable Charger with LCD Screen on QVC",
+      "description": "For More Information or to Buy: https://qvc.co/3D4fWrm HALO UltraPack 20000 mAH Portable Charger with LCD Screen ***SEE ...",
+      "duration_seconds": 105,
+      "channel": "QVC",
+      "channel_id": "UCW4gXUEypFeI3xgoQ27LFBA",
+      "channel_url": "https://www.youtube.com/channel/UCW4gXUEypFeI3xgoQ27LFBA",
+      "channel_is_verified": null,
+      "view_count": 288,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "Lookbook",
+          "query": "ESR ESR power bank fashion campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "ADQaK7l2b5A",
+      "url": "https://www.youtube.com/watch?v=ADQaK7l2b5A",
+      "title": "300W Charging Monster Just Dropped – Shargeek 300: The Next Gen Power Beast",
+      "description": "Back This Project - https://sharge-1.kckb.me/b8008b4a GADGETS ON AliExpress - https://s.click.aliexpress.com/e/_DeqmKFv ...",
+      "duration_seconds": 79,
+      "channel": "Top Crowdfunding Campaigns",
+      "channel_id": "UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_url": "https://www.youtube.com/channel/UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_is_verified": null,
+      "view_count": 225,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank creator campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "RQWXOfSiZ2Y",
+      "url": "https://www.youtube.com/watch?v=RQWXOfSiZ2Y",
+      "title": "Mophie Powerstation XXL Power Bank Review!",
+      "description": "Mophie Powerstation XXL Power Bank Review! Click here for more info: https://geni.us/YaDv (Amazon) Get the mophie ...",
+      "duration_seconds": 79,
+      "channel": "Odaddys",
+      "channel_id": "UCwwsZy7TgJ33cK57VdmqPnA",
+      "channel_url": "https://www.youtube.com/channel/UCwwsZy7TgJ33cK57VdmqPnA",
+      "channel_is_verified": null,
+      "view_count": 199,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "Lookbook",
+          "query": "Mophie Mophie power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "PbLKMmHCl8E",
+      "url": "https://www.youtube.com/watch?v=PbLKMmHCl8E",
+      "title": "Unleash the Power of Shargeek 170: Coolest Powerbank Ever!",
+      "description": "PRE-ORDER THE Shargeek 170 - https://shargeek-170-coolest-powerba-1.kckb.st/d56046be SEE BESTSELLER GADGETS ON ...",
+      "duration_seconds": 93,
+      "channel": "Top Crowdfunding Campaigns",
+      "channel_id": "UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_url": "https://www.youtube.com/channel/UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_is_verified": null,
+      "view_count": 192,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank creator campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "79TZm5QiDso",
+      "url": "https://www.youtube.com/watch?v=79TZm5QiDso",
+      "title": "Absolutely Love This Zendure Power Bank Because of This",
+      "description": "Absolutely Love This Zendure Power Bank Because of This Get it here: https://geni.us/0flYA (Amazon) In this video, I review the ...",
+      "duration_seconds": 76,
+      "channel": "Jon Corr",
+      "channel_id": "UC9SyHRMa1Mr-SNZlbTjo5DA",
+      "channel_url": "https://www.youtube.com/channel/UC9SyHRMa1Mr-SNZlbTjo5DA",
+      "channel_is_verified": null,
+      "view_count": 154,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "How-To Tutorial",
+          "query": "Zendure Zendure power bank official how to",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Daily Routine",
+          "query": "Zendure Zendure power bank travel lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "n_jtNRsj4f8",
+      "url": "https://www.youtube.com/watch?v=n_jtNRsj4f8",
+      "title": "Mophie PowerStation PD 6700 Portable Charger - Black (MOPHIE-PD)",
+      "description": "Product Description This Mophie PowerStation PD is a portable charger with USB-C port capable of charging smartphones and ...",
+      "duration_seconds": 31,
+      "channel": "Penta Elite",
+      "channel_id": "UCzvepCh3TBRkORp73qw5qfQ",
+      "channel_url": "https://www.youtube.com/channel/UCzvepCh3TBRkORp73qw5qfQ",
+      "channel_is_verified": null,
+      "view_count": 154,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "Daily Routine",
+          "query": "Mophie Mophie power bank daily routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "VxC19sGzUOo",
+      "url": "https://www.youtube.com/watch?v=VxC19sGzUOo",
+      "title": "Is the sharge AeroMag Magsafe Power Bank Worth it?",
+      "description": "Buy this on Amazon: https://linktw.in/bjlgYC Please subscribe to the channel for more great reviews We review products that are ...",
+      "duration_seconds": 83,
+      "channel": "John Muscarello",
+      "channel_id": "UCI_KxyxL-9cWGGEARouAIEw",
+      "channel_url": "https://www.youtube.com/channel/UCI_KxyxL-9cWGGEARouAIEw",
+      "channel_is_verified": null,
+      "view_count": 142,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "FPHgV85wwFE",
+      "url": "https://www.youtube.com/watch?v=FPHgV85wwFE",
+      "title": "ZENDURE SUPERMINI GO : THE VERSATILE STYLISH WIRELESS POWERBANK | Kickstarter | Gizmo-Hub.com",
+      "description": "PRE-ORDER THE ZENDURE SUPERMINI GO - https://supermini-go-versatile-stylish.kckb.st/507e3c86 WEEKLY TOP 10 MOST ...",
+      "duration_seconds": 97,
+      "channel": "Gizmo Hub",
+      "channel_id": "UCj-Gxg25qCkc2zGTsLHtp3A",
+      "channel_url": "https://www.youtube.com/channel/UCj-Gxg25qCkc2zGTsLHtp3A",
+      "channel_is_verified": null,
+      "view_count": 135,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Zendure Zendure power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "cr-fX_8kDwY",
+      "url": "https://www.youtube.com/watch?v=cr-fX_8kDwY",
+      "title": "The mobile power bank that charges your laptop",
+      "description": "Xiaomi India has announced the Mi Power Bank Hyper Sonic, the company's latest power bank that allows you to charge several ...",
+      "duration_seconds": 112,
+      "channel": "Tursk",
+      "channel_id": "UC1S7eKyUJysxEe1EkIfEAKQ",
+      "channel_url": "https://www.youtube.com/channel/UC1S7eKyUJysxEe1EkIfEAKQ",
+      "channel_is_verified": null,
+      "view_count": 96,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "XmypqO8k1uQ",
+      "url": "https://www.youtube.com/watch?v=XmypqO8k1uQ",
+      "title": "Movespeed Lightpro The 80000Mah Powerbank - Movespeed Lightpro 80000Mah Power Bank#Power -#Poweebank",
+      "description": "PRE-ORDER THE MoveSpeed LightPro - https://movespeed-lightpro-the.kckb.st/bdc3a660 SEE BESTSELLER GADGETS ON ...",
+      "duration_seconds": 96,
+      "channel": "Top Crowdfunding Campaigns",
+      "channel_id": "UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_url": "https://www.youtube.com/channel/UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_is_verified": null,
+      "view_count": 86,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "CUKTECH",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "CUKTECH CUKTECH power bank creator campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "IYIc11KTdAo",
+      "url": "https://www.youtube.com/watch?v=IYIc11KTdAo",
+      "title": "Indiegogo: Zendure SuperMini GO, Versatile Stylish Wireless Powerbank",
+      "description": "Indiegogo Campaign Link: https://bit.ly/3zTZ7S3 Magnetic Wireless Charging | Type-C 20W PD | LCD Display | 10000mAh ...",
+      "duration_seconds": 86,
+      "channel": "Wearable Search",
+      "channel_id": "UC2JTOg5AVV1zm13TW9TuYmQ",
+      "channel_url": "https://www.youtube.com/channel/UC2JTOg5AVV1zm13TW9TuYmQ",
+      "channel_is_verified": null,
+      "view_count": 59,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Zendure Zendure power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Giu674wGt5E",
+      "url": "https://www.youtube.com/watch?v=Giu674wGt5E",
+      "title": "Xiaomi Mi 10000mAH Power Bank",
+      "description": "Product model: PLM13ZM Battery type: lithium-ion polymer battery Battery energy: 37Wh 3.7V 10000mAh Dimensions: 147.8 ...",
+      "duration_seconds": 30,
+      "channel": "Jss Collection",
+      "channel_id": "UCXF9tbrCI0HKS4Z1W0xDk2g",
+      "channel_url": "https://www.youtube.com/channel/UCXF9tbrCI0HKS4Z1W0xDk2g",
+      "channel_is_verified": null,
+      "view_count": 56,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi power bank workout lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "9b6GmVEQUu4",
+      "url": "https://www.youtube.com/watch?v=9b6GmVEQUu4",
+      "title": "Zendure SuperTankPro OPENBOX",
+      "description": null,
+      "duration_seconds": 19,
+      "channel": "Alex Farell",
+      "channel_id": "UCgO3gaik0d3xpxut5Pl5Fhg",
+      "channel_url": "https://www.youtube.com/channel/UCgO3gaik0d3xpxut5Pl5Fhg",
+      "channel_is_verified": null,
+      "view_count": 56,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Zendure Zendure power bank official vlog",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "hqD1XzFtsC8",
+      "url": "https://www.youtube.com/watch?v=hqD1XzFtsC8",
+      "title": "40,000 Mah Power Bank That Boosts It All - Best Power Bank - Top 10 Best Power Banks In 2022-2023",
+      "description": "GET IT NOW : https://the-era-defining-power-bank.kckb.st/a91b410d NAMECHEAP WEBSITE CREATION & HOSTING ...",
+      "duration_seconds": 97,
+      "channel": "Top Crowdfunding Campaigns",
+      "channel_id": "UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_url": "https://www.youtube.com/channel/UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_is_verified": null,
+      "view_count": 53,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi power bank shorts campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "dsGD0ezTz6U",
+      "url": "https://www.youtube.com/watch?v=dsGD0ezTz6U",
+      "title": "ESR Qi2 15W MagSlim Kickstand Fast Charging MagSafe Power Bank - 10 000 mAh",
+      "description": "The ESR Qi2 15W MagSlim Kickstand Fast Charging MagSafe Power Bank delivers 34 minutes faster charging, 10.4°F cooler ...",
+      "duration_seconds": 51,
+      "channel": "CellTime SA",
+      "channel_id": "UC3CbdrzByPLBdUcaOOGbkIg",
+      "channel_url": "https://www.youtube.com/channel/UC3CbdrzByPLBdUcaOOGbkIg",
+      "channel_is_verified": null,
+      "view_count": 52,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "Daily Routine",
+          "query": "ESR ESR power bank day in the life official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "hSchgG2A8bA",
+      "url": "https://www.youtube.com/watch?v=hSchgG2A8bA",
+      "title": "SharkyX - 3-in-1 Magnetic Power Bank: Why You Need It Now!",
+      "description": "ORDER THE SharkyX - https://sharkyx-dual-magnetic-power-bank.kckb.me/ba4a8f1f GADGETS ON AliExpress ...",
+      "duration_seconds": 52,
+      "channel": "Top Crowdfunding Campaigns",
+      "channel_id": "UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_url": "https://www.youtube.com/channel/UCj0J-LzY_qwZwEdsS6gdtIw",
+      "channel_is_verified": null,
+      "view_count": 32,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Lookbook",
+          "query": "SHARGE SHARGE power bank fashion campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "SHARGE SHARGE power bank creator campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "RvksiLzjB4k",
+      "url": "https://www.youtube.com/watch?v=RvksiLzjB4k",
+      "title": "Zendure power bank- what I really think",
+      "description": "Find it here on Amazon: Find it here on Amazon: https://linktw.in/mUMCJy Disclaimer: This post might contain affiliate links, I may ...",
+      "duration_seconds": 91,
+      "channel": "Kelly Reviews @ Whole Mom Revolution",
+      "channel_id": "UC2eioQkOwKgvcuDuhHoKk-A",
+      "channel_url": "https://www.youtube.com/channel/UC2eioQkOwKgvcuDuhHoKk-A",
+      "channel_is_verified": null,
+      "view_count": 16,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Zendure Zendure power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "6JzMRXjAMUw",
+      "url": "https://www.youtube.com/watch?v=6JzMRXjAMUw",
+      "title": "Zendure SuperMini GO!!!-Campaign Video",
+      "description": "Our Brand New SuperMini GO has just launched on Indiegogo! We have this Wireless MagSafe power bank in 3 fun colors, and ...",
+      "duration_seconds": 91,
+      "channel": "RecommendTrends",
+      "channel_id": "UCvk6-Ivwe3psNkMtuTYRg0w",
+      "channel_url": "https://www.youtube.com/channel/UCvk6-Ivwe3psNkMtuTYRg0w",
+      "channel_is_verified": null,
+      "view_count": 9,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Zendure",
+          "target_genre": "Lookbook",
+          "query": "Zendure Zendure power bank lifestyle campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    }
+  ],
+  "errors": []
+}

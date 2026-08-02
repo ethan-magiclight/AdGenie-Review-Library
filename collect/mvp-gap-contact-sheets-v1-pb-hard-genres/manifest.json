@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "source": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-enriched-v1-pb-hard-genres.json",
+  "record_count": 5,
+  "ok_count": 4,
+  "records": [
+    {
+      "index": 1,
+      "video_id": "YMfJjI-RVNA",
+      "url": "https://www.youtube.com/watch?v=YMfJjI-RVNA",
+      "title": "BoostCharge Power Bank 10K",
+      "channel": "Belkin EMEA",
+      "publish_date": "2023-09-07",
+      "duration_seconds": 40,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Belkin Belkin power bank shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/videos/YMfJjI-RVNA.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/individual/001-YMfJjI-RVNA.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "7tY2kt-9GhQ",
+      "url": "https://www.youtube.com/watch?v=7tY2kt-9GhQ",
+      "title": "Introducing the Ultra-Slim Power Bank – style meets performance.",
+      "channel": "Xiaomi India",
+      "publish_date": "2024-12-17",
+      "duration_seconds": 20,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank official style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/videos/7tY2kt-9GhQ.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/individual/002-7tY2kt-9GhQ.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "7t_8p4_Ih3k",
+      "url": "https://www.youtube.com/watch?v=7t_8p4_Ih3k",
+      "title": "Baseus Star-Lord Digital Display Fast Charge Power Bank 22.5W",
+      "channel": "Baseus KZ",
+      "publish_date": "2024-08-18",
+      "duration_seconds": 34,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "How-To Tutorial",
+          "query": "Baseus Baseus power bank official quick start",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "error",
+      "error": "Command '['/Users/hakunamatata/.local/bin/yt-dlp', '-f', 'bv*[height<=360][ext=mp4]/bv*[height<=360]/best[height<=360]/worst', '--no-playlist', '--quiet', '--no-warnings', '-o', '/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/videos/7t_8p4_Ih3k.%(ext)s', 'https://www.youtube.com/watch?v=7t_8p4_Ih3k']' returned non-zero exit status 1.",
+      "video_path": null,
+      "contact_sheet": null
+    },
+    {
+      "index": 4,
+      "video_id": "GWJ3aNko7Uw",
+      "url": "https://www.youtube.com/watch?v=GWJ3aNko7Uw",
+      "title": "Baseus Compact Fast Charging Power Bank Type C Edition 5000mAh 20W #baseus #pocket #powerbank",
+      "channel": "Baseus UAE",
+      "publish_date": "2024-08-03",
+      "duration_seconds": 35,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Daily Routine",
+          "query": "Baseus Baseus power bank daily routine official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/videos/GWJ3aNko7Uw.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/individual/004-GWJ3aNko7Uw.jpg"
+    },
+    {
+      "index": 5,
+      "video_id": "e4t5vX14i1Q",
+      "url": "https://www.youtube.com/watch?v=e4t5vX14i1Q",
+      "title": "How to Use Anker Prime 20K 220W Power Bank: Quick Setup Guide | Anker Support",
+      "channel": "Anker Support",
+      "publish_date": "2026-03-03",
+      "duration_seconds": 85,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "How-To Tutorial",
+          "query": "Anker Anker power bank official tutorial",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "status": "ok",
+      "error": null,
+      "video_path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/videos/e4t5vX14i1Q.mp4",
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-gap-contact-sheets-v1-pb-hard-genres/individual/005-e4t5vX14i1Q.jpg"
+    }
+  ]
+}

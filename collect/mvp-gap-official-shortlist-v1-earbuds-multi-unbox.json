@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T08:38:22.497Z",
+  "source": "mvp-gap-candidates-v1.json",
+  "candidate_count": 14,
+  "candidates": [
+    {
+      "video_id": "oJ9bOZPu1Cw",
+      "url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw",
+      "title": "Beats Studio Buds +: What the Experts are Saying!",
+      "description": "Watch as top tech reviewers break down why the new Beats Studio Buds + are a game changer. From the iconic transparent look ...",
+      "duration_seconds": 73,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 13406,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Beats Beats earbuds product details official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Unboxing",
+          "query": "Beats Beats earbuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 2,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "gn4dAE85lPY",
+      "url": "https://www.youtube.com/watch?v=gn4dAE85lPY",
+      "title": "Dimensional audio | Xiaomi Buds 4 Pro",
+      "description": "XiaomiBuds4Pro is the perfect choice for music and movie lovers who want to take their audio to the next dimension! Just turn on ...",
+      "duration_seconds": 55,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 177253,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Xiaomi Xiaomi Buds design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "RAJ5RgEBkd0",
+      "url": "https://www.youtube.com/watch?v=RAJ5RgEBkd0",
+      "title": "Everything about Xiaomi Buds 3T Pro",
+      "description": "Up to 40dB hybrid ANC with transparency mode Turn on Dimensional audio and get immersed into the music with ...",
+      "duration_seconds": 61,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 147434,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi Buds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "u85a-j-DVU0",
+      "url": "https://www.youtube.com/watch?v=u85a-j-DVU0",
+      "title": "Redmi Buds 3 Pro: Design",
+      "description": "Turn up your favorite music! It's time to enjoy #TheSoundYouWant with 35dB hybrid active noise cancellation. #RedmiBuds3Pro ...",
+      "duration_seconds": 35,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 86354,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Xiaomi Xiaomi Buds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "QgsTaSS0CI4",
+      "url": "https://www.youtube.com/watch?v=QgsTaSS0CI4",
+      "title": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green",
+      "description": "Unlocking a realm of style and sophistication, behold the legendary \"piano key\" design of #HUAWEIFreeBudsPro3 .",
+      "duration_seconds": 28,
+      "channel": "Huawei Mobile",
+      "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_is_verified": true,
+      "view_count": 11182,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "j5cqPl5l258",
+      "url": "https://www.youtube.com/watch?v=j5cqPl5l258",
+      "title": "HUAWEI FreeBuds 4 - See The Magic",
+      "description": "Take a look at the inner workings of the #HUAWEIFreeBuds4, our headphones that take Open-fit Active Noise Cancellation to new ...",
+      "duration_seconds": 62,
+      "channel": "Huawei Mobile MY",
+      "channel_id": "UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_url": "https://www.youtube.com/channel/UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_is_verified": true,
+      "view_count": 1571,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds official product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "9XKWfpt8GOA",
+      "url": "https://www.youtube.com/watch?v=9XKWfpt8GOA",
+      "title": "World's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro",
+      "description": "Introducing the world's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro, and others such as ...",
+      "duration_seconds": 51,
+      "channel": "Huawei Mobile MY",
+      "channel_id": "UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_url": "https://www.youtube.com/channel/UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_is_verified": true,
+      "view_count": 492,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "PMHkSdkBODE",
+      "url": "https://www.youtube.com/watch?v=PMHkSdkBODE",
+      "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+      "description": "Redefine yourself with the new Huawei Freebuds Pro. Get Entertainment Gift Package worth P2,099 and Huawei Band 4 worth P1 ...",
+      "duration_seconds": 30,
+      "channel": "Huawei Mobile PH",
+      "channel_id": "UCDHzBIQTttun4uMqdrrDFow",
+      "channel_url": "https://www.youtube.com/channel/UCDHzBIQTttun4uMqdrrDFow",
+      "channel_is_verified": null,
+      "view_count": 2271944,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "csltncy9n_k",
+      "url": "https://www.youtube.com/watch?v=csltncy9n_k",
+      "title": "JBL | Tour Pro 2 Noise Cancelling true wireless earbuds with smart case",
+      "description": "The Tour Pro 2 Noise Cancelling earbuds have an innovative smart charging case with touch display. Control the earbuds' ...",
+      "duration_seconds": 22,
+      "channel": "JBL",
+      "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+      "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+      "channel_is_verified": null,
+      "view_count": 145166,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "JBL JBL earbuds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "JOFfdRqX6gQ",
+      "url": "https://www.youtube.com/watch?v=JOFfdRqX6gQ",
+      "title": "HUAWEI FreeBuds Pro 2",
+      "description": "Experience sound in its most authentic, high-fidelity form with the #HUAWEIFreeBudsPro2. Co-engineered with Devialet for bright ...",
+      "duration_seconds": 71,
+      "channel": "Huawei Mobile SG",
+      "channel_id": "UCu0PPsTkcyLbpVr8HUhxCLQ",
+      "channel_url": "https://www.youtube.com/channel/UCu0PPsTkcyLbpVr8HUhxCLQ",
+      "channel_is_verified": null,
+      "view_count": 2615,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "yYri4qGSdLc",
+      "url": "https://www.youtube.com/watch?v=yYri4qGSdLc",
+      "title": "HUAWEI | FreeBuds 5",
+      "description": "Sprawdź na huawei.pl https://bit.ly/43XbRUX.",
+      "duration_seconds": 31,
+      "channel": "Huawei Mobile Polska",
+      "channel_id": "UC1pdHXxJqSWw16IYlszBtsw",
+      "channel_url": "https://www.youtube.com/channel/UC1pdHXxJqSWw16IYlszBtsw",
+      "channel_is_verified": null,
+      "view_count": 693,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "U3SuM8yNLH4",
+      "url": "https://www.youtube.com/watch?v=U3SuM8yNLH4",
+      "title": "Galaxy Buds Pro: 360 Audio and Auto Switch | Samsung",
+      "description": "Galaxy Buds Pro allows you to immerse yourself in sound like never before. For more information, visit ...",
+      "duration_seconds": 74,
+      "channel": "Samsung Hong Kong",
+      "channel_id": "UC3okrwlxs_di_00VDpM684g",
+      "channel_url": "https://www.youtube.com/channel/UC3okrwlxs_di_00VDpM684g",
+      "channel_is_verified": null,
+      "view_count": 260,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Samsung Galaxy Buds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "BzgR4cGViYE",
+      "url": "https://www.youtube.com/watch?v=BzgR4cGViYE",
+      "title": "HUAWEI FreeBuds Lipstick - design (1)",
+      "description": "Product build details explained of this ultra chic and highly fashionable earbuds audio product.",
+      "duration_seconds": 37,
+      "channel": "Huawei Mobile NL",
+      "channel_id": "UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_url": "https://www.youtube.com/channel/UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_is_verified": null,
+      "view_count": 118,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "pEzeqMQ5xv0",
+      "url": "https://www.youtube.com/watch?v=pEzeqMQ5xv0",
+      "title": "HUAWEI FreeBuds Lipstick - design (2)",
+      "description": "Product build details explained of this ultra chic and highly fashionable earbuds audio product.",
+      "duration_seconds": 28,
+      "channel": "Huawei Mobile NL",
+      "channel_id": "UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_url": "https://www.youtube.com/channel/UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_is_verified": null,
+      "view_count": 59,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    }
+  ]
+}

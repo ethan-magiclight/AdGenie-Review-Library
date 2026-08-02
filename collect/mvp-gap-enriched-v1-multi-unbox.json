@@ -1,0 +1,1470 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T08:41:47.743Z",
+  "source_files": [
+    "mvp-gap-official-shortlist-v1-pb-multi-unbox.json",
+    "mvp-gap-official-shortlist-v1-earbuds-multi-unbox.json"
+  ],
+  "cutoff_date": "2023-08-01",
+  "candidate_count": 27,
+  "passed_count": 8,
+  "excluded_count": 18,
+  "pending_count": 1,
+  "records": [
+    {
+      "video_id": "PMHkSdkBODE",
+      "url": "https://www.youtube.com/watch?v=PMHkSdkBODE",
+      "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+      "description": "Redefine yourself with the new Huawei Freebuds Pro. Get Entertainment Gift Package worth P2,099 and Huawei Band 4 worth P1 ...",
+      "duration_seconds": 30,
+      "channel": "Huawei Mobile PH",
+      "channel_id": "UCDHzBIQTttun4uMqdrrDFow",
+      "channel_url": "https://www.youtube.com/channel/UCDHzBIQTttun4uMqdrrDFow",
+      "channel_is_verified": null,
+      "view_count": 2271944,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+        "fulltitle": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+        "description": "Redefine yourself with the new Huawei Freebuds Pro. Get Entertainment Gift Package worth P2,099 and Huawei Band 4 worth P1,890 until December 3, 2020 via Huawei Store.",
+        "duration_seconds": 30,
+        "upload_date": "20201128",
+        "publish_date": "2020-11-28",
+        "channel": "Huawei Mobile PH",
+        "uploader": "Huawei Mobile PH",
+        "channel_url": "https://www.youtube.com/channel/UCDHzBIQTttun4uMqdrrDFow",
+        "channel_id": "UCDHzBIQTttun4uMqdrrDFow",
+        "view_count": 2271944,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=PMHkSdkBODE"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "gn4dAE85lPY",
+      "url": "https://www.youtube.com/watch?v=gn4dAE85lPY",
+      "title": "Dimensional audio | Xiaomi Buds 4 Pro",
+      "description": "XiaomiBuds4Pro is the perfect choice for music and movie lovers who want to take their audio to the next dimension! Just turn on ...",
+      "duration_seconds": 55,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 177253,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Xiaomi Xiaomi Buds design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Dimensional audio | Xiaomi Buds 4 Pro",
+        "fulltitle": "Dimensional audio | Xiaomi Buds 4 Pro",
+        "description": "#XiaomiBuds4Pro is the perfect choice for music and movie lovers who want to take their audio to the next dimension! Just turn on Dimensional audio - you'll be transported to a world of immersive sound that will have you saying, \"this is truly ear-resistible\"!\n\nMore at: http://s.mi.com/tqS17pQ4\n\nLearn More:\nhttp://s.mi.com/BTl0HI52 (Official website)\nhttps://twitter.com/xiaomi  (Twitter)\nhttps://facebook.com/xiaomiglobal (Facebook)\nhttps://instagram.com/xiaomi.global (Instagram)\nhttps://www.tiktok.com/@xiaomi.official (TikTok)\nhttps://www.pinterest.com/xiaomiglobal (Pinterest)\nhttps://c.mi.com (Xiaomi community)\nhttps://blog.mi.com (Xiaomi Blog)",
+        "duration_seconds": 54,
+        "upload_date": "20230303",
+        "publish_date": "2023-03-03",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 177253,
+        "tags": [
+          "Xiaomi",
+          "Redmi",
+          "Xiaomi MIUI",
+          "Xiaomi Phone",
+          "Xiaomi smartphone",
+          "Xiaomi product",
+          "Xiaomi smarthome",
+          "Mi",
+          "Mi Smarthome",
+          "Mi Home",
+          "MIUI",
+          "Xiaomi Studios",
+          "Mi Stery BOX",
+          "Shootlikeapro",
+          "redmi",
+          "Redmi Note",
+          "Xiaomi studios",
+          "Xiaomi 11",
+          "Smart Glasses",
+          "Smartphone",
+          "Device",
+          "Vacuum cleaner",
+          "youtube",
+          "smart",
+          "home",
+          "Mi 10",
+          "phone",
+          "smartphone",
+          "innovation",
+          "tech",
+          "charger",
+          "Xiaomi 12",
+          "mi 12"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=gn4dAE85lPY"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "RAJ5RgEBkd0",
+      "url": "https://www.youtube.com/watch?v=RAJ5RgEBkd0",
+      "title": "Everything about Xiaomi Buds 3T Pro",
+      "description": "Up to 40dB hybrid ANC with transparency mode Turn on Dimensional audio and get immersed into the music with ...",
+      "duration_seconds": 61,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 147434,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi Buds packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Everything about Xiaomi Buds 3T Pro",
+        "fulltitle": "Everything about Xiaomi Buds 3T Pro",
+        "description": "Up to 40dB hybrid ANC with transparency mode\nTurn on Dimensional audio and get immersed into the music with #XiaomiBuds3TPro!\n\n#ImmersiveBeatsMagicalSound\n\nLearn More:\nhttps://mi.com/global (Global official website)\nhttps://twitter.com/xiaomi  (Twitter)\nhttps://facebook.com/xiaomiglobal (Facebook)\nhttps://instagram.com/xiaomi.global (Instagram)\nhttps://www.tiktok.com/@xiaomi.official (TikTok)\nhttps://www.pinterest.com/xiaomiglobal (Pinterest)\nhttps://c.mi.com (Xiaomi community)\nhttps://blog.mi.com (Xiaomi Blog)",
+        "duration_seconds": 61,
+        "upload_date": "20220320",
+        "publish_date": "2022-03-20",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 147434,
+        "tags": [
+          "Xiaomi",
+          "Redmi",
+          "Xiaomi MIUI",
+          "Xiaomi Phone",
+          "Xiaomi smartphone",
+          "Xiaomi product",
+          "Xiaomi smarthome",
+          "Mi",
+          "Mi Smarthome",
+          "Mi Home",
+          "MIUI",
+          "Xiaomi Studios",
+          "Mi Stery BOX",
+          "Shootlikeapro",
+          "redmi",
+          "Redmi Note",
+          "Xiaomi studios",
+          "Xiaomi 11",
+          "Smart Glasses",
+          "Smartphone",
+          "Device",
+          "Vacuum cleaner",
+          "youtube",
+          "smart",
+          "home",
+          "Mi 10",
+          "phone",
+          "smartphone",
+          "innovation",
+          "tech",
+          "charger",
+          "Xiaomi 12",
+          "mi 12"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=RAJ5RgEBkd0"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "csltncy9n_k",
+      "url": "https://www.youtube.com/watch?v=csltncy9n_k",
+      "title": "JBL | Tour Pro 2 Noise Cancelling true wireless earbuds with smart case",
+      "description": "The Tour Pro 2 Noise Cancelling earbuds have an innovative smart charging case with touch display. Control the earbuds' ...",
+      "duration_seconds": 22,
+      "channel": "JBL",
+      "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+      "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+      "channel_is_verified": null,
+      "view_count": 145166,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "JBL JBL earbuds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "JBL | Tour Pro 2 Noise Cancelling true wireless earbuds with smart case",
+        "fulltitle": "JBL | Tour Pro 2 Noise Cancelling true wireless earbuds with smart case",
+        "description": "The Tour Pro 2 Noise Cancelling earbuds have an innovative smart charging case with touch display. Control the earbuds' settings, manage calls and playback, control your audio setting and battery level and set your alarm without taking out your phone, through the screen of the charging case. Enjoy a truly seamless experience thanks to the JBL Tour Pro 2 unique smart charging case without using your phone or the JBL Headphones App.",
+        "duration_seconds": 21,
+        "upload_date": "20221207",
+        "publish_date": "2022-12-07",
+        "channel": "JBL",
+        "uploader": "JBL",
+        "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+        "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+        "view_count": 145166,
+        "tags": [
+          "Noise Cancelling",
+          "spatial audio",
+          "JBL Pro Sound",
+          "high call quality",
+          "touch control",
+          "hands-free control",
+          "Bluetooth 5.3",
+          "Display charging case",
+          "Smart charging case"
+        ],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=csltncy9n_k"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "u85a-j-DVU0",
+      "url": "https://www.youtube.com/watch?v=u85a-j-DVU0",
+      "title": "Redmi Buds 3 Pro: Design",
+      "description": "Turn up your favorite music! It's time to enjoy #TheSoundYouWant with 35dB hybrid active noise cancellation. #RedmiBuds3Pro ...",
+      "duration_seconds": 35,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 86354,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Xiaomi Xiaomi Buds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Redmi Buds 3 Pro: Design",
+        "fulltitle": "Redmi Buds 3 Pro: Design",
+        "description": "Turn up your favorite music!\n\nIt's time to enjoy #TheSoundYouWant with 35dB hybrid active noise cancellation. #RedmiBuds3Pro #SmartLivingForEveryone\n\nLearn more here: https://www.mi.com/global/redmi-buds-3-pro/overview/",
+        "duration_seconds": 35,
+        "upload_date": "20210720",
+        "publish_date": "2021-07-20",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 86354,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=u85a-j-DVU0"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "0fbrWogmwkM",
+      "url": "https://www.youtube.com/watch?v=0fbrWogmwkM",
+      "title": "Shargeek Retro 67W Charger With Power Display",
+      "description": "We're passionate about bringing fun and high-performance products to our customers. This time we get you the Retro 67, ...",
+      "duration_seconds": 59,
+      "channel": "SHARGE",
+      "channel_id": "UCtWMZEAOSWhZIDOdwMG7JaQ",
+      "channel_url": "https://www.youtube.com/channel/UCtWMZEAOSWhZIDOdwMG7JaQ",
+      "channel_is_verified": null,
+      "view_count": 84730,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "SHARGE",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "SHARGE SHARGE power bank 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Shargeek Retro 67W Charger With Power Display",
+        "fulltitle": "Shargeek Retro 67W Charger With Power Display",
+        "description": "We're passionate about bringing fun and high-performance products to our customers. This time we get you the Retro 67, an updated version of the Retro 35. The Retro 67 pays homage to the classic movie, The Matrix, with a real-time battery indicator and matrix digital rain. It's not only a charger but also a worthy collectible.\n\n💯Power Display\n👏67W Max Output\n💍3 USB-C Ports\n🙋‍♀️Ultra-Tiny\n❤️24-Month Warranty\n...................\nFor more details: https://bit.ly/shargeretro67\nShargeek Official website: https://www.shargeek.com/",
+        "duration_seconds": 59,
+        "upload_date": "20221128",
+        "publish_date": "2022-11-28",
+        "channel": "SHARGE",
+        "uploader": "SHARGE",
+        "channel_url": "https://www.youtube.com/channel/UCtWMZEAOSWhZIDOdwMG7JaQ",
+        "channel_id": "UCtWMZEAOSWhZIDOdwMG7JaQ",
+        "view_count": 84730,
+        "tags": [
+          "#shargeek #powerbank #charger #phone #iPhone #iPhone14 #Mac #",
+          "#samsunggalaxywatch5pro",
+          "#samsung"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=0fbrWogmwkM"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "sg47u6rwOFo",
+      "url": "https://www.youtube.com/watch?v=sg47u6rwOFo",
+      "title": "Mi Powerbank Boost Pro 30000mAh | Crowdfunding Special",
+      "description": "Introducing #MiPowerBankBoostPro 30000mAh(18W). Max Power, Triple Output - Power Delivery(PD) 3.0 - Fast Re-Charging ...",
+      "duration_seconds": 44,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 53886,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi power bank packaging reveal official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Mi Powerbank Boost Pro 30000mAh | Crowdfunding Special",
+        "fulltitle": "Mi Powerbank Boost Pro 30000mAh | Crowdfunding Special",
+        "description": "Introducing #MiPowerBankBoostPro 30000mAh(18W).\n\nMax Power, Triple Output\n\n- Power Delivery(PD) 3.0 \n- Fast Re-Charging\n- Dual Input With Type-C\n- Advanced 16-Layer Circuit Protection\n\nAvailable on Special Crowdfunding price ₹̵2̵2̵9̵9̵ ₹1999/-\n\nLink: https://bit.ly/3sC7cV0",
+        "duration_seconds": 44,
+        "upload_date": "20210330",
+        "publish_date": "2021-03-30",
+        "channel": "Xiaomi India",
+        "uploader": "Xiaomi India",
+        "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+        "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+        "view_count": 53886,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=sg47u6rwOFo"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "Lz1BTirlGxo",
+      "url": "https://www.youtube.com/watch?v=Lz1BTirlGxo",
+      "title": "Introducing the new BOOST↑CHARGE™ Power Bank 5K with Lightning Connector by Belkin",
+      "description": "Designed especially for iPhone and iPad, this portable power bank is the first-to-market MFi-certified power bank to recharge via ...",
+      "duration_seconds": 33,
+      "channel": "Belkin",
+      "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_url": "https://www.youtube.com/channel/UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_is_verified": true,
+      "view_count": 11497,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank official product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Introducing the new BOOST↑CHARGE™ Power Bank 5K with Lightning Connector by Belkin",
+        "fulltitle": "Introducing the new BOOST↑CHARGE™ Power Bank 5K with Lightning Connector by Belkin",
+        "description": "Designed especially for iPhone and iPad, this portable power bank is the first-to-market MFi-certified power bank to recharge via Lightning connector, allowing you to use the same Lightning cable to recharge the power bank, as you use to recharge your iPhone. This one-cable solution makes this small, thin, lightweight power bank (aka portable charger) ideal for on-the-go charging and is fully MFi-certified to guarantee compatibility with iPhone and iPad.\n\nLearn more: https://www.belkin.com/us/p/P-F7U045/",
+        "duration_seconds": 32,
+        "upload_date": "20180816",
+        "publish_date": "2018-08-16",
+        "channel": "Belkin",
+        "uploader": "Belkin",
+        "channel_url": "https://www.youtube.com/channel/UCe1Q-ffTnLhZrFkfvKgxKCQ",
+        "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+        "view_count": 11497,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=Lz1BTirlGxo"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "ZSjB4sOn7Vo",
+      "url": "https://www.youtube.com/watch?v=ZSjB4sOn7Vo",
+      "title": "Baseus Powerbank丨Blade, Made for Laptops",
+      "description": "100W Power Delivery - Crafted with 2 PD USB-C ports certified for PD 3.0 and PPS with a power output going up to 100W, ...",
+      "duration_seconds": 33,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 10851,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Baseus Baseus power bank 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Baseus Powerbank丨Blade, Made for Laptops",
+        "fulltitle": "Baseus Powerbank丨Blade, Made for Laptops",
+        "description": "100W Power Delivery - Crafted with 2 PD USB-C ports certified for PD 3.0 and PPS with a power output going up to 100W, allowing you to fast charge your MacBook Pro 16-inch up to 36% in only 30 minutes. \n\nExplore more details: https://bit.ly/3E9ojFG",
+        "duration_seconds": 32,
+        "upload_date": "20230215",
+        "publish_date": "2023-02-15",
+        "channel": "Baseus",
+        "uploader": "Baseus",
+        "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+        "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+        "view_count": 10851,
+        "tags": [
+          "baseus",
+          "powerstrip",
+          "homeoffice",
+          "desktour",
+          "desksetup",
+          "powerbank",
+          "workfromhome",
+          "workfromanywhere",
+          "smarthome",
+          "applecharger",
+          "laptop",
+          "pcsetup",
+          "phoneaccessories",
+          "smarttech",
+          "technology",
+          "baseuspowerbank",
+          "baseusblade",
+          "laptops 2023",
+          "laptop accessories",
+          "laptop accessories must have",
+          "macbook pro"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=ZSjB4sOn7Vo"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "j-BlnKho2C0",
+      "url": "https://www.youtube.com/watch?v=j-BlnKho2C0",
+      "title": "Pocket size and yet powerful | 2 ports ugreen power bank 10 000 mah",
+      "description": "【Large 10000mAh Capacity in Slim Body】 【Power Bank with 2 USB A ports】 【Ultra-fast Recharge in 5 h Over USB C or ...",
+      "duration_seconds": 33,
+      "channel": "UGREEN Official",
+      "channel_id": "UCpB9bqufOA0OyjA85cvywXg",
+      "channel_url": "https://www.youtube.com/channel/UCpB9bqufOA0OyjA85cvywXg",
+      "channel_is_verified": null,
+      "view_count": 3285,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Unboxing",
+          "query": "UGREEN UGREEN power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Pocket size and yet powerful | 2 ports ugreen power bank 10 000 mah",
+        "fulltitle": "Pocket size and yet powerful | 2 ports ugreen power bank 10 000 mah",
+        "description": "【Large 10000mAh Capacity in Slim Body】\n【Power Bank with 2 USB A ports】\n【Ultra-fast Recharge in 5 h Over USB C or Micro USB ports】\n【LED Indicator to check left power】\n【Safety Priority】\n【Lightweight, Portable】\nNote: If your phone is with USB C/Lightning port, pls kindly use your USB Type C to USB A cable/Lightning cable (not included).\n\n\nProduct links:\nAmazon US: https://amzn.to/2qCeJs9\n\n🔴We are creating interesting content don't forget to subscribe: http://bit.ly/ugreenYTsu\n\n🖐️🖐️🖐️Say hi on our social media:\n-Facebook: https://www.facebook.com/ugreen.fans/ \n-Instagram：https://www.instagram.com/ugreen_offi... \n-Twitter：https://twitter.com/Ugreen_Official \n-Vkontakte: https://vk.com/ugreenofficial \n-Website: https://www.ugreen.com/ \n \n#ugreen #ugreenproducts #moreforyou",
+        "duration_seconds": 32,
+        "upload_date": "20191022",
+        "publish_date": "2019-10-22",
+        "channel": "UGREEN Official",
+        "uploader": "UGREEN Official",
+        "channel_url": "https://www.youtube.com/channel/UCpB9bqufOA0OyjA85cvywXg",
+        "channel_id": "UCpB9bqufOA0OyjA85cvywXg",
+        "view_count": 3285,
+        "tags": [
+          "best power bank 2019",
+          "power bank",
+          "power bank charger",
+          "portable power bank",
+          "best power bank",
+          "mobile power bank",
+          "smartphone accessories",
+          "anker",
+          "solar battery charger",
+          "tech",
+          "best power bank for smartphones",
+          "new power bank 2019",
+          "best compackt power bank",
+          "fast charging power bank 2019",
+          "best power bank for iphone",
+          "best power banks",
+          "pd power bank",
+          "power delivery power bank",
+          "ugreen",
+          "ugreen power bank"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=j-BlnKho2C0"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "4YiBy-zpRJU",
+      "url": "https://www.youtube.com/watch?v=4YiBy-zpRJU",
+      "title": "Baseus 20000Ah Amblight Digital Display Power Bank",
+      "description": "powerbank We just launched a new Powerbank!✨ ✓3 Output+3 Input ✓Supports QC3.0 quick charge ✓Real-time display of ...",
+      "duration_seconds": 39,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 2140,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Unboxing",
+          "query": "Baseus Baseus power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Baseus 20000Ah Amblight Digital Display Power Bank",
+        "fulltitle": "Baseus 20000Ah Amblight Digital Display Power Bank",
+        "description": "#powerbank We just launched a new Powerbank!✨\n\n✅3 Output+3 Input\n✅Supports QC3.0 quick charge\n✅Real-time display of current & voltage\n✅Supports PD 3.0 dual way quick charge\n\nThis is an all-around power bank which meets your all needs!🏠✈️\n\n👉http://bit.ly/2VnVBcb",
+        "duration_seconds": 39,
+        "upload_date": "20190102",
+        "publish_date": "2019-01-02",
+        "channel": "Baseus",
+        "uploader": "Baseus",
+        "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+        "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+        "view_count": 2140,
+        "tags": [
+          "electronics",
+          "powerbanks",
+          "iphone",
+          "iphone X",
+          "Macbook",
+          "iphone accessory"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=4YiBy-zpRJU"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "j5cqPl5l258",
+      "url": "https://www.youtube.com/watch?v=j5cqPl5l258",
+      "title": "HUAWEI FreeBuds 4 - See The Magic",
+      "description": "Take a look at the inner workings of the #HUAWEIFreeBuds4, our headphones that take Open-fit Active Noise Cancellation to new ...",
+      "duration_seconds": 62,
+      "channel": "Huawei Mobile MY",
+      "channel_id": "UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_url": "https://www.youtube.com/channel/UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_is_verified": true,
+      "view_count": 1571,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds official product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds 4 - See The Magic",
+        "fulltitle": "HUAWEI FreeBuds 4 - See The Magic",
+        "description": "Take a look at the inner workings of the #HUAWEIFreeBuds4, our headphones that take Open-fit Active Noise Cancellation to new heights & incorporate all-new adaptive ear-matching technology for even greater audio immersion.\n\nGet now, RRP: RM599\n🛒 HUAWEI Store Online:\nhttps://bit.ly/FreeBuds4HWStore\n🛒 HUAWEI Official Store on Shopee:\nhttps://bit.ly/FreeBuds4iShopee\n🛒 HUAWEI Flagship Store on Lazada:\nhttps://bit.ly/FreeBuds4iLazada\n\n🏬 HUAWEI Experience Store: \nhttps://bit.ly/FreeBuds4HES\n\n#HUAWEI #FreeBuds4i #Earbuds #LongBatteryLife #ActiveNoiseCancellation",
+        "duration_seconds": 62,
+        "upload_date": "20210901",
+        "publish_date": "2021-09-01",
+        "channel": "Huawei Mobile MY",
+        "uploader": "Huawei Mobile MY",
+        "channel_url": "https://www.youtube.com/channel/UCpNx2NVKY7j13vfs_Sfk1uQ",
+        "channel_id": "UCpNx2NVKY7j13vfs_Sfk1uQ",
+        "view_count": 1571,
+        "tags": [
+          "HUAWEI",
+          "HUAWEI FreeBuds 4",
+          "HUAWEI FreeBuds 4i",
+          "HUAWEI FreeBuds 3",
+          "HUAWEI FreeBuds",
+          "FreeBuds",
+          "Apple",
+          "Apple AirPods2",
+          "Airpods",
+          "Airpods 2",
+          "Samsung",
+          "Samsung Galaxy Buds",
+          "Galaxy Buds"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=j5cqPl5l258"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "yYri4qGSdLc",
+      "url": "https://www.youtube.com/watch?v=yYri4qGSdLc",
+      "title": "HUAWEI | FreeBuds 5",
+      "description": "Sprawdź na huawei.pl https://bit.ly/43XbRUX.",
+      "duration_seconds": 31,
+      "channel": "Huawei Mobile Polska",
+      "channel_id": "UC1pdHXxJqSWw16IYlszBtsw",
+      "channel_url": "https://www.youtube.com/channel/UC1pdHXxJqSWw16IYlszBtsw",
+      "channel_is_verified": null,
+      "view_count": 693,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI | FreeBuds 5",
+        "fulltitle": "HUAWEI | FreeBuds 5",
+        "description": "Sprawdź na huawei.pl https://bit.ly/43XbRUX",
+        "duration_seconds": 30,
+        "upload_date": "20230419",
+        "publish_date": "2023-04-19",
+        "channel": "Huawei Mobile Polska",
+        "uploader": "Huawei Mobile Polska",
+        "channel_url": "https://www.youtube.com/channel/UC1pdHXxJqSWw16IYlszBtsw",
+        "channel_id": "UC1pdHXxJqSWw16IYlszBtsw",
+        "view_count": 693,
+        "tags": [],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=yYri4qGSdLc"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "9XKWfpt8GOA",
+      "url": "https://www.youtube.com/watch?v=9XKWfpt8GOA",
+      "title": "World's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro",
+      "description": "Introducing the world's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro, and others such as ...",
+      "duration_seconds": 51,
+      "channel": "Huawei Mobile MY",
+      "channel_id": "UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_url": "https://www.youtube.com/channel/UCpNx2NVKY7j13vfs_Sfk1uQ",
+      "channel_is_verified": true,
+      "view_count": 492,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "World's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro",
+        "fulltitle": "World's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro",
+        "description": "Introducing the world's first intelligent dynamic noise-cancelling TWS earphones - HUAWEI FreeBuds Pro, and others such as HUAWEI FreeLace Pro and HUAWEI FreeBuds 3i. There is always one for you!\n\nGet the latest HUAWEI FreeBuds Pro for only RM699 and enjoy double rewards*!\n1. *RM100 Instant rebate (can be used on 10th & 11th Oct 2020 only)\n2. Sales launch Free Gifts Worth Up to RM138*\n\nFor more information about HUAWEI FreeBuds Pro: http://bit.ly/FreeBudsProYT\n\n*Terms & conditions apply, while stocks last.: \nhttp://bit.ly/MemberCenterCampaign\nhttp://bit.ly/HWStoreList\n\n#HUAWEI #StayConnected #RedefineNoiseCancellation #HUWEIFreeBudsPro",
+        "duration_seconds": 51,
+        "upload_date": "20201005",
+        "publish_date": "2020-10-05",
+        "channel": "Huawei Mobile MY",
+        "uploader": "Huawei Mobile MY",
+        "channel_url": "https://www.youtube.com/channel/UCpNx2NVKY7j13vfs_Sfk1uQ",
+        "channel_id": "UCpNx2NVKY7j13vfs_Sfk1uQ",
+        "view_count": 492,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=9XKWfpt8GOA"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "JyzjG793SDM",
+      "url": "https://www.youtube.com/watch?v=JyzjG793SDM",
+      "title": "Baseus 10000mAh Power Bank",
+      "description": "Get a boost of power whether you're in the office or on-the-go with our compact Baseus 10000mAh Power Bank   ...",
+      "duration_seconds": 23,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 370,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Baseus Baseus power bank 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Baseus 10000mAh Power Bank",
+        "fulltitle": "Baseus 10000mAh Power Bank",
+        "description": "⚡Get a boost of power whether you’re in the office or on-the-go with our compact Baseus 10000mAh Power Bank🏃 ⠀\n\n🛒:http://bit.ly/2FpX5va\n\nOfficial Website: www.baseus.com\nAliexpress Store: baseus.aliexpress.com/store\n\nwe share our passion for creating practical, aesthetically pleasing products that utilize the latest technology to simplify your life📱 💻🚗.\n\nOur Tech Gear:\nBaseus Chargers\nBaseus Power Banks\nPhone Charging Cables\nCar Mount Holder\nMobile Phone Stand\nMusic & Audio\nComputer & Office\n\n📱Follow Us To Join Baseus Community\n\n★ Facebook: https://www.facebook.com/Baseus.fans\n★ Twitter: https://twitter.com/Baseus_Official\n★ Instagram: https://www.instagram.com/baseus.fans/\n★ Pinterest: https://www.pinterest.com/Baseus_Offi...\n★ VK: https://vk.com/id482990120",
+        "duration_seconds": 22,
+        "upload_date": "20190521",
+        "publish_date": "2019-05-21",
+        "channel": "Baseus",
+        "uploader": "Baseus",
+        "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+        "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+        "view_count": 370,
+        "tags": [
+          "baseus",
+          "powerbanks",
+          "power bank",
+          "best power bank",
+          "portable power bank",
+          "power bank quick charge",
+          "power bank quick charge 3.0 murah",
+          "power bank quick charge 3.0",
+          "best quick charge powerbank"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=JyzjG793SDM"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "U3SuM8yNLH4",
+      "url": "https://www.youtube.com/watch?v=U3SuM8yNLH4",
+      "title": "Galaxy Buds Pro: 360 Audio and Auto Switch | Samsung",
+      "description": "Galaxy Buds Pro allows you to immerse yourself in sound like never before. For more information, visit ...",
+      "duration_seconds": 74,
+      "channel": "Samsung Hong Kong",
+      "channel_id": "UC3okrwlxs_di_00VDpM684g",
+      "channel_url": "https://www.youtube.com/channel/UC3okrwlxs_di_00VDpM684g",
+      "channel_is_verified": null,
+      "view_count": 260,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Samsung Galaxy Buds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Galaxy Buds Pro: 360 Audio and Auto Switch | Samsung",
+        "fulltitle": "Galaxy Buds Pro: 360 Audio and Auto Switch | Samsung",
+        "description": "Galaxy Buds Pro allows you to immerse yourself in sound like never before.\nFor more information, visit http://smsng.co/GalaxyBudsPro",
+        "duration_seconds": 73,
+        "upload_date": "20210222",
+        "publish_date": "2021-02-22",
+        "channel": "Samsung Hong Kong",
+        "uploader": "Samsung Hong Kong",
+        "channel_url": "https://www.youtube.com/channel/UC3okrwlxs_di_00VDpM684g",
+        "channel_id": "UC3okrwlxs_di_00VDpM684g",
+        "view_count": 260,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=U3SuM8yNLH4"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "BzgR4cGViYE",
+      "url": "https://www.youtube.com/watch?v=BzgR4cGViYE",
+      "title": "HUAWEI FreeBuds Lipstick - design (1)",
+      "description": "Product build details explained of this ultra chic and highly fashionable earbuds audio product.",
+      "duration_seconds": 37,
+      "channel": "Huawei Mobile NL",
+      "channel_id": "UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_url": "https://www.youtube.com/channel/UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_is_verified": null,
+      "view_count": 118,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Lipstick - design (1)",
+        "fulltitle": "HUAWEI FreeBuds Lipstick - design (1)",
+        "description": "Product build details explained of this ultra chic and highly fashionable earbuds audio product.",
+        "duration_seconds": 36,
+        "upload_date": "20220201",
+        "publish_date": "2022-02-01",
+        "channel": "Huawei Mobile NL",
+        "uploader": "Huawei Mobile NL",
+        "channel_url": "https://www.youtube.com/channel/UCKaCM73LgFe5-X3vPjn6j3g",
+        "channel_id": "UCKaCM73LgFe5-X3vPjn6j3g",
+        "view_count": 118,
+        "tags": [
+          "#HUAWEIFreeBudsLipstick"
+        ],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=BzgR4cGViYE"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "pEzeqMQ5xv0",
+      "url": "https://www.youtube.com/watch?v=pEzeqMQ5xv0",
+      "title": "HUAWEI FreeBuds Lipstick - design (2)",
+      "description": "Product build details explained of this ultra chic and highly fashionable earbuds audio product.",
+      "duration_seconds": 28,
+      "channel": "Huawei Mobile NL",
+      "channel_id": "UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_url": "https://www.youtube.com/channel/UCKaCM73LgFe5-X3vPjn6j3g",
+      "channel_is_verified": null,
+      "view_count": 59,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Lipstick - design (2)",
+        "fulltitle": "HUAWEI FreeBuds Lipstick - design (2)",
+        "description": "Product build details explained of this ultra chic and highly fashionable earbuds audio product.",
+        "duration_seconds": 28,
+        "upload_date": "20220201",
+        "publish_date": "2022-02-01",
+        "channel": "Huawei Mobile NL",
+        "uploader": "Huawei Mobile NL",
+        "channel_url": "https://www.youtube.com/channel/UCKaCM73LgFe5-X3vPjn6j3g",
+        "channel_id": "UCKaCM73LgFe5-X3vPjn6j3g",
+        "view_count": 59,
+        "tags": [
+          "#HUAWEIFreeBudsLipstick"
+        ],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=pEzeqMQ5xv0"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "9YjjqMCW7Kw",
+      "url": "https://www.youtube.com/watch?v=9YjjqMCW7Kw",
+      "title": "Xiaomi Pocket PowerBank 10000mAh",
+      "description": "Stay powered up all day with the #XiaomiPocketPowerBank 10000mAh! Compact, powerful, and perfect for charging on the go.",
+      "duration_seconds": 57,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 35888,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Unboxing",
+          "query": "Xiaomi Xiaomi power bank what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Xiaomi Pocket PowerBank 10000mAh",
+        "fulltitle": "Xiaomi Pocket PowerBank 10000mAh",
+        "description": "Stay powered up all day with the #XiaomiPocketPowerBank 10000mAh! \nCompact, powerful, and perfect for charging on the go.\n\nThe Sale is Live.\nBuy Now: bit.ly/XiaomiPocketPowerBank",
+        "duration_seconds": 57,
+        "upload_date": "20240717",
+        "publish_date": "2024-07-17",
+        "channel": "Xiaomi India",
+        "uploader": "Xiaomi India",
+        "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+        "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+        "view_count": 35888,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=9YjjqMCW7Kw"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "-ggrxRcWFxI",
+      "url": "https://www.youtube.com/watch?v=-ggrxRcWFxI",
+      "title": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)",
+      "description": "Power up your devices with ease using the Belkin BoostCharge Magnetic Foldable Wireless Charger — a compact, ...",
+      "duration_seconds": 29,
+      "channel": "Belkin",
+      "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_url": "https://www.youtube.com/channel/UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "channel_is_verified": true,
+      "view_count": 27291,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank official product design",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)",
+        "fulltitle": "Belkin BoostCharge Magnetic Foldable Wireless Charger – MagSafe & Qi2 Fast Charging (15W)",
+        "description": "Power up your devices with ease using the Belkin BoostCharge Magnetic Foldable Wireless Charger — a compact, MagSafe-compatible charging solution designed for convenience, performance, and portability.\n\nDelivering up to 15W of fast wireless charging with the latest Qi2 technology, this charger keeps your devices powered quickly and efficiently. The folding stand design makes it perfect for travel, desktops, or bedside charging setups — so you can stay connected wherever you go.\n\n⚡ Key Features:\n- MagSafe compatible: Effortless snap-on alignment for iPhone and MagSafe-enabled devices.\n- Qi2 wireless charging: Next-generation standard for faster, more efficient charging.\n- Up to 15W fast charge: Power your devices quickly with high-speed wireless performance.\n- Compact and foldable: Space-saving design ideal for travel and everyday use.\n- Versatile and reliable: Perfect for workspaces, nightstands, or on-the-go charging.\n\nCharge smarter and travel lighter with BoostCharge Magnetic Foldable Wireless Charger — the ultimate blend of power and portability.\n\n🔗 Learn more: https://www.belkin.com/p/magnetic-foldable-wireless-charger-with-qi2-15w/WIB007ttBK.html\n\n📱 Stay connected:\nhttps://www.facebook.com/Belkin/\nhttps://www.instagram.com/belkin/\nhttps://www.tiktok.com/@belkin\nhttps://x.com/belkin\nhttps://www.pinterest.com/Belkin\n\n#belkin #boostcharge #wirelesscharger #magsafe #qi2 #fastcharging",
+        "duration_seconds": 28,
+        "upload_date": "20240910",
+        "publish_date": "2024-09-10",
+        "channel": "Belkin",
+        "uploader": "Belkin",
+        "channel_url": "https://www.youtube.com/channel/UCe1Q-ffTnLhZrFkfvKgxKCQ",
+        "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+        "view_count": 27291,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=-ggrxRcWFxI"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "O2aOx8t0GYg",
+      "url": "https://www.youtube.com/watch?v=O2aOx8t0GYg",
+      "title": "BoostCharge Power Bank 20K",
+      "description": "Get over 78 additional hours of battery life for your iPhone 14/13/12, iPad or Samsung Galaxy, so you can stay connected longer.",
+      "duration_seconds": 41,
+      "channel": "Belkin EMEA",
+      "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_is_verified": null,
+      "view_count": 15798,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Unboxing",
+          "query": "Belkin Belkin power bank what's in the box official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "BoostCharge Power Bank 20K",
+        "fulltitle": "BoostCharge Power Bank 20K",
+        "description": "Get over 78 additional hours of battery life for your iPhone 14/13/12, iPad or Samsung Galaxy, so you can stay connected longer. It provides power through its USB-C port and dual USB-A ports and comes with a USB-A to USB-C cable for immediate, out of box use.\n\nLearn more here: https://www.belkin.com/uk/power-bank-20k/P-BPB012.html\n\nStay Connected With Us!\nhttps://www.instagram.com/belkin_uk/\nhttps://www.facebook.com/BelkinUnited...\nhttps://www.tiktok.com/@belkin.uk",
+        "duration_seconds": 40,
+        "upload_date": "20230907",
+        "publish_date": "2023-09-07",
+        "channel": "Belkin EMEA",
+        "uploader": "Belkin EMEA",
+        "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+        "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+        "view_count": 15799,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=O2aOx8t0GYg"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "oJ9bOZPu1Cw",
+      "url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw",
+      "title": "Beats Studio Buds +: What the Experts are Saying!",
+      "description": "Watch as top tech reviewers break down why the new Beats Studio Buds + are a game changer. From the iconic transparent look ...",
+      "duration_seconds": 73,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 13406,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Beats Beats earbuds product details official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Unboxing",
+          "query": "Beats Beats earbuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 2,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Beats Studio Buds +: What the Experts are Saying!",
+        "fulltitle": "Beats Studio Buds +: What the Experts are Saying!",
+        "description": "Watch as top tech reviewers break down why the new Beats Studio Buds + are a game changer. From the iconic transparent look to superior noise cancellation and universal compatibility, discover why these are the must have earbuds of the year.\n\nProduct: Beats Studio Buds +\nDesign: Iconic Transparent, Black/Gold, and Ivory options\nNoise Control: Up to 1.6x stronger Active Noise Cancelling (ANC)\nTransparency: Up to 2x improved Transparency mode\nBattery Life: Up to 36 hours total (9h from buds + 27h from case)\nCompatibility: Native one touch pairing for both iOS and Android\n\nKey Features:\n\nAcoustic Architecture: Three new vents improve audio precision and relieve ear pressure for all day comfort.\nEnhanced Calls: 3x larger microphones and a powerful processor for crystal clear voice quality.\nSpatial Audio: Supports Dolby Atmos for immersive, multi dimensional sound.\nFast Fuel: A quick 5 minute charge provides up to 1 hour of additional playback.\nUniversal Controls: Simple physical \"b\" button for music, calls, and toggling listening modes.\n\nFAQs:\n\nHow do the Studio Buds + differ from the original Studio Buds?\nCan I use the \"Hey Siri\" voice assistant?\n\nExplore more: [https://www.beatsbydre.com/earbuds/studio-buds-plus-wireless-noise-cancelling]\nNeed help? [https://www.beatsbydre.com/support]\n\nBehind the Design of Beats Studio Buds +: [https://www.youtube.com/watch?v=UKgTMw4-3hA]\nTips & Tricks for iOS: [https://www.youtube.com/watch?v=dOYk93qEy3o]\nTips & Tricks for Android: [https://www.youtube.com/watch?v=_97mCpFIY8Q]\n\n00:00:00: Iconic Transparent Design\n00:00:12: Superior Audio Experience\n00:00:22: Comfort and All Day Fit\n00:00:33: Advanced Noise Cancellation\n00:00:42: Crystal Clear Call Quality\n00:00:50: Extended Battery Life\n00:00:59: Universal Compatibility\n\n#BeatsStudioBudsPlus\n#TechReview\n#BeatsByDre\n#WirelessEarbuds\n#AudioGear\n#NoiseCancelling\n#EarbudReview\n#Apple\n#Android\n\n-\n\nAs compared to Beats Studio Buds (1st generation).\n\nTesting conducted by Apple in March 2023 using preproduction Beats Studio Buds + and Charging Case units and software paired with iPhone 13 Pro and prerelease software. The playlist consisted of 358 unique audio tracks purchased from the iTunes Store (256-Kbps AAC encoding). Volume was set to 50% and Active Noise Cancellation and Transparency were turned off. Testing consisted of full Beats Studio Buds + battery discharge while playing audio until the first Beats Studio Buds + stopped playback. Battery life depends on device settings, environment, usage, and many other factors.\n\nRequires an iCloud account and a compatible Apple device running the latest operating system software.\n\nGoogle Fast Pair requires a compatible Android device running Android 8.0 or later, with Google Play Services enabled. Android and Google Play are trademarks of Google LLC.\n\nCompatible hardware and software required. Works with compatible content in supported apps. Not all content available in Dolby Atmos.\n\nTesting conducted by Apple in March 2023 using preproduction Beats Studio Buds + and Charging Case units and software paired with iPhone 13/iPhone 14 units and pre-release software. The playlist consisted of 358 unique audio tracks purchased from the iTunes Store (256-Kbps AAC encoding). Volume was set to 50% and Active Noise Cancellation and Transparency were turned off. 5-minute charge testing conducted with drained Beats Studio Buds + that were charged for 5 minutes, then audio playback was started until the first Beats Studio Buds + stopped playback. Listening time depends on device settings, environment, usage and many other factors.\n\nSiri may not be available in all languages or in all areas, and features may vary by area. Compatible device and internet access required. Cellular data charges may apply. Devices must support and have the latest operating system software.",
+        "duration_seconds": 72,
+        "upload_date": "20230808",
+        "publish_date": "2023-08-08",
+        "channel": "Beats by Dre",
+        "uploader": "Beats by Dre",
+        "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+        "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+        "view_count": 13406,
+        "tags": [],
+        "categories": [
+          "Sports"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "QgsTaSS0CI4",
+      "url": "https://www.youtube.com/watch?v=QgsTaSS0CI4",
+      "title": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green",
+      "description": "Unlocking a realm of style and sophistication, behold the legendary \"piano key\" design of #HUAWEIFreeBudsPro3 .",
+      "duration_seconds": 28,
+      "channel": "Huawei Mobile",
+      "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_is_verified": true,
+      "view_count": 11182,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Unboxing",
+          "query": "Huawei FreeBuds official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green",
+        "fulltitle": "HUAWEI FreeBuds Pro 3 - Minimalist Look in Green",
+        "description": "Unlocking a realm of style and sophistication, behold the legendary \"piano key\" design of #HUAWEIFreeBudsPro3 . These earbuds offer a truly remarkable aesthetic, harmonising seamlessly with your personal style. #FashionForward\n\nLearn More: consumer.huawei.com",
+        "duration_seconds": 28,
+        "upload_date": "20231031",
+        "publish_date": "2023-10-31",
+        "channel": "Huawei Mobile",
+        "uploader": "Huawei Mobile",
+        "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+        "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+        "view_count": 11180,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=QgsTaSS0CI4"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "4ZRBaV5etlA",
+      "url": "https://www.youtube.com/watch?v=4ZRBaV5etlA",
+      "title": "Belkin BoostCharge 3 Port Laptop Power Bank 20K",
+      "description": "Charge your laptop, MacBook and other devices quickly and safely with this power bank with a 20K§ battery capacity. Ideal for ...",
+      "duration_seconds": 24,
+      "channel": "Belkin EMEA",
+      "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_is_verified": null,
+      "view_count": 4899,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Belkin Belkin power bank product details official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Belkin BoostCharge 3 Port Laptop Power Bank 20K",
+        "fulltitle": "Belkin BoostCharge 3 Port Laptop Power Bank 20K",
+        "description": "Charge your laptop, MacBook and other devices quickly and safely with this power bank with a 20K§ battery capacity. Ideal for camping or travelling on long trips, you’ll have up to 65W of fast Power Delivery charging when using a single USB-C port. Two USB-C ports and a USB-A port enable three devices to be charged simultaneously.\n\nLearn more: https://www.belkin.com/uk/p/3-port-laptop-power-bank-20k/BPB020btBK.html\n\nStay connected with us!\nhttps://www.instagram.com/belkin_uk\nhttps://www.tiktok.com/@belkin.uk\nhttps://www.facebook.com/BelkinUnitedKingdom\n\n§Contains a 19,200 mAh internal battery. Amount of discharge to user's device is less and may vary depending on various conditions.",
+        "duration_seconds": 24,
+        "upload_date": "20240923",
+        "publish_date": "2024-09-23",
+        "channel": "Belkin EMEA",
+        "uploader": "Belkin EMEA",
+        "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+        "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+        "view_count": 4899,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=4ZRBaV5etlA"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "lsE4YqFVrWs",
+      "url": "https://www.youtube.com/watch?v=lsE4YqFVrWs",
+      "title": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance",
+      "description": "Massive Capacity 25000mAh Power in a Pocket-Sized Energy Pillar 140W Type-C PD3.1Full Power Charging for MacBook Pro ...",
+      "duration_seconds": 29,
+      "channel": "CUKTECH",
+      "channel_id": "UCQ3iK9KQU9e8sfUUP6oRRdA",
+      "channel_url": "https://www.youtube.com/channel/UCQ3iK9KQU9e8sfUUP6oRRdA",
+      "channel_is_verified": null,
+      "view_count": 1984,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "CUKTECH",
+          "target_genre": "Unboxing",
+          "query": "CUKTECH CUKTECH power bank official first look",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance",
+        "fulltitle": "CUKTECH NO.20 Power Bank, Stylish and Portable Performance",
+        "description": "Massive Capacity 25000mAh Power in a Pocket-Sized Energy Pillar\n140W Type-C PD3.1Full Power Charging for MacBook Pro\n210W Multi-port Output Max\n1.54\" TFT Color Display-Visualize the energy flow andmonitor the battery's performance\nDo you want to learn more? Just click here：https://www.indiegogo.com/projects/cuktech-world-s-most-powerful-portable-powerbank#/",
+        "duration_seconds": 28,
+        "upload_date": "20230807",
+        "publish_date": "2023-08-07",
+        "channel": "CUKTECH",
+        "uploader": "CUKTECH",
+        "channel_url": "https://www.youtube.com/channel/UCQ3iK9KQU9e8sfUUP6oRRdA",
+        "channel_id": "UCQ3iK9KQU9e8sfUUP6oRRdA",
+        "view_count": 1984,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=lsE4YqFVrWs"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "h6DVhHfZMGY",
+      "url": "https://www.youtube.com/watch?v=h6DVhHfZMGY",
+      "title": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus",
+      "description": "Découvrez la batterie externe Nexode, le choix ultime pour charger votre ordinateur par UGREEN ! Avec des sorties de 100W, ...",
+      "duration_seconds": 31,
+      "channel": "UGREEN Europe",
+      "channel_id": "UClXH00XT78IZiON2iscaN-w",
+      "channel_url": "https://www.youtube.com/channel/UClXH00XT78IZiON2iscaN-w",
+      "channel_is_verified": null,
+      "view_count": 1143,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "UGREEN UGREEN power bank design film official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus",
+        "fulltitle": "UGREEN Nexode Batterie Externe | Charge Super Rapide 100W pour votre ordinateur portable et Plus",
+        "description": "Découvrez la batterie externe Nexode, le choix ultime pour charger votre ordinateur par UGREEN ! Avec des sorties de 100W, elle offre une charge ultra-rapide pour les ordinateurs portables et plusieurs appareils simultanément. Son design cylindrique élégant assure une prise en main confortable et se rangera facilement dans votre bagage à main. Légère et puissante, la batterie Nexode active vos capacités de charge où que vous soyez. Découvrez-en plus dans notre vidéo - n'oubliez pas de liker, de vous abonner et de rester toujours alimenté avec Nexode par UGREEN ! \n\n#NexodePowerBank #UGREEN #100WCharging #FastCharging #LaptopCharging #TravelEssentials",
+        "duration_seconds": 30,
+        "upload_date": "20240710",
+        "publish_date": "2024-07-10",
+        "channel": "UGREEN Europe",
+        "uploader": "UGREEN Europe",
+        "channel_url": "https://www.youtube.com/channel/UClXH00XT78IZiON2iscaN-w",
+        "channel_id": "UClXH00XT78IZiON2iscaN-w",
+        "view_count": 1143,
+        "tags": [],
+        "categories": [
+          "People & Blogs"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=h6DVhHfZMGY"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "JOFfdRqX6gQ",
+      "url": "https://www.youtube.com/watch?v=JOFfdRqX6gQ",
+      "title": "HUAWEI FreeBuds Pro 2",
+      "description": "Experience sound in its most authentic, high-fidelity form with the #HUAWEIFreeBudsPro2. Co-engineered with Devialet for bright ...",
+      "duration_seconds": 71,
+      "channel": "Huawei Mobile SG",
+      "channel_id": "UCu0PPsTkcyLbpVr8HUhxCLQ",
+      "channel_url": "https://www.youtube.com/channel/UCu0PPsTkcyLbpVr8HUhxCLQ",
+      "channel_is_verified": null,
+      "view_count": 2615,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Huawei FreeBuds 360 product showcase",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": null,
+      "hard_filter_status": "pending",
+      "hard_filter_reasons": [],
+      "enrich_error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --dump-json --skip-download --no-warnings --no-playlist https://www.youtube.com/watch?v=JOFfdRqX6gQ\nERROR: [youtube] JOFfdRqX6gQ: This video is not available\n"
+    }
+  ]
+}

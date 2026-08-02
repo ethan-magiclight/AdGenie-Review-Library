@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T09:38:33.041Z",
+  "source": "mvp-gap-candidates-v1.json",
+  "candidate_count": 17,
+  "candidates": [
+    {
+      "video_id": "_kfGcwCh8Us",
+      "url": "https://www.youtube.com/watch?v=_kfGcwCh8Us",
+      "title": "Introducing the Sony WF-C510 Truly Wireless Earbuds",
+      "description": "Discover the new WF-C510 Truly Wireless Earbuds from Sony: ...",
+      "duration_seconds": 65,
+      "channel": "Sony Europe",
+      "channel_id": "UCsmJ-6uyV8HDxO0BmPWk-kQ",
+      "channel_url": "https://www.youtube.com/channel/UCsmJ-6uyV8HDxO0BmPWk-kQ",
+      "channel_is_verified": null,
+      "view_count": 63017,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "Lookbook",
+          "query": "Sony WF earbuds street style campaign",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Sony WF earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 2,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "0bMjY-CSQqc",
+      "url": "https://www.youtube.com/watch?v=0bMjY-CSQqc",
+      "title": "Sony | WF-1000XM3 Truly Wireless Noise-Canceling earbuds with up to 24 hours of listening",
+      "description": "The Sony WF-1000XM3 Truly Wireless Earbuds with up to 24 hours of battery life. On a full charge, the headphones offer 6 hours ...",
+      "duration_seconds": 16,
+      "channel": "Sony Electronics",
+      "channel_id": "UCSDWiL-3tzO1yXLYOYU9lyQ",
+      "channel_url": "https://www.youtube.com/channel/UCSDWiL-3tzO1yXLYOYU9lyQ",
+      "channel_is_verified": true,
+      "view_count": 4424744,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "Daily Routine",
+          "query": "Sony WF earbuds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "-9hp0yOloSM",
+      "url": "https://www.youtube.com/watch?v=-9hp0yOloSM",
+      "title": "Sony | WF-1000XM3 Truly Wireless Noise-Canceling Earbuds with Premium Sound Quality",
+      "description": "The Sony WF-1000XM3 Earbuds: Freedom perfected in a truly wireless design, with industry-leading noise-canceling powered by ...",
+      "duration_seconds": 17,
+      "channel": "Sony Electronics",
+      "channel_id": "UCSDWiL-3tzO1yXLYOYU9lyQ",
+      "channel_url": "https://www.youtube.com/channel/UCSDWiL-3tzO1yXLYOYU9lyQ",
+      "channel_is_verified": true,
+      "view_count": 1763474,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "Lookbook",
+          "query": "Sony WF earbuds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "AN8q3EqnI2g",
+      "url": "https://www.youtube.com/watch?v=AN8q3EqnI2g",
+      "title": "How to wear your Galaxy Buds Live for the best sound and fit | Samsung US",
+      "description": "To get the best sound from your Galaxy Buds Live, make sure you're wearing them properly. First you'll want to attach the wing ...",
+      "duration_seconds": 76,
+      "channel": "Samsung Care",
+      "channel_id": "UC49jmyN6XHmLKZUY9nSjdhA",
+      "channel_url": "https://www.youtube.com/channel/UC49jmyN6XHmLKZUY9nSjdhA",
+      "channel_is_verified": true,
+      "view_count": 404692,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Lookbook",
+          "query": "Samsung Galaxy Buds lifestyle campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "RJNpfh1QumE",
+      "url": "https://www.youtube.com/watch?v=RJNpfh1QumE",
+      "title": "How to Get the Perfect Fit with Beats Fit Pro | Step by Step Guide",
+      "description": "Maximize your audio experience with this official guide on how to wear Beats Fit Pro. Learn how to choose the right ear tips, ...",
+      "duration_seconds": 40,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 349247,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Daily Routine",
+          "query": "Beats Beats earbuds daily routine official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "IU_q-jVhJsI",
+      "url": "https://www.youtube.com/watch?v=IU_q-jVhJsI",
+      "title": "How to wear your Galaxy Buds3 for the best sound and fit | Samsung US",
+      "description": "Great audio starts with making sure your Samsung Galaxy Buds 3 are fitted correctly. For the best sound and fit, adjust your Buds ...",
+      "duration_seconds": 61,
+      "channel": "Samsung Care",
+      "channel_id": "UC49jmyN6XHmLKZUY9nSjdhA",
+      "channel_url": "https://www.youtube.com/channel/UC49jmyN6XHmLKZUY9nSjdhA",
+      "channel_is_verified": true,
+      "view_count": 116082,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Lookbook",
+          "query": "Samsung Galaxy Buds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "dOYk93qEy3o",
+      "url": "https://www.youtube.com/watch?v=dOYk93qEy3o",
+      "title": "Beats Studio Buds + iOS Master Guide: 7 Tips & Tricks You Need!",
+      "description": "Unlock the full potential of your Beats Studio Buds + with this comprehensive guide for iOS. Learn how to customize your controls, ...",
+      "duration_seconds": 117,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 106750,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Beats Beats earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "geivoMDgPtc",
+      "url": "https://www.youtube.com/watch?v=geivoMDgPtc",
+      "title": "Sony | How to fit and wear – WF-1000XM5 Earbuds",
+      "description": "Shop for top deals on the Sony WF-1000XM5 and more here: https://bit.ly/wfm5_fitandwear If you are interested in a Sony product ...",
+      "duration_seconds": 92,
+      "channel": "Sony Connect (Sony Electronics Support US)",
+      "channel_id": "UC3Ylq6PWIvWufi4CRrXm80A",
+      "channel_url": "https://www.youtube.com/channel/UC3Ylq6PWIvWufi4CRrXm80A",
+      "channel_is_verified": true,
+      "view_count": 100114,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sony",
+          "target_genre": "How-To Tutorial",
+          "query": "Sony WF earbuds official setup guide",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "_97mCpFIY8Q",
+      "url": "https://www.youtube.com/watch?v=_97mCpFIY8Q",
+      "title": "Beats Studio Buds +: Ultimate Android Tips, Tricks & Setup Guide",
+      "description": "Unlock the full potential of your Beats Studio Buds + on Android! This step by step guide walks you through essential features like ...",
+      "duration_seconds": 103,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 41142,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "How-To Tutorial",
+          "query": "Beats Beats earbuds official setup guide",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "CDYM7t0fZjE",
+      "url": "https://www.youtube.com/watch?v=CDYM7t0fZjE",
+      "title": "Emma Chamberlain in the Cosmos | Beats Studio Buds +",
+      "description": "Discover the beauty of immersive sound with the new Beats Studio Buds +. Coming 9/6 in two cosmos-inspired colors for an ...",
+      "duration_seconds": 38,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 33669,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Beats Beats earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "oJ9bOZPu1Cw",
+      "url": "https://www.youtube.com/watch?v=oJ9bOZPu1Cw",
+      "title": "Beats Studio Buds +: What the Experts are Saying!",
+      "description": "Watch as top tech reviewers break down why the new Beats Studio Buds + are a game changer. From the iconic transparent look ...",
+      "duration_seconds": 73,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 13406,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Daily Routine",
+          "query": "Beats Beats earbuds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "inZ1x4tD7eU",
+      "url": "https://www.youtube.com/watch?v=inZ1x4tD7eU",
+      "title": "Beats Studio Buds by Futura Laboratories | Beats by Dre",
+      "description": "Form and function intersect on Futura Laboratories' latest product collaboration: Beats Studio Buds. Elevated by the pioneering ...",
+      "duration_seconds": 46,
+      "channel": "Beats by Dre",
+      "channel_id": "UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_url": "https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ",
+      "channel_is_verified": true,
+      "view_count": 9363,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Beats",
+          "target_genre": "Lookbook",
+          "query": "Beats Beats earbuds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "VzBuqqC2eTQ",
+      "url": "https://www.youtube.com/watch?v=VzBuqqC2eTQ",
+      "title": "Galaxy Buds2 Pro | Recommended by the Pros - BTS SUGA | Samsung",
+      "description": "SUGA - BTS Member, Producer, Artist. Listen to what he thinks about music and how he produces it with his “must-have”- Galaxy ...",
+      "duration_seconds": 101,
+      "channel": "Samsung US",
+      "channel_id": "UCnEdfCdbxJJ9ouWKLSRCRRw",
+      "channel_url": "https://www.youtube.com/channel/UCnEdfCdbxJJ9ouWKLSRCRRw",
+      "channel_is_verified": true,
+      "view_count": 9104,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Samsung Galaxy Buds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "pLfZ1z7BDMg",
+      "url": "https://www.youtube.com/watch?v=pLfZ1z7BDMg",
+      "title": "Galaxy Buds2 Pro: Recommended by the Pros - BTS SUGA | Samsung Indonesia",
+      "description": "SUGA - BTS Member, Producer, and Artist. Listen to what he thinks about music and how he produces it with his “must-have” ...",
+      "duration_seconds": 102,
+      "channel": "Samsung Indonesia",
+      "channel_id": "UCj5WaQjidIovKdKx2-hCtuw",
+      "channel_url": "https://www.youtube.com/channel/UCj5WaQjidIovKdKx2-hCtuw",
+      "channel_is_verified": true,
+      "view_count": 2395,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Lookbook",
+          "query": "Samsung Galaxy Buds fashion campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "2zSJHZh_Ndg",
+      "url": "https://www.youtube.com/watch?v=2zSJHZh_Ndg",
+      "title": "Introducing Galaxy Buds Pro: Pre-order now | Samsung",
+      "description": "GalaxyBudsPro gives you experience immersive sound like never before. Pre-order and get a FREE wireless charger pad worth ...",
+      "duration_seconds": 41,
+      "channel": "Samsung Philippines",
+      "channel_id": "UCMVrFdXvbLLPziDG2EClOBQ",
+      "channel_url": "https://www.youtube.com/channel/UCMVrFdXvbLLPziDG2EClOBQ",
+      "channel_is_verified": true,
+      "view_count": 1635,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Lookbook",
+          "query": "Samsung Galaxy Buds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "G6zso2mK0P8",
+      "url": "https://www.youtube.com/watch?v=G6zso2mK0P8",
+      "title": "JBL | Tour Pro 2 How to connect via BT",
+      "description": "Find out how to connect your JBL Tour Pro 2 to BT.",
+      "duration_seconds": 26,
+      "channel": "JBL and JBL Support",
+      "channel_id": null,
+      "channel_url": null,
+      "channel_is_verified": null,
+      "view_count": 164613,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "How-To Tutorial",
+          "query": "JBL JBL earbuds official how to",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "pCpYvx3QikM",
+      "url": "https://www.youtube.com/watch?v=pCpYvx3QikM",
+      "title": "Galaxy Buds Pro: Day in The Life",
+      "description": "Learn about the key features of the Galaxy Buds Pro that help improve everyday activities.",
+      "duration_seconds": 109,
+      "channel": "Samsung Retail",
+      "channel_id": "UCV5cXJgbl-FZCh17LcFT-GQ",
+      "channel_url": "https://www.youtube.com/channel/UCV5cXJgbl-FZCh17LcFT-GQ",
+      "channel_is_verified": null,
+      "view_count": 341,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Samsung",
+          "target_genre": "Daily Routine",
+          "query": "Samsung Galaxy Buds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    }
+  ]
+}

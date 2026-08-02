@@ -1,0 +1,1232 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T09:27:14.948Z",
+  "source_review": "consumer-electronics-review-v4.json",
+  "duration_rule": "16-119 seconds",
+  "target_fill_rule": "10 unique canonical masters per product_category + genre",
+  "note": "discovery target genres are recall evidence only; official classification still requires visual review",
+  "gaps": [
+    {
+      "category": "Power Banks",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "Power Banks",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Unboxing",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 6,
+      "deficit": 4
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Unboxing",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    }
+  ],
+  "total_query_count": 242,
+  "query_count": 100,
+  "candidate_count": 42,
+  "official_shortlist_count": 7,
+  "discovery_error_count": 0,
+  "candidates": [
+    {
+      "video_id": "47THGfvHvv0",
+      "url": "https://www.youtube.com/watch?v=47THGfvHvv0",
+      "title": "#MoreThanPhones: Powerbank | 100 Ways to Use Your Powerbank",
+      "description": "Some of these are incredible! Others are just a little out there. Take a look...",
+      "duration_seconds": 66,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 40833,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Lookbook",
+          "query": "Anker Anker power bank fashion campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Anker Anker power bank POV campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank lifestyle campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate",
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "7tY2kt-9GhQ",
+      "url": "https://www.youtube.com/watch?v=7tY2kt-9GhQ",
+      "title": "Introducing the Ultra-Slim Power Bank – style meets performance.",
+      "description": "Power never looked this sleek⚡ Introducing the Ultra-Slim Power Bank – style meets performance. Available at an exclusive price ...",
+      "duration_seconds": 20,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 9283,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank official style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "YMfJjI-RVNA",
+      "url": "https://www.youtube.com/watch?v=YMfJjI-RVNA",
+      "title": "BoostCharge Power Bank 10K",
+      "description": "Get 40* extra hours of battery life for your iPhone 14/13/12 or charge up to 3 devices at once with up to 15W combined from 2 ...",
+      "duration_seconds": 41,
+      "channel": "Belkin EMEA",
+      "channel_id": "UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_url": "https://www.youtube.com/channel/UCHdKn3A_jfBngi8pD77IwVQ",
+      "channel_is_verified": null,
+      "view_count": 26836,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Belkin Belkin power bank shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "7t_8p4_Ih3k",
+      "url": "https://www.youtube.com/watch?v=7t_8p4_Ih3k",
+      "title": "Baseus Star-Lord Digital Display Fast Charge Power Bank 22.5W",
+      "description": "Baseus Star-Lord Digital Display Fast Charge Power Bank 22.5W with Simple Series Charging Cable USB to Type-C 3A 0.3m ...",
+      "duration_seconds": 34,
+      "channel": "Baseus KZ",
+      "channel_id": "UC-V7VeCHV2aexl5Oc2ZD3Jg",
+      "channel_url": "https://www.youtube.com/channel/UC-V7VeCHV2aexl5Oc2ZD3Jg",
+      "channel_is_verified": null,
+      "view_count": 3602,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "How-To Tutorial",
+          "query": "Baseus Baseus power bank official quick start",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "4YiBy-zpRJU",
+      "url": "https://www.youtube.com/watch?v=4YiBy-zpRJU",
+      "title": "Baseus 20000Ah Amblight Digital Display Power Bank",
+      "description": "powerbank We just launched a new Powerbank!✨ ✓3 Output+3 Input ✓Supports QC3.0 quick charge ✓Real-time display of ...",
+      "duration_seconds": 39,
+      "channel": "Baseus",
+      "channel_id": "UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_url": "https://www.youtube.com/channel/UCkN9n0Wz5b7jdksxom5V1ow",
+      "channel_is_verified": null,
+      "view_count": 2140,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "How-To Tutorial",
+          "query": "Baseus Baseus power bank official quick start",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "GWJ3aNko7Uw",
+      "url": "https://www.youtube.com/watch?v=GWJ3aNko7Uw",
+      "title": "Baseus Compact Fast Charging Power Bank Type C Edition 5000mAh 20W #baseus #pocket #powerbank",
+      "description": "Introducing the Baseus Compact Fast Charging Power Bank Type-C Edition 5000mAh 20W Mini Backup Battery!",
+      "duration_seconds": 35,
+      "channel": "Baseus UAE",
+      "channel_id": "UCs7GirN8mToCyaqaFJHWn8w",
+      "channel_url": "https://www.youtube.com/channel/UCs7GirN8mToCyaqaFJHWn8w",
+      "channel_is_verified": null,
+      "view_count": 1282,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Daily Routine",
+          "query": "Baseus Baseus power bank daily routine official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "e4t5vX14i1Q",
+      "url": "https://www.youtube.com/watch?v=e4t5vX14i1Q",
+      "title": "How to Use Anker Prime 20K 220W Power Bank: Quick Setup Guide | Anker Support",
+      "description": "Unlock the full potential of your Anker Prime 20K 220W Power Bank with this quick how-to guide! Learn setup basics, connect via ...",
+      "duration_seconds": 85,
+      "channel": "Anker Support",
+      "channel_id": "UCXSk-Ab41aitAKUzjjkz2kw",
+      "channel_url": "https://www.youtube.com/channel/UCXSk-Ab41aitAKUzjjkz2kw",
+      "channel_is_verified": null,
+      "view_count": 428,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "How-To Tutorial",
+          "query": "Anker Anker power bank official tutorial",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0
+    },
+    {
+      "video_id": "BqpwRbuQULg",
+      "url": "https://www.youtube.com/watch?v=BqpwRbuQULg",
+      "title": "TODAY'S DEAL: SHARPER IMAGE MESSENGER BAG WITH POWER BANK",
+      "description": "Dish Nation is a FOX syndicated TV show that dishes on celebrity news with humorous commentary on pop culture. NEWS: ...",
+      "duration_seconds": 56,
+      "channel": "Side Dish",
+      "channel_id": "UCwgA9c7WPJwgorRNBbtKeTA",
+      "channel_url": "https://www.youtube.com/channel/UCwgA9c7WPJwgorRNBbtKeTA",
+      "channel_is_verified": true,
+      "view_count": 393,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank fashion campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "rcXqegzW48w",
+      "url": "https://www.youtube.com/watch?v=rcXqegzW48w",
+      "title": "How to Hard Reset an Anker Power Bank",
+      "description": "Restart or reset an anker power bank battery. Get your power bank here: https://amzn.to/3Sq1WSE.",
+      "duration_seconds": 61,
+      "channel": "David in France",
+      "channel_id": "UCFgSdOXIJAOiZkYy9C9vQ9g",
+      "channel_url": "https://www.youtube.com/channel/UCFgSdOXIJAOiZkYy9C9vQ9g",
+      "channel_is_verified": null,
+      "view_count": 112076,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "How-To Tutorial",
+          "query": "Anker Anker power bank official pairing guide",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "How-To Tutorial",
+          "query": "UGREEN UGREEN power bank official pairing guide",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "PTb18Qaslso",
+      "url": "https://www.youtube.com/watch?v=PTb18Qaslso",
+      "title": "How To Charge Belkin Power Bank 10K",
+      "description": "Use a usb cable provided to charge the belkin power bank Charging percentage indicator 1 LED = 25% charged 2 LED = 50% ...",
+      "duration_seconds": 83,
+      "channel": "Tool Croze",
+      "channel_id": "UCgyXR_6HBT3vfBZB2QpPrLg",
+      "channel_url": "https://www.youtube.com/channel/UCgyXR_6HBT3vfBZB2QpPrLg",
+      "channel_is_verified": null,
+      "view_count": 13692,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "How-To Tutorial",
+          "query": "Belkin Belkin power bank official tutorial",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "D6K0LEJ8ekg",
+      "url": "https://www.youtube.com/watch?v=D6K0LEJ8ekg",
+      "title": "Reset Belkin Power Bank: Feedback Loop Method",
+      "description": "To reset belkin power bank, just connect the input port to the output port to create a feedback loop. The LED would blink to ...",
+      "duration_seconds": 87,
+      "channel": "Tool Croze",
+      "channel_id": "UCgyXR_6HBT3vfBZB2QpPrLg",
+      "channel_url": "https://www.youtube.com/channel/UCgyXR_6HBT3vfBZB2QpPrLg",
+      "channel_is_verified": null,
+      "view_count": 4889,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "How-To Tutorial",
+          "query": "Belkin Belkin power bank official how to",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "NZjqpuzTKXE",
+      "url": "https://www.youtube.com/watch?v=NZjqpuzTKXE",
+      "title": "Belkin Power Bank: How To Turn On & Off",
+      "description": "How to turn on and turn off belkin power bank To turn on, press the power button or plug it to a device. It would turn on ...",
+      "duration_seconds": 90,
+      "channel": "Tool Croze",
+      "channel_id": "UCgyXR_6HBT3vfBZB2QpPrLg",
+      "channel_url": "https://www.youtube.com/channel/UCgyXR_6HBT3vfBZB2QpPrLg",
+      "channel_is_verified": null,
+      "view_count": 4372,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "How-To Tutorial",
+          "query": "Belkin Belkin power bank official pairing guide",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "rfLXvlhuTxs",
+      "url": "https://www.youtube.com/watch?v=rfLXvlhuTxs",
+      "title": "Hands-on: Xiaomi Mi Power Bank",
+      "description": "We ordered our Mi Power Bank on 20th May and we've just received it via UPS. This is a quick look at the RM36 power bank with ...",
+      "duration_seconds": 44,
+      "channel": "SoyaCincau",
+      "channel_id": "UClbdrLUa2N-cyQLDsno4WKQ",
+      "channel_url": "https://www.youtube.com/channel/UClbdrLUa2N-cyQLDsno4WKQ",
+      "channel_is_verified": null,
+      "view_count": 4145,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "phxiPQielys",
+      "url": "https://www.youtube.com/watch?v=phxiPQielys",
+      "title": "Magnetic Charge Wireless Charging Powerbank Walkntalk - Portable Wireless Fast Charging Device",
+      "description": "The Walkntalk Magnetic Charge Battery Pack Powerbank is powerful and has a 5000mAh capacity to fully charge most phones ...",
+      "duration_seconds": 37,
+      "channel": "Walkntalk",
+      "channel_id": "UCYx_DxfuTJVNbeUXC5LMF8g",
+      "channel_url": "https://www.youtube.com/channel/UCYx_DxfuTJVNbeUXC5LMF8g",
+      "channel_is_verified": null,
+      "view_count": 3266,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Anker Anker power bank walk and talk",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Baseus Baseus power bank walk and talk",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "MDBwZIzlJHw",
+      "url": "https://www.youtube.com/watch?v=MDBwZIzlJHw",
+      "title": "DX:XIAOMI \"20000mAh\" Dual USB Mobile Li-ion Power Bank",
+      "description": "XIAOMI \"20000mAh\" Dual USB Mobile Li-ion Power Bank - White Product link : http://dxurl.com/RAgv More choice ...",
+      "duration_seconds": 62,
+      "channel": "DealeXtreme DV",
+      "channel_id": "UCTTkrEXX-3rhJaYx2WMj53A",
+      "channel_url": "https://www.youtube.com/channel/UCTTkrEXX-3rhJaYx2WMj53A",
+      "channel_is_verified": null,
+      "view_count": 3019,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank fashion campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Yf3CBmiUVsk",
+      "url": "https://www.youtube.com/watch?v=Yf3CBmiUVsk",
+      "title": "Unboxing of the Belkin Power Bank BoostCharge Plus 10K mAh Portable Charger with Integrated Cables",
+      "description": "View Current Price: ➡️ https://linktw.in/Jvjlfg Welcome back to the channel! Today, we're looking at an essential accessory for ...",
+      "duration_seconds": 92,
+      "channel": "Andrew's Amazon Finds",
+      "channel_id": "UC096OIEmkzzmzJKQbS--vsQ",
+      "channel_url": "https://www.youtube.com/channel/UC096OIEmkzzmzJKQbS--vsQ",
+      "channel_is_verified": null,
+      "view_count": 3006,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Lookbook",
+          "query": "Belkin Belkin power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "HlWNB2CdWUc",
+      "url": "https://www.youtube.com/watch?v=HlWNB2CdWUc",
+      "title": "Can you bring power banks on a plane? TSA-approved power bank you can bring on a plane",
+      "description": "Looking for a TSA-approved power bank you can bring on a plane? TSA allows up to 100Wh (watt hours). 26800mAh is the ...",
+      "duration_seconds": 59,
+      "channel": "Aaron Unpacked",
+      "channel_id": "UC-JCntvkQ16gls5IVfBknaQ",
+      "channel_url": "https://www.youtube.com/channel/UC-JCntvkQ16gls5IVfBknaQ",
+      "channel_is_verified": null,
+      "view_count": 2851,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Daily Routine",
+          "query": "Belkin Belkin power bank commute routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "OhICEZi92Zw",
+      "url": "https://www.youtube.com/watch?v=OhICEZi92Zw",
+      "title": "Power Bank for Apple Watch - belkin boost charge | unpacking",
+      "description": "Unboxing of the belkin power bank 2K for Apple Watch ⌚️   Short video.",
+      "duration_seconds": 46,
+      "channel": "Jiri Svec",
+      "channel_id": "UCUVTsvJDZTTjPBWJdSD_hsg",
+      "channel_url": "https://www.youtube.com/channel/UCUVTsvJDZTTjPBWJdSD_hsg",
+      "channel_is_verified": null,
+      "view_count": 2220,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Daily Routine",
+          "query": "Belkin Belkin power bank travel lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "urNNoZ9WLJM",
+      "url": "https://www.youtube.com/watch?v=urNNoZ9WLJM",
+      "title": "Belkin BoostCharge Wireless Power Bank Unboxing",
+      "description": "get this power bank here: https://amzn.to/3YKONbb (affiliate link thanks)",
+      "duration_seconds": 90,
+      "channel": "Beyond Wasabi",
+      "channel_id": "UCLGL2dhX5KIZ6s4wUgYu7Tw",
+      "channel_url": "https://www.youtube.com/channel/UCLGL2dhX5KIZ6s4wUgYu7Tw",
+      "channel_is_verified": null,
+      "view_count": 1489,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Lookbook",
+          "query": "Belkin Belkin power bank lifestyle campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Daily Routine",
+          "query": "Belkin Belkin power bank workout lifestyle official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "L7zcJ_fug-E",
+      "url": "https://www.youtube.com/watch?v=L7zcJ_fug-E",
+      "title": "How To Run Xiaomi Wifi Router On Power Bank",
+      "description": "Get the best VPN discount for NordVPN today | 75% OFF ✓NordVPN: https://router-help.org/nord Includes a 30-day ...",
+      "duration_seconds": 61,
+      "channel": "TONOR - How to setup router",
+      "channel_id": "UCPAu8bz198zuQwu5qWJYLwA",
+      "channel_url": "https://www.youtube.com/channel/UCPAu8bz198zuQwu5qWJYLwA",
+      "channel_is_verified": null,
+      "view_count": 518,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "How-To Tutorial",
+          "query": "Xiaomi Xiaomi power bank official setup guide",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "hnsI8D2HYt4",
+      "url": "https://www.youtube.com/watch?v=hnsI8D2HYt4",
+      "title": "Baseus Power Bank 30000mah 33w/65w",
+      "description": "Baseus Power Bank 30000mah 33w/65w Buy From Aliexpress : https://s.click.aliexpress.com/e/_ANkvND 65W Power Bank ...",
+      "duration_seconds": 70,
+      "channel": "Best Shopping Express",
+      "channel_id": "UC1ot5o5Eu2LWQodhcDImRGw",
+      "channel_url": "https://www.youtube.com/channel/UC1ot5o5Eu2LWQodhcDImRGw",
+      "channel_is_verified": null,
+      "view_count": 482,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "How-To Tutorial",
+          "query": "Baseus Baseus power bank official how to",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "7PYY1CwsEN8",
+      "url": "https://www.youtube.com/watch?v=7PYY1CwsEN8",
+      "title": "Mi Powerbank 2i | #MorePowerToYou",
+      "description": "New Campaign for Mi India's Mi Powerbank 2i #MorePowerToYou Agency - Momo Media Creative Director - Umang Srivastava ...",
+      "duration_seconds": 44,
+      "channel": "Momo Media",
+      "channel_id": "UCnt-d1Tu5utXzDU1K2I0S1w",
+      "channel_url": "https://www.youtube.com/channel/UCnt-d1Tu5utXzDU1K2I0S1w",
+      "channel_is_verified": null,
+      "view_count": 454,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank official style campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Gg9clee27DU",
+      "url": "https://www.youtube.com/watch?v=Gg9clee27DU",
+      "title": "Anker portable charger for iPhone",
+      "description": "amazonfinds #amazon get yours here: Amazon Canada: https://amzn.to/4joDvSu Amazon USA: https://amzn.to/4joDRbM.",
+      "duration_seconds": 71,
+      "channel": "UGC Dad",
+      "channel_id": "UCw9IxLrxYiSnrjIRwuweZlw",
+      "channel_url": "https://www.youtube.com/channel/UCw9IxLrxYiSnrjIRwuweZlw",
+      "channel_is_verified": null,
+      "view_count": 359,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Anker Anker power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "oxL96tmyzB0",
+      "url": "https://www.youtube.com/watch?v=oxL96tmyzB0",
+      "title": "Baseus Adaman Metal Digital Display Quick Charge Power Bank 22.5W 10000mAh",
+      "description": null,
+      "duration_seconds": 45,
+      "channel": "SKmobile - Cell Phone Accessories",
+      "channel_id": "UCoTQgHHRjAxDqQN5qSD7rwQ",
+      "channel_url": "https://www.youtube.com/channel/UCoTQgHHRjAxDqQN5qSD7rwQ",
+      "channel_is_verified": null,
+      "view_count": 356,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "How-To Tutorial",
+          "query": "Baseus Baseus power bank official tutorial",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "3AAwRvl7E1M",
+      "url": "https://www.youtube.com/watch?v=3AAwRvl7E1M",
+      "title": "Kickstarter : STORM 2, Ultimate EDC PowerBank For Digital Nomads",
+      "description": "Kickstarter Campaign Link: https://bit.ly/3bpkz4K 100W PD In/Out | 27600mAh/99.36Wh | 3.3-25.2V DC Out | 2 USB-C+USB-A+DC ...",
+      "duration_seconds": 119,
+      "channel": "Wearable Search",
+      "channel_id": "UC2JTOg5AVV1zm13TW9TuYmQ",
+      "channel_url": "https://www.youtube.com/channel/UC2JTOg5AVV1zm13TW9TuYmQ",
+      "channel_is_verified": null,
+      "view_count": 267,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Lookbook",
+          "query": "Anker Anker power bank lifestyle campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank lifestyle campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "9vChryqj45k",
+      "url": "https://www.youtube.com/watch?v=9vChryqj45k",
+      "title": "Xiaomi Power bank 3 PRO ✅ You Can Buy in Online Store (RisoFan💻)",
+      "description": "Xiaomi Redmi Buds 4 Harry Potter Version True Wireless Bluetooth Headphones Buy here ...",
+      "duration_seconds": 65,
+      "channel": "RisoFan",
+      "channel_id": "UCqKMkZ0Pzjt8vK-nDzBOfyg",
+      "channel_url": "https://www.youtube.com/channel/UCqKMkZ0Pzjt8vK-nDzBOfyg",
+      "channel_is_verified": null,
+      "view_count": 241,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "96ZNPW15p4o",
+      "url": "https://www.youtube.com/watch?v=96ZNPW15p4o",
+      "title": "100 Watt Power, 20 000 mAh, Laptop Charger - Power Bank Baseus",
+      "description": "Baseus 100W https://s.click.aliexpress.com/e/_AZBjTm | http://alii.pub/5z77r4 ⚠️ Discount 14$ On The First Order ...",
+      "duration_seconds": 36,
+      "channel": "Top ALI Tech",
+      "channel_id": "UCwZNnCVmTn04TvXnXQd1zTQ",
+      "channel_url": "https://www.youtube.com/channel/UCwZNnCVmTn04TvXnXQd1zTQ",
+      "channel_is_verified": null,
+      "view_count": 225,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Lookbook",
+          "query": "Baseus Baseus power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Giu674wGt5E",
+      "url": "https://www.youtube.com/watch?v=Giu674wGt5E",
+      "title": "Xiaomi Mi 10000mAH Power Bank",
+      "description": "Product model: PLM13ZM Battery type: lithium-ion polymer battery Battery energy: 37Wh 3.7V 10000mAh Dimensions: 147.8 ...",
+      "duration_seconds": 30,
+      "channel": "Jss Collection",
+      "channel_id": "UCXF9tbrCI0HKS4Z1W0xDk2g",
+      "channel_url": "https://www.youtube.com/channel/UCXF9tbrCI0HKS4Z1W0xDk2g",
+      "channel_is_verified": null,
+      "view_count": 56,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "FHh3hjDH7q4",
+      "url": "https://www.youtube.com/watch?v=FHh3hjDH7q4",
+      "title": "Belkin BoostCharge Magnetic Wireless Power Bank 5K + Stand (Marvel Collection - Deadpool)",
+      "description": "Belkin แบตเตอรี่สำรองแม่เหล็ก MagSafe ขนาด 5000 มิลลิแอมป์ พร้อมขาตั้งในตัว รับประกัน 2 ปี ...",
+      "duration_seconds": 23,
+      "channel": "We Ready for mobile",
+      "channel_id": "UCoUGsZaCw5KjGN3OnbqGOBw",
+      "channel_url": "https://www.youtube.com/channel/UCoUGsZaCw5KjGN3OnbqGOBw",
+      "channel_is_verified": null,
+      "view_count": 53,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Lookbook",
+          "query": "Belkin Belkin power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "uswK18XIbro",
+      "url": "https://www.youtube.com/watch?v=uswK18XIbro",
+      "title": "Top 3 HC Powerbank landscaThe Dramatic Hook: 1% Battery? NEVER AGAIN. (Top 3 Power Banks 🇵🇭)pe",
+      "description": "POV: Your phone is at 1%, you need to book a Grab, and you can feel your ancestors calling you home. Don't panic!",
+      "duration_seconds": 78,
+      "channel": "EZ Fred 3.0",
+      "channel_id": "UCFARoNSMmbHDzO7CDvefzEQ",
+      "channel_url": "https://www.youtube.com/channel/UCFARoNSMmbHDzO7CDvefzEQ",
+      "channel_is_verified": null,
+      "view_count": 44,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Baseus",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Baseus Baseus power bank POV campaign",
+          "source_tier": "creator_or_media_candidate"
+        },
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "UGREEN UGREEN power bank POV campaign",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 2
+    },
+    {
+      "video_id": "q4W_S1c9zgc",
+      "url": "https://www.youtube.com/watch?v=q4W_S1c9zgc",
+      "title": "Anker 733 Power Bank (GaNPrime PowerCore 65W) @viuser.shop www.viuser.shop",
+      "description": "Anker 733 Power Bank (GaNPrime PowerCore 65W) Now available cost 11900 WhatsApp 0705447731 info ...",
+      "duration_seconds": 31,
+      "channel": "Viuser Shop",
+      "channel_id": "UCCrmKmmWQnWjE8F98VifxgQ",
+      "channel_url": "https://www.youtube.com/channel/UCCrmKmmWQnWjE8F98VifxgQ",
+      "channel_is_verified": null,
+      "view_count": 41,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Lookbook",
+          "query": "Anker Anker power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "xp6w3wXyP1M",
+      "url": "https://www.youtube.com/watch?v=xp6w3wXyP1M",
+      "title": "Belkin แบตเตอรี่สำรอง Magnetic Wireless Power Bank 5K + Stand (Disney Collection - Inside Out 2)",
+      "description": "Belkin แบตเตอรี่สำรองแม่เหล็กความจุ 5000 มิลลิแอมป์ พร้อมขาตั้งในตัว รับประกัน 2 ปี ...",
+      "duration_seconds": 25,
+      "channel": "We Ready for mobile",
+      "channel_id": "UCoUGsZaCw5KjGN3OnbqGOBw",
+      "channel_url": "https://www.youtube.com/channel/UCoUGsZaCw5KjGN3OnbqGOBw",
+      "channel_is_verified": null,
+      "view_count": 40,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Lookbook",
+          "query": "Belkin Belkin power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "lI5jJbYsarQ",
+      "url": "https://www.youtube.com/watch?v=lI5jJbYsarQ",
+      "title": "Anker Power Delivery Collection USB-C Fast Charger Wall Charger Powerbank Car Accessories",
+      "description": "Anker Official By Tech House 1. 02-38A Junction 8 2. 04-03 Tampines Mall 3. B1-44 Westgate (next to Time Zone) 4. 02-46 Bukit ...",
+      "duration_seconds": 36,
+      "channel": "Tech House",
+      "channel_id": "UCdA0PnybL4-ZucXLfiyLKZg",
+      "channel_url": "https://www.youtube.com/channel/UCdA0PnybL4-ZucXLfiyLKZg",
+      "channel_is_verified": null,
+      "view_count": 31,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Lookbook",
+          "query": "Anker Anker power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Dbwqm2mtqkg",
+      "url": "https://www.youtube.com/watch?v=Dbwqm2mtqkg",
+      "title": "How This Anker Power Bank Saved My Busy Days | Best Laptop Charger 2026",
+      "description": "Hey everyone! In this video, I share my real-life experience with the Anker 25000mAh Portable Charger – a game-changer for ...",
+      "duration_seconds": 64,
+      "channel": "Ruling Fact",
+      "channel_id": "UC4d3rajKRqYF034qx93waqA",
+      "channel_url": "https://www.youtube.com/channel/UC4d3rajKRqYF034qx93waqA",
+      "channel_is_verified": null,
+      "view_count": 21,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Daily Routine",
+          "query": "Anker Anker power bank day in the life official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Sj1dCmk9X4E",
+      "url": "https://www.youtube.com/watch?v=Sj1dCmk9X4E",
+      "title": "Top Tech & Beauty Picks  Olaplex, Sonicare, Anker Power Bank Review",
+      "description": "In today's video, we're diving into three incredible products that are changing the game: Olaplex No. 3 Hair Perfector, Philips ...",
+      "duration_seconds": 108,
+      "channel": "Time Maverick",
+      "channel_id": "UCns5f9qMIhJXmJkzq2UJJJQ",
+      "channel_url": "https://www.youtube.com/channel/UCns5f9qMIhJXmJkzq2UJJJQ",
+      "channel_is_verified": null,
+      "view_count": 11,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Daily Routine",
+          "query": "Anker Anker power bank morning routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "9Te289h9zr8",
+      "url": "https://www.youtube.com/watch?v=9Te289h9zr8",
+      "title": "One thing to note about this portable charger",
+      "description": "... supports 20W maximum input power, reducing the waiting time for input and output Safe and fast charging: Ugreen power bank ...",
+      "duration_seconds": 63,
+      "channel": "Lesli Michele",
+      "channel_id": "UCqeABndKz3ae272vqI7G0gw",
+      "channel_url": "https://www.youtube.com/channel/UCqeABndKz3ae272vqI7G0gw",
+      "channel_is_verified": null,
+      "view_count": 10,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "UGREEN UGREEN power bank UGC ad",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "_fVP-Al_HDU",
+      "url": "https://www.youtube.com/watch?v=_fVP-Al_HDU",
+      "title": "Power Bank UGREEN 20000mAh PD20W Fast Charging Portable AliExpress",
+      "description": "Buy here: https://s.click.aliexpress.com/e/_c4lKrWUD Stay powered all day with the UGREEN 20000mAh Power Bank featuring ...",
+      "duration_seconds": 26,
+      "channel": "Express Finds",
+      "channel_id": "UCgfEZi37sRquRk-m66zr6ng",
+      "channel_url": "https://www.youtube.com/channel/UCgfEZi37sRquRk-m66zr6ng",
+      "channel_is_verified": null,
+      "view_count": 9,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Daily Routine",
+          "query": "UGREEN UGREEN power bank daily routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "Qo0HKEQi63U",
+      "url": "https://www.youtube.com/watch?v=Qo0HKEQi63U",
+      "title": "Anker 3 in 1 Power Bank",
+      "description": "Anker Power Bank ▷ The product links are in this description or the comment down below ⬇️ VIEW ON AMAZON: ...",
+      "duration_seconds": 60,
+      "channel": "Gadget For Life",
+      "channel_id": "UCER-HVErp71Q58MDQTOhgOA",
+      "channel_url": "https://www.youtube.com/channel/UCER-HVErp71Q58MDQTOhgOA",
+      "channel_is_verified": null,
+      "view_count": 8,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Anker",
+          "target_genre": "Daily Routine",
+          "query": "Anker Anker power bank day in the life official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "KXuKo14v2Ow",
+      "url": "https://www.youtube.com/watch?v=KXuKo14v2Ow",
+      "title": "Belkin Boost Charge 20K Power Bank Review | Massive Battery Backup On the Go",
+      "description": "Check comments & start! The Belkin Boost Charge Power Bank 20K delivers high‑capacity portable power for your devices, ...",
+      "duration_seconds": 91,
+      "channel": "RealBuyCheck",
+      "channel_id": "UC4V_bc2vDUxDkzmtxJoQMvw",
+      "channel_url": "https://www.youtube.com/channel/UC4V_bc2vDUxDkzmtxJoQMvw",
+      "channel_is_verified": null,
+      "view_count": 7,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Daily Routine",
+          "query": "Belkin Belkin power bank day in the life official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "nfWMDWiM53w",
+      "url": "https://www.youtube.com/watch?v=nfWMDWiM53w",
+      "title": "Belkin แบตเตอรี่สำรอง Magnetic Wireless Power Bank 5K + Stand (Disney Collection - Donald Duck)",
+      "description": "Belkin แบตเตอรี่สำรองแม่เหล็กความจุ 5000 มิลลิแอมป์ พร้อมขาตั้งในตัว รับประกัน 2 ปี ...",
+      "duration_seconds": 21,
+      "channel": "We Ready for mobile",
+      "channel_id": "UCoUGsZaCw5KjGN3OnbqGOBw",
+      "channel_url": "https://www.youtube.com/channel/UCoUGsZaCw5KjGN3OnbqGOBw",
+      "channel_is_verified": null,
+      "view_count": 6,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Belkin",
+          "target_genre": "Lookbook",
+          "query": "Belkin Belkin power bank official lookbook",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "GqvlALbzluc",
+      "url": "https://www.youtube.com/watch?v=GqvlALbzluc",
+      "title": "UGREEN 20000mAh 67W Power Bank | Built-in USB-C Cable Fast Charger for Laptop & Phone",
+      "description": "Buy Now: https://s.click.aliexpress.com/e/_c3oSb5uB Charge your devices faster with the UGREEN 20000mAh 67W Power ...",
+      "duration_seconds": 56,
+      "channel": "Express Finds",
+      "channel_id": "UCBoXXi-ANLC-gHYycijGqkA",
+      "channel_url": "https://www.youtube.com/channel/UCBoXXi-ANLC-gHYycijGqkA",
+      "channel_is_verified": null,
+      "view_count": 6,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "UGREEN",
+          "target_genre": "Daily Routine",
+          "query": "UGREEN UGREEN power bank daily routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "XnfdSUR8Ge8",
+      "url": "https://www.youtube.com/watch?v=XnfdSUR8Ge8",
+      "title": "⚡ Xiaomi Power Bank – Fast, Reliable & Portable Charging!",
+      "description": "Never run out of battery again! The Xiaomi Power Bank is the perfect charging companion for your iPhone, Android, AirPods, ...",
+      "duration_seconds": 96,
+      "channel": "MegaSaver Store",
+      "channel_id": "UCoowMT7Hx9t_4AYGIR6AeAA",
+      "channel_url": "https://www.youtube.com/channel/UCoowMT7Hx9t_4AYGIR6AeAA",
+      "channel_is_verified": null,
+      "view_count": 2,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi power bank daily routine official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    }
+  ],
+  "errors": []
+}

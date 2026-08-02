@@ -1,0 +1,3192 @@
+{
+  "version": 1,
+  "source": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-frame-review-v1.json",
+  "record_count": 176,
+  "batch_count": 44,
+  "records": [
+    {
+      "index": 1,
+      "video_id": "1_KFE0ATS1g",
+      "url": "https://www.youtube.com/watch?v=1_KFE0ATS1g",
+      "product_category": "Power Banks",
+      "expected_brand": "Anker",
+      "title": "Anker Power Bank | Saving Christmas One Charge at a Time",
+      "channel": "Anker",
+      "duration_seconds": 54,
+      "publish_date": "2025-12-21T23:54:28-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/001-1_KFE0ATS1g.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "2jutZa3fzwA",
+      "url": "https://www.youtube.com/watch?v=2jutZa3fzwA",
+      "product_category": "Power Banks",
+      "expected_brand": "Anker",
+      "title": "Anker 535 Power Bank (PowerCore 20K) | Charge and Recharge Faster",
+      "channel": "Anker",
+      "duration_seconds": 34,
+      "publish_date": "2022-10-20T00:01:34-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/002-2jutZa3fzwA.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "9bgayvi_DzM",
+      "url": "https://www.youtube.com/watch?v=9bgayvi_DzM",
+      "product_category": "Power Banks",
+      "expected_brand": "Anker",
+      "title": "Anker Prime Power Bank (20K, 220W)",
+      "channel": "Anker",
+      "duration_seconds": 41,
+      "publish_date": "2025-11-20T00:27:03-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/003-9bgayvi_DzM.jpg"
+    },
+    {
+      "index": 4,
+      "video_id": "GOIWbGzv4II",
+      "url": "https://www.youtube.com/watch?v=GOIWbGzv4II",
+      "product_category": "Power Banks",
+      "expected_brand": "Anker",
+      "title": "Anker 3-in-1 Power Bank | Built Ready, Go Freely",
+      "channel": "Anker",
+      "duration_seconds": 60,
+      "publish_date": "2024-05-29T14:59:15-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/004-GOIWbGzv4II.jpg"
+    },
+    {
+      "index": 5,
+      "video_id": "a6zDDcGjFtM",
+      "url": "https://www.youtube.com/watch?v=a6zDDcGjFtM",
+      "product_category": "Power Banks",
+      "expected_brand": "Anker",
+      "title": "Quick Start Guide for Anker Prime Power Bank (26K, 300W)",
+      "channel": "Anker",
+      "duration_seconds": 88,
+      "publish_date": "2025-10-21T07:31:38-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/005-a6zDDcGjFtM.jpg"
+    },
+    {
+      "index": 6,
+      "video_id": "ej9LJmaoS0g",
+      "url": "https://www.youtube.com/watch?v=ej9LJmaoS0g",
+      "product_category": "Power Banks",
+      "expected_brand": "Anker",
+      "title": "Unveiling the New 9,600mAh 65W Anker Prime Power Bank with Wall Charger",
+      "channel": "Anker",
+      "duration_seconds": 38,
+      "publish_date": "2024-08-09T15:16:16-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/006-ej9LJmaoS0g.jpg"
+    },
+    {
+      "index": 7,
+      "video_id": "0fEVNMMy5B4",
+      "url": "https://www.youtube.com/watch?v=0fEVNMMy5B4",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus PicoGo Digital Display Power Bank 10000mAh – 45W Fast Charging for iPhone & More!",
+      "channel": "Baseus UAE",
+      "duration_seconds": 51,
+      "publish_date": "2025-02-14T00:00:02-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/007-0fEVNMMy5B4.jpg"
+    },
+    {
+      "index": 8,
+      "video_id": "0szqUcjpEuI",
+      "url": "https://www.youtube.com/watch?v=0szqUcjpEuI",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus Magnetic Power Bank 10000mAh With Built-in 30W USB-C Cable",
+      "channel": "Baseus",
+      "duration_seconds": 50,
+      "publish_date": "2023-09-12T05:08:38-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/008-0szqUcjpEuI.jpg"
+    },
+    {
+      "index": 9,
+      "video_id": "3jYhEmQM7OU",
+      "url": "https://www.youtube.com/watch?v=3jYhEmQM7OU",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Portable Power Bank QC 3.0 | Baseus 20000mAh",
+      "channel": "Baseus",
+      "duration_seconds": 44,
+      "publish_date": "2019-10-31T02:16:50-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/009-3jYhEmQM7OU.jpg"
+    },
+    {
+      "index": 10,
+      "video_id": "9d1iTBJ5_kg",
+      "url": "https://www.youtube.com/watch?v=9d1iTBJ5_kg",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus Powerbank丨Blade, Made for Laptops | 20000mAh | 100W",
+      "channel": "Baseus",
+      "duration_seconds": 32,
+      "publish_date": "2023-09-25T19:59:50-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/010-9d1iTBJ5_kg.jpg"
+    },
+    {
+      "index": 11,
+      "video_id": "CBd-694cMJk",
+      "url": "https://www.youtube.com/watch?v=CBd-694cMJk",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus EnerGeek Powerbank Is Here – Built-in Cable Means You’re Always Ready to Go#baseus#powerbank",
+      "channel": "Baseus",
+      "duration_seconds": 36,
+      "publish_date": "2025-07-18T00:44:53-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/011-CBd-694cMJk.jpg"
+    },
+    {
+      "index": 12,
+      "video_id": "GMBE9UIXxy4",
+      "url": "https://www.youtube.com/watch?v=GMBE9UIXxy4",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus Star-Lord Digital Display Fast Charging Power Bank 20000mAh 65W",
+      "channel": "Baseus",
+      "duration_seconds": 36,
+      "publish_date": "2024-04-23T23:02:18-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/012-GMBE9UIXxy4.jpg"
+    },
+    {
+      "index": 13,
+      "video_id": "HDWDDelPY5I",
+      "url": "https://www.youtube.com/watch?v=HDWDDelPY5I",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus Airpow Fast Charge Power Bank 10000mAh 20W (PPQD090001/PPQD090002)",
+      "channel": "Baseus KZ",
+      "duration_seconds": 28,
+      "publish_date": "2024-08-19T10:33:22-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/013-HDWDDelPY5I.jpg"
+    },
+    {
+      "index": 14,
+      "video_id": "P9JB-_RrBzs",
+      "url": "https://www.youtube.com/watch?v=P9JB-_RrBzs",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus EnerGeek GX11 | What's in Box & How to Connect | World's First MiFi + 20,000mAh Power Bank",
+      "channel": "Baseus",
+      "duration_seconds": 79,
+      "publish_date": "2025-10-15T03:07:30-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/014-P9JB-_RrBzs.jpg"
+    },
+    {
+      "index": 15,
+      "video_id": "RxdfFI8CA3Q",
+      "url": "https://www.youtube.com/watch?v=RxdfFI8CA3Q",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus Bipow Pro Fast Charge Power Bank | Light Thin Fast",
+      "channel": "Baseus",
+      "duration_seconds": 35,
+      "publish_date": "2022-07-12T01:49:03-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/015-RxdfFI8CA3Q.jpg"
+    },
+    {
+      "index": 16,
+      "video_id": "YmPoa-bpXfs",
+      "url": "https://www.youtube.com/watch?v=YmPoa-bpXfs",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus PicoGo AM52 Qi2.2 Power Bank- Keeps the phone alive without making it feel huge",
+      "channel": "Baseus",
+      "duration_seconds": 56,
+      "publish_date": "2026-04-20T06:01:02-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/016-YmPoa-bpXfs.jpg"
+    },
+    {
+      "index": 17,
+      "video_id": "gduN2Rs0qb0",
+      "url": "https://www.youtube.com/watch?v=gduN2Rs0qb0",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus | Elf Digital Display 20000mAH 65W Power Bank | A Two-way Cable Included",
+      "channel": "Baseus",
+      "duration_seconds": 40,
+      "publish_date": "2022-01-19T19:43:17-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/017-gduN2Rs0qb0.jpg"
+    },
+    {
+      "index": 18,
+      "video_id": "qeioGNuqU-U",
+      "url": "https://www.youtube.com/watch?v=qeioGNuqU-U",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Baseus 140W 24000mAh Laptop Power Bank | 3-Port Fast Charging USB C Battery Pack#baseus #powerbank",
+      "channel": "Baseus",
+      "duration_seconds": 44,
+      "publish_date": "2023-11-07T00:37:28-08:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/018-qeioGNuqU-U.jpg"
+    },
+    {
+      "index": 19,
+      "video_id": "zquUnBZB9MI",
+      "url": "https://www.youtube.com/watch?v=zquUnBZB9MI",
+      "product_category": "Power Banks",
+      "expected_brand": "Baseus",
+      "title": "Go Light Anywhere with Baseus PicoGo Power Bank #baseus #powerbank #baseuspicogo #iphone",
+      "channel": "Baseus",
+      "duration_seconds": 55,
+      "publish_date": "2025-04-18T03:46:31-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/019-zquUnBZB9MI.jpg"
+    },
+    {
+      "index": 20,
+      "video_id": "-N2OK7U2D9g",
+      "url": "https://www.youtube.com/watch?v=-N2OK7U2D9g",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Fast Wireless Charger for Apple Watch + Power Bank 10K",
+      "channel": "Belkin EMEA",
+      "duration_seconds": 27,
+      "publish_date": "2023-09-22T02:50:17-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/020--N2OK7U2D9g.jpg"
+    },
+    {
+      "index": 21,
+      "video_id": "-_Kq75t9nso",
+      "url": "https://www.youtube.com/watch?v=-_Kq75t9nso",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Vi introduserer den nye BOOST↑CHARGE™ Power Bank 5K med Lightning-kontakt fra Belkin",
+      "channel": "Belkin EMEA",
+      "duration_seconds": 32,
+      "publish_date": "2018-11-05T05:44:55-08:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/021--_Kq75t9nso.jpg"
+    },
+    {
+      "index": 22,
+      "video_id": "5pLyTuzvNjs",
+      "url": "https://www.youtube.com/watch?v=5pLyTuzvNjs",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Belkin BoostCharge Magnetic Wireless Power Bank 5K + Stand",
+      "channel": "Belkin",
+      "duration_seconds": 16,
+      "publish_date": "2023-05-17T11:18:19-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/022-5pLyTuzvNjs.jpg"
+    },
+    {
+      "index": 23,
+      "video_id": "7rHuRJ_1ZtI",
+      "url": "https://www.youtube.com/watch?v=7rHuRJ_1ZtI",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Belkin BoostCharge Power Bank 20K with Display",
+      "channel": "Belkin EMEA",
+      "duration_seconds": 26,
+      "publish_date": "2025-11-06T07:22:46-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Product Demo",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/023-7rHuRJ_1ZtI.jpg"
+    },
+    {
+      "index": 24,
+      "video_id": "8ViInATeb6M",
+      "url": "https://www.youtube.com/watch?v=8ViInATeb6M",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Looking for the best Nintendo Switch 2 grip with a battery pack?",
+      "channel": "Belkin",
+      "duration_seconds": 30,
+      "publish_date": "2026-06-09T10:11:12-07:00",
+      "discovered_for_genres": [
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/024-8ViInATeb6M.jpg"
+    },
+    {
+      "index": 25,
+      "video_id": "BlhWayUwsy4",
+      "url": "https://www.youtube.com/watch?v=BlhWayUwsy4",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Belkin BoostCharge Pro Magnetic Power Bank with Qi2 15W 10K - BPD008 (English Version)",
+      "channel": "Belkin HK",
+      "duration_seconds": 30,
+      "publish_date": "2024-06-05T01:05:09-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/025-BlhWayUwsy4.jpg"
+    },
+    {
+      "index": 26,
+      "video_id": "LEnnkBMFWow",
+      "url": "https://www.youtube.com/watch?v=LEnnkBMFWow",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Wireless power bank and charging stand in one",
+      "channel": "Belkin",
+      "duration_seconds": 30,
+      "publish_date": "2020-07-16T08:54:54-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/026-LEnnkBMFWow.jpg"
+    },
+    {
+      "index": 27,
+      "video_id": "iDyvtEOXSgQ",
+      "url": "https://www.youtube.com/watch?v=iDyvtEOXSgQ",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Charge with Lightning using Belkin’s new BOOST↑CHARGE™ Power Bank 10K with Lightning Connector",
+      "channel": "Belkin",
+      "duration_seconds": 34,
+      "publish_date": "2018-08-16T07:00:04-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Feature Callout",
+        "Product Demo",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/027-iDyvtEOXSgQ.jpg"
+    },
+    {
+      "index": 28,
+      "video_id": "s1IzF0vtMgM",
+      "url": "https://www.youtube.com/watch?v=s1IzF0vtMgM",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Belkin BoostCharge Pro Power Bank 10K with Apple Watch Charger - BPD012 (English Version)",
+      "channel": "Belkin HK",
+      "duration_seconds": 29,
+      "publish_date": "2025-12-23T01:29:01-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/028-s1IzF0vtMgM.jpg"
+    },
+    {
+      "index": 29,
+      "video_id": "s2lowSj9k-s",
+      "url": "https://www.youtube.com/watch?v=s2lowSj9k-s",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Belkin BoostCharge Power Bank 10K with Integrated Cable",
+      "channel": "Belkin EMEA",
+      "duration_seconds": 37,
+      "publish_date": "2025-02-10T06:25:26-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/029-s2lowSj9k-s.jpg"
+    },
+    {
+      "index": 30,
+      "video_id": "ujES8BJYY6o",
+      "url": "https://www.youtube.com/watch?v=ujES8BJYY6o",
+      "product_category": "Power Banks",
+      "expected_brand": "Belkin",
+      "title": "Belkin BoostCharge Power Bank 10K with Display",
+      "channel": "Belkin EMEA",
+      "duration_seconds": 26,
+      "publish_date": "2025-11-06T07:06:41-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/030-ujES8BJYY6o.jpg"
+    },
+    {
+      "index": 31,
+      "video_id": "Jwc-8sL_VSU",
+      "url": "https://www.youtube.com/watch?v=Jwc-8sL_VSU",
+      "product_category": "Power Banks",
+      "expected_brand": "CUKTECH",
+      "title": "CUKTECH 15 Ultra Power Bank",
+      "channel": "CUKTECH",
+      "duration_seconds": 37,
+      "publish_date": "2025-02-14T01:27:39-08:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/031-Jwc-8sL_VSU.jpg"
+    },
+    {
+      "index": 32,
+      "video_id": "_h_NPobJkEA",
+      "url": "https://www.youtube.com/watch?v=_h_NPobJkEA",
+      "product_category": "Power Banks",
+      "expected_brand": "CUKTECH",
+      "title": "CUKTECH 10 Mini Power Bank Teardown",
+      "channel": "CUKTECH",
+      "duration_seconds": 30,
+      "publish_date": "2025-05-16T02:51:19-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/032-_h_NPobJkEA.jpg"
+    },
+    {
+      "index": 33,
+      "video_id": "muXRq16J25M",
+      "url": "https://www.youtube.com/watch?v=muXRq16J25M",
+      "product_category": "Power Banks",
+      "expected_brand": "CUKTECH",
+      "title": "CUKTECH 15 Ultra Power Bank Teardown",
+      "channel": "CUKTECH",
+      "duration_seconds": 44,
+      "publish_date": "2025-07-31T03:04:48-07:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/033-muXRq16J25M.jpg"
+    },
+    {
+      "index": 34,
+      "video_id": "-ODcuQVfpMU",
+      "url": "https://www.youtube.com/watch?v=-ODcuQVfpMU",
+      "product_category": "Power Banks",
+      "expected_brand": "EcoFlow",
+      "title": "EcoFlow RAPID Magnetic Power Bank (10000mAh)",
+      "channel": "EcoFlow",
+      "duration_seconds": 33,
+      "publish_date": "2025-02-12T19:30:08-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/034--ODcuQVfpMU.jpg"
+    },
+    {
+      "index": 35,
+      "video_id": "X4T8XSjIfQw",
+      "url": "https://www.youtube.com/watch?v=X4T8XSjIfQw",
+      "product_category": "Power Banks",
+      "expected_brand": "EcoFlow",
+      "title": "EcoFlow RAPID Pro Power Bank | Fast. Smart. Pro.",
+      "channel": "EcoFlow",
+      "duration_seconds": 116,
+      "publish_date": "2025-08-25T08:00:52-07:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/035-X4T8XSjIfQw.jpg"
+    },
+    {
+      "index": 36,
+      "video_id": "JjVlxBKma6A",
+      "url": "https://www.youtube.com/watch?v=JjVlxBKma6A",
+      "product_category": "Power Banks",
+      "expected_brand": "SHARGE",
+      "title": "Shargeek 170: Coolest Powerbank with Unparalleled Charging.",
+      "channel": "SHARGE",
+      "duration_seconds": 92,
+      "publish_date": "2023-10-12T06:00:29-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Feature Callout",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/036-JjVlxBKma6A.jpg"
+    },
+    {
+      "index": 37,
+      "video_id": "id2cLVIZh5Y",
+      "url": "https://www.youtube.com/watch?v=id2cLVIZh5Y",
+      "product_category": "Power Banks",
+      "expected_brand": "SHARGE",
+      "title": "Shargeek Capsule Gravity is not only a timer, but also is a power bank",
+      "channel": "SHARGE",
+      "duration_seconds": 87,
+      "publish_date": "2022-08-31T01:36:50-07:00",
+      "discovered_for_genres": [
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/037-id2cLVIZh5Y.jpg"
+    },
+    {
+      "index": 38,
+      "video_id": "pHro11GBYxM",
+      "url": "https://www.youtube.com/watch?v=pHro11GBYxM",
+      "product_category": "Power Banks",
+      "expected_brand": "SHARGE",
+      "title": "Shargeek #StarshipSeer Power Bank, Up to 51% OFF!!!",
+      "channel": "SHARGE",
+      "duration_seconds": 86,
+      "publish_date": "2023-03-29T06:00:28-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/038-pHro11GBYxM.jpg"
+    },
+    {
+      "index": 39,
+      "video_id": "CUSbMoNA_A0",
+      "url": "https://www.youtube.com/watch?v=CUSbMoNA_A0",
+      "product_category": "Power Banks",
+      "expected_brand": "UGREEN",
+      "title": "Ugreen 145W Power Bank",
+      "channel": "UGREEN Official",
+      "duration_seconds": 34,
+      "publish_date": "2023-07-27T08:00:17-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/039-CUSbMoNA_A0.jpg"
+    },
+    {
+      "index": 40,
+      "video_id": "PCFpMur7nSg",
+      "url": "https://www.youtube.com/watch?v=PCFpMur7nSg",
+      "product_category": "Power Banks",
+      "expected_brand": "UGREEN",
+      "title": "Can 10000 mah fit in the pocket?| ugreen power bank",
+      "channel": "UGREEN Official",
+      "duration_seconds": 21,
+      "publish_date": "2019-06-25T07:00:08-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/040-PCFpMur7nSg.jpg"
+    },
+    {
+      "index": 41,
+      "video_id": "nNmyT-OtHxU",
+      "url": "https://www.youtube.com/watch?v=nNmyT-OtHxU",
+      "product_category": "Power Banks",
+      "expected_brand": "UGREEN",
+      "title": "Ugreen Nexode Power Bank",
+      "channel": "UGREEN Official",
+      "duration_seconds": 30,
+      "publish_date": "2024-09-05T08:01:00-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/041-nNmyT-OtHxU.jpg"
+    },
+    {
+      "index": 42,
+      "video_id": "ptHVb8cLW9M",
+      "url": "https://www.youtube.com/watch?v=ptHVb8cLW9M",
+      "product_category": "Power Banks",
+      "expected_brand": "UGREEN",
+      "title": "UGREEN 35524B Nexode Power Bank 20000mAh 130W",
+      "channel": "UGREEN Sri Lanka",
+      "duration_seconds": 35,
+      "publish_date": "2025-10-29T21:44:20-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/042-ptHVb8cLW9M.jpg"
+    },
+    {
+      "index": 43,
+      "video_id": "66X5Gnuw81w",
+      "url": "https://www.youtube.com/watch?v=66X5Gnuw81w",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Introducing Xiaomi 165W & 33W Power Bank 10000 (Integrated Cable)",
+      "channel": "Xiaomi",
+      "duration_seconds": 38,
+      "publish_date": "2025-01-25T02:00:37-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/043-66X5Gnuw81w.jpg"
+    },
+    {
+      "index": 44,
+      "video_id": "6VVxPKrz6z0",
+      "url": "https://www.youtube.com/watch?v=6VVxPKrz6z0",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Introducing Xiaomi Power Bank 5i 20000 67W | Fast. Safe. Charges Everything.",
+      "channel": "Xiaomi India",
+      "duration_seconds": 42,
+      "publish_date": "2026-07-24T04:00:07-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/044-6VVxPKrz6z0.jpg"
+    },
+    {
+      "index": 45,
+      "video_id": "6eaKnvJE32A",
+      "url": "https://www.youtube.com/watch?v=6eaKnvJE32A",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi UltraThin Magnetic Power Bank 5000 15W: energía ultrafina siempre contigo",
+      "channel": "Xiaomi Training Vídeos",
+      "duration_seconds": 118,
+      "publish_date": "2026-05-06T05:59:40-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/045-6eaKnvJE32A.jpg"
+    },
+    {
+      "index": 46,
+      "video_id": "9VLDQLva4Qk",
+      "url": "https://www.youtube.com/watch?v=9VLDQLva4Qk",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi Ultra Slim Powerbank 4900mAh",
+      "channel": "Xiaomi India",
+      "duration_seconds": 62,
+      "publish_date": "2025-01-27T22:40:27-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/046-9VLDQLva4Qk.jpg"
+    },
+    {
+      "index": 47,
+      "video_id": "9b5NlpA1P3I",
+      "url": "https://www.youtube.com/watch?v=9b5NlpA1P3I",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi Power Bank 4i 20000mAh 33W | Power You Can Trust",
+      "channel": "Xiaomi India",
+      "duration_seconds": 43,
+      "publish_date": "2024-08-28T23:16:34-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/047-9b5NlpA1P3I.jpg"
+    },
+    {
+      "index": 48,
+      "video_id": "EIRZ-7Iaoe4",
+      "url": "https://www.youtube.com/watch?v=EIRZ-7Iaoe4",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Everything about Xiaomi UltraThin Magnetic Power Bank 5000 15W",
+      "channel": "Xiaomi",
+      "duration_seconds": 30,
+      "publish_date": "2026-03-09T08:00:39-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/048-EIRZ-7Iaoe4.jpg"
+    },
+    {
+      "index": 49,
+      "video_id": "F_gSSzVl9Uc",
+      "url": "https://www.youtube.com/watch?v=F_gSSzVl9Uc",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi PowerBank 4i 10000mAh",
+      "channel": "Xiaomi India",
+      "duration_seconds": 32,
+      "publish_date": "2024-07-17T23:27:55-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/049-F_gSSzVl9Uc.jpg"
+    },
+    {
+      "index": 50,
+      "video_id": "aATK22L38b8",
+      "url": "https://www.youtube.com/watch?v=aATK22L38b8",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi Ultra Slim PowerBank 4900mAh",
+      "channel": "Xiaomi India",
+      "duration_seconds": 20,
+      "publish_date": "2025-02-26T23:13:05-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/050-aATK22L38b8.jpg"
+    },
+    {
+      "index": 51,
+      "video_id": "mp2x2gpe2ak",
+      "url": "https://www.youtube.com/watch?v=mp2x2gpe2ak",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Your charging game just got smarter with the Xiaomi Compact PowerBank 20000mAh",
+      "channel": "Xiaomi India",
+      "duration_seconds": 65,
+      "publish_date": "2025-07-16T02:27:03-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/051-mp2x2gpe2ak.jpg"
+    },
+    {
+      "index": 52,
+      "video_id": "o4apT17y4pM",
+      "url": "https://www.youtube.com/watch?v=o4apT17y4pM",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Mi 10 is here | Pre-order now & get the Mi Wireless Power Bank worth ₹2,499 Free",
+      "channel": "Xiaomi India",
+      "duration_seconds": 30,
+      "publish_date": "2020-05-11T01:36:43-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/052-o4apT17y4pM.jpg"
+    },
+    {
+      "index": 53,
+      "video_id": "s3538Le5-_A",
+      "url": "https://www.youtube.com/watch?v=s3538Le5-_A",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi Compact Powerbank 20000mAh | Your perfect power match",
+      "channel": "Xiaomi India",
+      "duration_seconds": 53,
+      "publish_date": "2025-07-13T23:46:08-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/053-s3538Le5-_A.jpg"
+    },
+    {
+      "index": 54,
+      "video_id": "v7EnkZy-ptk",
+      "url": "https://www.youtube.com/watch?v=v7EnkZy-ptk",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Mi Power Bank Hypersonic 20000mAh (50W)",
+      "channel": "Xiaomi India",
+      "duration_seconds": 58,
+      "publish_date": "2021-08-02T02:56:58-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/054-v7EnkZy-ptk.jpg"
+    },
+    {
+      "index": 55,
+      "video_id": "vrrVZ9CmD2Q",
+      "url": "https://www.youtube.com/watch?v=vrrVZ9CmD2Q",
+      "product_category": "Power Banks",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi Compact Power Bank 20000mAh | Fast. Safe. Reliable",
+      "channel": "Xiaomi India",
+      "duration_seconds": 35,
+      "publish_date": "2025-07-07T01:24:22-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/055-vrrVZ9CmD2Q.jpg"
+    },
+    {
+      "index": 56,
+      "video_id": "EMmKs8vMKhU",
+      "url": "https://www.youtube.com/watch?v=EMmKs8vMKhU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Apple",
+      "title": "Introducing AirPods Pro 3",
+      "channel": "Apple",
+      "duration_seconds": 48,
+      "publish_date": "2025-09-09T11:40:14-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Feature Callout",
+        "Product Demo",
+        "How-To Tutorial",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/056-EMmKs8vMKhU.jpg"
+    },
+    {
+      "index": 57,
+      "video_id": "bCqnOn23LWE",
+      "url": "https://www.youtube.com/watch?v=bCqnOn23LWE",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Apple",
+      "title": "AirPods 4: Experience Immersive Sound",
+      "channel": "Apple",
+      "duration_seconds": 46,
+      "publish_date": "2024-09-09T12:37:11-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Feature Callout",
+        "Product Demo",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/057-bCqnOn23LWE.jpg"
+    },
+    {
+      "index": 58,
+      "video_id": "dOuNLS1elWs",
+      "url": "https://www.youtube.com/watch?v=dOuNLS1elWs",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Apple",
+      "title": "AirPods Pro 2: Hearing Aid Feature",
+      "channel": "Apple",
+      "duration_seconds": 105,
+      "publish_date": "2024-09-09T12:33:52-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/058-dOuNLS1elWs.jpg"
+    },
+    {
+      "index": 59,
+      "video_id": "eH-PKTHDu3c",
+      "url": "https://www.youtube.com/watch?v=eH-PKTHDu3c",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Apple",
+      "title": "Introducing AirPods Pro 3",
+      "channel": "Apple India",
+      "duration_seconds": 48,
+      "publish_date": "2025-09-09T11:55:45-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Feature Callout",
+        "Product Demo",
+        "How-To Tutorial",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/059-eH-PKTHDu3c.jpg"
+    },
+    {
+      "index": 60,
+      "video_id": "toQJE8i0GW0",
+      "url": "https://www.youtube.com/watch?v=toQJE8i0GW0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Apple",
+      "title": "AirPods Max - Journey into sound (official commercial video)",
+      "channel": "Apple Memories",
+      "duration_seconds": 98,
+      "publish_date": "2020-12-08T12:02:39-08:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/060-toQJE8i0GW0.jpg"
+    },
+    {
+      "index": 61,
+      "video_id": "wDgH0FECdJs",
+      "url": "https://www.youtube.com/watch?v=wDgH0FECdJs",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Apple",
+      "title": "AirPods Pro 3 starring Vini Jr. with the world’s best in-ear Active Noise Cancellation",
+      "channel": "Apple",
+      "duration_seconds": 35,
+      "publish_date": "2026-06-11T09:02:43-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/061-wDgH0FECdJs.jpg"
+    },
+    {
+      "index": 62,
+      "video_id": "sHUGhkqtYRQ",
+      "url": "https://www.youtube.com/watch?v=sHUGhkqtYRQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Bang & Olufsen",
+      "title": "Beoplay EQ – Adaptive noise cancelling wireless earphones | Bang & Olufsen",
+      "channel": "Bang & Olufsen",
+      "duration_seconds": 37,
+      "publish_date": "2021-07-29T00:00:15-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/062-sHUGhkqtYRQ.jpg"
+    },
+    {
+      "index": 63,
+      "video_id": "2tI5ibyBnjg",
+      "url": "https://www.youtube.com/watch?v=2tI5ibyBnjg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Beats",
+      "title": "Cardi B Levels Up with Beats Studio Buds+",
+      "channel": "Beats by Dre",
+      "duration_seconds": 41,
+      "publish_date": "2023-05-17T06:50:47-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/063-2tI5ibyBnjg.jpg"
+    },
+    {
+      "index": 64,
+      "video_id": "dUtdi45xSr8",
+      "url": "https://www.youtube.com/watch?v=dUtdi45xSr8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Beats",
+      "title": "Introducing the new Beats Studio Buds feat. Roddy Ricch",
+      "channel": "Beats by Dre",
+      "duration_seconds": 30,
+      "publish_date": "2021-06-14T08:34:20-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/064-dUtdi45xSr8.jpg"
+    },
+    {
+      "index": 65,
+      "video_id": "yS6X0q4Nsws",
+      "url": "https://www.youtube.com/watch?v=yS6X0q4Nsws",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Beats",
+      "title": "Kim Kardashian x Beats: Designing the Ultimate Neutral Earbuds",
+      "channel": "Beats by Dre",
+      "duration_seconds": 103,
+      "publish_date": "2022-08-09T07:02:08-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/065-yS6X0q4Nsws.jpg"
+    },
+    {
+      "index": 66,
+      "video_id": "E7tN1jnho_g",
+      "url": "https://www.youtube.com/watch?v=E7tN1jnho_g",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Bose",
+      "title": "Bose QuietComfort® Earbuds | Marielle Silences The World",
+      "channel": "Bose",
+      "duration_seconds": 49,
+      "publish_date": "2022-05-16T13:35:31-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/066-E7tN1jnho_g.jpg"
+    },
+    {
+      "index": 67,
+      "video_id": "Y4x4jsJCzZ4",
+      "url": "https://www.youtube.com/watch?v=Y4x4jsJCzZ4",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Bose",
+      "title": "Bose QuietComfort® Earbuds | Rule the Quiet",
+      "channel": "Bose",
+      "duration_seconds": 75,
+      "publish_date": "2022-05-16T13:20:45-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/067-Y4x4jsJCzZ4.jpg"
+    },
+    {
+      "index": 68,
+      "video_id": "xa1LGVWoy30",
+      "url": "https://www.youtube.com/watch?v=xa1LGVWoy30",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Bose",
+      "title": "Bose QuietComfort Earbuds – Getting the Proper Fit",
+      "channel": "Bose Product Support",
+      "duration_seconds": 104,
+      "publish_date": "2024-09-18T06:02:00-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "How-To Tutorial",
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/068-xa1LGVWoy30.jpg"
+    },
+    {
+      "index": 69,
+      "video_id": "-BhntWD3oDA",
+      "url": "https://www.youtube.com/watch?v=-BhntWD3oDA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "The world's first intelligent dynamic noise-cancelling TWS earphones: HUAWEI FreeBuds Pro",
+      "channel": "Huawei Mobile MY",
+      "duration_seconds": 44,
+      "publish_date": "2020-10-04T21:11:55-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/069--BhntWD3oDA.jpg"
+    },
+    {
+      "index": 70,
+      "video_id": "3Z-dPIoYeVo",
+      "url": "https://www.youtube.com/watch?v=3Z-dPIoYeVo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro - Active Noise Cancellation",
+      "channel": "Huawei Mobile MY",
+      "duration_seconds": 17,
+      "publish_date": "2021-09-12T03:00:01-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/070-3Z-dPIoYeVo.jpg"
+    },
+    {
+      "index": 71,
+      "video_id": "3yZkeQvNTcY",
+      "url": "https://www.youtube.com/watch?v=3yZkeQvNTcY",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro 5 - Quiet Starts Here",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 38,
+      "publish_date": "2026-02-26T19:30:01-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/071-3yZkeQvNTcY.jpg"
+    },
+    {
+      "index": 72,
+      "video_id": "7B-Orx7MO_U",
+      "url": "https://www.youtube.com/watch?v=7B-Orx7MO_U",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 6i | Super Quiet, Super Bass",
+      "channel": "Huawei Arabia",
+      "duration_seconds": 22,
+      "publish_date": "2024-07-05T00:34:19-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/072-7B-Orx7MO_U.jpg"
+    },
+    {
+      "index": 73,
+      "video_id": "Ae2hm6X-lhA",
+      "url": "https://www.youtube.com/watch?v=Ae2hm6X-lhA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI Freebuds Pro 4 - Silver String Design",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 17,
+      "publish_date": "2024-12-27T00:00:03-08:00",
+      "discovered_for_genres": [
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/073-Ae2hm6X-lhA.jpg"
+    },
+    {
+      "index": 74,
+      "video_id": "EEq70C3aXbM",
+      "url": "https://www.youtube.com/watch?v=EEq70C3aXbM",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 5i - Multi-Mode Active Noise Cancellation (ANC)",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 25,
+      "publish_date": "2023-01-20T08:15:00-08:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/074-EEq70C3aXbM.jpg"
+    },
+    {
+      "index": 75,
+      "video_id": "EuO7XuJg1RU",
+      "url": "https://www.youtube.com/watch?v=EuO7XuJg1RU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro 3 |  The Pinnacle of Acoustic Innovation and Nature-inspired Design",
+      "channel": "Huawei Mobile MY",
+      "duration_seconds": 28,
+      "publish_date": "2023-10-17T23:00:13-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/075-EuO7XuJg1RU.jpg"
+    },
+    {
+      "index": 76,
+      "video_id": "FtgZKd6WKr8",
+      "url": "https://www.youtube.com/watch?v=FtgZKd6WKr8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 4 – Pre-order (30s)",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 30,
+      "publish_date": "2021-07-13T20:08:12-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/076-FtgZKd6WKr8.jpg"
+    },
+    {
+      "index": 77,
+      "video_id": "Jw71cIC6PIs",
+      "url": "https://www.youtube.com/watch?v=Jw71cIC6PIs",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 6i - Less Noise, More Rest",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 22,
+      "publish_date": "2024-06-11T23:00:03-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/077-Jw71cIC6PIs.jpg"
+    },
+    {
+      "index": 78,
+      "video_id": "OYD-7DiW_AA",
+      "url": "https://www.youtube.com/watch?v=OYD-7DiW_AA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro 4 - Stable & Clear Calls Anywhere",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 39,
+      "publish_date": "2024-12-10T21:00:01-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/078-OYD-7DiW_AA.jpg"
+    },
+    {
+      "index": 79,
+      "video_id": "RUcpN_4wGdE",
+      "url": "https://www.youtube.com/watch?v=RUcpN_4wGdE",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 4 level up your elegance ft. Jojo Goh",
+      "channel": "Huawei Mobile MY",
+      "duration_seconds": 65,
+      "publish_date": "2021-07-07T20:12:45-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/079-RUcpN_4wGdE.jpg"
+    },
+    {
+      "index": 80,
+      "video_id": "SJ2Ci4F05RU",
+      "url": "https://www.youtube.com/watch?v=SJ2Ci4F05RU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 4i  - Battery (15s)",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 16,
+      "publish_date": "2021-03-22T02:23:25-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/080-SJ2Ci4F05RU.jpg"
+    },
+    {
+      "index": 81,
+      "video_id": "Wm-UqPkNWOU",
+      "url": "https://www.youtube.com/watch?v=Wm-UqPkNWOU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro 5 - Extreme Noise Cancellation Test",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 29,
+      "publish_date": "2026-03-16T20:20:51-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/081-Wm-UqPkNWOU.jpg"
+    },
+    {
+      "index": 82,
+      "video_id": "XVzz6gpgio0",
+      "url": "https://www.youtube.com/watch?v=XVzz6gpgio0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 4i - Product (45s)",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 45,
+      "publish_date": "2021-03-22T02:23:14-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/082-XVzz6gpgio0.jpg"
+    },
+    {
+      "index": 83,
+      "video_id": "Yd7Djf5QYvw",
+      "url": "https://www.youtube.com/watch?v=Yd7Djf5QYvw",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 6i - Perfect Silence, Super Bass",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 70,
+      "publish_date": "2024-07-04T02:19:02-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/083-Yd7Djf5QYvw.jpg"
+    },
+    {
+      "index": 84,
+      "video_id": "_qGnftnFRYk",
+      "url": "https://www.youtube.com/watch?v=_qGnftnFRYk",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "Say hello to the all-new HUAWEI FreeBuds 4",
+      "channel": "Huawei Mobile MY",
+      "duration_seconds": 30,
+      "publish_date": "2021-07-06T10:35:10-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/084-_qGnftnFRYk.jpg"
+    },
+    {
+      "index": 85,
+      "video_id": "bgqFL0z4B24",
+      "url": "https://www.youtube.com/watch?v=bgqFL0z4B24",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 4 (60s)",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 60,
+      "publish_date": "2021-07-25T19:44:30-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/085-bgqFL0z4B24.jpg"
+    },
+    {
+      "index": 86,
+      "video_id": "diq4Hwf7OQo",
+      "url": "https://www.youtube.com/watch?v=diq4Hwf7OQo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "FreeBuds 6 - Stable and Clear Calls Party Video",
+      "channel": "Huawei Mobile MY",
+      "duration_seconds": 23,
+      "publish_date": "2025-06-20T21:00:48-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/086-diq4Hwf7OQo.jpg"
+    },
+    {
+      "index": 87,
+      "video_id": "iXhDlkmxrHU",
+      "url": "https://www.youtube.com/watch?v=iXhDlkmxrHU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 43,
+      "publish_date": "2020-11-05T02:04:02-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/087-iXhDlkmxrHU.jpg"
+    },
+    {
+      "index": 88,
+      "video_id": "j5BCsz23898",
+      "url": "https://www.youtube.com/watch?v=j5BCsz23898",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro 5 - Quiet Starts Here",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 38,
+      "publish_date": "2026-03-16T20:15:25-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/088-j5BCsz23898.jpg"
+    },
+    {
+      "index": 89,
+      "video_id": "jRImo-hz2CU",
+      "url": "https://www.youtube.com/watch?v=jRImo-hz2CU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds Pro Features",
+      "channel": "HUAWEI Mobile Canada",
+      "duration_seconds": 48,
+      "publish_date": "2020-10-26T07:34:02-07:00",
+      "discovered_for_genres": [
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/089-jRImo-hz2CU.jpg"
+    },
+    {
+      "index": 90,
+      "video_id": "jvhRLmPKYaQ",
+      "url": "https://www.youtube.com/watch?v=jvhRLmPKYaQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI | FreeBuds Pro",
+      "channel": "Huawei Mobile Polska",
+      "duration_seconds": 45,
+      "publish_date": "2020-11-02T02:31:20-08:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/090-jvhRLmPKYaQ.jpg"
+    },
+    {
+      "index": 91,
+      "video_id": "ncfrB15li1E",
+      "url": "https://www.youtube.com/watch?v=ncfrB15li1E",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "Controls and Functions | HUAWEI FreeBuds 4",
+      "channel": "Huawei Mobile PH",
+      "duration_seconds": 87,
+      "publish_date": "2021-08-12T03:51:22-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/091-ncfrB15li1E.jpg"
+    },
+    {
+      "index": 92,
+      "video_id": "vgw-amVaodg",
+      "url": "https://www.youtube.com/watch?v=vgw-amVaodg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 6i - Super Quiet, Super Bass",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 40,
+      "publish_date": "2024-06-05T04:00:02-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/092-vgw-amVaodg.jpg"
+    },
+    {
+      "index": 93,
+      "video_id": "yF_rD375k8Q",
+      "url": "https://www.youtube.com/watch?v=yF_rD375k8Q",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 4i - ANC (15s)",
+      "channel": "Huawei Mobile SG",
+      "duration_seconds": 16,
+      "publish_date": "2021-03-22T02:23:29-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/093-yF_rD375k8Q.jpg"
+    },
+    {
+      "index": 94,
+      "video_id": "zM5CZqW9IOg",
+      "url": "https://www.youtube.com/watch?v=zM5CZqW9IOg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Huawei",
+      "title": "HUAWEI FreeBuds 6 - Stable & Clear Calls",
+      "channel": "Huawei Mobile",
+      "duration_seconds": 40,
+      "publish_date": "2025-06-08T20:00:02-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/094-zM5CZqW9IOg.jpg"
+    },
+    {
+      "index": 95,
+      "video_id": "0Eydg4CWyQ4",
+      "url": "https://www.youtube.com/watch?v=0Eydg4CWyQ4",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Tour Pro 2 Noise Cancelling true wireless earbuds",
+      "channel": "JBL",
+      "duration_seconds": 66,
+      "publish_date": "2022-12-07T03:50:34-08:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/095-0Eydg4CWyQ4.jpg"
+    },
+    {
+      "index": 96,
+      "video_id": "7jTDPSg5cUY",
+      "url": "https://www.youtube.com/watch?v=7jTDPSg5cUY",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Soundgear Sense true wireless earbuds with open sound",
+      "channel": "JBL",
+      "duration_seconds": 46,
+      "publish_date": "2023-09-08T01:37:14-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/096-7jTDPSg5cUY.jpg"
+    },
+    {
+      "index": 97,
+      "video_id": "AkdU0FLdi7k",
+      "url": "https://www.youtube.com/watch?v=AkdU0FLdi7k",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Soundgear Sense true wireless earbuds with air conduction technology",
+      "channel": "JBL",
+      "duration_seconds": 20,
+      "publish_date": "2023-09-08T01:37:19-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/097-AkdU0FLdi7k.jpg"
+    },
+    {
+      "index": 98,
+      "video_id": "BC42thmIcG0",
+      "url": "https://www.youtube.com/watch?v=BC42thmIcG0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL X MABEL - NEW Wireless Earbuds",
+      "channel": "JBL",
+      "duration_seconds": 30,
+      "publish_date": "2019-11-21T01:33:23-08:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/098-BC42thmIcG0.jpg"
+    },
+    {
+      "index": 99,
+      "video_id": "DgUUUwchOIc",
+      "url": "https://www.youtube.com/watch?v=DgUUUwchOIc",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Wave 300TWS | True Wireless Earbuds",
+      "channel": "JBL",
+      "duration_seconds": 19,
+      "publish_date": "2021-09-15T15:00:04-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/099-DgUUUwchOIc.jpg"
+    },
+    {
+      "index": 100,
+      "video_id": "Fj7mhBVRMjk",
+      "url": "https://www.youtube.com/watch?v=Fj7mhBVRMjk",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Tune Beam 2 noise cancelling earbuds",
+      "channel": "JBL",
+      "duration_seconds": 40,
+      "publish_date": "2025-01-28T04:46:02-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/100-Fj7mhBVRMjk.jpg"
+    },
+    {
+      "index": 101,
+      "video_id": "HuR-5GrMZyQ",
+      "url": "https://www.youtube.com/watch?v=HuR-5GrMZyQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Wave Buds 2 true wireless noise cancelling earbuds",
+      "channel": "JBL",
+      "duration_seconds": 23,
+      "publish_date": "2025-01-31T09:23:50-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/101-HuR-5GrMZyQ.jpg"
+    },
+    {
+      "index": 102,
+      "video_id": "KOK-GrrrjcQ",
+      "url": "https://www.youtube.com/watch?v=KOK-GrrrjcQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Tune Flex 2 noise cancelling earbuds by JBL",
+      "channel": "JBL",
+      "duration_seconds": 40,
+      "publish_date": "2025-01-28T04:33:05-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/102-KOK-GrrrjcQ.jpg"
+    },
+    {
+      "index": 103,
+      "video_id": "Kt9z-hH61K0",
+      "url": "https://www.youtube.com/watch?v=Kt9z-hH61K0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Tour Pro 2 How to use the Smart Case display",
+      "channel": "JBL",
+      "duration_seconds": 37,
+      "publish_date": "2023-05-17T07:10:38-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/103-Kt9z-hH61K0.jpg"
+    },
+    {
+      "index": 104,
+      "video_id": "MXf4zvQZyco",
+      "url": "https://www.youtube.com/watch?v=MXf4zvQZyco",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Tour Pro 3: Unboxing & Setting Up the Next-Gen Earbuds",
+      "channel": "JBL",
+      "duration_seconds": 74,
+      "publish_date": "2024-08-29T04:40:46-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase",
+        "Product Demo",
+        "How-To Tutorial",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/104-MXf4zvQZyco.jpg"
+    },
+    {
+      "index": 105,
+      "video_id": "ODI4zO0kFro",
+      "url": "https://www.youtube.com/watch?v=ODI4zO0kFro",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Vibe Beam earbuds",
+      "channel": "JBL",
+      "duration_seconds": 22,
+      "publish_date": "2022-12-07T03:24:07-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/105-ODI4zO0kFro.jpg"
+    },
+    {
+      "index": 106,
+      "video_id": "SInW3C7I270",
+      "url": "https://www.youtube.com/watch?v=SInW3C7I270",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Vibe Buds earbuds",
+      "channel": "JBL",
+      "duration_seconds": 22,
+      "publish_date": "2022-12-07T03:22:44-08:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/106-SInW3C7I270.jpg"
+    },
+    {
+      "index": 107,
+      "video_id": "iUKlfDmEwNA",
+      "url": "https://www.youtube.com/watch?v=iUKlfDmEwNA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | True Wireless Earbuds | Sound that fits you",
+      "channel": "JBL",
+      "duration_seconds": 67,
+      "publish_date": "2020-10-20T04:20:09-07:00",
+      "discovered_for_genres": [
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/107-iUKlfDmEwNA.jpg"
+    },
+    {
+      "index": 108,
+      "video_id": "oKKITJCaS3c",
+      "url": "https://www.youtube.com/watch?v=oKKITJCaS3c",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "JBL",
+      "title": "JBL | Tune Buds 2 noise cancelling earbuds",
+      "channel": "JBL",
+      "duration_seconds": 40,
+      "publish_date": "2025-01-28T04:41:52-08:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/108-oKKITJCaS3c.jpg"
+    },
+    {
+      "index": 109,
+      "video_id": "0J7afcVwc7M",
+      "url": "https://www.youtube.com/watch?v=0J7afcVwc7M",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 65e: How to use ANC and HearThrough | Jabra Support",
+      "channel": "Jabra",
+      "duration_seconds": 84,
+      "publish_date": "2018-10-31T05:54:05-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/109-0J7afcVwc7M.jpg"
+    },
+    {
+      "index": 110,
+      "video_id": "0owxU2E7Unc",
+      "url": "https://www.youtube.com/watch?v=0owxU2E7Unc",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 75t (ANC updated)",
+      "channel": "Jabra",
+      "duration_seconds": 88,
+      "publish_date": "2020-10-13T02:36:04-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/110-0owxU2E7Unc.jpg"
+    },
+    {
+      "index": 111,
+      "video_id": "3FIdUxLf5yA",
+      "url": "https://www.youtube.com/watch?v=3FIdUxLf5yA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 65e [ES]",
+      "channel": "Jabra",
+      "duration_seconds": 69,
+      "publish_date": "2018-08-28T01:43:22-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/111-3FIdUxLf5yA.jpg"
+    },
+    {
+      "index": 112,
+      "video_id": "8E7aUqmuQ8c",
+      "url": "https://www.youtube.com/watch?v=8E7aUqmuQ8c",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite | Dolby Spatial Sound",
+      "channel": "Jabra",
+      "duration_seconds": 54,
+      "publish_date": "2023-09-06T01:14:58-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/112-8E7aUqmuQ8c.jpg"
+    },
+    {
+      "index": 113,
+      "video_id": "9o0yvQWLp9c",
+      "url": "https://www.youtube.com/watch?v=9o0yvQWLp9c",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite Active 75t Product Video",
+      "channel": "Jabra",
+      "duration_seconds": 30,
+      "publish_date": "2020-02-11T07:10:23-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/113-9o0yvQWLp9c.jpg"
+    },
+    {
+      "index": 114,
+      "video_id": "9tMS_NPxuP0",
+      "url": "https://www.youtube.com/watch?v=9tMS_NPxuP0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 75t: How to pair | Jabra Support",
+      "channel": "Jabra",
+      "duration_seconds": 83,
+      "publish_date": "2020-11-19T04:51:55-08:00",
+      "discovered_for_genres": [
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/114-9tMS_NPxuP0.jpg"
+    },
+    {
+      "index": 115,
+      "video_id": "GP1KsgEvZow",
+      "url": "https://www.youtube.com/watch?v=GP1KsgEvZow",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 75t Product Video (ANC updated)",
+      "channel": "Jabra",
+      "duration_seconds": 81,
+      "publish_date": "2020-10-13T02:31:46-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/115-GP1KsgEvZow.jpg"
+    },
+    {
+      "index": 116,
+      "video_id": "QToOe3aNDqY",
+      "url": "https://www.youtube.com/watch?v=QToOe3aNDqY",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 75t - Engineered to last longer. Designed to fit better.",
+      "channel": "Jabra",
+      "duration_seconds": 75,
+      "publish_date": "2019-09-10T10:37:17-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/116-QToOe3aNDqY.jpg"
+    },
+    {
+      "index": 117,
+      "video_id": "Z1P3ejAonCo",
+      "url": "https://www.youtube.com/watch?v=Z1P3ejAonCo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 8 Active: How to connect your earbuds | Jabra Support",
+      "channel": "Jabra",
+      "duration_seconds": 32,
+      "publish_date": "2023-11-08T00:36:53-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/117-Z1P3ejAonCo.jpg"
+    },
+    {
+      "index": 118,
+      "video_id": "ZO7jPdj2mHg",
+      "url": "https://www.youtube.com/watch?v=ZO7jPdj2mHg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 65t & Elite 65t Active: How to get the best fit & performance | Jabra Support",
+      "channel": "Jabra",
+      "duration_seconds": 88,
+      "publish_date": "2018-12-12T05:50:18-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/118-ZO7jPdj2mHg.jpg"
+    },
+    {
+      "index": 119,
+      "video_id": "f-dMDIicE_A",
+      "url": "https://www.youtube.com/watch?v=f-dMDIicE_A",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite Active 75t  Product Video - DE",
+      "channel": "Jabra",
+      "duration_seconds": 30,
+      "publish_date": "2020-04-23T05:40:29-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/119-f-dMDIicE_A.jpg"
+    },
+    {
+      "index": 120,
+      "video_id": "fxPfQ7qEO-8",
+      "url": "https://www.youtube.com/watch?v=fxPfQ7qEO-8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 5 Product Overview",
+      "channel": "Jabra",
+      "duration_seconds": 88,
+      "publish_date": "2022-09-01T23:05:49-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/120-fxPfQ7qEO-8.jpg"
+    },
+    {
+      "index": 121,
+      "video_id": "i_CKp-ji84Q",
+      "url": "https://www.youtube.com/watch?v=i_CKp-ji84Q",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 65t [IT]",
+      "channel": "Jabra",
+      "duration_seconds": 30,
+      "publish_date": "2018-08-28T01:35:39-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/121-i_CKp-ji84Q.jpg"
+    },
+    {
+      "index": 122,
+      "video_id": "n7Sz-N0LI1k",
+      "url": "https://www.youtube.com/watch?v=n7Sz-N0LI1k",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 3 | FREE THE BASS.",
+      "channel": "Jabra",
+      "duration_seconds": 80,
+      "publish_date": "2021-10-01T10:15:59-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/122-n7Sz-N0LI1k.jpg"
+    },
+    {
+      "index": 123,
+      "video_id": "olHYA5c6jl4",
+      "url": "https://www.youtube.com/watch?v=olHYA5c6jl4",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite Active 75t (ANC update)",
+      "channel": "Jabra",
+      "duration_seconds": 86,
+      "publish_date": "2020-10-13T02:49:47-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Lookbook"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/123-olHYA5c6jl4.jpg"
+    },
+    {
+      "index": 124,
+      "video_id": "vzq6Ba-289w",
+      "url": "https://www.youtube.com/watch?v=vzq6Ba-289w",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 10: How to connect your earbuds | Jabra Support",
+      "channel": "Jabra",
+      "duration_seconds": 34,
+      "publish_date": "2023-11-08T00:30:48-08:00",
+      "discovered_for_genres": [
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/124-vzq6Ba-289w.jpg"
+    },
+    {
+      "index": 125,
+      "video_id": "xmm9aDpEYLg",
+      "url": "https://www.youtube.com/watch?v=xmm9aDpEYLg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite Active 75t Product Video (ANC updated)",
+      "channel": "Jabra",
+      "duration_seconds": 102,
+      "publish_date": "2020-10-13T02:45:31-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/125-xmm9aDpEYLg.jpg"
+    },
+    {
+      "index": 126,
+      "video_id": "yNlLhqM7Km8",
+      "url": "https://www.youtube.com/watch?v=yNlLhqM7Km8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Jabra",
+      "title": "Jabra Elite 75t - Great calls. Great music. Fits like no other.",
+      "channel": "Jabra",
+      "duration_seconds": 88,
+      "publish_date": "2019-09-10T10:28:31-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/126-yNlLhqM7Km8.jpg"
+    },
+    {
+      "index": 127,
+      "video_id": "CrRpC8tPHqk",
+      "url": "https://www.youtube.com/watch?v=CrRpC8tPHqk",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Nothing",
+      "title": "Nothing ear (1) - Pure Love 🐞",
+      "channel": "Nothing",
+      "duration_seconds": 27,
+      "publish_date": "2021-07-29T04:36:04-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/127-CrRpC8tPHqk.jpg"
+    },
+    {
+      "index": 128,
+      "video_id": "W0jOMHaEfzM",
+      "url": "https://www.youtube.com/watch?v=W0jOMHaEfzM",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Nothing",
+      "title": "Nothing ear (1)",
+      "channel": "Nothing",
+      "duration_seconds": 29,
+      "publish_date": "2021-07-27T06:34:31-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Feature Callout",
+        "Product Demo",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/128-W0jOMHaEfzM.jpg"
+    },
+    {
+      "index": 129,
+      "video_id": "2FOA80ckBsE",
+      "url": "https://www.youtube.com/watch?v=2FOA80ckBsE",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Sound Experience with Galaxy Buds3 Pro | Samsung",
+      "channel": "Samsung US",
+      "duration_seconds": 114,
+      "publish_date": "2024-09-17T11:11:17-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/129-2FOA80ckBsE.jpg"
+    },
+    {
+      "index": 130,
+      "video_id": "3kL21CFJSO0",
+      "url": "https://www.youtube.com/watch?v=3kL21CFJSO0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds2 Pro: Official Film | Samsung",
+      "channel": "Samsung Malaysia",
+      "duration_seconds": 48,
+      "publish_date": "2022-08-24T03:00:34-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/130-3kL21CFJSO0.jpg"
+    },
+    {
+      "index": 131,
+      "video_id": "3wpjsZLtXP0",
+      "url": "https://www.youtube.com/watch?v=3wpjsZLtXP0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds2 Pro: Official Film | Samsung New Zealand",
+      "channel": "Samsung New Zealand",
+      "duration_seconds": 30,
+      "publish_date": "2022-08-10T19:07:17-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/131-3wpjsZLtXP0.jpg"
+    },
+    {
+      "index": 132,
+      "video_id": "7_2VzRW0YJw",
+      "url": "https://www.youtube.com/watch?v=7_2VzRW0YJw",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds2: Official Unboxing | Samsung",
+      "channel": "Samsung",
+      "duration_seconds": 85,
+      "publish_date": "2021-08-13T05:31:11-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/132-7_2VzRW0YJw.jpg"
+    },
+    {
+      "index": 133,
+      "video_id": "Er6ppurPigo",
+      "url": "https://www.youtube.com/watch?v=Er6ppurPigo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Unboxing Galaxy Buds3 and Buds3 Pro | Samsung",
+      "channel": "Samsung",
+      "duration_seconds": 90,
+      "publish_date": "2024-07-10T07:50:46-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/133-Er6ppurPigo.jpg"
+    },
+    {
+      "index": 134,
+      "video_id": "H1R_YQLiGzk",
+      "url": "https://www.youtube.com/watch?v=H1R_YQLiGzk",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds Live - Official Unboxing | Samsung",
+      "channel": "Samsung Philippines",
+      "duration_seconds": 87,
+      "publish_date": "2020-08-30T02:00:07-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Product Demo",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/134-H1R_YQLiGzk.jpg"
+    },
+    {
+      "index": 135,
+      "video_id": "IMkAB9A7-fo",
+      "url": "https://www.youtube.com/watch?v=IMkAB9A7-fo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Introducing Galaxy Buds4 Pro | Galaxy AI | Samsung",
+      "channel": "Samsung India",
+      "duration_seconds": 84,
+      "publish_date": "2026-02-25T11:40:46-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/135-IMkAB9A7-fo.jpg"
+    },
+    {
+      "index": 136,
+      "video_id": "IO8-xJu_PAU",
+      "url": "https://www.youtube.com/watch?v=IO8-xJu_PAU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "The New Galaxy Buds",
+      "channel": "Samsung Philippines",
+      "duration_seconds": 80,
+      "publish_date": "2019-03-14T19:38:17-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/136-IO8-xJu_PAU.jpg"
+    },
+    {
+      "index": 137,
+      "video_id": "J9chgF38yvs",
+      "url": "https://www.youtube.com/watch?v=J9chgF38yvs",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Feel more. Move more | Galaxy Buds2 Pro | Samsung UK",
+      "channel": "Samsung UK",
+      "duration_seconds": 20,
+      "publish_date": "2022-12-13T01:00:18-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/137-J9chgF38yvs.jpg"
+    },
+    {
+      "index": 138,
+      "video_id": "K4F8yKsqh2I",
+      "url": "https://www.youtube.com/watch?v=K4F8yKsqh2I",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds2 Pro: Official Film | Samsung",
+      "channel": "Samsung Singapore",
+      "duration_seconds": 30,
+      "publish_date": "2022-08-16T03:00:12-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/138-K4F8yKsqh2I.jpg"
+    },
+    {
+      "index": 139,
+      "video_id": "KeM00g05qbY",
+      "url": "https://www.youtube.com/watch?v=KeM00g05qbY",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds3 | Galaxy Buds3 Pro: Official Unboxing | Samsung",
+      "channel": "Samsung Singapore",
+      "duration_seconds": 90,
+      "publish_date": "2024-07-11T01:00:16-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/139-KeM00g05qbY.jpg"
+    },
+    {
+      "index": 140,
+      "video_id": "KjYbxxd6VWM",
+      "url": "https://www.youtube.com/watch?v=KjYbxxd6VWM",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds2 Pro: Official Unboxing | Samsung",
+      "channel": "Samsung Bangladesh",
+      "duration_seconds": 76,
+      "publish_date": "2022-10-18T22:43:39-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/140-KjYbxxd6VWM.jpg"
+    },
+    {
+      "index": 141,
+      "video_id": "NJLxWNn1HjU",
+      "url": "https://www.youtube.com/watch?v=NJLxWNn1HjU",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds Live: Official Introduction Film",
+      "channel": "Samsung Canada",
+      "duration_seconds": 39,
+      "publish_date": "2020-08-18T06:13:47-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/141-NJLxWNn1HjU.jpg"
+    },
+    {
+      "index": 142,
+      "video_id": "Sxmxb4jmxlA",
+      "url": "https://www.youtube.com/watch?v=Sxmxb4jmxlA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Unboxing Galaxy Buds4 and Buds4 Pro | Samsung",
+      "channel": "Samsung",
+      "duration_seconds": 110,
+      "publish_date": "2026-02-25T12:00:46-08:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/142-Sxmxb4jmxlA.jpg"
+    },
+    {
+      "index": 143,
+      "video_id": "VbZWGjrbDH4",
+      "url": "https://www.youtube.com/watch?v=VbZWGjrbDH4",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Introducing Galaxy Buds4 Pro | Galaxy AI | Samsung",
+      "channel": "Samsung US",
+      "duration_seconds": 83,
+      "publish_date": "2026-02-25T12:30:35-08:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/143-VbZWGjrbDH4.jpg"
+    },
+    {
+      "index": 144,
+      "video_id": "aTp7aBTEAf8",
+      "url": "https://www.youtube.com/watch?v=aTp7aBTEAf8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds Live: Official unboxing | Samsung",
+      "channel": "Samsung Gulf",
+      "duration_seconds": 87,
+      "publish_date": "2020-10-18T23:01:22-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/144-aTp7aBTEAf8.jpg"
+    },
+    {
+      "index": 145,
+      "video_id": "bmaQzEGa-IQ",
+      "url": "https://www.youtube.com/watch?v=bmaQzEGa-IQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Introducing Galaxy Buds4 Pro | Galaxy AI | Samsung",
+      "channel": "Samsung",
+      "duration_seconds": 83,
+      "publish_date": "2026-02-25T11:20:47-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/145-bmaQzEGa-IQ.jpg"
+    },
+    {
+      "index": 146,
+      "video_id": "jWfm2o0m5Lg",
+      "url": "https://www.youtube.com/watch?v=jWfm2o0m5Lg",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds FE | Official Unboxing | Samsung UK",
+      "channel": "Samsung UK",
+      "duration_seconds": 86,
+      "publish_date": "2023-10-11T04:01:37-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/146-jWfm2o0m5Lg.jpg"
+    },
+    {
+      "index": 147,
+      "video_id": "k_V_zmcREs0",
+      "url": "https://www.youtube.com/watch?v=k_V_zmcREs0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds: Official Introduction",
+      "channel": "Samsung Levant",
+      "duration_seconds": 80,
+      "publish_date": "2019-02-25T23:04:12-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/147-k_V_zmcREs0.jpg"
+    },
+    {
+      "index": 148,
+      "video_id": "rQKDmPZpnR8",
+      "url": "https://www.youtube.com/watch?v=rQKDmPZpnR8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds2 Pro: Official Unboxing | Samsung",
+      "channel": "Samsung",
+      "duration_seconds": 76,
+      "publish_date": "2022-08-10T08:47:08-07:00",
+      "discovered_for_genres": [
+        "Macro Close-Up",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/148-rQKDmPZpnR8.jpg"
+    },
+    {
+      "index": 149,
+      "video_id": "y3urXbiOQtQ",
+      "url": "https://www.youtube.com/watch?v=y3urXbiOQtQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Samsung",
+      "title": "Galaxy Buds FE: Official Unboxing | Samsung",
+      "channel": "Samsung",
+      "duration_seconds": 86,
+      "publish_date": "2023-10-05T06:01:58-07:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/149-y3urXbiOQtQ.jpg"
+    },
+    {
+      "index": 150,
+      "video_id": "CUANvNUwFeI",
+      "url": "https://www.youtube.com/watch?v=CUANvNUwFeI",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sennheiser",
+      "title": "Sennheiser Momentum True Wireless 2 | Sennheiser",
+      "channel": "Sennheiser",
+      "duration_seconds": 59,
+      "publish_date": "2020-03-13T03:32:13-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/150-CUANvNUwFeI.jpg"
+    },
+    {
+      "index": 151,
+      "video_id": "GJCAWxNm69M",
+      "url": "https://www.youtube.com/watch?v=GJCAWxNm69M",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sennheiser",
+      "title": "Sennheiser Momentum True Wireless 4 Earbuds",
+      "channel": "Sennheiser India",
+      "duration_seconds": 47,
+      "publish_date": "2024-09-22T23:12:53-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/151-GJCAWxNm69M.jpg"
+    },
+    {
+      "index": 152,
+      "video_id": "NUXGq8lEYOs",
+      "url": "https://www.youtube.com/watch?v=NUXGq8lEYOs",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sennheiser",
+      "title": "MOMENTUM True Wireless 3 | Sennheiser",
+      "channel": "Sennheiser",
+      "duration_seconds": 60,
+      "publish_date": "2022-05-04T07:47:26-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/152-NUXGq8lEYOs.jpg"
+    },
+    {
+      "index": 153,
+      "video_id": "OpuNEkGkcRw",
+      "url": "https://www.youtube.com/watch?v=OpuNEkGkcRw",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sennheiser",
+      "title": "Sennheiser Momentum True Wireless 2 Produkt Video | Sennheiser",
+      "channel": "Sennheiser",
+      "duration_seconds": 59,
+      "publish_date": "2020-04-09T03:11:42-07:00",
+      "discovered_for_genres": [
+        "Feature Callout"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/153-OpuNEkGkcRw.jpg"
+    },
+    {
+      "index": 154,
+      "video_id": "eAeTinCryA8",
+      "url": "https://www.youtube.com/watch?v=eAeTinCryA8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sennheiser",
+      "title": "Introducing the MOMENTUM True Wireless | Sennheiser",
+      "channel": "Sennheiser",
+      "duration_seconds": 76,
+      "publish_date": "2019-01-10T01:38:23-08:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/154-eAeTinCryA8.jpg"
+    },
+    {
+      "index": 155,
+      "video_id": "uC0WqbFaBao",
+      "url": "https://www.youtube.com/watch?v=uC0WqbFaBao",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sennheiser",
+      "title": "MOMENTUM True Wireless | Sennheiser",
+      "channel": "Sennheiser",
+      "duration_seconds": 65,
+      "publish_date": "2018-11-28T02:50:31-08:00",
+      "discovered_for_genres": [
+        "Macro Close-Up"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/155-uC0WqbFaBao.jpg"
+    },
+    {
+      "index": 156,
+      "video_id": "69ZbeYmDxnA",
+      "url": "https://www.youtube.com/watch?v=69ZbeYmDxnA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Unboxing: Sony WF-1000XM5 Wireless Noise Cancelling Earbuds",
+      "channel": "Sony Europe",
+      "duration_seconds": 67,
+      "publish_date": "2024-09-18T09:00:05-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/156-69ZbeYmDxnA.jpg"
+    },
+    {
+      "index": 157,
+      "video_id": "88Cp6TAVY4g",
+      "url": "https://www.youtube.com/watch?v=88Cp6TAVY4g",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Unboxing: Sony LinkBuds Fit",
+      "channel": "Sony Europe",
+      "duration_seconds": 57,
+      "publish_date": "2024-10-01T09:00:08-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/157-88Cp6TAVY4g.jpg"
+    },
+    {
+      "index": 158,
+      "video_id": "A3Yap7TzWS8",
+      "url": "https://www.youtube.com/watch?v=A3Yap7TzWS8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Sony LinkBuds Fit x Olivia Rodrigo",
+      "channel": "Sony Electronics",
+      "duration_seconds": 67,
+      "publish_date": "2024-10-01T09:00:14-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/158-A3Yap7TzWS8.jpg"
+    },
+    {
+      "index": 159,
+      "video_id": "G-4_wSIkPxc",
+      "url": "https://www.youtube.com/watch?v=G-4_wSIkPxc",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Introducing Sony LinkBuds Fit",
+      "channel": "Sony Europe",
+      "duration_seconds": 108,
+      "publish_date": "2024-10-01T09:00:18-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/159-G-4_wSIkPxc.jpg"
+    },
+    {
+      "index": 160,
+      "video_id": "JmkRbO0ox6g",
+      "url": "https://www.youtube.com/watch?v=JmkRbO0ox6g",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Miguel x WF-1000XM5 Truly Wireless Earbuds",
+      "channel": "Sony Electronics",
+      "duration_seconds": 62,
+      "publish_date": "2023-07-24T09:01:02-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/160-JmkRbO0ox6g.jpg"
+    },
+    {
+      "index": 161,
+      "video_id": "LWS29XEzQg8",
+      "url": "https://www.youtube.com/watch?v=LWS29XEzQg8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "WF-C700N How to use the noise cancelling",
+      "channel": "Sony - Support JP",
+      "duration_seconds": 40,
+      "publish_date": "2023-11-01T19:14:08-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/161-LWS29XEzQg8.jpg"
+    },
+    {
+      "index": 162,
+      "video_id": "Of0wnkWdF4A",
+      "url": "https://www.youtube.com/watch?v=Of0wnkWdF4A",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "WF-SP800N Wireless Noise-Canceling Sport Earbuds | Sony",
+      "channel": "Sony Electronics",
+      "duration_seconds": 87,
+      "publish_date": "2020-05-07T06:50:25-07:00",
+      "discovered_for_genres": [
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/162-Of0wnkWdF4A.jpg"
+    },
+    {
+      "index": 163,
+      "video_id": "Oxy6AqHOodw",
+      "url": "https://www.youtube.com/watch?v=Oxy6AqHOodw",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Introducing the Sony WF-C700N Noise Cancelling Earbuds",
+      "channel": "Sony India",
+      "duration_seconds": 96,
+      "publish_date": "2023-07-13T23:21:30-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/163-Oxy6AqHOodw.jpg"
+    },
+    {
+      "index": 164,
+      "video_id": "Q2zlSFiAlO8",
+      "url": "https://www.youtube.com/watch?v=Q2zlSFiAlO8",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Stress Free & Long Life Battery with WH-1000XM4 & WF-1000XM4 Series!",
+      "channel": "Sony Malaysia",
+      "duration_seconds": 50,
+      "publish_date": "2022-02-05T19:00:58-08:00",
+      "discovered_for_genres": [
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/164-Q2zlSFiAlO8.jpg"
+    },
+    {
+      "index": 165,
+      "video_id": "e3P2CAO33vA",
+      "url": "https://www.youtube.com/watch?v=e3P2CAO33vA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "UNBOXING | WF-1000XM6 – The Best Truly Wireless Noise Cancelling Earbuds",
+      "channel": "Sony Europe",
+      "duration_seconds": 48,
+      "publish_date": "2026-03-24T05:15:00-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/165-e3P2CAO33vA.jpg"
+    },
+    {
+      "index": 166,
+      "video_id": "hvkngQBVMW0",
+      "url": "https://www.youtube.com/watch?v=hvkngQBVMW0",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Introducing the Sony WF-C710N Truly Wireless Noise Cancelling Earbuds",
+      "channel": "Sony Europe",
+      "duration_seconds": 63,
+      "publish_date": "2025-03-25T09:00:59-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/166-hvkngQBVMW0.jpg"
+    },
+    {
+      "index": 167,
+      "video_id": "p1XaIrXkDmI",
+      "url": "https://www.youtube.com/watch?v=p1XaIrXkDmI",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Sony",
+      "title": "Unboxing + How to Pair: Sony WF-C710N Truly Wireless Noise Cancelling Earbuds",
+      "channel": "Sony Europe",
+      "duration_seconds": 69,
+      "publish_date": "2025-03-25T09:00:58-07:00",
+      "discovered_for_genres": [
+        "Unboxing"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/167-p1XaIrXkDmI.jpg"
+    },
+    {
+      "index": 168,
+      "video_id": "-7aSAWMUb6s",
+      "url": "https://www.youtube.com/watch?v=-7aSAWMUb6s",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Design | Xiaomi Buds 5 Pro",
+      "channel": "Xiaomi",
+      "duration_seconds": 21,
+      "publish_date": "2025-03-08T09:00:27-08:00",
+      "discovered_for_genres": [
+        "Feature Callout",
+        "Unboxing",
+        "Daily Routine"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/168--7aSAWMUb6s.jpg"
+    },
+    {
+      "index": 169,
+      "video_id": "2tsxIQZI3YQ",
+      "url": "https://www.youtube.com/watch?v=2tsxIQZI3YQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Everything about REDMI Buds 8 pro",
+      "channel": "Xiaomi",
+      "duration_seconds": 33,
+      "publish_date": "2026-03-11T08:01:02-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/169-2tsxIQZI3YQ.jpg"
+    },
+    {
+      "index": 170,
+      "video_id": "3jRCM02tKHQ",
+      "url": "https://www.youtube.com/watch?v=3jRCM02tKHQ",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Fully upgraded design | Xiaomi Buds 4 Pro",
+      "channel": "Xiaomi",
+      "duration_seconds": 45,
+      "publish_date": "2023-02-26T10:00:02-08:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/170-3jRCM02tKHQ.jpg"
+    },
+    {
+      "index": 171,
+      "video_id": "G4q1jpZe7vo",
+      "url": "https://www.youtube.com/watch?v=G4q1jpZe7vo",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Xiaomi Buds 3T Pro | Everything You Need To Know",
+      "channel": "Xiaomi UK",
+      "duration_seconds": 17,
+      "publish_date": "2022-05-21T06:06:45-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/171-G4q1jpZe7vo.jpg"
+    },
+    {
+      "index": 172,
+      "video_id": "OtvnRMH8t44",
+      "url": "https://www.youtube.com/watch?v=OtvnRMH8t44",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Redmi Buds 4 Active | Rise. Never Fall.",
+      "channel": "Xiaomi India",
+      "duration_seconds": 60,
+      "publish_date": "2023-06-13T23:46:13-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/172-OtvnRMH8t44.jpg"
+    },
+    {
+      "index": 173,
+      "video_id": "gBg6IYKzu4U",
+      "url": "https://www.youtube.com/watch?v=gBg6IYKzu4U",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Meet Redmi Buds 4 Pro",
+      "channel": "Xiaomi",
+      "duration_seconds": 30,
+      "publish_date": "2022-08-29T06:00:17-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/173-gBg6IYKzu4U.jpg"
+    },
+    {
+      "index": 174,
+      "video_id": "i7Xi27ri0dA",
+      "url": "https://www.youtube.com/watch?v=i7Xi27ri0dA",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Redmi Buds 5A | ANC for Everyone",
+      "channel": "Xiaomi India",
+      "duration_seconds": 57,
+      "publish_date": "2024-04-27T00:04:11-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/174-i7Xi27ri0dA.jpg"
+    },
+    {
+      "index": 175,
+      "video_id": "q1zQ4Bgbl1Y",
+      "url": "https://www.youtube.com/watch?v=q1zQ4Bgbl1Y",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Meet Redmi Buds 4",
+      "channel": "Xiaomi",
+      "duration_seconds": 23,
+      "publish_date": "2022-09-02T06:00:29-07:00",
+      "discovered_for_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/175-q1zQ4Bgbl1Y.jpg"
+    },
+    {
+      "index": 176,
+      "video_id": "uaEmAOtgqzs",
+      "url": "https://www.youtube.com/watch?v=uaEmAOtgqzs",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "expected_brand": "Xiaomi",
+      "title": "Immersive Sound | Redmi Buds 4 Pro",
+      "channel": "Xiaomi",
+      "duration_seconds": 17,
+      "publish_date": "2022-09-01T06:00:26-07:00",
+      "discovered_for_genres": [
+        "Product Demo"
+      ],
+      "contact_sheet": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/individual/176-uaEmAOtgqzs.jpg"
+    }
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-01.jpg",
+      "video_ids": [
+        "1_KFE0ATS1g",
+        "2jutZa3fzwA",
+        "9bgayvi_DzM",
+        "GOIWbGzv4II"
+      ]
+    },
+    {
+      "batch": 2,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-02.jpg",
+      "video_ids": [
+        "a6zDDcGjFtM",
+        "ej9LJmaoS0g",
+        "0fEVNMMy5B4",
+        "0szqUcjpEuI"
+      ]
+    },
+    {
+      "batch": 3,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-03.jpg",
+      "video_ids": [
+        "3jYhEmQM7OU",
+        "9d1iTBJ5_kg",
+        "CBd-694cMJk",
+        "GMBE9UIXxy4"
+      ]
+    },
+    {
+      "batch": 4,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-04.jpg",
+      "video_ids": [
+        "HDWDDelPY5I",
+        "P9JB-_RrBzs",
+        "RxdfFI8CA3Q",
+        "YmPoa-bpXfs"
+      ]
+    },
+    {
+      "batch": 5,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-05.jpg",
+      "video_ids": [
+        "gduN2Rs0qb0",
+        "qeioGNuqU-U",
+        "zquUnBZB9MI",
+        "-N2OK7U2D9g"
+      ]
+    },
+    {
+      "batch": 6,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-06.jpg",
+      "video_ids": [
+        "-_Kq75t9nso",
+        "5pLyTuzvNjs",
+        "7rHuRJ_1ZtI",
+        "8ViInATeb6M"
+      ]
+    },
+    {
+      "batch": 7,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-07.jpg",
+      "video_ids": [
+        "BlhWayUwsy4",
+        "LEnnkBMFWow",
+        "iDyvtEOXSgQ",
+        "s1IzF0vtMgM"
+      ]
+    },
+    {
+      "batch": 8,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-08.jpg",
+      "video_ids": [
+        "s2lowSj9k-s",
+        "ujES8BJYY6o",
+        "Jwc-8sL_VSU",
+        "_h_NPobJkEA"
+      ]
+    },
+    {
+      "batch": 9,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-09.jpg",
+      "video_ids": [
+        "muXRq16J25M",
+        "-ODcuQVfpMU",
+        "X4T8XSjIfQw",
+        "JjVlxBKma6A"
+      ]
+    },
+    {
+      "batch": 10,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-10.jpg",
+      "video_ids": [
+        "id2cLVIZh5Y",
+        "pHro11GBYxM",
+        "CUSbMoNA_A0",
+        "PCFpMur7nSg"
+      ]
+    },
+    {
+      "batch": 11,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-11.jpg",
+      "video_ids": [
+        "nNmyT-OtHxU",
+        "ptHVb8cLW9M",
+        "66X5Gnuw81w",
+        "6VVxPKrz6z0"
+      ]
+    },
+    {
+      "batch": 12,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-12.jpg",
+      "video_ids": [
+        "6eaKnvJE32A",
+        "9VLDQLva4Qk",
+        "9b5NlpA1P3I",
+        "EIRZ-7Iaoe4"
+      ]
+    },
+    {
+      "batch": 13,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-13.jpg",
+      "video_ids": [
+        "F_gSSzVl9Uc",
+        "aATK22L38b8",
+        "mp2x2gpe2ak",
+        "o4apT17y4pM"
+      ]
+    },
+    {
+      "batch": 14,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-14.jpg",
+      "video_ids": [
+        "s3538Le5-_A",
+        "v7EnkZy-ptk",
+        "vrrVZ9CmD2Q",
+        "EMmKs8vMKhU"
+      ]
+    },
+    {
+      "batch": 15,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-15.jpg",
+      "video_ids": [
+        "bCqnOn23LWE",
+        "dOuNLS1elWs",
+        "eH-PKTHDu3c",
+        "toQJE8i0GW0"
+      ]
+    },
+    {
+      "batch": 16,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-16.jpg",
+      "video_ids": [
+        "wDgH0FECdJs",
+        "sHUGhkqtYRQ",
+        "2tI5ibyBnjg",
+        "dUtdi45xSr8"
+      ]
+    },
+    {
+      "batch": 17,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-17.jpg",
+      "video_ids": [
+        "yS6X0q4Nsws",
+        "E7tN1jnho_g",
+        "Y4x4jsJCzZ4",
+        "xa1LGVWoy30"
+      ]
+    },
+    {
+      "batch": 18,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-18.jpg",
+      "video_ids": [
+        "-BhntWD3oDA",
+        "3Z-dPIoYeVo",
+        "3yZkeQvNTcY",
+        "7B-Orx7MO_U"
+      ]
+    },
+    {
+      "batch": 19,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-19.jpg",
+      "video_ids": [
+        "Ae2hm6X-lhA",
+        "EEq70C3aXbM",
+        "EuO7XuJg1RU",
+        "FtgZKd6WKr8"
+      ]
+    },
+    {
+      "batch": 20,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-20.jpg",
+      "video_ids": [
+        "Jw71cIC6PIs",
+        "OYD-7DiW_AA",
+        "RUcpN_4wGdE",
+        "SJ2Ci4F05RU"
+      ]
+    },
+    {
+      "batch": 21,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-21.jpg",
+      "video_ids": [
+        "Wm-UqPkNWOU",
+        "XVzz6gpgio0",
+        "Yd7Djf5QYvw",
+        "_qGnftnFRYk"
+      ]
+    },
+    {
+      "batch": 22,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-22.jpg",
+      "video_ids": [
+        "bgqFL0z4B24",
+        "diq4Hwf7OQo",
+        "iXhDlkmxrHU",
+        "j5BCsz23898"
+      ]
+    },
+    {
+      "batch": 23,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-23.jpg",
+      "video_ids": [
+        "jRImo-hz2CU",
+        "jvhRLmPKYaQ",
+        "ncfrB15li1E",
+        "vgw-amVaodg"
+      ]
+    },
+    {
+      "batch": 24,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-24.jpg",
+      "video_ids": [
+        "yF_rD375k8Q",
+        "zM5CZqW9IOg",
+        "0Eydg4CWyQ4",
+        "7jTDPSg5cUY"
+      ]
+    },
+    {
+      "batch": 25,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-25.jpg",
+      "video_ids": [
+        "AkdU0FLdi7k",
+        "BC42thmIcG0",
+        "DgUUUwchOIc",
+        "Fj7mhBVRMjk"
+      ]
+    },
+    {
+      "batch": 26,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-26.jpg",
+      "video_ids": [
+        "HuR-5GrMZyQ",
+        "KOK-GrrrjcQ",
+        "Kt9z-hH61K0",
+        "MXf4zvQZyco"
+      ]
+    },
+    {
+      "batch": 27,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-27.jpg",
+      "video_ids": [
+        "ODI4zO0kFro",
+        "SInW3C7I270",
+        "iUKlfDmEwNA",
+        "oKKITJCaS3c"
+      ]
+    },
+    {
+      "batch": 28,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-28.jpg",
+      "video_ids": [
+        "0J7afcVwc7M",
+        "0owxU2E7Unc",
+        "3FIdUxLf5yA",
+        "8E7aUqmuQ8c"
+      ]
+    },
+    {
+      "batch": 29,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-29.jpg",
+      "video_ids": [
+        "9o0yvQWLp9c",
+        "9tMS_NPxuP0",
+        "GP1KsgEvZow",
+        "QToOe3aNDqY"
+      ]
+    },
+    {
+      "batch": 30,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-30.jpg",
+      "video_ids": [
+        "Z1P3ejAonCo",
+        "ZO7jPdj2mHg",
+        "f-dMDIicE_A",
+        "fxPfQ7qEO-8"
+      ]
+    },
+    {
+      "batch": 31,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-31.jpg",
+      "video_ids": [
+        "i_CKp-ji84Q",
+        "n7Sz-N0LI1k",
+        "olHYA5c6jl4",
+        "vzq6Ba-289w"
+      ]
+    },
+    {
+      "batch": 32,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-32.jpg",
+      "video_ids": [
+        "xmm9aDpEYLg",
+        "yNlLhqM7Km8",
+        "CrRpC8tPHqk",
+        "W0jOMHaEfzM"
+      ]
+    },
+    {
+      "batch": 33,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-33.jpg",
+      "video_ids": [
+        "2FOA80ckBsE",
+        "3kL21CFJSO0",
+        "3wpjsZLtXP0",
+        "7_2VzRW0YJw"
+      ]
+    },
+    {
+      "batch": 34,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-34.jpg",
+      "video_ids": [
+        "Er6ppurPigo",
+        "H1R_YQLiGzk",
+        "IMkAB9A7-fo",
+        "IO8-xJu_PAU"
+      ]
+    },
+    {
+      "batch": 35,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-35.jpg",
+      "video_ids": [
+        "J9chgF38yvs",
+        "K4F8yKsqh2I",
+        "KeM00g05qbY",
+        "KjYbxxd6VWM"
+      ]
+    },
+    {
+      "batch": 36,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-36.jpg",
+      "video_ids": [
+        "NJLxWNn1HjU",
+        "Sxmxb4jmxlA",
+        "VbZWGjrbDH4",
+        "aTp7aBTEAf8"
+      ]
+    },
+    {
+      "batch": 37,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-37.jpg",
+      "video_ids": [
+        "bmaQzEGa-IQ",
+        "jWfm2o0m5Lg",
+        "k_V_zmcREs0",
+        "rQKDmPZpnR8"
+      ]
+    },
+    {
+      "batch": 38,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-38.jpg",
+      "video_ids": [
+        "y3urXbiOQtQ",
+        "CUANvNUwFeI",
+        "GJCAWxNm69M",
+        "NUXGq8lEYOs"
+      ]
+    },
+    {
+      "batch": 39,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-39.jpg",
+      "video_ids": [
+        "OpuNEkGkcRw",
+        "eAeTinCryA8",
+        "uC0WqbFaBao",
+        "69ZbeYmDxnA"
+      ]
+    },
+    {
+      "batch": 40,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-40.jpg",
+      "video_ids": [
+        "88Cp6TAVY4g",
+        "A3Yap7TzWS8",
+        "G-4_wSIkPxc",
+        "JmkRbO0ox6g"
+      ]
+    },
+    {
+      "batch": 41,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-41.jpg",
+      "video_ids": [
+        "LWS29XEzQg8",
+        "Of0wnkWdF4A",
+        "Oxy6AqHOodw",
+        "Q2zlSFiAlO8"
+      ]
+    },
+    {
+      "batch": 42,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-42.jpg",
+      "video_ids": [
+        "e3P2CAO33vA",
+        "hvkngQBVMW0",
+        "p1XaIrXkDmI",
+        "-7aSAWMUb6s"
+      ]
+    },
+    {
+      "batch": 43,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-43.jpg",
+      "video_ids": [
+        "2tsxIQZI3YQ",
+        "3jRCM02tKHQ",
+        "G4q1jpZe7vo",
+        "OtvnRMH8t44"
+      ]
+    },
+    {
+      "batch": 44,
+      "path": "/Users/hakunamatata/Desktop/AdGenie/collect/mvp-contact-sheets-v1/batches/batch-44.jpg",
+      "video_ids": [
+        "gBg6IYKzu4U",
+        "i7Xi27ri0dA",
+        "q1zQ4Bgbl1Y",
+        "uaEmAOtgqzs"
+      ]
+    }
+  ]
+}

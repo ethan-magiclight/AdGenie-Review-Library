@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T09:52:27.097Z",
+  "source_review": "consumer-electronics-review-v4.json",
+  "duration_rule": "16-119 seconds",
+  "target_fill_rule": "10 unique canonical masters per product_category + genre",
+  "note": "discovery target genres are recall evidence only; official classification still requires visual review",
+  "gaps": [
+    {
+      "category": "Power Banks",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "Power Banks",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Unboxing",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "Power Banks",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Multi-Angle / 360° Product Showcase",
+      "current_count": 6,
+      "deficit": 4
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "How-To Tutorial",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Unboxing",
+      "current_count": 5,
+      "deficit": 5
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Lookbook",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Daily Routine",
+      "current_count": 0,
+      "deficit": 10
+    },
+    {
+      "category": "True Wireless / Bluetooth Earbuds",
+      "genre": "Walk-and-Talk UGC",
+      "current_count": 0,
+      "deficit": 10
+    }
+  ],
+  "total_query_count": 110,
+  "query_offset": 80,
+  "query_count": 30,
+  "candidate_count": 5,
+  "official_shortlist_count": 0,
+  "discovery_error_count": 0,
+  "candidates": [
+    {
+      "video_id": "P5Ra020qclQ",
+      "url": "https://www.youtube.com/watch?v=P5Ra020qclQ",
+      "title": "ESR HaloLock wireless power bank recalled",
+      "description": "The National Consumer Commission has recalled four models of the ESR HaloLock wireless Power Banks. The products were ...",
+      "duration_seconds": 31,
+      "channel": "eNCA",
+      "channel_id": "UCI3RT5PGmdi1KVp9FG_CneA",
+      "channel_url": "https://www.youtube.com/channel/UCI3RT5PGmdi1KVp9FG_CneA",
+      "channel_is_verified": true,
+      "view_count": 720,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "ESR ESR power bank official product showcase",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "2S8hmqRD-P4",
+      "url": "https://www.youtube.com/watch?v=2S8hmqRD-P4",
+      "title": "The Fastest Way to Charge Your iPhone on the GO! - Mophie Powerstation PD 10,000 mAh Power Bank",
+      "description": "In this video I talk about the fastest way to charge your iPhone while you are on the go with the Mophie Powerstation PD 10000 ...",
+      "duration_seconds": 69,
+      "channel": "Zadius Tech",
+      "channel_id": "UCpyccToYyxo1HW6en0-UN5w",
+      "channel_url": "https://www.youtube.com/channel/UCpyccToYyxo1HW6en0-UN5w",
+      "channel_is_verified": null,
+      "view_count": 13216,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "Mophie",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "Mophie Mophie power bank design film official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "PM10lRHVrZo",
+      "url": "https://www.youtube.com/watch?v=PM10lRHVrZo",
+      "title": "EcoFlow Rapid Pro 27K Unboxing: The Ultimate 3-in-1 Power Bank?",
+      "description": "EcoFlow Rapid Pro is designed for users who need fast, reliable, and portable charging on the go, combining high-speed power ...",
+      "duration_seconds": 99,
+      "channel": "BOXscape",
+      "channel_id": "UCuxohPmcHMQJgELyoj3rGZQ",
+      "channel_url": "https://www.youtube.com/channel/UCuxohPmcHMQJgELyoj3rGZQ",
+      "channel_is_verified": null,
+      "view_count": 8379,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "EcoFlow",
+          "target_genre": "Unboxing",
+          "query": "EcoFlow EcoFlow power bank unbox official",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "2f-dDCx8BhI",
+      "url": "https://www.youtube.com/watch?v=2f-dDCx8BhI",
+      "title": "EcoFlow RAPID Pro X PowerBank | EcoFlow",
+      "description": "The EcoFlow RAPID Pro X Power Bank, part of the innovative RAPID series, is a top-tier product in the industry. It offers fast ...",
+      "duration_seconds": 49,
+      "channel": "UX Design Awards",
+      "channel_id": "UCLyml8V_4nZm016FmuaVHUg",
+      "channel_url": "https://www.youtube.com/channel/UCLyml8V_4nZm016FmuaVHUg",
+      "channel_is_verified": null,
+      "view_count": 4086,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "EcoFlow",
+          "target_genre": "Multi-Angle / 360° Product Showcase",
+          "query": "EcoFlow EcoFlow power bank official product design",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    },
+    {
+      "video_id": "eLJdvGYWjaQ",
+      "url": "https://www.youtube.com/watch?v=eLJdvGYWjaQ",
+      "title": "ESR HaloLock 10,000mAh Wireless Power Bank unboxing",
+      "description": "Got this MagSafe compatible power bank from ESR. It's pretty bulky, and it's just a magnetic wireless charger, not a true MagSafe ...",
+      "duration_seconds": 111,
+      "channel": "AlphaReview",
+      "channel_id": "UCdE7yrXKas1EDeQYCtoA1rg",
+      "channel_url": "https://www.youtube.com/channel/UCdE7yrXKas1EDeQYCtoA1rg",
+      "channel_is_verified": null,
+      "view_count": 924,
+      "discovery_matches": [
+        {
+          "category": "Power Banks",
+          "expected_brand": "ESR",
+          "target_genre": "Unboxing",
+          "query": "ESR ESR power bank official unboxing",
+          "source_tier": "creator_or_media_candidate"
+        }
+      ],
+      "source_tiers": [
+        "creator_or_media_candidate"
+      ],
+      "official_match_count": 0,
+      "creator_match_count": 1
+    }
+  ],
+  "errors": []
+}

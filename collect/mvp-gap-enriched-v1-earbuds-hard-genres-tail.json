@@ -1,0 +1,1997 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-01T10:09:27.832Z",
+  "source_files": [
+    "mvp-gap-official-shortlist-v1-earbuds-hard-genres-tail.json"
+  ],
+  "cutoff_date": "2023-08-01",
+  "candidate_count": 36,
+  "passed_count": 4,
+  "excluded_count": 30,
+  "pending_count": 2,
+  "records": [
+    {
+      "video_id": "r-M5KTEqcm4",
+      "url": "https://www.youtube.com/watch?v=r-M5KTEqcm4",
+      "title": "OPPO Enco M32 | Features Revealed",
+      "description": "The OPPO Enco M32 features 28hr long battery life, Dual Device Fast Switching, an Independent Bass Chamber and an ...",
+      "duration_seconds": 44,
+      "channel": "OPPO India",
+      "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_is_verified": true,
+      "view_count": 13196742,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OPPO OPPO Enco earbuds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco M32 | Features Revealed",
+        "fulltitle": "OPPO Enco M32 | Features Revealed",
+        "description": "The OPPO Enco M32 features 28hr long battery life, Dual Device Fast Switching, an Independent Bass Chamber and an Ergonomic Fin Design. #UnplugFor20Hrs and dive deep into a world of harmonious melodies today.\nKnow more: https://amzn.to/3mDzWMi",
+        "duration_seconds": 43,
+        "upload_date": "20220105",
+        "publish_date": "2022-01-05",
+        "channel": "OPPO India",
+        "uploader": "OPPO India",
+        "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+        "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+        "view_count": 13196742,
+        "tags": [
+          "OPPO Enco M32",
+          "Enco M32",
+          "Earbuds",
+          "10 minutes charge",
+          "20 hours playback",
+          "wireless earphones"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=r-M5KTEqcm4"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "mJ_6o5lNJyo",
+      "url": "https://www.youtube.com/watch?v=mJ_6o5lNJyo",
+      "title": "OPPO Enco Buds | The Best In Class Earbuds",
+      "description": "The future of all-day listening is here! With the #BestInClassEarBuds, enjoy the freedom to move about as you like and listen to ...",
+      "duration_seconds": 45,
+      "channel": "OPPO India",
+      "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_is_verified": true,
+      "view_count": 2491680,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "How-To Tutorial",
+          "query": "OPPO OPPO Enco earbuds official quick start",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Daily Routine",
+          "query": "OPPO OPPO Enco earbuds day in the life official",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OPPO OPPO Enco earbuds UGC ad",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 3,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco Buds | The Best In Class Earbuds",
+        "fulltitle": "OPPO Enco Buds | The Best In Class Earbuds",
+        "description": "The future of all-day listening is here! With the #BestInClassEarBuds, enjoy the freedom to move about as you like and listen to your music to its fullest. \nReady to grab #OPPOEncoBuds? \nBuy now: https://bit.ly/EncoBuds",
+        "duration_seconds": 45,
+        "upload_date": "20210915",
+        "publish_date": "2021-09-15",
+        "channel": "OPPO India",
+        "uploader": "OPPO India",
+        "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+        "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+        "view_count": 2491680,
+        "tags": [
+          "encobuuds",
+          "OPPO Enco Buds",
+          "Wireless Earbuds",
+          "OPPO Enco",
+          "OPPO Earphone",
+          "Wireless earphones"
+        ],
+        "categories": [
+          "People & Blogs"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=mJ_6o5lNJyo"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "PMHkSdkBODE",
+      "url": "https://www.youtube.com/watch?v=PMHkSdkBODE",
+      "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+      "description": "Redefine yourself with the new Huawei Freebuds Pro. Get Entertainment Gift Package worth P2,099 and Huawei Band 4 worth P1 ...",
+      "duration_seconds": 30,
+      "channel": "Huawei Mobile PH",
+      "channel_id": "UCDHzBIQTttun4uMqdrrDFow",
+      "channel_url": "https://www.youtube.com/channel/UCDHzBIQTttun4uMqdrrDFow",
+      "channel_is_verified": null,
+      "view_count": 2271944,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Lookbook",
+          "query": "Huawei FreeBuds official style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+        "fulltitle": "Speak for your Style | Pre-order the new Huawei Freebuds Pro now!",
+        "description": "Redefine yourself with the new Huawei Freebuds Pro. Get Entertainment Gift Package worth P2,099 and Huawei Band 4 worth P1,890 until December 3, 2020 via Huawei Store.",
+        "duration_seconds": 30,
+        "upload_date": "20201128",
+        "publish_date": "2020-11-28",
+        "channel": "Huawei Mobile PH",
+        "uploader": "Huawei Mobile PH",
+        "channel_url": "https://www.youtube.com/channel/UCDHzBIQTttun4uMqdrrDFow",
+        "channel_id": "UCDHzBIQTttun4uMqdrrDFow",
+        "view_count": 2271944,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=PMHkSdkBODE"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "44pLqhSKVcg",
+      "url": "https://www.youtube.com/watch?v=44pLqhSKVcg",
+      "title": "JBL Tune Flex - World’s First Transformable TWS Earbuds",
+      "description": "Your flex? Your choice. Introducing, the WORLD'S FIRST EVER transformable TWS earbuds - the JBL Tune Flex. Choose your ...",
+      "duration_seconds": 31,
+      "channel": "JBL India",
+      "channel_id": "UCKZl7x4gt0Yw2AitabCvqpw",
+      "channel_url": "https://www.youtube.com/channel/UCKZl7x4gt0Yw2AitabCvqpw",
+      "channel_is_verified": null,
+      "view_count": 1436450,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "JBL JBL earbuds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "JBL Tune Flex - World’s First Transformable TWS Earbuds",
+        "fulltitle": "JBL Tune Flex - World’s First Transformable TWS Earbuds",
+        "description": "Your flex? Your choice. \nIntroducing, the WORLD’S FIRST EVER transformable TWS earbuds - the JBL Tune Flex. \n\nChoose your flex as you get to customize your ear tips and use the TWS either with Open Buds or Sealing Buds. Enjoy the all new earbuds that truly move through your day with you.\n\nFeatures of the JBL Tune Flex: \nJBL Pure Bass Sound \nActive Noise Cancelling (2-Mic) with Smart Ambient \n4 microphones for crisp, clear calls \n3 sizes of sealing ear tips\nSpeed charge \nIPX4 splash proof certified \nJBL sound fit - open ear and sealing ear tips \nHands-Free Voice Control with Google Assistant \nCustomisable all-access touch control through the JBL Headphones App\nUp to 8H in the earbuds + 24H in the case with ANC off\n\nWhat are you waiting for? Get yours today! \nAvailable exclusively at Flipkart - https://bit.ly/JBLTuneFlex\n\nBe a part of our community:\nFacebook - https://www.facebook.com/JBLIndia\nInstagram - https://www.instagram.com/jblindia/\nTwitter - https://twitter.com/JBLSoundIn\n\n#JBLTuneFlex #MuteTheWorld #JBLHeadphones #JBL #ChooseYourFlex #FlexYourVibe",
+        "duration_seconds": 30,
+        "upload_date": "20220906",
+        "publish_date": "2022-09-06",
+        "channel": "JBL India",
+        "uploader": "JBL India",
+        "channel_url": "https://www.youtube.com/channel/UCKZl7x4gt0Yw2AitabCvqpw",
+        "channel_id": "UCKZl7x4gt0Yw2AitabCvqpw",
+        "view_count": 1436450,
+        "tags": [
+          "JBL",
+          "JBL India",
+          "JBL Music",
+          "JBL Professional",
+          "Tune Flex",
+          "Choose Your Flex",
+          "Flex Your Vibe",
+          "JBL Pure bass sound",
+          "JBL Speakers",
+          "JBL Headphones",
+          "JBL Sound",
+          "New launch",
+          "JBL On Flipkart",
+          "Headphones Launch",
+          "Dare To Listen",
+          "JBL Tune Flex",
+          "JBL TWS",
+          "JBL Signature Sound",
+          "JBL ANC Headphones",
+          "JBL ANC TWS",
+          "Truly Wireless Earbuds",
+          "Wireless Buds",
+          "JBL Bass",
+          "Sound Fit Technology",
+          "JBL Sound Fit",
+          "JBL By Harman",
+          "Noise Cancelling Headphones",
+          "JBL NC Headphones"
+        ],
+        "categories": [
+          "Music"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=44pLqhSKVcg"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "8laDdUCvNKM",
+      "url": "https://www.youtube.com/watch?v=8laDdUCvNKM",
+      "title": "OPPO Enco Series | All Day Sound, All Day Style",
+      "description": "Setiap hari sekarang jadi semakin berwarna! Gunakan OPPO Enco Series untuk menemani kamu dalam berolahraga, berpergian ...",
+      "duration_seconds": 60,
+      "channel": "OPPO Indonesia",
+      "channel_id": "UCZ4i1fLzkZ9O3-f2BvWG7_Q",
+      "channel_url": "https://www.youtube.com/channel/UCZ4i1fLzkZ9O3-f2BvWG7_Q",
+      "channel_is_verified": true,
+      "view_count": 969384,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Daily Routine",
+          "query": "OPPO OPPO Enco earbuds daily routine official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco Series | All Day Sound, All Day Style",
+        "fulltitle": "OPPO Enco Series | All Day Sound, All Day Style",
+        "description": "Setiap hari sekarang jadi semakin berwarna!\n\nGunakan OPPO Enco Series untuk menemani kamu dalam berolahraga, berpergian sendiri, mendengarkan musik, hingga saat bermain game.\n\nOPPO Enco Series memiliki desain menarik, dengan fitur:\n\n💡 Low Battery Gaming Mode\n🎧 Crystal-Clear Vocal Quality\n⚡10 Minutes Fast Charging for 8 Hours Playtime\n🔋 24 Hours batery Life\n\nFitur dan spesifikasi lengkap lainnya, langsung kunjungi:\nOPPO Enco Buds https://www.oppo.com/id/accessories/enco-buds/\nOPPO Enco AIr https://www.oppo.com/id/accessories/enco-air/\n\nPembelian melalui E-commerce, cek link di bawah ini:\nOPPO Store: https://www.oppo.com/id/store/\nShopee: https://shopee.co.id/oppo.id\nLazada: https://www.lazada.co.id/shop/oppo1627864973/\nTokopedia; https://www.tokopedia.com/oppo\nBlibli: https://www.blibli.com/merchant/oppo-indonesia-official-store/\nJD.ID: https://www.jd.id/shop/OPPO-Official-Store_49046.html\n------------------------------------------------\n\nJangan lupa follow dan subscribe akun media sosial media OPPO Indonesia ya!\n\nFacebook https://www.facebook.com/OPPOIndonesia\nInstagram https://www.instagram.com/oppoindonesia/\nYoutube https://www.youtube.com/user/OPPOIndonesia/\nTwitter https://twitter.com/oppoindonesia/",
+        "duration_seconds": 60,
+        "upload_date": "20210812",
+        "publish_date": "2021-08-12",
+        "channel": "OPPO Indonesia",
+        "uploader": "OPPO Indonesia",
+        "channel_url": "https://www.youtube.com/channel/UCZ4i1fLzkZ9O3-f2BvWG7_Q",
+        "channel_id": "UCZ4i1fLzkZ9O3-f2BvWG7_Q",
+        "view_count": 969384,
+        "tags": [
+          "Enco Buds",
+          "Enco Air",
+          "Enco",
+          "Buds",
+          "Air",
+          "OPPO",
+          "Earphone",
+          "TWS",
+          "Speaker",
+          "Bluetooth",
+          "Music",
+          "Gym"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=8laDdUCvNKM"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "xkFNoGW0dhc",
+      "url": "https://www.youtube.com/watch?v=xkFNoGW0dhc",
+      "title": "HUAWEI FreeBuds 3i I Active Noise Cancellation",
+      "description": "Huawei Freebuds3i dengan Active Noise Cancellation. Pure Delight, Free from Noise with #HauweiFreeBuds3i Dapatkan ...",
+      "duration_seconds": 16,
+      "channel": "Huawei Mobile Indonesia",
+      "channel_id": "UCUyuR2sKOBY_xGsqS96LRbQ",
+      "channel_url": "https://www.youtube.com/channel/UCUyuR2sKOBY_xGsqS96LRbQ",
+      "channel_is_verified": null,
+      "view_count": 819145,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Daily Routine",
+          "query": "Huawei FreeBuds morning routine official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds 3i I Active Noise Cancellation",
+        "fulltitle": "HUAWEI FreeBuds 3i I Active Noise Cancellation",
+        "description": "Huawei Freebuds3i dengan Active Noise Cancellation. Pure Delight, Free from Noise with #HauweiFreeBuds3i\n\nDapatkan sekarang juga. Klik disini: bit.ly/Freebuds3i untuk cari tahu lebih lanjut",
+        "duration_seconds": 16,
+        "upload_date": "20200713",
+        "publish_date": "2020-07-13",
+        "channel": "Huawei Mobile Indonesia",
+        "uploader": "Huawei Mobile Indonesia",
+        "channel_url": "https://www.youtube.com/channel/UCUyuR2sKOBY_xGsqS96LRbQ",
+        "channel_id": "UCUyuR2sKOBY_xGsqS96LRbQ",
+        "view_count": 819145,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=xkFNoGW0dhc"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "Fh9PyEbOh5s",
+      "url": "https://www.youtube.com/watch?v=Fh9PyEbOh5s",
+      "title": "HUAWEI FreeBuds 3 | Intelligent Noise Cancellation",
+      "description": "Blast your favorite songs in astounding clarity with active noise cancellation and studio quality sound. The intelligent Kirin A1 chip ...",
+      "duration_seconds": 25,
+      "channel": "Huawei Arabia",
+      "channel_id": "UChPQoP4PTHfNp7INZ8ktiGw",
+      "channel_url": "https://www.youtube.com/channel/UChPQoP4PTHfNp7INZ8ktiGw",
+      "channel_is_verified": true,
+      "view_count": 703238,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Lookbook",
+          "query": "Huawei FreeBuds street style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds 3 | Intelligent Noise Cancellation",
+        "fulltitle": "HUAWEI FreeBuds 3 | Intelligent Noise Cancellation",
+        "description": "Blast your favorite songs in astounding clarity with active noise cancellation and studio quality sound. The intelligent Kirin A1 chip eliminates background noise while also enhancing your voice. Best of all, the smart charging case offers up to 20 hours battery life.\nLearn More：https://bit.ly/2mwtn1L",
+        "duration_seconds": 25,
+        "upload_date": "20190924",
+        "publish_date": "2019-09-24",
+        "channel": "Huawei Arabia",
+        "uploader": "Huawei Arabia",
+        "channel_url": "https://www.youtube.com/channel/UChPQoP4PTHfNp7INZ8ktiGw",
+        "channel_id": "UChPQoP4PTHfNp7INZ8ktiGw",
+        "view_count": 703238,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=Fh9PyEbOh5s"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "ISI7jXFJKKI",
+      "url": "https://www.youtube.com/watch?v=ISI7jXFJKKI",
+      "title": "OnePlus Buds - Set Your Music Free",
+      "description": "It's time to make a longer playlist. With up to 30 hours of total listening time between the Buds and charging box, fast charging, ...",
+      "duration_seconds": 47,
+      "channel": "OnePlus",
+      "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_is_verified": true,
+      "view_count": 566304,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Daily Routine",
+          "query": "OnePlus OnePlus Buds morning routine official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OnePlus Buds - Set Your Music Free",
+        "fulltitle": "OnePlus Buds - Set Your Music Free",
+        "description": "It's time to make a longer playlist. With up to 30 hours of total listening time between the Buds and charging box, fast charging, intuitive controls and crystal clear calls, this is a unique OnePlus audio experience. \n\nLearn more - http://onepl.us/byt\n\nFollow us on social media for all the latest OnePlus news:\nFacebook - http://onepl.us/f\nTwitter - http://onepl.us/t\nInstagram - http://onepl.us/i\nLinkedIn - http://onepl.us/l",
+        "duration_seconds": 47,
+        "upload_date": "20200721",
+        "publish_date": "2020-07-21",
+        "channel": "OnePlus",
+        "uploader": "OnePlus",
+        "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+        "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+        "view_count": 566304,
+        "tags": [
+          "OnePlus",
+          "Buds",
+          "audio",
+          "wireless",
+          "earphones",
+          "headphones",
+          "bullets",
+          "TWS",
+          "earpods",
+          "airpods",
+          "value",
+          "bass",
+          "battery life",
+          "performance",
+          "oneplus buds"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=ISI7jXFJKKI"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "7MPZlSKjgLk",
+      "url": "https://www.youtube.com/watch?v=7MPZlSKjgLk",
+      "title": "OnePlus Buds Pro - Hear the Unheard",
+      "description": "Hear the unheard - https://www.oneplus.com/oneplus-buds-pro Follow us on social media for all the latest OnePlus news: ...",
+      "duration_seconds": 54,
+      "channel": "OnePlus",
+      "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_is_verified": true,
+      "view_count": 529617,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OnePlus OnePlus Buds UGC ad",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OnePlus Buds Pro - Hear the Unheard",
+        "fulltitle": "OnePlus Buds Pro - Hear the Unheard",
+        "description": "Are you ready to hear the unheard with #OnePlusBudsPro? Enjoy the silence with Smart Adaptive Noise Cancellation and experience audio uniquely tailored for you with OnePlus Audio ID. \n\nHear the unheard -  https://www.oneplus.com/oneplus-buds-pro\n\nFollow us on social media for all the latest OnePlus news: \nFacebook - https://facebook.com/oneplus​​​​ \nTwitter - https://twitter.com/oneplus​​​​ \nInstagram - https://instagram.com/oneplus​​​​\nLinkedIn - https://www.linkedin.com/company/oneplus​",
+        "duration_seconds": 54,
+        "upload_date": "20210722",
+        "publish_date": "2021-07-22",
+        "channel": "OnePlus",
+        "uploader": "OnePlus",
+        "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+        "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+        "view_count": 529617,
+        "tags": [
+          "OnePlus",
+          "buds",
+          "pro",
+          "active noise cancellation",
+          "anc",
+          "sound",
+          "quality"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=7MPZlSKjgLk"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "c2dcUCX6ATA",
+      "url": "https://www.youtube.com/watch?v=c2dcUCX6ATA",
+      "title": "HUAWEI FreeBuds Pro | Hello Noise, Now Hush",
+      "description": "Escape the outside world and minimize the buzz around you with the #HUAWEIFreeBudsPro - bringing you the best audio ...",
+      "duration_seconds": 45,
+      "channel": "HUAWEI Mobile Canada",
+      "channel_id": "UCY8SM77tKvd8n2yGlfFq7vg",
+      "channel_url": "https://www.youtube.com/channel/UCY8SM77tKvd8n2yGlfFq7vg",
+      "channel_is_verified": null,
+      "view_count": 226249,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Huawei FreeBuds official vlog",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Pro | Hello Noise, Now Hush",
+        "fulltitle": "HUAWEI FreeBuds Pro | Hello Noise, Now Hush",
+        "description": "Escape the outside world and minimize the buzz around you with the #HUAWEIFreeBudsPro - bringing you the best audio experience. 🎧 🎶\n\nLearn more: http://bit.ly/FreeBudsProCanada",
+        "duration_seconds": 45,
+        "upload_date": "20201030",
+        "publish_date": "2020-10-30",
+        "channel": "HUAWEI Mobile Canada",
+        "uploader": "HUAWEI Mobile Canada",
+        "channel_url": "https://www.youtube.com/channel/UCY8SM77tKvd8n2yGlfFq7vg",
+        "channel_id": "UCY8SM77tKvd8n2yGlfFq7vg",
+        "view_count": 226249,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=c2dcUCX6ATA"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "62SXHwHHoCs",
+      "url": "https://www.youtube.com/watch?v=62SXHwHHoCs",
+      "title": "Redmi Buds 3 Pro: Hybrid ANC with Transparency Mode | #SmartLivingForEveryone",
+      "description": "Immerse yourself in #TheSoundYouWant with #RedmiBuds3Pro! They provide you with 35dB hybrid active noise cancellation and ...",
+      "duration_seconds": 56,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 217375,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi Buds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Redmi Buds 3 Pro: Hybrid ANC with Transparency Mode | #SmartLivingForEveryone",
+        "fulltitle": "Redmi Buds 3 Pro: Hybrid ANC with Transparency Mode | #SmartLivingForEveryone",
+        "description": "Immerse yourself in #TheSoundYouWant with #RedmiBuds3Pro!\n\nThey provide you with 35dB hybrid active noise cancellation and a fast-charging yet long-lasting battery.\n\nCheck this video out for more details!\n\nLearn More: https://www.mi.com/global/redmi-buds-3-pro/overview/",
+        "duration_seconds": 55,
+        "upload_date": "20210729",
+        "publish_date": "2021-07-29",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 217375,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=62SXHwHHoCs"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "RAJ5RgEBkd0",
+      "url": "https://www.youtube.com/watch?v=RAJ5RgEBkd0",
+      "title": "Everything about Xiaomi Buds 3T Pro",
+      "description": "Up to 40dB hybrid ANC with transparency mode Turn on Dimensional audio and get immersed into the music with ...",
+      "duration_seconds": 61,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 147434,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Lookbook",
+          "query": "Xiaomi Xiaomi Buds official style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Everything about Xiaomi Buds 3T Pro",
+        "fulltitle": "Everything about Xiaomi Buds 3T Pro",
+        "description": "Up to 40dB hybrid ANC with transparency mode\nTurn on Dimensional audio and get immersed into the music with #XiaomiBuds3TPro!\n\n#ImmersiveBeatsMagicalSound\n\nLearn More:\nhttps://mi.com/global (Global official website)\nhttps://twitter.com/xiaomi  (Twitter)\nhttps://facebook.com/xiaomiglobal (Facebook)\nhttps://instagram.com/xiaomi.global (Instagram)\nhttps://www.tiktok.com/@xiaomi.official (TikTok)\nhttps://www.pinterest.com/xiaomiglobal (Pinterest)\nhttps://c.mi.com (Xiaomi community)\nhttps://blog.mi.com (Xiaomi Blog)",
+        "duration_seconds": 61,
+        "upload_date": "20220320",
+        "publish_date": "2022-03-20",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 147434,
+        "tags": [
+          "Xiaomi",
+          "Redmi",
+          "Xiaomi MIUI",
+          "Xiaomi Phone",
+          "Xiaomi smartphone",
+          "Xiaomi product",
+          "Xiaomi smarthome",
+          "Mi",
+          "Mi Smarthome",
+          "Mi Home",
+          "MIUI",
+          "Xiaomi Studios",
+          "Mi Stery BOX",
+          "Shootlikeapro",
+          "redmi",
+          "Redmi Note",
+          "Xiaomi studios",
+          "Xiaomi 11",
+          "Smart Glasses",
+          "Smartphone",
+          "Device",
+          "Vacuum cleaner",
+          "youtube",
+          "smart",
+          "home",
+          "Mi 10",
+          "phone",
+          "smartphone",
+          "innovation",
+          "tech",
+          "charger",
+          "Xiaomi 12",
+          "mi 12"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=RAJ5RgEBkd0"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "lcugvRH0mlc",
+      "url": "https://www.youtube.com/watch?v=lcugvRH0mlc",
+      "title": "Jabra Elite 25e: How to pair | Jabra Support",
+      "description": "Learn how to pair and connect your Jabra Elite 25e earbuds with a mobile phone. Find more support content at ...",
+      "duration_seconds": 45,
+      "channel": "Jabra",
+      "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_is_verified": null,
+      "view_count": 123253,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Lookbook",
+          "query": "Jabra Jabra Elite earbuds fashion campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Jabra Elite 25e: How to pair | Jabra Support",
+        "fulltitle": "Jabra Elite 25e: How to pair | Jabra Support",
+        "description": "Learn how to pair and connect your Jabra Elite 25e earbuds with a mobile phone.\nFind more support content at https://www.jabra.com/supportpages/jabra-elite-25e",
+        "duration_seconds": 45,
+        "upload_date": "20171002",
+        "publish_date": "2017-10-02",
+        "channel": "Jabra",
+        "uploader": "Jabra",
+        "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+        "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+        "view_count": 123253,
+        "tags": [
+          "Jabra",
+          "Bluetooth",
+          "Wireless",
+          "Headset",
+          "Headphones",
+          "Connect",
+          "Earplugs",
+          "Innovation",
+          "Design",
+          "Quality",
+          "Elite 25e"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=lcugvRH0mlc"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "SJkoVvcbs1s",
+      "url": "https://www.youtube.com/watch?v=SJkoVvcbs1s",
+      "title": "JBL | Tune Buds Noise Cancelling earbuds",
+      "description": "Tackle your day one song at a time with the JBL Tune Buds. These true wireless earbuds give you up to 48 hours of exceptional ...",
+      "duration_seconds": 61,
+      "channel": "JBL",
+      "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+      "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+      "channel_is_verified": null,
+      "view_count": 109865,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "JBL JBL earbuds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "JBL | Tune Buds Noise Cancelling earbuds",
+        "fulltitle": "JBL | Tune Buds Noise Cancelling earbuds",
+        "description": "Tackle your day one song at a time with the JBL Tune Buds. These true wireless earbuds give you up to 48 hours of exceptional JBL Pure Bass Sound so you'll never miss a beat. Active Noise Cancelling helps you tune out distractions, while the dual mics allow to have perfect calls every time, without ambient noises.",
+        "duration_seconds": 60,
+        "upload_date": "20230330",
+        "publish_date": "2023-03-30",
+        "channel": "JBL",
+        "uploader": "JBL",
+        "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+        "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+        "view_count": 109865,
+        "tags": [
+          "Noise Cancelling earbuds",
+          "Smart Ambient",
+          "Perfect phone calls",
+          "earbuds for phone calls",
+          "Water resistant earbuds",
+          "Comfortable earbuds",
+          "JBL sound"
+        ],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=SJkoVvcbs1s"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "yYu0KeYKoaE",
+      "url": "https://www.youtube.com/watch?v=yYu0KeYKoaE",
+      "title": "OnePlus Buds Z x Steven Harrington",
+      "description": "Cool music, cool design, Cool Cat. Get the new #OnePlusBudsZ Cool Cat edition by Steven Harrington and up your style Learn ...",
+      "duration_seconds": 25,
+      "channel": "OnePlus",
+      "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+      "channel_is_verified": true,
+      "view_count": 105982,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OnePlus",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OnePlus OnePlus Buds creator campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OnePlus Buds Z x Steven Harrington",
+        "fulltitle": "OnePlus Buds Z x Steven Harrington",
+        "description": "Cool music, cool design, Cool Cat. Get the new #OnePlusBudsZ Cool Cat edition by Steven Harrington and up your style 😺\n\nLearn more - https://onepl.us/budszsh\n\nFollow us on social media for all the latest OnePlus news:\nFacebook - https://facebook.com/oneplus \nTwitter - https://twitter.com/oneplus \nInstagram - https://instagram.com/oneplus \nLinkedIn - https://www.linkedin.com/company/oneplus",
+        "duration_seconds": 24,
+        "upload_date": "20201222",
+        "publish_date": "2020-12-22",
+        "channel": "OnePlus",
+        "uploader": "OnePlus",
+        "channel_url": "https://www.youtube.com/channel/UC7zygr3uEiMSkxv-6nbFUGQ",
+        "channel_id": "UC7zygr3uEiMSkxv-6nbFUGQ",
+        "view_count": 105982,
+        "tags": [
+          "oneplus",
+          "one plus",
+          "buds",
+          "airpods",
+          "beans",
+          "TWS",
+          "wireless earphones",
+          "true wireless",
+          "audio",
+          "bullets",
+          "music",
+          "bass",
+          "ipx55",
+          "battery life"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=yYu0KeYKoaE"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "AJ16sC0xi58",
+      "url": "https://www.youtube.com/watch?v=AJ16sC0xi58",
+      "title": "Redmi Buds 4 Active | Rise. Never Fall.",
+      "description": "Elevate your audio experience with the #RedmiBuds4Active - the perfect companion for dynamic sound and an active lifestyle.",
+      "duration_seconds": 35,
+      "channel": "Xiaomi India",
+      "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+      "channel_is_verified": true,
+      "view_count": 90166,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Daily Routine",
+          "query": "Xiaomi Xiaomi Buds workout lifestyle official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Redmi Buds 4 Active | Rise. Never Fall.",
+        "fulltitle": "Redmi Buds 4 Active | Rise. Never Fall.",
+        "description": "Elevate your audio experience with the #RedmiBuds4Active - the perfect companion for dynamic sound and an active lifestyle.\n\nSale goes live on 20th June, 23.\n\nKnow More: bit.ly/3PbqiPV\n#RiseNeverFall",
+        "duration_seconds": 35,
+        "upload_date": "20230616",
+        "publish_date": "2023-06-16",
+        "channel": "Xiaomi India",
+        "uploader": "Xiaomi India",
+        "channel_url": "https://www.youtube.com/channel/UCSZ55Hjl_1sZZG04Puf_SrA",
+        "channel_id": "UCSZ55Hjl_1sZZG04Puf_SrA",
+        "view_count": 90166,
+        "tags": [
+          "Redmi Buds 4 Active",
+          "Rise. Never Fall.",
+          "Wireless earbuds",
+          "True wireless audio",
+          "Active lifestyle",
+          "Immersive sound",
+          "Bluetooth earphones",
+          "Wireless freedom",
+          "Music on the go",
+          "Fitness headphones",
+          "ENC",
+          "Touch controls",
+          "Long battery life",
+          "Waterproof design",
+          "Smart connectivity",
+          "Xiaomi audio devices"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=AJ16sC0xi58"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "67WXTRx7sKY",
+      "url": "https://www.youtube.com/watch?v=67WXTRx7sKY",
+      "title": "Jabra Elite 7 Pro: How to pair | Jabra Support",
+      "description": "Learn how to pair your Jabra Elite 7 pro earbuds with a smartphone, mobile device, or tablet. See the benefits of downloading ...",
+      "duration_seconds": 107,
+      "channel": "Jabra",
+      "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_is_verified": null,
+      "view_count": 58851,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Jabra Jabra Elite earbuds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Jabra Elite 7 Pro: How to pair | Jabra Support",
+        "fulltitle": "Jabra Elite 7 Pro: How to pair | Jabra Support",
+        "description": "Learn how to pair your Jabra Elite 7 pro earbuds with a smartphone, mobile device, or tablet. See the benefits of downloading Jabra Sound+ to personalize your settings and optimize performance.\nFind more support content at https://www.jabra.com/supportpages/jabra-elite-7-pro\nDownload Jabra Sound+ at https://www.jabra.com/software-and-services/apps/jabra-sound-plus",
+        "duration_seconds": 107,
+        "upload_date": "20220208",
+        "publish_date": "2022-02-08",
+        "channel": "Jabra",
+        "uploader": "Jabra",
+        "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+        "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+        "view_count": 58851,
+        "tags": [
+          "Jabra",
+          "Bluetooth",
+          "Wireless",
+          "Headset",
+          "Headphones",
+          "Connect",
+          "Earplugs",
+          "Innovation",
+          "Design",
+          "Quality"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=67WXTRx7sKY"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "_8iAJ6lCEXc",
+      "url": "https://www.youtube.com/watch?v=_8iAJ6lCEXc",
+      "title": "OPPO Enco Buds2 | #BestInClassEarbuds",
+      "description": "Tune out the herd, tune in to sounds unheard! With up to 28hrs listening time & AI Deep Noise Cancellation for calls, the OPPO ...",
+      "duration_seconds": 30,
+      "channel": "OPPO India",
+      "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+      "channel_is_verified": true,
+      "view_count": 56869,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OPPO OPPO Enco earbuds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco Buds2 | #BestInClassEarbuds",
+        "fulltitle": "OPPO Enco Buds2 | #BestInClassEarbuds",
+        "description": "Tune out the herd, tune in to sounds unheard! With up to 28hrs listening time & AI Deep Noise Cancellation for calls, the OPPO Enco Buds2 punch far above their price point! Ready to grab yours? Sale starts 31st August.\n\nKnow More: https://bit.ly/3AMfb8C",
+        "duration_seconds": 30,
+        "upload_date": "20220825",
+        "publish_date": "2022-08-25",
+        "channel": "OPPO India",
+        "uploader": "OPPO India",
+        "channel_url": "https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g",
+        "channel_id": "UCMoJmRNcc-n8WdesyjQ6i_g",
+        "view_count": 56869,
+        "tags": [
+          "OPPO",
+          "OPPOEncoBuds",
+          "OPPOEncoBuds2",
+          "Bestinclass",
+          "Buds2"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=_8iAJ6lCEXc"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "v1GpT-jujHc",
+      "url": "https://www.youtube.com/watch?v=v1GpT-jujHc",
+      "title": "HUAWEI Freebuds Pro 2 – Bizarre Audio-visual Experiments",
+      "description": "Boasting a pioneering Ultra-hearing True Sound Dual Driver, a quad-magnet dynamic driver unit and the upgraded Intelligent ...",
+      "duration_seconds": 113,
+      "channel": "Huawei Mobile",
+      "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_is_verified": true,
+      "view_count": 40429,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Huawei FreeBuds official vlog",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI Freebuds Pro 2 – Bizarre Audio-visual Experiments",
+        "fulltitle": "HUAWEI Freebuds Pro 2 – Bizarre Audio-visual Experiments",
+        "description": "Boasting a pioneering Ultra-hearing True Sound Dual Driver, a quad-magnet dynamic driver unit and the upgraded Intelligent Dynamic ANC, #HUAWEIFreeBudsPro2 are designed for the most intricate musical experience.\n\nFeel the difference: https://bit.ly/HUAWEIFreeBudsPro2_",
+        "duration_seconds": 113,
+        "upload_date": "20220929",
+        "publish_date": "2022-09-29",
+        "channel": "Huawei Mobile",
+        "uploader": "Huawei Mobile",
+        "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+        "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+        "view_count": 40429,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=v1GpT-jujHc"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "HyDhdsvhVjA",
+      "url": "https://www.youtube.com/watch?v=HyDhdsvhVjA",
+      "title": "Jabra Elite 65e: How to pair | Jabra Support",
+      "description": "Learn how to pair your Jabra Elite 65e earbuds with a smartphone. Find more support content at ...",
+      "duration_seconds": 51,
+      "channel": "Jabra",
+      "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_is_verified": null,
+      "view_count": 36173,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Lookbook",
+          "query": "Jabra Jabra Elite earbuds fashion campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Jabra Elite 65e: How to pair | Jabra Support",
+        "fulltitle": "Jabra Elite 65e: How to pair | Jabra Support",
+        "description": "Learn how to pair your Jabra Elite 65e earbuds with a smartphone.\nFind more support content at https://www.jabra.com/supportpages/Jabra-Elite-65e",
+        "duration_seconds": 50,
+        "upload_date": "20180410",
+        "publish_date": "2018-04-10",
+        "channel": "Jabra",
+        "uploader": "Jabra",
+        "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+        "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+        "view_count": 36173,
+        "tags": [
+          "Jabra",
+          "Bluetooth",
+          "Wireless",
+          "Headset",
+          "Headphones",
+          "Connect",
+          "Earplugs",
+          "Innovation",
+          "Design",
+          "Quality"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=HyDhdsvhVjA"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "euXa4qNgh28",
+      "url": "https://www.youtube.com/watch?v=euXa4qNgh28",
+      "title": "JBL | Live Free 2 NC True Wireless Earbuds",
+      "description": "JBL Live Free 2 earbuds deliver 35 hours of incredible sound with True Adaptive Noise Cancelling, Smart Ambient, and 6 mics for ...",
+      "duration_seconds": 62,
+      "channel": "JBL",
+      "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+      "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+      "channel_is_verified": null,
+      "view_count": 33923,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "JBL JBL earbuds official vlog",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "JBL | Live Free 2 NC True Wireless Earbuds",
+        "fulltitle": "JBL | Live Free 2 NC True Wireless Earbuds",
+        "description": "JBL Live Free 2 earbuds deliver 35 hours of incredible sound with True Adaptive Noise Cancelling, Smart Ambient, and 6 mics for perfect calls anywhere. Easily manage music and calls from the earbuds or talk to your preferred Voice Assistant, all with a tap.",
+        "duration_seconds": 61,
+        "upload_date": "20220105",
+        "publish_date": "2022-01-05",
+        "channel": "JBL",
+        "uploader": "JBL",
+        "channel_url": "https://www.youtube.com/channel/UCced_wdSslkOf7xc_0qyT8w",
+        "channel_id": "UCced_wdSslkOf7xc_0qyT8w",
+        "view_count": 33926,
+        "tags": [
+          "True wireless",
+          "truly wireless",
+          "no cords",
+          "ANC earbuds",
+          "Noise Cancelling earbuds",
+          "Comfortable earbuds"
+        ],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=euXa4qNgh28"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "C_lHQP-XTAc",
+      "url": "https://www.youtube.com/watch?v=C_lHQP-XTAc",
+      "title": "Introducing OPPO Enco Free",
+      "description": "OPPO Enco Free - True wireless headphones Find out more: http://bit.ly/EncoFree.",
+      "duration_seconds": 54,
+      "channel": "OPPO Singapore",
+      "channel_id": "UCNrLpLkfBfGFdlGICDn2sRA",
+      "channel_url": "https://www.youtube.com/channel/UCNrLpLkfBfGFdlGICDn2sRA",
+      "channel_is_verified": true,
+      "view_count": 28292,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Lookbook",
+          "query": "OPPO OPPO Enco earbuds official style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Introducing OPPO Enco Free",
+        "fulltitle": "Introducing OPPO Enco Free",
+        "description": "OPPO Enco Free - True wireless headphones \nFind out more: http://bit.ly/EncoFree",
+        "duration_seconds": 53,
+        "upload_date": "20200129",
+        "publish_date": "2020-01-29",
+        "channel": "OPPO Singapore",
+        "uploader": "OPPO Singapore",
+        "channel_url": "https://www.youtube.com/channel/UCNrLpLkfBfGFdlGICDn2sRA",
+        "channel_id": "UCNrLpLkfBfGFdlGICDn2sRA",
+        "view_count": 28292,
+        "tags": [],
+        "categories": [
+          "Entertainment"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=C_lHQP-XTAc"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "CKwjH0Y_0qg",
+      "url": "https://www.youtube.com/watch?v=CKwjH0Y_0qg",
+      "title": "HUAWEI FreeBuds Pro 2 - Futuristic Colourways",
+      "description": "HUAWEIFreeBudsPro2 comes in three exquisite colourways - Silver Blue, Silver Frost and Ceramic White. A feast for the eyes and ...",
+      "duration_seconds": 27,
+      "channel": "Huawei Mobile",
+      "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+      "channel_is_verified": true,
+      "view_count": 27435,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Lookbook",
+          "query": "Huawei FreeBuds official style campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Pro 2 - Futuristic Colourways",
+        "fulltitle": "HUAWEI FreeBuds Pro 2 - Futuristic Colourways",
+        "description": "#HUAWEIFreeBudsPro2 comes in three exquisite colourways - Silver Blue, Silver Frost and Ceramic White.\n\nA  feast for the eyes and ears.",
+        "duration_seconds": 26,
+        "upload_date": "20220727",
+        "publish_date": "2022-07-27",
+        "channel": "Huawei Mobile",
+        "uploader": "Huawei Mobile",
+        "channel_url": "https://www.youtube.com/channel/UCM_zp2dVNflkGFWAFM_N7lg",
+        "channel_id": "UCM_zp2dVNflkGFWAFM_N7lg",
+        "view_count": 27435,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=CKwjH0Y_0qg"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "yvMfsvYtgKI",
+      "url": "https://www.youtube.com/watch?v=yvMfsvYtgKI",
+      "title": "Sport True Wireless #shorts | Sennheiser",
+      "description": "Follow your own track with the #SportTW For more information, visit http://sennheiser-hearing.com/sport-true-wireless #shorts ...",
+      "duration_seconds": 61,
+      "channel": "Sennheiser",
+      "channel_id": "UCiKPFvWsJBlucrYU8kJMkaQ",
+      "channel_url": "https://www.youtube.com/channel/UCiKPFvWsJBlucrYU8kJMkaQ",
+      "channel_is_verified": true,
+      "view_count": 19997,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Sennheiser",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Sennheiser MOMENTUM True Wireless shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Sport True Wireless #shorts | Sennheiser",
+        "fulltitle": "Sport True Wireless #shorts | Sennheiser",
+        "description": "Follow your own track with the #SportTW\n\nFor more information, visit http://sennheiser-hearing.com/sport-true-wireless\n\n#shorts #Sennheisershorts\n\nSubscribe to our YouTube channel: https://www.youtube.com/user/sennheiserofficial\n\nSubscribe to our newsletter and don’t miss special offers, discounts and news about the Future of Audio: http://www.sennheiser.com/newsletter.\n\nOr follow Sennheiser on Facebook & Instagram:\nhttps://www.facebook.com/Sennheiser\nhttps://www.instagram.com/sennheiser/\n\nSennheiser – The future of audio!\n\nSennheiser’s mission is to develop era-defining audio solutions. Be it headphones, microphones or integrated sound systems – with German engineering, decades of experience, and innovative science Sennheiser creates unsurpassed audio experiences that push the boundaries of today's technologies.\n\nFollow Sennheiser’s vision and discover audio solutions that challenge the status quo whilst offering profound new ways of experiencing integrated sound systems as well as pioneering headphones, microphones or headsets!",
+        "duration_seconds": 61,
+        "upload_date": "20220619",
+        "publish_date": "2022-06-19",
+        "channel": "Sennheiser",
+        "uploader": "Sennheiser",
+        "channel_url": "https://www.youtube.com/channel/UCiKPFvWsJBlucrYU8kJMkaQ",
+        "channel_id": "UCiKPFvWsJBlucrYU8kJMkaQ",
+        "view_count": 19997,
+        "tags": [
+          "Sennheiser",
+          "consumer audio",
+          "sport",
+          "sport true wireless",
+          "true wireless",
+          "sport tw",
+          "in ear headphones",
+          "headphones",
+          "follow your own track",
+          "shorts",
+          "ip54",
+          "noise cancelling"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=yvMfsvYtgKI"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "PnvtkXdf4DM",
+      "url": "https://www.youtube.com/watch?v=PnvtkXdf4DM",
+      "title": "OPPO Enco Air 3 | True Wireless Earbuds",
+      "description": "Translucent Jelly Case. Lightweight and handy. Better Sound Quality. Give you a new experience! #OPPOEncoAir3 ...",
+      "duration_seconds": 16,
+      "channel": "OPPO Singapore",
+      "channel_id": "UCNrLpLkfBfGFdlGICDn2sRA",
+      "channel_url": "https://www.youtube.com/channel/UCNrLpLkfBfGFdlGICDn2sRA",
+      "channel_is_verified": true,
+      "view_count": 11863,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "How-To Tutorial",
+          "query": "OPPO OPPO Enco earbuds official quick start",
+          "source_tier": "official_brand_channel"
+        },
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OPPO OPPO Enco earbuds UGC ad",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 2,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco Air 3 | True Wireless Earbuds",
+        "fulltitle": "OPPO Enco Air 3 | True Wireless Earbuds",
+        "description": "Translucent Jelly Case. Lightweight and handy. 💯\nBetter Sound Quality. Give you a new experience! #OPPOEncoAir3 #MusicAllAround    \n🌐 https://bit.ly/EncoAir3",
+        "duration_seconds": 16,
+        "upload_date": "20230317",
+        "publish_date": "2023-03-17",
+        "channel": "OPPO Singapore",
+        "uploader": "OPPO Singapore",
+        "channel_url": "https://www.youtube.com/channel/UCNrLpLkfBfGFdlGICDn2sRA",
+        "channel_id": "UCNrLpLkfBfGFdlGICDn2sRA",
+        "view_count": 11863,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=PnvtkXdf4DM"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "ar5N-ylAI28",
+      "url": "https://www.youtube.com/watch?v=ar5N-ylAI28",
+      "title": "OPPO Enco X2 | Hear Beyond Sensation",
+      "description": "Embrace the most original sound ever with #OPPOEncoX2. Welcome the Golden Sound to your ears and experience an authentic ...",
+      "duration_seconds": 74,
+      "channel": "OPPO Malaysia",
+      "channel_id": "UCVTUBt1Qv4dIDvT41kcUP1A",
+      "channel_url": "https://www.youtube.com/channel/UCVTUBt1Qv4dIDvT41kcUP1A",
+      "channel_is_verified": true,
+      "view_count": 10255,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OPPO OPPO Enco earbuds official vlog",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco X2 | Hear Beyond Sensation",
+        "fulltitle": "OPPO Enco X2 | Hear Beyond Sensation",
+        "description": "Embrace the most original sound ever with #OPPOEncoX2. Welcome the Golden Sound to your ears and experience an authentic audio adventure made possible with amazing specifications such as an ultra-thin diaphragm and quad-magnet planar tweeter in a sandwich structure that ensure the top-class excellent audio outcome. Finished with Super DBEE, the coaxial dual-driver system that is co-developed with Dynaudio and ultra-wide frequency noise cancellation, only an unrivaled sound quality awaits. Hear beyond sensation and embark on a dynamic sound adventure with style and passion.\n\nFor more info: https://www.oppo.com/my/accessories/oppo-enco-x2/",
+        "duration_seconds": 73,
+        "upload_date": "20220523",
+        "publish_date": "2022-05-23",
+        "channel": "OPPO Malaysia",
+        "uploader": "OPPO Malaysia",
+        "channel_url": "https://www.youtube.com/channel/UCVTUBt1Qv4dIDvT41kcUP1A",
+        "channel_id": "UCVTUBt1Qv4dIDvT41kcUP1A",
+        "view_count": 10255,
+        "tags": [
+          "Enco X2",
+          "OPPO Enco X2",
+          "OPPO Earbud",
+          "OPPO Enco",
+          "Dynaudio",
+          "OPPO Best Earbud",
+          "OPPO Earbud Review"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=ar5N-ylAI28"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "dtx3zpybuRE",
+      "url": "https://www.youtube.com/watch?v=dtx3zpybuRE",
+      "title": "OPPO Enco Air3 | True Wireless Earbuds",
+      "description": "Translucent Jelly Case. Lightweight and handy. Better Sound Quality. Give you a new experience! #OPPOEncoAir3 ...",
+      "duration_seconds": 16,
+      "channel": "OPPO Malaysia",
+      "channel_id": "UCVTUBt1Qv4dIDvT41kcUP1A",
+      "channel_url": "https://www.youtube.com/channel/UCVTUBt1Qv4dIDvT41kcUP1A",
+      "channel_is_verified": true,
+      "view_count": 2461,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "OPPO OPPO Enco earbuds shorts campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco Air3 | True Wireless Earbuds",
+        "fulltitle": "OPPO Enco Air3 | True Wireless Earbuds",
+        "description": "Translucent Jelly Case. Lightweight and handy. Better Sound Quality. Give you a new experience! #OPPOEncoAir3 #MusicAllAround\n\n🌐 https://bit.ly/EncoAir3",
+        "duration_seconds": 16,
+        "upload_date": "20230216",
+        "publish_date": "2023-02-16",
+        "channel": "OPPO Malaysia",
+        "uploader": "OPPO Malaysia",
+        "channel_url": "https://www.youtube.com/channel/UCVTUBt1Qv4dIDvT41kcUP1A",
+        "channel_id": "UCVTUBt1Qv4dIDvT41kcUP1A",
+        "view_count": 2461,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=dtx3zpybuRE"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "tpIKyD5xeLo",
+      "url": "https://www.youtube.com/watch?v=tpIKyD5xeLo",
+      "title": "HUAWEI FreeBuds Lipstick | Visually Extraordinary",
+      "description": "Buy #HUAWEIFreeBudsLipstick now for AED 899 and get a Free gift. https://bit.ly/3pleBJh Combining an extraordinary cube ...",
+      "duration_seconds": 28,
+      "channel": "Huawei Arabia",
+      "channel_id": "UChPQoP4PTHfNp7INZ8ktiGw",
+      "channel_url": "https://www.youtube.com/channel/UChPQoP4PTHfNp7INZ8ktiGw",
+      "channel_is_verified": true,
+      "view_count": 1282,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Lookbook",
+          "query": "Huawei FreeBuds fashion campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Lipstick | Visually Extraordinary",
+        "fulltitle": "HUAWEI FreeBuds Lipstick | Visually Extraordinary",
+        "description": "Buy #HUAWEIFreeBudsLipstick now for AED 899 and get a Free gift. \nhttps://bit.ly/3pleBJh\nCombining an extraordinary cube design with rounded edges and a trio of classic colours, #HUAWEIFreeBudsLipstick redefines earphone design and brings forward a sense of luxury and prestige.",
+        "duration_seconds": 28,
+        "upload_date": "20220103",
+        "publish_date": "2022-01-03",
+        "channel": "Huawei Arabia",
+        "uploader": "Huawei Arabia",
+        "channel_url": "https://www.youtube.com/channel/UChPQoP4PTHfNp7INZ8ktiGw",
+        "channel_id": "UChPQoP4PTHfNp7INZ8ktiGw",
+        "view_count": 1282,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=tpIKyD5xeLo"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "YYKbwo-Y_4M",
+      "url": "https://www.youtube.com/watch?v=YYKbwo-Y_4M",
+      "title": "HUAWEI FreeBuds Lipstick | استثنائية في جمالها",
+      "description": "الآن مقابل 899 درهم واحصل على هدية مجانية #HUAWEIFreeBudsLipstick اشترِ https://bit.ly/3qiLo0W HUAWEIFreeBudsLipstick# تجمع ...",
+      "duration_seconds": 28,
+      "channel": "Huawei Arabia",
+      "channel_id": "UChPQoP4PTHfNp7INZ8ktiGw",
+      "channel_url": "https://www.youtube.com/channel/UChPQoP4PTHfNp7INZ8ktiGw",
+      "channel_is_verified": true,
+      "view_count": 827,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Lookbook",
+          "query": "Huawei FreeBuds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "HUAWEI FreeBuds Lipstick | استثنائية في جمالها",
+        "fulltitle": "HUAWEI FreeBuds Lipstick | استثنائية في جمالها",
+        "description": "الآن مقابل 899 درهم واحصل على هدية مجانية #HUAWEIFreeBudsLipstick اشترِ\nhttps://bit.ly/3qiLo0W\nHUAWEIFreeBudsLipstick# تجمع \n بين تصميم مكعب استثنائي مع حواف مستديرة وتأتي السماعة بثلاثة ألوان كلاسيكية تعيد تعريف تصميم سماعة الأذن وتضفي إحساسًا بالفخامة والهيبة.",
+        "duration_seconds": 28,
+        "upload_date": "20220103",
+        "publish_date": "2022-01-03",
+        "channel": "Huawei Arabia",
+        "uploader": "Huawei Arabia",
+        "channel_url": "https://www.youtube.com/channel/UChPQoP4PTHfNp7INZ8ktiGw",
+        "channel_id": "UChPQoP4PTHfNp7INZ8ktiGw",
+        "view_count": 827,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=YYKbwo-Y_4M"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "Ch7HSXEZjOk",
+      "url": "https://www.youtube.com/watch?v=Ch7HSXEZjOk",
+      "title": "Train Like A Pro | HUAWEI Freebuds Pro and HUAWEI Watch GT 2 Pro",
+      "description": "Are you ready for your next workout? Train like the pros with the #HUAWEIFreeBudsPro and #HUAWEIWatchGT2Pro. Whether ...",
+      "duration_seconds": 67,
+      "channel": "HUAWEI Mobile Canada",
+      "channel_id": "UCY8SM77tKvd8n2yGlfFq7vg",
+      "channel_url": "https://www.youtube.com/channel/UCY8SM77tKvd8n2yGlfFq7vg",
+      "channel_is_verified": null,
+      "view_count": 448,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Daily Routine",
+          "query": "Huawei FreeBuds workout lifestyle official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Train Like A Pro | HUAWEI Freebuds Pro and HUAWEI Watch GT 2 Pro",
+        "fulltitle": "Train Like A Pro | HUAWEI Freebuds Pro and HUAWEI Watch GT 2 Pro",
+        "description": "Are you ready for your next workout? Train like the pros with the #HUAWEIFreeBudsPro and #HUAWEIWatchGT2Pro. Whether you are looking for advanced health metrics like SpO2 tracking on your smartwatch, or active noise cancellation on your headphones to get you into the zone, this dynamic duo has got you covered. #ExploreMore\n\n🎥: https://www.instagram.com/owenbelanger/\n\nLearn more: http://huaweicanada.ca",
+        "duration_seconds": 66,
+        "upload_date": "20210416",
+        "publish_date": "2021-04-16",
+        "channel": "HUAWEI Mobile Canada",
+        "uploader": "HUAWEI Mobile Canada",
+        "channel_url": "https://www.youtube.com/channel/UCY8SM77tKvd8n2yGlfFq7vg",
+        "channel_id": "UCY8SM77tKvd8n2yGlfFq7vg",
+        "view_count": 448,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=Ch7HSXEZjOk"
+      },
+      "hard_filter_status": "excluded",
+      "hard_filter_reasons": [
+        "PUBLISHED_BEFORE_2023_08_01"
+      ],
+      "enrich_error": null
+    },
+    {
+      "video_id": "cUFx_4ZXLCM",
+      "url": "https://www.youtube.com/watch?v=cUFx_4ZXLCM",
+      "title": "OPPO Enco Buds 3 Unboxing : How to Pair and Reset full guide",
+      "description": "oppoencobuds3 #oppocares #unboxing #reset.",
+      "duration_seconds": 93,
+      "channel": "OPPO Care",
+      "channel_id": "UCKR_q_tmDhum5Nb-ACmcbzw",
+      "channel_url": "https://www.youtube.com/channel/UCKR_q_tmDhum5Nb-ACmcbzw",
+      "channel_is_verified": null,
+      "view_count": 277201,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "OPPO",
+          "target_genre": "How-To Tutorial",
+          "query": "OPPO OPPO Enco earbuds official setup guide",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "OPPO Enco Buds 3 Unboxing : How to Pair and Reset full guide",
+        "fulltitle": "OPPO Enco Buds 3 Unboxing : How to Pair and Reset full guide",
+        "description": "#oppoencobuds3 #oppocares #unboxing #reset",
+        "duration_seconds": 92,
+        "upload_date": "20260207",
+        "publish_date": "2026-02-07",
+        "channel": "OPPO Care",
+        "uploader": "OPPO Care",
+        "channel_url": "https://www.youtube.com/channel/UCKR_q_tmDhum5Nb-ACmcbzw",
+        "channel_id": "UCKR_q_tmDhum5Nb-ACmcbzw",
+        "view_count": 277200,
+        "tags": [],
+        "categories": [
+          "Howto & Style"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=cUFx_4ZXLCM"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "Qb7eu0yQK3U",
+      "url": "https://www.youtube.com/watch?v=Qb7eu0yQK3U",
+      "title": "Meet Xiaomi Buds 5 Pro (Wi-Fi)",
+      "description": "Elegance in transparency. Ready to elevate your sonic journey with #XiaomiBuds5Pro (Wi-Fi)? Learn more: ...",
+      "duration_seconds": 17,
+      "channel": "Xiaomi",
+      "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+      "channel_is_verified": true,
+      "view_count": 135505,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Xiaomi",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "Xiaomi Xiaomi Buds official vlog",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Meet Xiaomi Buds 5 Pro (Wi-Fi)",
+        "fulltitle": "Meet Xiaomi Buds 5 Pro (Wi-Fi)",
+        "description": "Elegance in transparency. Ready to elevate your sonic journey with #XiaomiBuds5Pro (Wi-Fi)?\n\nLearn more:\nhttps://s.mi.com/lceGkC15 (Official website) \nhttps://twitter.com/xiaomi (Twitter)\nhttps://facebook.com/xiaomiglobal (Facebook)\nhttps://instagram.com/xiaomi.global (Instagram)\nhttps://www.tiktok.com/@leijunxiaomi (TikTok)\nhttps://www.tiktok.com/@xiaomi.official (TikTok)\nhttps://www.pinterest.com/xiaomiglobal (Pinterest)\nhttps://c.mi.com (Xiaomi Community)\nhttps://blog.mi.com (Xiaomi Blog)",
+        "duration_seconds": 16,
+        "upload_date": "20250314",
+        "publish_date": "2025-03-14",
+        "channel": "Xiaomi",
+        "uploader": "Xiaomi",
+        "channel_url": "https://www.youtube.com/channel/UCCspJ6mFfCwOV4qFjZWi2wg",
+        "channel_id": "UCCspJ6mFfCwOV4qFjZWi2wg",
+        "view_count": 135505,
+        "tags": [],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=Qb7eu0yQK3U"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "sCYrElLdURQ",
+      "url": "https://www.youtube.com/watch?v=sCYrElLdURQ",
+      "title": "JBL Tune Beam 2 | Control your Earbuds | How-to",
+      "description": "Make your listening experience truly yours, with intuitive touch gestures and app-based control that puts everything at your ...",
+      "duration_seconds": 20,
+      "channel": "JBL India",
+      "channel_id": "UCKZl7x4gt0Yw2AitabCvqpw",
+      "channel_url": "https://www.youtube.com/channel/UCKZl7x4gt0Yw2AitabCvqpw",
+      "channel_is_verified": null,
+      "view_count": 14194,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "JBL",
+          "target_genre": "Walk-and-Talk UGC",
+          "query": "JBL JBL earbuds POV campaign",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "JBL Tune Beam 2 | Control your Earbuds | How-to",
+        "fulltitle": "JBL Tune Beam 2 | Control your Earbuds | How-to",
+        "description": "Make your listening experience truly yours, with intuitive touch gestures and app-based control that puts everything at your fingertips! \n\nFrom managing volume to switching between Ambient Aware and TalkThru, the JBL Tune Beam 2 pairs with the JBL Headphones App to let you fine-tune every detail. Its ergonomic design fits perfectly, while features like Adaptive Noise Cancellation, and up to 48 hours of battery life ensure it's as smart as it is seamless.\n\nStay in control without missing a beat - that’s the power of JBL Tune Beam 2! \n\nClick here to Buy Now: https://in.jbl.com/Tune-Series-2\n\nTo Know More – https://in.jbl-India\n\n\nBe a part of our community:\nFacebook – https://www.facebook.com/JBLIndia\nInstagram – https://www.instagram.com/jblindia/\nTwitter – https://twitter.com/JBLSoundIn\n\n#JBLIndia #JBLAudio #JBLSound #JBLTuneBeam2 #JBLtws #twsearbuds\n #GestureControlEarbuds #JBLHeadphonesApp #TouchControlTWS #AmbientAware #TalkThru #NoiseCancellingEarbuds #TrueWirelessEarbuds",
+        "duration_seconds": 20,
+        "upload_date": "20250417",
+        "publish_date": "2025-04-17",
+        "channel": "JBL India",
+        "uploader": "JBL India",
+        "channel_url": "https://www.youtube.com/channel/UCKZl7x4gt0Yw2AitabCvqpw",
+        "channel_id": "UCKZl7x4gt0Yw2AitabCvqpw",
+        "view_count": 14196,
+        "tags": [
+          "JBL Tune Beam 2",
+          "gesture control earbuds",
+          "JBL Headphones App",
+          "earbuds with ambient aware",
+          "TWS with talkthru",
+          "JBL TWS controls",
+          "how to control JBL earbuds",
+          "ergonomic TWS earbuds",
+          "adaptive noise cancelling earbuds",
+          "touch control TWS India"
+        ],
+        "categories": [
+          "Music"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=sCYrElLdURQ"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "Bt2iH0VaM20",
+      "url": "https://www.youtube.com/watch?v=Bt2iH0VaM20",
+      "title": "Jabra Elite 10 | Our most advanced earbuds for work & life",
+      "description": "Jabra's most advanced earbuds for work and life. For the first time, revolutionary Jabra ComfortFit technology has been combined ...",
+      "duration_seconds": 39,
+      "channel": "Jabra",
+      "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+      "channel_is_verified": null,
+      "view_count": 8312,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Jabra",
+          "target_genre": "Daily Routine",
+          "query": "Jabra Jabra Elite earbuds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": {
+        "title": "Jabra Elite 10 | Our most advanced earbuds for work & life",
+        "fulltitle": "Jabra Elite 10 | Our most advanced earbuds for work & life",
+        "description": "Jabra’s most advanced earbuds for work and life. \n\nFor the first time, revolutionary Jabra ComfortFit technology has been combined with Spatial Sound and Dolby Head Tracking, for a more immersive Dolby Atmos experience to create the best-sounding earbuds that you can comfortably wear all day. Complete with 10mm speakers, you can immerse yourself in rich, life-like sound that puts you right inside your favorite tracks. We scanned over 62k ears to create our unique oval EarGels that sculpt to every ear shape, and a semi-open design that relieves any pressure. Unwanted background noise will be blocked by our strongest Active Noise Cancellation even in the most challenging environments, and you can connect the earbuds to two devices at once for super simple switching between work and play. \n\nTime to comfortably sink into mind-blowing sound.\n\nhttps://www.jabra.com/Elite10",
+        "duration_seconds": 38,
+        "upload_date": "20230904",
+        "publish_date": "2023-09-04",
+        "channel": "Jabra",
+        "uploader": "Jabra",
+        "channel_url": "https://www.youtube.com/channel/UCCFQNW_zl9YIcU1o472vqaw",
+        "channel_id": "UCCFQNW_zl9YIcU1o472vqaw",
+        "view_count": 8312,
+        "tags": [
+          "Jabra",
+          "Bluetooth",
+          "Wireless",
+          "Headset",
+          "Headphones",
+          "Connect",
+          "Earplugs",
+          "Innovation",
+          "Design",
+          "Quality"
+        ],
+        "categories": [
+          "Science & Technology"
+        ],
+        "webpage_url": "https://www.youtube.com/watch?v=Bt2iH0VaM20"
+      },
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "enrich_error": null
+    },
+    {
+      "video_id": "3lJMO4j922M",
+      "url": "https://www.youtube.com/watch?v=3lJMO4j922M",
+      "title": "Tap into a new world with HUAWEI Freebuds3i",
+      "description": "Offering Ultimate Noise Cancellation, which gives you a thorough noise-cancelling experience for your immersive enjoyment.",
+      "duration_seconds": 16,
+      "channel": "Huawei Mobile South Africa",
+      "channel_id": "UCtc46ORU2AvYl-M5RkQOi7g",
+      "channel_url": "https://www.youtube.com/channel/UCtc46ORU2AvYl-M5RkQOi7g",
+      "channel_is_verified": null,
+      "view_count": 1843430,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Lookbook",
+          "query": "Huawei FreeBuds official lookbook",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": null,
+      "hard_filter_status": "pending",
+      "hard_filter_reasons": [],
+      "enrich_error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --dump-json --skip-download --no-warnings --no-playlist https://www.youtube.com/watch?v=3lJMO4j922M\nERROR: [youtube] 3lJMO4j922M: This video is not available\n"
+    },
+    {
+      "video_id": "evWqQzoS17g",
+      "url": "https://www.youtube.com/watch?v=evWqQzoS17g",
+      "title": "HUAWEI FreeBuds 5i: Hi-Res Audio to Tickle Your Ears",
+      "description": "Introducing the All-New HUAWEI FreeBuds 5i. Tickle your ears with high resolution sound - The FreeBuds 5i comes with 42dB ...",
+      "duration_seconds": 80,
+      "channel": "Huawei Australia",
+      "channel_id": "UCR214Uvlus4qTxZW2ecevJw",
+      "channel_url": "https://www.youtube.com/channel/UCR214Uvlus4qTxZW2ecevJw",
+      "channel_is_verified": null,
+      "view_count": 356,
+      "discovery_matches": [
+        {
+          "category": "True Wireless / Bluetooth Earbuds",
+          "expected_brand": "Huawei",
+          "target_genre": "Daily Routine",
+          "query": "Huawei FreeBuds day in the life official",
+          "source_tier": "official_brand_channel"
+        }
+      ],
+      "source_tiers": [
+        "official_brand_channel"
+      ],
+      "official_match_count": 1,
+      "creator_match_count": 0,
+      "enriched": null,
+      "hard_filter_status": "pending",
+      "hard_filter_reasons": [],
+      "enrich_error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --dump-json --skip-download --no-warnings --no-playlist https://www.youtube.com/watch?v=evWqQzoS17g\nERROR: [youtube] evWqQzoS17g: This video is not available\n"
+    }
+  ]
+}

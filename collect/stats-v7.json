@@ -1,0 +1,129 @@
+{
+  "taxonomy_version": "v6-mvp-strict-labels",
+  "total": 435,
+  "topview_original": 0,
+  "later_collected": 435,
+  "consumer_electronics_pilot_added": 129,
+  "core_cells": 319,
+  "by_industry": {
+    "Consumer Electronics": 195,
+    "Skincare": 25,
+    "Color Cosmetics": 26,
+    "Fragrance": 33,
+    "Personal Care": 15,
+    "Jewelry & Watches": 24,
+    "Apparel & Footwear": 20,
+    "Bags & Accessories": 19,
+    "Home Appliances & Living": 15,
+    "Food & Beverage": 30,
+    "Sports & Outdoor": 19,
+    "Other": 11,
+    "跨行业 / 奖项库": 1,
+    "跨行业 / 方法参考": 2
+  },
+  "by_genre": {
+    "TVC / Brand Commercial": 180,
+    "Micro-Drama Ad": 35,
+    "Keynote / Expert Talk": 3,
+    "Story-Driven Product Ad": 74,
+    "Testimonial / Review": 4,
+    "Multi-Angle / 360° Product Showcase": 54,
+    "Product Demo": 81,
+    "Concept Film / Brand Manifesto": 72,
+    "UGC Ad": 6,
+    "Corporate Film": 31,
+    "Sports Hero Film": 16,
+    "Try-On / Try-Out": 22,
+    "Problem–Solution": 6,
+    "Feature Callout": 64,
+    "How-To Tutorial": 17,
+    "Unboxing": 15,
+    "Macro Close-Up": 73,
+    "Split-Screen Showcase / Comparison": 3,
+    "Conflict & Twist Ad": 10,
+    "Comparison Test": 4,
+    "Daily Routine": 9,
+    "Talking Head": 12,
+    "Interview / Vox Pop": 6,
+    "Aesthetic B-Roll": 21,
+    "Before & After": 6,
+    "Friend Recommendation": 3,
+    "Lookbook": 17,
+    "Q&A": 3,
+    "Walk-and-Talk UGC": 4
+  },
+  "consumer_electronics": {
+    "priority_categories": [
+      "True Wireless / Bluetooth Earbuds",
+      "Power Banks"
+    ],
+    "target_genres": [
+      "TVC / Brand Commercial",
+      "Macro Close-Up",
+      "Multi-Angle / 360° Product Showcase",
+      "Feature Callout",
+      "Product Demo",
+      "How-To Tutorial",
+      "Unboxing",
+      "Lookbook",
+      "Daily Routine",
+      "Walk-and-Talk UGC"
+    ],
+    "category_counts": {
+      "True Wireless / Bluetooth Earbuds": {
+        "TVC / Brand Commercial": 37,
+        "Macro Close-Up": 18,
+        "Multi-Angle / 360° Product Showcase": 14,
+        "Feature Callout": 22,
+        "Product Demo": 23,
+        "How-To Tutorial": 4,
+        "Unboxing": 10,
+        "Lookbook": 0,
+        "Daily Routine": 0,
+        "Walk-and-Talk UGC": 0
+      },
+      "Power Banks": {
+        "TVC / Brand Commercial": 28,
+        "Macro Close-Up": 11,
+        "Multi-Angle / 360° Product Showcase": 11,
+        "Feature Callout": 12,
+        "Product Demo": 13,
+        "How-To Tutorial": 5,
+        "Unboxing": 1,
+        "Lookbook": 0,
+        "Daily Routine": 0,
+        "Walk-and-Talk UGC": 0
+      }
+    },
+    "category_coverage": {
+      "True Wireless / Bluetooth Earbuds": {
+        "TVC / Brand Commercial": 37,
+        "Macro Close-Up": 18,
+        "Multi-Angle / 360° Product Showcase": 14,
+        "Feature Callout": 22,
+        "Product Demo": 23,
+        "How-To Tutorial": 4,
+        "Unboxing": 10,
+        "Lookbook": 0,
+        "Daily Routine": 0,
+        "Walk-and-Talk UGC": 0
+      },
+      "Power Banks": {
+        "TVC / Brand Commercial": 28,
+        "Macro Close-Up": 11,
+        "Multi-Angle / 360° Product Showcase": 11,
+        "Feature Callout": 12,
+        "Product Demo": 13,
+        "How-To Tutorial": 5,
+        "Unboxing": 1,
+        "Lookbook": 0,
+        "Daily Routine": 0,
+        "Walk-and-Talk UGC": 0
+      }
+    },
+    "priority_cells_with_samples": 14,
+    "priority_cells_ok": 11,
+    "priority_cells_gap": 9,
+    "priority_relation_count": 209
+  }
+}
