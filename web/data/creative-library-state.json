@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_at": "2026-08-02T08:36:11.611Z",
-  "updated_at": "2026-08-02T14:20:30.816Z",
+  "updated_at": "2026-08-02T14:22:11.832Z",
   "source_files": [
     "collect/library-v9.json",
     "collect/consumer-electronics-review-v5.json",
@@ -7688,10 +7688,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "remade",
         "approved"
       ],
       "review_events": [
+        {
+          "id": "rev_1785680477770_vwq8e9",
+          "video_id": "2tsxIQZI3YQ",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "remade",
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "remade",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:21:17.770Z"
+        },
         {
           "id": "rev_1785666809239_sxmtij",
           "video_id": "2tsxIQZI3YQ",
@@ -7711,7 +7731,7 @@
         }
       ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": "2026-08-02T10:33:29.239Z"
+      "updated_at": "2026-08-02T14:21:17.770Z"
     },
     {
       "id": "J9chgF38yvs",
@@ -7768,11 +7788,13 @@
       "product_category": "True Wireless / Bluetooth Earbuds",
       "genres": [
         "TVC / Brand Commercial",
-        "Product Demo"
+        "Product Demo",
+        "Daily Routine"
       ],
       "primary_genre": "TVC / Brand Commercial",
       "secondary_genres": [
-        "Product Demo"
+        "Product Demo",
+        "Daily Routine"
       ],
       "source_type": "品牌官方 / 官方地区或支持频道",
       "note": "FreeBuds 6 - Stable and Clear Calls Party Video；主题材：TVC / Brand Commercial；次题材：Product Demo；23s；已按 storyboard 独立复核",
@@ -7796,11 +7818,57 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785680531832_iarxgd",
+          "video_id": "diq4Hwf7OQo",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:22:11.832Z"
+        },
+        {
+          "id": "rev_1785680528583_w2i2y8",
+          "video_id": "diq4Hwf7OQo",
+          "action": "classification_update",
+          "reason_code": "MANUAL_RECLASSIFICATION",
+          "reason_text": "",
+          "before": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "TVC / Brand Commercial",
+            "genres": [
+              "TVC / Brand Commercial",
+              "Product Demo"
+            ]
+          },
+          "after": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "TVC / Brand Commercial",
+            "genres": [
+              "TVC / Brand Commercial",
+              "Product Demo",
+              "Daily Routine"
+            ]
+          },
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:22:08.583Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-02T14:22:11.832Z"
     },
     {
       "id": "3jRCM02tKHQ",
@@ -23351,6 +23419,69 @@
     }
   ],
   "review_events": [
+    {
+      "id": "rev_1785680531832_iarxgd",
+      "video_id": "diq4Hwf7OQo",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:22:11.832Z"
+    },
+    {
+      "id": "rev_1785680528583_w2i2y8",
+      "video_id": "diq4Hwf7OQo",
+      "action": "classification_update",
+      "reason_code": "MANUAL_RECLASSIFICATION",
+      "reason_text": "",
+      "before": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "TVC / Brand Commercial",
+        "genres": [
+          "TVC / Brand Commercial",
+          "Product Demo"
+        ]
+      },
+      "after": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "TVC / Brand Commercial",
+        "genres": [
+          "TVC / Brand Commercial",
+          "Product Demo",
+          "Daily Routine"
+        ]
+      },
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:22:08.583Z"
+    },
+    {
+      "id": "rev_1785680477770_vwq8e9",
+      "video_id": "2tsxIQZI3YQ",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "remade",
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "remade",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:21:17.770Z"
+    },
     {
       "id": "rev_1785680430816_xppgmg",
       "video_id": "bCqnOn23LWE",
