@@ -19,6 +19,8 @@ const duplicateVideoIds = [];
 const invalidStatusRefs = [];
 const missingMetadataVideos = [];
 const missingMetadataWithoutStatus = [];
+const completeMetadataWithStatus = [];
+const metadataFetchErrors = [];
 
 for (const video of state.videos || []) {
   const id = video.video_id || video.id;
@@ -36,12 +38,16 @@ for (const video of state.videos || []) {
   if (!video.publish_date || !video.duration_seconds) {
     missingMetadataVideos.push(id);
     if (!(video.status_ids || []).includes("metadata_missing")) missingMetadataWithoutStatus.push(id);
+    if (video.metadata_error) metadataFetchErrors.push(id);
+  } else if ((video.status_ids || []).includes("metadata_missing")) {
+    completeMetadataWithStatus.push(id);
   }
 }
 
 if (duplicateVideoIds.length) errors.push(`duplicate video ids: ${duplicateVideoIds.slice(0, 10).join(", ")}`);
 if (invalidStatusRefs.length) errors.push(`invalid status refs: ${invalidStatusRefs.slice(0, 10).join(", ")}`);
 if (missingMetadataWithoutStatus.length) warnings.push(`missing metadata without metadata_missing status: ${missingMetadataWithoutStatus.length}`);
+if (completeMetadataWithStatus.length) warnings.push(`complete metadata still tagged metadata_missing: ${completeMetadataWithStatus.length}`);
 
 const reviewEvents = state.review_events || [];
 const orphanEvents = reviewEvents.filter((event) => !videoIds.has(event.video_id)).map((event) => event.id || event.video_id);
@@ -67,6 +73,8 @@ const summary = {
   review_events: reviewEvents.length,
   missing_metadata: missingMetadataVideos.length,
   missing_metadata_without_status: missingMetadataWithoutStatus.length,
+  complete_metadata_with_status: completeMetadataWithStatus.length,
+  metadata_fetch_errors: metadataFetchErrors.length,
   errors,
   warnings,
 };

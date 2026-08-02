@@ -11,7 +11,8 @@
     "reset:data": "node scripts/import-seed.mjs --reset",
     "backup:data": "node scripts/backup-state.mjs",
     "repair:data": "node scripts/repair-state-p0.mjs",
+    "backfill:metadata": "node scripts/backfill-youtube-metadata.mjs",
     "validate:data": "node scripts/validate-state.mjs",
-    "check": "node --check public/app.js && node --check server.mjs && node --check scripts/import-seed.mjs && node --check scripts/backup-state.mjs && node --check scripts/repair-state-p0.mjs && node --check scripts/validate-state.mjs"
+    "check": "node --check public/app.js && node --check server.mjs && node --check scripts/import-seed.mjs && node --check scripts/backup-state.mjs && node --check scripts/repair-state-p0.mjs && node --check scripts/backfill-youtube-metadata.mjs && node --check scripts/validate-state.mjs"
   }
 }

@@ -17,6 +17,7 @@ const metadataStatus = {
 
 let statusesAdded = 0;
 let videosTagged = 0;
+let videosUntagged = 0;
 let eventsRepaired = 0;
 
 if (!state.statuses.some((status) => status.id === metadataStatus.id)) {
@@ -36,6 +37,10 @@ for (const video of state.videos || []) {
   if ((!video.publish_date || !video.duration_seconds) && !video.status_ids.includes(metadataStatus.id)) {
     video.status_ids.push(metadataStatus.id);
     videosTagged += 1;
+  }
+  if (video.publish_date && video.duration_seconds && video.status_ids.includes(metadataStatus.id)) {
+    video.status_ids = video.status_ids.filter((id) => id !== metadataStatus.id);
+    videosUntagged += 1;
   }
 }
 
@@ -68,4 +73,4 @@ for (const video of state.videos || []) {
 state.updated_at = new Date().toISOString();
 await fs.writeFile(dataPath, `${JSON.stringify(state, null, 2)}\n`, "utf8");
 
-console.log(JSON.stringify({ ok: true, statusesAdded, videosTagged, eventsRepaired }, null, 2));
+console.log(JSON.stringify({ ok: true, statusesAdded, videosTagged, videosUntagged, eventsRepaired }, null, 2));

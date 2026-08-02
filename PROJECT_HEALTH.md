@@ -21,6 +21,7 @@
 - 增加数据备份脚本：`npm run backup:data`。
 - 增加数据校验脚本：`npm run validate:data`。
 - 增加 P0 数据修复脚本：`npm run repair:data`。
+- 增加 YouTube metadata 补齐脚本：`npm run backfill:metadata`。
 - 增加语法检查命令：`npm run check`。
 - 增加部署前健康门禁：`npm run build`，当前执行 `check + validate:data`。
 - 增加 `.gitignore`，避免提交本地备份、临时文件和密钥文件。
@@ -116,9 +117,10 @@ npm run backup:data
 
 ## 推荐下一步
 
-1. 批量补齐缺失 YouTube metadata。
-2. 把 `creative-library-state.json` 拆成 seed 数据和 runtime 数据。
-3. 引入 SQLite 或 Postgres。
-4. 增加用户身份和操作人。
-5. 增加采集结果 ingest 命令。
-6. 增加自动备份和导出。
+1. 执行 `npm run backfill:metadata` 批量补齐缺失 YouTube metadata。
+2. 人工审核新一轮“看起来很老”的样片时，优先基于 `publish_date`、`duration_seconds` 和产品代际判断。
+3. 把 `creative-library-state.json` 拆成 seed 数据和 runtime 数据。
+4. 引入 SQLite 或 Postgres。
+5. 增加用户身份和操作人。
+6. 增加采集结果 ingest 命令。
+7. 增加自动备份和导出。

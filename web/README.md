@@ -87,6 +87,7 @@ npm run check
 npm run validate:data
 npm run backup:data
 npm run repair:data
+npm run backfill:metadata
 ```
 
 - `npm run build`：部署前健康门禁；当前项目没有前端打包产物，会执行 `check + validate:data`。
@@ -94,6 +95,7 @@ npm run repair:data
 - `npm run validate:data`：检查平台状态文件的结构、视频 ID、状态引用、审核事件和元数据缺口。
 - `npm run backup:data`：把当前 `web/data/creative-library-state.json` 复制到 `web/data/backups/`。
 - `npm run repair:data`：执行 P0 级状态修复，包括添加 `待补元数据` 系统状态、给缺 metadata 的视频打标、修复历史拉黑事件的 before 快照。
+- `npm run backfill:metadata`：通过本机 `yt-dlp` 批量补齐 YouTube 发布时间和时长；会先自动备份当前状态文件，成功补齐后移除 `待补元数据`。
 
 ## 当前预置状态
 
@@ -127,6 +129,27 @@ npm run repair:data
 
 - `OUTDATED_PRODUCT_OR_VISUALS`
 - `DURATION_OUT_OF_RANGE`
+
+人工集中审核前建议先执行：
+
+```bash
+npm run backfill:metadata
+npm run validate:data
+```
+
+如果只想小批量验证：
+
+```bash
+npm run backfill:metadata -- --limit 10
+```
+
+如果 YouTube 返回 bot 校验，可以显式使用本机 Chrome 登录态：
+
+```bash
+npm run backfill:metadata -- --cookies-from-browser chrome
+```
+
+这会读取本机 Chrome Cookie 供 `yt-dlp` 请求 YouTube 使用；Cookie 不会写入项目文件或提交到 Git。
 
 ## 方法论沉淀策略
 
