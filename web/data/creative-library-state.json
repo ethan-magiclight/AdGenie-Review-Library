@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_at": "2026-08-02T08:36:11.611Z",
-  "updated_at": "2026-08-02T14:22:11.832Z",
+  "updated_at": "2026-08-02T14:23:06.917Z",
   "source_files": [
     "collect/library-v9.json",
     "collect/consumer-electronics-review-v5.json",
@@ -9007,11 +9007,56 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785680586917_kh4sk8",
+          "video_id": "Yd7Djf5QYvw",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:23:06.917Z"
+        },
+        {
+          "id": "rev_1785680581896_b12u1w",
+          "video_id": "Yd7Djf5QYvw",
+          "action": "classification_update",
+          "reason_code": "MANUAL_RECLASSIFICATION",
+          "reason_text": "",
+          "before": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Feature Callout",
+            "genres": [
+              "Feature Callout",
+              "Product Demo"
+            ]
+          },
+          "after": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Feature Callout",
+            "genres": [
+              "Feature Callout",
+              "Product Demo"
+            ]
+          },
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:23:01.896Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-02T14:23:06.917Z"
     },
     {
       "id": "vgw-amVaodg",
@@ -23419,6 +23464,49 @@
     }
   ],
   "review_events": [
+    {
+      "id": "rev_1785680586917_kh4sk8",
+      "video_id": "Yd7Djf5QYvw",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:23:06.917Z"
+    },
+    {
+      "id": "rev_1785680581896_b12u1w",
+      "video_id": "Yd7Djf5QYvw",
+      "action": "classification_update",
+      "reason_code": "MANUAL_RECLASSIFICATION",
+      "reason_text": "",
+      "before": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Feature Callout",
+        "genres": [
+          "Feature Callout",
+          "Product Demo"
+        ]
+      },
+      "after": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Feature Callout",
+        "genres": [
+          "Feature Callout",
+          "Product Demo"
+        ]
+      },
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:23:01.896Z"
+    },
     {
       "id": "rev_1785680531832_iarxgd",
       "video_id": "diq4Hwf7OQo",
