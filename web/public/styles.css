@@ -222,6 +222,34 @@ a{color:inherit}
 .form-block{display:grid;gap:8px}
 .form-block label{color:var(--muted);font-size:12px;font-weight:800}
 .genre-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:4px;max-height:250px;overflow:auto;border:1px solid var(--line);border-radius:14px;padding:8px;background:rgba(255,255,255,.03)}
+.review-flow{gap:14px}
+.review-section{
+  display:grid;gap:10px;padding:12px;border:1px solid var(--line);border-radius:16px;
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018))
+}
+.review-section-head{display:flex;align-items:flex-start;gap:10px}
+.review-section-head>span{
+  display:inline-grid;place-items:center;flex:0 0 24px;width:24px;height:24px;border-radius:999px;
+  background:rgba(249,115,22,.16);border:1px solid rgba(249,115,22,.42);color:var(--accent-2);font-size:12px;font-weight:950
+}
+.review-section-head strong{display:block;font-size:13px;letter-spacing:.01em}
+.review-section-head p{margin:3px 0 0;color:var(--dim);font-size:12px;line-height:1.45}
+.genre-checks.compact{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));max-height:178px}
+.status-checks{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));max-height:132px}
+.status-shortcuts{display:flex;flex-wrap:wrap;gap:8px}
+.status-shortcuts .btn{border-color:rgba(255,194,102,.28);background:rgba(255,194,102,.06);color:#f8dfad}
+.status-shortcuts .btn:hover{border-color:rgba(249,115,22,.62);background:rgba(249,115,22,.14);color:var(--accent-2)}
+.advanced-classification{
+  border:1px dashed rgba(245,241,232,.16);border-radius:14px;background:rgba(255,255,255,.018);padding:0
+}
+.advanced-classification summary{
+  cursor:pointer;padding:10px 12px;color:var(--muted);font-size:12px;font-weight:850;list-style:none
+}
+.advanced-classification summary::-webkit-details-marker{display:none}
+.advanced-classification summary::after{content:"展开";float:right;color:var(--dim);font-size:11px}
+.advanced-classification[open] summary::after{content:"收起"}
+.advanced-classification .form-grid{padding:0 12px 12px}
+.review-actions{padding-top:2px}
 .history{display:grid;gap:10px}
 .event{padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03)}
 .event strong{font-size:12px}

@@ -477,8 +477,7 @@ function selectedVideo() {
 }
 
 const drawerTabs = [
-  ["reclass", "重归类 / 纠错"],
-  ["status", "状态标记"],
+  ["reclass", "审核 / 纠错"],
   ["meta", "基础信息"],
   ["frames", "抽帧"],
   ["history", "审核记录"],
@@ -517,32 +516,47 @@ function drawerTabPanel(video, activeTab = "reclass") {
   const panels = {
     reclass: `
       <section class="tab-panel">
-        <div class="panel-head compact"><div><h2>重归类 / 纠错</h2><p>只记录人工原因，不自动改方法论；之后可让 Codex 统一分析。</p></div><button class="btn primary" data-save-classification>保存分类</button></div>
-        <div class="drawer-body">
-          <div class="form-grid">
-            <div class="form-block"><label>商品品类</label><select class="select" data-edit-category>${categoryOptions}</select></div>
-            <div class="form-block"><label>主题材</label><select class="select" data-edit-primary>${primaryOptions}</select></div>
-          </div>
-          <div class="form-block"><label>题材标签</label><div class="genre-checks">${genreChecks}</div></div>
-          <div class="form-grid">
-            <div class="form-block"><label>原因码</label><input class="input" data-classification-code value="${hasMissingMetadata(video) ? "METADATA_MISSING" : "MANUAL_RECLASSIFICATION"}"></div>
-            <label class="check-row"><input type="checkbox" data-methodology-candidate> 记录为方法论候选线索</label>
-          </div>
-          ${metadataReasonHint(video)}
-          <textarea class="textarea" data-classification-reason placeholder="为什么分类错了 / 为什么这样重归类 / 下次应注意什么"></textarea>
-          <div class="inline">
-            <button class="btn danger" data-blacklist>${video.blacklisted ? "取消拉黑" : "拉黑此视频"}</button>
-            <button class="btn ghost" data-add-note>只记录原因</button>
-          </div>
+        <div class="panel-head compact">
+          <div><h2>审核 / 纠错</h2><p>先确认题材标签，再标记状态；不合格直接拉黑，原因清楚就写下来。</p></div>
+          <button class="btn primary" data-save-review>保存本条审核</button>
         </div>
-      </section>
-    `,
-    status: `
-      <section class="tab-panel">
-        <div class="panel-head compact"><div><h2>状态标记</h2><p>状态可自由新增/删除；系统状态不可删除。</p></div><button class="btn primary" data-save-statuses>保存状态</button></div>
-        <div class="drawer-body">
-          <div class="genre-checks">${statusChecks}</div>
-          <textarea class="textarea" data-status-reason placeholder="本次状态变更原因，可选"></textarea>
+        <div class="drawer-body review-flow">
+          <div class="review-section">
+            <div class="review-section-head"><span>1</span><div><strong>题材标签</strong><p>只保留画面证据成立的题材。</p></div></div>
+            <div class="genre-checks compact">${genreChecks}</div>
+          </div>
+
+          <details class="advanced-classification">
+            <summary>高级分类：商品品类 / 主题材</summary>
+            <div class="form-grid">
+              <div class="form-block"><label>商品品类</label><select class="select" data-edit-category>${categoryOptions}</select></div>
+              <div class="form-block"><label>主题材</label><select class="select" data-edit-primary>${primaryOptions}</select></div>
+            </div>
+          </details>
+
+          <div class="review-section">
+            <div class="review-section-head"><span>2</span><div><strong>状态标记</strong><p>质量好标“需复刻”，质量不稳定先“暂搁置”。</p></div></div>
+            <div class="status-shortcuts">
+              <button type="button" class="btn ghost" data-status-preset="needs_remake">质量好：需复刻</button>
+              <button type="button" class="btn ghost" data-status-preset="parked">质量不好：暂搁置</button>
+            </div>
+            <div class="genre-checks status-checks">${statusChecks}</div>
+          </div>
+
+          <div class="review-section">
+            <div class="review-section-head"><span>3</span><div><strong>不合格 / 原因</strong><p>拉黑、纠错和方法论线索都用这里的原因。</p></div></div>
+            <div class="form-grid">
+              <div class="form-block"><label>原因码</label><input class="input" data-classification-code value="${hasMissingMetadata(video) ? "METADATA_MISSING" : "MANUAL_RECLASSIFICATION"}"></div>
+              <label class="check-row"><input type="checkbox" data-methodology-candidate> 记录为方法论候选线索</label>
+            </div>
+            ${metadataReasonHint(video)}
+            <textarea class="textarea" data-classification-reason placeholder="例如：题材应改为 Feature Callout；画面太旧，待补发布时间确认；质量好，可作为复刻样片。"></textarea>
+            <div class="inline review-actions">
+              <button class="btn primary" data-save-review>保存本条审核</button>
+              <button class="btn danger" data-blacklist>${video.blacklisted ? "取消拉黑" : "拉黑此视频"}</button>
+              <button class="btn ghost" data-add-note>只记录原因</button>
+            </div>
+          </div>
         </div>
       </section>
     `,
@@ -693,10 +707,12 @@ function renderStatuses() {
 }
 
 function bindDrawerPanelActions() {
+  document.querySelectorAll("[data-save-review]").forEach((button) => button.addEventListener("click", saveReview));
   document.querySelector("[data-save-statuses]")?.addEventListener("click", saveStatuses);
   document.querySelector("[data-save-classification]")?.addEventListener("click", saveClassification);
   document.querySelector("[data-blacklist]")?.addEventListener("click", toggleBlacklist);
   document.querySelector("[data-add-note]")?.addEventListener("click", addNote);
+  document.querySelectorAll("[data-status-preset]").forEach((button) => button.addEventListener("click", () => applyStatusPreset(button.dataset.statusPreset)));
 }
 
 function bindImageFallbacks() {
@@ -802,10 +818,28 @@ function mergeEvent(event) {
   state.data.review_events.unshift(event);
 }
 
+function sameStringSet(left = [], right = []) {
+  if (left.length !== right.length) return false;
+  const rightSet = new Set(right);
+  return left.every((item) => rightSet.has(item));
+}
+
+function readReviewForm() {
+  return {
+    product_category: document.querySelector("[data-edit-category]")?.value || selectedVideo()?.product_category,
+    primary_genre: document.querySelector("[data-edit-primary]")?.value || "",
+    genres: [...document.querySelectorAll('input[name="genre"]:checked')].map((input) => input.value),
+    status_ids: [...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value),
+    reason_code: document.querySelector("[data-classification-code]")?.value || "MANUAL_REVIEW",
+    reason_text: document.querySelector("[data-classification-reason]")?.value || "",
+    methodology_candidate: Boolean(document.querySelector("[data-methodology-candidate]")?.checked),
+  };
+}
+
 async function saveStatuses() {
   const video = selectedVideo();
   const status_ids = [...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value);
-  const reason_text = document.querySelector("[data-status-reason]").value;
+  const reason_text = document.querySelector("[data-status-reason]")?.value || document.querySelector("[data-classification-reason]")?.value || "";
   const payload = await api(`/api/videos/${video.video_id}/statuses`, { method: "POST", body: JSON.stringify({ status_ids, reason_text }) });
   replaceVideo(payload.video);
   mergeEvent(payload.event);
@@ -814,12 +848,7 @@ async function saveStatuses() {
 
 async function saveClassification() {
   const video = selectedVideo();
-  const product_category = document.querySelector("[data-edit-category]").value;
-  const primary_genre = document.querySelector("[data-edit-primary]").value;
-  const genres = [...document.querySelectorAll('input[name="genre"]:checked')].map((input) => input.value);
-  const reason_code = document.querySelector("[data-classification-code]").value;
-  const reason_text = document.querySelector("[data-classification-reason]").value;
-  const methodology_candidate = document.querySelector("[data-methodology-candidate]").checked;
+  const { product_category, primary_genre, genres, reason_code, reason_text, methodology_candidate } = readReviewForm();
   const payload = await api(`/api/videos/${video.video_id}/classification`, {
     method: "POST",
     body: JSON.stringify({ product_category, primary_genre, genres, reason_code, reason_text, methodology_candidate }),
@@ -829,11 +858,82 @@ async function saveClassification() {
   render();
 }
 
+async function saveReview() {
+  const video = selectedVideo();
+  const form = readReviewForm();
+  const classificationChanged =
+    form.product_category !== video.product_category ||
+    form.primary_genre !== (video.primary_genre || "") ||
+    !sameStringSet(form.genres, video.genres || []);
+  const statusChanged = !sameStringSet(form.status_ids, video.status_ids || []);
+  let latestVideo = video;
+  let saved = false;
+
+  if (classificationChanged) {
+    const payload = await api(`/api/videos/${video.video_id}/classification`, {
+      method: "POST",
+      body: JSON.stringify({
+        product_category: form.product_category,
+        primary_genre: form.primary_genre,
+        genres: form.genres,
+        reason_code: form.reason_code,
+        reason_text: form.reason_text,
+        methodology_candidate: form.methodology_candidate,
+      }),
+    });
+    latestVideo = payload.video;
+    replaceVideo(payload.video);
+    mergeEvent(payload.event);
+    saved = true;
+  }
+
+  if (statusChanged) {
+    const payload = await api(`/api/videos/${latestVideo.video_id}/statuses`, {
+      method: "POST",
+      body: JSON.stringify({ status_ids: form.status_ids, reason_text: form.reason_text }),
+    });
+    replaceVideo(payload.video);
+    mergeEvent(payload.event);
+    saved = true;
+  }
+
+  if (!saved && form.reason_text.trim()) {
+    const payload = await api(`/api/videos/${video.video_id}/review`, {
+      method: "POST",
+      body: JSON.stringify({
+        action: "note",
+        reason_code: form.reason_code,
+        reason_text: form.reason_text,
+        methodology_candidate: form.methodology_candidate,
+      }),
+    });
+    replaceVideo(payload.video);
+    mergeEvent(payload.event);
+  }
+
+  render();
+}
+
+function applyStatusPreset(statusId) {
+  const target = [...document.querySelectorAll('input[name="status"]')].find((input) => input.value === statusId);
+  if (!target) return;
+  target.checked = true;
+  if (statusId === "needs_remake") {
+    const parked = document.querySelector('input[name="status"][value="parked"]');
+    if (parked) parked.checked = false;
+  }
+  if (statusId === "parked") {
+    const needsRemake = document.querySelector('input[name="status"][value="needs_remake"]');
+    if (needsRemake) needsRemake.checked = false;
+  }
+}
+
 async function toggleBlacklist() {
   const video = selectedVideo();
-  const reason_code = document.querySelector("[data-classification-code]").value || "MANUAL_BLACKLIST";
-  const reason_text = document.querySelector("[data-classification-reason]").value;
-  const methodology_candidate = document.querySelector("[data-methodology-candidate]").checked;
+  const form = readReviewForm();
+  const reason_code = form.reason_code || "MANUAL_BLACKLIST";
+  const reason_text = form.reason_text;
+  const methodology_candidate = form.methodology_candidate;
   const payload = await api(`/api/videos/${video.video_id}/blacklist`, {
     method: "POST",
     body: JSON.stringify({ blacklisted: !video.blacklisted, reason_code, reason_text, methodology_candidate }),
@@ -845,9 +945,10 @@ async function toggleBlacklist() {
 
 async function addNote() {
   const video = selectedVideo();
-  const reason_code = document.querySelector("[data-classification-code]").value || "MANUAL_NOTE";
-  const reason_text = document.querySelector("[data-classification-reason]").value;
-  const methodology_candidate = document.querySelector("[data-methodology-candidate]").checked;
+  const form = readReviewForm();
+  const reason_code = form.reason_code || "MANUAL_NOTE";
+  const reason_text = form.reason_text;
+  const methodology_candidate = form.methodology_candidate;
   const payload = await api(`/api/videos/${video.video_id}/review`, {
     method: "POST",
     body: JSON.stringify({ action: "note", reason_code, reason_text, methodology_candidate }),
