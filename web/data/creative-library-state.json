@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_at": "2026-08-02T08:36:11.611Z",
-  "updated_at": "2026-08-02T15:22:20.165Z",
+  "updated_at": "2026-08-03T06:46:32.815Z",
   "source_files": [
     "collect/library-v9.json",
     "collect/consumer-electronics-review-v5.json",
@@ -7336,11 +7336,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "parked",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738120728_tuicmy",
+          "video_id": "wDgH0FECdJs",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "parked",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:22:00.728Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:22:00.728Z"
     },
     {
       "id": "oJ9bOZPu1Cw",
@@ -7689,11 +7708,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738152085_c4hdmg",
+          "video_id": "-7aSAWMUb6s",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:22:32.085Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:22:32.085Z"
     },
     {
       "id": "CDYM7t0fZjE",
@@ -9355,11 +9393,32 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "parked",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738376266_zjhlyq",
+          "video_id": "tpIKyD5xeLo",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "parked",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:26:16.266Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:26:16.266Z"
     },
     {
       "id": "iXhDlkmxrHU",
@@ -9457,12 +9516,14 @@
       "industry": "Consumer Electronics",
       "product_category": "True Wireless / Bluetooth Earbuds",
       "genres": [
-        "Lookbook",
+        "TVC / Brand Commercial",
         "Macro Close-Up",
-        "Multi-Angle / 360° Product Showcase"
+        "Multi-Angle / 360° Product Showcase",
+        "Lookbook"
       ],
       "primary_genre": "Lookbook",
       "secondary_genres": [
+        "TVC / Brand Commercial",
         "Macro Close-Up",
         "Multi-Angle / 360° Product Showcase"
       ],
@@ -9491,11 +9552,61 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "parked",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738415562_ozx5jb",
+          "video_id": "CKwjH0Y_0qg",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "parked",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:26:55.562Z"
+        },
+        {
+          "id": "rev_1785738415550_7okq00",
+          "video_id": "CKwjH0Y_0qg",
+          "action": "classification_update",
+          "reason_code": "METADATA_MISSING",
+          "reason_text": "",
+          "before": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Lookbook",
+            "genres": [
+              "Lookbook",
+              "Macro Close-Up",
+              "Multi-Angle / 360° Product Showcase"
+            ]
+          },
+          "after": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Lookbook",
+            "genres": [
+              "TVC / Brand Commercial",
+              "Macro Close-Up",
+              "Multi-Angle / 360° Product Showcase",
+              "Lookbook"
+            ]
+          },
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:26:55.550Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:26:55.562Z"
     },
     {
       "id": "qVnXgrgY5ok",
@@ -9923,11 +10034,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738575420_hcu2c3",
+          "video_id": "3yZkeQvNTcY",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:29:35.420Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:29:35.420Z"
     },
     {
       "id": "j5BCsz23898",
@@ -10144,11 +10274,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738595596_f064wo",
+          "video_id": "EMmKs8vMKhU",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:29:55.596Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:29:55.596Z"
     },
     {
       "id": "eH-PKTHDu3c",
@@ -10235,11 +10384,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738648072_cn6ptc",
+          "video_id": "bmaQzEGa-IQ",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:30:48.072Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:30:48.072Z"
     },
     {
       "id": "IMkAB9A7-fo",
@@ -10563,11 +10731,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738708838_t6xsdt",
+          "video_id": "_kfGcwCh8Us",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:31:48.838Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:31:48.838Z"
     },
     {
       "id": "Oxy6AqHOodw",
@@ -10654,11 +10841,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738742202_qaxz7k",
+          "video_id": "hvkngQBVMW0",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:32:22.202Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:32:22.202Z"
     },
     {
       "id": "F1IPylsD7CI",
@@ -10704,11 +10910,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738784922_4n2426",
+          "video_id": "F1IPylsD7CI",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:33:04.922Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:33:04.922Z"
     },
     {
       "id": "8E7aUqmuQ8c",
@@ -10798,11 +11023,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738798977_6h39gg",
+          "video_id": "Bt2iH0VaM20",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:33:18.977Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:33:18.977Z"
     },
     {
       "id": "vzq6Ba-289w",
@@ -12002,14 +12246,16 @@
       "industry": "Consumer Electronics",
       "product_category": "True Wireless / Bluetooth Earbuds",
       "genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
         "Feature Callout",
-        "Product Demo",
-        "Macro Close-Up"
+        "Product Demo"
       ],
       "primary_genre": "Feature Callout",
       "secondary_genres": [
-        "Product Demo",
-        "Macro Close-Up"
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase",
+        "Product Demo"
       ],
       "source_type": "品牌官方 / 官方地区或支持频道",
       "note": "JBL | Soundgear Sense true wireless earbuds with open sound；主题材：Feature Callout；次题材：Product Demo / Macro Close-Up；46s；已按 storyboard 独立复核",
@@ -12033,11 +12279,59 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738821078_5uzcrx",
+          "video_id": "7jTDPSg5cUY",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:33:41.078Z"
+        },
+        {
+          "id": "rev_1785738821057_w6pehu",
+          "video_id": "7jTDPSg5cUY",
+          "action": "classification_update",
+          "reason_code": "MANUAL_RECLASSIFICATION",
+          "reason_text": "",
+          "before": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Feature Callout",
+            "genres": [
+              "Feature Callout",
+              "Product Demo",
+              "Macro Close-Up"
+            ]
+          },
+          "after": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Feature Callout",
+            "genres": [
+              "Macro Close-Up",
+              "Multi-Angle / 360° Product Showcase",
+              "Feature Callout",
+              "Product Demo"
+            ]
+          },
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:33:41.057Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:33:41.078Z"
     },
     {
       "id": "Kt9z-hH61K0",
@@ -12344,11 +12638,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738885814_9c6vbx",
+          "video_id": "KOK-GrrrjcQ",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:34:45.814Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:34:45.814Z"
     },
     {
       "id": "ODI4zO0kFro",
@@ -12519,11 +12832,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738901097_0njj3l",
+          "video_id": "HuR-5GrMZyQ",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:35:01.097Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:35:01.097Z"
     },
     {
       "id": "sCYrElLdURQ",
@@ -12785,11 +13117,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738918212_0mfsng",
+          "video_id": "Qb7eu0yQK3U",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:35:18.212Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:35:18.212Z"
     },
     {
       "id": "JmkRbO0ox6g",
@@ -13047,11 +13398,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738960071_rd79ul",
+          "video_id": "-L5Z-4t3RLA",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:36:00.071Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:36:00.071Z"
     },
     {
       "id": "TQbWhWpqiqE",
@@ -13099,11 +13469,32 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "needs_remake",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785738992709_sje1rw",
+          "video_id": "TQbWhWpqiqE",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:36:32.709Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:36:32.709Z"
     },
     {
       "id": "vi4UVXuOpKU",
@@ -13153,11 +13544,32 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "needs_remake",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739016734_rmw784",
+          "video_id": "vi4UVXuOpKU",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:36:56.734Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:36:56.734Z"
     },
     {
       "id": "cUFx_4ZXLCM",
@@ -13251,11 +13663,32 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "needs_remake",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739027717_otxzup",
+          "video_id": "8laDdUCvNKM",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:37:07.717Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:37:07.717Z"
     },
     {
       "id": "ar5N-ylAI28",
@@ -13303,11 +13736,32 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "needs_remake",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739046390_s4oqf4",
+          "video_id": "ar5N-ylAI28",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:37:26.390Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:37:26.390Z"
     },
     {
       "id": "OtvnRMH8t44",
@@ -13363,13 +13817,15 @@
       "industry": "Consumer Electronics",
       "product_category": "True Wireless / Bluetooth Earbuds",
       "genres": [
-        "Daily Routine",
         "TVC / Brand Commercial",
-        "Product Demo"
+        "Feature Callout",
+        "Product Demo",
+        "Daily Routine"
       ],
       "primary_genre": "Daily Routine",
       "secondary_genres": [
         "TVC / Brand Commercial",
+        "Feature Callout",
         "Product Demo"
       ],
       "source_type": "品牌官方 / 官方地区频道",
@@ -13397,11 +13853,61 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "needs_remake",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739076842_pte17a",
+          "video_id": "AJ16sC0xi58",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:37:56.842Z"
+        },
+        {
+          "id": "rev_1785739074384_2c23y9",
+          "video_id": "AJ16sC0xi58",
+          "action": "classification_update",
+          "reason_code": "METADATA_MISSING",
+          "reason_text": "",
+          "before": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Daily Routine",
+            "genres": [
+              "Daily Routine",
+              "TVC / Brand Commercial",
+              "Product Demo"
+            ]
+          },
+          "after": {
+            "product_category": "True Wireless / Bluetooth Earbuds",
+            "primary_genre": "Daily Routine",
+            "genres": [
+              "TVC / Brand Commercial",
+              "Feature Callout",
+              "Product Demo",
+              "Daily Routine"
+            ]
+          },
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:37:54.384Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.165Z"
+      "updated_at": "2026-08-03T06:37:56.842Z"
     },
     {
       "id": "i7Xi27ri0dA",
@@ -13446,11 +13952,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739104144_l5jnt8",
+          "video_id": "i7Xi27ri0dA",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:38:24.144Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:38:24.144Z"
     },
     {
       "id": "_qGnftnFRYk",
@@ -13623,11 +14148,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739121848_ep8k24",
+          "video_id": "GJCAWxNm69M",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:38:41.848Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:38:41.848Z"
     },
     {
       "id": "geivoMDgPtc",
@@ -13716,11 +14260,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739224219_mfxknj",
+          "video_id": "A3Yap7TzWS8",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:40:24.219Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:40:24.219Z"
     },
     {
       "id": "yttIiJuiDAw",
@@ -13805,11 +14368,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739259762_q6nc5m",
+          "video_id": "2FOA80ckBsE",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:40:59.762Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:40:59.762Z"
     },
     {
       "id": "Q2zlSFiAlO8",
@@ -13983,11 +14565,32 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "parked",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739502283_1ctv7k",
+          "video_id": "8wyLTECy36E",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "parked",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:45:02.283Z"
+        }
+      ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-02T15:22:20.164Z"
+      "updated_at": "2026-08-03T06:45:02.283Z"
     },
     {
       "id": "p1XaIrXkDmI",
@@ -14073,11 +14676,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "parked",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739519787_yuz7hn",
+          "video_id": "e3P2CAO33vA",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "parked",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:45:19.787Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:45:19.787Z"
     },
     {
       "id": "Er6ppurPigo",
@@ -14124,11 +14746,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785739592815_moapvo",
+          "video_id": "Er6ppurPigo",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T06:46:32.815Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-03T06:46:32.815Z"
     },
     {
       "id": "Sxmxb4jmxlA",
@@ -24073,6 +24714,585 @@
     }
   ],
   "review_events": [
+    {
+      "id": "rev_1785739592815_moapvo",
+      "video_id": "Er6ppurPigo",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:46:32.815Z"
+    },
+    {
+      "id": "rev_1785739519787_yuz7hn",
+      "video_id": "e3P2CAO33vA",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "parked",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:45:19.787Z"
+    },
+    {
+      "id": "rev_1785739502283_1ctv7k",
+      "video_id": "8wyLTECy36E",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "parked",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:45:02.283Z"
+    },
+    {
+      "id": "rev_1785739259762_q6nc5m",
+      "video_id": "2FOA80ckBsE",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:40:59.762Z"
+    },
+    {
+      "id": "rev_1785739224219_mfxknj",
+      "video_id": "A3Yap7TzWS8",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:40:24.219Z"
+    },
+    {
+      "id": "rev_1785739121848_ep8k24",
+      "video_id": "GJCAWxNm69M",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:38:41.848Z"
+    },
+    {
+      "id": "rev_1785739104144_l5jnt8",
+      "video_id": "i7Xi27ri0dA",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:38:24.144Z"
+    },
+    {
+      "id": "rev_1785739076842_pte17a",
+      "video_id": "AJ16sC0xi58",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:37:56.842Z"
+    },
+    {
+      "id": "rev_1785739074384_2c23y9",
+      "video_id": "AJ16sC0xi58",
+      "action": "classification_update",
+      "reason_code": "METADATA_MISSING",
+      "reason_text": "",
+      "before": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Daily Routine",
+        "genres": [
+          "Daily Routine",
+          "TVC / Brand Commercial",
+          "Product Demo"
+        ]
+      },
+      "after": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Daily Routine",
+        "genres": [
+          "TVC / Brand Commercial",
+          "Feature Callout",
+          "Product Demo",
+          "Daily Routine"
+        ]
+      },
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:37:54.384Z"
+    },
+    {
+      "id": "rev_1785739046390_s4oqf4",
+      "video_id": "ar5N-ylAI28",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:37:26.390Z"
+    },
+    {
+      "id": "rev_1785739027717_otxzup",
+      "video_id": "8laDdUCvNKM",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:37:07.717Z"
+    },
+    {
+      "id": "rev_1785739016734_rmw784",
+      "video_id": "vi4UVXuOpKU",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:36:56.734Z"
+    },
+    {
+      "id": "rev_1785738992709_sje1rw",
+      "video_id": "TQbWhWpqiqE",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:36:32.709Z"
+    },
+    {
+      "id": "rev_1785738960071_rd79ul",
+      "video_id": "-L5Z-4t3RLA",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:36:00.071Z"
+    },
+    {
+      "id": "rev_1785738918212_0mfsng",
+      "video_id": "Qb7eu0yQK3U",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:35:18.212Z"
+    },
+    {
+      "id": "rev_1785738901097_0njj3l",
+      "video_id": "HuR-5GrMZyQ",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:35:01.097Z"
+    },
+    {
+      "id": "rev_1785738885814_9c6vbx",
+      "video_id": "KOK-GrrrjcQ",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:34:45.814Z"
+    },
+    {
+      "id": "rev_1785738821078_5uzcrx",
+      "video_id": "7jTDPSg5cUY",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:33:41.078Z"
+    },
+    {
+      "id": "rev_1785738821057_w6pehu",
+      "video_id": "7jTDPSg5cUY",
+      "action": "classification_update",
+      "reason_code": "MANUAL_RECLASSIFICATION",
+      "reason_text": "",
+      "before": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Feature Callout",
+        "genres": [
+          "Feature Callout",
+          "Product Demo",
+          "Macro Close-Up"
+        ]
+      },
+      "after": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Feature Callout",
+        "genres": [
+          "Macro Close-Up",
+          "Multi-Angle / 360° Product Showcase",
+          "Feature Callout",
+          "Product Demo"
+        ]
+      },
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:33:41.057Z"
+    },
+    {
+      "id": "rev_1785738798977_6h39gg",
+      "video_id": "Bt2iH0VaM20",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:33:18.977Z"
+    },
+    {
+      "id": "rev_1785738784922_4n2426",
+      "video_id": "F1IPylsD7CI",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:33:04.922Z"
+    },
+    {
+      "id": "rev_1785738742202_qaxz7k",
+      "video_id": "hvkngQBVMW0",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:32:22.202Z"
+    },
+    {
+      "id": "rev_1785738708838_t6xsdt",
+      "video_id": "_kfGcwCh8Us",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:31:48.838Z"
+    },
+    {
+      "id": "rev_1785738648072_cn6ptc",
+      "video_id": "bmaQzEGa-IQ",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:30:48.072Z"
+    },
+    {
+      "id": "rev_1785738595596_f064wo",
+      "video_id": "EMmKs8vMKhU",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:29:55.596Z"
+    },
+    {
+      "id": "rev_1785738575420_hcu2c3",
+      "video_id": "3yZkeQvNTcY",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:29:35.420Z"
+    },
+    {
+      "id": "rev_1785738415562_ozx5jb",
+      "video_id": "CKwjH0Y_0qg",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "parked",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:26:55.562Z"
+    },
+    {
+      "id": "rev_1785738415550_7okq00",
+      "video_id": "CKwjH0Y_0qg",
+      "action": "classification_update",
+      "reason_code": "METADATA_MISSING",
+      "reason_text": "",
+      "before": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Lookbook",
+        "genres": [
+          "Lookbook",
+          "Macro Close-Up",
+          "Multi-Angle / 360° Product Showcase"
+        ]
+      },
+      "after": {
+        "product_category": "True Wireless / Bluetooth Earbuds",
+        "primary_genre": "Lookbook",
+        "genres": [
+          "TVC / Brand Commercial",
+          "Macro Close-Up",
+          "Multi-Angle / 360° Product Showcase",
+          "Lookbook"
+        ]
+      },
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:26:55.550Z"
+    },
+    {
+      "id": "rev_1785738376266_zjhlyq",
+      "video_id": "tpIKyD5xeLo",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "parked",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:26:16.266Z"
+    },
+    {
+      "id": "rev_1785738152085_c4hdmg",
+      "video_id": "-7aSAWMUb6s",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:22:32.085Z"
+    },
+    {
+      "id": "rev_1785738120728_tuicmy",
+      "video_id": "wDgH0FECdJs",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "parked",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T06:22:00.728Z"
+    },
     {
       "id": "rev_1785681992438_ilinjd",
       "video_id": "G-4_wSIkPxc",
