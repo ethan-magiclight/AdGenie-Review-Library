@@ -13,6 +13,7 @@ const state = {
   selectedCategory: null,
   selectedVideoId: null,
   drawerTab: "reclass",
+  matrixMode: "all",
   fieldMenuOpen: false,
   statusFilterOpen: false,
 };
@@ -34,6 +35,45 @@ const columns = [
 const defaultVisibleColumns = ["preview", "title", "brand", "product_category", "genres", "statuses", "publish_date", "duration"];
 const missingMetadataText = "元数据缺失";
 const missingMetadataTitle = "历史库缺少 YouTube metadata；需先补全发布时间和时长，再做年代/时长规则判断。";
+const remakeStatusId = "needs_remake";
+const mvpTargetPerMatrixCell = 10;
+const pendingReviewStatusId = "pending_review";
+const remadeStatusId = "remade";
+const workflowConclusionStatusIds = new Set(["needs_remake", "remade", "parked", "approved", "excluded", "blacklisted"]);
+const statusDefinitions = {
+  pending_review: {
+    role: "工作队列",
+    text: "已采集但还没完成最终人工判断；一旦标为需复刻、已入库、暂搁置、已排除、已拉黑或已复刻，后续保存会自动移除这个状态。",
+  },
+  needs_remake: {
+    role: "MVP 正向结论",
+    text: "质量达标、适合进入产品 MVP 模板复刻池；品类 × 题材的 MVP 缺口以这个状态为准。",
+  },
+  remade: {
+    role: "生产完成",
+    text: "已经被内容或产品团队复刻成模板；后续保存会自动移除“待审核”和“需复刻”。",
+  },
+  parked: {
+    role: "延后处理",
+    text: "有参考价值但质量、新鲜度或 AI 发挥空间不稳定；暂时不进入 MVP 复刻池。",
+  },
+  metadata_missing: {
+    role: "事实标记",
+    text: "缺少发布时间或时长等基础元数据；它不是质量结论，可与其他审核状态共存，等补齐 metadata 后再做最终规则判断。",
+  },
+  approved: {
+    role: "历史 / 参考状态",
+    text: "表示曾被认为可进入参考样片库；不等同于 MVP 必做复刻对象。当前 MVP 缺口请以“需复刻”统计为准。",
+  },
+  excluded: {
+    role: "负向结论",
+    text: "明确不符合当前样片规则，不进入模板候选；以后保存会自动移除“待审核”。",
+  },
+  blacklisted: {
+    role: "强排除",
+    text: "明确错误或未来不希望再次采集的反例；以后保存会自动移除“待审核”。",
+  },
+};
 
 function loadVisibleColumns() {
   try {
@@ -150,6 +190,23 @@ function statusName(id) {
   return state.data.statuses.find((status) => status.id === id)?.name || id;
 }
 
+function statusDefinition(id) {
+  return statusDefinitions[id] || {
+    role: "自定义状态",
+    text: "团队自定义状态；不参与预置审核流转规则。",
+  };
+}
+
+function normalizeWorkflowStatusIds(statusIds = []) {
+  const next = new Set(statusIds);
+  const hasConclusion = [...workflowConclusionStatusIds].some((id) => next.has(id));
+  if (hasConclusion) next.delete(pendingReviewStatusId);
+  if (next.has(remadeStatusId)) next.delete(remakeStatusId);
+  return state.data.statuses
+    .map((status) => status.id)
+    .filter((id) => next.has(id));
+}
+
 function statusFilterLabel() {
   const ids = activeStatusIds();
   if (!ids.length) return "全部状态";
@@ -199,14 +256,42 @@ function coreVideos() {
   return state.data.videos.filter((video) => video.core_template_eligible && !video.blacklisted);
 }
 
-function countCell(category, genre) {
+function matrixSourceVideos(mode = state.matrixMode) {
+  if (mode === "needs_remake") {
+    return state.data.videos.filter((video) => !video.blacklisted && (video.status_ids || []).includes(remakeStatusId));
+  }
+  return coreVideos();
+}
+
+function uniqueMasterCount(videos) {
   const masters = new Set();
-  for (const video of coreVideos()) {
+  for (const video of videos) masters.add(video.canonical_master_id || video.video_id);
+  return masters.size;
+}
+
+function countCell(category, genre, mode = state.matrixMode) {
+  const masters = new Set();
+  for (const video of matrixSourceVideos(mode)) {
     if (video.product_category === category && (video.genres || []).includes(genre)) {
       masters.add(video.canonical_master_id || video.video_id);
     }
   }
   return masters.size;
+}
+
+function matrixStats(categories, targetGenres, mode = state.matrixMode) {
+  const counts = [];
+  for (const genre of targetGenres) {
+    for (const category of categories) counts.push(countCell(category, genre, mode));
+  }
+  return {
+    masters: uniqueMasterCount(matrixSourceVideos(mode)),
+    cells: counts.length,
+    achieved: counts.filter((count) => count >= mvpTargetPerMatrixCell).length,
+    partial: counts.filter((count) => count > 0 && count < mvpTargetPerMatrixCell).length,
+    empty: counts.filter((count) => count === 0).length,
+    gap: counts.reduce((sum, count) => sum + Math.max(mvpTargetPerMatrixCell - count, 0), 0),
+  };
 }
 
 function categoryTotal(category) {
@@ -234,10 +319,12 @@ function setView(view) {
   render();
 }
 
-function goVideos(category = "all", genre = "all") {
+function goVideos(category = "all", genre = "all", statusId = "") {
   state.view = "videos";
   state.filters.category = category;
   state.filters.genre = genre;
+  state.filters.statusIds = statusId ? [statusId] : [];
+  state.filters.statusMode = "include";
   state.statusFilterOpen = false;
   render();
 }
@@ -328,6 +415,19 @@ function pageTop(title, subtitle, actions = "") {
 function renderMatrix() {
   const categories = categoriesForMatrix();
   const targetGenres = state.data.target_genres;
+  const matrixMode = state.matrixMode === "needs_remake" ? "needs_remake" : "all";
+  const stats = matrixStats(categories, targetGenres, matrixMode);
+  const modeCopy = matrixMode === "needs_remake"
+    ? {
+      title: "需复刻统计",
+      note: "只统计状态标记为“需复刻”的非拉黑视频，按母片去重；缺口按每格 10 条计算。",
+      masterLabel: "需复刻母片",
+    }
+    : {
+      title: "全部有效样片",
+      note: "绿色 ≥10，黄色有样片但不足，红色空缺。计数只取有效模板且不含拉黑。",
+      masterLabel: "有效模板母片",
+    };
   const matrixRows = targetGenres.map((genre) => {
     const definition = genreDefinition(genre);
     return `
@@ -337,9 +437,14 @@ function renderMatrix() {
           <span>${escapeHtml(genreShort(genre))}</span>
         </td>
         ${categories.map((category) => {
-          const count = countCell(category, genre);
+          const count = countCell(category, genre, matrixMode);
           const cls = count >= 10 ? "ok" : count > 0 ? "some" : "empty";
-          return `<td class="num ${cls}" data-goto-category="${escapeHtml(category)}" data-goto-genre="${escapeHtml(genre)}">${count}</td>`;
+          const gap = Math.max(mvpTargetPerMatrixCell - count, 0);
+          const cellBody = matrixMode === "needs_remake"
+            ? `<strong>${count}</strong><span>${gap ? `缺 ${gap}` : "达标"}</span>`
+            : `${count}`;
+          const gotoStatus = matrixMode === "needs_remake" ? ` data-goto-status="${remakeStatusId}"` : "";
+          return `<td class="num ${cls}" data-goto-category="${escapeHtml(category)}" data-goto-genre="${escapeHtml(genre)}"${gotoStatus}>${cellBody}</td>`;
         }).join("")}
       </tr>
     `;
@@ -356,7 +461,18 @@ function renderMatrix() {
       </div>
       <section class="panel">
         <div class="panel-head">
-          <div><h2>品类 × 题材总览</h2><p>绿色 ≥10，黄色有样片但不足，红色空缺。计数只取有效模板且不含拉黑。</p></div>
+          <div><h2>品类 × 题材总览</h2><p>${modeCopy.note}</p></div>
+          <div class="view-tabs">
+            <button class="${matrixMode === "all" ? "active" : ""}" data-matrix-mode="all">全部有效样片</button>
+            <button class="${matrixMode === "needs_remake" ? "active" : ""}" data-matrix-mode="needs_remake">需复刻统计</button>
+          </div>
+        </div>
+        <div class="matrix-summary">
+          <div><span>${modeCopy.masterLabel}</span><strong>${stats.masters}</strong></div>
+          <div><span>达标格</span><strong>${stats.achieved} / ${stats.cells}</strong></div>
+          <div><span>已有但不足</span><strong>${stats.partial}</strong></div>
+          <div><span>空缺格</span><strong>${stats.empty}</strong></div>
+          <div class="gap"><span>MVP 总缺口</span><strong>${stats.gap}</strong></div>
         </div>
         <div class="matrix-wrap">
           <table class="matrix">
@@ -506,12 +622,16 @@ function drawerTabPanel(video, activeTab = "reclass") {
   const primaryOptions = [`<option value="">无主题材</option>`, ...state.data.target_genres.map((genre) => `
     <option value="${escapeHtml(genre)}" ${genre === video.primary_genre ? "selected" : ""}>${escapeHtml(genreShort(genre))}</option>
   `)].join("");
-  const statusChecks = state.data.statuses.map((status) => `
-    <label class="check-row">
+  const statusChecks = state.data.statuses.map((status) => {
+    const definition = statusDefinition(status.id);
+    return `
+    <label class="check-row status-check-row" title="${escapeHtml(definition.text)}">
       <input type="checkbox" name="status" value="${escapeHtml(status.id)}" ${(video.status_ids || []).includes(status.id) ? "checked" : ""}>
-      <span class="status-dot" style="--dot:${status.color}"></span>${escapeHtml(status.name)}
+      <span class="status-dot" style="--dot:${status.color}"></span>
+      <span class="status-check-copy"><strong>${escapeHtml(status.name)}</strong><em>${escapeHtml(definition.role)}</em></span>
     </label>
-  `).join("");
+  `;
+  }).join("");
   const events = (video.review_events || []).concat(state.data.review_events.filter((event) => event.video_id === video.video_id)).slice(0, 20);
   const panels = {
     reclass: `
@@ -682,6 +802,29 @@ function renderStatuses() {
     ${pageTop("状态管理", "预置状态可直接用；自定义状态可新增/删除。删除状态会从所有视频上移除。")}
     <div class="content">
       <section class="panel">
+        <div class="panel-head"><div><h2>审核状态流</h2><p>这套规则只影响后续保存；不会批量改动已经标记过的视频。</p></div></div>
+        <div class="drawer-body">
+          <div class="status-flow">
+            <div>新采集视频</div>
+            <span>→</span>
+            <div>待补元数据</div>
+            <span>→</span>
+            <div>待审核</div>
+            <span>→</span>
+            <div class="positive">需复刻</div>
+            <span>→</span>
+            <div class="positive">已复刻</div>
+          </div>
+          <div class="status-branches">
+            <div><strong>已入库</strong><span>历史参考样片状态，不作为 MVP 缺口口径。</span></div>
+            <div><strong>暂搁置</strong><span>有参考价值，但暂不进入 MVP。</span></div>
+            <div><strong>已排除</strong><span>不符合当前样片规则。</span></div>
+            <div><strong>已拉黑</strong><span>明确错误或未来不要再采。</span></div>
+          </div>
+          <p class="status-rule-note">流转规则：保存为“需复刻 / 已入库 / 暂搁置 / 已排除 / 已拉黑 / 已复刻”后，会自动移除“待审核”；保存为“已复刻”后，还会自动移除“需复刻”。“待补元数据”是事实标记，可以保留到元数据补齐为止；MVP 缺口仍以“需复刻”统计为准。</p>
+        </div>
+      </section>
+      <section class="panel" style="margin-top:16px">
         <div class="panel-head"><div><h2>新增状态</h2><p>例如：重点参考、客户案例候选、可做模板、内容团队已看。</p></div></div>
         <div class="drawer-body">
           <div class="form-grid">
@@ -694,12 +837,18 @@ function renderStatuses() {
       <section class="panel" style="margin-top:16px">
         <div class="panel-head"><div><h2>状态列表</h2><p>系统状态保留，自定义状态可以删除。</p></div></div>
         <div class="drawer-body status-manager">
-          ${state.data.statuses.map((status) => `
+          ${state.data.statuses.map((status) => {
+            const definition = statusDefinition(status.id);
+            return `
             <div class="status-row">
-              <div class="inline"><span class="status-dot" style="--dot:${status.color}"></span><strong>${escapeHtml(status.name)}</strong><span class="subtext">${status.is_system ? "系统" : "自定义"}</span></div>
+              <div class="status-info">
+                <div class="inline"><span class="status-dot" style="--dot:${status.color}"></span><strong>${escapeHtml(status.name)}</strong><span class="subtext">${escapeHtml(definition.role)} · ${status.is_system ? "系统" : "自定义"}</span></div>
+                <p>${escapeHtml(definition.text)}</p>
+              </div>
               ${status.is_system ? `<span class="muted">不可删除</span>` : `<button class="btn danger" data-delete-status="${escapeHtml(status.id)}">删除</button>`}
             </div>
-          `).join("")}
+          `;
+          }).join("")}
         </div>
       </section>
     </div>
@@ -713,6 +862,15 @@ function bindDrawerPanelActions() {
   document.querySelector("[data-blacklist]")?.addEventListener("click", toggleBlacklist);
   document.querySelector("[data-add-note]")?.addEventListener("click", addNote);
   document.querySelectorAll("[data-status-preset]").forEach((button) => button.addEventListener("click", () => applyStatusPreset(button.dataset.statusPreset)));
+  document.querySelectorAll('input[name="status"]').forEach((input) => input.addEventListener("change", syncWorkflowStatusCheckboxes));
+}
+
+function syncWorkflowStatusCheckboxes() {
+  const checked = [...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value);
+  const normalized = new Set(normalizeWorkflowStatusIds(checked));
+  document.querySelectorAll('input[name="status"]').forEach((input) => {
+    input.checked = normalized.has(input.value);
+  });
 }
 
 function bindImageFallbacks() {
@@ -731,7 +889,11 @@ function bindImageFallbacks() {
 function bindGlobal() {
   bindImageFallbacks();
   document.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
-  document.querySelectorAll("[data-goto-category]").forEach((el) => el.addEventListener("click", () => goVideos(el.dataset.gotoCategory, el.dataset.gotoGenre)));
+  document.querySelectorAll("[data-matrix-mode]").forEach((button) => button.addEventListener("click", () => {
+    state.matrixMode = button.dataset.matrixMode;
+    renderMatrix();
+  }));
+  document.querySelectorAll("[data-goto-category]").forEach((el) => el.addEventListener("click", () => goVideos(el.dataset.gotoCategory, el.dataset.gotoGenre, el.dataset.gotoStatus)));
   document.querySelectorAll("[data-filter]").forEach((input) => input.addEventListener("input", () => {
     state.filters[input.dataset.filter] = input.value;
     renderVideos();
@@ -825,11 +987,12 @@ function sameStringSet(left = [], right = []) {
 }
 
 function readReviewForm() {
+  const checkedStatusIds = [...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value);
   return {
     product_category: document.querySelector("[data-edit-category]")?.value || selectedVideo()?.product_category,
     primary_genre: document.querySelector("[data-edit-primary]")?.value || "",
     genres: [...document.querySelectorAll('input[name="genre"]:checked')].map((input) => input.value),
-    status_ids: [...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value),
+    status_ids: normalizeWorkflowStatusIds(checkedStatusIds),
     reason_code: document.querySelector("[data-classification-code]")?.value || "MANUAL_REVIEW",
     reason_text: document.querySelector("[data-classification-reason]")?.value || "",
     methodology_candidate: Boolean(document.querySelector("[data-methodology-candidate]")?.checked),
@@ -838,7 +1001,7 @@ function readReviewForm() {
 
 async function saveStatuses() {
   const video = selectedVideo();
-  const status_ids = [...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value);
+  const status_ids = normalizeWorkflowStatusIds([...document.querySelectorAll('input[name="status"]:checked')].map((input) => input.value));
   const reason_text = document.querySelector("[data-status-reason]")?.value || document.querySelector("[data-classification-reason]")?.value || "";
   const payload = await api(`/api/videos/${video.video_id}/statuses`, { method: "POST", body: JSON.stringify({ status_ids, reason_text }) });
   replaceVideo(payload.video);
@@ -918,12 +1081,18 @@ function applyStatusPreset(statusId) {
   const target = [...document.querySelectorAll('input[name="status"]')].find((input) => input.value === statusId);
   if (!target) return;
   target.checked = true;
+  const pending = document.querySelector(`input[name="status"][value="${pendingReviewStatusId}"]`);
+  if (pending && workflowConclusionStatusIds.has(statusId)) pending.checked = false;
   if (statusId === "needs_remake") {
     const parked = document.querySelector('input[name="status"][value="parked"]');
     if (parked) parked.checked = false;
   }
   if (statusId === "parked") {
     const needsRemake = document.querySelector('input[name="status"][value="needs_remake"]');
+    if (needsRemake) needsRemake.checked = false;
+  }
+  if (statusId === remadeStatusId) {
+    const needsRemake = document.querySelector(`input[name="status"][value="${remakeStatusId}"]`);
     if (needsRemake) needsRemake.checked = false;
   }
 }

@@ -11,6 +11,10 @@ const publicRoot = path.join(webRoot, "public");
 const dataPath = path.join(webRoot, "data", "creative-library-state.json");
 const port = Number(process.env.PORT || 4173);
 const host = process.env.HOST || "127.0.0.1";
+const pendingReviewStatusId = "pending_review";
+const remakeStatusId = "needs_remake";
+const remadeStatusId = "remade";
+const workflowConclusionStatusIds = new Set(["needs_remake", "remade", "parked", "approved", "excluded", "blacklisted"]);
 
 const mime = {
   ".html": "text/html; charset=utf-8",
@@ -65,6 +69,14 @@ function safeJoin(root, requestPath) {
 
 function statusById(state, id) {
   return state.statuses.find((status) => status.id === id);
+}
+
+function normalizeWorkflowStatusIds(state, statusIds = []) {
+  const next = new Set(statusIds.filter((id) => statusById(state, id)));
+  const hasConclusion = [...workflowConclusionStatusIds].some((id) => next.has(id));
+  if (hasConclusion) next.delete(pendingReviewStatusId);
+  if (next.has(remadeStatusId)) next.delete(remakeStatusId);
+  return state.statuses.map((status) => status.id).filter((id) => next.has(id));
 }
 
 function videoById(state, id) {
@@ -141,7 +153,7 @@ async function handleApi(req, res, url) {
 
     if (req.method === "POST" && parts[3] === "statuses") {
       const body = await parseBody(req);
-      const nextIds = [...new Set((body.status_ids || []).filter((id) => statusById(state, id)))];
+      const nextIds = normalizeWorkflowStatusIds(state, body.status_ids || []);
       const before = [...(video.status_ids || [])];
       video.status_ids = nextIds;
       const event = appendReview(state, video, {
@@ -189,6 +201,7 @@ async function handleApi(req, res, url) {
       video.status_ids = video.status_ids || [];
       if (blacklisted && !video.status_ids.includes("blacklisted")) video.status_ids.push("blacklisted");
       if (!blacklisted) video.status_ids = video.status_ids.filter((id) => id !== "blacklisted");
+      video.status_ids = normalizeWorkflowStatusIds(state, video.status_ids);
       const event = appendReview(state, video, {
         action: blacklisted ? "blacklist" : "unblacklist",
         reason_code: body.reason_code || (blacklisted ? "MANUAL_BLACKLIST" : "MANUAL_RESTORE"),

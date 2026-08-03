@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_at": "2026-08-02T08:36:11.611Z",
-  "updated_at": "2026-08-03T06:46:32.815Z",
+  "updated_at": "2026-08-03T10:31:40.318Z",
   "source_files": [
     "collect/library-v9.json",
     "collect/consumer-electronics-review-v5.json",
@@ -2864,12 +2864,13 @@
       "industry": "Consumer Electronics",
       "product_category": "Over-Ear Headphones",
       "genres": [
-        "Aesthetic B-Roll",
-        "Macro Close-Up"
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
       ],
-      "primary_genre": "Aesthetic B-Roll",
+      "primary_genre": null,
       "secondary_genres": [
-        "Macro Close-Up"
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
       ],
       "source_type": "品牌官方",
       "note": "配色/材质设计片",
@@ -2890,11 +2891,58 @@
       "blacklisted": false,
       "status_ids": [
         "pending_review",
+        "needs_remake",
         "metadata_missing"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785744981461_swgxv5",
+          "video_id": "pekdACNHX3w",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "metadata_missing"
+          ],
+          "after": [
+            "pending_review",
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T08:16:21.461Z"
+        },
+        {
+          "id": "rev_1785744981443_jesd0d",
+          "video_id": "pekdACNHX3w",
+          "action": "classification_update",
+          "reason_code": "METADATA_MISSING",
+          "reason_text": "",
+          "before": {
+            "product_category": "Over-Ear Headphones",
+            "primary_genre": "Aesthetic B-Roll",
+            "genres": [
+              "Aesthetic B-Roll",
+              "Macro Close-Up"
+            ]
+          },
+          "after": {
+            "product_category": "Over-Ear Headphones",
+            "primary_genre": null,
+            "genres": [
+              "Macro Close-Up",
+              "Multi-Angle / 360° Product Showcase"
+            ]
+          },
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T08:16:21.443Z"
+        }
+      ],
       "imported_from": "library-v9",
-      "updated_at": null
+      "updated_at": "2026-08-03T08:16:21.461Z"
     },
     {
       "id": "mut8kCXYiHo",
@@ -9392,11 +9440,29 @@
       "frames_reviewed": null,
       "blacklisted": false,
       "status_ids": [
-        "pending_review",
         "parked",
         "metadata_missing"
       ],
       "review_events": [
+        {
+          "id": "rev_1785752992075_ttihat",
+          "video_id": "tpIKyD5xeLo",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "parked",
+            "metadata_missing"
+          ],
+          "after": [
+            "parked",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T10:29:52.075Z"
+        },
         {
           "id": "rev_1785738376266_zjhlyq",
           "video_id": "tpIKyD5xeLo",
@@ -9418,7 +9484,7 @@
         }
       ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-03T06:26:16.266Z"
+      "updated_at": "2026-08-03T10:29:52.075Z"
     },
     {
       "id": "iXhDlkmxrHU",
@@ -9551,11 +9617,49 @@
       "frames_reviewed": null,
       "blacklisted": false,
       "status_ids": [
-        "pending_review",
+        "needs_remake",
         "parked",
         "metadata_missing"
       ],
       "review_events": [
+        {
+          "id": "rev_1785753100318_8pj15x",
+          "video_id": "CKwjH0Y_0qg",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "after": [
+            "needs_remake",
+            "parked",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T10:31:40.318Z"
+        },
+        {
+          "id": "rev_1785753058796_p8cqas",
+          "video_id": "CKwjH0Y_0qg",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "pending_review",
+            "parked",
+            "metadata_missing"
+          ],
+          "after": [
+            "needs_remake",
+            "metadata_missing"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-03T10:30:58.796Z"
+        },
         {
           "id": "rev_1785738415562_ozx5jb",
           "video_id": "CKwjH0Y_0qg",
@@ -9606,7 +9710,7 @@
         }
       ],
       "imported_from": "collect/quality-expansion-candidates-v1.json",
-      "updated_at": "2026-08-03T06:26:55.562Z"
+      "updated_at": "2026-08-03T10:31:40.318Z"
     },
     {
       "id": "qVnXgrgY5ok",
@@ -24714,6 +24818,108 @@
     }
   ],
   "review_events": [
+    {
+      "id": "rev_1785753100318_8pj15x",
+      "video_id": "CKwjH0Y_0qg",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "after": [
+        "needs_remake",
+        "parked",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T10:31:40.318Z"
+    },
+    {
+      "id": "rev_1785753058796_p8cqas",
+      "video_id": "CKwjH0Y_0qg",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "parked",
+        "metadata_missing"
+      ],
+      "after": [
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T10:30:58.796Z"
+    },
+    {
+      "id": "rev_1785752992075_ttihat",
+      "video_id": "tpIKyD5xeLo",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "parked",
+        "metadata_missing"
+      ],
+      "after": [
+        "parked",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T10:29:52.075Z"
+    },
+    {
+      "id": "rev_1785744981461_swgxv5",
+      "video_id": "pekdACNHX3w",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "after": [
+        "pending_review",
+        "needs_remake",
+        "metadata_missing"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T08:16:21.461Z"
+    },
+    {
+      "id": "rev_1785744981443_jesd0d",
+      "video_id": "pekdACNHX3w",
+      "action": "classification_update",
+      "reason_code": "METADATA_MISSING",
+      "reason_text": "",
+      "before": {
+        "product_category": "Over-Ear Headphones",
+        "primary_genre": "Aesthetic B-Roll",
+        "genres": [
+          "Aesthetic B-Roll",
+          "Macro Close-Up"
+        ]
+      },
+      "after": {
+        "product_category": "Over-Ear Headphones",
+        "primary_genre": null,
+        "genres": [
+          "Macro Close-Up",
+          "Multi-Angle / 360° Product Showcase"
+        ]
+      },
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-03T08:16:21.443Z"
+    },
     {
       "id": "rev_1785739592815_moapvo",
       "video_id": "Er6ppurPigo",
