@@ -1,13 +1,14 @@
 {
   "version": 1,
   "generated_at": "2026-08-02T08:36:11.611Z",
-  "updated_at": "2026-08-02T14:23:06.917Z",
+  "updated_at": "2026-08-02T15:22:20.165Z",
   "source_files": [
     "collect/library-v9.json",
     "collect/consumer-electronics-review-v5.json",
     "collect/ad-video-genres-v1.json",
     "collect/consumer-electronics-taxonomy-v1.json",
-    "collect/stats-v9.json"
+    "collect/stats-v9.json",
+    "collect/quality-expansion-candidates-v1.json"
   ],
   "stats": {
     "taxonomy_version": "v9-mvp-gap-fill-review",
@@ -3126,6 +3127,58 @@
       "updated_at": null
     },
     {
+      "id": "UYOkKa2wFAs",
+      "video_id": "UYOkKa2wFAs",
+      "url": "https://www.youtube.com/watch?v=UYOkKa2wFAs",
+      "embed_url": "https://www.youtube.com/embed/UYOkKa2wFAs",
+      "thumbnail_url": "https://i.ytimg.com/vi/UYOkKa2wFAs/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "Anker TurboBoost™: The 150W Self-Charging Breakthrough",
+      "brand": "Anker",
+      "industry": "Consumer Electronics",
+      "product_category": "Power Banks",
+      "genres": [
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo"
+      ],
+      "source_type": "品牌官方",
+      "note": "Anker 官方 TurboBoost 技术片，可能适合作为新一代充电宝卖点标注/功能演示候选；需看画面确认主商品是否为 Power Bank，而不是整套充电生态。\n证据：YouTube oEmbed confirms title and publisher: Anker；Forbes 2025 Anker Prime lineup report confirms the Prime lineup includes a high-output Prime Power Bank using TurboBoost",
+      "visual_notes": "Anker 官方 TurboBoost 技术片，可能适合作为新一代充电宝卖点标注/功能演示候选；需看画面确认主商品是否为 Power Bank，而不是整套充电生态。\n证据：YouTube oEmbed confirms title and publisher: Anker；Forbes 2025 Anker Prime lineup report confirms the Prime lineup includes a high-output Prime Power Bank using TurboBoost",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT",
+        "CHECK_PRIMARY_PRODUCT_FOCUS"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT",
+        "CHECK_PRIMARY_PRODUCT_FOCUS"
+      ],
+      "duration_seconds": null,
+      "publish_date": null,
+      "canonical_master_id": "UYOkKa2wFAs",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_video_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
       "id": "gduN2Rs0qb0",
       "video_id": "gduN2Rs0qb0",
       "url": "https://www.youtube.com/watch?v=gduN2Rs0qb0",
@@ -5498,6 +5551,58 @@
       "updated_at": null
     },
     {
+      "id": "ZxBXHZSwlOU",
+      "video_id": "ZxBXHZSwlOU",
+      "url": "https://www.youtube.com/watch?v=ZxBXHZSwlOU",
+      "embed_url": "https://www.youtube.com/embed/ZxBXHZSwlOU",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZxBXHZSwlOU/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "Unlock ultra-convenient on-the-go charging with the new HaloLock™ 10,000mAh Kickstand Power Bank",
+      "brand": "ESR",
+      "industry": "Consumer Electronics",
+      "product_category": "Power Banks",
+      "genres": [
+        "Product Demo",
+        "Feature Callout",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "primary_genre": "Product Demo",
+      "secondary_genres": [
+        "Feature Callout",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "source_type": "品牌官方",
+      "note": "明确是 10,000mAh 磁吸支架充电宝，时长合规且产品/场景语义清晰；ESR 为 P1 配件品牌，作为充电宝质量扩充候选而非优先计数样片。\n证据：Previous official-channel shortlist: ESR Tech channel, duration 23s, product title directly names 10,000mAh Kickstand Power Bank",
+      "visual_notes": "明确是 10,000mAh 磁吸支架充电宝，时长合规且产品/场景语义清晰；ESR 为 P1 配件品牌，作为充电宝质量扩充候选而非优先计数样片。\n证据：Previous official-channel shortlist: ESR Tech channel, duration 23s, product title directly names 10,000mAh Kickstand Power Bank",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 23,
+      "publish_date": null,
+      "canonical_master_id": "ZxBXHZSwlOU",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_video_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
       "id": "ej9LJmaoS0g",
       "video_id": "ej9LJmaoS0g",
       "url": "https://www.youtube.com/watch?v=ej9LJmaoS0g",
@@ -7072,6 +7177,18 @@
       ],
       "review_events": [
         {
+          "id": "rev_1785681814828_pu7ut2",
+          "video_id": "bCqnOn23LWE",
+          "action": "note",
+          "reason_code": "MANUAL_RECLASSIFICATION",
+          "reason_text": "",
+          "before": null,
+          "after": null,
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:43:34.828Z"
+        },
+        {
           "id": "rev_1785680430816_xppgmg",
           "video_id": "bCqnOn23LWE",
           "action": "status_update",
@@ -7090,7 +7207,7 @@
         }
       ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": "2026-08-02T14:20:30.816Z"
+      "updated_at": "2026-08-02T14:43:34.828Z"
     },
     {
       "id": "toQJE8i0GW0",
@@ -9193,6 +9310,58 @@
       "updated_at": "2026-08-02T13:48:22.611Z"
     },
     {
+      "id": "tpIKyD5xeLo",
+      "video_id": "tpIKyD5xeLo",
+      "url": "https://www.youtube.com/watch?v=tpIKyD5xeLo",
+      "embed_url": "https://www.youtube.com/embed/tpIKyD5xeLo",
+      "thumbnail_url": "https://i.ytimg.com/vi/tpIKyD5xeLo/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "HUAWEI FreeBuds Lipstick | Visually Extraordinary",
+      "brand": "Huawei",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "Lookbook",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "primary_genre": "Lookbook",
+      "secondary_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "source_type": "品牌官方 / 官方地区频道",
+      "note": "FreeBuds Lipstick 天然具备时尚/造型心智，可作为真无线 Lookbook 高潜样片；需确认画面不是单纯产品旋转。\n证据：Previous official-channel shortlist: Huawei Arabia channel, duration 28s, product title matches FreeBuds Lipstick",
+      "visual_notes": "FreeBuds Lipstick 天然具备时尚/造型心智，可作为真无线 Lookbook 高潜样片；需确认画面不是单纯产品旋转。\n证据：Previous official-channel shortlist: Huawei Arabia channel, duration 28s, product title matches FreeBuds Lipstick",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 28,
+      "publish_date": null,
+      "canonical_master_id": "tpIKyD5xeLo",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_design_style_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
       "id": "iXhDlkmxrHU",
       "video_id": "iXhDlkmxrHU",
       "url": "https://www.youtube.com/watch?v=iXhDlkmxrHU",
@@ -9275,6 +9444,58 @@
       "review_events": [],
       "imported_from": "consumer-electronics-review-v5",
       "updated_at": null
+    },
+    {
+      "id": "CKwjH0Y_0qg",
+      "video_id": "CKwjH0Y_0qg",
+      "url": "https://www.youtube.com/watch?v=CKwjH0Y_0qg",
+      "embed_url": "https://www.youtube.com/embed/CKwjH0Y_0qg",
+      "thumbnail_url": "https://i.ytimg.com/vi/CKwjH0Y_0qg/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "HUAWEI FreeBuds Pro 2 - Futuristic Colourways",
+      "brand": "Huawei",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "Lookbook",
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "primary_genre": "Lookbook",
+      "secondary_genres": [
+        "Macro Close-Up",
+        "Multi-Angle / 360° Product Showcase"
+      ],
+      "source_type": "品牌官方",
+      "note": "Colourways / Futuristic 语义适合补时尚外观和设计语言样片；需看画面确认是否达到 Lookbook 而非仅 Multi-Angle。\n证据：Previous official-channel shortlist: Huawei Mobile channel, duration 27s, product title matches FreeBuds Pro 2",
+      "visual_notes": "Colourways / Futuristic 语义适合补时尚外观和设计语言样片；需看画面确认是否达到 Lookbook 而非仅 Multi-Angle。\n证据：Previous official-channel shortlist: Huawei Mobile channel, duration 27s, product title matches FreeBuds Pro 2",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 27,
+      "publish_date": null,
+      "canonical_master_id": "CKwjH0Y_0qg",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_design_style_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
     },
     {
       "id": "qVnXgrgY5ok",
@@ -10147,11 +10368,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785681992438_ilinjd",
+          "video_id": "G-4_wSIkPxc",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:46:32.438Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-02T14:46:32.438Z"
     },
     {
       "id": "O6s1SaJ88WU",
@@ -12814,6 +13054,112 @@
       "updated_at": null
     },
     {
+      "id": "TQbWhWpqiqE",
+      "video_id": "TQbWhWpqiqE",
+      "url": "https://www.youtube.com/watch?v=TQbWhWpqiqE",
+      "embed_url": "https://www.youtube.com/embed/TQbWhWpqiqE",
+      "thumbnail_url": "https://i.ytimg.com/vi/TQbWhWpqiqE/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "OnePlus Buds Pro 2 | Unlock Pure Harmony",
+      "brand": "OnePlus",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "Feature Callout",
+        "Product Demo",
+        "TVC / Brand Commercial"
+      ],
+      "primary_genre": "Feature Callout",
+      "secondary_genres": [
+        "Product Demo",
+        "TVC / Brand Commercial"
+      ],
+      "source_type": "品牌官方",
+      "note": "官方产品卖点片，时长和产品线合格；作为质量扩充候选进入审核，不直接补稀缺真人题材。\n证据：Previous official-channel shortlist: OnePlus official channel, duration 75s, product title matches OnePlus Buds Pro 2",
+      "visual_notes": "官方产品卖点片，时长和产品线合格；作为质量扩充候选进入审核，不直接补稀缺真人题材。\n证据：Previous official-channel shortlist: OnePlus official channel, duration 75s, product title matches OnePlus Buds Pro 2",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 75,
+      "publish_date": null,
+      "canonical_master_id": "TQbWhWpqiqE",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_feature_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
+      "id": "vi4UVXuOpKU",
+      "video_id": "vi4UVXuOpKU",
+      "url": "https://www.youtube.com/watch?v=vi4UVXuOpKU",
+      "embed_url": "https://www.youtube.com/embed/vi4UVXuOpKU",
+      "thumbnail_url": "https://i.ytimg.com/vi/vi4UVXuOpKU/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "OnePlus Buds Pro 2 x Hans Zimmer",
+      "brand": "OnePlus",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "TVC / Brand Commercial",
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "primary_genre": "TVC / Brand Commercial",
+      "secondary_genres": [
+        "Feature Callout",
+        "Product Demo"
+      ],
+      "source_type": "品牌官方",
+      "note": "官方音乐大师联名产品片，制作规格可能高；虽不补硬缺口，但适合替换低质样片或做高质量参考，需确认不是纪录/访谈主导。\n证据：Previous official-channel shortlist: OnePlus official channel, duration 114s, product title matches OnePlus Buds Pro 2",
+      "visual_notes": "官方音乐大师联名产品片，制作规格可能高；虽不补硬缺口，但适合替换低质样片或做高质量参考，需确认不是纪录/访谈主导。\n证据：Previous official-channel shortlist: OnePlus official channel, duration 114s, product title matches OnePlus Buds Pro 2",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT",
+        "CHECK_TALKING_HEAD_RATIO"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT",
+        "CHECK_TALKING_HEAD_RATIO"
+      ],
+      "duration_seconds": 114,
+      "publish_date": null,
+      "canonical_master_id": "vi4UVXuOpKU",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_collaboration_product_film_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
       "id": "cUFx_4ZXLCM",
       "video_id": "cUFx_4ZXLCM",
       "url": "https://www.youtube.com/watch?v=cUFx_4ZXLCM",
@@ -12862,6 +13208,108 @@
       "updated_at": null
     },
     {
+      "id": "8laDdUCvNKM",
+      "video_id": "8laDdUCvNKM",
+      "url": "https://www.youtube.com/watch?v=8laDdUCvNKM",
+      "embed_url": "https://www.youtube.com/embed/8laDdUCvNKM",
+      "thumbnail_url": "https://i.ytimg.com/vi/8laDdUCvNKM/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "OPPO Enco Series | All Day Sound, All Day Style",
+      "brand": "OPPO",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "Daily Routine",
+        "TVC / Brand Commercial"
+      ],
+      "primary_genre": "Daily Routine",
+      "secondary_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "source_type": "品牌官方 / 官方地区频道",
+      "note": "标题直接指向 All Day Sound / All Day Style，适合优先审核是否成立连续日常融入；不是支持教程召回。\n证据：Previous official-channel shortlist: OPPO Indonesia verified channel, duration 60s, product title matches OPPO Enco",
+      "visual_notes": "标题直接指向 All Day Sound / All Day Style，适合优先审核是否成立连续日常融入；不是支持教程召回。\n证据：Previous official-channel shortlist: OPPO Indonesia verified channel, duration 60s, product title matches OPPO Enco",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 60,
+      "publish_date": null,
+      "canonical_master_id": "8laDdUCvNKM",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_lifestyle_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
+      "id": "ar5N-ylAI28",
+      "video_id": "ar5N-ylAI28",
+      "url": "https://www.youtube.com/watch?v=ar5N-ylAI28",
+      "embed_url": "https://www.youtube.com/embed/ar5N-ylAI28",
+      "thumbnail_url": "https://i.ytimg.com/vi/ar5N-ylAI28/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "OPPO Enco X2 | Hear Beyond Sensation",
+      "brand": "OPPO",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "TVC / Brand Commercial",
+        "Product Demo",
+        "Feature Callout"
+      ],
+      "primary_genre": "TVC / Brand Commercial",
+      "secondary_genres": [
+        "Product Demo",
+        "Feature Callout"
+      ],
+      "source_type": "品牌官方 / 官方地区频道",
+      "note": "官方中长产品广告片，标题和时长适合作为质量替换候选；需确认画面产品主体足够而非人物/口播主导。\n证据：Previous official-channel shortlist: OPPO Malaysia channel, duration 74s, product title matches OPPO Enco X2",
+      "visual_notes": "官方中长产品广告片，标题和时长适合作为质量替换候选；需确认画面产品主体足够而非人物/口播主导。\n证据：Previous official-channel shortlist: OPPO Malaysia channel, duration 74s, product title matches OPPO Enco X2",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 74,
+      "publish_date": null,
+      "canonical_master_id": "ar5N-ylAI28",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_product_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
+    },
+    {
       "id": "OtvnRMH8t44",
       "video_id": "OtvnRMH8t44",
       "url": "https://www.youtube.com/watch?v=OtvnRMH8t44",
@@ -12902,6 +13350,58 @@
       "review_events": [],
       "imported_from": "consumer-electronics-review-v5",
       "updated_at": null
+    },
+    {
+      "id": "AJ16sC0xi58",
+      "video_id": "AJ16sC0xi58",
+      "url": "https://www.youtube.com/watch?v=AJ16sC0xi58",
+      "embed_url": "https://www.youtube.com/embed/AJ16sC0xi58",
+      "thumbnail_url": "https://i.ytimg.com/vi/AJ16sC0xi58/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "Redmi Buds 4 Active | Rise. Never Fall.",
+      "brand": "Xiaomi",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "Daily Routine",
+        "TVC / Brand Commercial",
+        "Product Demo"
+      ],
+      "primary_genre": "Daily Routine",
+      "secondary_genres": [
+        "TVC / Brand Commercial",
+        "Product Demo"
+      ],
+      "source_type": "品牌官方 / 官方地区频道",
+      "note": "官方地区频道、35s、运动/日常使用语义明确；可补真无线 Daily Routine 缺口，但需看画面确认是否为连续日常流程。\n证据：Previous official-channel shortlist: Xiaomi India verified channel, duration 35s, product title matches Redmi Buds",
+      "visual_notes": "官方地区频道、35s、运动/日常使用语义明确；可补真无线 Daily Routine 缺口，但需看画面确认是否为连续日常流程。\n证据：Previous official-channel shortlist: Xiaomi India verified channel, duration 35s, product title matches Redmi Buds",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": 35,
+      "publish_date": null,
+      "canonical_master_id": "AJ16sC0xi58",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_lifestyle_product_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.165Z"
     },
     {
       "id": "i7Xi27ri0dA",
@@ -13438,6 +13938,58 @@
       "updated_at": null
     },
     {
+      "id": "8wyLTECy36E",
+      "video_id": "8wyLTECy36E",
+      "url": "https://www.youtube.com/watch?v=8wyLTECy36E",
+      "embed_url": "https://www.youtube.com/embed/8wyLTECy36E",
+      "thumbnail_url": "https://i.ytimg.com/vi/8wyLTECy36E/hqdefault.jpg",
+      "contact_sheet": null,
+      "title": "Tyla takes Beats and Alo to the Bahamas | Beats Fit Pro",
+      "brand": "Beats",
+      "industry": "Consumer Electronics",
+      "product_category": "True Wireless / Bluetooth Earbuds",
+      "genres": [
+        "Lookbook",
+        "Daily Routine",
+        "TVC / Brand Commercial"
+      ],
+      "primary_genre": "Lookbook",
+      "secondary_genres": [
+        "Daily Routine",
+        "TVC / Brand Commercial"
+      ],
+      "source_type": "品牌官方",
+      "note": "Beats × Alo × Tyla 的官方生活方式/时尚场景广告，和耳塞 Lookbook、Daily Routine 两个稀缺题材高度相关；进入待审核，不直接计数。\n证据：YouTube oEmbed confirms title and publisher: Beats by Dre；External ad database/search result indicates 2024 campaign context; YouTube metadata still needs confirmation",
+      "visual_notes": "Beats × Alo × Tyla 的官方生活方式/时尚场景广告，和耳塞 Lookbook、Daily Routine 两个稀缺题材高度相关；进入待审核，不直接计数。\n证据：YouTube oEmbed confirms title and publisher: Beats by Dre；External ad database/search result indicates 2024 campaign context; YouTube metadata still needs confirmation",
+      "reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "decision_reason_codes": [
+        "PENDING_METADATA_CONFIRMATION",
+        "PENDING_VISUAL_AUDIT"
+      ],
+      "duration_seconds": null,
+      "publish_date": null,
+      "canonical_master_id": "8wyLTECy36E",
+      "review_status": "imported",
+      "publisher_role": "brand_main_or_official_regional_channel",
+      "content_nature": "brand_lifestyle_campaign_candidate",
+      "recency_status": "metadata_pending",
+      "ai_generation_value": "",
+      "ai_template_fit": false,
+      "core_template_eligible": false,
+      "frames_reviewed": null,
+      "blacklisted": false,
+      "status_ids": [
+        "pending_review",
+        "metadata_missing"
+      ],
+      "review_events": [],
+      "imported_from": "collect/quality-expansion-candidates-v1.json",
+      "updated_at": "2026-08-02T15:22:20.164Z"
+    },
+    {
       "id": "p1XaIrXkDmI",
       "video_id": "p1XaIrXkDmI",
       "url": "https://www.youtube.com/watch?v=p1XaIrXkDmI",
@@ -13623,11 +14175,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "needs_remake",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785681963635_nz6fjh",
+          "video_id": "Sxmxb4jmxlA",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "needs_remake",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:46:03.635Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-02T14:46:03.635Z"
     },
     {
       "id": "88Cp6TAVY4g",
@@ -13667,11 +14238,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "parked",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785681905218_9pggfh",
+          "video_id": "88Cp6TAVY4g",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "parked",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:45:05.218Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-02T14:45:05.218Z"
     },
     {
       "id": "69ZbeYmDxnA",
@@ -13711,11 +14301,30 @@
       "frames_reviewed": 10,
       "blacklisted": false,
       "status_ids": [
+        "parked",
         "approved"
       ],
-      "review_events": [],
+      "review_events": [
+        {
+          "id": "rev_1785681886168_w9s2rc",
+          "video_id": "69ZbeYmDxnA",
+          "action": "status_update",
+          "reason_code": null,
+          "reason_text": "",
+          "before": [
+            "approved"
+          ],
+          "after": [
+            "parked",
+            "approved"
+          ],
+          "methodology_candidate": false,
+          "created_by": "local-user",
+          "created_at": "2026-08-02T14:44:46.168Z"
+        }
+      ],
       "imported_from": "consumer-electronics-review-v5",
-      "updated_at": null
+      "updated_at": "2026-08-02T14:44:46.168Z"
     },
     {
       "id": "LWS29XEzQg8",
@@ -23464,6 +24073,86 @@
     }
   ],
   "review_events": [
+    {
+      "id": "rev_1785681992438_ilinjd",
+      "video_id": "G-4_wSIkPxc",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:46:32.438Z"
+    },
+    {
+      "id": "rev_1785681963635_nz6fjh",
+      "video_id": "Sxmxb4jmxlA",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "needs_remake",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:46:03.635Z"
+    },
+    {
+      "id": "rev_1785681905218_9pggfh",
+      "video_id": "88Cp6TAVY4g",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "parked",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:45:05.218Z"
+    },
+    {
+      "id": "rev_1785681886168_w9s2rc",
+      "video_id": "69ZbeYmDxnA",
+      "action": "status_update",
+      "reason_code": null,
+      "reason_text": "",
+      "before": [
+        "approved"
+      ],
+      "after": [
+        "parked",
+        "approved"
+      ],
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:44:46.168Z"
+    },
+    {
+      "id": "rev_1785681814828_pu7ut2",
+      "video_id": "bCqnOn23LWE",
+      "action": "note",
+      "reason_code": "MANUAL_RECLASSIFICATION",
+      "reason_text": "",
+      "before": null,
+      "after": null,
+      "methodology_candidate": false,
+      "created_by": "local-user",
+      "created_at": "2026-08-02T14:43:34.828Z"
+    },
     {
       "id": "rev_1785680586917_kh4sk8",
       "video_id": "Yd7Djf5QYvw",

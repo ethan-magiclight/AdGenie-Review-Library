@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-02",
+  "scope": "Consumer Electronics MVP video collection",
+  "principle": "品牌池用于召回和来源优先级，不自动证明视频具备品牌品宣属性或核心模板资格。",
+  "categories": {
+    "True Wireless / Bluetooth Earbuds": {
+      "zh": "真无线与蓝牙耳塞",
+      "priority": "P0",
+      "brands": [
+        { "brand": "Apple", "brand_zh": "苹果", "priority": "P0", "official_channels": ["Apple"], "product_lines": ["AirPods", "AirPods Pro"] },
+        { "brand": "Beats", "brand_zh": "Beats", "priority": "P0", "official_channels": ["Beats by Dre"], "product_lines": ["Beats Studio Buds", "Beats Fit Pro"] },
+        { "brand": "Samsung", "brand_zh": "三星", "priority": "P0", "official_channels": ["Samsung", "Samsung US", "Samsung UK"], "product_lines": ["Galaxy Buds"] },
+        { "brand": "Sony", "brand_zh": "索尼", "priority": "P0", "official_channels": ["Sony", "Sony Electronics", "Sony Europe"], "product_lines": ["WF", "LinkBuds"] },
+        { "brand": "Bose", "brand_zh": "Bose", "priority": "P0", "official_channels": ["Bose"], "product_lines": ["QuietComfort Earbuds"] },
+        { "brand": "JBL", "brand_zh": "JBL", "priority": "P0", "official_channels": ["JBL"], "product_lines": ["Tour Pro", "Tune", "Wave", "Live"] },
+        { "brand": "Huawei", "brand_zh": "华为", "priority": "P1", "official_channels": ["Huawei Mobile", "Huawei Mobile regional channels"], "product_lines": ["FreeBuds"] },
+        { "brand": "Xiaomi / Redmi", "brand_zh": "小米 / Redmi", "priority": "P1", "official_channels": ["Xiaomi", "Xiaomi India"], "product_lines": ["Xiaomi Buds", "Redmi Buds"] },
+        { "brand": "OnePlus", "brand_zh": "一加", "priority": "P1", "official_channels": ["OnePlus", "OnePlus India"], "product_lines": ["OnePlus Buds"] },
+        { "brand": "OPPO", "brand_zh": "OPPO", "priority": "P1", "official_channels": ["OPPO", "OPPO regional channels"], "product_lines": ["OPPO Enco"] },
+        { "brand": "Sennheiser", "brand_zh": "森海塞尔", "priority": "P1", "official_channels": ["Sennheiser"], "product_lines": ["MOMENTUM True Wireless", "ACCENTUM True Wireless"] },
+        { "brand": "Jabra", "brand_zh": "捷波朗", "priority": "P1", "official_channels": ["Jabra"], "product_lines": ["Jabra Elite"] },
+        { "brand": "Nothing / CMF", "brand_zh": "Nothing / CMF", "priority": "P1", "official_channels": ["Nothing", "CMF by Nothing"], "product_lines": ["Nothing Ear", "CMF Buds"] },
+        { "brand": "Bang & Olufsen", "brand_zh": "Bang & Olufsen", "priority": "P1", "official_channels": ["Bang & Olufsen"], "product_lines": ["Beoplay EX", "Beoplay EQ", "Beo Grace"] }
+      ]
+    },
+    "Power Banks": {
+      "zh": "充电宝",
+      "priority": "P0",
+      "brands": [
+        { "brand": "Anker", "brand_zh": "安克", "priority": "P0", "official_channels": ["Anker"], "product_lines": ["Anker Prime", "Anker Nano", "PowerCore"] },
+        { "brand": "Belkin", "brand_zh": "贝尔金", "priority": "P0", "official_channels": ["Belkin", "Belkin EMEA"], "product_lines": ["BoostCharge"] },
+        { "brand": "Baseus", "brand_zh": "倍思", "priority": "P0", "official_channels": ["Baseus"], "product_lines": ["PicoGo", "Blade", "EnerGeek", "Star-Lord"] },
+        { "brand": "UGREEN", "brand_zh": "绿联", "priority": "P0", "official_channels": ["UGREEN", "UGREEN Official"], "product_lines": ["Nexode"] },
+        { "brand": "Xiaomi", "brand_zh": "小米", "priority": "P0", "official_channels": ["Xiaomi", "Xiaomi India"], "product_lines": ["Xiaomi Power Bank", "Mi Power Bank"] },
+        { "brand": "CUKTECH", "brand_zh": "酷态科", "priority": "P1", "official_channels": ["CUKTECH"], "product_lines": ["No.20", "15 Ultra", "10 Mini"] },
+        { "brand": "SHARGE", "brand_zh": "闪极", "priority": "P1", "official_channels": ["SHARGE"], "product_lines": ["Shargeek", "ICEMAG", "Flow"] },
+        { "brand": "Zendure", "brand_zh": "征拓", "priority": "P1", "official_channels": ["Zendure"], "product_lines": ["SuperTank", "SuperMini"] },
+        { "brand": "EcoFlow", "brand_zh": "正浩 EcoFlow", "priority": "P1", "official_channels": ["EcoFlow"], "product_lines": ["RAPID"] },
+        { "brand": "Mophie / ZAGG", "brand_zh": "Mophie / ZAGG", "priority": "P1", "official_channels": ["mophie", "ZAGG"], "product_lines": ["Powerstation"] },
+        { "brand": "ESR", "brand_zh": "ESR 亿色", "priority": "P1", "official_channels": ["ESR Tech"], "product_lines": ["HaloLock"] }
+      ]
+    }
+  }
+}
