@@ -248,7 +248,7 @@ async function serveStatic(req, res, url) {
   }
 }
 
-const server = http.createServer(async (req, res) => {
+export async function handleRequest(req, res) {
   const url = new URL(req.url || "/", `http://${req.headers.host || `${host}:${port}`}`);
   try {
     if (url.pathname.startsWith("/api/")) {
@@ -259,8 +259,14 @@ const server = http.createServer(async (req, res) => {
     console.error(error);
     return json(res, 500, { error: error.message });
   }
-});
+}
 
-server.listen(port, host, () => {
-  console.log(`AdGenie Creative Library running at http://${host}:${port}`);
-});
+export default handleRequest;
+
+const server = http.createServer(handleRequest);
+
+if (!process.env.VERCEL) {
+  server.listen(port, host, () => {
+    console.log(`AdGenie Creative Library running at http://${host}:${port}`);
+  });
+}

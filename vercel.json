@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "web/server.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "web/public/**",
+          "web/data/creative-library-state.json",
+          "collect/**/*.json",
+          "collect/**/*.md"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "web/server.mjs"
+    }
+  ]
+}
