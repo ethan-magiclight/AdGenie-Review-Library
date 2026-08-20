@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_at": "2026-08-02T08:36:11.611Z",
-  "updated_at": "2026-08-20T11:23:17.200Z",
+  "updated_at": "2026-08-20T12:42:06.841Z",
   "source_files": [
     "collect/library-v9.json",
     "collect/consumer-electronics-review-v5.json",
@@ -25,7 +25,8 @@
     "collect/sporting-goods-fitness-collection-policy-v1.json",
     "collect/runs/sporting-goods-fitness-pilot-2026-08-18.json",
     "collect/runs/best-ads-aotw-sample-40/records.json",
-    "collect/runs/source-expansion-2025-2026-linked.json"
+    "collect/runs/source-expansion-2025-2026-linked.json",
+    "collect/source-collection-methodology-v1.json"
   ],
   "stats": {
     "taxonomy_version": "v9-mvp-gap-fill-review",
@@ -102336,7 +102337,150 @@
     "ce_doc_path": "collect/采集方案与优质判定标准-v2.md",
     "main_doc": "# 品牌广告样片采集方案与优质判定标准\n\n> 版本：v3（2026-08-01）  \n> 目标市场：海外。  \n> 目标：按“广告视频题材 × 行业 / 商品品类”收集既代表成熟用户心智、又适合作为 AdGenie AI 模板参考的优质品牌品宣视频。  \n> 本文是采集、复核、入库和交接的主方法论；题材正式定义见 `ad-video-genres-v1.json` 和生成文档 `广告视频题材分类标准.md`。\n\n---\n\n## 0. 当前数据状态\n\n- `library-v7.json`、`consumer-electronics-review-v3.json` 和 `AdGenie能力需求表-v9.xlsx` 是旧规则下的历史快照。\n- 上一轮声称接受的 129 条消费电子候选没有完成独立的广告属性、年代、AI 生成价值和全量视觉题材审核，因此不能继续视为已通过的新核心模板库。\n- `consumer-electronics-review-v4.json` / `AdGenie能力需求表-v10.xlsx` 完成 193 条候选全量语义重审，保留 59 条核心模板母片。\n- `consumer-electronics-review-v5.json` / `AdGenie能力需求表-v11.xlsx` 追加缺口补采审核：新增 23 条审核记录，其中 14 条进入核心模板，9 条排除或待复核不入库。\n- 2026-08-01 起，新增和既有样片都必须通过本文的七道审核门。不引用旧工作簿中的覆盖数量作为有效供给结论。\n- 旧文件保留用于审计；新结果生成新版本，不覆盖旧工作簿。\n\n## 1. 方法论维护\n\n### 单一事实源\n\n| 内容 | 唯一维护位置 | 其他载体 |\n|---|---|---|\n| 采集与模板资格规则 | `采集方案与优质判定标准.md` | Excel `5_收集方法论` 只能从这里摘录，不单独发明规则 |\n| 29 个题材定义 | `ad-video-genres-v1.json` | `广告视频题材分类标准.md` 和 Excel `1_广告类型题材` 由它生成 |\n| 消费电子商品分类 | `consumer-electronics-taxonomy-v1.json` | 工作簿商品品类 sheet 由它生成 |\n| 消费电子专项要求 | `采集方案与优质判定标准-v2.md` | 只写专项增量，不重复主方法论全文 |\n\n### 规则变更流程\n\n1. 记录触发规则变化的具体案例和原判断错误。\n2. 判断它属于来源、内容性质、题材、年代、AI 价值还是去重计数问题。\n3. 修改唯一事实源，不在多个 Markdown、Excel 和脚本中分别手改。\n4. 将案例加入回归表；可以自动执行的判断同时进入校验脚本或阻止列表。\n5. 对受影响的数据全量重审，而不是只对已发现的视频 ID 打补丁。\n6. 生成新版本工作簿并记录规则版本、重审范围和未完成项。\n\n## 2. 分类目标\n\n### 题材分类追求成熟心智，不追求理论互斥\n\n题材名称的价值在于：行业、用户、内容团队和检索平台已经对某种广告内容形成稳定、可理解的认知。判断标准是：\n\n- 品牌、代理商、案例库、创作者和用户是否反复使用相近名称。\n- 内容团队看到标签、定义和边界后，能否知道该生产什么。\n- 能否据此形成有效检索词，并稳定判断搜索结果是否匹配。\n- 产品用户能否按商品品类和题材筛选模板，而不需要先理解抽象传播理论。\n\n因此一条视频可以多标签。多标签不是为了增加覆盖率，而是承认成熟内容形态可能复合存在。\n\n### 主题材与次题材\n\n- 内部审核先确定 1 个主题材：最能代表观看预期和内容骨架的标签。\n- 次题材只有在视频中存在独立、连续、可指认的画面证据时才成立。\n- 标题、搜索词、播放列表名称和单个画面瞬间不能直接成为标签。\n- 当前工作簿可以继续只展示多标签，不新增用户未要求的字段；主题材用于内部审核和冲突裁决。\n\n正式 29 题材、定义、成立证据、排除边界、检索语义和 TopView 映射统一见 `ad-video-genres-v1.json`。\n\n## 3. 七道审核门\n\n每道门解决不同问题，不能用前一道的结果替代后一道。\n\n### Gate 1：搜索召回\n\n目标是尽量发现候选，不做最终分类。\n\n查询模板：\n\n```text\n{品牌} {商品品类} {题材检索语义} site:youtube.com\n{品牌} {产品型号} official commercial site:youtube.com\n{品牌} {战役名} campaign film site:youtube.com\n```\n\n- `official how to`、`official features video` 等查询只说明候选从哪条检索路径被召回。\n- `discovery_matches.target_genre` 只能保存在召回证据中，禁止直接复制为正式 `genres`。\n- 稀缺真人题材可从专业创作者和垂类账号召回，但来源必须如实记录。\n\n### Gate 2：链接、发布者与母片真实性\n\n- URL 必须来自真实公开结果，禁止构造。\n- 确认可播放、标题与内容一致，并能够继续审片。\n- 分开记录品牌主频道、品牌地区频道、品牌支持频道、制作方、媒体和创作者。\n- 同一实质母片的地区上传、语言版、字幕版和长度剪辑建立同一 `canonical_master_id`，选择最完整、最清晰、来源最直接的代表版本。\n\n来源优先级不等于模板资格：品牌官方只能证明发布者关系，不能证明内容是广告。\n\n### Gate 3：内容性质\n\n先回答“它是什么内容”，再判断题材：\n\n| 内容性质 | 核心模板默认处理 |\n|---|---|\n| 品牌商业广告 / 产品品宣片 | 继续审核 |\n| 广告化产品介绍 | 继续审核 |\n| 品牌支持教程 / Quick Start / 排错 | 默认进入支持内容参考，不进入品牌品宣核心模板；存在明确广告化成片证据时人工例外 |\n| 完整发布会 / 直播回放 | 排除 |\n| 独立媒体测评 / 创作者长测评 | 排除品牌品宣核心模板 |\n| 幕后花絮 / 拆机 / 制作纪录 | 排除 |\n| 品牌纪录片 / 人物纪录片 | 默认只进灵感库 |\n\n审核问题：\n\n1. 视频是在建立购买欲和品牌/产品价值，还是在解决已经购买用户的操作问题？\n2. 是否存在广告化钩子、利益表达、产品欲望和品牌收束？\n3. 去掉品牌频道身份后，内容本身仍会被行业用户识别为品宣广告吗？\n\n### Gate 4：年代、产品代际与视觉语言\n\n核心模板以当前产品表达为标准，不仅看视频发布日期：\n\n| 年代 | 处理 |\n|---|---|\n| 近 3 年 | 优先；仍需通过其他审核门 |\n| 3–5 年 | 产品仍在售或表达仍具代表性、画面不过时才接受 |\n| 超过 5 年 | 默认进入历史 / 灵感参考库，不计普通 MVP 核心模板覆盖 |\n| 经典例外 | 需人工说明不可替代价值，不计入普通的每格 10 条供给 |\n\n出现过时产品代际、低清画面、旧字幕样式、旧画幅或明显过时制作语言时，即使未满 5 年也可排除。\n\n### Gate 5：题材独立分类\n\n必须综合实际画面、字幕和元数据，按 `ad-video-genres-v1.json` 独立分类：\n\n1. 写出主题材及对应时间段 / 代表帧。\n2. 对每个次题材写出独立证据。\n3. 对最容易混淆的相邻题材说明排除理由。\n4. 无足够证据时标为待复核，不继承搜索题材。\n\n高频边界：\n\n- `Feature Callout`：卖点、参数、利益点、功能图标或视觉标注。\n- `How-To Tutorial`：有顺序的连接、设置、佩戴、操作或排错步骤。\n- 操作步骤文字不能因为“有字幕”就重复标为 `Feature Callout`。\n- `Product Demo` 回答功能如何工作；`How-To` 回答用户按什么顺序完成任务。\n- `Unboxing` 必须有包装从关闭到打开、取出产品与配件的真实连续过程。\n- `Daily Routine` 必须有紧凑、可复制的连续生活流程；一个生活镜头或人物纪录片慢铺垫不成立。\n\n### Gate 6：AI 可生成性与生成价值\n\n这两项分别判断：\n\n- `AI 可生成性`：现有模型和制作链路能否较稳定地生成主要镜头。\n- `AI 生成价值`：即使能生成，把它做成模板是否能给用户带来明显创意和制作收益。\n\n核心模板至少满足：\n\n- 至少 3 个独立、可描述、可生成的视觉段落。\n- 镜头具备场景、构图、运动、材质、光影、动态图形或产品交互中的至少两类发挥空间。\n- 产品、使用动作、结果或卖点是画面主体，静音后仍能理解主要内容。\n- 不是以白底手动操作、屏幕录制、静态步骤页、单一固定机位或同一人物口播为主体。\n- 模板结构可以迁移到同品类的其他商品，而不是依赖特定名人、真实人生、历史事件或不可复现现场。\n\n推荐量化检查：\n\n- 均匀抽取 10 帧，并补充场景切换帧。\n- 同一人物正面讲话达到 6/10 帧，默认判为口播主导。\n- 产品、使用、功效或卖点相关视觉少于 3/10 帧，默认产品主体不足。\n- 前 5 秒没有产品、痛点、利益或视觉钩子时，需要人工说明为什么仍有模板价值。\n- `frames_reviewed = 10` 只表示取得 10 帧；必须另有视觉判断和证据，不能把帧数当成审核完成。\n\n### Gate 7：核心模板资格与计数\n\n进入 MVP 核心模板库必须同时满足：\n\n- 链接和来源可核验。\n- 内容性质是品牌商业广告、产品品宣或经人工批准的广告化内容。\n- 年代与产品代际符合核心库要求。\n- 至少一个正式题材有实际画面证据。\n- AI 可生成性和 AI 生成价值均通过。\n- 时长为 16–119 秒；16–17 秒仍需检查信息密度，120 秒及以上直接排除。\n- 不是重复母片。\n\n计数键：\n\n```text\n商品品类 + 题材 + canonical_master_id\n```\n\n同一母片可以贡献多个真正成立的题材，但在同一格只计一次。每格目标 10 条不构成降低质量门槛的理由。\n\n## 4. 10 点 Storyboard 审核要求\n\n`bradautomates/claude-video` 可用于建立证据链，但不能代替判断：\n\n1. 读取公开标题、发布者、时长和发布日期。\n2. 获取字幕；字幕缺失时以画面为主。\n3. 在 0%、10%……90% 采帧，并补充重要场景切换。\n4. 审核者必须真正查看画面并记录内容性质、题材证据、口播占比、产品主体和 AI 价值。\n5. 不能稳定加载足够帧时标记待复核，不提前入库。\n\n建议内部 review 数据分别保存：\n\n```json\n{\n  \"publisher_role\": \"brand_support_channel\",\n  \"content_nature\": \"support_tutorial\",\n  \"primary_genre\": \"How-To Tutorial\",\n  \"secondary_genres\": [],\n  \"recency_status\": \"over_5_years\",\n  \"ai_generatable\": true,\n  \"ai_generation_value\": \"low\",\n  \"core_template_eligible\": false,\n  \"decision_reason_codes\": [\"SUPPORT_CONTENT\", \"LOW_AI_CREATIVE_HEADROOM\"]\n}\n```\n\n这些是内部审核字段，不代表本轮向 Excel 新增展示字段。\n\n## 5. 直接排除规则\n\n任一项命中即不进入普通 MVP 核心模板：\n\n| 代码 | 规则 |\n|---|---|\n| `DURATION_OUT_OF_RANGE` | ≤15 秒或 ≥120 秒；16–17 秒内容单薄也排除 |\n| `SUPPORT_CONTENT` | 支持教程、Quick Start、安装设置或排错内容，且缺少广告化品宣表达 |\n| `EVENT_OR_LAUNCH` | 完整发布会、直播回放或以舞台演讲为主体 |\n| `BEHIND_THE_SCENES` | 幕后、制作花絮、拍摄纪录 |\n| `DOCUMENTARY_STYLE` | 人物背景、真实经历或日常环境慢铺垫，产品弱露出 |\n| `TALKING_HEAD_DOMINANT` | 同一人物正面讲话主导，视觉变化和产品段落不足 |\n| `PRODUCT_NOT_VISUAL_SUBJECT` | 无法回答卖什么、为什么买，或产品相关视觉少于 3/10 帧 |\n| `OUTDATED_PRODUCT_OR_VISUALS` | 超过 5 年且无经典例外，或产品代际、画面语言明显过时 |\n| `LOW_AI_CREATIVE_HEADROOM` | 以白底手动操作、录屏、静态步骤页为主，缺乏可生成视觉段落 |\n| `SOURCE_NOT_VERIFIED` | 链接、发布者或内容无法核验 |\n| `DUPLICATE_MASTER` | 同一实质母片已有代表版本 |\n\n## 6. 四个分类与入库回归案例\n\n| 视频 ID | 正确题材判断 | 核心模板判断 | 回归要求 |\n|---|---|---|---|\n| `xa1LGVWoy30` | `How-To Tutorial` 成立；`Feature Callout` 不成立 | Bose 品牌支持教程，不是品牌品宣；排除 | 不能因官方频道或 How-To 搜索词进入 TVC / 核心库 |\n| `H1R_YQLiGzk` | `Unboxing` 可以成立 | 2020-08-30 发布，当前接近 6 年且产品代际过时；排除普通核心库 | 年代门必须独立于题材成立执行 |\n| `a6zDDcGjFtM` | `How-To Tutorial` 成立；`Feature Callout` 不成立 | 白底手动 Quick Start，AI 创意发挥空间低；排除 | 步骤字幕不能误算卖点标注，分类成立不等于模板资格成立 |\n| `s2lowSj9k-s` | 主题材为 `Feature Callout`；可复核 `Macro Close-Up` / `Product Demo` | 卖点字幕驱动的品牌产品短片，可继续复核 | 不能因为由 How-To 查询召回就标成 How-To |\n| `QgsTaSS0CI4` | `Multi-Angle / 360° Product Showcase` 成立；`Unboxing` 不成立 | Huawei FreeBuds Pro 3 官方产品造型/材质展示，可入库 | 标题或召回词命中 Unboxing 时，必须检查是否存在真实开盒取出过程 |\n| `lsE4YqFVrWs` | `Product Demo` / `Feature Callout` / `Macro Close-Up` / `Multi-Angle` 成立；`Unboxing` 不成立 | CUKTECH 官方产品功能片，可入库 | 有包装词、First Look 或 Product Performance 不等于开箱 |\n| `GWJ3aNko7Uw` | `Feature Callout` / `Product Demo` / `Multi-Angle` 成立；`Daily Routine` 不成立 | Baseus 官方产品功能片，可入库 | 一个或少量生活使用镜头不能自动算 Daily Routine，必须有连续日常流程 |\n| `CDYM7t0fZjE` | `TVC / Brand Commercial` 成立；`Walk-and-Talk UGC` 和 `Lookbook` 不成立 | Beats 明星概念广告，可入库为 TVC | 明星/造型/时尚感不等于 Lookbook；非手持边走边讲不能算 Walk-and-Talk |\n| `sCYrElLdURQ` | `How-To Tutorial` 成立 | JBL 官方 Quick Tip，视觉段落单一，本轮不入品牌品宣核心模板 | How-To 可以作为题材存在，但要另过内容性质和 AI 生成价值门 |\n| `-ggrxRcWFxI` | `Multi-Angle` 可以成立，但商品品类不是 Power Banks | Belkin 无线充电器，排除当前 MVP 品类 | 先判主商品品类，再判题材；不能因品牌和充电语义相近而跨品类计数 |\n\n前三条加入核心模板阻止列表；第四条作为正向分类回归，不因检索路径被错误降级。\n\n## 7. 行业与消费电子商品分类\n\n核心行业：\n\n`Consumer Electronics` · `Skincare` · `Color Cosmetics` · `Fragrance` · `Personal Care` · `Jewelry & Watches` · `Apparel & Footwear` · `Bags & Accessories` · `Home Appliances & Living` · `Food & Beverage` · `Sports & Outdoor`\n\n- 按广告中被销售的具体产品和主要消费用途选择 1 个主行业，不按品牌统一分类。\n- `Other` 只作系统兜底，不进入核心覆盖率。\n- 消费电子继续下钻 34 个商品品类，正式名称与边界见 `consumer-electronics-taxonomy-v1.json`。\n- 每条消费电子样片只选择 1 个主商品品类；多产品或跨品类内容只作兜底，不计单品类覆盖率。\n\n## 8. 来源与检索路径\n\n优先顺序：\n\n1. 品牌商业主频道及正式 Campaign / Commercial / Product Film 播放列表。\n2. 明确的代理商、制作公司、导演或奖项库发布。\n3. 对 UGC、Testimonial、Vox Pop 等品牌官方稀缺题材，使用可信专业创作者或垂类账号。\n4. 品牌支持频道只用于发现教程心智和支持内容，不默认作为品牌品宣核心样片来源。\n\n奖项、品牌知名度、官方认证和经典地位只证明来源或行业价值，不能替代内容性质、年代和 AI 模板审核。\n\n## 9. 失败模式\n\n| 失败模式 | 根因 | 修正 |\n|---|---|---|\n| 搜索题材直接污染正式标签 | 将召回查询当成视觉分类结果 | 搜索证据与正式标签分字段保存，正式标签必须有画面证据 |\n| 获得 10 帧就当成完成审核 | `frames_reviewed` 只统计文件数量 | 保存视觉判断、时间段和理由码，并做语义回归 |\n| AI 适配循环自证 | “已接受且有题材”被直接当成 AI 适配 | 独立判断可生成性、生成价值和核心模板资格 |\n| 品牌官方与品牌品宣混为一谈 | 频道匹配只看品牌名 | 分开记录发布者角色和内容性质 |\n| 年代偏好没有执行 | 文档写近 5 年，代码只拦 8 年以上 | 超过 5 年默认退出普通核心库，经典例外单独审批 |\n| 用视频 ID 补丁代替全量审核 | 只修已发现案例 | 规则变化后对受影响集合全量重审，并保留固定回归案例 |\n| 为覆盖数量硬塞样片 | 把每格 10 条当成质量要求 | 数量是供给目标，质量门是入库条件；不足保持缺口 |\n\n## 10. 记录与验证\n\n面向样片库的基本字段保持不变：\n\n```json\n{\n  \"industry\": \"Consumer Electronics\",\n  \"product_category\": \"True Wireless / Bluetooth Earbuds\",\n  \"brand\": \"Example Brand\",\n  \"title\": \"Original video title\",\n  \"url\": \"https://www.youtube.com/watch?v=example\",\n  \"genres\": [\"Feature Callout\", \"Product Demo\"],\n  \"source_type\": \"品牌官方\",\n  \"note\": \"发布日期、产品代际和关键判断\"\n}\n```\n\n每轮提交前至少验证：\n\n- 题材 JSON 可解析、数量为 29、英文标签唯一、分组合法。\n- 入库脚本的合法题材与题材事实源完全一致。\n- 四个回归案例符合预期。\n- 正式标签与搜索召回标签没有自动继承关系。\n- 所有接受样片有内容性质、年代、视觉证据、AI 价值和母片去重判断。\n- 工作簿数量与重审后的 review 数据一致，但数据一致性不能代替语义正确性。\n\n## 11. 下一步执行顺序\n\n1. 先按本文重构候选 review 结构和审核逻辑。\n2. 对真无线与蓝牙耳塞、充电宝的既有候选全量重审，不沿用 v3 的 ID 增删补丁。\n3. 每条先判断内容性质和年代，再独立视觉分类，最后判断 AI 核心模板资格。\n4. 输出通过、灵感参考、待复核和排除四类结果，并保留理由码。\n5. 在真实有效供给基础上重新统计每个商品品类 × 题材的去重母片数。\n6. 生成新的工作簿版本，不覆盖 v9。\n",
     "ce_doc": "# 消费电子 MVP 样片采集专项补充\n\n> 版本：v4（2026-08-01）  \n> 本文只记录消费电子专项范围和额外约束。通用审核门、题材定义、AI 价值、回归案例和计数规则以 `采集方案与优质判定标准.md` 与 `ad-video-genres-v1.json` 为准。  \n> 本文不再由 `build_library_v6.mjs` 覆盖生成。\n\n## 1. MVP 范围\n\n首批优先商品品类：\n\n- `True Wireless / Bluetooth Earbuds`（真无线与蓝牙耳塞）\n- `Power Banks`（充电宝）\n\n产品视图采用“商品品类 × 广告题材 × 去重母片”。每格目标为 10 条有效模板，但数量目标不能降低质量门槛。\n\n## 2. 首批 10 个题材\n\n1. `TVC / Brand Commercial`\n2. `Macro Close-Up`\n3. `Multi-Angle / 360° Product Showcase`\n4. `Feature Callout`\n5. `Product Demo`\n6. `How-To Tutorial`\n7. `Unboxing`\n8. `Lookbook`\n9. `Daily Routine`\n10. `Walk-and-Talk UGC`\n\n标签定义和边界不在本文复制，统一读取 `ad-video-genres-v1.json`。\n\n## 3. 消费电子额外要求\n\n- 核心样片优先来自当前行业 Top 品牌的商业主频道和正式产品 / Campaign 内容。\n- 品牌支持频道、Quick Start、Proper Fit、Setup、Troubleshooting 等内容默认是支持教程，不是品牌品宣核心模板。\n- 产品发布超过 5 年或已明显退出当前主流产品代际时，默认只进历史 / 灵感参考库。\n- 白底手动操作、App 录屏、静态步骤页或单一手部演示占主体时，即使 How-To 分类成立，也通常判为低 AI 生成价值。\n- 15 秒及以下直接排除；16–17 秒还要检查是否有足够内容密度；120 秒及以上直接排除。\n- `Feature Callout` 必须表达卖点、参数或用户利益；操作步骤文字不能重复算卖点标注。\n- `How-To Tutorial` 必须有可跟随的顺序步骤，但题材成立不等于核心模板资格成立。\n- 稀缺题材找不到高质量样片时保留空缺，不用相邻题材、普通 TVC 或官方支持教程替代。\n\n## 4. 计数\n\n```text\nproduct_category + genre + canonical_master_id\n```\n\n- 同一母片在同一商品品类 × 题材中只计一次。\n- 地区上传、语言版、字幕版和长度剪辑不能增加计数。\n- 同一视频的多个题材标签必须分别有画面证据，但不能把同一视频重复解释成 10 条样片。\n\n## 5. 历史结果状态\n\n旧流程声称接受 129 条以及由此产生的题材覆盖数量，均来自尚未落实新七道审核门的流程。它们保留为历史快照，不能继续视为已经通过的 MVP 核心模板供给。\n\n`consumer-electronics-review-v4.json` 已对 193 条候选完成全量语义重审，保留 59 条核心模板母片。\n\n`consumer-electronics-review-v5.json` 在 v4 基础上追加缺口补采审核：新增 23 条审核记录，其中 14 条入库、9 条排除或待复核不入库。\n\n当前 v5 / v11 的两个 MVP 优先品类覆盖状态：\n\n| 商品品类 | 已达 ≥10 的题材 | 仍不足的题材 |\n|---|---|---|\n| `True Wireless / Bluetooth Earbuds` | `TVC / Brand Commercial`、`Macro Close-Up`、`Multi-Angle / 360° Product Showcase`、`Feature Callout`、`Product Demo` | `How-To Tutorial`、`Unboxing`、`Lookbook`、`Daily Routine`、`Walk-and-Talk UGC` |\n| `Power Banks` | `TVC / Brand Commercial`、`Macro Close-Up`、`Multi-Angle / 360° Product Showcase`、`Feature Callout`、`Product Demo` | `How-To Tutorial`、`Unboxing`、`Lookbook`、`Daily Routine`、`Walk-and-Talk UGC` |\n\n继续补采必须读取 `consumer-electronics-review-v5.json` 作为当前事实源，不能继续使用 `revise_consumer_electronics_v3.mjs` 的视频 ID 增删补丁作为最终分类结果。\n\n## 6. 本轮新增边界案例\n\n- `QgsTaSS0CI4`：Huawei FreeBuds Pro 3 是产品造型/材质展示，不是 Unboxing。\n- `lsE4YqFVrWs`：CUKTECH Power Bank 是功能/卖点/多角度展示，不是 Unboxing。\n- `GWJ3aNko7Uw`：Baseus Power Bank 有生活使用镜头，但不是连续 Daily Routine。\n- `CDYM7t0fZjE`：Beats Emma 概念广告可入 TVC，但不是 Walk-and-Talk UGC，也不硬标 Lookbook。\n- `sCYrElLdURQ`：JBL 官方 How-To 成立，但 Quick Tip / 手动操作主导，本轮不进入品牌品宣核心模板。\n- `-ggrxRcWFxI`：Belkin Magnetic Foldable Wireless Charger 是无线充电器，不计入 Power Banks。\n",
-    "automation_note": "方法论沉淀第一版只记录人工原因和规则线索，不自动改规则；后续由 Codex 分析后再更新。"
+    "automation_note": "方法论沉淀第一版只记录人工原因和规则线索，不自动改规则；后续由 Codex 分析后再更新。",
+    "source_collection": {
+      "version": "v1",
+      "updated_at": "2026-08-20",
+      "title": "专业广告渠道采集台账",
+      "purpose": "记录 Best Ads 与 Ads of the World 的目标范围、已完成进度、质量门、媒体交付方式和续跑前置条件。后续扩大数据范围前必须先读取并更新本台账。",
+      "shared_rules": {
+        "years": [
+          2025,
+          2026
+        ],
+        "visual_review_frames": 10,
+        "genres_defaulted_from_visual_candidates": true,
+        "review_status_after_import": "pending_review",
+        "media_delivery": "remote_links",
+        "canonical_linking_required": true,
+        "next_run_requires_ledger_update": true
+      },
+      "channels": [
+        {
+          "id": "best_ads",
+          "name": "Best Ads",
+          "status": "scope_complete",
+          "status_label": "约定范围已完整采集",
+          "objective": "完整采集当前约定的美国 TV 广告范围，并把可播放、可审计的 2025/2026 品牌广告送入审核台。",
+          "scope": {
+            "country": "United States",
+            "medium": "TV",
+            "years": [
+              2025,
+              2026
+            ],
+            "categories": 9,
+            "completion_definition": "所有列表页候选均进入 success 或 skipped 终态，remaining_candidates 必须为 0。"
+          },
+          "progress": {
+            "completed_pages": 42,
+            "candidates": 213,
+            "terminal_outcomes": 213,
+            "remaining_candidates": 0,
+            "source_success": 109,
+            "skipped": 104,
+            "skipped_video_missing": 91,
+            "skipped_brand_missing": 13,
+            "reviewable_total": 108,
+            "newly_imported": 88,
+            "media_unavailable_excluded": 1,
+            "current_failures": 0
+          },
+          "collection_plan": [
+            "按 Best Ads 的 TV、国家、类别和 2025/2026 年份入口遍历列表页，并使用 checkpoint 保存每个候选的终态。",
+            "进入详情页采集标题、品牌、Category、Client、Agency、Country、Uploaded 日期、详情页链接和视频资产 ID。",
+            "品牌缺失或页面没有视频时记录明确排除原因，不把失败候选静默丢弃。",
+            "优先验证 bestads-files.b-cdn.net 的稳定 CDN 地址；不可用时才刷新临时签名地址，持续 404 的媒体保留失败证据并排除审核台。",
+            "每条可用视频生成 10 帧联系表，完成内容性质、行业、商品品类、genres 和画面质量预审。",
+            "视觉候选作为待审核默认值写入，状态保持 pending_review；完成 canonical master 关联后再导入审核台。"
+          ],
+          "metadata_policy": [
+            "Best Ads 页面 Uploaded 日期写入 source_uploaded_at，并映射到审核台 publish_date 供筛选。",
+            "Uploaded 不是已确认的 Campaign 正式发布日期，因此 publish_date_source 保持 source_uploaded_only，campaign_year_status 保持 campaign_date_unverified。"
+          ],
+          "quality_and_exclusion_rules": [
+            "必须有明确 primary_brand、来源详情页和可审计的视频资产。",
+            "必须完成恰好 10 帧视觉预审，且内容性质为品牌商业广告。",
+            "无视频、缺品牌、媒体永久不可用、年份或范围不符合时不得进入审核台。",
+            "重复来源资产或重复 canonical master 不重复增加审核供给。"
+          ],
+          "continuation": {
+            "resume_from": "collect/runs/best-ads-2025-2026/checkpoint.json",
+            "before_next_run": [
+              "先在本台账中声明新增国家、Medium、年份或 Category 范围，不能把当前 scope_complete 误解成 Best Ads 全站采尽。",
+              "先备份审核台状态，再运行采集、视觉预审、canonical 关联和增量导入。",
+              "完成后更新 candidates、terminal_outcomes、reviewable_total、失败原因和证据路径。"
+            ]
+          },
+          "evidence": [
+            "collect/runs/best-ads-2025-2026/batch-report.json",
+            "collect/runs/best-ads-complete-review-2025-2026/batch-report.json",
+            "collect/runs/best-ads-complete-review-2025-2026/visually-reviewed-records.json"
+          ]
+        },
+        {
+          "id": "ads_of_the_world",
+          "name": "Ads of the World",
+          "status": "target_complete",
+          "status_label": "100 条目标已完成",
+          "objective": "从 Ads of the World 的专业 Film 广告中筛选 2025/2026 样片，使审核台该渠道达到 100 条可审核视频。",
+          "scope": {
+            "medium": "Film",
+            "years": [
+              2025,
+              2026
+            ],
+            "professional_campaign_only": true,
+            "target_reviewable_total": 100,
+            "completion_definition": "审核台 Ads of the World 平台筛选结果必须准确等于 100 条；这不是全站采尽。"
+          },
+          "progress": {
+            "discovery_pages_scanned": 495,
+            "discovery_candidates_seen": 29680,
+            "terminal_outcomes": 560,
+            "source_success": 535,
+            "selected_new_records": 80,
+            "existing_before_run": 20,
+            "reviewable_total": 100,
+            "contact_sheet_success": 80,
+            "media_available": 80,
+            "current_failures": 0
+          },
+          "collection_plan": [
+            "从 Ads of the World Film 入口逐页发现 Campaign 详情页，并用 checkpoint 记录已处理候选。",
+            "详情页必须提取专业 Campaign 声明、品牌、Campaign 名、发布时间句子、国家、行业/类别、Agency、详情页链接和视频地址。",
+            "只保留 2025/2026 的 professional campaign；学生作品、年份超范围、缺品牌或缺视频的记录进入带原因的 skipped 终态。",
+            "直接验证 video.adsoftheworld.com 等来源 CDN 视频，不把缩略图或联系表误当成视频。",
+            "每条选中视频生成并人工查看 10 帧联系表，写入行业/品类候选与至少一个正式 genre 默认值。",
+            "完成来源去重、视频资产去重和 canonical master 关联后，以 pending_review 状态增量导入审核台。"
+          ],
+          "metadata_policy": [
+            "使用详情页 published sentence 解析 Campaign 发布时间，只有明确落在 2025/2026 才进入本轮目标。",
+            "来源行业和类别仅作分类证据；审核台行业、商品品类和 genres 仍以 10 帧视觉预审候选为准。"
+          ],
+          "quality_and_exclusion_rules": [
+            "必须是 professional campaign 的 Film 视频，不使用仅图片、学生作品或非广告页面。",
+            "必须有品牌、详情页、确认日期和可直接访问的远程视频链接。",
+            "必须完成恰好 10 帧视觉预审，并至少写入一个 genre 默认值。",
+            "同 Campaign 多个独立视频可以分别进入审核，但重复媒体资产和重复来源键必须排除。"
+          ],
+          "continuation": {
+            "resume_from": "collect/runs/aotw-film-2025-2026/checkpoint.json",
+            "before_next_run": [
+              "当前目标已经达到 100 条；扩大范围前先在本台账写清新的数量、国家、年份、Medium 或品类目标。",
+              "优先从 checkpoint 未进入目标集的成功候选继续筛选，不重复抓取已完成详情页。",
+              "先备份审核台状态，再执行媒体验证、10 帧预审、canonical 关联和增量导入。",
+              "完成后更新 reviewable_total、selected_new_records、失败原因和证据路径。"
+            ]
+          },
+          "evidence": [
+            "collect/runs/aotw-target-100-review-2025-2026/batch-report.json",
+            "collect/runs/aotw-target-100-review-2025-2026/visually-reviewed-records.json",
+            "collect/runs/source-expansion-2025-2026-linked.json"
+          ]
+        }
+      ]
+    }
   },
   "industries": [
     {

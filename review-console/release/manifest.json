@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_from_state_updated_at": "2026-08-20T11:23:17.200Z",
-  "state_sha256": "6885a393f4ebd9ef5d64736cc13654ac3350b9be4327273764eede633346eb1d",
+  "generated_from_state_updated_at": "2026-08-20T12:42:06.841Z",
+  "state_sha256": "ee83f60c73fbe2e33ba1cf3af55c13e21b3c54583145a549e747ac0d6465a5dd",
   "counts": {
     "videos": 843,
     "industries": 13,
@@ -10,7 +10,7 @@
     "genre_groups": 7,
     "statuses": 8,
     "review_events": 118,
-    "source_files": 23,
+    "source_files": 24,
     "contact_sheets": 419,
     "remote_video_references": 843,
     "local_video_files": 0
@@ -34,6 +34,7 @@
     "collect/runs/pet-tech-top-brand-candidates-pending-date-2026-08-12.json",
     "collect/runs/source-expansion-2025-2026-linked.json",
     "collect/runs/sporting-goods-fitness-pilot-2026-08-18.json",
+    "collect/source-collection-methodology-v1.json",
     "collect/sporting-goods-fitness-collection-policy-v1.json",
     "collect/sporting-goods-fitness-source-registry-v1.json",
     "collect/sporting-goods-fitness-taxonomy-v1.json",
@@ -462,7 +463,7 @@
     "collect/runs/earbuds-brand-campaign-visual-review-2026-08-03/vGY0SATxd6k/contact-sheet.jpg"
   ],
   "package": {
-    "files_excluding_manifest": 460,
-    "bytes_excluding_manifest": 63620797
+    "files_excluding_manifest": 463,
+    "bytes_excluding_manifest": 63646145
   }
 }

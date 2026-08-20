@@ -1,0 +1,134 @@
+{
+  "version": "v1",
+  "updated_at": "2026-08-20",
+  "title": "专业广告渠道采集台账",
+  "purpose": "记录 Best Ads 与 Ads of the World 的目标范围、已完成进度、质量门、媒体交付方式和续跑前置条件。后续扩大数据范围前必须先读取并更新本台账。",
+  "shared_rules": {
+    "years": [2025, 2026],
+    "visual_review_frames": 10,
+    "genres_defaulted_from_visual_candidates": true,
+    "review_status_after_import": "pending_review",
+    "media_delivery": "remote_links",
+    "canonical_linking_required": true,
+    "next_run_requires_ledger_update": true
+  },
+  "channels": [
+    {
+      "id": "best_ads",
+      "name": "Best Ads",
+      "status": "scope_complete",
+      "status_label": "约定范围已完整采集",
+      "objective": "完整采集当前约定的美国 TV 广告范围，并把可播放、可审计的 2025/2026 品牌广告送入审核台。",
+      "scope": {
+        "country": "United States",
+        "medium": "TV",
+        "years": [2025, 2026],
+        "categories": 9,
+        "completion_definition": "所有列表页候选均进入 success 或 skipped 终态，remaining_candidates 必须为 0。"
+      },
+      "progress": {
+        "completed_pages": 42,
+        "candidates": 213,
+        "terminal_outcomes": 213,
+        "remaining_candidates": 0,
+        "source_success": 109,
+        "skipped": 104,
+        "skipped_video_missing": 91,
+        "skipped_brand_missing": 13,
+        "reviewable_total": 108,
+        "newly_imported": 88,
+        "media_unavailable_excluded": 1,
+        "current_failures": 0
+      },
+      "collection_plan": [
+        "按 Best Ads 的 TV、国家、类别和 2025/2026 年份入口遍历列表页，并使用 checkpoint 保存每个候选的终态。",
+        "进入详情页采集标题、品牌、Category、Client、Agency、Country、Uploaded 日期、详情页链接和视频资产 ID。",
+        "品牌缺失或页面没有视频时记录明确排除原因，不把失败候选静默丢弃。",
+        "优先验证 bestads-files.b-cdn.net 的稳定 CDN 地址；不可用时才刷新临时签名地址，持续 404 的媒体保留失败证据并排除审核台。",
+        "每条可用视频生成 10 帧联系表，完成内容性质、行业、商品品类、genres 和画面质量预审。",
+        "视觉候选作为待审核默认值写入，状态保持 pending_review；完成 canonical master 关联后再导入审核台。"
+      ],
+      "metadata_policy": [
+        "Best Ads 页面 Uploaded 日期写入 source_uploaded_at，并映射到审核台 publish_date 供筛选。",
+        "Uploaded 不是已确认的 Campaign 正式发布日期，因此 publish_date_source 保持 source_uploaded_only，campaign_year_status 保持 campaign_date_unverified。"
+      ],
+      "quality_and_exclusion_rules": [
+        "必须有明确 primary_brand、来源详情页和可审计的视频资产。",
+        "必须完成恰好 10 帧视觉预审，且内容性质为品牌商业广告。",
+        "无视频、缺品牌、媒体永久不可用、年份或范围不符合时不得进入审核台。",
+        "重复来源资产或重复 canonical master 不重复增加审核供给。"
+      ],
+      "continuation": {
+        "resume_from": "collect/runs/best-ads-2025-2026/checkpoint.json",
+        "before_next_run": [
+          "先在本台账中声明新增国家、Medium、年份或 Category 范围，不能把当前 scope_complete 误解成 Best Ads 全站采尽。",
+          "先备份审核台状态，再运行采集、视觉预审、canonical 关联和增量导入。",
+          "完成后更新 candidates、terminal_outcomes、reviewable_total、失败原因和证据路径。"
+        ]
+      },
+      "evidence": [
+        "collect/runs/best-ads-2025-2026/batch-report.json",
+        "collect/runs/best-ads-complete-review-2025-2026/batch-report.json",
+        "collect/runs/best-ads-complete-review-2025-2026/visually-reviewed-records.json"
+      ]
+    },
+    {
+      "id": "ads_of_the_world",
+      "name": "Ads of the World",
+      "status": "target_complete",
+      "status_label": "100 条目标已完成",
+      "objective": "从 Ads of the World 的专业 Film 广告中筛选 2025/2026 样片，使审核台该渠道达到 100 条可审核视频。",
+      "scope": {
+        "medium": "Film",
+        "years": [2025, 2026],
+        "professional_campaign_only": true,
+        "target_reviewable_total": 100,
+        "completion_definition": "审核台 Ads of the World 平台筛选结果必须准确等于 100 条；这不是全站采尽。"
+      },
+      "progress": {
+        "discovery_pages_scanned": 495,
+        "discovery_candidates_seen": 29680,
+        "terminal_outcomes": 560,
+        "source_success": 535,
+        "selected_new_records": 80,
+        "existing_before_run": 20,
+        "reviewable_total": 100,
+        "contact_sheet_success": 80,
+        "media_available": 80,
+        "current_failures": 0
+      },
+      "collection_plan": [
+        "从 Ads of the World Film 入口逐页发现 Campaign 详情页，并用 checkpoint 记录已处理候选。",
+        "详情页必须提取专业 Campaign 声明、品牌、Campaign 名、发布时间句子、国家、行业/类别、Agency、详情页链接和视频地址。",
+        "只保留 2025/2026 的 professional campaign；学生作品、年份超范围、缺品牌或缺视频的记录进入带原因的 skipped 终态。",
+        "直接验证 video.adsoftheworld.com 等来源 CDN 视频，不把缩略图或联系表误当成视频。",
+        "每条选中视频生成并人工查看 10 帧联系表，写入行业/品类候选与至少一个正式 genre 默认值。",
+        "完成来源去重、视频资产去重和 canonical master 关联后，以 pending_review 状态增量导入审核台。"
+      ],
+      "metadata_policy": [
+        "使用详情页 published sentence 解析 Campaign 发布时间，只有明确落在 2025/2026 才进入本轮目标。",
+        "来源行业和类别仅作分类证据；审核台行业、商品品类和 genres 仍以 10 帧视觉预审候选为准。"
+      ],
+      "quality_and_exclusion_rules": [
+        "必须是 professional campaign 的 Film 视频，不使用仅图片、学生作品或非广告页面。",
+        "必须有品牌、详情页、确认日期和可直接访问的远程视频链接。",
+        "必须完成恰好 10 帧视觉预审，并至少写入一个 genre 默认值。",
+        "同 Campaign 多个独立视频可以分别进入审核，但重复媒体资产和重复来源键必须排除。"
+      ],
+      "continuation": {
+        "resume_from": "collect/runs/aotw-film-2025-2026/checkpoint.json",
+        "before_next_run": [
+          "当前目标已经达到 100 条；扩大范围前先在本台账写清新的数量、国家、年份、Medium 或品类目标。",
+          "优先从 checkpoint 未进入目标集的成功候选继续筛选，不重复抓取已完成详情页。",
+          "先备份审核台状态，再执行媒体验证、10 帧预审、canonical 关联和增量导入。",
+          "完成后更新 reviewable_total、selected_new_records、失败原因和证据路径。"
+        ]
+      },
+      "evidence": [
+        "collect/runs/aotw-target-100-review-2025-2026/batch-report.json",
+        "collect/runs/aotw-target-100-review-2025-2026/visually-reviewed-records.json",
+        "collect/runs/source-expansion-2025-2026-linked.json"
+      ]
+    }
+  ]
+}

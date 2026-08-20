@@ -312,8 +312,27 @@ a{color:inherit}
 .event strong{font-size:12px}
 .event p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
 .methodology{display:grid;gap:16px}
+.source-methodology .panel-head{align-items:flex-start}
+.methodology-version{font-size:11px;color:var(--dim);font-weight:850;white-space:nowrap}
+.collection-method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:0 14px 14px}
+.collection-method-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025);display:grid;gap:12px;min-width:0}
+.collection-method-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.collection-method-head h3{margin:0;font-size:16px}
+.collection-method-head p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+.method-status{padding:5px 8px;border:1px solid rgba(34,197,94,.34);border-radius:999px;background:rgba(34,197,94,.10);color:#bbf7d0;font-size:10px;font-weight:900;white-space:nowrap}
+.method-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.method-metrics div{padding:9px;border:1px solid var(--line);border-radius:12px;background:rgba(0,0,0,.12);display:grid;gap:3px}
+.method-metrics span{color:var(--dim);font-size:10px;font-weight:800}
+.method-metrics strong{font-size:15px}
+.collection-method-card details{border:1px solid var(--line);border-radius:12px;background:rgba(0,0,0,.10);padding:0 11px}
+.collection-method-card summary{cursor:pointer;padding:10px 0;color:#e8dfcc;font-size:12px;font-weight:900}
+.collection-method-card ol,.collection-method-card ul{margin:0 0 11px;padding-left:20px;color:var(--muted);font-size:12px;line-height:1.6}
+.collection-method-card li+li{margin-top:5px}
+.continuation-gate{border-color:rgba(245,158,11,.32)!important;background:rgba(245,158,11,.055)!important}
+.continuation-gate .subtext{margin:0 0 8px;overflow-wrap:anywhere}
 .doc-card{padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(21,23,32,.76)}
 .doc-card pre{margin:12px 0 0;max-height:420px;overflow:auto;white-space:pre-wrap;color:#d7d0bf;line-height:1.55;font-size:13px}
+@media(max-width:900px){.collection-method-grid{grid-template-columns:1fr}.collection-method-head{display:grid}.method-status{justify-self:start}}
 .status-manager{display:grid;gap:10px}
 .status-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px;border:1px solid var(--line);border-radius:13px}
 .status-info{display:grid;gap:4px;min-width:0}

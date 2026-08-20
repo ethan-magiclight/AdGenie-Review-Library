@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateSourceCollectionMethodology } from "../lib/source-methodology.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const webRoot = path.resolve(path.dirname(__filename), "..");
@@ -12,6 +13,8 @@ const warnings = [];
 if (!Array.isArray(state.videos)) errors.push("state.videos must be an array");
 if (!Array.isArray(state.statuses)) errors.push("state.statuses must be an array");
 if (!Array.isArray(state.review_events)) warnings.push("state.review_events is missing or not an array");
+const sourceMethodologyErrors = validateSourceCollectionMethodology(state.methodology?.source_collection);
+if (sourceMethodologyErrors.length) errors.push(...sourceMethodologyErrors.map((message) => `source methodology: ${message}`));
 
 const statuses = new Set((state.statuses || []).map((status) => status.id));
 const videoIds = new Set();
@@ -99,6 +102,7 @@ const summary = {
   metadata_fetch_errors: metadataFetchErrors.length,
   duplicate_source_keys: duplicateSourceKeys.length,
   duplicate_canonical_masters: duplicateCanonicalMasters.length,
+  source_methodology_channels: state.methodology?.source_collection?.channels?.length || 0,
   errors,
   warnings,
 };

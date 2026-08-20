@@ -135,7 +135,7 @@ if (fssync.existsSync(outputPath) && !reset) {
   process.exit(0);
 }
 
-const [library, review, genreData, taxonomyData, stats, methodologyMain, methodologyCe] = await Promise.all([
+const [library, review, genreData, taxonomyData, stats, methodologyMain, methodologyCe, sourceCollectionMethodology] = await Promise.all([
   readJson("collect/library-v9.json"),
   readJson("collect/consumer-electronics-review-v5.json"),
   readJson("collect/ad-video-genres-v1.json"),
@@ -143,6 +143,7 @@ const [library, review, genreData, taxonomyData, stats, methodologyMain, methodo
   readJson("collect/stats-v9.json"),
   readText("collect/采集方案与优质判定标准.md"),
   readText("collect/采集方案与优质判定标准-v2.md"),
+  readJson("collect/source-collection-methodology-v1.json"),
 ]);
 
 let petTaxonomyData = { categories: [] };
@@ -203,6 +204,7 @@ const state = {
     "collect/ad-video-genres-v1.json",
     "collect/consumer-electronics-taxonomy-v1.json",
     "collect/stats-v9.json",
+    "collect/source-collection-methodology-v1.json",
   ],
   stats,
   statuses,
@@ -274,6 +276,7 @@ const state = {
     ce_doc_path: "collect/采集方案与优质判定标准-v2.md",
     main_doc: methodologyMain,
     ce_doc: methodologyCe,
+    source_collection: sourceCollectionMethodology,
     automation_note: "方法论沉淀第一版只记录人工原因和规则线索，不自动改规则；后续由 Codex 分析后再更新。",
   },
 };

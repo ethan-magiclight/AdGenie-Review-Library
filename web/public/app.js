@@ -1216,11 +1216,63 @@ function kvLink(label, href, text) {
   return `<div class="kv"><span>${escapeHtml(label)}</span><strong><a target="_blank" rel="noreferrer" href="${escapeHtml(href)}">${escapeHtml(text)}</a></strong><small>${escapeHtml(href)}</small></div>`;
 }
 
+function methodologyList(items, ordered = false) {
+  const tag = ordered ? "ol" : "ul";
+  return `<${tag}>${(items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</${tag}>`;
+}
+
+function collectionProgressMetrics(channel) {
+  if (channel.id === "best_ads") return [
+    ["完成列表页", channel.progress.completed_pages],
+    ["候选", channel.progress.candidates],
+    ["终态", channel.progress.terminal_outcomes],
+    ["剩余", channel.progress.remaining_candidates],
+    ["可审核", channel.progress.reviewable_total],
+    ["本轮新增", channel.progress.newly_imported],
+  ];
+  return [
+    ["扫描列表页", channel.progress.discovery_pages_scanned],
+    ["发现候选", channel.progress.discovery_candidates_seen],
+    ["已处理终态", channel.progress.terminal_outcomes],
+    ["目标", channel.scope.target_reviewable_total],
+    ["可审核", channel.progress.reviewable_total],
+    ["本轮新增", channel.progress.selected_new_records],
+  ];
+}
+
+function renderSourceCollectionMethodology() {
+  const ledger = state.data.methodology?.source_collection;
+  if (!ledger?.channels?.length) return "";
+  const cards = ledger.channels.map((channel) => `
+    <article class="collection-method-card">
+      <div class="collection-method-head">
+        <div><h3>${escapeHtml(channel.name)}</h3><p>${escapeHtml(channel.objective)}</p></div>
+        <span class="method-status ${escapeHtml(channel.status)}">${escapeHtml(channel.status_label)}</span>
+      </div>
+      <div class="method-metrics">
+        ${collectionProgressMetrics(channel).map(([label, value]) => `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("")}
+      </div>
+      <details open><summary>采集执行方案</summary>${methodologyList(channel.collection_plan, true)}</details>
+      <details><summary>元数据与日期规则</summary>${methodologyList(channel.metadata_policy)}</details>
+      <details><summary>质量门与排除规则</summary>${methodologyList(channel.quality_and_exclusion_rules)}</details>
+      <details class="continuation-gate" open><summary>继续采集前置条件</summary><p class="subtext">续跑 checkpoint：${escapeHtml(channel.continuation.resume_from)}</p>${methodologyList(channel.continuation.before_next_run, true)}</details>
+      <details><summary>审计证据</summary>${methodologyList(channel.evidence)}</details>
+    </article>
+  `).join("");
+  return `
+    <section class="panel source-methodology">
+      <div class="panel-head"><div><h2>${escapeHtml(ledger.title)}</h2><p>${escapeHtml(ledger.purpose)}</p></div><span class="methodology-version">${escapeHtml(ledger.version)} · ${escapeHtml(ledger.updated_at)}</span></div>
+      <div class="collection-method-grid">${cards}</div>
+    </section>
+  `;
+}
+
 function renderMethodology() {
   const candidateEvents = state.data.review_events.filter((event) => event.methodology_candidate);
   renderShell(`
     ${pageTop("方法论记录", "第一版只记录人工原因和规则线索，不自动沉淀；后续由 Codex 批量分析。")}
     <div class="content methodology">
+      ${renderSourceCollectionMethodology()}
       <section class="panel">
         <div class="panel-head"><div><h2>人工规则线索</h2><p>来自拉黑、重归类和原因记录中勾选“方法论候选”的事件。</p></div></div>
         <div class="drawer-body history">

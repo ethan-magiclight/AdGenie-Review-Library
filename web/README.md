@@ -195,6 +195,13 @@ npm run backfill:metadata -- --cookies-from-browser chrome
 - `collect/采集方案与优质判定标准-v2.md`
 - 采集 / 分类脚本规则
 
+Best Ads 与 Ads of the World 的渠道采集进度、范围、排除规则、媒体交付策略和续跑前置条件，以 `collect/source-collection-methodology-v1.json` 为单一事实源。每次扩大渠道范围前必须先更新目标，完成后再更新进度并运行：
+
+```bash
+npm run backup:data
+npm run methodology:sync
+```
+
 ## 增量采集与导入
 
 新的活动采集入口是 `collect/collect-latest.mjs`。例如：

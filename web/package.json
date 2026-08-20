@@ -7,9 +7,10 @@
     "import": "node scripts/import-seed.mjs",
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "build": "npm run check && npm run test:media && npm run test:media-link-freshness && npm run test:classification-fallbacks && npm run test:genre-defaults && npm run collect:report:check && npm run collect:validate && npm run collect:source:validate && npm run validate:data",
+    "build": "npm run check && npm run test:media && npm run test:media-link-freshness && npm run test:classification-fallbacks && npm run test:source-methodology && npm run test:genre-defaults && npm run collect:report:check && npm run collect:validate && npm run collect:source:validate && npm run validate:data",
     "reset:data": "node scripts/import-seed.mjs --reset",
     "backup:data": "node scripts/backup-state.mjs",
+    "methodology:sync": "node scripts/sync-source-methodology.mjs",
     "repair:data": "node scripts/repair-state-p0.mjs",
     "backfill:metadata": "node scripts/backfill-youtube-metadata.mjs",
     "backfill:best-ads-dates": "node scripts/backfill-best-ads-uploaded-dates.mjs",
@@ -34,9 +35,10 @@
     "test:media": "node --test test/media-resolver.test.mjs",
     "test:media-link-freshness": "node --test test/media-link-freshness.test.mjs",
     "test:classification-fallbacks": "node --test test/classification-fallbacks.test.mjs",
+    "test:source-methodology": "node --test test/source-methodology.test.mjs",
     "test:genre-defaults": "node --test test/genre-defaults.test.mjs",
     "package:standalone": "node ../review-console/scripts/build-package.mjs",
     "validate:standalone": "node ../review-console/scripts/validate-package.mjs",
-    "check": "node --check public/app.js && node --check public/classification-fallbacks.mjs && node --check public/media-link-freshness.mjs && node --check server.mjs && node --check lib/media-resolver.mjs && node --check lib/genre-defaults.mjs && node --check scripts/import-seed.mjs && node --check scripts/backup-state.mjs && node --check scripts/repair-state-p0.mjs && node --check scripts/backfill-youtube-metadata.mjs && node --check scripts/backfill-best-ads-uploaded-dates.mjs && node --check scripts/backfill-source-genre-defaults.mjs && node --check scripts/migrate-sporting-goods-fitness.mjs && node --check scripts/ingest-review-candidates.mjs && node --check scripts/ingest-candidates.mjs && node --check scripts/ingest-source-records.mjs && node --check scripts/validate-state.mjs && node --check ../collect/collect-latest.mjs && node --check ../collect/validate-collection-system.mjs && node --check ../collect/validate-source-records.mjs && node --check ../collect/source-collector-core.mjs && node --check ../collect/collect-best-ads.mjs && node --check ../collect/collect-aotw.mjs && node --check ../collect/apply-visual-previews.mjs && node --check ../collect/apply-media-manifest.mjs && node --check ../collect/link-canonical-masters.mjs && python3 ../collect/build-contact-sheets.py --help >/dev/null"
+    "check": "node --check public/app.js && node --check public/classification-fallbacks.mjs && node --check public/media-link-freshness.mjs && node --check server.mjs && node --check lib/media-resolver.mjs && node --check lib/genre-defaults.mjs && node --check lib/source-methodology.mjs && node --check scripts/import-seed.mjs && node --check scripts/backup-state.mjs && node --check scripts/sync-source-methodology.mjs && node --check scripts/repair-state-p0.mjs && node --check scripts/backfill-youtube-metadata.mjs && node --check scripts/backfill-best-ads-uploaded-dates.mjs && node --check scripts/backfill-source-genre-defaults.mjs && node --check scripts/migrate-sporting-goods-fitness.mjs && node --check scripts/ingest-review-candidates.mjs && node --check scripts/ingest-candidates.mjs && node --check scripts/ingest-source-records.mjs && node --check scripts/validate-state.mjs && node --check ../collect/collect-latest.mjs && node --check ../collect/validate-collection-system.mjs && node --check ../collect/validate-source-records.mjs && node --check ../collect/source-collector-core.mjs && node --check ../collect/collect-best-ads.mjs && node --check ../collect/collect-aotw.mjs && node --check ../collect/apply-visual-previews.mjs && node --check ../collect/apply-media-manifest.mjs && node --check ../collect/link-canonical-masters.mjs && python3 ../collect/build-contact-sheets.py --help >/dev/null"
   }
 }
