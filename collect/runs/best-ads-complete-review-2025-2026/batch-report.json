@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-20T11:23:00.880Z",
+  "source_site": "best_ads",
+  "inputs": {
+    "records": "collect/runs/best-ads-complete-review-2025-2026/visually-reviewed-records.json",
+    "checkpoint": "collect/runs/best-ads-2025-2026/checkpoint.json",
+    "contact_sheets": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/manifest.json"
+  },
+  "discovery": {
+    "complete": true,
+    "candidates": 213,
+    "completed_pages": 42,
+    "total_reported": 213,
+    "last_page": null,
+    "terminal_outcomes": 213,
+    "remaining_candidates": 0,
+    "latest_outcomes": 213,
+    "outcome_attempt_events": 213,
+    "outcome_statuses": {
+      "skipped": 104,
+      "success": 109
+    },
+    "exclusion_reasons": {
+      "brand_missing": 13,
+      "video_missing": 91
+    },
+    "failure_reasons": {},
+    "attempt_statuses": {
+      "skipped": 104,
+      "success": 109
+    },
+    "historical_failure_reasons": {},
+    "historical_failures": 0,
+    "current_failures": 0,
+    "resolved_failures": 0,
+    "retries": 0
+  },
+  "coverage": {
+    "records": 88,
+    "review_items": 88,
+    "brand_complete": 88,
+    "brand_complete_rate": 1,
+    "detail_url_complete": 88,
+    "detail_url_complete_rate": 1,
+    "date_confirmed": 0,
+    "date_confirmed_rate": 0,
+    "date_unverified": 88,
+    "date_unverified_rate": 1,
+    "records_with_video": 88,
+    "records_with_video_rate": 1,
+    "records_with_auditable_video_status": 88,
+    "records_with_auditable_video_status_rate": 1,
+    "pending_category_review": 30,
+    "pending_category_review_rate": 0.3409
+  },
+  "media": {
+    "providers": {
+      "best_ads_signed_mp4": 88
+    },
+    "access_statuses": {
+      "temporary": 88
+    },
+    "contact_sheet_records": 89,
+    "contact_sheet_success": 88,
+    "contact_sheet_failure": 1,
+    "contact_sheet_success_rate": 0.9888,
+    "temporary_video_residue": 0
+  },
+  "classification": {
+    "industries": {
+      "Apparel & Footwear": 6,
+      "Beauty & Personal Care": 19,
+      "Food & Beverage": 52,
+      "Home & Living/Household": 11
+    },
+    "product_categories": {
+      "Confectionery & Snacks": 9,
+      "Food Products": 12,
+      "Non-Alcoholic Beverages": 31,
+      "pending": 30,
+      "Sportswear": 6
+    },
+    "candidate_statuses": {
+      "mapped_candidate": 58,
+      "pending_category_review": 30
+    }
+  },
+  "visual_pre_review": {
+    "completed": 88,
+    "failed": 0,
+    "coverage_rate": 1,
+    "content_natures": {
+      "brand_commercial": 88
+    },
+    "industry_candidates": {
+      "Apparel & Footwear": 6,
+      "Beauty & Personal Care": 19,
+      "Food & Beverage": 52,
+      "Pet Supplies": 11
+    },
+    "product_category_candidates": {
+      "Confectionery & Snacks": 9,
+      "Food Products": 12,
+      "Non-Alcoholic Beverages": 31,
+      "Pet Food & Treats": 11,
+      "Sportswear": 6,
+      "Toiletries & Personal Hygiene": 19
+    },
+    "exclusion_candidates": {}
+  },
+  "deduplication": {
+    "duplicate_source_records": 0,
+    "duplicate_video_assets": 0,
+    "duplicate_discovery_candidates": 0,
+    "canonical_masters_assigned": 0,
+    "unique_canonical_masters": 0,
+    "shared_canonical_masters": 0,
+    "alternate_cut_links": 0,
+    "alternate_aspect_ratio_links": 0,
+    "pending_canonical_review_links": 0
+  }
+}

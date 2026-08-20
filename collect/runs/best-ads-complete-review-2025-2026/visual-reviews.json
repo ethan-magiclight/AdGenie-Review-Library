@@ -1,0 +1,4849 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-08-20",
+  "reviews": [
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190465",
+      "asset_id": "0159215b7f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/001-190465--0159215b7f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Snickers."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Snickers: Stuck is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190092",
+      "asset_id": "0710031be1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/002-190092--0710031be1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Pringles."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Pringles: Pringlelina: A Love Story is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189538",
+      "asset_id": "064139ba60",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/003-189538--064139ba60.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Graza."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Graza: The Harvest is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189539",
+      "asset_id": "064144d8bd",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/004-189539--064144d8bd.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Graza."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Graza: Testing Twins is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189540",
+      "asset_id": "064149f993",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/005-189540--064149f993.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Graza."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Graza: Spoons is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188899",
+      "asset_id": "0951219d4f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/006-188899--0951219d4f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for General Manager – Lyndsay Rogers."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Pringles: Pringleleo is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188589",
+      "asset_id": "0313226926",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/007-188589--0313226926.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Skittles."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Skittles: Deliver The Rainbow is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188590",
+      "asset_id": "03131260bc",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/008-188590--03131260bc.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Skittles."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Skittles: Deliver The Rainbow, 15s is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188599",
+      "asset_id": "0407561588",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/009-188599--0407561588.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Pringles."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Pringles: Loves Me - Teaser is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185747",
+      "asset_id": "0310027fa6",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/010-185747--0310027fa6.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Dove."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dove: #ChangeTheCompliment is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "174938",
+      "asset_id": "b982e",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/011-174938--b982e.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Old Spice."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Old Spice: Coach is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "192030",
+      "asset_id": "1607092097",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/012-192030--1607092097.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Dollar Shave Club."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dollar Shave Club: Danglers is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191798",
+      "asset_id": "1315234273",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/013-191798--1315234273.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Dollar Shave Club."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dollar Shave Club: Real men keep it real simple is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190892",
+      "asset_id": "152221ee38",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/014-190892--152221ee38.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Native."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Native: From The Gods To Your Sink is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190893",
+      "asset_id": "1524183ca1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/015-190893--1524183ca1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Native."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Native: There's A Better Way is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190894",
+      "asset_id": "152519ddcc",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/016-190894--152519ddcc.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Native."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Native: A Powerful Clean is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190803",
+      "asset_id": "0303463f1f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/017-190803--0303463f1f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Huggies."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Huggies: Natural Born Fighters is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190587",
+      "asset_id": "02164000af",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/018-190587--02164000af.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Lumē Deodorant."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Lumē Deodorant: Random Body Changes is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190588",
+      "asset_id": "0217294d70",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/019-190588--0217294d70.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Lumē Deodorant."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Lumē Deodorant: Down There is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190589",
+      "asset_id": "021837ccd7",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/020-190589--021837ccd7.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Lumē Deodorant."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Lumē Deodorant: Under the Tatas is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190606",
+      "asset_id": "033205ffc2",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/021-190606--033205ffc2.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Schick."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Schick: Do Right By Your Skin is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190301",
+      "asset_id": "075048c250",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/022-190301--075048c250.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Kimberly-Clark."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Kotex: You Asked. We Heard is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189143",
+      "asset_id": "013529e8df",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/023-189143--013529e8df.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Old Spice."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Old Spice: The End of Adolescents is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189068",
+      "asset_id": "09060833c2",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/024-189068--09060833c2.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Kotex."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Kotex: Own Your Flow is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188888",
+      "asset_id": "0844492727",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/025-188888--0844492727.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for MANSCAPED."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: MANSCAPED: Hair Ballad is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188835",
+      "asset_id": "0622493ea7",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/026-188835--0622493ea7.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Dove."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dove: The Game Is Ours is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188694",
+      "asset_id": "03485689a7",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/027-188694--03485689a7.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Pantene."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Pantene: Stop The Shedding is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188600",
+      "asset_id": "041100a63a",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/028-188600--041100a63a.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Dove."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dove / Bridgerton Limited-Edition Collection: Let Them Talk is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186373",
+      "asset_id": "05095681cd",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/029-186373--05095681cd.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Gatorade."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Gatorade: No Ordinary Athlete is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186339",
+      "asset_id": "055126146e",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/030-186339--055126146e.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Coca-Cola."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Coca Cola: A Holiday Memory is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186340",
+      "asset_id": "055140a0fb",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/031-186340--055140a0fb.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Coca-Cola."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Coca Cola: Holidays Are Coming is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186341",
+      "asset_id": "0556487957",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/032-186341--0556487957.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for San Pellegrino."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: San Pellegrino: Italian Time Explained is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186342",
+      "asset_id": "055541cbbd",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/033-186342--055541cbbd.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for San Pellegrino."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: San Pellegrino: Friendsgiving on Italian Time is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186343",
+      "asset_id": "0557275080",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/034-186343--0557275080.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for San Pellegrino."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: San Pellegrino: Goodbye on Italian Time is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185745",
+      "asset_id": "0255533247",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/035-185745--0255533247.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for The Coca-Cola Company."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Sprite: No Comment is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185292",
+      "asset_id": "065449e89a",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/036-185292--065449e89a.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Liquid Death / Boost Mobile."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Liquid Death / Boost Mobile: Trapped is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185293",
+      "asset_id": "065505af21",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/037-185293--065505af21.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Liquid Death / Boost Mobile."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Liquid Death / Boost Mobile: Family Plan is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185294",
+      "asset_id": "065651ceca",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/038-185294--065651ceca.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Liquid Death."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Liquid Death: Spinal Tap 11-Pack is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185153",
+      "asset_id": "055215cbfa",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/039-185153--055215cbfa.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Pepsi."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Pepsi: Tailgate Crashers is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "175141",
+      "asset_id": "0deb8",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/040-175141--0deb8.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Sanpellegrino."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Sanpellegrino: With Love, Italy is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "172983",
+      "asset_id": "a6f03",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/041-172983--a6f03.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Mountain Dew."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Mountain Dew: Kiss From A Lime is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "192360",
+      "asset_id": "0207201c9f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/042-192360--0207201c9f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Coca-Cola."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Coca-Cola: Laptop Face is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "192361",
+      "asset_id": "0207027f60",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/043-192361--0207027f60.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Coca-Cola."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Coca-Cola: The Most Important Meeting is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191448",
+      "asset_id": "090940cd9d",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/044-191448--090940cd9d.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Tropicana."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Tropicana: Give Life Some Juice is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191307",
+      "asset_id": "0509082514",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/045-191307--0509082514.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Liquid Death."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Liquid Death: Parenting: The Most Extreme Sport in the World is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191084",
+      "asset_id": "090247ea30",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/046-191084--090247ea30.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Mountain Dew."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Mountain Dew: Have a Baja Blast is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190616",
+      "asset_id": "0519140ed1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/047-190616--0519140ed1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for S.Pellegrino."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: S.Pellegrino: Dinner Dialogues is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190284",
+      "asset_id": "0500333ee6",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/048-190284--0500333ee6.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Molson Coors Beverage Company."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Fever-Tree: Mix With The Best, 30s is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190285",
+      "asset_id": "050037e366",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/049-190285--050037e366.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Molson Coors Beverage Company."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Fever-Tree: Mix With The Best, 15s is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189649",
+      "asset_id": "074331128a",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/050-189649--074331128a.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Coca-Cola."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Coca-Cola: Coca-Cola Anthem for FIFA World Cup 26 is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189285",
+      "asset_id": "102335539f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/051-189285--102335539f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for BodyArmor."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: BodyArmor: Choose Better is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189176",
+      "asset_id": "0841101458",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/052-189176--0841101458.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for The J.M. Smucker Company."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Folgers: The Best Part of Wakin' Up is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188972",
+      "asset_id": "041856a1af",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/053-188972--041856a1af.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for poppi."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: poppi: Vibes is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188973",
+      "asset_id": "041904758b",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/054-188973--041904758b.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for poppi."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: poppi: Vibes, 30s is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188805",
+      "asset_id": "0444229548",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/055-188805--0444229548.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Pepsico."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Pepsi Zero: The Choice is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188608",
+      "asset_id": "0617310335",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/056-188608--0617310335.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Dos Equis."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dos Equis: At Long Last, He's Back is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188609",
+      "asset_id": "0617359a04",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/057-188609--0617359a04.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Dos Equis."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dos Equis: Socks is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188610",
+      "asset_id": "06193076d1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/058-188610--06193076d1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Dos Equis."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dos Equis: Ship in a Bottle is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188611",
+      "asset_id": "06193305a7",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/059-188611--06193305a7.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Dos Equis."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dos Equis: Yogurt is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185569",
+      "asset_id": "183825fb6c",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/060-185569--183825fb6c.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for General Mills."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Totino's: Too Good To Share is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185079",
+      "asset_id": "1807343970",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/061-185079--1807343970.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for General Mills."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Totino's: Nothing Else Adds Up is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185096",
+      "asset_id": "071655157f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/062-185096--071655157f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for FGF Brands."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Stonefire: Together We Naan is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "181571",
+      "asset_id": "bb8d0",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/063-181571--bb8d0.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Frito Lay."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Cheetos: Thingertips of Cheetos is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191825",
+      "asset_id": "1007160d6e",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/064-191825--1007160d6e.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for KFC."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: KFC: Finger Lickin' Fourth is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191687",
+      "asset_id": "2125166368",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/065-191687--2125166368.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Burger king."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Burger King: Love or Whopper is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191424",
+      "asset_id": "0639422983",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/066-191424--0639422983.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Beyond Meat."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Beyond Meat: Cropaganda is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191385",
+      "asset_id": "1537123f1d",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/067-191385--1537123f1d.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Los Altos Food."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Los Altos: Juntos Podemos is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191102",
+      "asset_id": "200237a99d",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/068-191102--200237a99d.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for BUILT."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: BUILT Puffs: BUILT Puff Sour 30 Second Digital Ad is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188842",
+      "asset_id": "1519484dfb",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/070-188842--1519484dfb.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for B&G Foods."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ortega: Fiesta Aisle is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188843",
+      "asset_id": "152048385d",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/071-188843--152048385d.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for B&G Foods."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ortega: Tailgate is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "188844",
+      "asset_id": "1521525280",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/072-188844--1521525280.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for B&G Foods."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ortega: Taco Thursday is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "186938",
+      "asset_id": "065408ca98",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/073-186938--065408ca98.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for glad."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: glad: Don't Get Mad. Get Glad is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185635",
+      "asset_id": "0535058c0f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/074-185635--0535058c0f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Stanley Steemer."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Stanley Steemer: Meet the Steemer is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185636",
+      "asset_id": "053444cad4",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/075-185636--053444cad4.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Stanley Steemer."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Stanley Steemer: The Steemer Cleans Floors is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185637",
+      "asset_id": "053442702a",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/076-185637--053442702a.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Stanley Steemer."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Stanley Steemer: The Steemer Cleans Air Ducts is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190519",
+      "asset_id": "0125318e59",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/077-190519--0125318e59.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for PurposeBuilt Brands."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Weiman Surface Cleaner: Stainless Steel is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190520",
+      "asset_id": "01274682c6",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/078-190520--01274682c6.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for PurposeBuilt Brands."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Weiman Surface Cleaner: Cooktop is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "190521",
+      "asset_id": "012842238f",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/079-190521--012842238f.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for PurposeBuilt Brands."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Weiman Surface Cleaner: Granite is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189478",
+      "asset_id": "074843e91c",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/080-189478--074843e91c.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Ollie."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ollie: Feed the Obsession is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189479",
+      "asset_id": "074725bb0a",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/081-189479--074725bb0a.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Ollie."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ollie: Feed the Obsession - Healthy Boys is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189480",
+      "asset_id": "0746402150",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/082-189480--0746402150.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Ollie."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ollie: Feed the Obsession - First Love is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "189481",
+      "asset_id": "07470186fc",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/083-189481--07470186fc.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Ollie."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Ollie: Feed the Obsession - Mom Mode is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185752",
+      "asset_id": "03312441e6",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/084-185752--03312441e6.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Adidas / DICK’S Sporting Goods."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Adidas / DICK’S Sporting Goods: New Year, New You Trinity Rodman is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185753",
+      "asset_id": "03311614cf",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/085-185753--03311614cf.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Adidas / DICK’S Sporting Goods."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Adidas / DICK’S Sporting Goods: New Year, New You Jeremiah Smith is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "185754",
+      "asset_id": "033121d391",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/086-185754--033121d391.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Adidas / DICK’S Sporting Goods."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Adidas / DICK’S Sporting Goods: New Year, New You Anthony Edwards is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "173108",
+      "asset_id": "f8f9c",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/087-173108--f8f9c.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Nike."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Nike: So Win is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191573",
+      "asset_id": "0642156b3e",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/088-191573--0642156b3e.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Nike."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Nike: New York State of Mind is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "best_ads",
+      "source_record_id": "191375",
+      "asset_id": "0217046270",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/best-ads-complete-review-2025-2026/contact-sheets/individual/089-191375--0217046270.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Nike."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Nike Football: Rip The Script is a professionally produced branded campaign centered on apparel or sportswear product."
+    }
+  ]
+}

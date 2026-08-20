@@ -11,6 +11,41 @@ const statePath = path.join(webRoot, "data", "creative-library-state.json");
 const backupRoot = path.join(webRoot, "data", "backups");
 const taxonomyPath = path.join(collectRoot, "adgenie-brand-taxonomy-v1.json");
 
+const industryZhFallbacks = {
+  "Apparel & Footwear": "服装与鞋履",
+  "Beauty & Personal Care": "美妆与个人护理",
+  "Consumer Electronics": "消费电子",
+  "Education & Digital Services": "教育与数字服务",
+  "Financial Services": "金融服务",
+  "Food & Beverage": "食品与饮料",
+  "Health & Pharmaceutical": "健康与医药",
+  "Home & Living/Household": "家居与家庭用品",
+  Other: "其他",
+  "Pet Supplies": "宠物用品",
+  "Retail Services": "零售服务",
+  "Sports & Outdoor": "运动与户外",
+};
+
+const categoryZhFallbacks = {
+  "Alcoholic Beverages": "酒精饮料",
+  "Automotive & Vehicles": "汽车与交通工具",
+  "Delivery Services": "配送服务",
+  "Digital Services & Technology": "数字服务与科技",
+  "Education Services": "教育服务",
+  "Financial Services": "金融服务",
+  "Gambling & Lottery": "博彩与彩票",
+  "Healthcare Services": "医疗健康服务",
+  "Insurance Services": "保险服务",
+  "Media & Entertainment": "媒体与娱乐",
+  "Office & Writing Supplies": "办公与书写用品",
+  "Personal Care": "个人护理",
+  "Professional Services": "专业服务",
+  "Public Interest Campaign": "公益传播",
+  "Retail Services": "零售服务",
+  "Sports & Recreation": "体育与休闲",
+  "Travel & Tourism": "旅游与目的地",
+};
+
 function parseArgs(argv) {
   const result = { files: [], manifests: [], dryRun: false, selfTest: false };
   for (let index = 0; index < argv.length; index += 1) {
@@ -43,6 +78,16 @@ function recordsFrom(payload) {
 
 function unique(values) {
   return [...new Set((values || []).filter(Boolean))];
+}
+
+function candidateDefaults(candidate, preReview) {
+  const visualProductCandidates = preReview?.product_category_candidates || [];
+  const visualProductCategory = visualProductCandidates[0]?.category || null;
+  return {
+    industry: preReview?.industry_candidate || candidate.industry || null,
+    productCategory: visualProductCategory || candidate.product_category || null,
+    visualProductCandidates,
+  };
 }
 
 function sourceKey(record, asset) {
@@ -134,10 +179,32 @@ function eligibilitySelfTest() {
       expected: null,
     },
   ].map((item) => ({ ...item, passed: item.actual === item.expected }));
+  const defaults = candidateDefaults(
+    { industry: "Other", product_category: "Source Category" },
+    {
+      industry_candidate: "Food & Beverage",
+      product_category_candidates: [{ category: "Food Products" }],
+    },
+  );
+  const candidateDefaultMapping = {
+    case: "visual_candidates_become_pending_review_defaults",
+    actual: defaults,
+    expected: {
+      industry: "Food & Beverage",
+      productCategory: "Food Products",
+      visualProductCandidates: [{ category: "Food Products" }],
+    },
+    passed: JSON.stringify(defaults) === JSON.stringify({
+      industry: "Food & Beverage",
+      productCategory: "Food Products",
+      visualProductCandidates: [{ category: "Food Products" }],
+    }),
+  };
   return {
-    ok: cases.every((item) => item.passed) && publishDateMapping.every((item) => item.passed),
+    ok: cases.every((item) => item.passed) && publishDateMapping.every((item) => item.passed) && candidateDefaultMapping.passed,
     red_to_green: cases,
     publish_date_mapping: publishDateMapping,
+    candidate_default_mapping: candidateDefaultMapping,
   };
 }
 
@@ -179,8 +246,8 @@ function reviewItem(record, asset, manifest, importedFrom) {
   const height = manifest?.height ?? asset.height ?? null;
   const candidate = record.classification_candidate || {};
   const preReview = asset.ai_visual_pre_review || record.ai_visual_pre_review || null;
-  const visualProductCandidates = preReview?.product_category_candidates || [];
-  const visualProductCategory = visualProductCandidates[0]?.category || null;
+  const defaults = candidateDefaults(candidate, preReview);
+  const visualProductCandidates = defaults.visualProductCandidates;
   const genreDefaults = genreDefaultsFromCandidates(preReview?.genre_candidates || []);
   const publishDate = reviewPublishDate(record);
   const pendingMetadata = !publishDate || !durationSeconds;
@@ -204,10 +271,10 @@ function reviewItem(record, asset, manifest, importedFrom) {
     brand: record.primary_brand || "",
     primary_brand: record.primary_brand || "",
     brands: record.brands || [],
-    industry: candidate.industry || null,
-    industry_candidate: preReview?.industry_candidate || candidate.industry || null,
-    product_category: candidate.product_category || null,
-    product_category_candidate: visualProductCategory || candidate.product_category || null,
+    industry: defaults.industry,
+    industry_candidate: defaults.industry,
+    product_category: defaults.productCategory,
+    product_category_candidate: defaults.productCategory,
     product_category_candidates: visualProductCandidates,
     classification_candidate: candidate,
     genres: genreDefaults.genres,
@@ -328,10 +395,27 @@ for (const file of args.files) {
 
 const currentIndustries = new Set((state.industries || []).map((item) => item.industry));
 const currentCategories = new Set((state.categories || []).map((item) => `${item.industry}::${item.category}`));
-const industriesToAdd = (taxonomy.industries || []).filter((item) => !currentIndustries.has(item.industry));
-const categoriesToAdd = (taxonomy.industries || []).flatMap((industry) =>
+const taxonomyIndustries = taxonomy.industries || [];
+const importedIndustries = unique(added.map((item) => item.industry)).map((industry) => ({
+  industry,
+  zh: industryZhFallbacks[industry] || "待补中文",
+}));
+const industriesToAdd = [...taxonomyIndustries, ...importedIndustries]
+  .filter((item, index, items) => items.findIndex((candidate) => candidate.industry === item.industry) === index)
+  .filter((item) => !currentIndustries.has(item.industry));
+const taxonomyCategories = taxonomyIndustries.flatMap((industry) =>
   (industry.categories || []).map((category) => ({ industry: industry.industry, ...category }))
-).filter((item) => !currentCategories.has(`${item.industry}::${item.category}`));
+);
+const importedCategories = added
+  .filter((item) => item.industry && item.product_category)
+  .map((item) => ({
+    industry: item.industry,
+    category: item.product_category,
+    zh: categoryZhFallbacks[item.product_category] || item.product_category,
+  }));
+const categoriesToAdd = [...taxonomyCategories, ...importedCategories]
+  .filter((item, index, items) => items.findIndex((candidate) => candidate.industry === item.industry && candidate.category === item.category) === index)
+  .filter((item) => !currentCategories.has(`${item.industry}::${item.category}`));
 let backup = null;
 
 if (!args.dryRun && added.length) {

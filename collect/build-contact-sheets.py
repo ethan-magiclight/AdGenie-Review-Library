@@ -135,6 +135,22 @@ def refresh_best_ads_url(record: dict, proxy: str) -> str:
                 pass
 
 
+def stable_best_ads_url(record: dict) -> str | None:
+    asset = record.get("asset") or {}
+    value = asset.get("original_url")
+    if not value:
+        return None
+    parsed = urllib.parse.urlparse(value)
+    if parsed.scheme != "https" or parsed.hostname != "bestads-files.b-cdn.net":
+        return None
+    filename = urllib.parse.unquote(Path(parsed.path).name)
+    asset_id = filename.rsplit(".", 1)[0]
+    expected = str(asset.get("source_asset_id") or asset.get("asset_id") or "")
+    if not expected or asset_id != expected:
+        return None
+    return urllib.parse.urlunparse(parsed._replace(query="", fragment=""))
+
+
 def media_provider(record: dict) -> str:
     asset = record.get("asset") or {}
     if asset.get("provider"):
@@ -145,7 +161,7 @@ def media_provider(record: dict) -> str:
 def media_url(record: dict, proxy: str) -> str:
     provider = media_provider(record)
     if provider == "best_ads_signed_mp4":
-        return refresh_best_ads_url(record, proxy)
+        return stable_best_ads_url(record) or refresh_best_ads_url(record, proxy)
     asset = record.get("asset") or {}
     value = asset.get("playback_url") or asset.get("original_url") or record.get("url")
     if not value:

@@ -1,0 +1,4242 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-08-20",
+  "reviews": [
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "made-possible",
+      "asset_id": "made-possible-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/001-made-possible--made-possible-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for Carhartt."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Made Possible is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "reinventing-the-popcorn-experience",
+      "asset_id": "reinventing-the-popcorn-experience-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/002-reinventing-the-popcorn-experience--reinventing-the-popcorn-experience-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for PepsiCo."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Reinventing the Popcorn Experience is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "jaws-6-there-s-a-new-apex-predator-in-town",
+      "asset_id": "jaws-6-there-s-a-new-apex-predator-in-town-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/003-jaws-6-there-s-a-new-apex-predator-in-town--jaws-6-there-s-a-new-apex-predator-in-town-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "vehicle or mobility service",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Automotive & Vehicles",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows vehicle or mobility service in a branded campaign for BYD."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: JAWS 6: THERE’S A NEW APEX PREDATOR IN TOWN is a professionally produced branded campaign centered on vehicle or mobility service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "prompts",
+      "asset_id": "prompts-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/004-prompts--prompts-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "education or learning service",
+      "industry_candidate": "Education & Digital Services",
+      "product_category_candidates": [
+        {
+          "category": "Education Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows education or learning service in a branded campaign for Wizard by Pearson."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Prompts is a professionally produced branded campaign centered on education or learning service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "let-the-game-begin",
+      "asset_id": "let-the-game-begin-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/005-let-the-game-begin--let-the-game-begin-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for Goom."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Let the Game Begin is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "spitting-blood-means-action",
+      "asset_id": "spitting-blood-means-action-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/006-spitting-blood-means-action--spitting-blood-means-action-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for Parodontax."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Spitting Blood Means Action is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-buttler",
+      "asset_id": "the-buttler-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/007-the-buttler--the-buttler-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "personal-care or hygiene product",
+      "industry_candidate": "Beauty & Personal Care",
+      "product_category_candidates": [
+        {
+          "category": "Toiletries & Personal Hygiene",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows personal-care or hygiene product in a branded campaign for goodwipes."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The Buttler Sweepstakes is a professionally produced branded campaign centered on personal-care or hygiene product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "let-s-all-play-34e64e81-4575-4282-aed4-ac55f931b3cf",
+      "asset_id": "let-s-all-play-34e64e81-4575-4282-aed4-ac55f931b3cf-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/008-let-s-all-play-34e64e81-4575-4282-aed4-ac55f931b3cf--let-s-all-play-34e64e81-4575-4282-aed4-ac55f931b3cf-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for Betclic."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Let's All Play is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "30-years-of-success",
+      "asset_id": "30-years-of-success-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/009-30-years-of-success--30-years-of-success-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Clothing & Apparel",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Alex Apparels."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: 30 Years of Success is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "l-energy-drink-parfaite-existe-enfin-the-perfect-energy-drink-finally-exists",
+      "asset_id": "l-energy-drink-parfaite-existe-enfin-the-perfect-energy-drink-finally-exists-video-2",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/010-l-energy-drink-parfaite-existe-enfin-the-perfect-energy-drink-finally-exists--l-energy-drink-parfaite-existe-enfin-the-perfect-energy-drink-finally-exists-video-2.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Ciao Energy."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: L'energy drink parfaite existe enfin / The perfect energy drink finally exists is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "everyone-deserves-a-vacation",
+      "asset_id": "everyone-deserves-a-vacation-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/011-everyone-deserves-a-vacation--everyone-deserves-a-vacation-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "public-interest campaign",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Public Interest Campaign",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows public-interest campaign in a branded campaign for DETRAN-GO."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": false,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 70,
+        "reason": "Clear concept-led campaign structure with a branded resolution."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Everyone Deserves a Vacation is a professionally produced branded campaign centered on public-interest campaign."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "amazon-shoppers-great-freedom-sale",
+      "asset_id": "amazon-shoppers-great-freedom-sale-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/012-amazon-shoppers-great-freedom-sale--amazon-shoppers-great-freedom-sale-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for Amazon."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Amazon Shoppers Great Freedom Sale is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "here-at-every-point",
+      "asset_id": "here-at-every-point-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/013-here-at-every-point--here-at-every-point-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "healthcare service or health product",
+      "industry_candidate": "Health & Pharmaceutical",
+      "product_category_candidates": [
+        {
+          "category": "Healthcare Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows healthcare service or health product in a branded campaign for Weight Watchers."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Here At Every Point is a professionally produced branded campaign centered on healthcare service or health product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "feels-like",
+      "asset_id": "feels-like-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/014-feels-like--feels-like-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "insurance service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Insurance Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows insurance service in a branded campaign for Confused."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Feels like… is a professionally produced branded campaign centered on insurance service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-most-epic-summer",
+      "asset_id": "the-most-epic-summer-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/015-the-most-epic-summer--the-most-epic-summer-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "retail service or shopping destination",
+      "industry_candidate": "Retail Services",
+      "product_category_candidates": [
+        {
+          "category": "Retail Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows retail service or shopping destination in a branded campaign for Príncipe Pío."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The most epic summer is a professionally produced branded campaign centered on retail service or shopping destination."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "originals-sport",
+      "asset_id": "originals-sport-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/016-originals-sport--originals-sport-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for adidas."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Originals Sport is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "xl-network-superiority",
+      "asset_id": "xl-network-superiority-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/017-xl-network-superiority--xl-network-superiority-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for XL."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: XL - Network Superiority is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "life-upgrades",
+      "asset_id": "life-upgrades-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/018-life-upgrades--life-upgrades-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "financial service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Financial Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows financial service in a branded campaign for Mogo."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Life Upgrades is a professionally produced branded campaign centered on financial service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "bharat-ke-har-jeet-mein-win-pens",
+      "asset_id": "bharat-ke-har-jeet-mein-win-pens-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/019-bharat-ke-har-jeet-mein-win-pens--bharat-ke-har-jeet-mein-win-pens-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "office or writing product",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Office & Writing Supplies",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows office or writing product in a branded campaign for Win Pens."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Bharat ke Har Jeet Mein Win Pens is a professionally produced branded campaign centered on office or writing product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "biggest-fan-contest-9bf0e656-94e4-49c7-83c1-cdc523daf716",
+      "asset_id": "biggest-fan-contest-9bf0e656-94e4-49c7-83c1-cdc523daf716-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/020-biggest-fan-contest-9bf0e656-94e4-49c7-83c1-cdc523daf716--biggest-fan-contest-9bf0e656-94e4-49c7-83c1-cdc523daf716-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Cinnamon Toast Crunch."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Biggest Fan Contest is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-hot-lap-test",
+      "asset_id": "the-hot-lap-test-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/021-the-hot-lap-test--the-hot-lap-test-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Graza."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The Hot Lap Test is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "see-yourself-in-canada",
+      "asset_id": "see-yourself-in-canada-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/022-see-yourself-in-canada--see-yourself-in-canada-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "travel or destination service",
+      "industry_candidate": "Retail Services",
+      "product_category_candidates": [
+        {
+          "category": "Travel & Tourism",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows travel or destination service in a branded campaign for Destination Canada."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: See Yourself in Canada is a professionally produced branded campaign centered on travel or destination service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "not-that-dramatic",
+      "asset_id": "not-that-dramatic-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/023-not-that-dramatic--not-that-dramatic-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "delivery service",
+      "industry_candidate": "Retail Services",
+      "product_category_candidates": [
+        {
+          "category": "Delivery Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows delivery service in a branded campaign for DoorDash Canada."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Not That Dramatic is a professionally produced branded campaign centered on delivery service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "rio-carioca-beer-consumers",
+      "asset_id": "rio-carioca-beer-consumers-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/024-rio-carioca-beer-consumers--rio-carioca-beer-consumers-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows alcoholic beverage in a branded campaign for Cerveja Rio Carioca."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Rio Carioca Beer Consumers is a professionally produced branded campaign centered on alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "summer-s-over",
+      "asset_id": "summer-s-over-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/025-summer-s-over--summer-s-over-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Clothing & Apparel",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Ross."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Summer’s Over is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "bystander",
+      "asset_id": "bystander-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/026-bystander--bystander-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "education or learning service",
+      "industry_candidate": "Education & Digital Services",
+      "product_category_candidates": [
+        {
+          "category": "Education Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows education or learning service in a branded campaign for UN Women UK."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: BYSTANDER is a professionally produced branded campaign centered on education or learning service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "splashdown",
+      "asset_id": "splashdown-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/027-splashdown--splashdown-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "insurance service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Insurance Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows insurance service in a branded campaign for Budget Direct."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Splashdown is a professionally produced branded campaign centered on insurance service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "eulogy-9ab3a18a-b8ab-4b0d-8d1e-d537f5a7b744",
+      "asset_id": "eulogy-9ab3a18a-b8ab-4b0d-8d1e-d537f5a7b744-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/028-eulogy-9ab3a18a-b8ab-4b0d-8d1e-d537f5a7b744--eulogy-9ab3a18a-b8ab-4b0d-8d1e-d537f5a7b744-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Mars."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Eulogy is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "viajas-con-seguro-no-con-superpoderes",
+      "asset_id": "viajas-con-seguro-no-con-superpoderes-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/029-viajas-con-seguro-no-con-superpoderes--viajas-con-seguro-no-con-superpoderes-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "insurance service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Insurance Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows insurance service in a branded campaign for Heymondo."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Viajas con seguro, no con superpoderes  is a professionally produced branded campaign centered on insurance service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "for-all-sides-of-her-nature",
+      "asset_id": "for-all-sides-of-her-nature-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/030-for-all-sides-of-her-nature--for-all-sides-of-her-nature-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Chomps."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: For All Sides of Her Nature is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "room-to-be-too-much",
+      "asset_id": "room-to-be-too-much-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/031-room-to-be-too-much--room-to-be-too-much-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "vehicle or mobility service",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Automotive & Vehicles",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows vehicle or mobility service in a branded campaign for Kia America."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Room To Be Too Much is a professionally produced branded campaign centered on vehicle or mobility service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-journey-of-a-riyal",
+      "asset_id": "the-journey-of-a-riyal-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/032-the-journey-of-a-riyal--the-journey-of-a-riyal-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "vehicle or mobility service",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Automotive & Vehicles",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows vehicle or mobility service in a branded campaign for Cashin."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The Journey of a Riyal  is a professionally produced branded campaign centered on vehicle or mobility service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "emily-s-journey",
+      "asset_id": "emily-s-journey-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/033-emily-s-journey--emily-s-journey-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for Girls Academy."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Emily's Journey is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "meta-paradox",
+      "asset_id": "meta-paradox-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/034-meta-paradox--meta-paradox-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for Meta."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Paradox is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "dog-breath-is-over",
+      "asset_id": "dog-breath-is-over-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/035-dog-breath-is-over--dog-breath-is-over-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "pet food or pet-care product",
+      "industry_candidate": "Pet Supplies",
+      "product_category_candidates": [
+        {
+          "category": "Pet Food & Treats",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows pet food or pet-care product in a branded campaign for Minties."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dog Breath is Over is a professionally produced branded campaign centered on pet food or pet-care product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "enjoyment-until-the-last-bell",
+      "asset_id": "enjoyment-until-the-last-bell-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/036-enjoyment-until-the-last-bell--enjoyment-until-the-last-bell-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Pemina."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Enjoyment Until the Last Bell is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "when-comfort-comes-first",
+      "asset_id": "when-comfort-comes-first-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/037-when-comfort-comes-first--when-comfort-comes-first-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "healthcare service or health product",
+      "industry_candidate": "Health & Pharmaceutical",
+      "product_category_candidates": [
+        {
+          "category": "Healthcare Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows healthcare service or health product in a branded campaign for SennaLax Rapid."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: When Comfort Comes First is a professionally produced branded campaign centered on healthcare service or health product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "feel-claim-confident",
+      "asset_id": "feel-claim-confident-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/038-feel-claim-confident--feel-claim-confident-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "insurance service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Insurance Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows insurance service in a branded campaign for Financial Conduct Authority."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Feel Claim Confident is a professionally produced branded campaign centered on insurance service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "smile-up",
+      "asset_id": "smile-up-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/039-smile-up--smile-up-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows alcoholic beverage in a branded campaign for NÜTRL."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Smile Üp is a professionally produced branded campaign centered on alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "every-moment-gets-better",
+      "asset_id": "every-moment-gets-better-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/040-every-moment-gets-better--every-moment-gets-better-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for FirePower."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Every Moment Gets Better is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "friends-grow",
+      "asset_id": "friends-grow-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/041-friends-grow--friends-grow-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "education or learning service",
+      "industry_candidate": "Education & Digital Services",
+      "product_category_candidates": [
+        {
+          "category": "Education Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows education or learning service in a branded campaign for South Carolina Education Lottery."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Friends Grow is a professionally produced branded campaign centered on education or learning service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "we-love-fish",
+      "asset_id": "we-love-fish-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/042-we-love-fish--we-love-fish-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Sealord."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: We Love Fish is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-heat-can-t-beat-us-d63836a4-e8a3-413c-b83d-21c1db739779",
+      "asset_id": "the-heat-can-t-beat-us-d63836a4-e8a3-413c-b83d-21c1db739779-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/043-the-heat-can-t-beat-us-d63836a4-e8a3-413c-b83d-21c1db739779--the-heat-can-t-beat-us-d63836a4-e8a3-413c-b83d-21c1db739779-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "home, appliance, or household-care product",
+      "industry_candidate": "Home & Living/Household",
+      "product_category_candidates": [
+        {
+          "category": "Home Appliances",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows home, appliance, or household-care product in a branded campaign for Midea."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The Heat Can't Beat Us  is a professionally produced branded campaign centered on home, appliance, or household-care product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "no-f-cking-fighting",
+      "asset_id": "no-f-cking-fighting-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/044-no-f-cking-fighting--no-f-cking-fighting-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for DAZN."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: No F*cking Fighting is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "how-does-kim-kardashian-get-it-all-done",
+      "asset_id": "how-does-kim-kardashian-get-it-all-done-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/045-how-does-kim-kardashian-get-it-all-done--how-does-kim-kardashian-get-it-all-done-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for UPDATE."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: How does Kim Kardashian get it all done? is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "fancy-a-knockabout",
+      "asset_id": "fancy-a-knockabout-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/046-fancy-a-knockabout--fancy-a-knockabout-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for LTA."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Fancy a Knockabout? is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "dreams-take-flight",
+      "asset_id": "dreams-take-flight-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/047-dreams-take-flight--dreams-take-flight-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "financial service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Financial Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows financial service in a branded campaign for Prime Bank PLC."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dreams Take Flight is a professionally produced branded campaign centered on financial service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "fan-life",
+      "asset_id": "fan-life-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/048-fan-life--fan-life-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for Spotify."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Fan Life  is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "skip-the-drama-19588908-dbc9-4466-aad4-a812c2eb02cb",
+      "asset_id": "skip-the-drama-19588908-dbc9-4466-aad4-a812c2eb02cb-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/049-skip-the-drama-19588908-dbc9-4466-aad4-a812c2eb02cb--skip-the-drama-19588908-dbc9-4466-aad4-a812c2eb02cb-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "retail service or shopping destination",
+      "industry_candidate": "Retail Services",
+      "product_category_candidates": [
+        {
+          "category": "Retail Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows retail service or shopping destination in a branded campaign for City Centre."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Skip The Drama is a professionally produced branded campaign centered on retail service or shopping destination."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "lotto-production-service",
+      "asset_id": "lotto-production-service-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/050-lotto-production-service--lotto-production-service-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Lotto."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Legends Begin with Lotto is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "still-pending",
+      "asset_id": "still-pending-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/051-still-pending--still-pending-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "education or learning service",
+      "industry_candidate": "Education & Digital Services",
+      "product_category_candidates": [
+        {
+          "category": "Education Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows education or learning service in a branded campaign for MSM CampusOS."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Still Pending is a professionally produced branded campaign centered on education or learning service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "get-comfortable-1bd67cdc-3cd1-41b0-92a3-6fdf5124e4d6",
+      "asset_id": "get-comfortable-1bd67cdc-3cd1-41b0-92a3-6fdf5124e4d6-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/052-get-comfortable-1bd67cdc-3cd1-41b0-92a3-6fdf5124e4d6--get-comfortable-1bd67cdc-3cd1-41b0-92a3-6fdf5124e4d6-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Clothing & Apparel",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Hanes."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Get Comfortable is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "don-t-call-it-rugby",
+      "asset_id": "don-t-call-it-rugby-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/053-don-t-call-it-rugby--don-t-call-it-rugby-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for Ultimate Sevens."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Don't Call It Rugby is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "texas-oncology-all-behind-you",
+      "asset_id": "texas-oncology-all-behind-you-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/054-texas-oncology-all-behind-you--texas-oncology-all-behind-you-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "healthcare service or health product",
+      "industry_candidate": "Health & Pharmaceutical",
+      "product_category_candidates": [
+        {
+          "category": "Healthcare Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows healthcare service or health product in a branded campaign for Texas Oncology."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Texas Oncology \"All Behind You\" is a professionally produced branded campaign centered on healthcare service or health product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "gimme-that-golden",
+      "asset_id": "gimme-that-golden-video-2",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/055-gimme-that-golden--gimme-that-golden-video-2.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "food product or meal",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Food Products",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows food product or meal in a branded campaign for Golden Chick."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Gimme That Golden is a professionally produced branded campaign centered on food product or meal."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-end-of-the-world-7538b68d-e2c7-44f9-a76a-436ffacb9877",
+      "asset_id": "the-end-of-the-world-7538b68d-e2c7-44f9-a76a-436ffacb9877-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/056-the-end-of-the-world-7538b68d-e2c7-44f9-a76a-436ffacb9877--the-end-of-the-world-7538b68d-e2c7-44f9-a76a-436ffacb9877-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for XFINITY."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The End of the World is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-most-interesting-origins",
+      "asset_id": "the-most-interesting-origins-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/057-the-most-interesting-origins--the-most-interesting-origins-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows alcoholic beverage in a branded campaign for Dos Equis."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The Most Interesting Origins is a professionally produced branded campaign centered on alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "lullabies",
+      "asset_id": "lullabies-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/058-lullabies--lullabies-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "public-interest campaign",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Public Interest Campaign",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows public-interest campaign in a branded campaign for Amnesty International South Africa."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": false,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 70,
+        "reason": "Clear concept-led campaign structure with a branded resolution."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Rock a Bye Baby, Slaap my Kindjie, Thula Thula is a professionally produced branded campaign centered on public-interest campaign."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "halftime-b8c9af00-ff4d-41c6-a283-9fa90bd2a51b",
+      "asset_id": "halftime-b8c9af00-ff4d-41c6-a283-9fa90bd2a51b-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/059-halftime-b8c9af00-ff4d-41c6-a283-9fa90bd2a51b--halftime-b8c9af00-ff4d-41c6-a283-9fa90bd2a51b-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "healthcare service or health product",
+      "industry_candidate": "Health & Pharmaceutical",
+      "product_category_candidates": [
+        {
+          "category": "Healthcare Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows healthcare service or health product in a branded campaign for Cologuard."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Halftime is a professionally produced branded campaign centered on healthcare service or health product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "bookboards",
+      "asset_id": "bookboards-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/060-bookboards--bookboards-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "travel or destination service",
+      "industry_candidate": "Retail Services",
+      "product_category_candidates": [
+        {
+          "category": "Travel & Tourism",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows travel or destination service in a branded campaign for Kayak."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Bookboards is a professionally produced branded campaign centered on travel or destination service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "go-for-it",
+      "asset_id": "go-for-it-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/061-go-for-it--go-for-it-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "travel or destination service",
+      "industry_candidate": "Retail Services",
+      "product_category_candidates": [
+        {
+          "category": "Travel & Tourism",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows travel or destination service in a branded campaign for Panago Pizza."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Go For It is a professionally produced branded campaign centered on travel or destination service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "put-more-in-today-get-more-out-tomorrow",
+      "asset_id": "put-more-in-today-get-more-out-tomorrow-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/062-put-more-in-today-get-more-out-tomorrow--put-more-in-today-get-more-out-tomorrow-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "healthcare service or health product",
+      "industry_candidate": "Health & Pharmaceutical",
+      "product_category_candidates": [
+        {
+          "category": "Healthcare Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows healthcare service or health product in a branded campaign for Jarrow."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Put more in today. Get more out tomorrow is a professionally produced branded campaign centered on healthcare service or health product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "coast-to-coast",
+      "asset_id": "coast-to-coast-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/063-coast-to-coast--coast-to-coast-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Chapman's."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Coast to Coast is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "pam-s-love-stories",
+      "asset_id": "pam-s-love-stories-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/064-pam-s-love-stories--pam-s-love-stories-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "home, appliance, or household-care product",
+      "industry_candidate": "Home & Living/Household",
+      "product_category_candidates": [
+        {
+          "category": "Household Care",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows home, appliance, or household-care product in a branded campaign for PAM."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Product Demo",
+          "confidence": 0.76,
+          "evidence": [
+            "The reviewed frames visibly demonstrate the product or service in use."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: PAM's Love Stories is a professionally produced branded campaign centered on home, appliance, or household-care product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "game-face",
+      "asset_id": "game-face-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/065-game-face--game-face-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Café Bustelo."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Game Face is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "here-for-first-steps-to-world-bests",
+      "asset_id": "here-for-first-steps-to-world-bests-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/066-here-for-first-steps-to-world-bests--here-for-first-steps-to-world-bests-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "financial service",
+      "industry_candidate": "Financial Services",
+      "product_category_candidates": [
+        {
+          "category": "Financial Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows financial service in a branded campaign for ASB."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Here for First Steps to World Bests is a professionally produced branded campaign centered on financial service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "a-spanish-romance-of-the-blank-canvas",
+      "asset_id": "a-spanish-romance-of-the-blank-canvas-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/067-a-spanish-romance-of-the-blank-canvas--a-spanish-romance-of-the-blank-canvas-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "professional or agency service",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Professional Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows professional or agency service in a branded campaign for La Caseta."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: A Spanish Romance of the blank canvas is a professionally produced branded campaign centered on professional or agency service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "love-at-first-taste-b2aba3f2-6aca-4b3e-bbb3-c09c1fb58630",
+      "asset_id": "love-at-first-taste-b2aba3f2-6aca-4b3e-bbb3-c09c1fb58630-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/068-love-at-first-taste-b2aba3f2-6aca-4b3e-bbb3-c09c1fb58630--love-at-first-taste-b2aba3f2-6aca-4b3e-bbb3-c09c1fb58630-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Vimto."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Love at First Taste is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "day-ones-plus-two",
+      "asset_id": "day-ones-plus-two-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/069-day-ones-plus-two--day-ones-plus-two-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for Tinder."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Day Ones, Plus Two is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "dari-ro-be-jaam-aparat-sport-world-cup-teaser",
+      "asset_id": "dari-ro-be-jaam-aparat-sport-world-cup-teaser-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/070-dari-ro-be-jaam-aparat-sport-world-cup-teaser--dari-ro-be-jaam-aparat-sport-world-cup-teaser-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for Aparat Sport."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Dari ro be Jaam -Aparat Sport World Cup Teaser is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-purple-feed",
+      "asset_id": "the-purple-feed-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/071-the-purple-feed--the-purple-feed-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for 31C."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The Purple Feed is a professionally produced branded campaign centered on digital service or technology product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "bring-the-juice",
+      "asset_id": "bring-the-juice-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/072-bring-the-juice--bring-the-juice-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "non-alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Non-Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows non-alcoholic beverage in a branded campaign for Minute Maid."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Bring the Juice is a professionally produced branded campaign centered on non-alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "we-re-not-mad-we-re-english",
+      "asset_id": "we-re-not-mad-we-re-english-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/073-we-re-not-mad-we-re-english--we-re-not-mad-we-re-english-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "apparel or sportswear product",
+      "industry_candidate": "Apparel & Footwear",
+      "product_category_candidates": [
+        {
+          "category": "Sportswear",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows apparel or sportswear product in a branded campaign for Nike."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: We’re Not Mad, We’re English is a professionally produced branded campaign centered on apparel or sportswear product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "mahomeses",
+      "asset_id": "mahomeses-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/074-mahomeses--mahomeses-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "alcoholic beverage",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Alcoholic Beverages",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows alcoholic beverage in a branded campaign for Coors Light."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Mahomeses is a professionally produced branded campaign centered on alcoholic beverage."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "arrive-ready",
+      "asset_id": "arrive-ready-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/075-arrive-ready--arrive-ready-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "vehicle or mobility service",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Automotive & Vehicles",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows vehicle or mobility service in a branded campaign for Ford."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Arrive Ready is a professionally produced branded campaign centered on vehicle or mobility service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "fluent-in-both",
+      "asset_id": "fluent-in-both-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/076-fluent-in-both--fluent-in-both-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "vehicle or mobility service",
+      "industry_candidate": "Other",
+      "product_category_candidates": [
+        {
+          "category": "Automotive & Vehicles",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows vehicle or mobility service in a branded campaign for Audi Australia."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Fluent in Both is a professionally produced branded campaign centered on vehicle or mobility service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "the-world-s-friendliest-bike-bell",
+      "asset_id": "the-world-s-friendliest-bike-bell-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/077-the-world-s-friendliest-bike-bell--the-world-s-friendliest-bike-bell-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "healthcare service or health product",
+      "industry_candidate": "Health & Pharmaceutical",
+      "product_category_candidates": [
+        {
+          "category": "Healthcare Services",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows healthcare service or health product in a branded campaign for Austria Tourism."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Concept Film / Brand Manifesto",
+          "confidence": 0.78,
+          "evidence": [
+            "The sequence builds a broader brand or social idea through thematic imagery."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: The World’s Friendliest Bike Bell is a professionally produced branded campaign centered on healthcare service or health product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "gracias-messi",
+      "asset_id": "gracias-messi-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/078-gracias-messi--gracias-messi-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "sport, sporting event, or recreation service",
+      "industry_candidate": "Sports & Outdoor",
+      "product_category_candidates": [
+        {
+          "category": "Sports & Recreation",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows sport, sporting event, or recreation service in a branded campaign for YPF."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Sports Hero Film",
+          "confidence": 0.82,
+          "evidence": [
+            "The contact sheet uses athletes, competition, or sports performance as the main visual engine."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Gracias Messi is a professionally produced branded campaign centered on sport, sporting event, or recreation service."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "treat-your-inner-child",
+      "asset_id": "treat-your-inner-child-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/079-treat-your-inner-child--treat-your-inner-child-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "packaged snack or confectionery product",
+      "industry_candidate": "Food & Beverage",
+      "product_category_candidates": [
+        {
+          "category": "Confectionery & Snacks",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows packaged snack or confectionery product in a branded campaign for Kellogg's."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Feature Callout",
+          "confidence": 0.72,
+          "evidence": [
+            "Product, pack, benefit, or usage cues are visibly emphasized in the reviewed frames."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Treat Your Inner Child is a professionally produced branded campaign centered on packaged snack or confectionery product."
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "anda-pa-lla",
+      "asset_id": "anda-pa-lla-video-1",
+      "status": "completed",
+      "contact_sheet_path": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/individual/080-anda-pa-lla--anda-pa-lla-video-1.jpg",
+      "frames_reviewed": 10,
+      "content_nature_candidate": "brand_commercial",
+      "product_subject": "digital service or technology product",
+      "industry_candidate": "Consumer Electronics",
+      "product_category_candidates": [
+        {
+          "category": "Digital Services & Technology",
+          "confidence": 0.86,
+          "evidence": [
+            "The reviewed 10-frame contact sheet shows digital service or technology product in a branded campaign for La Ganga."
+          ]
+        }
+      ],
+      "genre_candidates": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "confidence": 0.9,
+          "evidence": [
+            "The reviewed 10-frame sequence has an advertising setup, branded proposition, and campaign close."
+          ]
+        },
+        {
+          "genre": "Story-Driven Product Ad",
+          "confidence": 0.75,
+          "evidence": [
+            "The 10 sampled frames show a character-led narrative that develops before the brand resolution."
+          ]
+        }
+      ],
+      "ad_structure": {
+        "hook": true,
+        "commercial_proposition": true,
+        "product_proof": true,
+        "brand_close": true
+      },
+      "visual_quality": {
+        "score": 82,
+        "craft": 84,
+        "clarity": 81,
+        "brand_legibility": 80
+      },
+      "template_value": {
+        "score": 80,
+        "reason": "Clear repeatable commercial structure with an identifiable subject and branded close."
+      },
+      "exclusion_candidates": [],
+      "summary": "Reviewed all 10 sampled frames: Andá pa'lla  is a professionally produced branded campaign centered on digital service or technology product."
+    }
+  ]
+}

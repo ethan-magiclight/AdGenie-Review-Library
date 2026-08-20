@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-20T11:23:01.111Z",
+  "source_site": "ads_of_the_world",
+  "inputs": {
+    "records": "collect/runs/aotw-target-100-review-2025-2026/visually-reviewed-records.json",
+    "checkpoint": "collect/runs/aotw-film-2025-2026/checkpoint.json",
+    "contact_sheets": "collect/runs/aotw-target-100-review-2025-2026/contact-sheets/manifest.json"
+  },
+  "discovery": {
+    "complete": true,
+    "candidates": 29680,
+    "completed_pages": 495,
+    "total_reported": 29702,
+    "last_page": 495,
+    "terminal_outcomes": 560,
+    "remaining_candidates": 29120,
+    "latest_outcomes": 560,
+    "outcome_attempt_events": 571,
+    "outcome_statuses": {
+      "skipped": 25,
+      "success": 535
+    },
+    "exclusion_reasons": {
+      "brand_missing": 10,
+      "campaign_year_out_of_scope": 10,
+      "student_campaign": 3,
+      "video_missing": 2
+    },
+    "failure_reasons": {},
+    "attempt_statuses": {
+      "failed": 10,
+      "skipped": 26,
+      "success": 535
+    },
+    "historical_failure_reasons": {
+      "CDP proxy /eval?target=6C47EDFFBD0D07DE1A33AE72098A793A returned 400": 1,
+      "Timed out waiting for page evidence: {\"page_title\":\"Market District: Discover Great Taste • Ads of the World™ | Part of The Clio Network\",\"description\":\"At Market District, we believe in the power of great taste. Carefully curated produce, chef-made meals, delicious events, local favorites, inspired by the best the culinary world has to offer, here for the tasteful and adventurous. So, browse away, and broaden your horizons. Let your taste buds evolve. Kindle your culinary passion and inspire others with whatever you cook up. From ": 1,
+      "Timed out waiting for page evidence: {\"page_title\":\"Prada Beauty: Never The Same, Always Myself featuring Zendaya • Ads of the World™ | Part of The Clio Network\",\"description\":\"Zendaya stars as the global ambassador for Prada Beauty in a new cinematic campaign for Prada Paradoxe, directed by Academy Award winner Barry Jenkins. Built around the tagline ‘Never the same, but always myself,’ the campaign celebrates women’s multidimensional identities and the idea that strength, vulnerability and complexity can coexist without being def": 1,
+      "Timed out waiting for page evidence: {\"ready\":false,\"blocked\":false,\"diagnostics\":{\"path_matches\":true,\"published\":false,\"brand\":true,\"campaign\":true,\"sentence\":true},\"page_title\":\"Nike: Mercurial Vapor • Ads of the World™ | Part of The Clio Network\",\"description\":\"Some players run past defenders; others make them disappear. The lightest Nike Mercurial Vapor ever celebrates a new generation of speed. Worn by Vinícius Júnior.\",\"published_sentence\":\"This professional campaign titled 'Mercurial Vapor' was published on June 23, 2026. I": 1,
+      "Timed out waiting for page evidence: {\"ready\":false,\"blocked\":false,\"diagnostics\":{\"path_matches\":true,\"published\":true,\"brand\":false,\"campaign\":true,\"sentence\":true},\"page_title\":\"Spacetoon Campaign • Ads of the World™ | Part of The Clio Network\",\"description\":\"We developed the animated visual theme and visual language for the Spacetoon concert across three Iraqi cities: Baghdad, Erbil, and Basra. The visual concept was built around the idea of traveling between islands aboard Luffy’s ship, carrying the crew along their journey. E": 1,
+      "Timed out waiting for page evidence: {\"ready\":false,\"blocked\":false,\"diagnostics\":{\"path_matches\":true,\"published\":true,\"brand\":true,\"campaign\":false,\"sentence\":true},\"page_title\":\"Disney: Once a Princess, Always a Princess: A Disney Short • Ads of the World™ | Part of The Clio Network\",\"description\":\"In celebration of World Princess Week, Disney launched \\\"Once a Princess, Always a Princess: A Disney Short,\\\" a four-minute film honoring timeless storytelling, physical craft, and the power of childhood imagination. Created together": 1,
+      "Timed out waiting for page evidence: {\"ready\":false,\"blocked\":false,\"page_title\":\"Coca-Cola: Taste Every Second • Ads of the World™ | Part of The Clio Network\",\"description\":\"Taste Every Second featuring Central Cee. Celebrating the passion, energy and unforgettable moments of the Premier League. \",\"published_sentence\":\"This professional campaign titled 'Taste Every Second' was published in United States in August, 2026. It was created for the brands: Coca-Cola and Premier League, . This Film medium campaign is related to the Drink": 1,
+      "Timed out waiting for page evidence: {\"ready\":false,\"blocked\":false,\"page_title\":\"Scribd: Connect the Docs • Ads of the World™ | Part of The Clio Network\",\"description\":\"New back-to-school campaign celebrates the joy of figuring things out, positioning Scribd as the place where information becomes understanding\",\"published_sentence\":\"This professional campaign titled 'Connect the Docs' was published in United States in August, 2026. It was created for the brand: Scribd, . This Digital, Film, and OOH Outdoor media campaign is relate": 1,
+      "Timed out waiting for page evidence: {}": 2
+    },
+    "historical_failures": 10,
+    "current_failures": 0,
+    "resolved_failures": 7,
+    "retries": 14
+  },
+  "coverage": {
+    "records": 80,
+    "review_items": 80,
+    "brand_complete": 80,
+    "brand_complete_rate": 1,
+    "detail_url_complete": 80,
+    "detail_url_complete_rate": 1,
+    "date_confirmed": 80,
+    "date_confirmed_rate": 1,
+    "date_unverified": 0,
+    "date_unverified_rate": 0,
+    "records_with_video": 80,
+    "records_with_video_rate": 1,
+    "records_with_auditable_video_status": 80,
+    "records_with_auditable_video_status_rate": 1,
+    "pending_category_review": 71,
+    "pending_category_review_rate": 0.8875
+  },
+  "media": {
+    "providers": {
+      "aotw_cdn": 80
+    },
+    "access_statuses": {
+      "available": 80
+    },
+    "contact_sheet_records": 80,
+    "contact_sheet_success": 80,
+    "contact_sheet_failure": 0,
+    "contact_sheet_success_rate": 1,
+    "temporary_video_residue": 0
+  },
+  "classification": {
+    "industries": {
+      "Apparel & Footwear": 4,
+      "Food & Beverage": 10,
+      "Home & Living/Household": 1,
+      "pending": 64,
+      "Pet Supplies": 1
+    },
+    "product_categories": {
+      "Food Products": 9,
+      "pending": 71
+    },
+    "candidate_statuses": {
+      "mapped_candidate": 9,
+      "pending_category_review": 71
+    }
+  },
+  "visual_pre_review": {
+    "completed": 80,
+    "failed": 0,
+    "coverage_rate": 1,
+    "content_natures": {
+      "brand_commercial": 80
+    },
+    "industry_candidates": {
+      "Apparel & Footwear": 6,
+      "Beauty & Personal Care": 2,
+      "Consumer Electronics": 9,
+      "Education & Digital Services": 4,
+      "Financial Services": 7,
+      "Food & Beverage": 20,
+      "Health & Pharmaceutical": 6,
+      "Home & Living/Household": 2,
+      "Other": 9,
+      "Pet Supplies": 1,
+      "Retail Services": 6,
+      "Sports & Outdoor": 8
+    },
+    "product_category_candidates": {
+      "Alcoholic Beverages": 4,
+      "Automotive & Vehicles": 5,
+      "Clothing & Apparel": 3,
+      "Confectionery & Snacks": 4,
+      "Delivery Services": 1,
+      "Digital Services & Technology": 9,
+      "Education Services": 4,
+      "Financial Services": 3,
+      "Food Products": 5,
+      "Healthcare Services": 6,
+      "Home Appliances": 1,
+      "Household Care": 1,
+      "Insurance Services": 4,
+      "Non-Alcoholic Beverages": 7,
+      "Office & Writing Supplies": 1,
+      "Pet Food & Treats": 1,
+      "Professional Services": 1,
+      "Public Interest Campaign": 2,
+      "Retail Services": 2,
+      "Sports & Recreation": 8,
+      "Sportswear": 3,
+      "Toiletries & Personal Hygiene": 2,
+      "Travel & Tourism": 3
+    },
+    "exclusion_candidates": {}
+  },
+  "deduplication": {
+    "duplicate_source_records": 0,
+    "duplicate_video_assets": 0,
+    "duplicate_discovery_candidates": 0,
+    "canonical_masters_assigned": 0,
+    "unique_canonical_masters": 0,
+    "shared_canonical_masters": 0,
+    "alternate_cut_links": 0,
+    "alternate_aspect_ratio_links": 0,
+    "pending_canonical_review_links": 0
+  }
+}
