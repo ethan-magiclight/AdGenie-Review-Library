@@ -19,6 +19,13 @@
 - 本轮未创建或操作浏览器标签，未执行第 4 次 discovery、详情/媒体探测或 push，也未绕过既定停止规则。
 - 这是同一阻塞条件的连续第 2 个 goal turn；目标仍未完成，等待用户授权 CDP/修复 GitHub 认证与网络，且仍需合法稳定媒体 resolver 才能恢复。
 
+### 续跑审计 #3 与正式阻塞结论（2026-08-20）
+
+- 审计前本地 HEAD=`46600ee`，分支、`ff1989b` 祖先关系、固定 origin 与干净 tracked worktree 均未改变。
+- `web-access` 前置检查第三次仍显示 Node 24、Chrome `:9222` 正常，但 CDP Proxy 持续等待 Chrome 远程调试授权；10 秒有界等待后终止进程，未创建或操作任何标签。
+- 本轮仍未执行第 4 次 discovery、详情采集、媒体探测或 push；没有新证据能解除 `DISCOVERY_TOTAL_MISMATCH`、`MEDIA_DELIVERY_BLOCKED` 或 `GITHUB_DELIVERY_BLOCKED`。
+- 同一外部阻塞已连续 3 个 goal turn 重复，且在用户授权 CDP、修复 GitHub 认证/TLS、提供合法稳定媒体 resolver 之前无法继续完成 10/10 媒体门、100 条入库、PR 与线上验收；达到正式 blocked 阈值。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
