@@ -12,3 +12,4 @@
 11. 续跑审计 #2（2026-08-20）：分支仍以 `ff1989b` 为祖先，HEAD=`81ab9c1`；CDP 依赖检查停在 Chrome 远程调试授权等待，未创建标签、未重试采集/媒体探测/push。媒体门与外部交付阻塞未改变。
 12. 续跑审计 #3（2026-08-20）：审计前 HEAD=`46600ee`、tracked worktree 干净；CDP 再次持续等待 Chrome 授权后被有界终止，未创建标签或发起任何第 4 次请求。同一外部条件已连续 3 个 goal turn 未改变，且合法稳定媒体 resolver 仍缺失，达到正式 blocked 阈值。
 13. 恢复审计 #1（2026-08-20）：goal 被恢复为 active；CDP 检查在终止等待时短暂输出 `proxy: ready`，但紧接着本地 `/targets` 立即 `ECONNREFUSED :3456`；补充的无中断检查连续等待 60 秒仍停在 Chrome 授权提示。未列出/创建标签或访问 GitHub，恢复后的阻塞计数从 1 开始，媒体门仍失败。
+14. 恢复审计 #2（2026-08-20）：审计前 HEAD=`600bbf8`、tracked worktree 干净；CDP 连续等待 30 秒仍停在授权提示，终止时才输出 ready，随后 `/targets` 再次立即 `ECONNREFUSED :3456`。未创建标签或发起外部请求，同一阻塞已连续 2 个恢复 turn。

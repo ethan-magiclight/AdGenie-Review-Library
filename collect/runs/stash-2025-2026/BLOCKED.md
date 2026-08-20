@@ -34,6 +34,13 @@
 - 因此本轮没有列出或创建浏览器标签，也没有访问 GitHub、STASH 或发起 push；媒体 resolver、发现缺口和远端交付均没有新的完成证据。
 - 这是恢复后的第 1 个同条件阻塞 turn；goal 保持 active，等待外部状态改变。
 
+### goal 恢复审计 #2（2026-08-20）
+
+- 审计前本地 HEAD=`600bbf8`，`ff1989b` 祖先关系与干净 tracked worktree 均未改变。
+- `web-access` 前置检查连续等待 30 秒仍停在 Chrome 远程调试授权提示；终止时才输出 `proxy: ready`，紧接着访问本地 `/targets` 再次立即返回 `ECONNREFUSED :3456`。
+- 本轮未能列出或创建标签，也没有访问 GitHub、STASH、Vercel 或执行 push；合法稳定媒体 resolver 仍不存在，三项主要阻塞没有解除证据。
+- 这是恢复后的第 2 个同条件阻塞 turn；goal 保持 active，若下一恢复 turn 仍相同且无法取得有意义进展，将达到重新标记 blocked 的阈值。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
