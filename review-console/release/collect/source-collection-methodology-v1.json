@@ -2,7 +2,7 @@
   "version": "v1",
   "updated_at": "2026-08-20",
   "title": "专业广告渠道采集台账",
-  "purpose": "记录 Best Ads 与 Ads of the World 的目标范围、已完成进度、质量门、媒体交付方式和续跑前置条件。后续扩大数据范围前必须先读取并更新本台账。",
+  "purpose": "记录 Best Ads、Ads of the World 与 STASH 的目标范围、已完成进度、质量门、媒体交付方式和续跑前置条件。后续扩大数据范围前必须先读取并更新本台账。",
   "shared_rules": {
     "years": [2025, 2026],
     "visual_review_frames": 10,
@@ -128,6 +128,72 @@
         "collect/runs/aotw-target-100-review-2025-2026/batch-report.json",
         "collect/runs/aotw-target-100-review-2025-2026/visually-reviewed-records.json",
         "collect/runs/source-expansion-2025-2026-linked.json"
+      ]
+    },
+    {
+      "id": "stash",
+      "name": "STASH",
+      "status": "media_delivery_blocked",
+      "status_label": "媒体稳定交付门未通过，已停止入库与扩量",
+      "objective": "从 STASH Advertising 的 2025/2026 Issue 中筛选真实品牌 TVC、Brand film 和 Product film，在稳定媒体、10 帧视觉预审与跨源去重全部通过后，使审核台达到 100 条可审核视频。",
+      "scope": {
+        "entry": "https://www.stashmedia.tv/watch/?category=3",
+        "discovery_playlist": "Advertising: All",
+        "playlists": ["Advertising: All", "Advertising: Comedy", "Advertising: Holiday", "Advertising: Lifestyle", "Advertising: Food & Beverage", "Advertising: Automotive"],
+        "issues": [170, 171, 172, 173, 174, 175, 176, 177, 178],
+        "years": [2025, 2026],
+        "target_reviewable_total": 100,
+        "completion_definition": "先有 10 条日期、稳定媒体、10 帧预审、去重、导入和侧栏播放全部通过的试采；之后才允许扩到恰好 100 条。"
+      },
+      "progress": {
+        "playlist_reported_videos": 686,
+        "playlist_enumerated_candidates": 664,
+        "reported_total_gap": 22,
+        "discovery_complete": false,
+        "issue_dates_verified": 9,
+        "stable_key_verified": true,
+        "detail_structure_verified": true,
+        "trial_target": 10,
+        "trial_media_verified": 0,
+        "reviewable_total": 0,
+        "imported": 0,
+        "media_delivery_gate_passed": false,
+        "blocker": "MEDIA_DELIVERY_BLOCKED"
+      },
+      "collection_plan": [
+        "只从 Advertising: All 完整发现列表读取含 fid、refnum、clipnum、pi 的候选，以 stash:{refnum}:{clipnum} 作为稳定来源键并用 checkpoint 保存终态。",
+        "详情页异步内容必须等到 STASH Issue/clip 与目标 refnum/clipnum 对齐后，才提取 Client、Agency、Director、Production/Animation、描述、原始类型和 Vimeo 数值 locator。",
+        "Issue 170–176 使用 All Issues 的月份事实；177/178 使用各自 Issue 页的 MAY 15/26 与 JULY 15/26，禁止使用通用 2021 OG 日期。",
+        "spec、无品牌、非 TVC/Brand film/Product film、Music video、Broadcast design、Game trailer、学生作品、纯短片、Behind the Scenes、无视频和年份越界进入带 reason 的 skipped 终态。",
+        "短效 Vimeo URL 只允许在内存中验证，不保存 signature；下载区 Subscription required 不操作、不绕过。",
+        "只有无 Cookie 环境可通过稳定 URL 或 /api/videos/:id/media resolver 获取的媒体才进入 10 帧预审；媒体门失败即停止入库和扩量。",
+        "媒体门通过后才能生成真实 10 帧 Contact Sheet、完成人工视觉候选、运行跨 Best Ads/AOTW canonical linking，并以 pending_review 增量导入。"
+      ],
+      "metadata_policy": [
+        "campaign_published_at 只来自已验证的 STASH Issue 日期证据，publish_date_source 固定为 stash_issue_date，证据保存在 raw_source.issue_date_evidence。",
+        "月份级 Issue 证据保持 YYYY-MM 精度，不用虚构日；原始类型、Client、Agency、Director、Production/Animation、描述、fid、refnum、clipnum 和 pi 全部保留。",
+        "来源 playlist 只提供广告范围证据，行业、商品品类和 genres 必须由真实 10 帧视觉预审产生候选。"
+      ],
+      "quality_and_exclusion_rules": [
+        "正式审核项必须有明确品牌、2025/2026 Issue 日期证据、真实视频、稳定无凭证交付、恰好 10 帧预审和至少一个 genre 候选。",
+        "正式 source record 保持 genres 为空、approved=false、core_template_eligible=false；导入后状态统一 pending_review。",
+        "重复 Vimeo ID、内容 SHA-256、10 帧指纹母片、剪辑版或画幅版不得重复增加母片供给。",
+        "当前 MEDIA_DELIVERY_BLOCKED 未解除前 reviewable_total 和 imported 必须保持 0，不得用图片、Contact Sheet 或短效签名冒充稳定视频。"
+      ],
+      "continuation": {
+        "resume_from": "collect/runs/stash-2025-2026/checkpoint.json",
+        "before_next_run": [
+          "先读取 collect/runs/stash-2025-2026/PROGRESS.md 与 BLOCKED.md，禁止重做已完成取证。",
+          "必须先用无 Cookie 环境证明连续 10 条可由稳定 URL 或审核台 resolver 播放和获取，且不得绕过 Subscription required。",
+          "媒体门通过后才允许生成 10 帧、运行 canonical linking、备份审核状态和增量导入；未通过时继续保持 0 条审核项。",
+          "详情采集最多 3 个批次；达到上限或再次确认媒体门失败时停止并更新阻塞证据。"
+        ]
+      },
+      "evidence": [
+        "collect/runs/stash-2025-2026/PROGRESS.md",
+        "collect/runs/stash-2025-2026/BLOCKED.md",
+        "collect/runs/stash-2025-2026/checkpoint.json",
+        "collect/runs/stash-2025-2026/batch-report.json"
       ]
     }
   ]

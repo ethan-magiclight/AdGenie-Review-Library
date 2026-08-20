@@ -165,6 +165,7 @@ function sourcePlatformLabel(value) {
     meta: "Meta",
     best_ads: "Best Ads",
     ads_of_the_world: "Ads of the World",
+    stash: "STASH",
     unknown: "未知平台",
   }[value] || value || "未知平台";
 }
@@ -858,7 +859,7 @@ function renderVideos() {
     `<option value="${escapeHtml(genre)}" ${state.filters.genre === genre ? "selected" : ""}>${genre === "all" ? "全部题材" : escapeHtml(genreShort(genre))}</option>`
   ).join("");
   const filterOptions = (items, selected) => items.map(([value, label]) => `<option value="${escapeHtml(value)}" ${selected === value ? "selected" : ""}>${escapeHtml(label)}</option>`).join("");
-  const platformOptions = filterOptions([["all", "全部平台"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["instagram", "Instagram"], ["meta", "Meta"], ["best_ads", "Best Ads"], ["ads_of_the_world", "Ads of the World"], ["unknown", "未知平台"]], state.filters.platform);
+  const platformOptions = filterOptions([["all", "全部平台"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["instagram", "Instagram"], ["meta", "Meta"], ["best_ads", "Best Ads"], ["ads_of_the_world", "Ads of the World"], ["stash", "STASH"], ["unknown", "未知平台"]], state.filters.platform);
   const platformFormatOptions = filterOptions([["all", "全部平台形态"], ["shorts", "Shorts"], ["videos", "Videos"], ["reels", "Reels"], ["feed", "Feed"], ["unknown", "未知形态"]], state.filters.platformFormat);
   const aspectRatioOptions = filterOptions([["all", "全部画幅"], ["9:16", "9:16 竖屏"], ["16:9", "16:9 横屏"], ["4:5", "4:5 竖版"], ["1:1", "1:1 方形"], ["unknown", "画幅未知"]], state.filters.aspectRatio);
   const recencyOptions = filterOptions([["all", "全部发布时间"], ["90", "近 90 天"], ["180", "近 180 天"], ["365", "近 1 年"], ["730", "近 2 年"], ["unknown", "日期未知"]], state.filters.recency);

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "schema_version": "source-video-record-v1",
+  "source_site": "stash",
+  "scope": {
+    "source_category": "Advertising",
+    "playlists": [
+      "Advertising: All",
+      "Advertising: Comedy",
+      "Advertising: Holiday",
+      "Advertising: Lifestyle",
+      "Advertising: Food & Beverage",
+      "Advertising: Automotive"
+    ],
+    "discovery_playlist": "Advertising: All",
+    "discovery_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&pi=0&keyword=",
+    "fid": "3540",
+    "issues": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178
+    ],
+    "years": [
+      2025,
+      2026
+    ],
+    "allowed_types": [
+      "TVC",
+      "Brand film",
+      "Product film"
+    ],
+    "media_delivery_gate": "MEDIA_DELIVERY_BLOCKED"
+  },
+  "generated_at": "2026-08-20T14:15:43.354Z",
+  "records": []
+}

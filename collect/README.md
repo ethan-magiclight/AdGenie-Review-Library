@@ -14,7 +14,7 @@
 | `platform-source-registry-v1.json` | 已人工验证的官方账号、频道 ID、支持形态与验证日期 |
 | `collection-policy-v1.json` | 日期、时长、画幅、评分、去重、来源与视觉审核门禁的版本化规则 |
 | `pet-supplies-collection-policy-v1.json` | 宠物用品采集与视觉审核门禁；产品证据包含宠物使用过程和使用结果 |
-| `source-video-record-contract-v1.json` | Best Ads / Ads of the World Campaign、来源、双日期、媒体资产与待补状态合同 |
+| `source-video-record-contract-v1.json` | Best Ads / Ads of the World / STASH Campaign、来源、日期证据、媒体资产与待补状态合同 |
 | `adgenie-brand-taxonomy-v1.json` | Apparel & Footwear、Beauty & Personal Care、Food & Beverage、Home & Living/Household 的新增 taxonomy |
 | `source-category-mapping-v1.json` | 来源分类到 AdGenie 候选分类的置信度、证据和待人工确认分支 |
 | `visual-pre-review-contract-v1.json` | AI 视觉预审候选字段；禁止直接写正式题材、批准或核心模板资格 |
@@ -78,11 +78,13 @@ node collect/collect-latest.mjs --policy pet-supplies-collection-policy-v1.json 
 node collect/collect-latest.mjs --policy pet-supplies-collection-policy-v1.json --category "Pet Food & Treats" --list-brands
 ```
 
-## Best Ads 与 Ads of the World 视频源
+## Best Ads、Ads of the World 与 STASH 视频源
 
-两个来源使用 `source-video-record-v1` 合同，不与 YouTube 官方账号采集混写。列表页只发现稳定 ID，详情页补品牌、Campaign published、来源 Uploaded、分类和视频资产；原始标签保留在 `raw_source`，不会被 AdGenie 候选分类覆盖。
+三个来源使用 `source-video-record-v1` 合同，不与 YouTube 官方账号采集混写。列表页只发现稳定 ID，详情页补品牌、日期证据、分类和视频资产；原始标签保留在 `raw_source`，不会被 AdGenie 候选分类覆盖。
 
 2026-08-19 一手页面核对：Best Ads 美国 / TV / Cosmetics & toiletries 全历史为 412 条，其中来源 year filter 2025 为 14、2026 为 17；该 year filter 与详情 Uploaded 都只作为来源收录时间，不能当 Campaign 作品年份。AOTW 官方 Film 页为 29,702 Campaigns / 496 页；只用详情正文的 Campaign published month/year 判断 2025/2026。
+
+2026-08-20 STASH 一手页面核对：Advertising: All 报告 686 videos，但当前合法登录态 DOM 只枚举 `pi=0…663` 共 664 条，滚到底部后不再增加，也没有分页/Load more 入口；缺口 22 写入 `DISCOVERY_TOTAL_MISMATCH`，`discovery.complete` 必须保持 false。已枚举项均含 `fid/refnum/clipnum/pi`，稳定来源键是 `stash:{refnum}:{clipnum}`。Issue 170–176 的月份来自 All Issues；177/178 分别来自官方 Issue 页的 `STASH 177 MAY 15/26` 与 `STASH 178 JULY 15/26`。页面通用 `og:article:published_time=2021-05-09` 与实际 Issue 不符，禁止作发布日期。
 
 合同、taxonomy、映射与反向验证：
 
@@ -91,12 +93,13 @@ node collect/validate-source-records.mjs --self-test
 node collect/validate-source-records.mjs --file collect/runs/aotw-film-2025-2026/records.json
 ```
 
-双站入口均支持 `--phase discover|details|all`、`--dry-run`、限速、重试和原子 checkpoint；代码硬限制单轮最多 500 个详情页、360 分钟：
+三个来源入口均支持 `--phase discover|details|all`、`--dry-run`、限速、重试和原子 checkpoint；代码硬限制单轮最多 500 个详情页、360 分钟：
 
 ```bash
 cd web
 npm run collect:best-ads -- --phase all --max-details 500 --max-runtime-minutes 360
 npm run collect:aotw -- --phase all --max-details 500 --max-runtime-minutes 360
+npm run collect:stash -- --phase all --max-details 10 --max-runtime-minutes 360
 ```
 
 每批完成后输出可审计统计；Contact Sheet 未运行时不传 `--contact-sheets`，抽帧成功率将为 `null`：
@@ -109,7 +112,9 @@ node collect/report-source-batch.mjs \
   --output collect/runs/best-ads-2025-2026/batch-report.json
 ```
 
-Best Ads 范围固定为 United States of America、TV、2025/2026 与九个指定来源分类。AOTW 不限国家/Industry，但必须 Campaign published 为 2025/2026、Medium types 含 Film、至少一个真实视频；Student、无视频与年份越界只记 outcome，不生成审核项。重复运行按 source record / media asset key 幂等，不重复新增。
+Best Ads 范围固定为 United States of America、TV、2025/2026 与九个指定来源分类。AOTW 不限国家/Industry，但必须 Campaign published 为 2025/2026、Medium types 含 Film、至少一个真实视频；Student、无视频与年份越界只记 outcome，不生成审核项。STASH 只允许 Advertising 的 TVC、Brand film、Product film；spec、Music video、Broadcast design、Game trailer、学生作品、纯短片与 Behind the Scenes 必须带 reason 跳过。重复运行按 source record / media asset key 幂等，不重复新增。
+
+当前 STASH 状态为 `MEDIA_DELIVERY_BLOCKED`：登录态播放器中的 Vimeo progressive URL 含短效 `signature`，无 Cookie 页面不暴露 Vimeo ID 或 progressive locator，下载区为 `Subscription required`。在连续 10 条可由稳定 URL 或审核台 resolver 无凭证获取之前，`records.json` 中的证据记录只能保持 `pending_video`，不得执行 10 帧、正式导入或扩到 100，也不得保存 signed query。
 
 AI 视觉预审写入媒体资产下的 `ai_visual_pre_review`，只允许行业、商品品类和题材候选：
 
@@ -134,7 +139,7 @@ node collect/apply-media-manifest.mjs \
   --output collect/runs/aotw-film-2025-2026/media-reviewed-records.json
 ```
 
-双站母片链接只用稳定 provider ID、相同内容 SHA，或同品牌且时长、画幅与 10 帧指纹完全一致的强证据自动合并。近似视觉不自动合并；不同长度或画幅分别写 `alternate_cut` / `alternate_aspect_ratio`，其余进入 `pending_canonical_review`：
+三站母片链接只用稳定 provider ID、相同内容 SHA，或同品牌且时长、画幅与 10 帧指纹完全一致的强证据自动合并。近似视觉不自动合并；不同长度或画幅分别写 `alternate_cut` / `alternate_aspect_ratio`，其余进入 `pending_canonical_review`：
 
 ```bash
 node collect/link-canonical-masters.mjs --self-test

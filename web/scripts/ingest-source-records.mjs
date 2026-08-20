@@ -132,7 +132,7 @@ function reviewEligibility(record, asset, manifest = null) {
   if (preReview?.status !== "completed") return "completed_visual_pre_review_required";
   if (Number(preReview.frames_reviewed) !== 10) return "exactly_10_reviewed_frames_required";
   const sheet = manifest?.status === "ok" ? manifest.contact_sheet : asset.contact_sheet_path;
-  const hasPlayback = asset.provider === "youtube" || asset.provider === "vimeo" || Boolean(asset.playback_url);
+  const hasPlayback = asset.provider === "youtube" || Boolean(asset.playback_url);
   if (!hasPlayback && !sheet) return "playback_or_contact_sheet_required";
   return null;
 }
@@ -154,6 +154,7 @@ function eligibilitySelfTest() {
     ["missing_visual_review", (_record, asset) => { asset.ai_visual_pre_review = null; }, "completed_visual_pre_review_required"],
     ["nine_frames", (_record, asset) => { asset.ai_visual_pre_review.frames_reviewed = 9; }, "exactly_10_reviewed_frames_required"],
     ["no_playback_or_sheet", (_record, asset) => { asset.playback_url = null; asset.contact_sheet_path = null; }, "playback_or_contact_sheet_required"],
+    ["vimeo_provider_without_playback", (_record, asset) => { asset.provider = "vimeo"; asset.playback_url = null; asset.contact_sheet_path = null; }, "playback_or_contact_sheet_required"],
   ].map(([name, mutate, expected]) => {
     const redRecord = structuredClone(validRecord);
     const redAsset = structuredClone(validAsset);
@@ -281,7 +282,7 @@ function reviewItem(record, asset, manifest, importedFrom) {
     primary_genre: genreDefaults.primary_genre,
     secondary_genres: genreDefaults.secondary_genres,
     genre_candidates: preReview?.genre_candidates || [],
-    source_type: record.source_site === "best_ads" ? "Best Ads" : "Ads of the World",
+    source_type: ({ best_ads: "Best Ads", ads_of_the_world: "Ads of the World", stash: "STASH" })[record.source_site] || record.source_site,
     source_site: record.source_site,
     source_platform: record.source_site,
     source_record_id: record.source_record_id,
