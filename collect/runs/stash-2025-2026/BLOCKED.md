@@ -26,6 +26,13 @@
 - 本轮仍未执行第 4 次 discovery、详情采集、媒体探测或 push；没有新证据能解除 `DISCOVERY_TOTAL_MISMATCH`、`MEDIA_DELIVERY_BLOCKED` 或 `GITHUB_DELIVERY_BLOCKED`。
 - 同一外部阻塞已连续 3 个 goal turn 重复，且在用户授权 CDP、修复 GitHub 认证/TLS、提供合法稳定媒体 resolver 之前无法继续完成 10/10 媒体门、100 条入库、PR 与线上验收；达到正式 blocked 阈值。
 
+### goal 恢复审计 #1（2026-08-20）
+
+- 此前 blocked goal 已由系统恢复为 active；按规则重新开始连续阻塞计数，不继承上一轮的 3 次计数。
+- `web-access` 前置检查在终止 10 秒等待时短暂输出 `proxy: ready`，但紧接着访问本地 `http://localhost:3456/targets` 立即返回连接拒绝；Proxy 没有保持可用。
+- 因此本轮没有列出或创建浏览器标签，也没有访问 GitHub、STASH 或发起 push；媒体 resolver、发现缺口和远端交付均没有新的完成证据。
+- 这是恢复后的第 1 个同条件阻塞 turn；goal 保持 active，等待外部状态改变。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
