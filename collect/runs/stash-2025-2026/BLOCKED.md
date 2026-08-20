@@ -14,6 +14,13 @@
 - 远端没有 `codex/stash-source-ingestion` 分支，现有 PR 查询为空；因此可以在完整审计后首次推送并创建最多一个 draft PR。
 - 此项身份/权限阻塞已解除；`MEDIA_DELIVERY_BLOCKED` 与发现缺口仍然成立，远端交付不能被描述为 100 条完成。
 
+## GITHUB_DELIVERY_RESOLVED（2026-08-21）
+
+- 已使用活动身份 `ethan-magiclight` 将 `codex/stash-source-ingestion` 首次推送到固定仓库；远端分支 SHA `cee6dc2` 与当时本地 HEAD 一致。
+- 已确认 `codex/review-console-standalone` 精确指向任务起点 `ff1989b`，并以它为 base 创建唯一 Draft PR #2：<https://github.com/ethan-magiclight/AdGenie-Review-Library/pull/2>；没有以 `main` 为 base，也没有合并。
+- PR 初始 HEAD 的 `verify-package`、`Vercel – ad-genie-review-library`、`Vercel – ad-genie-review-library-6bwl` 与 `Vercel Preview Comments` 均为成功。
+- GitHub/TLS/权限阻塞现已解除。PR 仍因 `DISCOVERY_TOTAL_MISMATCH` 和 `MEDIA_DELIVERY_BLOCKED` 保持 Draft；这两个内容门禁未被部署成功替代。
+
 ## PROCESS_RULE_VIOLATION（2026-08-20）
 
 - 一次只读敏感信息扫描命令末尾误用了任务书明确禁止的 `|| true`。扫描本身没有命中、没有修改文件，也没有用于跳过构建或测试失败；但按“违反即失败”规则必须如实记录，不能把本次交付声明为完整成功。
