@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "output": "review-console/release",
+  "state": "web/data/creative-library-state.json",
+  "runtime_paths": [
+    "web/server.mjs",
+    "web/public",
+    "web/lib",
+    "web/test"
+  ],
+  "documentation_paths": [
+    "web/README.md"
+  ]
+}

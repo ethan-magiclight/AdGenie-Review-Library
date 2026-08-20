@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-12",
+  "industry": "Pet Supplies",
+  "principle": "宠物用品品牌池负责行业覆盖和召回优先级；正式题材、内容性质、动物福利和核心模板资格必须在抽帧后独立审核。宠物可爱、官方账号或近期发布都不能单独证明品牌品宣广告成立。",
+  "categories": {
+    "Pet Food & Treats": [
+      { "brand": "Purina", "tier": "P0", "products": ["Purina Pro Plan", "Purina ONE", "Fancy Feast", "Friskies", "Beggin"] },
+      { "brand": "Royal Canin", "tier": "P0", "products": ["Royal Canin dog food", "Royal Canin cat food"] },
+      { "brand": "Hill's Pet Nutrition", "tier": "P0", "products": ["Hill's Science Diet", "Hill's Prescription Diet"] },
+      { "brand": "Blue Buffalo", "tier": "P0", "products": ["Blue Buffalo Life Protection", "BLUE Tastefuls", "Blue Wilderness"] },
+      { "brand": "IAMS", "tier": "P0", "products": ["IAMS dog food", "IAMS cat food"] },
+      { "brand": "Sheba", "tier": "P1", "products": ["Sheba cat food", "Sheba Perfect Portions"] },
+      { "brand": "Greenies", "tier": "P1", "products": ["Greenies Dental Treats", "Greenies Pill Pockets"] },
+      { "brand": "Temptations", "tier": "P1", "products": ["Temptations cat treats"] },
+      { "brand": "The Farmer's Dog", "tier": "P1", "products": ["The Farmer's Dog food"] },
+      { "brand": "Freshpet", "tier": "P1", "products": ["Freshpet dog food", "Freshpet cat food"] }
+    ],
+    "Cat Litter & Toileting": [
+      { "brand": "Fresh Step", "tier": "P0", "products": ["Fresh Step cat litter", "Fresh Step Clean Paws", "Fresh Step Crystals"] },
+      { "brand": "Tidy Cats", "tier": "P0", "products": ["Tidy Cats litter", "Tidy Cats Breeze"] },
+      { "brand": "Arm & Hammer", "tier": "P0", "products": ["Arm & Hammer cat litter", "Clump & Seal"] },
+      { "brand": "World's Best Cat Litter", "tier": "P1", "products": ["World's Best Cat Litter"] },
+      { "brand": "Litter-Robot", "tier": "P1", "products": ["Litter-Robot 4", "Litter-Robot"] },
+      { "brand": "PrettyLitter", "tier": "P1", "products": ["PrettyLitter"] },
+      { "brand": "Cat's Pride", "tier": "P1", "products": ["Cat's Pride cat litter"] }
+    ],
+    "Pet Grooming & Hygiene": [
+      { "brand": "Greenies", "tier": "P0", "products": ["Greenies Dental Treats", "Greenies dental care"] },
+      { "brand": "FURminator", "tier": "P0", "products": ["FURminator deShedding Tool", "FURminator grooming"] },
+      { "brand": "Burt's Bees Pets", "tier": "P1", "products": ["Burt's Bees dog shampoo", "Burt's Bees cat wipes"] },
+      { "brand": "Earthbath", "tier": "P1", "products": ["Earthbath shampoo", "Earthbath wipes"] },
+      { "brand": "TropiClean", "tier": "P1", "products": ["TropiClean Fresh Breath", "TropiClean shampoo"] },
+      { "brand": "Skout's Honor", "tier": "P1", "products": ["Skout's Honor pet odor", "Skout's Honor grooming"] },
+      { "brand": "Nature's Miracle", "tier": "P1", "products": ["Nature's Miracle stain odor remover"] }
+    ],
+    "Pet Tech & Smart Devices": [
+      { "brand": "Furbo", "tier": "P0", "products": ["Furbo 360 Dog Camera", "Furbo dog camera"] },
+      { "brand": "Litter-Robot", "tier": "P0", "products": ["Litter-Robot 4", "Litter-Robot Connect"] },
+      { "brand": "Petlibro", "tier": "P0", "products": ["Petlibro automatic feeder", "Petlibro water fountain", "Petlibro Polar"] },
+      { "brand": "Whistle", "tier": "P0", "products": ["Whistle GPS tracker", "Whistle Health"] },
+      { "brand": "Petcube", "tier": "P1", "products": ["Petcube Cam", "Petcube Bites"] },
+      { "brand": "Tractive", "tier": "P1", "products": ["Tractive GPS tracker"] },
+      { "brand": "PetSafe", "tier": "P1", "products": ["PetSafe automatic feeder", "PetSafe fountain", "PetSafe ScoopFree"] },
+      { "brand": "Sure Petcare", "tier": "P1", "products": ["SureFeed Microchip Pet Feeder", "SureFlap"] }
+    ],
+    "Collars, Leashes & Harnesses": [
+      { "brand": "Ruffwear", "tier": "P0", "products": ["Ruffwear harness", "Ruffwear leash", "Ruffwear Front Range"] },
+      { "brand": "PetSafe", "tier": "P0", "products": ["PetSafe leash", "PetSafe collar", "Easy Walk Harness"] },
+      { "brand": "Julius-K9", "tier": "P1", "products": ["Julius-K9 harness"] },
+      { "brand": "Wild One", "tier": "P1", "products": ["Wild One harness", "Wild One leash"] },
+      { "brand": "Kurgo", "tier": "P1", "products": ["Kurgo harness", "Kurgo leash"] },
+      { "brand": "Sleepypod", "tier": "P1", "products": ["Sleepypod harness", "Clickit Sport"] }
+    ],
+    "Pet Toys & Enrichment": [
+      { "brand": "KONG", "tier": "P0", "products": ["KONG Classic", "KONG dog toy", "KONG cat toy"] },
+      { "brand": "Nylabone", "tier": "P0", "products": ["Nylabone chew toy"] },
+      { "brand": "Chuckit!", "tier": "P1", "products": ["Chuckit! launcher", "Chuckit! ball"] },
+      { "brand": "Outward Hound", "tier": "P1", "products": ["Outward Hound puzzle toy", "Nina Ottosson"] },
+      { "brand": "PetSafe", "tier": "P1", "products": ["PetSafe toy", "FroliCat"] },
+      { "brand": "Frisco", "tier": "P2", "products": ["Frisco dog toy", "Frisco cat toy"] }
+    ],
+    "Beds, Crates & Furniture": [
+      { "brand": "Petmate", "tier": "P0", "products": ["Petmate crate", "Petmate kennel", "Petmate bed"] },
+      { "brand": "Frisco", "tier": "P1", "products": ["Frisco dog bed", "Frisco cat tree", "Frisco crate"] },
+      { "brand": "Casper", "tier": "P1", "products": ["Casper dog bed"] },
+      { "brand": "K&H Pet Products", "tier": "P1", "products": ["K&H pet bed", "K&H heated bed", "K&H Cool Lounger", "K&H Thermo-Indoor Pet House", "K&H Birchwood Manor Kitty Home"] },
+      { "brand": "MidWest Homes for Pets", "tier": "P1", "products": ["MidWest crate", "MidWest dog bed"] },
+      { "brand": "Tuft + Paw", "tier": "P2", "products": ["Tuft + Paw cat furniture", "Tuft + Paw cat tree"] }
+    ],
+    "Bowls, Feeders & Waterers": [
+      { "brand": "PetSafe", "tier": "P0", "products": ["PetSafe feeder", "PetSafe fountain", "Drinkwell"] },
+      { "brand": "Petlibro", "tier": "P0", "products": ["Petlibro feeder", "Petlibro water fountain"] },
+      { "brand": "Catit", "tier": "P1", "products": ["Catit fountain", "Catit feeder"] },
+      { "brand": "Outward Hound", "tier": "P1", "products": ["Outward Hound slow feeder"] },
+      { "brand": "Neater Feeder", "tier": "P1", "products": ["Neater Feeder"] },
+      { "brand": "Sure Petcare", "tier": "P1", "products": ["SureFeed Microchip Pet Feeder"] }
+    ],
+    "Travel & Carriers": [
+      { "brand": "Sleepypod", "tier": "P0", "products": ["Sleepypod carrier", "Sleepypod Mobile Pet Bed"] },
+      { "brand": "Petmate", "tier": "P0", "products": ["Petmate carrier", "Petmate kennel"] },
+      { "brand": "Kurgo", "tier": "P1", "products": ["Kurgo travel", "Kurgo car seat cover", "Kurgo harness"] },
+      { "brand": "Ruffwear", "tier": "P1", "products": ["Ruffwear dog pack", "Ruffwear travel bowl"] },
+      { "brand": "Sherpa", "tier": "P1", "products": ["Sherpa pet carrier"] },
+      { "brand": "Away", "tier": "P2", "products": ["Away pet carrier"] }
+    ],
+    "Health, Supplements & Care": [
+      { "brand": "Greenies", "tier": "P0", "products": ["Greenies Dental Treats", "Greenies Supplements"] },
+      { "brand": "Zesty Paws", "tier": "P1", "products": ["Zesty Paws supplement", "Zesty Paws Allergy Immune"] },
+      { "brand": "Nutramax", "tier": "P1", "products": ["Cosequin", "Dasuquin"] },
+      { "brand": "Purina", "tier": "P1", "products": ["Purina FortiFlora", "Purina Pro Plan Veterinary Supplements"] },
+      { "brand": "Hill's Pet Nutrition", "tier": "P1", "products": ["Hill's Science Diet", "Hill's Prescription Diet"] },
+      { "brand": "Native Pet", "tier": "P2", "products": ["Native Pet supplement"] }
+    ]
+  }
+}

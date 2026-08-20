@@ -2,14 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "web/server.mjs",
+      "src": "review-console/release/web/server.mjs",
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "web/public/**",
-          "web/data/creative-library-state.json",
-          "collect/**/*.json",
-          "collect/**/*.md"
+          "review-console/release/web/public/**",
+          "review-console/release/web/lib/**",
+          "review-console/release/web/data/creative-library-state.json",
+          "review-console/release/collect/**/*.json",
+          "review-console/release/collect/**/*.jpg",
+          "review-console/release/collect/**/*.jpeg",
+          "review-console/release/collect/**/*.png"
         ]
       }
     }
@@ -17,7 +20,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "web/server.mjs"
+      "dest": "review-console/release/web/server.mjs"
     }
   ]
 }

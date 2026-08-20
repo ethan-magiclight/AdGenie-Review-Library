@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-01",
+  "status": "canonical",
+  "purpose": "AdGenie 广告视频题材的单一事实源；用于采集检索、人工复核、入库校验和后续工作簿生成。",
+  "principles": [
+    "题材标签服务于行业和用户已经形成的成熟心智，不追求理论上的互斥或穷尽。",
+    "搜索词和视频标题只负责召回候选，不能直接成为正式题材标签。",
+    "每条视频选择一个最能代表观看预期的主题材；只有存在独立、可指认的画面段落时才增加次题材。",
+    "题材成立只回答内容是什么，不回答视频是否是品牌品宣、是否适合 AI 生成或是否进入 MVP 核心模板库。",
+    "同一母片可以有多个题材标签，但在同一商品品类与同一题材的统计中只能计数一次。"
+  ],
+  "groups": [
+    {
+      "code": "A",
+      "name": "品牌表达类",
+      "description": "以品牌、商业传播成片或品牌主张为主要观看预期。"
+    },
+    {
+      "code": "B",
+      "name": "产品视觉类",
+      "description": "以产品外观、材质、结构和画面信息层为主要内容。"
+    },
+    {
+      "code": "C",
+      "name": "功能与体验类",
+      "description": "以功能如何工作、如何操作或首次接触体验为主要内容。"
+    },
+    {
+      "code": "D",
+      "name": "场景与生活方式类",
+      "description": "以穿搭、审美组合或连续生活流程中的产品使用为主要内容。"
+    },
+    {
+      "code": "E",
+      "name": "说服与证明类",
+      "description": "以痛点、效果变化或可见测试证据建立购买理由。"
+    },
+    {
+      "code": "F",
+      "name": "剧情与人物品牌类",
+      "description": "以虚构故事、冲突反转、品牌真实故事或体育人物高光驱动观看。"
+    },
+    {
+      "code": "G",
+      "name": "真人原生表达类",
+      "description": "以用户、朋友、采访者、专家或演讲者的真人表达关系为主要内容。"
+    }
+  ],
+  "genres": [
+    {
+      "order": 1,
+      "group": "A",
+      "english": "TVC / Brand Commercial",
+      "chinese": "TVC 品牌广告片",
+      "definition": "面向消费者公开传播的完整品牌商业广告成片，通常在较短时长内建立传播命题、呈现产品或品牌利益，并以品牌资产或行动指向收束。TVC 描述的是商业广告成片心智，不限定必须高端、电影感或以产品特写为主。",
+      "include_when": "能明确回答广告在向谁传播什么品牌或产品主张，并具有广告化开场、推进和品牌收束。",
+      "exclude_when": "品牌支持教程、售后排错、发布会实录、媒体测评、幕后花絮和纯企业介绍不能只因品牌官方发布就标为 TVC。",
+      "search_terms": ["official commercial", "brand commercial", "TVC", "campaign ad"],
+      "topview_sources": ["custom-ecom-tvc-product-ad"]
+    },
+    {
+      "order": 2,
+      "group": "A",
+      "english": "Concept Film / Brand Manifesto",
+      "chinese": "概念片 / 品牌宣言片",
+      "definition": "围绕品牌精神、态度或核心命题，用视觉隐喻、象征、情绪和节奏传达抽象概念；产品可以弱露出，重点是让观众记住品牌立场而非具体功能。",
+      "include_when": "品牌主张或抽象命题是叙事中心，画面主要承担情绪和观念表达。",
+      "exclude_when": "只有高级画面但没有品牌命题的产品 B-Roll，以及以企业历史和员工采访为主的 Corporate Film。",
+      "search_terms": ["brand manifesto film", "concept film", "brand campaign film", "brand purpose film"],
+      "topview_sources": ["conceptual-promo-creator"]
+    },
+    {
+      "order": 3,
+      "group": "A",
+      "english": "Corporate Film",
+      "chinese": "企业宣传 / 品牌故事片",
+      "definition": "通过创始人、员工、工艺、历史、组织能力或真实人物材料回答品牌是谁、为何存在以及如何创造价值，常结合采访、档案或纪录片式素材。",
+      "include_when": "企业身份、使命、历史或组织能力是主要信息，而非某个产品的直接购买理由。",
+      "exclude_when": "虚构剧情推销单一产品应归 Story-Driven Product Ad；核心模板库还需另行排除过长、采访主导和纪录片慢叙事样片。",
+      "search_terms": ["corporate film", "brand story film", "our story", "company film"],
+      "topview_sources": ["cinematic-corporate-storytelling"]
+    },
+    {
+      "order": 4,
+      "group": "B",
+      "english": "Aesthetic B-Roll",
+      "chinese": "美学 B-Roll",
+      "definition": "以产品和场景的质感镜头、光影、景深、运动和构图形成连续视觉段落，文字和讲解较少，主要价值是氛围与审美，而非完整故事或信息教学。",
+      "include_when": "多个审美化补充镜头共同构成成片主体，即使单个镜头也可能同时包含产品细节。",
+      "exclude_when": "只有一个普通产品近景；微距细节主导时归 Macro Close-Up；完整外观识别主导时归 Multi-Angle Showcase。",
+      "search_terms": ["aesthetic product film", "cinematic product video", "product b-roll", "product mood film"],
+      "topview_sources": ["custom-ecom-aesthetic-broll"]
+    },
+    {
+      "order": 5,
+      "group": "B",
+      "english": "Macro Close-Up",
+      "chinese": "产品微距特写",
+      "definition": "通过极近距离画面放大材质、纹理、接缝、工艺、微小结构或细微运动，让肉眼不易察觉的产品细节成为主要视觉信息。",
+      "include_when": "微距或超近景细节是连续且有表达价值的主要段落。",
+      "exclude_when": "普通近景、单一静物、常规手持展示或仅把产品放大裁切，不能单独成立本标签。",
+      "search_terms": ["macro product film", "product detail film", "extreme close-up product", "craftsmanship close-up"],
+      "topview_sources": ["custom-ecom-closeup"]
+    },
+    {
+      "order": 6,
+      "group": "B",
+      "english": "Multi-Angle / 360° Product Showcase",
+      "chinese": "产品多角度 / 360° 展示",
+      "definition": "以产品为主要主体，通过正面、侧面、背面、顶部、底部、旋转、翻转或结构展开，帮助观众完整认识外观、比例、接口和设计。",
+      "include_when": "至少从多个有信息差的角度连续呈现同一产品，观看目的主要是认识产品设计。",
+      "exclude_when": "单一角度转场、普通手持晃动、微距细节或功能操作不能仅因镜头在移动就成立。",
+      "search_terms": ["360 product showcase", "multi angle product video", "product design film", "product rotation"],
+      "topview_sources": ["custom-ecom-product-display"]
+    },
+    {
+      "order": 7,
+      "group": "B",
+      "english": "Feature Callout",
+      "chinese": "卖点标注视频",
+      "definition": "在产品展示或使用画面中，用可见文字、参数、图标、箭头、局部放大、动态图形或结构示意明确指出卖点、功能和用户利益，并让信息层与画面同步。",
+      "include_when": "观众静音观看时仍能从可见信息层识别至少一个具体卖点或利益点。",
+      "exclude_when": "操作步骤编号、连接说明、设置菜单和排错指令属于 How-To 信息，不因出现文字就自动成为 Feature Callout；只有口头介绍也不成立。",
+      "search_terms": ["official features video", "feature highlights", "product feature callout", "key features film"],
+      "topview_sources": ["custom-ecom-overlay"]
+    },
+    {
+      "order": 8,
+      "group": "B",
+      "english": "Split-Screen Showcase / Comparison",
+      "chinese": "分屏展示 / 对比",
+      "definition": "用左右、上下或多窗口在同一时间轴同步呈现两组相关画面，形成产品与场景、整体与细节、不同视角或两种结果之间的明确对照或互补。",
+      "include_when": "分屏是持续可识别的主要表现机制，并且两侧内容存在有意义的关系。",
+      "exclude_when": "普通顺序剪辑、一次性画中画或没有比较关系的装饰性拼贴不成立；有公平实测过程时还可标 Comparison Test。",
+      "search_terms": ["split screen product ad", "side by side product film", "split screen comparison ad"],
+      "topview_sources": ["custom-ecom-split-screen"]
+    },
+    {
+      "order": 9,
+      "group": "C",
+      "english": "Product Demo",
+      "chinese": "产品功能演示",
+      "definition": "通过可见的执行动作、产品响应和结果，演示一个或多个功能如何工作，重点是让观众理解能力和效果，而不是教会完整操作流程。",
+      "include_when": "至少存在一个完整的动作到响应或结果的因果链，产品功能被实际展示而非仅被描述。",
+      "exclude_when": "只列参数、只展示外观不成立；需要观众按顺序跟做才能完成任务时，主题材应为 How-To Tutorial。",
+      "search_terms": ["official product demo", "product demonstration", "feature demo", "in action"],
+      "topview_sources": ["Fast-Product-Demo-Video"]
+    },
+    {
+      "order": 10,
+      "group": "C",
+      "english": "How-To Tutorial",
+      "chinese": "教程指南",
+      "definition": "把安装、连接、佩戴、设置、操作或维护任务拆成可按顺序执行的步骤，使观众能够跟随完成明确任务。",
+      "include_when": "存在明确任务目标、顺序步骤、操作证据和完成状态，步骤之间不能随意调换。",
+      "exclude_when": "快速展示多个功能但不要求跟做属于 Product Demo；品牌支持教程即使分类成立，也不自动具备品牌品宣或核心模板资格。",
+      "search_terms": ["official how to", "setup guide", "quick start guide", "how to use"],
+      "topview_sources": ["custom-ecom-how-to-tutorial"]
+    },
+    {
+      "order": 11,
+      "group": "C",
+      "english": "Unboxing",
+      "chinese": "开箱体验",
+      "definition": "沿包装开启顺序呈现外包装、拆封、开盖、取出产品、配件和初次上手，以包装结构、首次发现和期待感构成主要内容。",
+      "include_when": "包装从关闭到打开的过程真实可见，取出产品和配件构成连续段落。",
+      "exclude_when": "桌面陈列、包装静物、产品展示或标题写有 unboxing 但没有实际开启过程，均不成立。",
+      "search_terms": ["official unboxing", "unbox official", "first look unboxing", "packaging reveal"],
+      "topview_sources": ["custom-ecom-unboxing-demo"]
+    },
+    {
+      "order": 12,
+      "group": "C",
+      "english": "Try-On / Try-Out",
+      "chinese": "试穿 / 试戴 / 试用",
+      "definition": "展示产品上身、上脸、穿戴、佩戴或由用户实际试用后的外观、贴合、操控和即时体验，核心问题是产品用在我身上或手里是什么样。",
+      "include_when": "穿戴或试用过程以及人体上的结果是主要段落，适用于美妆、服饰、配饰、可穿戴设备和可直接体验的产品。",
+      "exclude_when": "仅出现人物持有产品、单纯生活场景或只演示功能而不呈现试用体验，不能成立。",
+      "search_terms": ["try on", "try out product", "wear test", "fit and feel"],
+      "topview_sources": ["custom-ecom-tryon"]
+    },
+    {
+      "order": 13,
+      "group": "D",
+      "english": "Lookbook",
+      "chinese": "时尚 Lookbook",
+      "definition": "通过模特、造型、配色、场景和音乐展示一个系列或多种组合的整体风格，观看重点是造型搭配和审美选择，而不是单次试穿过程。",
+      "include_when": "至少有多套造型、多个搭配或明确系列化风格展示，产品承担造型表达。",
+      "exclude_when": "明星出镜、单一佩戴镜头、一次试穿或普通生活方式广告不自动构成 Lookbook。",
+      "search_terms": ["official lookbook", "campaign lookbook", "style lookbook", "collection film"],
+      "topview_sources": ["custom-ecom-lookbook"]
+    },
+    {
+      "order": 14,
+      "group": "D",
+      "english": "Daily Routine",
+      "chinese": "日常融入",
+      "definition": "在紧凑的晨间、通勤、工作、运动、旅行或夜间等连续生活流程中，让产品在一个或多个自然节点被使用，表达产品如何融入日常。",
+      "include_when": "能够识别连续流程和至少两个生活节点，产品使用与流程存在自然关系。",
+      "exclude_when": "一个生活化镜头、单一使用场景或从人物生活背景娓娓道来的纪录片慢叙事不成立核心模板；后者即使有日常元素也不计本题材供给。",
+      "search_terms": ["daily routine product", "day in the life product", "morning routine ad", "commute routine"],
+      "topview_sources": ["custom-ecom-routine-integration"]
+    },
+    {
+      "order": 15,
+      "group": "E",
+      "english": "Problem–Solution",
+      "chinese": "痛点解决",
+      "definition": "先把目标用户的具体问题或不便可视化，再让产品介入，并呈现问题被解决后的结果，形成清晰的痛点到解决方案因果链。",
+      "include_when": "问题、产品介入和解决结果三个环节均可被识别，产品对结果具有直接作用。",
+      "exclude_when": "泛泛表达焦虑、只列卖点、没有解决结果或产品与问题没有因果关系时不成立。",
+      "search_terms": ["problem solution ad", "pain point product ad", "product solves", "before problem after solution"],
+      "topview_sources": ["custom-ecom-pain-point"]
+    },
+    {
+      "order": 16,
+      "group": "E",
+      "english": "Before & After",
+      "chinese": "使用前后对比",
+      "definition": "明确呈现同一对象使用产品前的问题状态、使用过程和使用后的结果，通过画面、数据、构图或状态差异让变化可直接比较。",
+      "include_when": "同一对象或同一条件下的前后状态均有证据，变化能够被观众直接识别。",
+      "exclude_when": "不同产品之间的公平测试应归 Comparison Test；只有分屏形式但没有前后状态证据不成立。",
+      "search_terms": ["before and after ad", "before after product result", "transformation product video"],
+      "topview_sources": ["custom-ecom-before-after"]
+    },
+    {
+      "order": 17,
+      "group": "E",
+      "english": "Comparison Test",
+      "chinese": "产品对比测试",
+      "definition": "让本产品与竞品、旧型号或传统方案在相同条件下完成同一测试，公开展示测试条件、过程、结果和结论，以可见证据证明差异。",
+      "include_when": "比较对象、统一条件、测试过程和结果至少能够被画面或数据核验。",
+      "exclude_when": "没有实际测试的口头比较、参数表、外观并列或装饰性分屏不成立。",
+      "search_terms": ["product comparison test", "versus test official", "side by side test", "competitive demo"],
+      "topview_sources": ["custom-ecom-comparison-test"]
+    },
+    {
+      "order": 18,
+      "group": "F",
+      "english": "Story-Driven Product Ad",
+      "chinese": "剧情叙事型产品广告",
+      "definition": "通过人物、场景、需求或冲突、转折和结局构成完整故事，产品作为关键道具、能力或解决方案参与故事因果。",
+      "include_when": "观众能复述基本故事，且移除产品会破坏关键因果或结局。",
+      "exclude_when": "企业历史和真实组织故事归 Corporate Film；只有氛围蒙太奇或产品展示而没有叙事因果不成立。",
+      "search_terms": ["story driven product ad", "narrative commercial", "product story commercial", "brand short film product"],
+      "topview_sources": ["custom-ecom-story"]
+    },
+    {
+      "order": 19,
+      "group": "F",
+      "english": "Micro-Drama Ad",
+      "chinese": "微剧情广告",
+      "definition": "以短剧观看体验为主，包含较完整的人物关系、对话、冲突、高潮和解决，可采用喜剧、温情、悬疑或讽刺调性，产品自然嵌入并推动剧情。",
+      "include_when": "叙事体量明显高于普通短广告，人物关系和戏剧推进是主要观看动力。",
+      "exclude_when": "只有一个简短情节或单次反转更适合 Story-Driven Product Ad 或 Conflict & Twist Ad；超过核心库时长门槛的完整版只进灵感库。",
+      "search_terms": ["branded micro drama", "brand short drama", "mini drama commercial", "branded entertainment short"],
+      "topview_sources": ["micro-drama-ad-creator"]
+    },
+    {
+      "order": 20,
+      "group": "F",
+      "english": "Conflict & Twist Ad",
+      "chinese": "冲突反转广告",
+      "definition": "先建立争执、误会、预期或社会情境冲突，再由产品触发意外但可理解的反转，以冲突和反转形成核心记忆点。",
+      "include_when": "冲突铺垫、产品介入和反转三个环节均成立，反转依赖产品或品牌信息。",
+      "exclude_when": "普通剧情结局、无铺垫笑点或与产品无关的反转不成立。",
+      "search_terms": ["twist commercial", "conflict ad", "surprise ending product ad", "funny twist brand ad"],
+      "topview_sources": ["Social-Argument-Twist-Video"]
+    },
+    {
+      "order": 21,
+      "group": "F",
+      "english": "Sports Hero Film",
+      "chinese": "体育人物高光品牌片",
+      "definition": "围绕运动员或普通人的训练、比赛、转变与关键高光，用动作、现场氛围、音乐和品牌精神塑造力量感与英雄感。",
+      "include_when": "人物的体育行动和高光时刻驱动主要情绪，并与品牌或产品主张建立关系。",
+      "exclude_when": "普通产品运动场景、功能演示或从人物人生慢慢铺陈的长纪录片不能仅因有运动员而成立核心模板。",
+      "search_terms": ["sports hero film", "athlete brand commercial", "sports campaign film", "training commercial"],
+      "topview_sources": ["Decisive Sports Moment"]
+    },
+    {
+      "order": 22,
+      "group": "G",
+      "english": "UGC Ad",
+      "chinese": "UGC 风格广告",
+      "definition": "用手机竖屏、手持、自然光、生活场景和口语表达模拟普通用户原生内容，同时有设计过的钩子、痛点、产品使用、证据和行动引导。",
+      "include_when": "内容整体遵循平台原生用户内容语法，而不是只在正式广告中插入一个自拍视频。",
+      "exclude_when": "精致品牌大片、无商业信息的普通用户视频或单纯正面口播不成立；来源类型仍需与题材标签分开记录。",
+      "search_terms": ["UGC ad", "creator style product ad", "TikTok style product ad", "native social ad"],
+      "topview_sources": ["UGC-Ads-Video"]
+    },
+    {
+      "order": 23,
+      "group": "G",
+      "english": "Testimonial / Review",
+      "chinese": "用户证言 / 测评",
+      "definition": "由真实或拟真的使用者以第一人称表达使用经历、优缺点、结果和推荐理由，并以具体产品体验建立信任。",
+      "include_when": "个人使用证言和评价是主要说服机制，能够识别具体体验或结果。",
+      "exclude_when": "只有品牌功能讲解、没有个人体验评价时更接近 Talking Head 或 Product Demo；独立媒体长测评不具备品牌品宣资格。",
+      "search_terms": ["customer testimonial ad", "product review ad", "user testimonial", "customer story product"],
+      "topview_sources": ["custom-ecom-review-testimonial"]
+    },
+    {
+      "order": 24,
+      "group": "G",
+      "english": "Friend Recommendation",
+      "chinese": "朋友推荐",
+      "definition": "通过朋友之间的自然对话和互动完成产品安利，通常包括需求被提起、朋友拿出产品、演示或共同体验以及对方反应。",
+      "include_when": "朋友关系和互动是信任与推荐的主要来源，至少有两人发生有效产品对话。",
+      "exclude_when": "单人面对镜头推荐归 Testimonial 或 UGC；没有产品安利关系的普通多人剧情不成立。",
+      "search_terms": ["friend recommendation ad", "friend recommends product", "word of mouth ad", "friends product demo"],
+      "topview_sources": ["custom-ecom-friend-recommend"]
+    },
+    {
+      "order": 25,
+      "group": "G",
+      "english": "Walk-and-Talk UGC",
+      "chinese": "边走边讲 Vlog",
+      "definition": "人物在行走或场景移动中以自拍、跟随或第一人称视角自然讲述体验、痛点或推荐，并穿插持有和使用产品的动作。",
+      "include_when": "移动中的连续口述是主要结构，环境变化和产品表达共同推进内容。",
+      "exclude_when": "传统 TVC 中的人物走路镜头、静态口播或只有移动镜头但没有分享表达不成立；品牌官方不是该题材成立的必要条件。",
+      "search_terms": ["walk and talk UGC", "walking vlog product", "on the go product vlog", "POV walk talk ad"],
+      "topview_sources": ["custom-ecom-pov-walk-talk"]
+    },
+    {
+      "order": 26,
+      "group": "G",
+      "english": "Interview / Vox Pop",
+      "chinese": "街访 / 多人访谈",
+      "definition": "由采访者围绕产品或品牌相关问题向不同人物提问，并通过多个人物的回答、反应和观点切换形成内容。",
+      "include_when": "采访关系和多人物观点是主要结构，问题在不同回答之间保持一致或相关。",
+      "exclude_when": "单人系统讲解归 Talking Head；品牌纪录片中的零散采访若不形成独立访谈结构，不作为核心次标签。",
+      "search_terms": ["vox pop ad", "street interview product", "customer interview campaign", "people answer brand question"],
+      "topview_sources": ["custom-ecom-interview"]
+    },
+    {
+      "order": 27,
+      "group": "G",
+      "english": "Q&A",
+      "chinese": "产品问答",
+      "definition": "以一个或多个明确问题组织内容，由专家、用户或品牌代表回答消费者疑问、解释选择标准，并以产品、演示或结论完成回答。",
+      "include_when": "问题以文字或口头方式明确出现，后续内容逐一作答，问题是结构而非装饰。",
+      "exclude_when": "没有明确问题的访谈、口播、测评或功能介绍不成立。",
+      "search_terms": ["product Q&A", "frequently asked questions video", "expert answers product", "product questions answered"],
+      "topview_sources": ["custom-ecom-prompt-answer"]
+    },
+    {
+      "order": 28,
+      "group": "G",
+      "english": "Talking Head",
+      "chinese": "正面口播讲解",
+      "definition": "由一位人物正面对镜头承担主要信息输出，通常包含开场、分点说明、少量产品画面穿插和结论，人物的表达是内容主体。",
+      "include_when": "大部分信息依靠单人正面讲话传递，移除口播后内容明显不完整。",
+      "exclude_when": "多人采访、移动 Vlog 或舞台演讲应归其他题材；标签成立不代表适合当前 AI 核心模板库。",
+      "search_terms": ["talking head product video", "spokesperson product ad", "expert talking head", "direct to camera ad"],
+      "topview_sources": ["Talking-Head-Video"]
+    },
+    {
+      "order": 29,
+      "group": "G",
+      "english": "Keynote / Expert Talk",
+      "chinese": "发布会短讲 / 专家演讲",
+      "definition": "由演讲者在舞台、发布会或专业演示环境中，以观点、数据、案例、产品论证和结论介绍产品或知识，常配合大屏、图表或现场演示。",
+      "include_when": "舞台化或正式演讲关系是主要观看心智，演讲者面向现场或专业语境进行结构化表达。",
+      "exclude_when": "普通室内正面口播归 Talking Head；完整发布会、直播回放和长演讲只证明题材存在，不进入核心模板库。",
+      "search_terms": ["product keynote excerpt", "expert product talk", "launch presentation short", "product announcement presentation"],
+      "topview_sources": ["custom-ecom-ted-talk"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "adgenie-review-console",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node web/server.mjs",
+    "dev": "node web/server.mjs",
+    "check": "node --check web/public/app.js && node --check web/server.mjs && node --check web/lib/media-resolver.mjs && node --check web/lib/genre-defaults.mjs",
+    "test": "node --test web/test/*.test.mjs",
+    "validate:package": "node scripts/validate-package.mjs",
+    "build": "npm run check && npm test && npm run validate:package"
+  }
+}

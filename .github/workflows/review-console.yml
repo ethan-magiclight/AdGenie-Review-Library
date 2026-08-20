@@ -1,0 +1,31 @@
+name: Review Console Package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "collect/**/*.json"
+      - "review-console/**"
+      - "vercel.json"
+  pull_request:
+    paths:
+      - "web/**"
+      - "collect/**/*.json"
+      - "review-console/**"
+      - "vercel.json"
+
+jobs:
+  verify-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild standalone package
+        run: npm --prefix web run package:standalone
+      - name: Verify generated package is current
+        run: git diff --exit-code -- review-console/release
+      - name: Build standalone package
+        run: npm --prefix review-console/release run build

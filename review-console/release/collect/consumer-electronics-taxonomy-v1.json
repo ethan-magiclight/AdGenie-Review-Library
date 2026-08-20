@@ -1,0 +1,281 @@
+{
+  "version": "v1",
+  "updated_at": "2026-07-28",
+  "target_per_category": 3,
+  "fallback_category": "Multi-Product / Cross-Category",
+  "fallback_counts_toward_coverage": false,
+  "categories": [
+    {
+      "group": "Mobile Computing / 移动计算",
+      "category": "Smartphones",
+      "zh": "智能手机",
+      "definition": "以蜂窝通信和移动计算为核心的手持设备；折叠屏手机仍归本类，不把手机壳、充电配件或跨设备套装计入。",
+      "priority": "P1",
+      "search_route": "Apple / Samsung / Google / Nothing：产品发布片、功能片、TVC"
+    },
+    {
+      "group": "Mobile Computing / 移动计算",
+      "category": "Tablets",
+      "zh": "平板电脑",
+      "definition": "以触控大屏为主要交互、可独立运行操作系统的平板设备；不含便携显示器和数位板。",
+      "priority": "P1",
+      "search_route": "Apple iPad / Samsung Galaxy Tab / Microsoft Surface：产品片、功能演示"
+    },
+    {
+      "group": "Mobile Computing / 移动计算",
+      "category": "Laptops",
+      "zh": "笔记本电脑",
+      "definition": "带实体键盘、可独立运行桌面操作系统的便携电脑；二合一设备以广告主卖点和主使用形态判断。",
+      "priority": "P1",
+      "search_route": "Apple MacBook / Dell XPS / Lenovo / ASUS：发布片、设计片、功能演示"
+    },
+    {
+      "group": "Wearables / 智能穿戴",
+      "category": "Smartwatches",
+      "zh": "智能手表",
+      "definition": "具备应用、通知、健康或运动能力的腕上智能设备；强调完整智能系统和手表形态。",
+      "priority": "P1",
+      "search_route": "Apple Watch / Galaxy Watch / Pixel Watch / Garmin：功能片、运动场景片"
+    },
+    {
+      "group": "Wearables / 智能穿戴",
+      "category": "Smart Bands",
+      "zh": "智能手环",
+      "definition": "以轻量健康、运动和通知为核心的窄屏腕带设备；与智能手表按产品形态和市场命名区分。",
+      "priority": "P0",
+      "search_route": "Xiaomi Smart Band / Fitbit Charge / Huawei Band：官方短片、功能演示"
+    },
+    {
+      "group": "Wearables / 智能穿戴",
+      "category": "Smart Trackers",
+      "zh": "智能追踪器",
+      "definition": "用于寻找物品、宠物或行李位置的蓝牙/UWB/GPS 标签与追踪设备；不含运动手环。",
+      "priority": "P2",
+      "search_route": "Apple AirTag / Samsung SmartTag / Tile：场景问题解决片"
+    },
+    {
+      "group": "Wearables / 智能穿戴",
+      "category": "VR/AR Headsets",
+      "zh": "VR/AR 头显",
+      "definition": "佩戴在头部、提供虚拟现实或增强现实体验的独立或连接式头显；智能眼镜按主要体验归入。",
+      "priority": "P2",
+      "search_route": "Meta Quest / Apple Vision Pro / XREAL：体验片、功能演示"
+    },
+    {
+      "group": "Audio / 音频",
+      "category": "True Wireless / Bluetooth Earbuds",
+      "zh": "真无线与蓝牙耳塞",
+      "definition": "入耳式或半入耳式小型无线耳塞，通常带充电盒；不含头戴式蓝牙耳机和开放式挂耳产品。",
+      "priority": "P1",
+      "search_route": "AirPods / Galaxy Buds / Nothing Ear / Bose / Sony：产品片、功能片"
+    },
+    {
+      "group": "Audio / 音频",
+      "category": "Open-Ear / Bone-Conduction Headphones",
+      "zh": "开放式与骨传导耳机",
+      "definition": "不封闭耳道、以挂耳、耳夹或骨传导形态提供音频的穿戴设备；不含普通真无线耳塞。",
+      "priority": "P0",
+      "search_route": "Shokz / Bose Ultra Open / Huawei FreeClip：运动片、产品片"
+    },
+    {
+      "group": "Audio / 音频",
+      "category": "Wired Earphones",
+      "zh": "有线耳机",
+      "definition": "通过音频线或数据接口连接的入耳式、半入耳式耳机；头戴式产品不按连接方式归入本类。",
+      "priority": "P2",
+      "search_route": "Apple EarPods / Sony / Audio-Technica：产品片、音乐场景片"
+    },
+    {
+      "group": "Audio / 音频",
+      "category": "Over-Ear Headphones",
+      "zh": "头戴式耳机",
+      "definition": "以头梁和耳罩为主要形态的耳机，不按有线或无线技术拆分；降噪、游戏与监听款均可归入。",
+      "priority": "P1",
+      "search_route": "Sony WH / Bose QC / Beats / Marshall / Dyson：TVC、功能片、设计片"
+    },
+    {
+      "group": "Audio / 音频",
+      "category": "Bluetooth & Wireless Speakers",
+      "zh": "蓝牙与无线音箱",
+      "definition": "面向个人或家庭播放的便携蓝牙音箱及紧凑型无线音箱；不含电视音响系统和专业扩声设备。",
+      "priority": "P1",
+      "search_route": "JBL / Marshall / Sonos / Bose：场景片、产品片、功能演示"
+    },
+    {
+      "group": "Audio / 音频",
+      "category": "Microphones",
+      "zh": "麦克风",
+      "definition": "用于录音、直播、会议或内容创作的独立麦克风及无线麦克风系统；不含耳机内置麦克风。",
+      "priority": "P1",
+      "search_route": "RØDE / DJI Mic / Shure / Blue：创作场景片、功能演示"
+    },
+    {
+      "group": "Imaging / 影像",
+      "category": "Digital & Instant Cameras",
+      "zh": "数码与拍立得相机",
+      "definition": "以静态摄影为主要心智的数码相机、微单、卡片机和即时成像相机；不含手机和运动相机。",
+      "priority": "P1",
+      "search_route": "Canon / Sony Alpha / Nikon / Fujifilm / Polaroid：产品片、摄影作品片"
+    },
+    {
+      "group": "Imaging / 影像",
+      "category": "Action Cameras",
+      "zh": "运动相机",
+      "definition": "强调防抖、防水、第一视角和户外运动记录的小型相机；全景运动相机归入本类。",
+      "priority": "P1",
+      "search_route": "GoPro / DJI Osmo Action / Insta360：运动高光、功能演示"
+    },
+    {
+      "group": "Imaging / 影像",
+      "category": "Webcams",
+      "zh": "摄像头",
+      "definition": "面向电脑视频会议、直播和桌面创作的外接摄像头；不含安防摄像机和手机摄像头。",
+      "priority": "P1",
+      "search_route": "Logitech / Elgato / Insta360 Link：桌面场景、功能演示"
+    },
+    {
+      "group": "Charging & Connectivity / 充电与连接",
+      "category": "Wall Chargers",
+      "zh": "充电器",
+      "definition": "插入墙面插座、为手机、电脑或多设备供电的充电头与桌面充电器；不含移动电源和插线板。",
+      "priority": "P0",
+      "search_route": "Anker / UGREEN / Belkin / Baseus：GaN、快充、体积对比、功能片"
+    },
+    {
+      "group": "Charging & Connectivity / 充电与连接",
+      "category": "Power Banks",
+      "zh": "充电宝",
+      "definition": "内置电池、可移动为设备供电的便携电源；带内置线或插头仍归本类。",
+      "priority": "P0",
+      "search_route": "Anker / UGREEN / Baseus / Belkin：容量、功率、多设备场景片"
+    },
+    {
+      "group": "Charging & Connectivity / 充电与连接",
+      "category": "Wireless Chargers",
+      "zh": "无线充电器",
+      "definition": "通过 Qi、Qi2、MagSafe 等方式进行无线供电的充电板、支架和多合一充电座。",
+      "priority": "P0",
+      "search_route": "Belkin / Anker / UGREEN / Nomad：多设备、磁吸、桌面产品片"
+    },
+    {
+      "group": "Charging & Connectivity / 充电与连接",
+      "category": "Data & Charging Cables",
+      "zh": "数据与充电线",
+      "definition": "用于数据传输或供电的 USB、Lightning、Thunderbolt 等线缆；不含扩展坞和视频转接器。",
+      "priority": "P0",
+      "search_route": "Anker / UGREEN / Belkin：耐久、速度、功率、材质特写"
+    },
+    {
+      "group": "Charging & Connectivity / 充电与连接",
+      "category": "Power Strips & Smart Plugs",
+      "zh": "插座与智能插座",
+      "definition": "提供多孔供电、浪涌保护或智能控制的插线板、墙插和智能插座；桌面多口充电器按主用途判断。",
+      "priority": "P1",
+      "search_route": "Anker / TP-Link Tapo / Belkin / Eve：场景问题解决、功能演示"
+    },
+    {
+      "group": "Charging & Connectivity / 充电与连接",
+      "category": "Docks & Hubs",
+      "zh": "扩展坞与集线器",
+      "definition": "为电脑、平板或手机扩展接口、显示器、网络和存储连接的 Hub 与 Dock；不含单一数据线。",
+      "priority": "P0",
+      "search_route": "UGREEN / Anker / CalDigit / Belkin：接口扩展、桌面工作流、功能片"
+    },
+    {
+      "group": "Computer Peripherals / 电脑外设",
+      "category": "Keyboards",
+      "zh": "键盘",
+      "definition": "面向电脑、平板或游戏主机的独立实体键盘；键鼠套装按广告主商品和画面主体判断。",
+      "priority": "P1",
+      "search_route": "Logitech / Razer / Keychron / Corsair：手感、效率、灯效、场景片"
+    },
+    {
+      "group": "Computer Peripherals / 电脑外设",
+      "category": "Mice",
+      "zh": "鼠标",
+      "definition": "面向办公、创作或游戏的独立指针输入设备；触控板和键鼠套装按主要商品判断。",
+      "priority": "P1",
+      "search_route": "Logitech / Razer / Corsair：人体工学、速度、功能片"
+    },
+    {
+      "group": "Computer Peripherals / 电脑外设",
+      "category": "Monitors",
+      "zh": "显示器",
+      "definition": "连接电脑或游戏设备使用的独立显示器；不含电视、平板和仅作支架的产品。",
+      "priority": "P1",
+      "search_route": "Dell / ASUS / Samsung / LG：画质、接口、设计、游戏功能片"
+    },
+    {
+      "group": "Computer Peripherals / 电脑外设",
+      "category": "Printers",
+      "zh": "打印机",
+      "definition": "面向家庭、办公或创作的打印、复印和扫描设备；标签打印机可在用户心智明确时归入。",
+      "priority": "P2",
+      "search_route": "HP / Canon / Epson / Brother：家庭与办公场景、功能演示"
+    },
+    {
+      "group": "Networking & Storage / 网络与存储",
+      "category": "Routers",
+      "zh": "路由器",
+      "definition": "为固定场所提供有线或无线网络的路由器与 Mesh 节点；随身 Wi-Fi 单独分类。",
+      "priority": "P1",
+      "search_route": "TP-Link / NETGEAR / ASUS / Google Nest Wifi：覆盖、速度、场景问题解决"
+    },
+    {
+      "group": "Networking & Storage / 网络与存储",
+      "category": "Mobile Wi-Fi",
+      "zh": "随身 Wi-Fi",
+      "definition": "通过蜂窝网络为移动场景提供热点的便携路由器、MiFi 或随身 Wi-Fi 设备。",
+      "priority": "P2",
+      "search_route": "NETGEAR Nighthawk / TP-Link / ZTE：旅行、多人连接、续航功能片"
+    },
+    {
+      "group": "Networking & Storage / 网络与存储",
+      "category": "Solid-State Drives",
+      "zh": "固态硬盘",
+      "definition": "以内置或外置 SSD 为核心商品的高速固态存储；成品移动 SSD 仍按固态技术归本类。",
+      "priority": "P1",
+      "search_route": "Samsung T7/T9 / Crucial / WD_BLACK / SanDisk：速度、耐用、创作工作流"
+    },
+    {
+      "group": "Networking & Storage / 网络与存储",
+      "category": "External Hard Drives",
+      "zh": "移动硬盘",
+      "definition": "以机械硬盘为核心的外置便携或桌面存储；与移动 SSD 按存储介质区分。",
+      "priority": "P2",
+      "search_route": "WD My Passport / Seagate：容量、备份、旅行场景"
+    },
+    {
+      "group": "Networking & Storage / 网络与存储",
+      "category": "USB Flash Drives",
+      "zh": "U 盘",
+      "definition": "直接插入 USB 接口使用的小型闪存盘；不含读卡器和外置 SSD。",
+      "priority": "P2",
+      "search_route": "SanDisk / Kingston / Samsung：速度、便携、跨设备场景"
+    },
+    {
+      "group": "Networking & Storage / 网络与存储",
+      "category": "Memory Cards",
+      "zh": "存储卡",
+      "definition": "用于相机、手机、无人机或游戏设备的 SD、microSD、CFexpress 等可移动存储卡。",
+      "priority": "P2",
+      "search_route": "SanDisk / Lexar / Samsung / Sony：速度、可靠性、专业拍摄场景"
+    },
+    {
+      "group": "Gaming / 游戏",
+      "category": "Game Consoles",
+      "zh": "游戏主机",
+      "definition": "用于运行电子游戏的家用或掌上主机；主机套装广告仍归本类，独立手柄单独分类。",
+      "priority": "P1",
+      "search_route": "PlayStation / Xbox / Nintendo：TVC、场景片、产品发布片"
+    },
+    {
+      "group": "Gaming / 游戏",
+      "category": "Game Controllers",
+      "zh": "游戏手柄",
+      "definition": "作为独立商品销售的游戏控制器、专业手柄和适配器；主机广告中附带出现不单独计入。",
+      "priority": "P0",
+      "search_route": "PlayStation DualSense / Xbox / Nintendo / Razer：功能片、竞技场景"
+    }
+  ]
+}

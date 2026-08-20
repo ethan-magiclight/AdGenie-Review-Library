@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "rule_version": "2026-08-pet-v1",
+  "updated_at": "2026-08-12",
+  "industry": "Pet Supplies",
+  "taxonomy_file": "pet-supplies-taxonomy-v1.json",
+  "genre_file": "ad-video-genres-v1.json",
+  "brand_file": "pet-supplies-top-brands-v1.json",
+  "source_file": "platform-source-registry-v1.json",
+  "defaults": {
+    "categories": ["Pet Food & Treats", "Pet Tech & Smart Devices"],
+    "genres": ["TVC / Brand Commercial", "Problem–Solution", "Product Demo", "Feature Callout", "Daily Routine", "Before & After"],
+    "formats": ["shorts", "videos"],
+    "brand_tiers": ["P0", "P1"],
+    "published_within_days": 730,
+    "fallback_within_days": 1095,
+    "limit_per_source": 35,
+    "limit_per_query": 6,
+    "max_queries_per_brand_genre": 2,
+    "minimum_discovery_score": 50,
+    "max_candidates_per_brand": 8,
+    "max_metadata_fetches": 80,
+    "official_only": true
+  },
+  "product_match": {
+    "allow_brand_context_match": true,
+    "brand_context_terms": ["commercial", "campaign", "ad", "advertisement", "product film", "overview", "introducing", "meet", "new"],
+    "generic_single_terms": ["pet", "pets", "dog", "dogs", "cat", "cats", "puppy", "puppies", "kitten", "kittens", "food", "treat", "treats", "toy", "toys", "chew", "care", "health", "grooming", "bed", "crate", "kennel", "carrier", "fountain", "feeder", "bowl", "harness", "leash", "collar", "supplement"],
+    "category_generic_terms": {
+      "Pet Food & Treats": ["food", "treat", "treats", "nutrition", "kibble", "wet food"],
+      "Cat Litter & Toileting": ["litter", "cat litter", "toileting", "odor"],
+      "Pet Grooming & Hygiene": ["shampoo", "conditioner", "wipes", "grooming", "deshedding", "de-shedding", "odor", "stain", "dental", "fresh breath", "ear cleaner", "deodorizer", "detangler"],
+      "Pet Tech & Smart Devices": ["smart", "camera", "feeder", "fountain", "tracker", "gps", "microchip"],
+      "Collars, Leashes & Harnesses": ["collar", "leash", "harness", "powerharness", "front range", "clickit", "martingale", "safety harness", "dog backpack"],
+      "Pet Toys & Enrichment": ["toy", "toys", "chew", "chews", "puzzle", "launcher", "ball", "fun feeder", "enrichment", "nina ottosson", "kong classic", "nylabone"],
+      "Beds, Crates & Furniture": ["bed", "beds", "crate", "crates", "kennel", "kennels", "furniture", "lounger", "pet house", "cat tree", "kitty home", "cool lounger", "heated bed"],
+      "Bowls, Feeders & Waterers": ["bowl", "bowls", "feeder", "feeders", "waterer", "waterers", "fountain", "fountains", "drinkwell", "pixi", "slow feeder", "slo-bowl", "fun feeder", "surefeed", "microchip pet feeder"],
+      "Travel & Carriers": ["carrier", "carriers", "travel", "kennel", "kennels", "dog pack", "travel bowl", "treat pouch", "booster seat", "car seat", "car seat cover", "bike basket", "mobile pet bed"],
+      "Health, Supplements & Care": ["supplement", "supplements", "health", "care", "dental", "joint", "probiotic", "fortiflora", "cosequin", "dasuquin", "omega", "allergy", "immune", "multivitamin"]
+    },
+    "category_brand_context_terms": {
+      "Pet Food & Treats": ["commercial", "campaign", "ad", "food", "fresh food", "real food", "kitchen", "bowl", "nutrition", "formula"],
+      "Cat Litter & Toileting": ["commercial", "campaign", "ad", "litter", "odor", "clean", "clump"],
+      "Pet Grooming & Hygiene": ["commercial", "campaign", "ad", "grooming", "clean", "dental", "well-being"],
+      "Pet Tech & Smart Devices": ["commercial", "campaign", "ad", "camera", "feeder", "fountain", "tracker", "gps", "smart"],
+      "Collars, Leashes & Harnesses": ["commercial", "campaign", "ad", "harness", "leash", "collar", "walk", "run", "bike", "fit", "adjust", "front range", "clickit"],
+      "Pet Toys & Enrichment": ["commercial", "campaign", "ad", "toy", "play", "chew", "puzzle", "launcher", "ball", "enrichment"],
+      "Beds, Crates & Furniture": ["commercial", "campaign", "ad", "bed", "crate", "kennel", "lounger", "home", "cozy", "comfort"],
+      "Bowls, Feeders & Waterers": ["commercial", "campaign", "ad", "bowl", "feeder", "waterer", "fountain", "hydration", "slow feeder", "drinkwell", "surefeed"],
+      "Travel & Carriers": ["commercial", "campaign", "ad", "carrier", "travel", "car", "seat", "safety", "pack", "pouch", "portable"],
+      "Health, Supplements & Care": ["commercial", "campaign", "ad", "supplement", "health", "joint", "probiotic", "dental", "allergy", "immune", "skin", "coat", "vet recommended"]
+    }
+  },
+  "hard_filters": {
+    "duration_seconds": { "min": 16, "max": 119 },
+    "require_known_publish_date": true,
+    "allowed_aspect_ratios": ["9:16", "16:9", "4:5", "1:1", "unknown"],
+    "excluded_title_terms": ["review", "vs", "comparison review", "livestream", "live stream", "podcast", "reaction", "repair", "replacement", "troubleshooting", "recall", "lawsuit", "getting started", "how to clean", "how to assemble", "how to install", "how to set up", "setup guide", "quick start", "accessory bundle", "replacement filter"],
+    "excluded_title_patterns": {
+      "DURATION_OUT_OF_RANGE": ["(^|[^0-9])(:15|15s|15 sec|15-second|15”|15″|00:15)([^0-9]|$)"]
+    },
+    "category_excluded_terms": {
+      "Pet Food & Treats": ["human food", "recipe for dogs", "homemade", "raw feeding guide"],
+      "Cat Litter & Toileting": ["toilet training", "bathroom tour"],
+      "Pet Grooming & Hygiene": ["grooming salon", "full groom", "vet procedure"],
+      "Pet Tech & Smart Devices": ["smartphone", "security camera review", "home camera review", "how to clean", "how to assemble", "getting started", "accessory bundle", "upgrade your scoopfree", "replacement tray"],
+      "Collars, Leashes & Harnesses": ["training course", "dog training lesson", "wireless fence", "in-ground fence", "bark collar", "litter box", "scoopfree", "oops tray"],
+      "Pet Toys & Enrichment": ["hong kong", "movie", "trailer", "life jacket", "harness", "litter box", "scoopfree", "feeder bowl"],
+      "Beds, Crates & Furniture": ["mattress", "human bed", "unbox better sleep"],
+      "Bowls, Feeders & Waterers": ["life jacket", "harness", "litter box", "scoopfree", "wireless fence", "bark collar"],
+      "Travel & Carriers": ["auto transport", "oops tray"],
+      "Health, Supplements & Care": ["disease treatment", "cancer", "surgery", "emergency vet"]
+    },
+    "industry_excluded_terms": {
+      "PET_CUTE_CONTENT_ONLY": ["funny cats", "funny dogs", "cute puppy compilation", "cute cat compilation", "try not to laugh"],
+      "RESCUE_DOCUMENTARY_STYLE": ["rescue story", "adoption story", "shelter documentary", "abandoned dog", "abandoned cat"],
+      "VET_EDUCATION_CONTENT": ["veterinarian explains", "vet explains", "veterinary lecture", "how to diagnose"],
+      "UNVERIFIED_HEALTH_CLAIM": ["cure", "treats disease", "miracle supplement"],
+      "RETAIL_LISTING_VIDEO": ["amazon finds", "top 10", "best products", "haul"]
+    }
+  },
+  "source_priority": {
+    "official_global": 30,
+    "official_regional": 27,
+    "official_product": 25,
+    "official_support": 15,
+    "paid_ad_library": 26,
+    "creator_authorized": 12,
+    "unverified": 0
+  },
+  "discovery_score_weights": {
+    "source": 20,
+    "recency": 15,
+    "product_match": 25,
+    "ad_intent": 30,
+    "engagement": 10
+  },
+  "ad_intent": {
+    "strong_terms": ["official commercial", "commercial", "brand film", "campaign film", "campaign", "product film", "ad", "advertisement", "tvc", "introducing"],
+    "supporting_terms": ["new", "meet", "designed for", "made for", "helps", "healthy", "fresh", "clean", "odor control", "vet recommended", "real food", "for every pet"],
+    "social_filler_terms": ["day in my life", "pov", "grwm", "funny", "compilation", "cute", "meme", "challenge"],
+    "pet_cute_only_terms": ["cute dog", "cute cat", "funny dog", "funny cat", "puppy video", "kitten video"],
+    "search_terms": ["official commercial", "brand campaign", "product film", "campaign film", "advertisement", "commercial"]
+  },
+  "recency_bands_days": [90, 180, 365, 730],
+  "dedupe": {
+    "state_file": "../web/data/creative-library-state.json",
+    "scan_collect_json": true,
+    "keys": ["source_platform+source_post_id", "video_id", "canonical_master_id", "normalized_url"]
+  },
+  "classification": {
+    "search_genres_are_recall_only": true,
+    "require_visual_review_before_formal_genres": true,
+    "required_frames": 10,
+    "visual_review_required": true,
+    "pet_product_evidence_includes_usage_and_outcome": true
+  },
+  "visual_quality_gate": {
+    "minimum_score": 72,
+    "allowed_content_natures": ["brand_commercial", "product_campaign", "advertising_product_film"],
+    "minimum_product_frame_ratio": 0.4,
+    "product_evidence_definition": "宠物用品按产品本体、包装、主人操作、宠物使用过程、使用结果、明确卖点字幕和品牌收束合并判断；不能只因宠物可爱就算产品证据。",
+    "required_ad_structure": ["hook", "commercial_proposition", "product_proof", "brand_close"],
+    "score_weights": {
+      "content_nature": 25,
+      "ad_structure": 25,
+      "product_focus": 20,
+      "production_quality": 20,
+      "template_value": 10
+    },
+    "hard_exclusion_codes": [
+      "SOCIAL_FILLER",
+      "PET_CUTE_CONTENT_ONLY",
+      "ANIMAL_WELFARE_RISK",
+      "UNVERIFIED_HEALTH_CLAIM",
+      "RESCUE_DOCUMENTARY_STYLE",
+      "VET_EDUCATION_CONTENT",
+      "RETAIL_LISTING_VIDEO",
+      "LOW_QUALITY_PERFORMANCE_AD",
+      "NOT_BRAND_ADVERTISING",
+      "PRODUCT_NOT_VISUAL_SUBJECT",
+      "PRIMARY_PRODUCT_FOCUS_MIXED",
+      "TALKING_HEAD_DOMINANT",
+      "SUPPORT_CONTENT",
+      "EVENT_OR_LAUNCH",
+      "BEHIND_THE_SCENES",
+      "DOCUMENTARY_STYLE",
+      "LOW_AI_CREATIVE_HEADROOM",
+      "DUPLICATE_MASTER"
+    ]
+  }
+}

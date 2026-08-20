@@ -1,0 +1,1283 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-12T09:11:19.955Z",
+  "collection_rule_version": "2026-08-pet-v1",
+  "scope": {
+    "industry": "Pet Supplies",
+    "note": "Recovered from collect history duplicate filter for review queue only; not formal ingestion."
+  },
+  "candidates": [
+    {
+      "video_id": "vlEGA00NWaU",
+      "source_platform": "youtube",
+      "source_post_id": "vlEGA00NWaU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=vlEGA00NWaU",
+      "normalized_url": "https://www.youtube.com/watch?v=vlEGA00NWaU",
+      "title": "Freshpet Peter Commercial | :30",
+      "description": "Learn why millions of pet parents have made the switch to Freshpet. Freshpet. It's Not Dog Food, It's Food Food.™ Discover real ...",
+      "brand": "Freshpet",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Freshpet",
+      "source_account_id": "UC5rs0KQbynTiXjyhivBUkAQ",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 23781,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food brand commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet cat food official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "vlEGA00NWaU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "dog food",
+      "discovery_score": 79,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 30,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 30,
+        "strong": [
+          "commercial",
+          "ad"
+        ],
+        "supporting": [
+          "fresh"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "IAIo-pUDl0s",
+      "source_platform": "youtube",
+      "source_post_id": "IAIo-pUDl0s",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=IAIo-pUDl0s",
+      "normalized_url": "https://www.youtube.com/watch?v=IAIo-pUDl0s",
+      "title": "The Farmer's Dog: Forever 2023 Super Bowl Commercial",
+      "description": "Watch our 2023 Super Bowl commercial that's earned the top spot in USA TODAY's 35th Ad Meter competition. Any dog person ...",
+      "brand": "The Farmer's Dog",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@TheFarmersDog",
+      "source_account_id": "UC3leux6UUKfAiNxlZeiMg7g",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 36424643,
+      "duration_seconds": 61,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food brand campaign 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food campaign film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food campaign film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food brand commercial 2026"
+        }
+      ],
+      "canonical_master_id": "IAIo-pUDl0s",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "the farmer s dog+category_context",
+      "discovery_score": 78,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 30,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 30,
+        "strong": [
+          "commercial",
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "MP0uiwTR65A",
+      "source_platform": "youtube",
+      "source_post_id": "MP0uiwTR65A",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=MP0uiwTR65A",
+      "normalized_url": "https://www.youtube.com/watch?v=MP0uiwTR65A",
+      "title": "Freshpet Kitchen Conversations: Too Soon I :30",
+      "description": "Learn why millions of pet parents have made the switch to Freshpet. better food for your better half™ Discover real food at ...",
+      "brand": "Freshpet",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Freshpet",
+      "source_account_id": "UC5rs0KQbynTiXjyhivBUkAQ",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1000000,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food brand commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet cat food official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "MP0uiwTR65A",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "freshpet+category_context",
+      "discovery_score": 75,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 27,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 27,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "fresh",
+          "real food"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "tL5MMpGzkPc",
+      "source_platform": "youtube",
+      "source_post_id": "tL5MMpGzkPc",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=tL5MMpGzkPc",
+      "normalized_url": "https://www.youtube.com/watch?v=tL5MMpGzkPc",
+      "title": "Freshpet Kitchen Conversations: Zodiac I :30",
+      "description": "Learn why millions of pet parents have made the switch to Freshpet. better food for your better half™ Discover real food at ...",
+      "brand": "Freshpet",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Freshpet",
+      "source_account_id": "UC5rs0KQbynTiXjyhivBUkAQ",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1100000,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet cat food official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "tL5MMpGzkPc",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "freshpet+category_context",
+      "discovery_score": 75,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 27,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 27,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "fresh",
+          "real food"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "p1KNXTYt_vk",
+      "source_platform": "youtube",
+      "source_post_id": "p1KNXTYt_vk",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=p1KNXTYt_vk",
+      "normalized_url": "https://www.youtube.com/watch?v=p1KNXTYt_vk",
+      "title": "Freshpet Kitchen Conversations: Sleep I :30",
+      "description": "Learn why millions of pet parents have made the switch to Freshpet. better food for your better half™ Discover real food at ...",
+      "brand": "Freshpet",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Freshpet",
+      "source_account_id": "UC5rs0KQbynTiXjyhivBUkAQ",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 993000,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet dog food brand commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Freshpet Freshpet cat food official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "p1KNXTYt_vk",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "freshpet+category_context",
+      "discovery_score": 73,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 27,
+        "engagement": 8
+      },
+      "ad_intent_evidence": {
+        "score": 27,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "fresh",
+          "real food"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "y8dtdjH6QOw",
+      "source_platform": "youtube",
+      "source_post_id": "y8dtdjH6QOw",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=y8dtdjH6QOw",
+      "normalized_url": "https://www.youtube.com/watch?v=y8dtdjH6QOw",
+      "title": "The Farmer's Dog Commercial: It's Time",
+      "description": "The time has come for a fresh approach to dog food. Founded on the idea that avoiding ultra-processed food is an important way ...",
+      "brand": "The Farmer's Dog",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@TheFarmersDog",
+      "source_account_id": "UC3leux6UUKfAiNxlZeiMg7g",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 49476,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food brand campaign 2026"
+        }
+      ],
+      "canonical_master_id": "y8dtdjH6QOw",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "the farmer s dog+category_context",
+      "discovery_score": 65,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 21,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 21,
+        "strong": [
+          "commercial"
+        ],
+        "supporting": [
+          "fresh"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "EHiz-Ac_AgU",
+      "source_platform": "youtube",
+      "source_post_id": "EHiz-Ac_AgU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=EHiz-Ac_AgU",
+      "normalized_url": "https://www.youtube.com/watch?v=EHiz-Ac_AgU",
+      "title": "Give Your Cat or Dog Medicine, Made Easy with Greenies PILL POCKETS®",
+      "description": "Easily give your cat or dog medicine with Greenies PILL POCKETS, the #1 veterinarian recommended treat. For more information ...",
+      "brand": "Greenies",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Greenies",
+      "source_account_id": "UCfcaY6i1BSSDQ6wiQE7YG4A",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2218660,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Greenies Greenies Pill Pockets official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "EHiz-Ac_AgU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "greenies pill pockets",
+      "discovery_score": 70,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 15,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "XGs4N9h6KlA",
+      "source_platform": "youtube",
+      "source_post_id": "XGs4N9h6KlA",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=XGs4N9h6KlA",
+      "normalized_url": "https://www.youtube.com/watch?v=XGs4N9h6KlA",
+      "title": "Purina Pro Plan Fuel For Life",
+      "description": "Pro Plan offers the most advanced nutrition to nourish your pet, because excellent nutrition fuels more than the days in your pet's ...",
+      "brand": "Purina",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Purina Pro Plan",
+      "source_account_id": "UC8Xs4GGN3RHQ_kDoyvksbkg",
+      "source_account_type": "official_product",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 298535,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan product film 2026"
+        }
+      ],
+      "canonical_master_id": "XGs4N9h6KlA",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "purina pro plan",
+      "discovery_score": 65,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 15,
+        "engagement": 8
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "Tw50QHfpAG4",
+      "source_platform": "youtube",
+      "source_post_id": "Tw50QHfpAG4",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=Tw50QHfpAG4",
+      "normalized_url": "https://www.youtube.com/watch?v=Tw50QHfpAG4",
+      "title": "FELINE GREENIES™ PILL POCKETS™ Treats – How It Works",
+      "description": "When it comes to medicine cats aren't easily fooled greenies understands that that's why we made feline greenies tail pockets ...",
+      "brand": "Greenies",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Greenies",
+      "source_account_id": "UCfcaY6i1BSSDQ6wiQE7YG4A",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 18993,
+      "duration_seconds": 25,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Greenies Greenies Pill Pockets official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "Tw50QHfpAG4",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "pill pockets",
+      "discovery_score": 64,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 15,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "dYpHFJ_-MIU",
+      "source_platform": "youtube",
+      "source_post_id": "dYpHFJ_-MIU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=dYpHFJ_-MIU",
+      "normalized_url": "https://www.youtube.com/watch?v=dYpHFJ_-MIU",
+      "title": "The Farmer's Dog Ad: For Everyone's Dog",
+      "description": "The love you have for each other is real. So it only makes sense that the food you feed them is real too. Human-grade food from ...",
+      "brand": "The Farmer's Dog",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@TheFarmersDog",
+      "source_account_id": "UC3leux6UUKfAiNxlZeiMg7g",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 16323,
+      "duration_seconds": 71,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food brand campaign 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food campaign film 2026"
+        }
+      ],
+      "canonical_master_id": "dYpHFJ_-MIU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "the farmer s dog+category_context",
+      "discovery_score": 59,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "lhucnZbiJqk",
+      "source_platform": "youtube",
+      "source_post_id": "lhucnZbiJqk",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=lhucnZbiJqk",
+      "normalized_url": "https://www.youtube.com/watch?v=lhucnZbiJqk",
+      "title": "The Farmer's Dog Ad: The Girls' Dog",
+      "description": "The love you have for each other is real. So it only makes sense that the food you feed them is real too. Human-grade food from ...",
+      "brand": "The Farmer's Dog",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@TheFarmersDog",
+      "source_account_id": "UC3leux6UUKfAiNxlZeiMg7g",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 10909,
+      "duration_seconds": 40,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food brand commercial 2026"
+        }
+      ],
+      "canonical_master_id": "lhucnZbiJqk",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "the farmer s dog+category_context",
+      "discovery_score": 59,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "9VxfaJENnRg",
+      "source_platform": "youtube",
+      "source_post_id": "9VxfaJENnRg",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=9VxfaJENnRg",
+      "normalized_url": "https://www.youtube.com/watch?v=9VxfaJENnRg",
+      "title": "The Farmer's Dog Ad: The Captain's Dog",
+      "description": "The love you have for each other is real. So it only makes sense that the food you feed them is real too. Human-grade food from ...",
+      "brand": "The Farmer's Dog",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Food & Treats",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@TheFarmersDog",
+      "source_account_id": "UC3leux6UUKfAiNxlZeiMg7g",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 7233,
+      "duration_seconds": 40,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food brand campaign 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "The Farmer's Dog The Farmer's Dog food campaign film 2026"
+        }
+      ],
+      "canonical_master_id": "9VxfaJENnRg",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "the farmer s dog+category_context",
+      "discovery_score": 57,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:13:02.682Z"
+    },
+    {
+      "video_id": "mxZGIAM_EH4",
+      "source_platform": "youtube",
+      "source_post_id": "mxZGIAM_EH4",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=mxZGIAM_EH4",
+      "normalized_url": "https://www.youtube.com/watch?v=mxZGIAM_EH4",
+      "title": "Introducing Petcube Cam - All-new Affordable Pet Camera With a Built-in Vet Chat",
+      "description": null,
+      "brand": "Petcube",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Tech & Smart Devices",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Petcube",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 66000,
+      "duration_seconds": 61,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "mxZGIAM_EH4",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "petcube cam",
+      "discovery_score": 72,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 21,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 21,
+        "strong": [
+          "introducing"
+        ],
+        "supporting": [
+          "new"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:17:01.470Z"
+    },
+    {
+      "video_id": "pEufXI8o1dw",
+      "source_platform": "youtube",
+      "source_post_id": "pEufXI8o1dw",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=pEufXI8o1dw",
+      "normalized_url": "https://www.youtube.com/watch?v=pEufXI8o1dw",
+      "title": "Introducing PetSafe® Guardian® GPS 2.0 Dog Fence + Tracking",
+      "description": null,
+      "brand": "PetSafe",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Tech & Smart Devices",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@PetSafeBrand",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 10000,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "pEufXI8o1dw",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "petsafe+category_context",
+      "discovery_score": 59,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "introducing"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:17:01.470Z"
+    },
+    {
+      "video_id": "9dVRNtFWmZk",
+      "source_platform": "youtube",
+      "source_post_id": "9dVRNtFWmZk",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=9dVRNtFWmZk",
+      "normalized_url": "https://www.youtube.com/watch?v=9dVRNtFWmZk",
+      "title": "Get to know the new & improved Litter-Robot 4 | Self-cleaning litter box",
+      "description": null,
+      "brand": "Litter-Robot",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Tech & Smart Devices",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "How-To Tutorial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@LitterRobot",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1400000,
+      "duration_seconds": 64,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "9dVRNtFWmZk",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "litter robot 4",
+      "discovery_score": 67,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 12,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 12,
+        "strong": [],
+        "supporting": [
+          "new",
+          "clean"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:17:01.470Z"
+    },
+    {
+      "video_id": "DaqlXWazwqM",
+      "source_platform": "youtube",
+      "source_post_id": "DaqlXWazwqM",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=DaqlXWazwqM",
+      "normalized_url": "https://www.youtube.com/watch?v=DaqlXWazwqM",
+      "title": "Meet Petlibro’s Newest Feeder - A Smarter Way to Feed is Here",
+      "description": "It's more than a smart cat feeder. Get precise portions, feeding insights, and alerts.",
+      "brand": "Petlibro",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Tech & Smart Devices",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@PETLIBRO",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 4200000,
+      "duration_seconds": 30,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Petlibro Petlibro automatic feeder official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Petlibro Petlibro automatic feeder advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Petlibro Petlibro automatic feeder brand commercial 2026"
+        }
+      ],
+      "canonical_master_id": "DaqlXWazwqM",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "petlibro+category_context",
+      "discovery_score": 60,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 12,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 12,
+        "strong": [],
+        "supporting": [
+          "new",
+          "meet"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T05:17:01.470Z"
+    }
+  ]
+}
