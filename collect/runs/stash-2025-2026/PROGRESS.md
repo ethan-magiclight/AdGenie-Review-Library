@@ -16,3 +16,4 @@
 15. 恢复审计 #3（2026-08-20）：审计前 HEAD=`44bbd9c`、tracked worktree 干净；CDP 连续等待 30 秒无 ready 后有界终止，`/targets` 再次立即 `ECONNREFUSED :3456`。同一阻塞已连续 3 个恢复 turn，媒体门与远端交付仍无解除证据，达到再次正式 blocked 阈值。
 16. 再次恢复审计 #1（2026-08-20）：goal 再次恢复为 active；Chrome 控制扩展连接成功，但自动访问 `chrome://inspect/#remote-debugging` 被浏览器安全策略明确禁止，且不得用底层命令或其他界面绕过。临时标签已关闭；需用户手动允许远程调试后才能继续验证 Proxy，媒体门仍失败。
 17. 再次恢复审计 #2（2026-08-20）：专用 GitHub 连接确认身份为 `Ahakunamatata`；上游仓库仅 `pull=true`、`push=false`，同名分支与 PR 均不存在，账户下也没有同名 fork，连接不提供创建 fork 能力。未发起必然失败的远端写入，需上游写权限或用户提供 fork；媒体门仍失败。
+18. 再次恢复审计 #3（2026-08-20）：审计前 HEAD=`fc3dd71`、tracked worktree 干净；GitHub 权限仍为 `push=false`，分支/PR/fork 仍不存在；CDP 等待 20 秒仍需用户授权，随后 `/targets` 立即 `ECONNREFUSED :3456`。稳定媒体 resolver 仍缺失，连续 3 个恢复 turn 无解除证据，再次达到 blocked 阈值。

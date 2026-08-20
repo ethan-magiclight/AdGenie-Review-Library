@@ -62,6 +62,13 @@
 - `Ahakunamatata/AdGenie-Review-Library` 返回 404，说明当前没有可用同名 fork；连接工具不提供创建 fork 能力。
 - 未发起必然失败的 `create_branch`/文件写入，也未未经授权创建云端仓库。继续交付需要上游授予 push 权限，或用户先创建并授权 fork；这是再次恢复后的第 2 个同条件阻塞 turn，goal 保持 active。
 
+### goal 再次恢复审计 #3 与正式阻塞结论（2026-08-20）
+
+- 审计前本地 HEAD=`fc3dd71`，`ff1989b` 祖先关系与干净 tracked worktree 均未改变。
+- GitHub 复核仍显示上游 `push=false`、同名分支与 PR 均不存在、`Ahakunamatata` fork 仍为 404；没有可执行的远端写入路径。
+- `web-access` 前置检查等待 20 秒仍停在用户授权提示，有界终止后访问本地 `/targets` 立即返回 `ECONNREFUSED :3456`；未创建或操作任何标签。
+- 合法稳定媒体 resolver 仍不存在，`DISCOVERY_TOTAL_MISMATCH` 与媒体门也没有解除证据；同一阻塞已连续 3 个恢复 turn 重复，再次达到正式 blocked 阈值。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
