@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_from_state_updated_at": "2026-08-20T08:53:58.755Z",
-  "state_sha256": "ce9e5e4132796eef7961ba7084fb3a06b5f937ae5adf20dba5be2a7d7383e2d7",
+  "generated_from_state_updated_at": "2026-08-20T10:15:14.443Z",
+  "state_sha256": "ccbb72fae6be74f7ce3aebba68061daef72b88056684b158edd22dc3d92953c6",
   "counts": {
-    "videos": 635,
-    "industries": 6,
-    "categories": 60,
+    "videos": 675,
+    "industries": 7,
+    "categories": 64,
     "genres": 29,
     "genre_groups": 7,
     "statuses": 8,
-    "review_events": 69,
-    "source_files": 17,
+    "review_events": 118,
+    "source_files": 22,
     "contact_sheets": 251,
-    "remote_video_references": 635,
+    "remote_video_references": 675,
     "local_video_files": 0
   },
   "source_files": [
@@ -32,6 +32,11 @@
     "collect/runs/pet-recovered-history-review-candidates-2026-08-12.json",
     "collect/runs/pet-supplies-expanded-review-candidates-2026-08-12.json",
     "collect/runs/pet-tech-top-brand-candidates-pending-date-2026-08-12.json",
+    "collect/runs/sporting-goods-fitness-pilot-2026-08-18.json",
+    "collect/sporting-goods-fitness-collection-policy-v1.json",
+    "collect/sporting-goods-fitness-source-registry-v1.json",
+    "collect/sporting-goods-fitness-taxonomy-v1.json",
+    "collect/sporting-goods-fitness-top-brands-v1.json",
     "collect/stats-v9.json"
   ],
   "contact_sheets": [
@@ -288,7 +293,7 @@
     "collect/runs/earbuds-brand-campaign-visual-review-2026-08-03/vGY0SATxd6k/contact-sheet.jpg"
   ],
   "package": {
-    "files_excluding_manifest": 282,
-    "bytes_excluding_manifest": 36184052
+    "files_excluding_manifest": 287,
+    "bytes_excluding_manifest": 37193505
   }
 }

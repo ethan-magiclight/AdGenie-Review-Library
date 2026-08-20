@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-18",
+  "industry": "Sporting Goods & Fitness",
+  "principle": "品牌池只负责运动健身商品召回与覆盖优先级；官方账号、运动场景或运动员出镜不能单独证明品牌广告、商品主体或核心模板资格成立。",
+  "categories": {
+    "Cardio & Connected Fitness Equipment": [
+      { "brand": "Peloton", "tier": "P0", "products": ["Peloton Bike", "Peloton Bike+", "Peloton Tread", "Peloton Row"] },
+      { "brand": "Concept2", "tier": "P0", "products": ["Concept2 RowErg", "Concept2 SkiErg", "Concept2 BikeErg"] },
+      { "brand": "Technogym", "tier": "P0", "products": ["Technogym Run", "Technogym MyRun", "Technogym Skillrow", "Technogym Excite Live"] },
+      { "brand": "NordicTrack", "tier": "P1", "products": ["NordicTrack treadmill", "NordicTrack bike", "NordicTrack rower"] },
+      { "brand": "Hydrow", "tier": "P1", "products": ["Hydrow Rower", "Hydrow Wave"] }
+    ],
+    "Strength Training Equipment": [
+      { "brand": "Technogym", "tier": "P0", "products": ["Technogym Biostrength", "Technogym Bench", "Technogym Skilltools"] },
+      { "brand": "TRX", "tier": "P0", "products": ["TRX Suspension Trainer", "TRX Rip Trainer", "TRX YBell"] },
+      { "brand": "Tonal", "tier": "P1", "products": ["Tonal 2", "Tonal smart home gym"] },
+      { "brand": "Bowflex", "tier": "P1", "products": ["Bowflex SelectTech", "Bowflex home gym"] },
+      { "brand": "Rogue Fitness", "tier": "P1", "products": ["Rogue rack", "Rogue barbell", "Rogue dumbbell"] }
+    ],
+    "Fitness Accessories & Mobility": [
+      { "brand": "TRX", "tier": "P0", "products": ["TRX Suspension Trainer", "TRX Bandit", "TRX Training Mat"] },
+      { "brand": "Bala", "tier": "P1", "products": ["Bala Bangles", "Bala Beam", "Bala Bars"] },
+      { "brand": "Manduka", "tier": "P1", "products": ["Manduka PRO Mat", "Manduka yoga mat"] },
+      { "brand": "TheraBand", "tier": "P1", "products": ["TheraBand resistance band", "TheraBand exercise ball"] }
+    ],
+    "Recovery & Massage Equipment": [
+      { "brand": "Therabody", "tier": "P0", "products": ["Theragun", "Theragun PRO", "Theragun Prime", "RecoveryAir JetBoots"] },
+      { "brand": "Hyperice", "tier": "P0", "products": ["Hypervolt", "Normatec", "Vyper", "Venom"] },
+      { "brand": "TriggerPoint", "tier": "P1", "products": ["TriggerPoint GRID", "TriggerPoint foam roller"] },
+      { "brand": "Compex", "tier": "P1", "products": ["Compex Fixx", "Compex Ayre"] }
+    ]
+  }
+}

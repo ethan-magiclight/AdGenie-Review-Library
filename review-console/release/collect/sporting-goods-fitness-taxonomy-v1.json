@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-18",
+  "industry": "Sporting Goods & Fitness",
+  "target_per_category": 3,
+  "fallback_category": "Multi-Product / Cross-Category",
+  "fallback_counts_toward_coverage": false,
+  "categories": [
+    {
+      "group": "Fitness Equipment / 健身设备",
+      "category": "Cardio & Connected Fitness Equipment",
+      "zh": "有氧与智能健身设备",
+      "definition": "跑步机、动感单车、划船机、椭圆机及与专用设备强绑定的联网训练系统；不含通用智能手表、运动耳机、纯健身课程和普通自行车。",
+      "priority": "P0",
+      "search_route": "Peloton / Concept2 / Technogym：TVC、产品演示、卖点标注、训练场景与问题解决"
+    },
+    {
+      "group": "Fitness Equipment / 健身设备",
+      "category": "Strength Training Equipment",
+      "zh": "力量训练器材",
+      "definition": "哑铃、杠铃、力量训练架、综合训练器、悬挂训练和智能力量训练设备；不含纯训练课程、健身房宣传和无商品主体的动作教学。",
+      "priority": "P0",
+      "search_route": "Technogym / TRX / Tonal：产品演示、结构功能、动作到设备响应、训练场景"
+    },
+    {
+      "group": "Training Accessories / 训练辅具",
+      "category": "Fitness Accessories & Mobility",
+      "zh": "健身辅具与灵活性训练",
+      "definition": "弹力带、瑜伽垫、跳绳、平衡、拉伸、活动度训练和非电子健身辅具；不含运动服鞋、普通家居用品和无商品证明的教学内容。",
+      "priority": "P0",
+      "search_route": "TRX / Bala / Manduka / TheraBand：试用、日常训练、产品演示、卖点标注"
+    },
+    {
+      "group": "Recovery / 运动恢复",
+      "category": "Recovery & Massage Equipment",
+      "zh": "运动恢复与按摩设备",
+      "definition": "筋膜枪、泡沫轴、加压恢复、冷热恢复和面向一般运动恢复的非医疗用品；不含疾病治疗、诊断、临床康复和处方医疗器械。",
+      "priority": "P0",
+      "search_route": "Therabody / Hyperice / TriggerPoint：问题解决、产品演示、恢复流程、功能卖点"
+    }
+  ]
+}

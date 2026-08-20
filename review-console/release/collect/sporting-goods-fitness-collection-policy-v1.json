@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "rule_version": "2026-08-sporting-goods-fitness-v1",
+  "updated_at": "2026-08-18",
+  "industry": "Sporting Goods & Fitness",
+  "taxonomy_file": "sporting-goods-fitness-taxonomy-v1.json",
+  "genre_file": "ad-video-genres-v1.json",
+  "brand_file": "sporting-goods-fitness-top-brands-v1.json",
+  "source_file": "sporting-goods-fitness-source-registry-v1.json",
+  "defaults": {
+    "categories": ["Cardio & Connected Fitness Equipment", "Recovery & Massage Equipment"],
+    "genres": ["TVC / Brand Commercial", "Product Demo", "Feature Callout", "Problem–Solution", "Daily Routine", "Try-On / Try-Out", "UGC Ad"],
+    "formats": ["shorts", "videos"],
+    "brand_tiers": ["P0", "P1"],
+    "published_within_days": 730,
+    "fallback_within_days": 1095,
+    "limit_per_source": 35,
+    "limit_per_query": 6,
+    "max_queries_per_brand_genre": 2,
+    "minimum_discovery_score": 48,
+    "max_candidates_per_brand": 8,
+    "max_metadata_fetches": 60,
+    "official_only": true
+  },
+  "product_match": {
+    "allow_brand_context_match": true,
+    "brand_context_terms": ["commercial", "campaign", "ad", "advertisement", "product film", "introducing", "meet", "new", "in action"],
+    "generic_single_terms": ["fitness", "training", "workout", "gym", "equipment", "exercise", "cardio", "strength", "recovery", "massage", "rower", "bike", "treadmill", "band", "mat"],
+    "category_generic_terms": {
+      "Cardio & Connected Fitness Equipment": ["bike", "tread", "treadmill", "row", "rower", "rowerg", "skierg", "bikeerg", "cardio", "connected fitness"],
+      "Strength Training Equipment": ["strength", "dumbbell", "barbell", "rack", "home gym", "suspension trainer", "resistance", "biostrength", "ybell"],
+      "Fitness Accessories & Mobility": ["band", "bands", "mat", "mobility", "stretch", "balance", "jump rope", "bangles", "suspension trainer"],
+      "Recovery & Massage Equipment": ["recovery", "massage", "percussive", "theragun", "hypervolt", "normatec", "foam roller", "compression", "jetboots"]
+    },
+    "category_brand_context_terms": {
+      "Cardio & Connected Fitness Equipment": ["commercial", "campaign", "ad", "ride", "run", "row", "training", "cardio", "fitness", "home workout"],
+      "Strength Training Equipment": ["commercial", "campaign", "ad", "lift", "strength", "resistance", "training", "home gym", "in action"],
+      "Fitness Accessories & Mobility": ["commercial", "campaign", "ad", "mobility", "training", "stretch", "workout", "fit", "in action"],
+      "Recovery & Massage Equipment": ["commercial", "campaign", "ad", "recovery", "warm up", "cool down", "massage", "relief", "performance"]
+    }
+  },
+  "ad_intent": {
+    "strong_terms": ["official commercial", "commercial", "brand film", "campaign film", "campaign", "product film", "ad", "advertisement", "tvc", "introducing"],
+    "supporting_terms": ["new", "meet", "designed for", "made for", "performance", "in action", "train", "move", "recover", "every body"],
+    "social_filler_terms": ["day in my life", "pov", "grwm", "funny", "compilation", "meme", "challenge", "full workout", "workout class"],
+    "search_terms": ["official commercial", "brand campaign", "product film", "campaign film", "advertisement", "commercial", "in action"]
+  },
+  "hard_filters": {
+    "duration_seconds": { "min": 8, "max": 120 },
+    "require_known_publish_date": true,
+    "allowed_aspect_ratios": ["9:16", "16:9", "4:5", "1:1", "unknown"],
+    "excluded_title_terms": ["review", "vs", "livestream", "live stream", "podcast", "reaction", "repair", "replacement", "troubleshooting", "recall", "lawsuit", "getting started", "how to assemble", "how to install", "setup guide", "quick start", "full workout", "workout class", "training class", "webinar", "interview", "behind the scenes", "race recap", "event recap", "highlights"],
+    "excluded_title_patterns": {},
+    "category_excluded_terms": {
+      "Cardio & Connected Fitness Equipment": ["bike race", "road bike review", "smartwatch", "fitness tracker", "headphones"],
+      "Strength Training Equipment": ["bodybuilding vlog", "gym tour", "exercise tutorial", "personal trainer"],
+      "Fitness Accessories & Mobility": ["yoga class", "pilates class", "sportswear", "running shoes"],
+      "Recovery & Massage Equipment": ["physical therapy clinic", "medical treatment", "injury diagnosis", "chiropractor treatment"]
+    },
+    "industry_excluded_terms": {
+      "SPORTS_HIGHLIGHT_ONLY": ["match highlights", "game highlights", "race highlights", "best plays"],
+      "SPONSORSHIP_OR_EVENT_RECAP": ["sponsorship recap", "event recap", "tournament recap", "race recap"],
+      "TRAINING_VLOG_NOT_AD": ["training vlog", "workout vlog", "full workout", "follow along workout"],
+      "APPAREL_FOOTWEAR_OVERLAP": ["running shoes", "training shoes", "sportswear collection", "activewear haul"],
+      "WEARABLE_TECH_OVERLAP": ["smartwatch", "fitness tracker", "sports headphones", "heart rate watch"],
+      "MEDICAL_REHABILITATION_CONTENT": ["disease treatment", "injury diagnosis", "clinical rehabilitation", "physical therapy treatment"],
+      "RETAIL_LISTING_VIDEO": ["amazon finds", "top 10", "best equipment", "haul"]
+    }
+  },
+  "discovery_score_weights": {
+    "source": 20,
+    "recency": 15,
+    "product_match": 25,
+    "ad_intent": 30,
+    "engagement": 10
+  },
+  "source_priority": {
+    "official_global": 30,
+    "official_regional": 27,
+    "official_product": 25,
+    "official_support": 15,
+    "paid_ad_library": 26,
+    "creator_authorized": 12,
+    "unverified": 0
+  },
+  "recency_bands_days": [90, 180, 365, 730],
+  "classification": {
+    "search_genres_are_recall_only": true,
+    "require_visual_review_before_formal_genres": true,
+    "required_frames": 10,
+    "visual_review_required": true,
+    "sporting_product_evidence_includes_human_interaction_and_response": true
+  },
+  "visual_quality_gate": {
+    "minimum_score": 72,
+    "allowed_content_natures": ["brand_commercial", "product_campaign", "advertising_product_film"],
+    "minimum_product_frame_ratio": 0.4,
+    "product_evidence_definition": "运动健身用品按商品本体、结构细节、调节或安装、人体实际交互、动作到设备响应、训练结果、明确卖点字幕和品牌收束合并判断；不能只因出现运动员、比赛或训练场景就算商品证据。",
+    "required_ad_structure": ["hook", "commercial_proposition", "product_proof", "brand_close"],
+    "score_weights": {
+      "content_nature": 25,
+      "ad_structure": 25,
+      "product_focus": 20,
+      "production_quality": 20,
+      "template_value": 10
+    },
+    "hard_exclusion_codes": ["SOCIAL_FILLER", "SPORTS_HIGHLIGHT_ONLY", "ATHLETE_STORY_PRODUCT_WEAK", "SPONSORSHIP_OR_EVENT_RECAP", "TRAINING_VLOG_NOT_AD", "APPAREL_FOOTWEAR_OVERLAP", "WEARABLE_TECH_OVERLAP", "MEDICAL_REHABILITATION_CONTENT", "UNSAFE_USAGE_DEPICTION", "RETAIL_LISTING_VIDEO", "LOW_QUALITY_PERFORMANCE_AD", "NOT_BRAND_ADVERTISING", "PRODUCT_NOT_VISUAL_SUBJECT", "PRIMARY_PRODUCT_FOCUS_MIXED", "TALKING_HEAD_DOMINANT", "SUPPORT_CONTENT", "EVENT_OR_LAUNCH", "BEHIND_THE_SCENES", "DOCUMENTARY_STYLE", "LOW_AI_CREATIVE_HEADROOM", "DUPLICATE_MASTER"]
+  },
+  "dedupe": {
+    "state_file": "../web/data/creative-library-state.json",
+    "scan_collect_json": true,
+    "keys": ["source_platform+source_post_id", "video_id", "canonical_master_id", "normalized_url"]
+  }
+}

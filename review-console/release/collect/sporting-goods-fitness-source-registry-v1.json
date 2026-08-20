@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-18",
+  "sources": [
+    {
+      "id": "youtube-peloton",
+      "brand": "Peloton",
+      "industry": "Sporting Goods & Fitness",
+      "platform": "youtube",
+      "account_type": "official_global",
+      "handle": "@OnePeloton",
+      "channel_id": "UCrGjmFNE5m3ffHv-YWE7scw",
+      "url": "https://www.youtube.com/@OnePeloton",
+      "formats": ["shorts", "videos"],
+      "priority": 100,
+      "verified_at": "2026-08-18",
+      "active": true
+    },
+    {
+      "id": "youtube-concept2usa",
+      "brand": "Concept2",
+      "industry": "Sporting Goods & Fitness",
+      "platform": "youtube",
+      "account_type": "official_regional",
+      "handle": "@concept2usa",
+      "channel_id": "UCMstXzmimWVx1NumLu6OHiA",
+      "url": "https://www.youtube.com/@concept2usa",
+      "formats": ["shorts", "videos"],
+      "priority": 90,
+      "verified_at": "2026-08-18",
+      "active": true
+    },
+    {
+      "id": "youtube-technogym",
+      "brand": "Technogym",
+      "industry": "Sporting Goods & Fitness",
+      "platform": "youtube",
+      "account_type": "official_global",
+      "handle": "@Technogym",
+      "channel_id": "UCA9he9IGDgKM_khl2rA8oLg",
+      "url": "https://www.youtube.com/@Technogym",
+      "formats": ["shorts", "videos"],
+      "priority": 95,
+      "verified_at": "2026-08-18",
+      "active": true
+    },
+    {
+      "id": "youtube-trxtraining",
+      "brand": "TRX",
+      "industry": "Sporting Goods & Fitness",
+      "platform": "youtube",
+      "account_type": "official_global",
+      "handle": "@TRXtraining",
+      "channel_id": "UCj6D4e-PJshZgffpLS0Iu2w",
+      "url": "https://www.youtube.com/@TRXtraining",
+      "formats": ["shorts", "videos"],
+      "priority": 95,
+      "verified_at": "2026-08-18",
+      "active": true
+    },
+    {
+      "id": "youtube-therabody",
+      "brand": "Therabody",
+      "industry": "Sporting Goods & Fitness",
+      "platform": "youtube",
+      "account_type": "official_global",
+      "handle": "@Therabody",
+      "channel_id": "UCgA-nI5zzB38T_OsRK9030A",
+      "url": "https://www.youtube.com/@Therabody",
+      "formats": ["shorts", "videos"],
+      "priority": 100,
+      "verified_at": "2026-08-18",
+      "active": true
+    },
+    {
+      "id": "youtube-hyperice",
+      "brand": "Hyperice",
+      "industry": "Sporting Goods & Fitness",
+      "platform": "youtube",
+      "account_type": "official_global",
+      "handle": "@HypericeVideo",
+      "channel_id": "UC7U7wmjQ_CB3LAg1suhCryA",
+      "url": "https://www.youtube.com/@HypericeVideo",
+      "formats": ["shorts", "videos"],
+      "priority": 100,
+      "verified_at": "2026-08-18",
+      "active": true
+    }
+  ]
+}
