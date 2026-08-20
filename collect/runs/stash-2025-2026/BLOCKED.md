@@ -55,6 +55,13 @@
 - 临时标签已关闭，未操作任何用户已有标签，也未访问 GitHub、STASH、Vercel 或发起采集/push。
 - 用户需在 Chrome 地址栏手动打开 `chrome://inspect/#remote-debugging`，启用 **Allow remote debugging for this browser instance**，然后告知可以继续；即便 Proxy 恢复，仍需另行解决合法稳定媒体 resolver 才能通过媒体门。
 
+### goal 再次恢复审计 #2：GitHub 精确权限证据（2026-08-20）
+
+- 专用 GitHub 连接的认证身份为 `Ahakunamatata`；目标仓库 `ethan-magiclight/AdGenie-Review-Library` 可读，但权限明确为 `pull=true`、`push=false`。
+- 远端没有 `codex/stash-source-ingestion` 分支，也没有以该分支为 head 的现有 PR；因此不存在可复用的远端交付。
+- `Ahakunamatata/AdGenie-Review-Library` 返回 404，说明当前没有可用同名 fork；连接工具不提供创建 fork 能力。
+- 未发起必然失败的 `create_branch`/文件写入，也未未经授权创建云端仓库。继续交付需要上游授予 push 权限，或用户先创建并授权 fork；这是再次恢复后的第 2 个同条件阻塞 turn，goal 保持 active。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
