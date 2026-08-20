@@ -1,3 +1,4 @@
+import { effectiveIndustry, effectiveProductCategory } from "./classification-fallbacks.mjs";
 import { mediaLinkIsFresh } from "./media-link-freshness.mjs";
 
 const app = document.querySelector("#app");
@@ -625,12 +626,14 @@ function goVideos(category = "all", genre = "all", statusId = "") {
 function filteredVideos() {
   const query = state.filters.query.trim().toLowerCase();
   return state.data.videos.filter((video) => {
+    const industry = effectiveIndustry(video);
+    const productCategory = effectiveProductCategory(video);
     if (query) {
-      const hay = [video.title, video.brand, video.industry, video.product_category, video.video_id, video.url, video.source_account, video.imported_from, ...(video.genres || [])].join(" ").toLowerCase();
+      const hay = [video.title, video.brand, industry, productCategory, video.video_id, video.url, video.source_account, video.imported_from, ...(video.genres || [])].join(" ").toLowerCase();
       if (!hay.includes(query)) return false;
     }
-    if (state.filters.industry !== "all" && video.industry !== state.filters.industry) return false;
-    if (state.filters.category !== "all" && video.product_category !== state.filters.category) return false;
+    if (state.filters.industry !== "all" && industry !== state.filters.industry) return false;
+    if (state.filters.category !== "all" && productCategory !== state.filters.category) return false;
     if (state.filters.genre !== "all" && !(video.genres || []).includes(state.filters.genre)) return false;
     if (state.filters.platform !== "all" && normalizedSourcePlatform(video) !== state.filters.platform) return false;
     if (state.filters.platformFormat !== "all" && normalizedPlatformFormat(video) !== state.filters.platformFormat) return false;
@@ -915,13 +918,13 @@ function renderCell(video, id) {
   if (id === "brand") return escapeHtml(video.brand || "—");
   if (id === "industry") {
     if (video.industry) return escapeHtml(industryLabel(video.industry));
-    const candidate = video.industry_candidate || video.classification_candidate?.industry;
+    const candidate = effectiveIndustry(video);
     return candidate ? `<div>${escapeHtml(industryLabel(candidate))}</div>${candidateNote()}` : "未知行业";
   }
   if (id === "product_category") {
     if (video.product_category) return `<div>${escapeHtml(categoryInline(video.product_category))}</div><div class="subtext">${escapeHtml(industryLabel(video.industry))}</div>`;
-    const candidate = video.product_category_candidate || video.classification_candidate?.product_category;
-    const candidateIndustry = video.industry_candidate || video.classification_candidate?.industry;
+    const candidate = effectiveProductCategory(video);
+    const candidateIndustry = effectiveIndustry(video);
     return candidate
       ? `<div>${escapeHtml(categoryInline(candidate))}</div>${candidateNote()}${candidateIndustry ? `<div class="subtext">${escapeHtml(industryLabel(candidateIndustry))}</div>` : ""}`
       : `<div>—</div><div class="subtext">${escapeHtml(industryLabel(video.industry))}</div>`;
@@ -975,7 +978,8 @@ function drawerTabsHtml(activeTab) {
 }
 
 function drawerTabPanel(video, activeTab = "reclass") {
-  const videoIndustry = video.industry || video.industry_candidate || selectedIndustry();
+  const videoIndustry = effectiveIndustry(video) || selectedIndustry();
+  const videoProductCategory = effectiveProductCategory(video);
   const candidateGenres = genreCandidateMap(video);
   const reviewGenres = reviewGenreOptions(video, videoIndustry);
   const allCandidatesSelected = candidateGenres.size > 0 && [...candidateGenres.keys()].every((genre) => (video.genres || []).includes(genre));
@@ -1003,7 +1007,7 @@ function drawerTabPanel(video, activeTab = "reclass") {
   const categoryOptions = state.data.categories
     .filter((item) => !item.industry || item.industry === videoIndustry)
     .map((item) => `
-    <option value="${escapeHtml(item.category)}" ${item.category === video.product_category ? "selected" : ""}>${escapeHtml(item.category)} / ${escapeHtml(item.zh)}</option>
+    <option value="${escapeHtml(item.category)}" ${item.category === videoProductCategory ? "selected" : ""}>${escapeHtml(item.category)} / ${escapeHtml(item.zh)}</option>
   `).join("");
   const primaryOptions = [`<option value="">无主题材</option>`, ...reviewGenres.map((genre) => `
     <option value="${escapeHtml(genre)}" ${genre === video.primary_genre ? "selected" : ""}>${escapeHtml(genreShort(genre))}</option>
@@ -1077,7 +1081,7 @@ function drawerTabPanel(video, activeTab = "reclass") {
             ${kv("Campaign ID", video.campaign_id || "—")}
             ${kv("品牌", video.primary_brand || video.brand || "—")}
             ${kv("全部品牌", (video.brands || []).join(" / ") || "—")}
-            ${kv("行业", industryLabel(video.industry))}
+            ${kv("行业", industryLabel(video.industry) || "—")}
             ${kv("商品品类", categoryInline(video.product_category) || "—")}
             ${kv("行业候选", video.industry_candidate || video.classification_candidate?.industry || "待确认")}
             ${kv("品类候选", video.product_category_candidate || video.classification_candidate?.product_category || "待确认")}
@@ -1180,7 +1184,7 @@ function renderDrawer() {
       <div class="drawer-backdrop" data-close-drawer></div>
       <aside class="drawer-panel">
         <div class="drawer-head">
-          <div><h2>${escapeHtml(video.title)}</h2><p class="subtext">${escapeHtml(video.brand)} · ${escapeHtml(categoryInline(video.product_category))} · ${formatDate(video.publish_date, "日期缺失")} · ${duration(video.duration_seconds, "时长缺失")}</p></div>
+          <div><h2>${escapeHtml(video.title)}</h2><p class="subtext">${escapeHtml(video.brand)} · ${escapeHtml(categoryInline(effectiveProductCategory(video)) || "品类待确认")} · ${formatDate(video.publish_date, "日期缺失")} · ${duration(video.duration_seconds, "时长缺失")}</p></div>
           <button class="btn ghost" data-close-drawer>关闭</button>
         </div>
         <div class="drawer-body">
