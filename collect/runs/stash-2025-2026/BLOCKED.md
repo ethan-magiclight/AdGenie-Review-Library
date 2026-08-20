@@ -21,6 +21,14 @@
 - PR 初始 HEAD 的 `verify-package`、`Vercel – ad-genie-review-library`、`Vercel – ad-genie-review-library-6bwl` 与 `Vercel Preview Comments` 均为成功。
 - GitHub/TLS/权限阻塞现已解除。PR 仍因 `DISCOVERY_TOTAL_MISMATCH` 和 `MEDIA_DELIVERY_BLOCKED` 保持 Draft；这两个内容门禁未被部署成功替代。
 
+## GitHub 交付后恢复审计 #1–#3：媒体阻塞正式结论（2026-08-21）
+
+1. 恢复审计 #1：用户修正发布身份为 `ethan-magiclight` 后，分支、Draft PR #2 和全部 GitHub/Vercel 检查成功交付；但没有出现新的稳定媒体 locator，STASH 正式记录仍为 0。
+2. 恢复审计 #2：用户在当前 `localhost:4173` 审核台质疑是否真正收录；实时 DOM、源代码和状态文件三方核验确认筛选项存在但 `843` 条视频中 STASH 记录为 0，选择后显示 0 条结果。没有发起第 4 次采集或媒体探测。
+3. 恢复审计 #3：完成审核台真相化修复，平台选项显示 `STASH（0 · 媒体门阻塞）`，空结果明确说明媒体门未通过；新增测试先因缺少 UI 接口变红，实施后 4/4 变绿，完整源/独立包门禁通过且 843 videos、118 review_events、local_video_files=0 均保持不变。
+
+同一 `MEDIA_DELIVERY_BLOCKED` 已在 GitHub 身份修正后的连续 3 个 goal turn 中成立。合法稳定 resolver 仍不存在，且任务限定的 3 个详情批次已经耗尽；除非用户或外部系统提供新的合规稳定媒体交付路径，否则无法执行 10/10 媒体门、真实 10 帧预审和恰好 100 条入库。本轮按规则正式停止，不以 UI 入口或绿色部署冒充完成。
+
 ## PROCESS_RULE_VIOLATION（2026-08-20）
 
 - 一次只读敏感信息扫描命令末尾误用了任务书明确禁止的 `|| true`。扫描本身没有命中、没有修改文件，也没有用于跳过构建或测试失败；但按“违反即失败”规则必须如实记录，不能把本次交付声明为完整成功。

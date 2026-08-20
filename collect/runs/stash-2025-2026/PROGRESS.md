@@ -20,3 +20,4 @@
 19. Chrome CDP 已解除（2026-08-20）：用户截图确认远程调试已勾选、服务运行于 `127.0.0.1:9222`；持续前台 Proxy 实测 `/health` 为 `connected=true`，`/targets` 正常返回。未操作或关闭任何用户标签，也未创建新标签。GitHub `push=false` 与稳定媒体 resolver 缺失仍阻止远端交付和媒体门。
 20. GitHub 身份已修正（2026-08-21）：本机 GitHub CLI 已切换到仓库所有者 `ethan-magiclight`，API 实测目标仓库 `admin=true`、`push=true`；远端同名分支与 PR 均不存在。推送前 22 个变更文件仍全部命中任务白名单，计划以 `codex/review-console-standalone`（`ff1989b`）为 PR base，不合并 main。
 21. GitHub 交付已完成（2026-08-21）：分支首次推送到 `ethan-magiclight/AdGenie-Review-Library`，远端 SHA 与本地 `cee6dc2` 一致；以 `codex/review-console-standalone`（`ff1989b`）为 base 创建唯一 Draft PR #2。该 HEAD 的 `verify-package`、两套 Vercel deployment 与 Vercel Preview Comments 全部通过；PR 明确保持 draft、STASH=0、不得合并，等待发现完整性与稳定媒体交付门解除后再完成 10 帧预审和恰好 100 条入库。
+22. 审核台零记录状态已显式化（2026-08-21）：用户现场指出“平台筛选”无法证明实际收录；实时页面核验确认 STASH 选项存在但结果为 0。现已把选项改为 `STASH（0 · 媒体门阻塞）`，并在空表格说明停止入库原因与方法论入口；新增 UI 合同测试先红后绿，完整 build、独立包生成/校验与包内 21 项测试全绿，仍保持 843 videos、118 review_events、STASH=0、local_video_files=0。

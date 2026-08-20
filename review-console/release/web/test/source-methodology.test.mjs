@@ -5,6 +5,12 @@ import { validateSourceCollectionMethodology } from "../lib/source-methodology.m
 
 const methodologyUrl = new URL("../../collect/source-collection-methodology-v1.json", import.meta.url);
 
+async function loadReviewUiModule() {
+  globalThis.document = { querySelector: () => null };
+  globalThis.localStorage = { getItem: () => null, setItem: () => {} };
+  return import(`../public/app.js?source-methodology-test=${Date.now()}`);
+}
+
 test("accepts the committed Best Ads, Ads of the World, and STASH collection ledger", async () => {
   const methodology = JSON.parse(await fs.readFile(methodologyUrl, "utf8"));
   assert.deepEqual(validateSourceCollectionMethodology(methodology), []);
@@ -30,4 +36,16 @@ test("rejects progress that is not safe to continue from", async () => {
     "next run must require a ledger update",
     "Best Ads remaining_candidates must be 0",
   ]);
+});
+
+test("surfaces the blocked zero-record STASH state in the platform filter and empty result", async () => {
+  const methodology = JSON.parse(await fs.readFile(methodologyUrl, "utf8"));
+  const { platformFilterItems, emptyVideosMessage } = await loadReviewUiModule();
+  const stashOption = platformFilterItems([], methodology).find(([value]) => value === "stash");
+
+  assert.deepEqual(stashOption, ["stash", "STASH（0 · 媒体门阻塞）"]);
+  assert.equal(
+    emptyVideosMessage("stash", [], methodology),
+    "STASH 当前 0 条可审核视频：媒体稳定交付门未通过，已停止入库与扩量。详情见“方法论记录”。",
+  );
 });
