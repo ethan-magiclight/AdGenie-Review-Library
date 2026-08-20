@@ -8,4 +8,5 @@
 7. 结构证据：详情含 STASH 编号、类型、Client、Agency、Director、Production/Animation、描述和 Vimeo progressive 播放器。
 8. 媒体门：已确认为 `MEDIA_DELIVERY_BLOCKED`；无 Cookie 页面不暴露 Vimeo locator，短效 MP4/稳定 player 检查超时，正式入库与扩量已停止。
 9. 已完成：新增 STASH collector、contract、6 个范围映射与 validator；稳定 key、Issue 日期、spec、媒体门及三类坏 fixture 红→绿自测全绿。
-10. 已停止：空 checkpoint 记录 3 个 discover 失败 run；本地 build/独立包全绿并提交 `f9086be`，push/PR 因 GitHub TLS 与失效 keyring token 连续 3 次失败而停止。
+10. 已停止：空 checkpoint 记录 3 个 discover 失败 run；本地 build/独立包全绿并提交实现 `f9086be` 与阻塞记录 `81ab9c1`，push/PR 因 GitHub TLS 与失效 keyring token 连续 3 次失败而停止。
+11. 续跑审计 #2（2026-08-20）：分支仍以 `ff1989b` 为祖先，HEAD=`81ab9c1`；CDP 依赖检查停在 Chrome 远程调试授权等待，未创建标签、未重试采集/媒体探测/push。媒体门与外部交付阻塞未改变。

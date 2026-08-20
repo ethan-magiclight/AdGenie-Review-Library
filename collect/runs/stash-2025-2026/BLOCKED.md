@@ -12,6 +12,13 @@
 
 结果：本地实现提交为 `f9086be`，远端分支、PR、GitHub verify-package 与两套 Vercel 检查均未创建/触发；不合并 main。
 
+### 续跑审计 #2（2026-08-20）
+
+- 当前分支仍为 `codex/stash-source-ingestion`，`ff1989b` 仍是 HEAD 祖先；本地 HEAD 为阻塞文档提交 `81ab9c1`（实现提交为其父提交 `f9086be`）。
+- 按 `web-access` 运行依赖检查时，Node 24 与 Chrome `:9222` 正常，但 CDP Proxy 持续等待 Chrome 远程调试授权；短轮询无变化后终止检查进程。
+- 本轮未创建或操作浏览器标签，未执行第 4 次 discovery、详情/媒体探测或 push，也未绕过既定停止规则。
+- 这是同一阻塞条件的连续第 2 个 goal turn；目标仍未完成，等待用户授权 CDP/修复 GitHub 认证与网络，且仍需合法稳定媒体 resolver 才能恢复。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
