@@ -8,6 +8,7 @@ import {
   MediaResolutionError,
   publicMediaFields,
   refreshBestAdsMedia,
+  validateBestAdsDirectMediaUrl,
 } from "./lib/media-resolver.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -113,6 +114,13 @@ function cachedMediaIsFresh(entry) {
 async function resolveVideoMedia(video, { force = false } = {}) {
   if (video.media_provider !== "best_ads_signed_mp4") return { ...directMediaDescriptor(video), cached: true };
   const key = video.video_id || video.id;
+  let stable = null;
+  try {
+    stable = { ...validateBestAdsDirectMediaUrl(video.original_media_url, video), cached: true };
+  } catch {
+    stable = null;
+  }
+  if (!force && stable) return stable;
   const cached = mediaCache.get(key);
   if (!force && cachedMediaIsFresh(cached)) return { ...cached, cached: true };
   if (!force && mediaRefreshes.has(key)) return mediaRefreshes.get(key);
@@ -121,6 +129,10 @@ async function resolveVideoMedia(video, { force = false } = {}) {
       const next = { ...result, cached: false };
       mediaCache.set(key, next);
       return next;
+    })
+    .catch((error) => {
+      if (!stable) throw error;
+      return { ...stable, cached: false, fallback: true };
     })
     .finally(() => mediaRefreshes.delete(key));
   mediaRefreshes.set(key, refresh);

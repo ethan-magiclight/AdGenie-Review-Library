@@ -31,8 +31,8 @@ function expectedAssetIds(video) {
   ].filter(Boolean).map(String))];
 }
 
-export function validateBestAdsMediaUrl(value, video, nowMs = Date.now()) {
-  const url = httpUrl(value, "Best Ads 视频地址");
+function validateBestAdsAssetUrl(value, video, label) {
+  const url = httpUrl(value, label);
   if (url.protocol !== "https:" || url.hostname !== bestAdsMediaHost) {
     throw new MediaResolutionError("Best Ads 视频地址不在允许的 CDN", { code: "UNTRUSTED_MEDIA_HOST", status: 502 });
   }
@@ -42,6 +42,11 @@ export function validateBestAdsMediaUrl(value, video, nowMs = Date.now()) {
   if (!expected.length || !expected.includes(assetId)) {
     throw new MediaResolutionError("Best Ads 返回的视频资源与审核记录不匹配", { code: "MEDIA_ASSET_MISMATCH", status: 502 });
   }
+  return url;
+}
+
+export function validateBestAdsMediaUrl(value, video, nowMs = Date.now()) {
+  const url = validateBestAdsAssetUrl(value, video, "Best Ads 视频地址");
   const token = url.searchParams.get("token");
   const expires = Number(url.searchParams.get("expires"));
   if (!token || !Number.isFinite(expires)) {
@@ -58,6 +63,18 @@ export function validateBestAdsMediaUrl(value, video, nowMs = Date.now()) {
     expires_at: new Date(expiresAtMs).toISOString(),
     expires_at_ms: expiresAtMs,
     access_status: "temporary",
+  };
+}
+
+export function validateBestAdsDirectMediaUrl(value, video, nowMs = Date.now()) {
+  const url = validateBestAdsAssetUrl(value, video, "Best Ads 稳定视频地址");
+  return {
+    playback_url: url.href,
+    download_url: url.href,
+    checked_at: video.media_checked_at || new Date(nowMs).toISOString(),
+    expires_at: null,
+    expires_at_ms: null,
+    access_status: "available",
   };
 }
 

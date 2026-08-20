@@ -4,6 +4,7 @@ import {
   directMediaDescriptor,
   MediaResolutionError,
   publicMediaFields,
+  validateBestAdsDirectMediaUrl,
   validateBestAdsMediaUrl,
 } from "../lib/media-resolver.mjs";
 
@@ -40,6 +41,29 @@ test("rejects untrusted hosts and expired signatures", () => {
   assert.throws(
     () => validateBestAdsMediaUrl("https://bestads-files.b-cdn.net/download/2227057d06.mp4?token=secret&expires=1787212800", video, now),
     (error) => error.code === "MEDIA_SIGNATURE_EXPIRED",
+  );
+});
+
+test("uses a stable Best Ads CDN URL for cloud playback and download", () => {
+  const result = validateBestAdsDirectMediaUrl(
+    "https://bestads-files.b-cdn.net/download/2227057d06.mp4",
+    video,
+    now,
+  );
+  assert.equal(result.playback_url, "https://bestads-files.b-cdn.net/download/2227057d06.mp4");
+  assert.equal(result.download_url, result.playback_url);
+  assert.equal(result.access_status, "available");
+  assert.equal(result.expires_at, null);
+});
+
+test("rejects an untrusted or mismatched stable Best Ads URL", () => {
+  assert.throws(
+    () => validateBestAdsDirectMediaUrl("https://example.com/download/2227057d06.mp4", video, now),
+    (error) => error.code === "UNTRUSTED_MEDIA_HOST",
+  );
+  assert.throws(
+    () => validateBestAdsDirectMediaUrl("https://bestads-files.b-cdn.net/download/wrong.mp4", video, now),
+    (error) => error.code === "MEDIA_ASSET_MISMATCH",
   );
 });
 
