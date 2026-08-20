@@ -1,0 +1,3298 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-12T11:34:29.778Z",
+  "collection_rule_version": "2026-08-pet-v1",
+  "scope": {
+    "industry": "Pet Supplies",
+    "note": "Cleaned expansion candidates for review queue only; formal genres remain empty until visual review. Extra tightened: removed backpack/support mismatch in Collars and generic nutrition with weak Health evidence."
+  },
+  "candidates": [
+    {
+      "video_id": "dDn37gmIiuk",
+      "source_platform": "youtube",
+      "source_post_id": "dDn37gmIiuk",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=dDn37gmIiuk",
+      "normalized_url": "https://www.youtube.com/watch?v=dDn37gmIiuk",
+      "title": "Catit PIXI Stainless Steel UV-C Drinking Fountain – Fresh Water in Your Cat’s Favorite Spot!",
+      "description": "Keep fresh, great-tasting water within easy reach for all your pets! 💧 \n\nThe Catit PIXI Stainless Steel UV-C Drinking Fountain combines cordless convenience with a generous 5 L reservoir, hygienic stainless steel, and advanced water clarification. Perfect for cats, dogs and multi-pet households!\n\nWhy you’ll love it:\n• Cordless, rechargeable fountain for flexible placement\n• Extra-large 5 L (1.3 gal) reservoir\n• Hygienic, dishwasher-safe stainless steel\n• Triple-action filtration and UV-C water clarification\n• Sensor, timed and continuous modes\n• HD LCD display with water and battery levels\n• Blue nightlight with red low-water alert\n\n🔗 Learn more: https://www.catit.com/products/catit-pixi-stainless-steel-uvc-drinking-fountain/\n\n••••••••••••••••••••••••••••••••••••••••­­­•••••••••••\n🔥 WATCH MORE & SUBSCRIBE! 🔥\nMake sure to hit the notification bell, so you don’t miss out!\nhttps://bit.ly/SubscribeCatit\n\nhttps://www.tiktok.com/@catitofficial\nhttps://www.instagram.com/catitofficial/\nhttps://www.facebook.com/catitofficial\nhttps://www.pinterest.com/catitofficial/\n\nAlso follow our office cat Pixi! 🐱💕\n▷ https://www.instagram.com/pixiworld/\n\n••••••••••••••••••••••••••••••••••••••••­­­•••••••••••\nCatit - Serving Kings & Queens since 1999\nhttps://www.catit.com/​\n\n#CatFountain #CordlessPetFountain #CatHydration #Catit",
+      "brand": "Catit",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Catit",
+      "source_account_id": "UCNIjJNR9BlRoMTNdOo8FR2g",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 142,
+      "duration_seconds": 39,
+      "publish_date": "2026-08-06",
+      "published_at": "2026-08-06T10:44:23+00:00",
+      "age_days": 6,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit fountain official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit fountain product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit fountain commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit feeder official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit feeder product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit feeder commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Catit Catit fountain official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Catit Catit fountain product film 2026"
+        }
+      ],
+      "canonical_master_id": "dDn37gmIiuk",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "catit+category_context",
+      "discovery_score": 76,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 15,
+        "product_match": 18,
+        "ad_intent": 21,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 21,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "fresh"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "t6NJZdunL9M",
+      "source_platform": "youtube",
+      "source_post_id": "t6NJZdunL9M",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=t6NJZdunL9M",
+      "normalized_url": "https://www.youtube.com/watch?v=t6NJZdunL9M",
+      "title": "3in1UP Feeder Bowl | Outward Hound",
+      "description": "Outward Hound's classic Fun Feeder Slo Bowl is now available in an adjustable elevated version! The elevated slow feeder ...",
+      "brand": "Outward Hound",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Outward Hound",
+      "source_account_id": "UC_xYO_ta6lB1Ib-dAOTHiMA",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 455,
+      "duration_seconds": 27,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Outward Hound Outward Hound slow feeder official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Outward Hound Outward Hound slow feeder advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Outward Hound Outward Hound slow feeder commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Outward Hound Outward Hound slow feeder official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Outward Hound Outward Hound slow feeder advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Outward Hound Outward Hound slow feeder commercial 2026"
+        },
+        {
+          "genre": "Product Demo",
+          "query": "Outward Hound Outward Hound slow feeder official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "t6NJZdunL9M",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "slow feeder",
+      "discovery_score": 60,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "ECc4Px2bxEU",
+      "source_platform": "youtube",
+      "source_post_id": "ECc4Px2bxEU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=ECc4Px2bxEU",
+      "normalized_url": "https://www.youtube.com/watch?v=ECc4Px2bxEU",
+      "title": "PetSafe Sedona Fountain",
+      "description": "... with the new Pet Safe Drinkwell Sedona Fountain this Cutting Edge Fountain was featured on the DIY Network Blog Cabin 2015 ...",
+      "brand": "PetSafe",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@PetSafeBrand",
+      "source_account_id": "UCMV3RL8l20IrSi5GmEhKyjA",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2947,
+      "duration_seconds": 48,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "PetSafe PetSafe feeder commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit fountain brand commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Catit Catit feeder brand commercial 2026"
+        }
+      ],
+      "canonical_master_id": "ECc4Px2bxEU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "drinkwell",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 6,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "new"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "IqSTGkYJQ5Y",
+      "source_platform": "youtube",
+      "source_post_id": "IqSTGkYJQ5Y",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=IqSTGkYJQ5Y",
+      "normalized_url": "https://www.youtube.com/watch?v=IqSTGkYJQ5Y",
+      "title": "Kitty Slow Feeder | Petstages",
+      "description": "The Kitty Slow Feeder cat bowl helps your speed-eating cat slow down and eat their meals at a healthier pace. Mazes and ridges ...",
+      "brand": "Outward Hound",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Outward Hound",
+      "source_account_id": "UC_xYO_ta6lB1Ib-dAOTHiMA",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1122,
+      "duration_seconds": 21,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "Problem–Solution",
+          "query": "Outward Hound Outward Hound slow feeder problem solution ad 2026"
+        }
+      ],
+      "canonical_master_id": "IqSTGkYJQ5Y",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "slow feeder",
+      "discovery_score": 53,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 6,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "helps"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "_2xEmMmYfBs",
+      "source_platform": "youtube",
+      "source_post_id": "_2xEmMmYfBs",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=_2xEmMmYfBs",
+      "normalized_url": "https://www.youtube.com/watch?v=_2xEmMmYfBs",
+      "title": "The SureFeed Microchip Pet Feeder from SureFlap",
+      "description": "https://www.sureflap.com It's a smart pet feeder! Using your pet's existing microchip or SureFlap RFID collar tag, the SureFeed ...",
+      "brand": "Sure Petcare",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Sure Petcare",
+      "source_account_id": "UCODaF8_EzD8hWThpTDO2NNA",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 499046,
+      "duration_seconds": 104,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Sure Petcare SureFeed Microchip Pet Feeder official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Sure Petcare SureFeed Microchip Pet Feeder official commercial 2026"
+        },
+        {
+          "genre": "Product Demo",
+          "query": "Sure Petcare SureFeed Microchip Pet Feeder official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "_2xEmMmYfBs",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "surefeed microchip pet feeder",
+      "discovery_score": 53,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 0,
+        "engagement": 8
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "sk0Dd8Kw9E8",
+      "source_platform": "youtube",
+      "source_post_id": "sk0Dd8Kw9E8",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=sk0Dd8Kw9E8",
+      "normalized_url": "https://www.youtube.com/watch?v=sk0Dd8Kw9E8",
+      "title": "Neater Feeder - The Best Selling Pet Feeder in America! - No More Messy or Wet Floors!",
+      "description": null,
+      "brand": "Neater Feeder",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Neater Pet Brands",
+      "source_account_id": "UCVRWafLMbLZdmyzomB3o_bQ",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 61000,
+      "duration_seconds": 91,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "sk0Dd8Kw9E8",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "neater feeder",
+      "discovery_score": 51,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 0,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "bWFvs0Z_lfo",
+      "source_platform": "youtube",
+      "source_post_id": "bWFvs0Z_lfo",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=bWFvs0Z_lfo",
+      "normalized_url": "https://www.youtube.com/watch?v=bWFvs0Z_lfo",
+      "title": "Outward Hound Fun Feeder Slo-Bowls",
+      "description": "Slow your bowl! 10X slowers and more fun, Fun Feeders are a healthy way to lengthen your pup's meals while keeping them ...",
+      "brand": "Outward Hound",
+      "industry": "Pet Supplies",
+      "product_category": "Bowls, Feeders & Waterers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Outward Hound",
+      "source_account_id": "UC_xYO_ta6lB1Ib-dAOTHiMA",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 21531,
+      "duration_seconds": 22,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Outward Hound Outward Hound slow feeder official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Outward Hound Outward Hound slow feeder official commercial 2026"
+        },
+        {
+          "genre": "Product Demo",
+          "query": "Outward Hound Outward Hound slow feeder official commercial 2026"
+        }
+      ],
+      "canonical_master_id": "bWFvs0Z_lfo",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "outward hound+category_context",
+      "discovery_score": 50,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 6,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "healthy"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:45.488Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "dM5lALJwtow",
+      "source_platform": "youtube",
+      "source_post_id": "dM5lALJwtow",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=dM5lALJwtow",
+      "normalized_url": "https://www.youtube.com/watch?v=dM5lALJwtow",
+      "title": "Chuckit! Cannon FULL Product Use VIDEO",
+      "description": "Check out the new Chuckit! Cannon this video shows how to use it and how to upgrade your power bands. Applies to models - 36209 36210 36211 36212 36284 36285",
+      "brand": "Chuckit!",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Petmate Pet Products",
+      "source_account_id": "UCJNUAhXWJDUW-S6jEFbAAqg",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 614,
+      "duration_seconds": 88,
+      "publish_date": "2026-07-08",
+      "published_at": "2026-07-08T20:16:33+00:00",
+      "age_days": 34,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "dM5lALJwtow",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "chuckit+category_context",
+      "discovery_score": 73,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 15,
+        "product_match": 18,
+        "ad_intent": 21,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 21,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "new"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "sFhOW-a-lAA",
+      "source_platform": "youtube",
+      "source_post_id": "sFhOW-a-lAA",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=sFhOW-a-lAA",
+      "normalized_url": "https://www.youtube.com/watch?v=sFhOW-a-lAA",
+      "title": "Celebrate Fetch Season with gear built for dogs who play like pros. Fetch with Chuckit!",
+      "description": "A simple game builds a lifetime bond. This Fetch Season, feel the thrill of the play.",
+      "brand": "Chuckit!",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Petmate Pet Products",
+      "source_account_id": "UCJNUAhXWJDUW-S6jEFbAAqg",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 5853604,
+      "duration_seconds": 16,
+      "publish_date": "2026-07-08",
+      "published_at": "2026-07-08T14:28:44+00:00",
+      "age_days": 34,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "sFhOW-a-lAA",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "chuckit+category_context",
+      "discovery_score": 60,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 15,
+        "product_match": 18,
+        "ad_intent": 0,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "k6PoyCmaeaU",
+      "source_platform": "youtube",
+      "source_post_id": "k6PoyCmaeaU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=k6PoyCmaeaU",
+      "normalized_url": "https://www.youtube.com/watch?v=k6PoyCmaeaU",
+      "title": "Chew Toys Made with Real Chicken, Bison, Venison, Bacon, and Beef",
+      "description": null,
+      "brand": "Nylabone",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Nylabone",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 79,
+      "duration_seconds": 16,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "k6PoyCmaeaU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "chew toy",
+      "discovery_score": 60,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "Ioy8mC32us4",
+      "source_platform": "youtube",
+      "source_post_id": "Ioy8mC32us4",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=Ioy8mC32us4",
+      "normalized_url": "https://www.youtube.com/watch?v=Ioy8mC32us4",
+      "title": "Chuckit! Cannon Product Video (Skus 36209 36210 36211 36212 36284 36285)",
+      "description": "Check out the new Chuckit! Cannon Launcher!",
+      "brand": "Chuckit!",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Petmate Pet Products",
+      "source_account_id": "UCJNUAhXWJDUW-S6jEFbAAqg",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 89,
+      "duration_seconds": 53,
+      "publish_date": "2026-07-08",
+      "published_at": "2026-07-08T14:24:43+00:00",
+      "age_days": 34,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "Ioy8mC32us4",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "chuckit+category_context",
+      "discovery_score": 58,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 15,
+        "product_match": 18,
+        "ad_intent": 6,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "new"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "OktKzBPmFII",
+      "source_platform": "youtube",
+      "source_post_id": "OktKzBPmFII",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=OktKzBPmFII",
+      "normalized_url": "https://www.youtube.com/watch?v=OktKzBPmFII",
+      "title": "Chuckit! Ultra Launcher Product VIDEO (SKUs -36213 36214 36288 36289)",
+      "description": "Check out the new Ultra Launcher from Chuckit!",
+      "brand": "Chuckit!",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Petmate Pet Products",
+      "source_account_id": "UCJNUAhXWJDUW-S6jEFbAAqg",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 51,
+      "duration_seconds": 49,
+      "publish_date": "2026-07-08",
+      "published_at": "2026-07-08T14:22:52+00:00",
+      "age_days": 34,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "OktKzBPmFII",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "chuckit+category_context",
+      "discovery_score": 58,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 15,
+        "product_match": 18,
+        "ad_intent": 6,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "new"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "uaHvGaNIQas",
+      "source_platform": "youtube",
+      "source_post_id": "uaHvGaNIQas",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=uaHvGaNIQas",
+      "normalized_url": "https://www.youtube.com/watch?v=uaHvGaNIQas",
+      "title": "Celebrate Fetch Season with gear built for dogs who play like pros. Fetch with Chuckit!",
+      "description": "A simple game builds a lifetime bond. This Fetch Season, feel the thrill of the play.",
+      "brand": "Chuckit!",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Petmate Pet Products",
+      "source_account_id": "UCJNUAhXWJDUW-S6jEFbAAqg",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2230908,
+      "duration_seconds": 31,
+      "publish_date": "2026-04-16",
+      "published_at": "2026-04-16T05:01:00+00:00",
+      "age_days": 118,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "uaHvGaNIQas",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "chuckit+category_context",
+      "discovery_score": 57,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 12,
+        "product_match": 18,
+        "ad_intent": 0,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "aYPzTLyJ7pE",
+      "source_platform": "youtube",
+      "source_post_id": "aYPzTLyJ7pE",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=aYPzTLyJ7pE",
+      "normalized_url": "https://www.youtube.com/watch?v=aYPzTLyJ7pE",
+      "title": "NEW Novelty Chew Toys (Yup, There's More!)",
+      "description": null,
+      "brand": "Nylabone",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Nylabone",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 357,
+      "duration_seconds": 39,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "aYPzTLyJ7pE",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "chew toy",
+      "discovery_score": 51,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 6,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "new"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "zqpTewtPbbg",
+      "source_platform": "youtube",
+      "source_post_id": "zqpTewtPbbg",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=zqpTewtPbbg",
+      "normalized_url": "https://www.youtube.com/watch?v=zqpTewtPbbg",
+      "title": "Nylabone Trusted Chew Toys with Heart & Purpose",
+      "description": null,
+      "brand": "Nylabone",
+      "industry": "Pet Supplies",
+      "product_category": "Pet Toys & Enrichment",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Nylabone",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 109000,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "zqpTewtPbbg",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "chew toy",
+      "discovery_score": 51,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 0,
+        "engagement": 8
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:39.341Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "1_B-UvvsQVY",
+      "source_platform": "youtube",
+      "source_post_id": "1_B-UvvsQVY",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=1_B-UvvsQVY",
+      "normalized_url": "https://www.youtube.com/watch?v=1_B-UvvsQVY",
+      "title": "Run with the Front Range Flex Harness",
+      "description": null,
+      "brand": "Ruffwear",
+      "industry": "Pet Supplies",
+      "product_category": "Collars, Leashes & Harnesses",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Ruffwear",
+      "source_account_id": null,
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 107000,
+      "duration_seconds": 21,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "1_B-UvvsQVY",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "front range",
+      "discovery_score": 51,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 23,
+        "ad_intent": 0,
+        "engagement": 8
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:25:40.527Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "QYguLHKJpuA",
+      "source_platform": "youtube",
+      "source_post_id": "QYguLHKJpuA",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=QYguLHKJpuA",
+      "normalized_url": "https://www.youtube.com/watch?v=QYguLHKJpuA",
+      "title": "Protection at Every Turn | Sleepypod Pet Travel Safety",
+      "description": "Every ride is an opportunity to protect what matters most.\n\nAt Sleepypod, we believe pet travel safety should be held to the same high standard as every other member of the family. That's why we create innovative, rigorously tested travel safety systems built on quality data, purposeful design, and a commitment to continuous improvement.\n\nFrom everyday errands to trips to the veterinarian, our products are designed to help safeguard pets and the people who love them. We lead with proof, educate with intention, and deliver protection families can trust.\n\nBecause progress isn't measured in miles traveled. It's measured in lives protected.\n\nLearn more about Sleepypod and discover our crash-tested pet travel safety systems.\n\nwww.sleepypod.com\n\n#Sleepypod #PetTravelSafety #CrashTested #PetSafety #DogSafety #CatSafety #PetTravel #ProtectionAtEveryTurn",
+      "brand": "Sleepypod",
+      "industry": "Pet Supplies",
+      "product_category": "Travel & Carriers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Sleepypod",
+      "source_account_id": "UCkYojp2Jv0n8vlgNyURTn6g",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 255,
+      "duration_seconds": 61,
+      "publish_date": "2026-07-23",
+      "published_at": "2026-07-23T13:38:37+00:00",
+      "age_days": 19,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Sleepypod Sleepypod carrier official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Sleepypod Sleepypod carrier product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Sleepypod Sleepypod carrier advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Sleepypod Sleepypod carrier commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Sleepypod Sleepypod carrier official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Sleepypod Sleepypod carrier product film 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Sleepypod Sleepypod carrier advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Sleepypod Sleepypod carrier commercial 2026"
+        }
+      ],
+      "canonical_master_id": "QYguLHKJpuA",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "sleepypod+category_context",
+      "discovery_score": 70,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 15,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:28.048Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "1dEjlpTCe_E",
+      "source_platform": "youtube",
+      "source_post_id": "1dEjlpTCe_E",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=1dEjlpTCe_E",
+      "normalized_url": "https://www.youtube.com/watch?v=1dEjlpTCe_E",
+      "title": "About the Ruffwear Treat Trader™ Dog Treat Pouch",
+      "description": "It's no secret dogs drool over the Treat Trader™ – our waist-worn treat bag that offers hands-free carry of and quick access to ...",
+      "brand": "Ruffwear",
+      "industry": "Pet Supplies",
+      "product_category": "Travel & Carriers",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Ruffwear",
+      "source_account_id": "UCKz3qkJnV4TTWmcU--ISy4g",
+      "source_account_type": "official_global",
+      "width": 720,
+      "height": 404,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 5710,
+      "duration_seconds": 109,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "brand_genre_search",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Ruffwear Ruffwear dog pack official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Ruffwear Ruffwear dog pack product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Ruffwear Ruffwear dog pack advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Ruffwear Ruffwear dog pack commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Ruffwear Ruffwear dog pack official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Ruffwear Ruffwear dog pack product film 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Ruffwear Ruffwear dog pack advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Ruffwear Ruffwear dog pack commercial 2026"
+        }
+      ],
+      "canonical_master_id": "1dEjlpTCe_E",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "ruffwear+category_context",
+      "discovery_score": 57,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:28.048Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "1Dc9ipoumkg",
+      "source_platform": "youtube",
+      "source_post_id": "1Dc9ipoumkg",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=1Dc9ipoumkg",
+      "normalized_url": "https://www.youtube.com/watch?v=1Dc9ipoumkg",
+      "title": "K&H Cool Lounger",
+      "description": "DISCONTINUED** See our other cooling dog beds: http://www.khpet.com/dog-products/cooling-dog-beds This bed is made with ...",
+      "brand": "K&H Pet Products",
+      "industry": "Pet Supplies",
+      "product_category": "Beds, Crates & Furniture",
+      "recall_genres": [
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "K&H Pet Products",
+      "source_account_id": "UC1_QMjDzxHqL9cT6O-TkXpQ",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 101,
+      "duration_seconds": 48,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "Problem–Solution",
+          "query": "K&H Pet Products K&H pet bed advertisement 2026"
+        }
+      ],
+      "canonical_master_id": "1Dc9ipoumkg",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "k and h cool lounger",
+      "discovery_score": 62,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:32:25.715Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "vurd7i1sWAI",
+      "source_platform": "youtube",
+      "source_post_id": "vurd7i1sWAI",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=vurd7i1sWAI",
+      "normalized_url": "https://www.youtube.com/watch?v=vurd7i1sWAI",
+      "title": "Fuel Your Dog's Mobility with Purina Pro Plan Joint Care",
+      "description": "Give your dog the freedom to move and explore with Purina Pro Plan Joint Care Supplements!\n\nTrusted by vets and designed to support mobility and comfort, our Joint Care formula helps your dog maintain that playful spirit and adventurous drive. Follow a devoted owner and their German Shepherd as they conquer trails and share heartwarming moments, proving that with healthy joints, they can go wherever life takes you.\n\nLearn more and shop Pro Plan Veterinary Supplements Joint Care here: https://www.purina.com/pro-plan-vet/supplements/joint-care\n\nSubscribe to Pro Plan's You Tube Channel: https://www.youtube.com/@proplan\nLearn more about Pro Plan pet food products: https://www.purina.com/pro-plan/\nConnect with Pro Plan on Facebook: https://www.facebook.com/purinaproplan/\nFollow Pro Plan on Instagram: https://www.instagram.com/proplan\n\n#ProPlanJointCare #DogSupplements #DogJointSupplements #FuelforLife",
+      "brand": "Purina",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Purina Pro Plan Veterinary Diets",
+      "source_account_id": "UCFgQ9zsrMD_cVn2mT5W3yuQ",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2036782,
+      "duration_seconds": 16,
+      "publish_date": "2026-05-04",
+      "published_at": "2026-05-04T20:41:03+00:00",
+      "age_days": 99,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements brand campaign 2026"
+        }
+      ],
+      "canonical_master_id": "vurd7i1sWAI",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "pro plan veterinary supplements",
+      "discovery_score": 89,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 12,
+        "product_match": 23,
+        "ad_intent": 27,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 27,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "helps",
+          "healthy"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "-r-RrxzLVB0",
+      "source_platform": "youtube",
+      "source_post_id": "-r-RrxzLVB0",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=-r-RrxzLVB0",
+      "normalized_url": "https://www.youtube.com/watch?v=-r-RrxzLVB0",
+      "title": "Joint Care Supplements for Dogs - Purina Pro Plan Vet Supplements",
+      "description": "Purina Pro Plan Joint Care Supplements helps you keep adventuring with your dog!\n\nEvery day is an adventure when your dog has the mobility and comfort they need. Purina Pro Plan Joint Care is designed to support your dog's mobility and comfort, helping them stay active and vibrant. It's more than just a supplement; it's Fuel for Life, ensuring your best friend can keep up with every step of your journey together.\n\nLearn more and shop Pro Plan Veterinary Supplements Joint Care here: https://www.purina.com/pro-plan-vet/supplements/joint-care\n\nSubscribe to Pro Plan's You Tube Channel: https://www.youtube.com/@proplan\nLearn more about Pro Plan pet food products: https://www.purina.com/pro-plan/\nConnect with Pro Plan on Facebook: https://www.facebook.com/purinaproplan/\nFollow Pro Plan on Instagram: https://www.instagram.com/proplan\n\n#ProPlanJointCare #DogSupplements #DogJointSupplements #FuelforLife",
+      "brand": "Purina",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Purina Pro Plan Veterinary Diets",
+      "source_account_id": "UCFgQ9zsrMD_cVn2mT5W3yuQ",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2521330,
+      "duration_seconds": 16,
+      "publish_date": "2026-05-04",
+      "published_at": "2026-05-04T20:32:40+00:00",
+      "age_days": 99,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements brand campaign 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements brand commercial 2026"
+        }
+      ],
+      "canonical_master_id": "-r-RrxzLVB0",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "pro plan veterinary supplements",
+      "discovery_score": 83,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 12,
+        "product_match": 23,
+        "ad_intent": 21,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 21,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [
+          "helps"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "ViOpIWbn-6k",
+      "source_platform": "youtube",
+      "source_post_id": "ViOpIWbn-6k",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=ViOpIWbn-6k",
+      "normalized_url": "https://www.youtube.com/watch?v=ViOpIWbn-6k",
+      "title": "Start Your Dog's Day Strong with Purina Pro Plan FortiFlora",
+      "description": "Start the day strong with Purina Pro Plan FortiFlora digestive supplements for dogs! As the #1 veterinarian recommended probiotic brand to support digestive health*, FortiFlora helps keep your dog's digestive system—and everything else—on track.  \n\nHelp your dog thrive! Ask your veterinarian about Purina Pro Plan FortiFlora today. \n\nLearn more and shop Pro Plan Veterinary Supplements FortiFlora here: https://www.purina.com/pro-plan-vet/supplements/fortiflora\n\nSubscribe to Pro Plan's You Tube Channel: https://www.youtube.com/@proplan\nLearn more about Pro Plan pet food products: https://www.purina.com/pro-plan/\nConnect with Pro Plan on Facebook: https://www.facebook.com/purinaproplan/\nFollow Pro Plan on Instagram: https://www.instagram.com/proplan\n\n#ProPlanFortiFlora #DogSupplements #DogDigestiveSupplements #FuelForLife\n\n*Online survey among all qualified US veterinarians who indicated brand as one of 1-3 brands recommended, Q4 2025",
+      "brand": "Purina",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Purina Pro Plan Veterinary Diets",
+      "source_account_id": "UCFgQ9zsrMD_cVn2mT5W3yuQ",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2412383,
+      "duration_seconds": 16,
+      "publish_date": "2026-05-04",
+      "published_at": "2026-05-04T21:47:48+00:00",
+      "age_days": 99,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora brand commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements brand campaign 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements brand commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora product film 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora commercial 2026"
+        }
+      ],
+      "canonical_master_id": "ViOpIWbn-6k",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "pro plan veterinary supplements",
+      "discovery_score": 68,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 12,
+        "product_match": 23,
+        "ad_intent": 6,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "helps"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "rkW9sO6krec",
+      "source_platform": "youtube",
+      "source_post_id": "rkW9sO6krec",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=rkW9sO6krec",
+      "normalized_url": "https://www.youtube.com/watch?v=rkW9sO6krec",
+      "title": "Start Your Cat's Day Strong with Purina Pro Plan FortiFlora",
+      "description": "Start the day strong with Purina Pro Plan FortiFlora digestive supplements for cats! As the #1 veterinarian recommended probiotic brand to support digestive health*, FortiFlora helps keep your cat's digestive system—and everything else—on track.  \n\nHelp your cat thrive! Ask your veterinarian about Purina Pro Plan FortiFlora today. \n\nLearn more and shop Pro Plan Veterinary Supplements FortiFlora here: https://www.purina.com/pro-plan-vet/supplements/fortiflora\n\nSubscribe to Pro Plan's You Tube Channel: https://www.youtube.com/@proplan\nLearn more about Pro Plan pet food products: https://www.purina.com/pro-plan/\nConnect with Pro Plan on Facebook: https://www.facebook.com/purinaproplan/\nFollow Pro Plan on Instagram: https://www.instagram.com/proplan\n\n#ProPlanFortiFlora #CatSupplements #CatDigestiveSupplements #FuelForLife\n\n*Online survey among all qualified US veterinarians who indicated brand as one of 1-3 brands recommended, Q4 2025",
+      "brand": "Purina",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_product",
+      "source_account": "Purina Pro Plan Veterinary Diets",
+      "source_account_id": "UCFgQ9zsrMD_cVn2mT5W3yuQ",
+      "source_account_type": "official_product",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2443597,
+      "duration_seconds": 16,
+      "publish_date": "2026-05-04",
+      "published_at": "2026-05-04T21:20:46+00:00",
+      "age_days": 99,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora advertisement 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina FortiFlora brand commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements brand campaign 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements product film 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Purina Purina Pro Plan Veterinary Supplements advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora official commercial 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora product film 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Purina Purina FortiFlora commercial 2026"
+        }
+      ],
+      "canonical_master_id": "rkW9sO6krec",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "pro plan veterinary supplements",
+      "discovery_score": 68,
+      "discovery_score_breakdown": {
+        "source": 17,
+        "recency": 12,
+        "product_match": 23,
+        "ad_intent": 6,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "helps"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "kCdXsPXqwe4",
+      "source_platform": "youtube",
+      "source_post_id": "kCdXsPXqwe4",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=kCdXsPXqwe4",
+      "normalized_url": "https://www.youtube.com/watch?v=kCdXsPXqwe4",
+      "title": "GREENIES™ Stash - Well-Being Made Wonderful",
+      "description": null,
+      "brand": "Greenies",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Greenies",
+      "source_account_id": "UCfcaY6i1BSSDQ6wiQE7YG4A",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1373116,
+      "duration_seconds": 16,
+      "publish_date": "2024-10-03",
+      "published_at": "2024-10-03T21:02:19+00:00",
+      "age_days": 677,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "kCdXsPXqwe4",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "greenies+category_context",
+      "discovery_score": 67,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 4,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "KefyltcbSS8",
+      "source_platform": "youtube",
+      "source_post_id": "KefyltcbSS8",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=KefyltcbSS8",
+      "normalized_url": "https://www.youtube.com/watch?v=KefyltcbSS8",
+      "title": "GREENIES™ Camouflage - Well-Being Made Wonderful",
+      "description": null,
+      "brand": "Greenies",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Greenies",
+      "source_account_id": "UCfcaY6i1BSSDQ6wiQE7YG4A",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1992348,
+      "duration_seconds": 16,
+      "publish_date": "2024-10-03",
+      "published_at": "2024-10-03T21:00:08+00:00",
+      "age_days": 677,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Greenies Greenies Dental Treats brand commercial 2026"
+        }
+      ],
+      "canonical_master_id": "KefyltcbSS8",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "greenies+category_context",
+      "discovery_score": 67,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 4,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "PvUXE3S2Dp4",
+      "source_platform": "youtube",
+      "source_post_id": "PvUXE3S2Dp4",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=PvUXE3S2Dp4",
+      "normalized_url": "https://www.youtube.com/watch?v=PvUXE3S2Dp4",
+      "title": "GREENIES™ Camouflage - Well-Being Made Wonderful with Main Meal End Card",
+      "description": null,
+      "brand": "Greenies",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Greenies",
+      "source_account_id": "UCfcaY6i1BSSDQ6wiQE7YG4A",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 2072,
+      "duration_seconds": 16,
+      "publish_date": "2024-10-03",
+      "published_at": "2024-10-03T20:58:12+00:00",
+      "age_days": 677,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "PvUXE3S2Dp4",
+      "review_status": "pending_visual_review",
+      "metadata_status": "partial",
+      "product_match_evidence": "greenies+category_context",
+      "discovery_score": 61,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 4,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_CONFIRMED",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "c4O4K5BEFeo",
+      "source_platform": "youtube",
+      "source_post_id": "c4O4K5BEFeo",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=c4O4K5BEFeo",
+      "normalized_url": "https://www.youtube.com/watch?v=c4O4K5BEFeo",
+      "title": "5 Science-Driven Facts About Senior Advanced Hip & Joint Bites | Zesty Paws®",
+      "description": null,
+      "brand": "Zesty Paws",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Zesty Paws",
+      "source_account_id": "UCy7E_gDkX11D4luQZSBn8nA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 103000,
+      "duration_seconds": 41,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "c4O4K5BEFeo",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "zesty paws+category_context",
+      "discovery_score": 61,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 8
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "egJxGQUN-KM",
+      "source_platform": "youtube",
+      "source_post_id": "egJxGQUN-KM",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=egJxGQUN-KM",
+      "normalized_url": "https://www.youtube.com/watch?v=egJxGQUN-KM",
+      "title": "GREENIES™ Stash - Well-Being Made Wonderful with Main Meal End Card",
+      "description": null,
+      "brand": "Greenies",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "@Greenies",
+      "source_account_id": "UCfcaY6i1BSSDQ6wiQE7YG4A",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 1600,
+      "duration_seconds": 16,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "egJxGQUN-KM",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "greenies+category_context",
+      "discovery_score": 57,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "TSWuin6-USQ",
+      "source_platform": "youtube",
+      "source_post_id": "TSWuin6-USQ",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=TSWuin6-USQ",
+      "normalized_url": "https://www.youtube.com/watch?v=TSWuin6-USQ",
+      "title": "The Science-Driven Ingredients in Senior Advanced Hip & Joint Bites | Zesty Paws®",
+      "description": null,
+      "brand": "Zesty Paws",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Zesty Paws",
+      "source_account_id": "UCy7E_gDkX11D4luQZSBn8nA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 88,
+      "duration_seconds": 68,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "TSWuin6-USQ",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "zesty paws+category_context",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "pZGCFmNSsoU",
+      "source_platform": "youtube",
+      "source_post_id": "pZGCFmNSsoU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=pZGCFmNSsoU",
+      "normalized_url": "https://www.youtube.com/watch?v=pZGCFmNSsoU",
+      "title": "5 Science-Driven Facts About Senior Advanced Calming & Cognition Bites | Zesty Paws®",
+      "description": null,
+      "brand": "Zesty Paws",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Zesty Paws",
+      "source_account_id": "UCy7E_gDkX11D4luQZSBn8nA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 58,
+      "duration_seconds": 41,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "pZGCFmNSsoU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "zesty paws+category_context",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "V1Z6tGPQmUw",
+      "source_platform": "youtube",
+      "source_post_id": "V1Z6tGPQmUw",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=V1Z6tGPQmUw",
+      "normalized_url": "https://www.youtube.com/watch?v=V1Z6tGPQmUw",
+      "title": "5 Science-Driven Facts About Zesty Paws® Senior Advanced Hip & Joint Bites for Older Dogs",
+      "description": null,
+      "brand": "Zesty Paws",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Zesty Paws",
+      "source_account_id": "UCy7E_gDkX11D4luQZSBn8nA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 24,
+      "duration_seconds": 41,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "V1Z6tGPQmUw",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "zesty paws+category_context",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 15,
+        "engagement": 2
+      },
+      "ad_intent_evidence": {
+        "score": 15,
+        "strong": [
+          "ad"
+        ],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "hU6hQcUbsCE",
+      "source_platform": "youtube",
+      "source_post_id": "hU6hQcUbsCE",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=hU6hQcUbsCE",
+      "normalized_url": "https://www.youtube.com/watch?v=hU6hQcUbsCE",
+      "title": "How Hill's Science Diet Senior Vitality helps Bear ease Angelique's anxiety 🐾❤",
+      "description": null,
+      "brand": "Hill's Pet Nutrition",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "OfficialHillsPet",
+      "source_account_id": "UCdnesBHTWrx8CtiHYFfB7tA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 3000,
+      "duration_seconds": 91,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "hU6hQcUbsCE",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "hill s science diet",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 6,
+        "engagement": 4
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "helps"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "crqOIpAsgJU",
+      "source_platform": "youtube",
+      "source_post_id": "crqOIpAsgJU",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=crqOIpAsgJU",
+      "normalized_url": "https://www.youtube.com/watch?v=crqOIpAsgJU",
+      "title": "Hill’s Prescription Diet: Science Did That",
+      "description": null,
+      "brand": "Hill's Pet Nutrition",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "OfficialHillsPet",
+      "source_account_id": "UCdnesBHTWrx8CtiHYFfB7tA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 247000000,
+      "duration_seconds": 16,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "crqOIpAsgJU",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "hill s prescription diet",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 0,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "xK5YixvTf8A",
+      "source_platform": "youtube",
+      "source_post_id": "xK5YixvTf8A",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=xK5YixvTf8A",
+      "normalized_url": "https://www.youtube.com/watch?v=xK5YixvTf8A",
+      "title": "Hill’s Prescription Diet: Science Did That",
+      "description": null,
+      "brand": "Hill's Pet Nutrition",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "OfficialHillsPet",
+      "source_account_id": "UCdnesBHTWrx8CtiHYFfB7tA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 173000000,
+      "duration_seconds": 16,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "xK5YixvTf8A",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "hill s prescription diet",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 0,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "FjSKLkeCFxY",
+      "source_platform": "youtube",
+      "source_post_id": "FjSKLkeCFxY",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=FjSKLkeCFxY",
+      "normalized_url": "https://www.youtube.com/watch?v=FjSKLkeCFxY",
+      "title": "Hill’s Prescription Diet: Science Did That",
+      "description": null,
+      "brand": "Hill's Pet Nutrition",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution",
+        "Product Demo",
+        "Feature Callout",
+        "Before & After",
+        "Daily Routine"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "OfficialHillsPet",
+      "source_account_id": "UCdnesBHTWrx8CtiHYFfB7tA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 18000000,
+      "duration_seconds": 31,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [],
+      "canonical_master_id": "FjSKLkeCFxY",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "hill s prescription diet",
+      "discovery_score": 55,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 25,
+        "ad_intent": 0,
+        "engagement": 10
+      },
+      "ad_intent_evidence": {
+        "score": 0,
+        "strong": [],
+        "supporting": [],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    },
+    {
+      "video_id": "w0JtzEFJYe8",
+      "source_platform": "youtube",
+      "source_post_id": "w0JtzEFJYe8",
+      "platform_format": "videos",
+      "url": "https://www.youtube.com/watch?v=w0JtzEFJYe8",
+      "normalized_url": "https://www.youtube.com/watch?v=w0JtzEFJYe8",
+      "title": "Keeps Pets Healthy, Keeps Tail Wagging | Zesty Paws® Everyday Health Supplements",
+      "description": "Your pet deserves the best, and that's exactly what Zesty Paws® delivers. Our science-driven Everyday Health supplements for ...",
+      "brand": "Zesty Paws",
+      "industry": "Pet Supplies",
+      "product_category": "Health, Supplements & Care",
+      "recall_genres": [
+        "TVC / Brand Commercial",
+        "Problem–Solution"
+      ],
+      "genres": [],
+      "primary_genre": null,
+      "secondary_genres": [],
+      "source_type": "品牌官方",
+      "publisher_role": "official_global",
+      "source_account": "Zesty Paws",
+      "source_account_id": "UCy7E_gDkX11D4luQZSBn8nA",
+      "source_account_type": "official_global",
+      "width": 336,
+      "height": 188,
+      "aspect_ratio": "16:9",
+      "is_vertical": false,
+      "is_paid_ad": false,
+      "view_count": 53000,
+      "duration_seconds": 75,
+      "publish_date": null,
+      "published_at": null,
+      "age_days": null,
+      "discovery_source": "official_account_feed",
+      "discovery_matches": [
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Zesty Paws Zesty Paws supplement official commercial 2026"
+        },
+        {
+          "genre": "TVC / Brand Commercial",
+          "query": "Zesty Paws Zesty Paws supplement advertisement 2026"
+        },
+        {
+          "genre": "Problem–Solution",
+          "query": "Zesty Paws Zesty Paws supplement advertisement 2026"
+        }
+      ],
+      "canonical_master_id": "w0JtzEFJYe8",
+      "review_status": "pending_visual_review",
+      "metadata_status": "publish_date_missing",
+      "product_match_evidence": "zesty paws+category_context",
+      "discovery_score": 50,
+      "discovery_score_breakdown": {
+        "source": 20,
+        "recency": 0,
+        "product_match": 18,
+        "ad_intent": 6,
+        "engagement": 6
+      },
+      "ad_intent_evidence": {
+        "score": 6,
+        "strong": [],
+        "supporting": [
+          "healthy"
+        ],
+        "social_filler": [],
+        "pet_cute_only": []
+      },
+      "quality_score": null,
+      "quality_score_breakdown": null,
+      "hard_filter_status": "passed",
+      "hard_filter_reasons": [],
+      "decision_reason_codes": [
+        "OFFICIAL_SOURCE_CONFIRMED",
+        "PUBLISH_DATE_PENDING",
+        "PENDING_VISUAL_AUDIT",
+        "PENDING_FORMAL_GENRE_CLASSIFICATION",
+        "PRE_IMPORT_CATEGORY_SANITY_CHECK"
+      ],
+      "collection_rule_version": "2026-08-pet-v1",
+      "collected_at": "2026-08-12T11:28:22.861Z",
+      "import_gate_notes": "导入前清洗通过：官方来源、时长 16–119 秒、标题/商品词与宠物用品品类一致；仍需人工视觉审核。"
+    }
+  ],
+  "rejected_preview": [
+    {
+      "video_id": "YtA7iMSez2s",
+      "brand": "Neater Feeder",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "Neater Feeder Express - Mess-Proof Pet Feeder for Sloppy Dogs and Cats",
+      "reasons": [
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "gkiPt1s22a8",
+      "brand": "Catit",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "✨ NEW Catit Go Natural Pea Husk Cat Litter – Unscented! 🌿",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "UzIkDJPldXw",
+      "brand": "Outward Hound",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "Granby Life Jacket | How to Fit and Adjust | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "wqZAtIl-gY8",
+      "brand": "Outward Hound",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "Dawson Life Jacket | How to Fit and Adjust | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "tGMdY_M4GNw",
+      "brand": "Outward Hound",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "Standley Life Jacket | How to Fit and Adjust | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "HPVAspqWhPc",
+      "brand": "Outward Hound",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "Boulder Adventure Harness | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "R9zAXt1euqk",
+      "brand": "Sure Petcare",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "SureFeed Microchip Pet Feeder - Learn Mode",
+      "reasons": [
+        "CATEGORY_MISMATCH_TITLE_SIGNAL",
+        "SUPPORT_OR_REVIEW_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "rs15fKZWroE",
+      "brand": "Catit",
+      "category": "Bowls, Feeders & Waterers",
+      "title": "Catit - PIXI fountain - cleaning video",
+      "reasons": [
+        "CATEGORY_MISMATCH_TITLE_SIGNAL",
+        "SUPPORT_OR_REVIEW_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "UzIkDJPldXw",
+      "brand": "Outward Hound",
+      "category": "Pet Toys & Enrichment",
+      "title": "Granby Life Jacket | How to Fit and Adjust | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "wqZAtIl-gY8",
+      "brand": "Outward Hound",
+      "category": "Pet Toys & Enrichment",
+      "title": "Dawson Life Jacket | How to Fit and Adjust | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "tGMdY_M4GNw",
+      "brand": "Outward Hound",
+      "category": "Pet Toys & Enrichment",
+      "title": "Standley Life Jacket | How to Fit and Adjust | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "HPVAspqWhPc",
+      "brand": "Outward Hound",
+      "category": "Pet Toys & Enrichment",
+      "title": "Boulder Adventure Harness | Outward Hound",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "t6NJZdunL9M",
+      "brand": "Outward Hound",
+      "category": "Pet Toys & Enrichment",
+      "title": "3in1UP Feeder Bowl | Outward Hound",
+      "reasons": [
+        "DUPLICATE_EXISTING_REVIEW_LIBRARY",
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "okyd3XJfSnk",
+      "brand": "PetSafe",
+      "category": "Pet Toys & Enrichment",
+      "title": "Meet PetSafe® ScoopFree OpenSky™ Self-Cleaning Litter Box",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "UKhNXmDMcdE",
+      "brand": "Sleepypod",
+      "category": "Collars, Leashes & Harnesses",
+      "title": "How to Use Sleepypod's Oops Tray accessory  for pets - #happyhealthyliving",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL",
+        "SUPPORT_OR_REVIEW_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "QYguLHKJpuA",
+      "brand": "Sleepypod",
+      "category": "Collars, Leashes & Harnesses",
+      "title": "Protection at Every Turn | Sleepypod Pet Travel Safety",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "okyd3XJfSnk",
+      "brand": "PetSafe",
+      "category": "Collars, Leashes & Harnesses",
+      "title": "Meet PetSafe® ScoopFree OpenSky™ Self-Cleaning Litter Box",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "UKhNXmDMcdE",
+      "brand": "Sleepypod",
+      "category": "Travel & Carriers",
+      "title": "How to Use Sleepypod's Oops Tray accessory  for pets - #happyhealthyliving",
+      "reasons": [
+        "CATEGORY_MISMATCH_TITLE_SIGNAL",
+        "SUPPORT_OR_REVIEW_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "61oZC_PVxJQ",
+      "brand": "Ruffwear",
+      "category": "Travel & Carriers",
+      "title": "How to Fit & Adjust the Ruffwear Palisades™ Dog Backpack",
+      "reasons": [
+        "DUPLICATE_EXISTING_REVIEW_LIBRARY"
+      ]
+    },
+    {
+      "video_id": "SI752tscQZU",
+      "brand": "Hill's Pet Nutrition",
+      "category": "Health, Supplements & Care",
+      "title": "Here’s to showing up for big dogs",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "SHORTS_DURATION_UNKNOWN"
+      ]
+    },
+    {
+      "video_id": "THxCJB9Xzb4",
+      "brand": "Hill's Pet Nutrition",
+      "category": "Health, Supplements & Care",
+      "title": "Tummy Troubles 🚫👎 Sleeping in ✅👍",
+      "reasons": [
+        "SHORTS_DURATION_UNKNOWN"
+      ]
+    },
+    {
+      "video_id": "joPerP4R4EU",
+      "brand": "Hill's Pet Nutrition",
+      "category": "Health, Supplements & Care",
+      "title": "Comfort Food",
+      "reasons": [
+        "SHORTS_DURATION_UNKNOWN"
+      ]
+    },
+    {
+      "video_id": "y8LNeShSkIk",
+      "brand": "Purina",
+      "category": "Health, Supplements & Care",
+      "title": "Performance Hunting Dog Food Trusted by Pros and Proven by Champions",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "QExcj2E3OB0",
+      "brand": "Purina",
+      "category": "Health, Supplements & Care",
+      "title": "Performance Hunting Dog Food Trusted by Pros and Proven by Champions",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "VAt4a70uBfM",
+      "brand": "Purina",
+      "category": "Health, Supplements & Care",
+      "title": "Hunting Dog Food for Peak Performance in the Field or On the Water",
+      "reasons": [
+        "CATEGORY_EVIDENCE_WEAK",
+        "CATEGORY_MISMATCH_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "-C4_QIUcP5Y",
+      "brand": "Greenies",
+      "category": "Health, Supplements & Care",
+      "title": "GREENIES: DELIVERY 15”",
+      "reasons": [
+        "DURATION_15S_TITLE_SIGNAL",
+        "SHORTS_DURATION_UNKNOWN"
+      ]
+    },
+    {
+      "video_id": "FgpVNzeaTiM",
+      "brand": "Greenies",
+      "category": "Health, Supplements & Care",
+      "title": "GREENIES: DELIVERY 15”",
+      "reasons": [
+        "DURATION_15S_TITLE_SIGNAL"
+      ]
+    },
+    {
+      "video_id": "61oZC_PVxJQ",
+      "brand": "Ruffwear",
+      "category": "Collars, Leashes & Harnesses",
+      "title": "How to Fit & Adjust the Ruffwear Palisades™ Dog Backpack",
+      "reasons": [
+        "COLLAR_CATEGORY_BACKPACK_OR_SUPPORT_CONTENT"
+      ]
+    },
+    {
+      "video_id": "gnBYUNJKbdk",
+      "brand": "Purina",
+      "category": "Health, Supplements & Care",
+      "title": "Danielle Collins & Her Dog Fuel Their Bond with Pro Plan",
+      "reasons": [
+        "HEALTH_CATEGORY_GENERIC_NUTRITION_EVIDENCE_WEAK"
+      ]
+    },
+    {
+      "video_id": "WjCsxEP2i3Y",
+      "brand": "Hill's Pet Nutrition",
+      "category": "Health, Supplements & Care",
+      "title": "Hill’s Science Diet Large Breed",
+      "reasons": [
+        "HEALTH_CATEGORY_GENERIC_NUTRITION_EVIDENCE_WEAK"
+      ]
+    }
+  ]
+}

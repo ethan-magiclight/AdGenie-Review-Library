@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "invalid-media-fixture",
+      "source_detail_url": "https://www.adsoftheworld.com/campaigns/invalid-media-fixture",
+      "primary_brand": "Fixture Brand",
+      "campaign_title": "Invalid media cleanup fixture",
+      "classification_candidate": {
+        "industry": "Food & Beverage",
+        "product_category": "Food Products"
+      },
+      "media_assets": [
+        {
+          "asset_id": "invalid-video",
+          "media_type": "video",
+          "provider": "mp4",
+          "source_asset_id": "invalid-video",
+          "original_url": "/Users/hakunamatata/Desktop/AdGenie/collect/test-fixtures/not-a-video.mp4",
+          "playback_url": null
+        }
+      ]
+    }
+  ]
+}

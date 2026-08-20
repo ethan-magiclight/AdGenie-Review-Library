@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "rule_version": "2026-08-v2",
+  "updated_at": "2026-08-03",
+  "taxonomy_file": "consumer-electronics-taxonomy-v1.json",
+  "genre_file": "ad-video-genres-v1.json",
+  "brand_file": "industry-top-brands-v2.json",
+  "source_file": "platform-source-registry-v1.json",
+  "defaults": {
+    "categories": ["True Wireless / Bluetooth Earbuds"],
+    "genres": ["TVC / Brand Commercial", "Concept Film / Brand Manifesto", "Story-Driven Product Ad", "Product Demo", "Feature Callout", "Macro Close-Up"],
+    "formats": ["shorts", "videos"],
+    "brand_tiers": ["P0", "P1"],
+    "published_within_days": 365,
+    "fallback_within_days": 730,
+    "limit_per_source": 30,
+    "limit_per_query": 5,
+    "max_queries_per_brand_genre": 2,
+    "minimum_discovery_score": 55,
+    "max_candidates_per_brand": 8,
+    "official_only": true
+  },
+  "hard_filters": {
+    "duration_seconds": { "min": 6, "max": 120 },
+    "require_known_publish_date": true,
+    "allowed_aspect_ratios": ["9:16", "16:9", "4:5", "1:1", "unknown"],
+    "excluded_title_terms": ["review", "vs", "comparison review", "livestream", "live stream", "podcast", "reaction", "repair", "replacement", "troubleshooting"],
+    "category_excluded_terms": {
+      "True Wireless / Bluetooth Earbuds": ["open ear", "open-ear", "openfit", "freeclip", "ear clip", "bone conduction", "over-ear", "headphones"],
+      "Open-Ear / Bone-Conduction Headphones": ["true wireless earbuds", "in-ear earbuds", "over-ear headphones"],
+      "Power Banks": ["portable power station", "solar generator", "jump starter", "power strip", "wall charger"]
+    }
+  },
+  "source_priority": {
+    "official_global": 30,
+    "official_regional": 27,
+    "official_support": 18,
+    "paid_ad_library": 28,
+    "creator_authorized": 15,
+    "unverified": 0
+  },
+  "discovery_score_weights": {
+    "source": 20,
+    "recency": 15,
+    "product_match": 25,
+    "ad_intent": 30,
+    "engagement": 10
+  },
+  "ad_intent": {
+    "strong_terms": ["official commercial", "commercial", "brand film", "launch film", "product film", "campaign film", "campaign", "tvc", "cinematic", "design story"],
+    "supporting_terms": ["introducing", "meet", "launch", "noise cancelling", "spatial audio", "product animation", "made to", "designed for"],
+    "social_filler_terms": ["day in my life", "pov", "get ready with me", "grwm", "take the call anywhere", "the right fit", "city never slows down"],
+    "search_terms": ["official commercial", "brand campaign", "product film", "launch film", "cinematic product video", "tvc"]
+  },
+  "recency_bands_days": [90, 180, 365, 730],
+  "dedupe": {
+    "state_file": "../web/data/creative-library-state.json",
+    "scan_collect_json": true,
+    "keys": ["source_platform+source_post_id", "video_id", "canonical_master_id", "normalized_url"]
+  },
+  "classification": {
+    "search_genres_are_recall_only": true,
+    "require_visual_review_before_formal_genres": true,
+    "required_frames": 10,
+    "visual_review_required": true
+  },
+  "visual_quality_gate": {
+    "minimum_score": 72,
+    "allowed_content_natures": ["brand_commercial", "product_campaign", "advertising_product_film"],
+    "minimum_product_frame_ratio": 0.5,
+    "required_ad_structure": ["hook", "commercial_proposition", "product_proof", "brand_close"],
+    "score_weights": {
+      "content_nature": 25,
+      "ad_structure": 25,
+      "product_focus": 20,
+      "production_quality": 20,
+      "template_value": 10
+    },
+    "hard_exclusion_codes": [
+      "SOCIAL_FILLER",
+      "LOW_QUALITY_PERFORMANCE_AD",
+      "NOT_BRAND_ADVERTISING",
+      "PRODUCT_NOT_VISUAL_SUBJECT",
+      "PRIMARY_PRODUCT_FOCUS_MIXED",
+      "TALKING_HEAD_DOMINANT",
+      "SUPPORT_CONTENT",
+      "EVENT_OR_LAUNCH",
+      "BEHIND_THE_SCENES",
+      "DOCUMENTARY_STYLE",
+      "LOW_AI_CREATIVE_HEADROOM",
+      "DUPLICATE_MASTER"
+    ]
+  }
+}

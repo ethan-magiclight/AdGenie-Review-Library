@@ -1,0 +1,309 @@
+{
+  "version": 2,
+  "updated_at": "2026-08-03",
+  "industry": "Consumer Electronics",
+  "principle": "品牌池负责行业覆盖和召回优先级；正式题材、内容性质与核心模板资格必须在抽帧后独立审核。",
+  "categories": {
+    "Smartphones": [
+      { "brand": "Apple", "tier": "P0", "products": ["iPhone"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Galaxy S", "Galaxy Z", "Galaxy A"] },
+      { "brand": "Google", "tier": "P0", "products": ["Pixel phone", "Pixel Fold"] },
+      { "brand": "Xiaomi", "tier": "P0", "products": ["Xiaomi phone", "Redmi phone"] },
+      { "brand": "Huawei", "tier": "P0", "products": ["Huawei Mate", "Huawei Pura", "Huawei nova"] },
+      { "brand": "OPPO", "tier": "P1", "products": ["OPPO Find", "OPPO Reno"] },
+      { "brand": "vivo", "tier": "P1", "products": ["vivo X", "vivo V"] },
+      { "brand": "HONOR", "tier": "P1", "products": ["HONOR Magic", "HONOR phone"] },
+      { "brand": "OnePlus", "tier": "P1", "products": ["OnePlus phone", "OnePlus Open"] },
+      { "brand": "Nothing", "tier": "P1", "products": ["Nothing Phone", "CMF Phone"] }
+    ],
+    "Tablets": [
+      { "brand": "Apple", "tier": "P0", "products": ["iPad", "iPad Pro", "iPad Air"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Galaxy Tab"] },
+      { "brand": "Microsoft", "tier": "P0", "products": ["Surface Pro"] },
+      { "brand": "Lenovo", "tier": "P1", "products": ["Lenovo Tab", "Yoga Tab"] },
+      { "brand": "Huawei", "tier": "P1", "products": ["MatePad"] },
+      { "brand": "Xiaomi", "tier": "P1", "products": ["Xiaomi Pad", "Redmi Pad"] },
+      { "brand": "Amazon", "tier": "P1", "products": ["Fire tablet"] }
+    ],
+    "Laptops": [
+      { "brand": "Apple", "tier": "P0", "products": ["MacBook Air", "MacBook Pro"] },
+      { "brand": "Dell", "tier": "P0", "products": ["Dell XPS", "Dell laptop"] },
+      { "brand": "Lenovo", "tier": "P0", "products": ["ThinkPad", "Yoga laptop", "Legion laptop"] },
+      { "brand": "HP", "tier": "P0", "products": ["HP Spectre", "HP OmniBook", "HP laptop"] },
+      { "brand": "ASUS", "tier": "P0", "products": ["Zenbook", "ROG laptop", "Vivobook"] },
+      { "brand": "Microsoft", "tier": "P1", "products": ["Surface Laptop"] },
+      { "brand": "Acer", "tier": "P1", "products": ["Acer Swift", "Acer Predator"] },
+      { "brand": "Razer", "tier": "P1", "products": ["Razer Blade"] }
+    ],
+    "Smartwatches": [
+      { "brand": "Apple", "tier": "P0", "products": ["Apple Watch"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Galaxy Watch"] },
+      { "brand": "Google", "tier": "P0", "products": ["Pixel Watch"] },
+      { "brand": "Garmin", "tier": "P0", "products": ["Garmin watch"] },
+      { "brand": "Huawei", "tier": "P1", "products": ["Huawei Watch"] },
+      { "brand": "Xiaomi", "tier": "P1", "products": ["Xiaomi Watch", "Redmi Watch"] },
+      { "brand": "Amazfit", "tier": "P1", "products": ["Amazfit watch"] }
+    ],
+    "Smart Bands": [
+      { "brand": "Xiaomi", "tier": "P0", "products": ["Xiaomi Smart Band", "Mi Band"] },
+      { "brand": "Huawei", "tier": "P0", "products": ["Huawei Band"] },
+      { "brand": "Fitbit", "tier": "P0", "products": ["Fitbit Charge", "Fitbit Inspire"] },
+      { "brand": "Samsung", "tier": "P1", "products": ["Galaxy Fit"] },
+      { "brand": "Amazfit", "tier": "P1", "products": ["Amazfit Band"] },
+      { "brand": "HONOR", "tier": "P1", "products": ["HONOR Band"] }
+    ],
+    "Smart Trackers": [
+      { "brand": "Apple", "tier": "P0", "products": ["AirTag"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Galaxy SmartTag"] },
+      { "brand": "Tile", "tier": "P0", "products": ["Tile tracker"] },
+      { "brand": "Chipolo", "tier": "P1", "products": ["Chipolo tracker"] },
+      { "brand": "Pebblebee", "tier": "P1", "products": ["Pebblebee tracker"] }
+    ],
+    "VR/AR Headsets": [
+      { "brand": "Meta", "tier": "P0", "products": ["Meta Quest"] },
+      { "brand": "Apple", "tier": "P0", "products": ["Apple Vision Pro"] },
+      { "brand": "Sony", "tier": "P0", "products": ["PlayStation VR", "PS VR"] },
+      { "brand": "HTC", "tier": "P1", "products": ["HTC Vive"] },
+      { "brand": "PICO", "tier": "P1", "products": ["PICO headset"] },
+      { "brand": "XREAL", "tier": "P1", "products": ["XREAL glasses"] }
+    ],
+    "True Wireless / Bluetooth Earbuds": [
+      { "brand": "Apple", "tier": "P0", "products": ["AirPods", "AirPods Pro"] },
+      { "brand": "Beats", "tier": "P0", "products": ["Beats Studio Buds", "Beats Fit Pro", "Powerbeats"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Galaxy Buds"] },
+      { "brand": "Sony", "tier": "P0", "products": ["Sony WF earbuds", "LinkBuds Fit"] },
+      { "brand": "Bose", "tier": "P0", "products": ["QuietComfort Earbuds"] },
+      { "brand": "JBL", "tier": "P0", "products": ["JBL earbuds", "JBL Tour Pro", "JBL Live Buds"] },
+      { "brand": "soundcore", "tier": "P0", "products": ["soundcore Liberty", "soundcore earbuds", "Space A40"] },
+      { "brand": "Google", "tier": "P0", "products": ["Pixel Buds"] },
+      { "brand": "Nothing", "tier": "P0", "products": ["Nothing Ear", "CMF Buds"] },
+      { "brand": "Sennheiser", "tier": "P1", "products": ["MOMENTUM True Wireless", "ACCENTUM True Wireless"] },
+      { "brand": "Technics", "tier": "P1", "products": ["Technics AZ100", "Technics AZ80", "Technics earbuds"] },
+      { "brand": "Audio-Technica", "tier": "P1", "products": ["Audio-Technica TWX", "Audio-Technica earbuds"] },
+      { "brand": "Marshall", "tier": "P1", "products": ["Marshall Motif", "Marshall Minor earbuds"] },
+      { "brand": "Skullcandy", "tier": "P1", "products": ["Skullcandy earbuds"] },
+      { "brand": "JLab", "tier": "P1", "products": ["JLab earbuds", "JLab Go Air", "JLab JBuds"] },
+      { "brand": "Huawei", "tier": "P1", "products": ["Huawei FreeBuds"] },
+      { "brand": "Xiaomi", "tier": "P1", "products": ["Xiaomi Buds", "Redmi Buds"] },
+      { "brand": "OPPO", "tier": "P1", "products": ["OPPO Enco"] },
+      { "brand": "OnePlus", "tier": "P1", "products": ["OnePlus Buds"] },
+      { "brand": "Edifier", "tier": "P1", "products": ["Edifier NeoBuds", "Edifier earbuds"] },
+      { "brand": "EarFun", "tier": "P2", "products": ["EarFun earbuds"] },
+      { "brand": "SoundPEATS", "tier": "P2", "products": ["SoundPEATS earbuds"] },
+      { "brand": "1MORE", "tier": "P2", "products": ["1MORE earbuds"] },
+      { "brand": "QCY", "tier": "P2", "products": ["QCY earbuds"] },
+      { "brand": "TOZO", "tier": "P2", "products": ["TOZO earbuds"] }
+    ],
+    "Open-Ear / Bone-Conduction Headphones": [
+      { "brand": "Shokz", "tier": "P0", "products": ["Shokz OpenRun", "Shokz OpenFit", "Shokz OpenDots"] },
+      { "brand": "Bose", "tier": "P0", "products": ["Bose Ultra Open"] },
+      { "brand": "Huawei", "tier": "P0", "products": ["Huawei FreeClip"] },
+      { "brand": "Sony", "tier": "P0", "products": ["Sony LinkBuds Open"] },
+      { "brand": "soundcore", "tier": "P0", "products": ["soundcore AeroFit", "soundcore AeroClip"] },
+      { "brand": "JBL", "tier": "P1", "products": ["JBL Soundgear Sense"] },
+      { "brand": "Edifier", "tier": "P1", "products": ["Edifier Comfo"] },
+      { "brand": "Oladance", "tier": "P1", "products": ["Oladance open ear"] },
+      { "brand": "Baseus", "tier": "P1", "products": ["Baseus Eli Sport"] }
+    ],
+    "Wired Earphones": [
+      { "brand": "Apple", "tier": "P0", "products": ["EarPods"] },
+      { "brand": "Sony", "tier": "P0", "products": ["Sony wired earphones", "Sony IER"] },
+      { "brand": "Audio-Technica", "tier": "P0", "products": ["Audio-Technica in-ear"] },
+      { "brand": "Sennheiser", "tier": "P0", "products": ["Sennheiser IE"] },
+      { "brand": "Shure", "tier": "P1", "products": ["Shure SE earphones"] },
+      { "brand": "Moondrop", "tier": "P1", "products": ["Moondrop IEM"] }
+    ],
+    "Over-Ear Headphones": [
+      { "brand": "Apple", "tier": "P0", "products": ["AirPods Max"] },
+      { "brand": "Beats", "tier": "P0", "products": ["Beats Studio Pro", "Beats Solo"] },
+      { "brand": "Sony", "tier": "P0", "products": ["Sony WH headphones"] },
+      { "brand": "Bose", "tier": "P0", "products": ["Bose QuietComfort headphones"] },
+      { "brand": "Sennheiser", "tier": "P0", "products": ["Sennheiser MOMENTUM headphones"] },
+      { "brand": "JBL", "tier": "P1", "products": ["JBL headphones"] },
+      { "brand": "Marshall", "tier": "P1", "products": ["Marshall Major", "Marshall Monitor"] },
+      { "brand": "Audio-Technica", "tier": "P1", "products": ["Audio-Technica headphones"] },
+      { "brand": "Skullcandy", "tier": "P1", "products": ["Skullcandy headphones"] },
+      { "brand": "Bang & Olufsen", "tier": "P1", "products": ["Beoplay headphones"] }
+    ],
+    "Bluetooth & Wireless Speakers": [
+      { "brand": "JBL", "tier": "P0", "products": ["JBL Bluetooth speaker", "JBL Flip", "JBL Charge"] },
+      { "brand": "Marshall", "tier": "P0", "products": ["Marshall speaker"] },
+      { "brand": "Sonos", "tier": "P0", "products": ["Sonos speaker", "Sonos Roam", "Sonos Move"] },
+      { "brand": "Bose", "tier": "P0", "products": ["Bose speaker", "SoundLink"] },
+      { "brand": "Sony", "tier": "P1", "products": ["Sony wireless speaker", "Sony ULT speaker"] },
+      { "brand": "soundcore", "tier": "P1", "products": ["soundcore speaker", "Soundcore Boom"] },
+      { "brand": "Bang & Olufsen", "tier": "P1", "products": ["Beosound", "Beoplay speaker"] },
+      { "brand": "Ultimate Ears", "tier": "P1", "products": ["UE BOOM", "Ultimate Ears speaker"] }
+    ],
+    "Microphones": [
+      { "brand": "RØDE", "tier": "P0", "products": ["Rode microphone", "Wireless PRO", "Wireless GO"] },
+      { "brand": "DJI", "tier": "P0", "products": ["DJI Mic"] },
+      { "brand": "Shure", "tier": "P0", "products": ["Shure microphone", "Shure MV"] },
+      { "brand": "Logitech", "tier": "P1", "products": ["Blue Yeti", "Logitech microphone"] },
+      { "brand": "Sennheiser", "tier": "P1", "products": ["Sennheiser microphone"] },
+      { "brand": "Hollyland", "tier": "P1", "products": ["Hollyland Lark"] }
+    ],
+    "Digital & Instant Cameras": [
+      { "brand": "Canon", "tier": "P0", "products": ["Canon EOS", "Canon PowerShot"] },
+      { "brand": "Sony", "tier": "P0", "products": ["Sony Alpha", "Sony ZV camera"] },
+      { "brand": "Nikon", "tier": "P0", "products": ["Nikon Z camera"] },
+      { "brand": "Fujifilm", "tier": "P0", "products": ["Fujifilm X camera", "Instax"] },
+      { "brand": "Panasonic", "tier": "P1", "products": ["Lumix camera"] },
+      { "brand": "Leica", "tier": "P1", "products": ["Leica camera"] },
+      { "brand": "Polaroid", "tier": "P1", "products": ["Polaroid camera"] }
+    ],
+    "Action Cameras": [
+      { "brand": "GoPro", "tier": "P0", "products": ["GoPro HERO"] },
+      { "brand": "DJI", "tier": "P0", "products": ["DJI Osmo Action", "DJI Osmo Pocket"] },
+      { "brand": "Insta360", "tier": "P0", "products": ["Insta360 X", "Insta360 Ace", "Insta360 GO"] },
+      { "brand": "Akaso", "tier": "P1", "products": ["Akaso action camera"] }
+    ],
+    "Webcams": [
+      { "brand": "Logitech", "tier": "P0", "products": ["Logitech webcam", "MX Brio"] },
+      { "brand": "Elgato", "tier": "P0", "products": ["Elgato Facecam"] },
+      { "brand": "Insta360", "tier": "P0", "products": ["Insta360 Link"] },
+      { "brand": "Razer", "tier": "P1", "products": ["Razer Kiyo"] },
+      { "brand": "OBSBOT", "tier": "P1", "products": ["OBSBOT webcam", "OBSBOT Tiny"] }
+    ],
+    "Wall Chargers": [
+      { "brand": "Anker", "tier": "P0", "products": ["Anker charger", "Anker Prime charger", "Anker Nano charger"] },
+      { "brand": "UGREEN", "tier": "P0", "products": ["UGREEN Nexode charger", "UGREEN charger"] },
+      { "brand": "Belkin", "tier": "P0", "products": ["Belkin BoostCharge charger"] },
+      { "brand": "Baseus", "tier": "P0", "products": ["Baseus GaN charger"] },
+      { "brand": "Nomad", "tier": "P1", "products": ["Nomad charger"] },
+      { "brand": "Satechi", "tier": "P1", "products": ["Satechi charger"] }
+    ],
+    "Power Banks": [
+      { "brand": "Anker", "tier": "P0", "products": ["Anker power bank", "Anker Prime power bank", "PowerCore"] },
+      { "brand": "UGREEN", "tier": "P0", "products": ["UGREEN power bank", "UGREEN Nexode power bank"] },
+      { "brand": "Baseus", "tier": "P0", "products": ["Baseus power bank", "Baseus Blade"] },
+      { "brand": "Belkin", "tier": "P0", "products": ["Belkin power bank", "BoostCharge power bank"] },
+      { "brand": "Xiaomi", "tier": "P0", "products": ["Xiaomi power bank", "Redmi power bank"] },
+      { "brand": "CUKTECH", "tier": "P1", "products": ["CUKTECH power bank"] },
+      { "brand": "SHARGE", "tier": "P1", "products": ["SHARGE power bank", "Shargeek"] },
+      { "brand": "Zendure", "tier": "P1", "products": ["Zendure power bank", "SuperTank"] },
+      { "brand": "EcoFlow", "tier": "P1", "products": ["EcoFlow RAPID power bank"] },
+      { "brand": "Mophie", "tier": "P1", "products": ["Mophie powerstation"] },
+      { "brand": "ESR", "tier": "P1", "products": ["ESR power bank", "ESR HaloLock battery"] }
+    ],
+    "Wireless Chargers": [
+      { "brand": "Belkin", "tier": "P0", "products": ["Belkin wireless charger", "BoostCharge Pro"] },
+      { "brand": "Anker", "tier": "P0", "products": ["Anker wireless charger", "Anker MagGo"] },
+      { "brand": "UGREEN", "tier": "P0", "products": ["UGREEN wireless charger", "UGREEN MagFlow"] },
+      { "brand": "Nomad", "tier": "P1", "products": ["Nomad wireless charger"] },
+      { "brand": "Samsung", "tier": "P1", "products": ["Samsung Wireless Charger"] },
+      { "brand": "ESR", "tier": "P1", "products": ["ESR Qi2 charger", "ESR HaloLock charger"] }
+    ],
+    "Data & Charging Cables": [
+      { "brand": "Anker", "tier": "P0", "products": ["Anker USB-C cable", "Anker charging cable"] },
+      { "brand": "UGREEN", "tier": "P0", "products": ["UGREEN cable", "UGREEN USB-C cable"] },
+      { "brand": "Belkin", "tier": "P0", "products": ["Belkin cable", "BoostCharge cable"] },
+      { "brand": "Baseus", "tier": "P0", "products": ["Baseus cable"] },
+      { "brand": "Nomad", "tier": "P1", "products": ["Nomad cable"] },
+      { "brand": "Cable Matters", "tier": "P1", "products": ["Cable Matters cable"] }
+    ],
+    "Power Strips & Smart Plugs": [
+      { "brand": "Anker", "tier": "P0", "products": ["Anker power strip", "Anker charging station"] },
+      { "brand": "TP-Link", "tier": "P0", "products": ["Tapo smart plug", "Kasa smart plug"] },
+      { "brand": "Belkin", "tier": "P0", "products": ["Belkin power strip", "Wemo smart plug"] },
+      { "brand": "Eve", "tier": "P1", "products": ["Eve Energy smart plug"] },
+      { "brand": "UGREEN", "tier": "P1", "products": ["UGREEN power strip"] }
+    ],
+    "Docks & Hubs": [
+      { "brand": "UGREEN", "tier": "P0", "products": ["UGREEN dock", "UGREEN USB-C hub"] },
+      { "brand": "Anker", "tier": "P0", "products": ["Anker dock", "Anker USB-C hub"] },
+      { "brand": "CalDigit", "tier": "P0", "products": ["CalDigit dock"] },
+      { "brand": "Belkin", "tier": "P0", "products": ["Belkin dock", "Belkin USB-C hub"] },
+      { "brand": "Satechi", "tier": "P1", "products": ["Satechi hub", "Satechi dock"] },
+      { "brand": "OWC", "tier": "P1", "products": ["OWC dock"] }
+    ],
+    "Keyboards": [
+      { "brand": "Logitech", "tier": "P0", "products": ["Logitech keyboard", "MX Keys"] },
+      { "brand": "Razer", "tier": "P0", "products": ["Razer keyboard"] },
+      { "brand": "Keychron", "tier": "P0", "products": ["Keychron keyboard"] },
+      { "brand": "Corsair", "tier": "P1", "products": ["Corsair keyboard"] },
+      { "brand": "SteelSeries", "tier": "P1", "products": ["SteelSeries keyboard"] },
+      { "brand": "ASUS", "tier": "P1", "products": ["ROG keyboard"] }
+    ],
+    "Mice": [
+      { "brand": "Logitech", "tier": "P0", "products": ["Logitech mouse", "MX Master", "Logitech G mouse"] },
+      { "brand": "Razer", "tier": "P0", "products": ["Razer mouse"] },
+      { "brand": "SteelSeries", "tier": "P1", "products": ["SteelSeries mouse"] },
+      { "brand": "Corsair", "tier": "P1", "products": ["Corsair mouse"] },
+      { "brand": "ASUS", "tier": "P1", "products": ["ROG mouse"] }
+    ],
+    "Monitors": [
+      { "brand": "Dell", "tier": "P0", "products": ["Dell monitor", "Alienware monitor"] },
+      { "brand": "LG", "tier": "P0", "products": ["LG UltraGear", "LG UltraFine monitor"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Samsung Odyssey monitor", "Samsung ViewFinity"] },
+      { "brand": "ASUS", "tier": "P0", "products": ["ROG monitor", "ProArt monitor"] },
+      { "brand": "BenQ", "tier": "P1", "products": ["BenQ monitor", "ZOWIE monitor"] },
+      { "brand": "AOC", "tier": "P1", "products": ["AOC monitor"] }
+    ],
+    "Printers": [
+      { "brand": "HP", "tier": "P0", "products": ["HP printer", "HP Smart Tank"] },
+      { "brand": "Canon", "tier": "P0", "products": ["Canon printer", "Canon PIXMA"] },
+      { "brand": "Epson", "tier": "P0", "products": ["Epson printer", "EcoTank"] },
+      { "brand": "Brother", "tier": "P1", "products": ["Brother printer"] }
+    ],
+    "Routers": [
+      { "brand": "TP-Link", "tier": "P0", "products": ["TP-Link router", "TP-Link Deco"] },
+      { "brand": "ASUS", "tier": "P0", "products": ["ASUS router", "ROG router"] },
+      { "brand": "Netgear", "tier": "P0", "products": ["Netgear Nighthawk", "Netgear Orbi"] },
+      { "brand": "Google", "tier": "P1", "products": ["Nest Wifi"] },
+      { "brand": "Amazon", "tier": "P1", "products": ["eero router"] },
+      { "brand": "Ubiquiti", "tier": "P1", "products": ["UniFi router"] }
+    ],
+    "Mobile Wi-Fi": [
+      { "brand": "Netgear", "tier": "P0", "products": ["Netgear Nighthawk hotspot"] },
+      { "brand": "TP-Link", "tier": "P0", "products": ["TP-Link mobile Wi-Fi", "TP-Link MiFi"] },
+      { "brand": "ZTE", "tier": "P0", "products": ["ZTE mobile hotspot"] },
+      { "brand": "Huawei", "tier": "P1", "products": ["Huawei Mobile WiFi"] },
+      { "brand": "GlocalMe", "tier": "P1", "products": ["GlocalMe hotspot"] }
+    ],
+    "Solid-State Drives": [
+      { "brand": "Samsung", "tier": "P0", "products": ["Samsung SSD"] },
+      { "brand": "SanDisk", "tier": "P0", "products": ["SanDisk SSD"] },
+      { "brand": "Crucial", "tier": "P0", "products": ["Crucial SSD"] },
+      { "brand": "WD", "tier": "P0", "products": ["WD Black SSD", "Western Digital SSD"] },
+      { "brand": "Kingston", "tier": "P1", "products": ["Kingston SSD"] },
+      { "brand": "Seagate", "tier": "P1", "products": ["Seagate SSD"] }
+    ],
+    "External Hard Drives": [
+      { "brand": "WD", "tier": "P0", "products": ["WD external hard drive", "My Passport"] },
+      { "brand": "Seagate", "tier": "P0", "products": ["Seagate external hard drive"] },
+      { "brand": "LaCie", "tier": "P0", "products": ["LaCie drive"] },
+      { "brand": "Toshiba", "tier": "P1", "products": ["Toshiba external hard drive"] }
+    ],
+    "USB Flash Drives": [
+      { "brand": "SanDisk", "tier": "P0", "products": ["SanDisk USB drive"] },
+      { "brand": "Kingston", "tier": "P0", "products": ["Kingston USB drive"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Samsung USB flash drive"] },
+      { "brand": "Lexar", "tier": "P1", "products": ["Lexar USB drive"] }
+    ],
+    "Memory Cards": [
+      { "brand": "SanDisk", "tier": "P0", "products": ["SanDisk memory card", "SanDisk microSD"] },
+      { "brand": "Samsung", "tier": "P0", "products": ["Samsung memory card", "Samsung microSD"] },
+      { "brand": "Lexar", "tier": "P0", "products": ["Lexar memory card"] },
+      { "brand": "Kingston", "tier": "P1", "products": ["Kingston memory card"] },
+      { "brand": "ProGrade", "tier": "P1", "products": ["ProGrade memory card"] }
+    ],
+    "Game Consoles": [
+      { "brand": "Sony", "tier": "P0", "products": ["PlayStation 5", "PS5"] },
+      { "brand": "Microsoft", "tier": "P0", "products": ["Xbox Series"] },
+      { "brand": "Nintendo", "tier": "P0", "products": ["Nintendo Switch"] },
+      { "brand": "Valve", "tier": "P1", "products": ["Steam Deck"] },
+      { "brand": "ASUS", "tier": "P1", "products": ["ROG Ally"] },
+      { "brand": "Lenovo", "tier": "P1", "products": ["Legion Go"] }
+    ],
+    "Game Controllers": [
+      { "brand": "Sony", "tier": "P0", "products": ["DualSense controller"] },
+      { "brand": "Microsoft", "tier": "P0", "products": ["Xbox controller"] },
+      { "brand": "Nintendo", "tier": "P0", "products": ["Nintendo Switch controller", "Joy-Con"] },
+      { "brand": "Razer", "tier": "P1", "products": ["Razer controller", "Razer Kishi"] },
+      { "brand": "8BitDo", "tier": "P1", "products": ["8BitDo controller"] },
+      { "brand": "SCUF", "tier": "P1", "products": ["SCUF controller"] },
+      { "brand": "Backbone", "tier": "P1", "products": ["Backbone One controller"] }
+    ]
+  }
+}

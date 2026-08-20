@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-19",
+  "purpose": "AdGenie normalized industry and product-category candidates for brand advertising sources",
+  "external_taxonomies": [
+    "consumer-electronics-taxonomy-v1.json",
+    "pet-supplies-taxonomy-v1.json",
+    "sporting-goods-fitness-taxonomy-v1.json"
+  ],
+  "industries": [
+    {
+      "industry": "Apparel & Footwear",
+      "zh": "服装与鞋履",
+      "categories": [
+        { "category": "Clothing & Apparel", "zh": "服装", "priority": "P1" },
+        { "category": "Footwear", "zh": "鞋履", "priority": "P1" },
+        { "category": "Sportswear", "zh": "运动服饰", "priority": "P1" },
+        { "category": "Fashion Accessories", "zh": "时尚配饰", "priority": "P2" }
+      ]
+    },
+    {
+      "industry": "Beauty & Personal Care",
+      "zh": "美妆与个人护理",
+      "categories": [
+        { "category": "Cosmetics", "zh": "彩妆", "priority": "P1" },
+        { "category": "Skincare", "zh": "护肤", "priority": "P1" },
+        { "category": "Hair Care", "zh": "头发护理", "priority": "P1" },
+        { "category": "Toiletries & Personal Hygiene", "zh": "洗护与个人卫生", "priority": "P1" },
+        { "category": "Fragrance", "zh": "香水香氛", "priority": "P2" }
+      ]
+    },
+    {
+      "industry": "Food & Beverage",
+      "zh": "食品与饮料",
+      "categories": [
+        { "category": "Confectionery & Snacks", "zh": "糖果与零食", "priority": "P1" },
+        { "category": "Non-Alcoholic Beverages", "zh": "非酒精饮料", "priority": "P1" },
+        { "category": "Food Products", "zh": "食品", "priority": "P1" }
+      ]
+    },
+    {
+      "industry": "Home & Living/Household",
+      "zh": "家居与家庭用品",
+      "categories": [
+        { "category": "Home Appliances", "zh": "家用电器", "priority": "P1" },
+        { "category": "Home Furnishings", "zh": "家居与家具", "priority": "P1" },
+        { "category": "Household Care", "zh": "家庭清洁护理", "priority": "P1" },
+        { "category": "Home & Garden", "zh": "家居园艺", "priority": "P1" }
+      ]
+    }
+  ]
+}

@@ -19,7 +19,12 @@ async function readText(relativePath) {
 }
 
 function videoIdFromUrl(url = "") {
-  return url.match(/[?&]v=([^&]+)/)?.[1] || url.match(/youtu\.be\/([^?]+)/)?.[1] || null;
+  return (
+    url.match(/[?&]v=([^&]+)/)?.[1] ||
+    url.match(/youtu\.be\/([^?]+)/)?.[1] ||
+    url.match(/youtube\.com\/shorts\/([^?]+)/)?.[1] ||
+    null
+  );
 }
 
 function toMediaPath(absOrRelative) {
@@ -83,6 +88,22 @@ function normalizeVideo(source, reviewRecord, contactSheet) {
     primary_genre: primaryGenre,
     secondary_genres: secondaryGenres,
     source_type: reviewRecord?.source_type || source.source_type || "",
+    source_platform: reviewRecord?.source_platform || source.source_platform || "youtube",
+    source_post_id: reviewRecord?.source_post_id || source.source_post_id || videoId,
+    platform_format: reviewRecord?.platform_format || source.platform_format || "",
+    source_account: reviewRecord?.source_account || source.source_account || "",
+    source_account_id: reviewRecord?.source_account_id || source.source_account_id || "",
+    source_account_type: reviewRecord?.source_account_type || source.source_account_type || "",
+    normalized_url: reviewRecord?.normalized_url || source.normalized_url || `https://www.youtube.com/watch?v=${videoId}`,
+    width: reviewRecord?.width ?? source.width ?? null,
+    height: reviewRecord?.height ?? source.height ?? null,
+    aspect_ratio: reviewRecord?.aspect_ratio || source.aspect_ratio || "unknown",
+    is_vertical: Boolean(reviewRecord?.is_vertical ?? source.is_vertical),
+    is_paid_ad: Boolean(reviewRecord?.is_paid_ad ?? source.is_paid_ad),
+    view_count: reviewRecord?.view_count ?? source.view_count ?? null,
+    published_at: reviewRecord?.published_at || source.published_at || null,
+    collected_at: reviewRecord?.collected_at || source.collected_at || null,
+    collection_rule_version: reviewRecord?.collection_rule_version || source.collection_rule_version || "",
     note: reviewRecord?.visual_notes || source.note || "",
     visual_notes: reviewRecord?.visual_notes || source.note || "",
     reason_codes: reviewRecord?.reason_codes || [],
@@ -123,6 +144,27 @@ const [library, review, genreData, taxonomyData, stats, methodologyMain, methodo
   readText("collect/采集方案与优质判定标准.md"),
   readText("collect/采集方案与优质判定标准-v2.md"),
 ]);
+
+let petTaxonomyData = { categories: [] };
+try {
+  petTaxonomyData = await readJson("collect/pet-supplies-taxonomy-v1.json");
+} catch {
+  petTaxonomyData = { categories: [] };
+}
+
+let sportingTaxonomyData = { categories: [] };
+try {
+  sportingTaxonomyData = await readJson("collect/sporting-goods-fitness-taxonomy-v1.json");
+} catch {
+  sportingTaxonomyData = { categories: [] };
+}
+
+let brandTaxonomyData = { industries: [] };
+try {
+  brandTaxonomyData = await readJson("collect/adgenie-brand-taxonomy-v1.json");
+} catch {
+  brandTaxonomyData = { industries: [] };
+}
 
 const contacts = await contactSheetMap();
 const reviewByVideoId = new Map(review.records.map((record) => [record.video_id, record]));
@@ -167,8 +209,58 @@ const state = {
   genres: genreData.genres,
   genre_groups: genreData.groups,
   target_genres: stats.consumer_electronics.target_genres,
-  categories: taxonomyData.categories,
+  target_genres_by_industry: {
+    "Consumer Electronics": stats.consumer_electronics.target_genres,
+    "Pet Supplies": [
+      "TVC / Brand Commercial",
+      "Concept Film / Brand Manifesto",
+      "Story-Driven Product Ad",
+      "Problem–Solution",
+      "Product Demo",
+      "Feature Callout",
+      "Before & After",
+      "Daily Routine",
+      "UGC Ad",
+      "Testimonial / Review",
+      "Macro Close-Up",
+      "Unboxing",
+      "How-To Tutorial",
+      "Try-On / Try-Out",
+    ],
+    "Sporting Goods & Fitness": [
+      "TVC / Brand Commercial",
+      "Concept Film / Brand Manifesto",
+      "Story-Driven Product Ad",
+      "Sports Hero Film",
+      "Product Demo",
+      "Feature Callout",
+      "Problem–Solution",
+      "Daily Routine",
+      "UGC Ad",
+      "Testimonial / Review",
+      "Macro Close-Up",
+      "Multi-Angle / 360° Product Showcase",
+      "Try-On / Try-Out",
+    ],
+  },
+  industries: [
+    { industry: "Consumer Electronics", zh: "消费电子", priority: "P0" },
+    { industry: "Pet Supplies", zh: "宠物用品", priority: "P1" },
+    { industry: "Sporting Goods & Fitness", zh: "运动健身", priority: "P1" },
+    ...brandTaxonomyData.industries.map(({ industry, zh }) => ({ industry, zh, priority: "P1" })),
+  ],
+  categories: [
+    ...taxonomyData.categories.map((item) => ({ industry: "Consumer Electronics", ...item })),
+    ...petTaxonomyData.categories.map((item) => ({ industry: "Pet Supplies", ...item })),
+    ...sportingTaxonomyData.categories.map((item) => ({ industry: "Sporting Goods & Fitness", ...item })),
+    ...brandTaxonomyData.industries.flatMap((industry) => industry.categories.map((item) => ({ industry: industry.industry, ...item }))),
+  ],
   priority_categories: stats.consumer_electronics.priority_categories,
+  priority_categories_by_industry: {
+    "Consumer Electronics": stats.consumer_electronics.priority_categories,
+    "Pet Supplies": petTaxonomyData.categories.filter((item) => item.priority === "P0").map((item) => item.category),
+    "Sporting Goods & Fitness": sportingTaxonomyData.categories.filter((item) => item.priority === "P0").map((item) => item.category),
+  },
   videos: [...videoMap.values()].sort((left, right) => {
     const category = String(left.product_category).localeCompare(String(right.product_category));
     if (category !== 0) return category;

@@ -1,0 +1,93 @@
+{
+  "records": [
+    {
+      "schema_version": "source-video-record-v1",
+      "source_site": "ads_of_the_world",
+      "source_record_id": "two-video-import-fixture",
+      "source_detail_url": "https://www.adsoftheworld.com/campaigns/two-video-import-fixture",
+      "source_categories": [],
+      "source_industries": ["Food"],
+      "source_medium_types": ["Film"],
+      "primary_brand": "Fixture Brand",
+      "brands": ["Fixture Brand"],
+      "campaign_id": "ads_of_the_world:two-video-import-fixture",
+      "campaign_title": "Two-video import fixture",
+      "description": "Verifies one campaign becomes one review item per video.",
+      "agency": "Fixture Agency",
+      "production_companies": ["Fixture Production"],
+      "country": "United Kingdom",
+      "campaign_published_at": "2025-06-01",
+      "source_uploaded_at": null,
+      "publish_date_source": "campaign_published_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2025",
+      "collected_at": "2026-08-19T00:00:00.000Z",
+      "record_state": "ready_for_media_review",
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "canonical_master_id": null,
+      "classification_candidate": {
+        "industry": "Food & Beverage",
+        "product_category": "Food Products",
+        "status": "mapped_candidate",
+        "confidence": 0.82,
+        "evidence": ["AOTW source industry Food"]
+      },
+      "source_refs": [
+        {
+          "source_site": "ads_of_the_world",
+          "source_record_id": "two-video-import-fixture",
+          "source_detail_url": "https://www.adsoftheworld.com/campaigns/two-video-import-fixture",
+          "source_asset_id": "youtube-fixture",
+          "relation": "primary",
+          "collected_at": "2026-08-19T00:00:00.000Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "youtube-fixture",
+          "media_type": "video",
+          "provider": "youtube",
+          "source_asset_id": "youtube-fixture",
+          "original_url": "https://www.youtube.com/watch?v=youtube-fixture",
+          "playback_url": "https://www.youtube.com/embed/youtube-fixture",
+          "thumbnail_url": "https://img.youtube.com/vi/youtube-fixture/0.jpg",
+          "duration_seconds": 30,
+          "width": 1920,
+          "height": 1080,
+          "aspect_ratio": "16:9",
+          "access_status": "available",
+          "checked_at": "2026-08-19T00:00:00.000Z",
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        },
+        {
+          "asset_id": "mp4-fixture",
+          "media_type": "video",
+          "provider": "mp4",
+          "source_asset_id": "mp4-fixture",
+          "original_url": "https://cdn.example.test/mp4-fixture.mp4",
+          "playback_url": "https://cdn.example.test/mp4-fixture.mp4",
+          "thumbnail_url": "https://cdn.example.test/mp4-fixture.jpg",
+          "duration_seconds": 15,
+          "width": 1080,
+          "height": 1920,
+          "aspect_ratio": "9:16",
+          "access_status": "available",
+          "checked_at": "2026-08-19T00:00:00.000Z",
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": { "fixture": true }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-19T16:58:09.191Z",
+  "source_site": "combined",
+  "inputs": {
+    "records": "collect/runs/best-ads-aotw-sample-40/records.json",
+    "checkpoint": null,
+    "contact_sheets": null
+  },
+  "discovery": null,
+  "coverage": {
+    "records": 30,
+    "review_items": 40,
+    "brand_complete": 30,
+    "brand_complete_rate": 1,
+    "detail_url_complete": 30,
+    "detail_url_complete_rate": 1,
+    "date_confirmed": 10,
+    "date_confirmed_rate": 0.3333,
+    "date_unverified": 20,
+    "date_unverified_rate": 0.6667,
+    "records_with_video": 30,
+    "records_with_video_rate": 1,
+    "records_with_auditable_video_status": 30,
+    "records_with_auditable_video_status_rate": 1,
+    "pending_category_review": 10,
+    "pending_category_review_rate": 0.3333
+  },
+  "media": {
+    "providers": {
+      "aotw_cdn": 20,
+      "best_ads_signed_mp4": 20
+    },
+    "access_statuses": {
+      "available": 20,
+      "temporary": 20
+    },
+    "contact_sheet_records": 40,
+    "contact_sheet_success": 40,
+    "contact_sheet_failure": 0,
+    "contact_sheet_success_rate": 1,
+    "temporary_video_residue": 0
+  },
+  "classification": {
+    "industries": {
+      "Food & Beverage": 20,
+      "pending": 10
+    },
+    "product_categories": {
+      "Confectionery & Snacks": 20,
+      "pending": 10
+    },
+    "candidate_statuses": {
+      "mapped_candidate": 20,
+      "pending_category_review": 10
+    }
+  },
+  "visual_pre_review": {
+    "completed": 40,
+    "failed": 0,
+    "coverage_rate": 1,
+    "content_natures": {
+      "advertising_product_film": 4,
+      "brand_commercial": 20,
+      "product_campaign": 14,
+      "uncertain": 2
+    },
+    "industry_candidates": {
+      "Apparel & Footwear": 2,
+      "Automotive": 3,
+      "Cybersecurity & Technology": 1,
+      "Education & Digital Services": 3,
+      "Education & Retail Services": 1,
+      "Financial Services": 2,
+      "Food & Beverage": 20,
+      "Health & Pharmaceutical": 4,
+      "Jewelry & Accessories": 3,
+      "Retail Services": 1
+    },
+    "product_category_candidates": {
+      "Automotive Brand": 3,
+      "Banking Services": 2,
+      "Books & School Supplies Retail": 1,
+      "Confectionery & Snacks": 17,
+      "Cybersecurity Software": 1,
+      "Digestive Relief": 4,
+      "Education & Learning Services": 3,
+      "Fine Jewelry": 3,
+      "Food Products": 3,
+      "Footwear": 2,
+      "Grocery Retail": 1,
+      "Sportswear": 2
+    },
+    "exclusion_candidates": {
+      "brand_and_financial_product_not_visible_requires_human_review": 1,
+      "brand_close_not_visible_in_sample_requires_human_review": 2,
+      "campaign_support_content_requires_human_review": 1,
+      "co_brand_launch_requires_human_review": 1,
+      "commercial_proposition_unclear_requires_human_review": 1,
+      "documentary_style_is_fictional_commercial_verify_manually": 3,
+      "formula_one_partnership_requires_human_review": 3,
+      "licensed_entertainment_tie_in_requires_human_review": 1,
+      "long_form_runtime_requires_human_review": 1,
+      "no_vehicle_or_product_proposition_requires_human_review": 3,
+      "product_and_brand_close_not_visible_requires_human_review": 1,
+      "product_proof_unclear_requires_human_review": 1,
+      "provocative_nudity_metaphor_requires_human_review": 1,
+      "social_first_brand_close_requires_human_review": 1,
+      "software_product_proof_is_conceptual": 1,
+      "sports_partnership_activation_requires_human_review": 2,
+      "staged_event_not_event_recap_verify_manually": 1,
+      "television_show_cross_promotion_requires_human_review": 1
+    }
+  },
+  "deduplication": {
+    "duplicate_source_records": 0,
+    "duplicate_video_assets": 0,
+    "duplicate_discovery_candidates": 0,
+    "canonical_masters_assigned": 40,
+    "unique_canonical_masters": 40,
+    "shared_canonical_masters": 0,
+    "alternate_cut_links": 0,
+    "alternate_aspect_ratio_links": 0,
+    "pending_canonical_review_links": 0
+  }
+}

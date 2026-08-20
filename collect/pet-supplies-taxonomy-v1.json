@@ -1,0 +1,90 @@
+{
+  "version": "v1",
+  "updated_at": "2026-08-12",
+  "industry": "Pet Supplies",
+  "target_per_category": 3,
+  "fallback_category": "Multi-Product / Cross-Category",
+  "fallback_counts_toward_coverage": false,
+  "categories": [
+    {
+      "group": "Food & Nutrition / 食品营养",
+      "category": "Pet Food & Treats",
+      "zh": "宠物食品与零食",
+      "definition": "面向犬猫等伴侣动物的主粮、湿粮、冻干、零食、功能零食和奖励食品；不含人类食品、兽医处方科普和纯营养知识内容。",
+      "priority": "P0",
+      "search_route": "Purina / Royal Canin / Hill's / Blue Buffalo / Sheba / Greenies：TVC、问题解决、日常喂养、营养卖点片"
+    },
+    {
+      "group": "Cleaning & Hygiene / 清洁卫生",
+      "category": "Cat Litter & Toileting",
+      "zh": "猫砂与如厕用品",
+      "definition": "猫砂、猫砂盆、自动猫砂盆、除臭与清理相关用品；不含普通家用清洁剂和无商品主角的养猫技巧内容。",
+      "priority": "P0",
+      "search_route": "Fresh Step / Tidy Cats / Arm & Hammer / Litter-Robot：除臭、结团、自动清理、家庭场景广告"
+    },
+    {
+      "group": "Cleaning & Hygiene / 清洁卫生",
+      "category": "Pet Grooming & Hygiene",
+      "zh": "宠物洗护清洁",
+      "definition": "宠物洗毛水、除臭喷雾、湿巾、牙齿清洁、毛发护理和家居清洁护理用品；不含美容店服务宣传和兽医医疗教程。",
+      "priority": "P0",
+      "search_route": "Burt's Bees Pets / Earthbath / TropiClean / FURminator / Greenies：Before & After、产品演示、卖点标注"
+    },
+    {
+      "group": "Smart Pet / 智能宠物用品",
+      "category": "Pet Tech & Smart Devices",
+      "zh": "智能宠物用品",
+      "definition": "自动喂食器、智能饮水机、宠物摄像头、GPS 定位器、智能猫砂盆和联网宠物设备；不含普通电子消费品和无宠物使用关系的家居设备。",
+      "priority": "P0",
+      "search_route": "Furbo / Litter-Robot / Petlibro / Whistle / Petcube / Tractive：功能演示、痛点解决、卖点标注、教程指南"
+    },
+    {
+      "group": "Walking & Training / 外出牵引训练",
+      "category": "Collars, Leashes & Harnesses",
+      "zh": "项圈牵引与胸背",
+      "definition": "宠物项圈、牵引绳、胸背带、训练牵引和外出控制用品；不含纯训练课程和无商品主角的遛狗 Vlog。",
+      "priority": "P1",
+      "search_route": "Ruffwear / PetSafe / Julius-K9 / Wild One：试用、日常外出、产品功能演示"
+    },
+    {
+      "group": "Play & Enrichment / 玩具陪伴",
+      "category": "Pet Toys & Enrichment",
+      "zh": "宠物玩具与益智",
+      "definition": "咀嚼玩具、互动玩具、益智玩具、猫抓板、猫爬玩具和消耗精力用品；不含纯萌宠搞笑视频和创作者玩具测评合集。",
+      "priority": "P1",
+      "search_route": "KONG / Nylabone / Chuckit! / Frisco：产品演示、问题解决、日常玩耍"
+    },
+    {
+      "group": "Home & Comfort / 居家舒适",
+      "category": "Beds, Crates & Furniture",
+      "zh": "宠物窝垫笼具家具",
+      "definition": "宠物窝、垫子、笼具、航空箱、猫爬架、猫树和家具型宠物用品；不含家装展示和无宠物商品的室内生活方式片。",
+      "priority": "P1",
+      "search_route": "Petmate / Frisco / Casper Dog Bed / Whisker：生活方式、产品展示、场景融入"
+    },
+    {
+      "group": "Feeding & Watering / 喂食饮水",
+      "category": "Bowls, Feeders & Waterers",
+      "zh": "食盆喂食器饮水器",
+      "definition": "普通食盆、慢食碗、饮水器、非联网喂食器和喂养辅助用品；智能联网设备归入 Pet Tech & Smart Devices。",
+      "priority": "P1",
+      "search_route": "PetSafe / Petlibro / Catit / Outward Hound：产品演示、问题解决、日常喂养"
+    },
+    {
+      "group": "Travel & Mobility / 外出旅行",
+      "category": "Travel & Carriers",
+      "zh": "外出旅行与航空箱",
+      "definition": "宠物包、航空箱、车载安全用品、旅行饮水用品和外出携带装备；不含旅游 Vlog 和无商品证明的出行内容。",
+      "priority": "P2",
+      "search_route": "Sleepypod / Petmate / Kurgo / Ruffwear：外出场景、问题解决、功能演示"
+    },
+    {
+      "group": "Health & Care / 健康护理",
+      "category": "Health, Supplements & Care",
+      "zh": "健康护理与营养补充",
+      "definition": "宠物关节、肠胃、牙齿、皮毛等营养补充剂和非处方护理品；涉及疾病治疗、药品或兽医诊疗时必须谨慎排除。",
+      "priority": "P2",
+      "search_route": "Zesty Paws / Nutramax / Greenies / Hill's：功效表达、专家背书、Before & After 待谨慎审核"
+    }
+  ]
+}

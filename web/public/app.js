@@ -91,6 +91,7 @@ const statusDefinitions = {
     text: "明确错误或未来不希望再次采集的反例；以后保存会自动移除“待审核”。",
   },
 };
+const mediaResolutionRequests = new Map();
 
 function loadVisibleColumns() {
   try {
@@ -154,7 +155,86 @@ function normalizedAspectRatio(video) {
 }
 
 function sourcePlatformLabel(value) {
-  return { youtube: "YouTube", tiktok: "TikTok", instagram: "Instagram", meta: "Meta", unknown: "未知平台" }[value] || value || "未知平台";
+  return {
+    youtube: "YouTube",
+    tiktok: "TikTok",
+    instagram: "Instagram",
+    meta: "Meta",
+    best_ads: "Best Ads",
+    ads_of_the_world: "Ads of the World",
+    unknown: "未知平台",
+  }[value] || value || "未知平台";
+}
+
+function mediaProviderLabel(value) {
+  return {
+    youtube: "YouTube iframe",
+    vimeo: "Vimeo iframe",
+    mp4: "HTML5 MP4",
+    hls: "HTML5 HLS",
+    aotw_cdn: "AOTW CDN",
+    best_ads_signed_mp4: "Best Ads signed MP4",
+  }[value] || value || "未知 provider";
+}
+
+function mediaLinkIsFresh(video) {
+  if (!video.playback_url) return false;
+  if (video.media_provider !== "best_ads_signed_mp4") return true;
+  const expiresAt = Date.parse(video.media_expires_at || "");
+  return Number.isFinite(expiresAt) && expiresAt > Date.now() + 5 * 60_000;
+}
+
+function mediaActions(video, statusText = "") {
+  const downloadUrl = video.media_download_url || "";
+  const refresh = video.media_provider === "best_ads_signed_mp4"
+    ? `<button type="button" class="btn ghost" data-refresh-media>重新获取视频链接</button>`
+    : "";
+  return `
+    <div class="media-delivery">
+      <div class="inline">
+        ${downloadUrl ? `<a class="btn primary" target="_blank" rel="noreferrer" href="${escapeHtml(downloadUrl)}">获取 / 下载视频</a><button type="button" class="btn ghost" data-copy-media-link="${escapeHtml(downloadUrl)}">复制研发链接</button>` : ""}
+        ${refresh}
+      </div>
+      <p class="media-status" data-media-status>${escapeHtml(statusText)}</p>
+    </div>
+  `;
+}
+
+function mediaFallback(video, hidden = false) {
+  const preview = video.contact_sheet || video.thumbnail_url
+    ? previewImage(video, "contact large", `${video.title || "video"} contact sheet`)
+    : `<div class="empty-preview">视频当前不可播放，且暂无 Contact Sheet。</div>`;
+  return `<div class="media-fallback" data-media-fallback ${hidden ? "hidden" : ""}>${preview}<a class="btn ghost" target="_blank" rel="noreferrer" href="${escapeHtml(video.source_detail_url || video.url)}">打开来源详情页</a></div>`;
+}
+
+function renderMediaPreview(video) {
+  const provider = video.media_provider || normalizedSourcePlatform(video);
+  const aspectClass = previewAspectClass(video);
+  if (["youtube", "vimeo"].includes(provider) && video.embed_url) {
+    return `<iframe class="video-frame ${aspectClass}" src="${escapeHtml(video.embed_url)}" allowfullscreen title="${escapeHtml(mediaProviderLabel(provider))} preview"></iframe>`;
+  }
+  if (["mp4", "hls", "aotw_cdn", "best_ads_signed_mp4"].includes(provider) && mediaLinkIsFresh(video)) {
+    const type = provider === "hls" ? "application/vnd.apple.mpegurl" : "video/mp4";
+    return `
+      <div class="media-preview" data-media-container="${escapeHtml(video.video_id)}">
+        <video class="video-frame ${aspectClass}" controls preload="metadata" poster="${escapeHtml(video.thumbnail_url || "")}" data-media-video>
+          <source src="${escapeHtml(video.playback_url)}" type="${type}">
+        </video>
+        ${mediaFallback(video, true)}
+        ${mediaActions(video, provider === "best_ads_signed_mp4" ? `链接有效至 ${formatDateTime(video.media_expires_at)}` : "可直接播放，也可通过稳定接口获取视频。")}
+      </div>
+    `;
+  }
+  if (provider === "best_ads_signed_mp4" && !video._media_resolution_error) {
+    return `
+      <div class="media-preview" data-media-container="${escapeHtml(video.video_id)}" data-media-needs-refresh>
+        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新 Best Ads 视频链接…</strong><p>拿到当前签名后会自动切换为视频。</p></div>
+        ${mediaFallback(video, true)}
+        ${mediaActions(video, "正在连接来源站。")}
+      </div>
+    `;
+  }
+  return `<div class="media-preview" data-media-container="${escapeHtml(video.video_id)}">${mediaFallback(video)}${mediaActions(video, video._media_resolution_error || "视频链接暂不可用，请查看抽帧或来源详情页。")}</div>`;
 }
 
 function platformFormatLabel(value) {
@@ -205,9 +285,39 @@ function industryMeta(industry) {
   return (state.data.industries || []).find((entry) => entry.industry === industry);
 }
 
+const industryZhFallbacks = {
+  "Apparel & Footwear": "服装与鞋履",
+  Automotive: "汽车",
+  "Bags & Accessories": "箱包与配饰",
+  "Beauty & Personal Care": "美妆与个人护理",
+  "Color Cosmetics": "彩妆",
+  "Consumer Electronics": "消费电子",
+  "Cybersecurity & Technology": "网络安全与科技",
+  "Education & Digital Services": "教育与数字服务",
+  "Education & Retail Services": "教育与零售服务",
+  "Financial Services": "金融服务",
+  "Food & Beverage": "食品与饮料",
+  Fragrance: "香水",
+  "Health & Pharmaceutical": "健康与医药",
+  "Home & Living/Household": "家居与家庭用品",
+  "Home Appliances & Living": "家用电器与生活",
+  "Jewelry & Accessories": "珠宝与配饰",
+  "Jewelry & Watches": "珠宝与腕表",
+  Other: "其他",
+  "Personal Care": "个人护理",
+  "Pet Supplies": "宠物用品",
+  "Retail Services": "零售服务",
+  Skincare: "护肤",
+  "Sports & Outdoor": "运动与户外",
+  "跨行业 / 方法参考": "跨行业",
+};
+
 function industryLabel(industry) {
+  if (!industry) return "Unknown / 未知行业";
+  if (industry === "跨行业 / 方法参考") return "Cross-industry / 跨行业";
   const item = industryMeta(industry);
-  return item?.zh ? `${item.industry} / ${item.zh}` : industry || "未知行业";
+  const zh = item?.zh || industryZhFallbacks[industry];
+  return `${industry} / ${zh || "待补中文"}`;
 }
 
 function industriesForData() {
@@ -227,6 +337,19 @@ function selectedIndustry() {
 function formatDate(value, fallback = "—") {
   if (!value) return fallback;
   return String(value).slice(0, 10);
+}
+
+function formatDateTime(value, fallback = "—") {
+  if (!value) return fallback;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(date);
 }
 
 function duration(value, fallback = "—") {
@@ -369,6 +492,33 @@ function categoryInline(category) {
 function categoryHeader(category) {
   const item = categoryMeta(category);
   return item?.zh ? `${escapeHtml(item.category)}<span>${escapeHtml(item.zh)}</span>` : escapeHtml(category);
+}
+
+function genreCandidateNames(video) {
+  return [...new Set((video.genre_candidates || []).map((candidate) =>
+    typeof candidate === "string" ? candidate : candidate?.genre
+  ).filter(Boolean))];
+}
+
+function genreCandidateMap(video) {
+  return new Map((video.genre_candidates || []).map((candidate) => {
+    if (typeof candidate === "string") return [candidate, { genre: candidate }];
+    return [candidate?.genre, candidate];
+  }).filter(([genre]) => Boolean(genre)));
+}
+
+function reviewGenreOptions(video, industry) {
+  const values = [...new Set([
+    ...targetGenresForIndustry(industry),
+    ...(video.genres || []),
+    ...genreCandidateNames(video),
+  ])];
+  const order = new Map((state.data.genres || []).map((genre, index) => [genre.english, genre.order ?? index]));
+  return values.sort((left, right) => (order.get(left) ?? 999) - (order.get(right) ?? 999) || left.localeCompare(right));
+}
+
+function candidateNote() {
+  return `<div class="candidate-note">候选 · 待确认</div>`;
 }
 
 function coreVideos() {
@@ -708,7 +858,7 @@ function renderVideos() {
     `<option value="${escapeHtml(genre)}" ${state.filters.genre === genre ? "selected" : ""}>${genre === "all" ? "全部题材" : escapeHtml(genreShort(genre))}</option>`
   ).join("");
   const filterOptions = (items, selected) => items.map(([value, label]) => `<option value="${escapeHtml(value)}" ${selected === value ? "selected" : ""}>${escapeHtml(label)}</option>`).join("");
-  const platformOptions = filterOptions([["all", "全部平台"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["instagram", "Instagram"], ["meta", "Meta"], ["unknown", "未知平台"]], state.filters.platform);
+  const platformOptions = filterOptions([["all", "全部平台"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["instagram", "Instagram"], ["meta", "Meta"], ["best_ads", "Best Ads"], ["ads_of_the_world", "Ads of the World"], ["unknown", "未知平台"]], state.filters.platform);
   const platformFormatOptions = filterOptions([["all", "全部平台形态"], ["shorts", "Shorts"], ["videos", "Videos"], ["reels", "Reels"], ["feed", "Feed"], ["unknown", "未知形态"]], state.filters.platformFormat);
   const aspectRatioOptions = filterOptions([["all", "全部画幅"], ["9:16", "9:16 竖屏"], ["16:9", "16:9 横屏"], ["4:5", "4:5 竖版"], ["1:1", "1:1 方形"], ["unknown", "画幅未知"]], state.filters.aspectRatio);
   const recencyOptions = filterOptions([["all", "全部发布时间"], ["90", "近 90 天"], ["180", "近 180 天"], ["365", "近 1 年"], ["730", "近 2 年"], ["unknown", "日期未知"]], state.filters.recency);
@@ -766,9 +916,27 @@ function renderCell(video, id) {
   if (id === "preview") return previewImage(video);
   if (id === "title") return `<div class="title-link">${escapeHtml(video.title)}</div><div class="subtext">${escapeHtml(video.video_id)} · <a href="${escapeHtml(video.url)}" target="_blank" rel="noreferrer">${escapeHtml(sourcePlatformLabel(normalizedSourcePlatform(video)))} ↗</a></div>`;
   if (id === "brand") return escapeHtml(video.brand || "—");
-  if (id === "industry") return escapeHtml(industryLabel(video.industry));
-  if (id === "product_category") return `<div>${escapeHtml(categoryInline(video.product_category) || "—")}</div><div class="subtext">${escapeHtml(industryLabel(video.industry))}</div>`;
-  if (id === "genres") return `<div class="tags">${(video.genres || []).map((genre) => `<span class="tag">${escapeHtml(genreShort(genre))}</span>`).join("") || "—"}</div>`;
+  if (id === "industry") {
+    if (video.industry) return escapeHtml(industryLabel(video.industry));
+    const candidate = video.industry_candidate || video.classification_candidate?.industry;
+    return candidate ? `<div>${escapeHtml(industryLabel(candidate))}</div>${candidateNote()}` : "未知行业";
+  }
+  if (id === "product_category") {
+    if (video.product_category) return `<div>${escapeHtml(categoryInline(video.product_category))}</div><div class="subtext">${escapeHtml(industryLabel(video.industry))}</div>`;
+    const candidate = video.product_category_candidate || video.classification_candidate?.product_category;
+    const candidateIndustry = video.industry_candidate || video.classification_candidate?.industry;
+    return candidate
+      ? `<div>${escapeHtml(categoryInline(candidate))}</div>${candidateNote()}${candidateIndustry ? `<div class="subtext">${escapeHtml(industryLabel(candidateIndustry))}</div>` : ""}`
+      : `<div>—</div><div class="subtext">${escapeHtml(industryLabel(video.industry))}</div>`;
+  }
+  if (id === "genres") {
+    const genres = video.genres || [];
+    if (genres.length) return `<div class="tags">${genres.map((genre) => `<span class="tag">${escapeHtml(genreShort(genre))}</span>`).join("")}</div>`;
+    const candidates = genreCandidateNames(video);
+    return candidates.length
+      ? `<div class="tags">${candidates.map((genre) => `<span class="tag candidate-tag">${escapeHtml(genreShort(genre))}</span>`).join("")}</div>${candidateNote()}`
+      : "—";
+  }
   if (id === "statuses") return `<div class="tags">${statusPills(video)}</div>`;
   if (id === "publish_date") return formatDateCell(video.publish_date);
   if (id === "duration") return durationCell(video.duration_seconds);
@@ -810,19 +978,37 @@ function drawerTabsHtml(activeTab) {
 }
 
 function drawerTabPanel(video, activeTab = "reclass") {
-  const videoIndustry = video.industry || selectedIndustry();
-  const genreChecks = targetGenresForIndustry(videoIndustry).map((genre) => `
-    <label class="check-row">
-      <input type="checkbox" name="genre" value="${escapeHtml(genre)}" ${(video.genres || []).includes(genre) ? "checked" : ""}>
-      ${escapeHtml(genreShort(genre))}
+  const videoIndustry = video.industry || video.industry_candidate || selectedIndustry();
+  const candidateGenres = genreCandidateMap(video);
+  const reviewGenres = reviewGenreOptions(video, videoIndustry);
+  const allCandidatesSelected = candidateGenres.size > 0 && [...candidateGenres.keys()].every((genre) => (video.genres || []).includes(genre));
+  const genreChecks = reviewGenres.map((genre) => {
+    const candidate = candidateGenres.get(genre);
+    const confidence = Number(candidate?.confidence);
+    const candidateLabel = candidate
+      ? `<em class="genre-candidate-badge">候选${Number.isFinite(confidence) ? ` · ${Math.round(confidence * 100)}%` : ""}</em>`
+      : "";
+    const evidence = (candidate?.evidence || []).join("；");
+    return `
+    <label class="check-row genre-option ${candidate ? "is-candidate" : ""}" ${evidence ? `title="${escapeHtml(evidence)}"` : ""}>
+      <input type="checkbox" name="genre" value="${escapeHtml(genre)}" ${(video.genres || []).includes(genre) ? "checked" : ""} ${candidate ? "data-genre-candidate" : ""}>
+      <span>${escapeHtml(genreShort(genre))}</span>
+      ${candidateLabel}
     </label>
-  `).join("");
+  `;
+  }).join("");
+  const candidateSummary = candidateGenres.size ? `
+    <div class="genre-candidate-summary">
+      <div><strong>AI 预审候选</strong><p>${allCandidatesSelected ? "黄色候选已作为默认题材选中；请人工确认、删改后保存。" : "黄色项与列表一致；勾选后仍需点击“保存本条审核”才会写入。"}</p></div>
+      <button type="button" class="btn ghost" data-apply-genre-candidates ${allCandidatesSelected ? "disabled" : ""}>${allCandidatesSelected ? "候选已默认选中" : "选中候选"}</button>
+    </div>
+  ` : `<div class="genre-candidate-summary muted"><div><strong>暂无 AI 题材候选</strong><p>请根据画面证据人工选择。</p></div></div>`;
   const categoryOptions = state.data.categories
     .filter((item) => !item.industry || item.industry === videoIndustry)
     .map((item) => `
     <option value="${escapeHtml(item.category)}" ${item.category === video.product_category ? "selected" : ""}>${escapeHtml(item.category)} / ${escapeHtml(item.zh)}</option>
   `).join("");
-  const primaryOptions = [`<option value="">无主题材</option>`, ...targetGenresForIndustry(videoIndustry).map((genre) => `
+  const primaryOptions = [`<option value="">无主题材</option>`, ...reviewGenres.map((genre) => `
     <option value="${escapeHtml(genre)}" ${genre === video.primary_genre ? "selected" : ""}>${escapeHtml(genreShort(genre))}</option>
   `)].join("");
   const statusChecks = state.data.statuses.map((status) => {
@@ -846,6 +1032,7 @@ function drawerTabPanel(video, activeTab = "reclass") {
         <div class="drawer-body review-flow">
           <div class="review-section">
             <div class="review-section-head"><span>1</span><div><strong>题材标签</strong><p>只保留画面证据成立的题材。</p></div></div>
+            ${candidateSummary}
             <div class="genre-checks compact">${genreChecks}</div>
           </div>
 
@@ -885,25 +1072,51 @@ function drawerTabPanel(video, activeTab = "reclass") {
     `,
     meta: `
       <section class="tab-panel">
-        <div class="panel-head compact"><div><h2>基础信息</h2><p>来源、审核结论和原因。</p></div><a class="btn ghost" target="_blank" rel="noreferrer" href="${escapeHtml(video.url)}">打开原链接</a></div>
+        <div class="panel-head compact"><div><h2>基础信息</h2><p>Campaign、来源事实、候选分类与媒体状态。</p></div><a class="btn ghost" target="_blank" rel="noreferrer" href="${escapeHtml(video.source_detail_url || video.url)}">打开来源详情页</a></div>
         <div class="drawer-body">
           <div class="detail-grid">
             ${kv("视频 ID", video.video_id)}
+            ${kv("Campaign", video.campaign_title || video.title || "—")}
+            ${kv("Campaign ID", video.campaign_id || "—")}
+            ${kv("品牌", video.primary_brand || video.brand || "—")}
+            ${kv("全部品牌", (video.brands || []).join(" / ") || "—")}
             ${kv("行业", industryLabel(video.industry))}
             ${kv("商品品类", categoryInline(video.product_category) || "—")}
+            ${kv("行业候选", video.industry_candidate || video.classification_candidate?.industry || "待确认")}
+            ${kv("品类候选", video.product_category_candidate || video.classification_candidate?.product_category || "待确认")}
+            ${kv("题材候选", genreCandidateNames(video).map(genreShort).join(" / ") || "待确认")}
+            ${kv("分类置信度", video.classification_candidate?.confidence ?? "—")}
+            ${kv("分类证据", (video.classification_candidate?.evidence || []).join("；") || "—")}
             ${kv("来源", video.source_type || "—")}
             ${kv("来源平台", sourcePlatformLabel(normalizedSourcePlatform(video)))}
+            ${kv("来源分类", (video.source_categories || []).join(" / ") || "—")}
+            ${kv("来源 Industry", (video.source_industries || []).join(" / ") || "—")}
+            ${kv("来源 Medium", (video.source_medium_types || []).join(" / ") || "—")}
             ${kv("平台形态", platformFormatLabel(normalizedPlatformFormat(video)))}
             ${kv("来源账号", video.source_account || "—")}
             ${kv("账号类型", sourceAccountTypeLabel(video.source_account_type || video.publisher_role || "unknown"))}
+            ${kv("Agency", video.agency || "—")}
+            ${kv("Production", (video.production_companies || []).join(" / ") || "—")}
+            ${kv("国家/地区", video.country || "—")}
             ${kv("画幅", normalizedAspectRatio(video))}
             ${kv("视频尺寸", video.width && video.height ? `${video.width} × ${video.height}` : "—")}
             ${kv("是否竖屏", video.is_vertical || ["9:16", "4:5"].includes(normalizedAspectRatio(video)) ? "是" : "否")}
+            ${kv("媒体 provider", mediaProviderLabel(video.media_provider))}
+            ${kv("媒体状态", video.media_access_status || "—")}
+            ${kv("媒体检查时间", formatDate(video.media_checked_at))}
+            ${kv("媒体失效时间", video.media_expires_at || "—")}
+            ${kv("媒体失败原因", video.media_failure_reason || "—")}
+            ${video.media_resolver_url ? kvLink("媒体解析接口", video.media_resolver_url, "获取当前播放链接") : ""}
+            ${video.media_download_url ? kvLink("研发稳定下载接口", video.media_download_url, "获取 / 下载视频") : ""}
             ${kv("内容性质", video.content_nature || "—")}
             ${kv("AI 生成价值", video.ai_generation_value || "—")}
             ${kv("视觉质量分", video.quality_score ?? "—")}
             ${kv("发现优先级", video.discovery_score ?? "—")}
-            ${kv("发布时间", formatDate(video.publish_date, missingMetadataText))}
+            ${kv("Campaign published", formatDate(video.campaign_published_at, missingMetadataText))}
+            ${kv("Source uploaded", formatDate(video.source_uploaded_at, "—"))}
+            ${kv("日期证据来源", video.publish_date_source || "—")}
+            ${kv("日期置信度", video.publish_date_confidence || "—")}
+            ${kv("年份状态", video.campaign_year_status || "—")}
             ${kv("时长", duration(video.duration_seconds, missingMetadataText))}
             ${kv("采集日期", formatDate(video.collected_at))}
             ${kv("采集批次", video.imported_from || video.collection_batch || "—")}
@@ -911,6 +1124,8 @@ function drawerTabPanel(video, activeTab = "reclass") {
             ${kv("原因码", [...(video.reason_codes || []), ...(video.decision_reason_codes || [])].join(" / ") || "—")}
           </div>
           ${metadataNotice(video)}
+          <div class="kv"><span>Campaign 描述</span><strong>${escapeHtml(video.description || "—")}</strong></div>
+          <div class="kv"><span>AI 视觉预审</span><strong>${escapeHtml(video.ai_visual_pre_review?.summary || "待视觉预审")}</strong></div>
           <div class="kv"><span>审核备注</span><strong>${escapeHtml(video.visual_notes || video.note || "—")}</strong></div>
         </div>
       </section>
@@ -978,7 +1193,7 @@ function renderDrawer() {
             <button class="btn ghost" data-next-video ${canNext ? "" : "disabled"}>下一条 →</button>
           </div>
           <div class="preview-single ${previewAspectClass(video)}">
-            <iframe class="video-frame ${previewAspectClass(video)}" src="${escapeHtml(video.embed_url)}" allowfullscreen title="${escapeHtml(sourcePlatformLabel(normalizedSourcePlatform(video)))} preview"></iframe>
+            ${renderMediaPreview(video)}
           </div>
           <section class="panel review-tabs-panel">
             <div class="tabbar">
@@ -994,6 +1209,10 @@ function renderDrawer() {
 
 function kv(label, value) {
   return `<div class="kv"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+}
+
+function kvLink(label, href, text) {
+  return `<div class="kv"><span>${escapeHtml(label)}</span><strong><a target="_blank" rel="noreferrer" href="${escapeHtml(href)}">${escapeHtml(text)}</a></strong><small>${escapeHtml(href)}</small></div>`;
 }
 
 function renderMethodology() {
@@ -1078,6 +1297,10 @@ function bindDrawerPanelActions() {
   document.querySelector("[data-blacklist]")?.addEventListener("click", toggleBlacklist);
   document.querySelector("[data-add-note]")?.addEventListener("click", addNote);
   document.querySelectorAll("[data-status-preset]").forEach((button) => button.addEventListener("click", () => applyStatusPreset(button.dataset.statusPreset)));
+  document.querySelector("[data-apply-genre-candidates]")?.addEventListener("click", (event) => {
+    document.querySelectorAll("input[name=\"genre\"][data-genre-candidate]").forEach((input) => { input.checked = true; });
+    event.currentTarget.textContent = "候选已选中 · 待保存";
+  });
   document.querySelectorAll('input[name="status"]').forEach((input) => input.addEventListener("change", syncWorkflowStatusCheckboxes));
 }
 
@@ -1102,8 +1325,80 @@ function bindImageFallbacks() {
   });
 }
 
+function bindMediaFallbacks() {
+  document.querySelectorAll("[data-media-video]").forEach((video) => {
+    video.addEventListener("error", () => {
+      video.hidden = true;
+      const fallback = video.parentElement?.querySelector("[data-media-fallback]");
+      if (fallback) fallback.hidden = false;
+      const status = video.parentElement?.querySelector("[data-media-status]");
+      if (status) status.textContent = "视频加载失败，请重新获取链接；抽帧仍可用于审核。";
+    });
+  });
+}
+
+function replaceMediaPreview(video) {
+  const container = document.querySelector("[data-media-container]");
+  if (!container || container.dataset.mediaContainer !== video.video_id) return;
+  container.outerHTML = renderMediaPreview(video);
+  bindMediaFallbacks();
+  bindMediaPreviewActions();
+}
+
+async function resolveMediaPreview(video, force = false) {
+  const key = video.video_id;
+  if (mediaResolutionRequests.has(key)) return mediaResolutionRequests.get(key);
+  const status = document.querySelector("[data-media-status]");
+  const refreshButton = document.querySelector("[data-refresh-media]");
+  if (status) status.textContent = force ? "正在重新获取最新视频链接…" : "正在连接来源站…";
+  if (refreshButton) refreshButton.disabled = true;
+  delete video._media_resolution_error;
+  const request = api(`/api/videos/${encodeURIComponent(key)}/media${force ? "?refresh=1" : ""}`)
+    .then((payload) => {
+      Object.assign(video, {
+        playback_url: payload.playback_url,
+        media_checked_at: payload.checked_at,
+        media_expires_at: payload.expires_at,
+        media_access_status: payload.access_status,
+      });
+      delete video._media_resolution_error;
+      replaceMediaPreview(video);
+      return payload;
+    })
+    .catch((error) => {
+      video.playback_url = null;
+      video._media_resolution_error = `刷新失败：${error.message}`;
+      replaceMediaPreview(video);
+      return null;
+    })
+    .finally(() => mediaResolutionRequests.delete(key));
+  mediaResolutionRequests.set(key, request);
+  return request;
+}
+
+function bindMediaPreviewActions() {
+  const container = document.querySelector("[data-media-container]");
+  const video = selectedVideo();
+  if (!container || !video || container.dataset.mediaContainer !== video.video_id) return;
+  container.querySelector("[data-refresh-media]")?.addEventListener("click", () => resolveMediaPreview(video, true));
+  container.querySelector("[data-copy-media-link]")?.addEventListener("click", async (event) => {
+    const button = event.currentTarget;
+    const absoluteUrl = new URL(button.dataset.copyMediaLink, window.location.origin).href;
+    try {
+      await navigator.clipboard.writeText(absoluteUrl);
+      button.textContent = "已复制研发链接";
+    } catch {
+      const status = container.querySelector("[data-media-status]");
+      if (status) status.textContent = `复制失败，请手动复制：${absoluteUrl}`;
+    }
+  });
+  if (container.hasAttribute("data-media-needs-refresh")) resolveMediaPreview(video);
+}
+
 function bindGlobal() {
   bindImageFallbacks();
+  bindMediaFallbacks();
+  bindMediaPreviewActions();
   document.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
   document.querySelectorAll("[data-matrix-mode]").forEach((button) => button.addEventListener("click", () => {
     state.matrixMode = button.dataset.matrixMode;

@@ -3,6 +3,12 @@ import fs from "node:fs/promises";
 import fssync from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  directMediaDescriptor,
+  MediaResolutionError,
+  publicMediaFields,
+  refreshBestAdsMedia,
+} from "./lib/media-resolver.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const webRoot = path.dirname(__filename);
@@ -15,6 +21,9 @@ const pendingReviewStatusId = "pending_review";
 const remakeStatusId = "needs_remake";
 const remadeStatusId = "remade";
 const workflowConclusionStatusIds = new Set(["needs_remake", "remade", "parked", "approved", "excluded", "blacklisted"]);
+const mediaRefreshBeforeExpiryMs = 5 * 60_000;
+const mediaCache = new Map();
+const mediaRefreshes = new Map();
 
 const mime = {
   ".html": "text/html; charset=utf-8",
@@ -80,7 +89,56 @@ function normalizeWorkflowStatusIds(state, statusIds = []) {
 }
 
 function videoById(state, id) {
-  return state.videos.find((video) => video.id === id || video.video_id === id);
+  let decodedId = id;
+  try {
+    decodedId = decodeURIComponent(id);
+  } catch {
+    return null;
+  }
+  return state.videos.find((video) => video.id === decodedId || video.video_id === decodedId);
+}
+
+function publicVideo(video) {
+  return { ...video, ...publicMediaFields(video) };
+}
+
+function publicState(state) {
+  return { ...state, videos: state.videos.map(publicVideo) };
+}
+
+function cachedMediaIsFresh(entry) {
+  return entry && (!entry.expires_at_ms || entry.expires_at_ms > Date.now() + mediaRefreshBeforeExpiryMs);
+}
+
+async function resolveVideoMedia(video, { force = false } = {}) {
+  if (video.media_provider !== "best_ads_signed_mp4") return { ...directMediaDescriptor(video), cached: true };
+  const key = video.video_id || video.id;
+  const cached = mediaCache.get(key);
+  if (!force && cachedMediaIsFresh(cached)) return { ...cached, cached: true };
+  if (!force && mediaRefreshes.has(key)) return mediaRefreshes.get(key);
+  const refresh = refreshBestAdsMedia(video)
+    .then((result) => {
+      const next = { ...result, cached: false };
+      mediaCache.set(key, next);
+      return next;
+    })
+    .finally(() => mediaRefreshes.delete(key));
+  mediaRefreshes.set(key, refresh);
+  return refresh;
+}
+
+function mediaPayload(video, descriptor) {
+  return {
+    video_id: video.video_id,
+    media_provider: video.media_provider,
+    playback_url: descriptor.playback_url,
+    download_url: descriptor.download_url,
+    stable_download_url: publicMediaFields(video).media_download_url,
+    checked_at: descriptor.checked_at,
+    expires_at: descriptor.expires_at,
+    access_status: descriptor.access_status,
+    cached: descriptor.cached,
+  };
 }
 
 function cloneReviewValue(value) {
@@ -114,7 +172,7 @@ async function handleApi(req, res, url) {
   const parts = url.pathname.split("/").filter(Boolean);
 
   if (req.method === "GET" && url.pathname === "/api/bootstrap") {
-    return json(res, 200, state);
+    return json(res, 200, publicState(state));
   }
 
   if (req.method === "POST" && url.pathname === "/api/statuses") {
@@ -150,6 +208,18 @@ async function handleApi(req, res, url) {
   if (parts[0] === "api" && parts[1] === "videos" && parts[2]) {
     const video = videoById(state, parts[2]);
     if (!video) return json(res, 404, { error: "视频不存在" });
+
+    if ((req.method === "GET" || req.method === "POST") && parts[3] === "media") {
+      const force = req.method === "POST" || url.searchParams.get("refresh") === "1";
+      const descriptor = await resolveVideoMedia(video, { force });
+      if (req.method === "GET" && parts[4] === "download") {
+        return send(res, 302, "", {
+          Location: descriptor.download_url,
+          "Cache-Control": "no-store",
+        });
+      }
+      if (!parts[4]) return json(res, 200, mediaPayload(video, descriptor));
+    }
 
     if (req.method === "POST" && parts[3] === "statuses") {
       const body = await parseBody(req);
@@ -270,7 +340,8 @@ export async function handleRequest(req, res) {
     return await serveStatic(req, res, url);
   } catch (error) {
     console.error(error);
-    return json(res, 500, { error: error.message });
+    const status = error instanceof MediaResolutionError ? error.status : 500;
+    return json(res, status, { error: error.message, code: error.code || "INTERNAL_ERROR" });
   }
 }
 

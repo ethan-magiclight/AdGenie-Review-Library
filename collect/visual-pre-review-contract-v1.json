@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-19",
+  "required_fields": [
+    "source_site",
+    "source_record_id",
+    "asset_id",
+    "status",
+    "contact_sheet_path",
+    "frames_reviewed",
+    "content_nature_candidate",
+    "product_subject",
+    "industry_candidate",
+    "product_category_candidates",
+    "genre_candidates",
+    "ad_structure",
+    "visual_quality",
+    "template_value",
+    "exclusion_candidates",
+    "summary"
+  ],
+  "allowed_statuses": ["completed", "failed"],
+  "allowed_content_natures": [
+    "brand_commercial",
+    "product_campaign",
+    "advertising_product_film",
+    "case_study",
+    "behind_the_scenes",
+    "event_recap",
+    "launch_event",
+    "tutorial_or_support",
+    "documentary",
+    "cgi_social_filler",
+    "non_advertising",
+    "uncertain"
+  ],
+  "required_ad_structure": ["hook", "commercial_proposition", "product_proof", "brand_close"],
+  "candidate_only_fields": ["industry_candidate", "product_category_candidates", "genre_candidates"],
+  "forbidden_mutations": ["genres", "approved", "core_template_eligible"]
+}

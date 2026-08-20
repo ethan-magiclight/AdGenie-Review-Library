@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "source_site": "ads_of_the_world",
+      "source_record_id": "valid-media-fixture",
+      "source_detail_url": "https://www.adsoftheworld.com/campaigns/valid-media-fixture",
+      "primary_brand": "Fixture Brand",
+      "campaign_title": "Valid 10-point contact-sheet fixture",
+      "classification_candidate": {
+        "industry": "Food & Beverage",
+        "product_category": "Food Products"
+      },
+      "media_assets": [
+        {
+          "asset_id": "valid-video",
+          "media_type": "video",
+          "provider": "mp4",
+          "source_asset_id": "valid-video",
+          "original_url": "/tmp/adgenie-source-media-self-test.mp4",
+          "playback_url": null
+        }
+      ]
+    }
+  ]
+}

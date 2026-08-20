@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adgenie.local/contracts/source-video-record-v1.json",
+  "title": "AdGenie source campaign video record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source_site",
+    "source_record_id",
+    "source_detail_url",
+    "source_categories",
+    "source_industries",
+    "source_medium_types",
+    "primary_brand",
+    "brands",
+    "campaign_title",
+    "description",
+    "agency",
+    "production_companies",
+    "country",
+    "campaign_published_at",
+    "source_uploaded_at",
+    "publish_date_source",
+    "publish_date_confidence",
+    "campaign_year_status",
+    "collected_at",
+    "record_state",
+    "review_status",
+    "approved",
+    "core_template_eligible",
+    "genres",
+    "classification_candidate",
+    "source_refs",
+    "media_assets",
+    "raw_source"
+  ],
+  "properties": {
+    "schema_version": { "const": "source-video-record-v1" },
+    "source_site": { "enum": ["best_ads", "ads_of_the_world"] },
+    "source_record_id": { "type": "string", "minLength": 1 },
+    "source_detail_url": { "type": "string", "format": "uri" },
+    "source_categories": { "type": "array", "items": { "type": "string" } },
+    "source_industries": { "type": "array", "items": { "type": "string" } },
+    "source_medium_types": { "type": "array", "items": { "type": "string" } },
+    "primary_brand": { "type": ["string", "null"] },
+    "brands": { "type": "array", "items": { "type": "string" } },
+    "campaign_id": { "type": ["string", "null"] },
+    "campaign_title": { "type": "string" },
+    "description": { "type": ["string", "null"] },
+    "agency": { "type": ["string", "null"] },
+    "production_companies": { "type": "array", "items": { "type": "string" } },
+    "country": { "type": ["string", "null"] },
+    "campaign_published_at": { "type": ["string", "null"] },
+    "source_uploaded_at": { "type": ["string", "null"] },
+    "publish_date_source": {
+      "enum": ["campaign_published_date", "independent_campaign_evidence", "source_uploaded_only", "unknown"]
+    },
+    "publish_date_confidence": { "enum": ["confirmed", "high", "medium", "unverified", "unknown"] },
+    "campaign_year_status": {
+      "enum": ["confirmed_2025", "confirmed_2026", "campaign_date_unverified", "out_of_scope"]
+    },
+    "collected_at": { "type": "string" },
+    "record_state": {
+      "enum": [
+        "ready_for_media_review",
+        "pending_brand",
+        "pending_year_evidence",
+        "campaign_date_unverified",
+        "pending_video",
+        "pending_category_review",
+        "excluded"
+      ]
+    },
+    "review_status": { "const": "pending_review" },
+    "approved": { "const": false },
+    "core_template_eligible": { "const": false },
+    "genres": { "type": "array", "maxItems": 0 },
+    "canonical_master_id": { "type": ["string", "null"] },
+    "classification_candidate": { "$ref": "#/$defs/classificationCandidate" },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sourceRef" }
+    },
+    "media_assets": { "type": "array", "items": { "$ref": "#/$defs/mediaAsset" } },
+    "raw_source": { "type": "object" }
+  },
+  "$defs": {
+    "classificationCandidate": {
+      "type": "object",
+      "required": ["industry", "product_category", "status", "confidence", "evidence"],
+      "properties": {
+        "industry": { "type": ["string", "null"] },
+        "product_category": { "type": ["string", "null"] },
+        "status": { "enum": ["mapped_candidate", "pending_category_review"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidence": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "sourceRef": {
+      "type": "object",
+      "required": ["source_site", "source_record_id", "source_detail_url", "source_asset_id", "relation", "collected_at"],
+      "properties": {
+        "source_site": { "enum": ["best_ads", "ads_of_the_world"] },
+        "source_record_id": { "type": "string", "minLength": 1 },
+        "source_detail_url": { "type": "string", "format": "uri" },
+        "source_asset_id": { "type": ["string", "null"] },
+        "relation": { "enum": ["primary", "same_master", "alternate_cut", "alternate_aspect_ratio"] },
+        "collected_at": { "type": "string" }
+      }
+    },
+    "mediaAsset": {
+      "type": "object",
+      "required": [
+        "asset_id",
+        "media_type",
+        "provider",
+        "source_asset_id",
+        "original_url",
+        "playback_url",
+        "thumbnail_url",
+        "duration_seconds",
+        "width",
+        "height",
+        "aspect_ratio",
+        "access_status",
+        "checked_at",
+        "expires_at",
+        "locator_is_temporary",
+        "contact_sheet_path",
+        "contact_sheet_status",
+        "failure_reason"
+      ],
+      "properties": {
+        "asset_id": { "type": "string", "minLength": 1 },
+        "media_type": { "enum": ["video", "image"] },
+        "provider": {
+          "enum": ["youtube", "vimeo", "mp4", "hls", "aotw_cdn", "best_ads_signed_mp4", "unknown"]
+        },
+        "source_asset_id": { "type": ["string", "null"] },
+        "original_url": { "type": ["string", "null"] },
+        "playback_url": { "type": ["string", "null"] },
+        "thumbnail_url": { "type": ["string", "null"] },
+        "duration_seconds": { "type": ["number", "null"], "minimum": 0 },
+        "width": { "type": ["integer", "null"], "minimum": 1 },
+        "height": { "type": ["integer", "null"], "minimum": 1 },
+        "aspect_ratio": { "type": ["string", "null"] },
+        "access_status": {
+          "enum": ["unchecked", "available", "temporary", "expired", "forbidden", "not_found", "error"]
+        },
+        "checked_at": { "type": ["string", "null"] },
+        "expires_at": { "type": ["string", "null"] },
+        "locator_is_temporary": { "type": "boolean" },
+        "contact_sheet_path": { "type": ["string", "null"] },
+        "contact_sheet_status": { "enum": ["pending", "available", "failed", "not_applicable"] },
+        "failure_reason": { "type": ["string", "null"] },
+        "content_sha256": { "type": ["string", "null"], "pattern": "^[a-fA-F0-9]{64}$" },
+        "visual_fingerprint": {
+          "type": ["object", "null"],
+          "properties": {
+            "algorithm": { "const": "dhash-9x8-v1" },
+            "frame_hashes": {
+              "type": "array",
+              "minItems": 10,
+              "maxItems": 10,
+              "items": { "type": "string", "pattern": "^[a-fA-F0-9]{16}$" }
+            }
+          },
+          "required": ["algorithm", "frame_hashes"]
+        },
+        "canonical_master_id": { "type": ["string", "null"] },
+        "canonical_match": { "type": ["object", "null"] },
+        "master_relations": { "type": "array", "items": { "type": "object" } }
+      }
+    }
+  },
+  "x-adgenie-rules": {
+    "aotw_year_field": "campaign_published_at",
+    "best_ads_uploaded_is_source_time_only": true,
+    "confirmed_years": [2025, 2026],
+    "new_records_require_pending_review": true,
+    "ai_cannot_set_formal_genres_or_approval": true,
+    "temporary_media_requires_expiry_and_stable_source_locator": true
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-19",
+  "fallback_status": "pending_category_review",
+  "fallback_reason": "No reliable AdGenie mapping from source labels alone; require product-subject visual review.",
+  "mappings": [
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Clothing & footwear",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Apparel & Footwear", "product_category": "Clothing & Apparel", "confidence": 0.55, "evidence": ["Source category combines clothing and footwear; visual product subject must disambiguate."] },
+        { "industry": "Apparel & Footwear", "product_category": "Footwear", "confidence": 0.55, "evidence": ["Source category combines clothing and footwear; visual product subject must disambiguate."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Sportswear",
+      "status": "mapped_candidate",
+      "candidates": [
+        { "industry": "Apparel & Footwear", "product_category": "Sportswear", "confidence": 0.92, "evidence": ["Exact Best Ads source category match."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Confectionery & snacks",
+      "status": "mapped_candidate",
+      "candidates": [
+        { "industry": "Food & Beverage", "product_category": "Confectionery & Snacks", "confidence": 0.96, "evidence": ["Exact source-to-AdGenie category meaning."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Drinks, non-alcoholic",
+      "status": "mapped_candidate",
+      "candidates": [
+        { "industry": "Food & Beverage", "product_category": "Non-Alcoholic Beverages", "confidence": 0.96, "evidence": ["Exact source-to-AdGenie category meaning."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Food",
+      "status": "mapped_candidate",
+      "candidates": [
+        { "industry": "Food & Beverage", "product_category": "Food Products", "confidence": 0.85, "evidence": ["Direct broad food category match; product subtype remains descriptive metadata."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Cosmetics & toiletries",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Beauty & Personal Care", "product_category": "Cosmetics", "confidence": 0.5, "evidence": ["Source category bundles cosmetics and toiletries; visual product subject is required."] },
+        { "industry": "Beauty & Personal Care", "product_category": "Toiletries & Personal Hygiene", "confidence": 0.5, "evidence": ["Source category bundles cosmetics and toiletries; visual product subject is required."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Home appliances & furnishings",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Home & Living/Household", "product_category": "Home Appliances", "confidence": 0.5, "evidence": ["Source category bundles appliances and furnishings; visual product subject is required."] },
+        { "industry": "Home & Living/Household", "product_category": "Home Furnishings", "confidence": 0.5, "evidence": ["Source category bundles appliances and furnishings; visual product subject is required."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Home electronics",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Consumer Electronics", "product_category": null, "confidence": 0.72, "evidence": ["Source category supports industry only; AdGenie product category requires product evidence."] }
+      ]
+    },
+    {
+      "source_site": "best_ads",
+      "match_field": "source_categories",
+      "source_value": "Household, garden & pets",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Home & Living/Household", "product_category": "Household Care", "confidence": 0.33, "evidence": ["Source label bundles household, garden, and pet products; no branch may be selected without visual evidence."] },
+        { "industry": "Home & Living/Household", "product_category": "Home & Garden", "confidence": 0.33, "evidence": ["Source label bundles household, garden, and pet products; no branch may be selected without visual evidence."] },
+        { "industry": "Pet Supplies", "product_category": null, "confidence": 0.33, "evidence": ["Source label bundles household, garden, and pet products; Pet Supplies subtype requires visual evidence."] }
+      ]
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "match_field": "source_industries",
+      "source_value": "Fashion",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Apparel & Footwear", "product_category": null, "confidence": 0.8, "evidence": ["AOTW Industry supports the normalized industry; product category requires visual evidence."] }
+      ]
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "match_field": "source_industries",
+      "source_value": "Beauty",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Beauty & Personal Care", "product_category": null, "confidence": 0.8, "evidence": ["AOTW Industry supports the normalized industry; product category requires visual evidence."] }
+      ]
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "match_field": "source_industries",
+      "source_value": "Food",
+      "status": "mapped_candidate",
+      "candidates": [
+        { "industry": "Food & Beverage", "product_category": "Food Products", "confidence": 0.82, "evidence": ["Direct broad industry-to-category candidate; visual review may refine metadata."] }
+      ]
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "match_field": "source_industries",
+      "source_value": "Non-Alcoholic Drinks",
+      "status": "mapped_candidate",
+      "candidates": [
+        { "industry": "Food & Beverage", "product_category": "Non-Alcoholic Beverages", "confidence": 0.9, "evidence": ["Direct source industry meaning."] }
+      ]
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "match_field": "source_industries",
+      "source_value": "Household Products",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Home & Living/Household", "product_category": "Household Care", "confidence": 0.7, "evidence": ["Industry label suggests household care but visual product evidence remains required."] }
+      ]
+    },
+    {
+      "source_site": "ads_of_the_world",
+      "match_field": "source_industries",
+      "source_value": "Pets",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Pet Supplies", "product_category": null, "confidence": 0.75, "evidence": ["Industry label supports Pet Supplies; subtype requires visual product evidence."] }
+      ]
+    }
+  ]
+}
