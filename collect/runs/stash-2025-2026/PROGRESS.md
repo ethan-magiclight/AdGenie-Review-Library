@@ -8,4 +8,4 @@
 7. 结构证据：详情含 STASH 编号、类型、Client、Agency、Director、Production/Animation、描述和 Vimeo progressive 播放器。
 8. 媒体门：已确认为 `MEDIA_DELIVERY_BLOCKED`；无 Cookie 页面不暴露 Vimeo locator，短效 MP4/稳定 player 检查超时，正式入库与扩量已停止。
 9. 已完成：新增 STASH collector、contract、6 个范围映射与 validator；稳定 key、Issue 日期、spec、媒体门及三类坏 fixture 红→绿自测全绿。
-10. 已停止：discover 连续 3 次失败（两次完整性超时、一次 Proxy 拒绝连接）；空 checkpoint/records 已记录 3 个失败 run，详情批次跳过，本地 build 与独立包门禁已全绿。
+10. 已停止：空 checkpoint 记录 3 个 discover 失败 run；本地 build/独立包全绿并提交 `f9086be`，push/PR 因 GitHub TLS 与失效 keyring token 连续 3 次失败而停止。

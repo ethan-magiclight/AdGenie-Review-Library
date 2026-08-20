@@ -4,6 +4,14 @@
 
 - 一次只读敏感信息扫描命令末尾误用了任务书明确禁止的 `|| true`。扫描本身没有命中、没有修改文件，也没有用于跳过构建或测试失败；但按“违反即失败”规则必须如实记录，不能把本次交付声明为完整成功。
 
+## GITHUB_DELIVERY_BLOCKED（2026-08-20，连续 3 次后停止）
+
+1. `git push -u origin codex/stash-source-ingestion`：`LibreSSL SSL_connect: SSL_ERROR_SYSCALL`。
+2. `gh auth status -h github.com`：`ethan-magiclight` 与 `Ahakunamatata` 的 keyring token 均为 invalid；未执行交互式 refresh。
+3. 再次直接 `git push`：同一 `LibreSSL SSL_connect: SSL_ERROR_SYSCALL`。
+
+结果：本地实现提交为 `f9086be`，远端分支、PR、GitHub verify-package 与两套 Vercel 检查均未创建/触发；不合并 main。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
