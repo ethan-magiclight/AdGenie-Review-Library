@@ -30,6 +30,7 @@
 
 - 此前 blocked goal 已由系统恢复为 active；按规则重新开始连续阻塞计数，不继承上一轮的 3 次计数。
 - `web-access` 前置检查在终止 10 秒等待时短暂输出 `proxy: ready`，但紧接着访问本地 `http://localhost:3456/targets` 立即返回连接拒绝；Proxy 没有保持可用。
+- 为排除中断信号导致 Proxy 退出，另做一次不发送中断的干净检查；连续等待 60 秒仍停在 Chrome 远程调试授权提示且无新输出，之后才终止进程。
 - 因此本轮没有列出或创建浏览器标签，也没有访问 GitHub、STASH 或发起 push；媒体 resolver、发现缺口和远端交付均没有新的完成证据。
 - 这是恢复后的第 1 个同条件阻塞 turn；goal 保持 active，等待外部状态改变。
 
