@@ -1,3 +1,5 @@
+import { mediaLinkIsFresh } from "./media-link-freshness.mjs";
+
 const app = document.querySelector("#app");
 
 const state = {
@@ -177,13 +179,6 @@ function mediaProviderLabel(value) {
   }[value] || value || "未知 provider";
 }
 
-function mediaLinkIsFresh(video) {
-  if (!video.playback_url) return false;
-  if (video.media_provider !== "best_ads_signed_mp4") return true;
-  const expiresAt = Date.parse(video.media_expires_at || "");
-  return Number.isFinite(expiresAt) && expiresAt > Date.now() + 5 * 60_000;
-}
-
 function mediaActions(video, statusText = "") {
   const downloadUrl = video.media_download_url || "";
   const refresh = video.media_provider === "best_ads_signed_mp4"
@@ -221,7 +216,9 @@ function renderMediaPreview(video) {
           <source src="${escapeHtml(video.playback_url)}" type="${type}">
         </video>
         ${mediaFallback(video, true)}
-        ${mediaActions(video, provider === "best_ads_signed_mp4" ? `链接有效至 ${formatDateTime(video.media_expires_at)}` : "可直接播放，也可通过稳定接口获取视频。")}
+        ${mediaActions(video, provider === "best_ads_signed_mp4"
+    ? (video.media_expires_at ? `链接有效至 ${formatDateTime(video.media_expires_at)}` : "稳定 CDN 链接，可直接播放和下载。")
+    : "可直接播放，也可通过稳定接口获取视频。")}
       </div>
     `;
   }
