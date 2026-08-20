@@ -41,6 +41,13 @@
 - 本轮未能列出或创建标签，也没有访问 GitHub、STASH、Vercel 或执行 push；合法稳定媒体 resolver 仍不存在，三项主要阻塞没有解除证据。
 - 这是恢复后的第 2 个同条件阻塞 turn；goal 保持 active，若下一恢复 turn 仍相同且无法取得有意义进展，将达到重新标记 blocked 的阈值。
 
+### goal 恢复审计 #3 与再次正式阻塞结论（2026-08-20）
+
+- 审计前本地 HEAD=`44bbd9c`，`ff1989b` 祖先关系与干净 tracked worktree 均未改变。
+- `web-access` 前置检查连续等待 30 秒仍无 ready 输出，随后有界终止；访问本地 `/targets` 再次立即返回 `ECONNREFUSED :3456`。
+- 本轮未列出或创建标签，也没有访问 GitHub、STASH、Vercel 或执行 discovery、详情/媒体探测、push；三个主要阻塞仍没有解除证据。
+- 同一外部阻塞已连续 3 个恢复 turn 重复，且没有合法稳定媒体 resolver；再次达到正式 blocked 阈值，需等待用户授权 CDP、修复 GitHub 认证/TLS 并提供合规媒体交付路径。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。
