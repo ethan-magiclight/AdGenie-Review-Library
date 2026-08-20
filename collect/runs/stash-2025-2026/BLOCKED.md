@@ -1,5 +1,12 @@
 # STASH 2025–2026 阻塞
 
+## CHROME_CDP_RESOLVED（2026-08-20）
+
+- 用户提供的截图确认 **Allow remote debugging for this browser instance** 已启用，Chrome 显示服务运行于 `127.0.0.1:9222`。
+- `check-deps.sh` 在当前命令环境中启动的后台 Proxy 会随父进程结束而被清理；改为运行同一 `cdp-proxy.mjs` 的持续前台会话后，日志确认已连接 Chrome 9222。
+- `http://localhost:3456/health` 返回 `connected=true`，`/targets` 正常返回现有页面列表；未 attach、navigate、close 或操作任何用户标签，也未创建新标签。
+- 此项阻塞已解除。剩余硬阻塞是 GitHub 上游 `push=false`/无 fork，以及 `MEDIA_DELIVERY_BLOCKED`；不得因 CDP 恢复而启动第 4 次采集或媒体探测。
+
 ## PROCESS_RULE_VIOLATION（2026-08-20）
 
 - 一次只读敏感信息扫描命令末尾误用了任务书明确禁止的 `|| true`。扫描本身没有命中、没有修改文件，也没有用于跳过构建或测试失败；但按“违反即失败”规则必须如实记录，不能把本次交付声明为完整成功。
