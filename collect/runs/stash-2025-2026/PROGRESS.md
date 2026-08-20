@@ -18,3 +18,4 @@
 17. 再次恢复审计 #2（2026-08-20）：专用 GitHub 连接确认身份为 `Ahakunamatata`；上游仓库仅 `pull=true`、`push=false`，同名分支与 PR 均不存在，账户下也没有同名 fork，连接不提供创建 fork 能力。未发起必然失败的远端写入，需上游写权限或用户提供 fork；媒体门仍失败。
 18. 再次恢复审计 #3（2026-08-20）：审计前 HEAD=`fc3dd71`、tracked worktree 干净；GitHub 权限仍为 `push=false`，分支/PR/fork 仍不存在；CDP 等待 20 秒仍需用户授权，随后 `/targets` 立即 `ECONNREFUSED :3456`。稳定媒体 resolver 仍缺失，连续 3 个恢复 turn 无解除证据，再次达到 blocked 阈值。
 19. Chrome CDP 已解除（2026-08-20）：用户截图确认远程调试已勾选、服务运行于 `127.0.0.1:9222`；持续前台 Proxy 实测 `/health` 为 `connected=true`，`/targets` 正常返回。未操作或关闭任何用户标签，也未创建新标签。GitHub `push=false` 与稳定媒体 resolver 缺失仍阻止远端交付和媒体门。
+20. GitHub 身份已修正（2026-08-21）：本机 GitHub CLI 已切换到仓库所有者 `ethan-magiclight`，API 实测目标仓库 `admin=true`、`push=true`；远端同名分支与 PR 均不存在。推送前 22 个变更文件仍全部命中任务白名单，计划以 `codex/review-console-standalone`（`ff1989b`）为 PR base，不合并 main。

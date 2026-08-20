@@ -7,9 +7,17 @@
 - `http://localhost:3456/health` 返回 `connected=true`，`/targets` 正常返回现有页面列表；未 attach、navigate、close 或操作任何用户标签，也未创建新标签。
 - 此项阻塞已解除。剩余硬阻塞是 GitHub 上游 `push=false`/无 fork，以及 `MEDIA_DELIVERY_BLOCKED`；不得因 CDP 恢复而启动第 4 次采集或媒体探测。
 
+## GITHUB_IDENTITY_RESOLVED（2026-08-21）
+
+- 用户确认正确发布身份是仓库所有者 `ethan-magiclight`；本机 GitHub CLI 已从错误的活动账户切换到该身份。
+- `gh api user` 返回 `ethan-magiclight`，目标仓库权限实测为 `admin=true`、`maintain=true`、`push=true`。
+- 远端没有 `codex/stash-source-ingestion` 分支，现有 PR 查询为空；因此可以在完整审计后首次推送并创建最多一个 draft PR。
+- 此项身份/权限阻塞已解除；`MEDIA_DELIVERY_BLOCKED` 与发现缺口仍然成立，远端交付不能被描述为 100 条完成。
+
 ## PROCESS_RULE_VIOLATION（2026-08-20）
 
 - 一次只读敏感信息扫描命令末尾误用了任务书明确禁止的 `|| true`。扫描本身没有命中、没有修改文件，也没有用于跳过构建或测试失败；但按“违反即失败”规则必须如实记录，不能把本次交付声明为完整成功。
+- 2026-08-21 的一次预推送只读审计在 zsh 循环中误用了特殊变量名 `path`，覆盖了该子进程的命令搜索路径，导致后续 `git`/`rg` 以 `command not found` 退出。第一次修正又因 zsh 不对含换行的标量做词拆分，使 `rg` 把 22 个路径视为单一路径而退出。两次错误都发生在暂存/提交前，没有修改状态或掩盖门禁结果；最终改为逐文件扫描并显式处理每个退出码。
 
 ## GITHUB_DELIVERY_BLOCKED（2026-08-20，连续 3 次后停止）
 
