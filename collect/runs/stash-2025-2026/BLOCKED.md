@@ -48,6 +48,13 @@
 - 本轮未列出或创建标签，也没有访问 GitHub、STASH、Vercel 或执行 discovery、详情/媒体探测、push；三个主要阻塞仍没有解除证据。
 - 同一外部阻塞已连续 3 个恢复 turn 重复，且没有合法稳定媒体 resolver；再次达到正式 blocked 阈值，需等待用户授权 CDP、修复 GitHub 认证/TLS 并提供合规媒体交付路径。
 
+### goal 再次恢复审计 #1：Chrome 设置需用户操作（2026-08-20）
+
+- 此前再次 blocked 的 goal 已恢复为 active；新一轮连续阻塞计数从 1 开始。
+- Chrome 控制扩展本身连接成功，但自动创建的临时标签访问 `chrome://inspect/#remote-debugging` 时被浏览器安全策略拒绝；策略同时禁止通过底层浏览器命令、替代界面或其他绕过方式实现相同结果。
+- 临时标签已关闭，未操作任何用户已有标签，也未访问 GitHub、STASH、Vercel 或发起采集/push。
+- 用户需在 Chrome 地址栏手动打开 `chrome://inspect/#remote-debugging`，启用 **Allow remote debugging for this browser instance**，然后告知可以继续；即便 Proxy 恢复，仍需另行解决合法稳定媒体 resolver 才能通过媒体门。
+
 ## DISCOVERY_TOTAL_MISMATCH（2026-08-20）
 
 - Advertising: All 页面原文报告 `686 videos`。

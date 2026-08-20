@@ -14,3 +14,4 @@
 13. 恢复审计 #1（2026-08-20）：goal 被恢复为 active；CDP 检查在终止等待时短暂输出 `proxy: ready`，但紧接着本地 `/targets` 立即 `ECONNREFUSED :3456`；补充的无中断检查连续等待 60 秒仍停在 Chrome 授权提示。未列出/创建标签或访问 GitHub，恢复后的阻塞计数从 1 开始，媒体门仍失败。
 14. 恢复审计 #2（2026-08-20）：审计前 HEAD=`600bbf8`、tracked worktree 干净；CDP 连续等待 30 秒仍停在授权提示，终止时才输出 ready，随后 `/targets` 再次立即 `ECONNREFUSED :3456`。未创建标签或发起外部请求，同一阻塞已连续 2 个恢复 turn。
 15. 恢复审计 #3（2026-08-20）：审计前 HEAD=`44bbd9c`、tracked worktree 干净；CDP 连续等待 30 秒无 ready 后有界终止，`/targets` 再次立即 `ECONNREFUSED :3456`。同一阻塞已连续 3 个恢复 turn，媒体门与远端交付仍无解除证据，达到再次正式 blocked 阈值。
+16. 再次恢复审计 #1（2026-08-20）：goal 再次恢复为 active；Chrome 控制扩展连接成功，但自动访问 `chrome://inspect/#remote-debugging` 被浏览器安全策略明确禁止，且不得用底层命令或其他界面绕过。临时标签已关闭；需用户手动允许远程调试后才能继续验证 Proxy，媒体门仍失败。
