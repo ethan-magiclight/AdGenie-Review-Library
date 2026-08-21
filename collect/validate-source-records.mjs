@@ -7,6 +7,14 @@ const contractPath = path.join(collectRoot, "source-video-record-contract-v1.jso
 const taxonomyPath = path.join(collectRoot, "adgenie-brand-taxonomy-v1.json");
 const mappingPath = path.join(collectRoot, "source-category-mapping-v1.json");
 const targetYears = new Set([2025, 2026]);
+const stashCategories = new Set([
+  "Advertising: All",
+  "Advertising: Comedy",
+  "Advertising: Holiday",
+  "Advertising: Lifestyle",
+  "Advertising: Food & Beverage",
+  "Advertising: Automotive",
+]);
 const bestAdsCategories = new Set([
   "Clothing & footwear",
   "Confectionery & snacks",
@@ -152,7 +160,7 @@ export function validateSourceRecord(record) {
     if (!hasOwn(record, field)) addError(`REQUIRED_FIELD_MISSING:${field}`);
   }
   if (record.schema_version !== "source-video-record-v1") addError("SCHEMA_VERSION_INVALID");
-  if (!["best_ads", "ads_of_the_world"].includes(record.source_site)) addError("SOURCE_SITE_INVALID");
+  if (!["best_ads", "ads_of_the_world", "stash"].includes(record.source_site)) addError("SOURCE_SITE_INVALID");
   if (!String(record.source_record_id || "").trim()) addError("SOURCE_RECORD_ID_REQUIRED");
   if (!isHttpUrl(record.source_detail_url)) addError("SOURCE_DETAIL_URL_REQUIRED");
   for (const key of ["source_categories", "source_industries", "source_medium_types", "brands", "production_companies", "source_refs", "media_assets", "genres"]) {
@@ -225,6 +233,9 @@ export function validateSourceRecord(record) {
     if (["error", "expired", "forbidden", "not_found"].includes(asset.access_status) && !asset.failure_reason) {
       addError(`VIDEO_FAILURE_REASON_REQUIRED:${asset.asset_id}`);
     }
+    if (record.source_site === "stash" && String(asset.failure_reason || "").startsWith("MEDIA_DELIVERY_BLOCKED")) {
+      addPending(`STASH_MEDIA_DELIVERY_BLOCKED:${asset.asset_id}`);
+    }
   }
   if (!videoAssets.length) {
     if (record.record_state === "pending_video") addPending("VIDEO_ASSET_PENDING");
@@ -257,6 +268,38 @@ export function validateSourceRecord(record) {
     } else {
       addError("BEST_ADS_CAMPAIGN_YEAR_EVIDENCE_REQUIRED");
     }
+  }
+  if (record.source_site === "stash") {
+    const sourceId = String(record.source_record_id || "").match(/^(VID\d+):(\d+)$/);
+    if (!sourceId) addError("STASH_SOURCE_RECORD_ID_INVALID");
+    const raw = record.raw_source || {};
+    if (sourceId && (raw.refnum !== sourceId[1] || Number(raw.clipnum) !== Number(sourceId[2]))) addError("STASH_RAW_SOURCE_KEY_MISMATCH");
+    if (sourceId && raw.stable_source_key !== `stash:${sourceId[1]}:${Number(sourceId[2])}`) addError("STASH_STABLE_SOURCE_KEY_INVALID");
+    try {
+      const detail = new URL(record.source_detail_url);
+      if (detail.hostname !== "www.stashmedia.tv" || detail.pathname !== "/playlist-flash/") addError("STASH_DETAIL_URL_INVALID");
+      if (sourceId && (detail.searchParams.get("refnum") !== sourceId[1] || Number(detail.searchParams.get("clipnum")) !== Number(sourceId[2]))) {
+        addError("STASH_DETAIL_URL_KEY_MISMATCH");
+      }
+    } catch {
+      addError("STASH_DETAIL_URL_INVALID");
+    }
+    const invalidCategories = (record.source_categories || []).filter((category) => !stashCategories.has(category));
+    if (invalidCategories.length) addError(`STASH_CATEGORY_OUT_OF_SCOPE:${invalidCategories.join("|")}`);
+    if (!(record.source_medium_types || []).some((medium) => ["tvc", "brand film", "product film"].includes(String(medium).toLowerCase()))) {
+      addError("STASH_ADVERTISING_MEDIUM_REQUIRED");
+    }
+    if (!campaignDate || !targetYears.has(campaignYear)) addError("STASH_ISSUE_DATE_2025_2026_REQUIRED");
+    if (record.publish_date_source !== "stash_issue_date") addError("STASH_DATE_SOURCE_MUST_BE_VERIFIED_ISSUE");
+    if (record.publish_date_confidence !== "confirmed") addError("STASH_DATE_CONFIDENCE_MUST_BE_CONFIRMED");
+    if (campaignDate && record.campaign_year_status !== `confirmed_${campaignYear}`) addError("STASH_CAMPAIGN_YEAR_STATUS_INVALID");
+    if (!isObject(raw.issue_date_evidence) || raw.issue_date_evidence.value !== record.campaign_published_at || !isHttpUrl(raw.issue_date_evidence.source_url)) {
+      addError("STASH_ISSUE_DATE_EVIDENCE_REQUIRED");
+    }
+    if (raw.signed_media_url_persisted !== false) addError("STASH_SIGNED_MEDIA_PERSISTENCE_FORBIDDEN");
+    const deliverableVideos = videoAssets.filter((asset) => ["available", "temporary"].includes(asset.access_status));
+    if (record.record_state === "ready_for_media_review" && !deliverableVideos.length) addError("STASH_DELIVERABLE_VIDEO_REQUIRED");
+    if (record.record_state === "pending_video" && !deliverableVideos.length) addPending("STASH_VIDEO_DELIVERY_PENDING");
   }
 
   if (pendingStates.has(record.record_state) && !pending.length && !errors.length) addError("PENDING_STATE_WITHOUT_PENDING_REASON");
@@ -363,6 +406,60 @@ function validFixture() {
   };
 }
 
+function validStashFixture() {
+  const record = validFixture();
+  const collectedAt = record.collected_at;
+  const detailUrl = "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=3&pi=0&keyword=";
+  record.source_site = "stash";
+  record.source_record_id = "VID178:3";
+  record.source_detail_url = detailUrl;
+  record.source_categories = ["Advertising: All"];
+  record.source_industries = [];
+  record.source_medium_types = ["TVC"];
+  record.primary_brand = "BBC";
+  record.brands = ["BBC"];
+  record.campaign_id = "stash:VID178:3";
+  record.campaign_title = "Let's Make It Iconic";
+  record.country = null;
+  record.campaign_published_at = "2026-07-15";
+  record.publish_date_source = "stash_issue_date";
+  record.publish_date_confidence = "confirmed";
+  record.campaign_year_status = "confirmed_2026";
+  record.source_refs = [{
+    source_site: "stash",
+    source_record_id: "VID178:3",
+    source_detail_url: detailUrl,
+    source_asset_id: "1207188087",
+    relation: "primary",
+    collected_at: collectedAt,
+  }];
+  record.media_assets = [{
+    ...record.media_assets[0],
+    asset_id: "1207188087",
+    provider: "vimeo",
+    source_asset_id: "1207188087",
+    original_url: "https://player.vimeo.com/video/1207188087",
+    playback_url: "https://player.vimeo.com/video/1207188087",
+  }];
+  record.raw_source = {
+    stable_source_key: "stash:VID178:3",
+    fid: "3540",
+    refnum: "VID178",
+    clipnum: 3,
+    pi: 0,
+    issue: 178,
+    raw_type: "TVC :51",
+    signed_media_url_persisted: false,
+    issue_date_evidence: {
+      value: "2026-07-15",
+      precision: "day",
+      source_label: "STASH 178 JULY 15/26",
+      source_url: "https://www.stashmedia.tv/issue/?refnum=VID178",
+    },
+  };
+  return record;
+}
+
 function runSelfTest() {
   const cases = [
     ["missing_brand", (record) => { record.primary_brand = null; record.brands = []; }, "PRIMARY_BRAND_REQUIRED"],
@@ -390,6 +487,29 @@ function runSelfTest() {
     green: { ok: validateSourceBatch([validFixture()]).ok, importable: validateSourceBatch([validFixture()]).importable },
     passed: !duplicate.ok && duplicate.duplicate_source_records === 1 && validateSourceBatch([validFixture()]).ok,
   });
+  const stashCases = [
+    ["stash_missing_date", (record) => { record.campaign_published_at = null; }, "STASH_ISSUE_DATE_2025_2026_REQUIRED"],
+    ["stash_missing_brand", (record) => { record.primary_brand = null; record.brands = []; }, "PRIMARY_BRAND_REQUIRED"],
+    ["stash_temporary_media_without_stable_id", (record) => {
+      record.media_assets[0].source_asset_id = null;
+      record.media_assets[0].locator_is_temporary = true;
+      record.media_assets[0].expires_at = "2026-08-20T01:00:00.000Z";
+      record.source_refs[0].source_asset_id = null;
+    }, "TEMPORARY_VIDEO_STABLE_LOCATOR_REQUIRED"],
+  ];
+  for (const [name, mutate, expectedCode] of stashCases) {
+    const redRecord = validStashFixture();
+    mutate(redRecord);
+    const red = validateSourceBatch([redRecord]);
+    const green = validateSourceBatch([validStashFixture()]);
+    redGreen.push({
+      case: name,
+      expected_error: expectedCode,
+      red: { ok: red.ok, errors: red.results[0].errors },
+      green: { ok: green.ok, importable: green.importable },
+      passed: !red.ok && red.results[0].errors.some((error) => error.includes(expectedCode)) && green.ok && green.importable === 1,
+    });
+  }
   const ambiguousRedRecord = validFixture();
   ambiguousRedRecord.classification_candidate.product_category = null;
   const ambiguousGreenRecord = structuredClone(ambiguousRedRecord);

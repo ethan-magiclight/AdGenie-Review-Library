@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-20T14:18:23.341Z",
+  "source_site": "stash",
+  "inputs": {
+    "records": "collect/runs/stash-2025-2026/records.json",
+    "checkpoint": "collect/runs/stash-2025-2026/checkpoint.json",
+    "contact_sheets": null
+  },
+  "discovery": {
+    "complete": false,
+    "candidates": 0,
+    "completed_pages": 0,
+    "total_reported": null,
+    "last_page": null,
+    "terminal_outcomes": 0,
+    "remaining_candidates": 0,
+    "latest_outcomes": 0,
+    "outcome_attempt_events": 0,
+    "outcome_statuses": {},
+    "exclusion_reasons": {},
+    "failure_reasons": {},
+    "attempt_statuses": {},
+    "historical_failure_reasons": {},
+    "historical_failures": 0,
+    "current_failures": 0,
+    "resolved_failures": 0,
+    "run_failures": 3,
+    "run_stop_reasons": {
+      "collector_proxy_unavailable:ECONNREFUSED_3456": 1,
+      "discovery_evidence_timeout:max_pi_663_reported_total_686": 1,
+      "discovery_evidence_timeout:unique_candidates_not_equal_reported_total": 1
+    },
+    "retries": 6
+  },
+  "coverage": {
+    "records": 0,
+    "review_items": 0,
+    "brand_complete": 0,
+    "brand_complete_rate": null,
+    "detail_url_complete": 0,
+    "detail_url_complete_rate": null,
+    "date_confirmed": 0,
+    "date_confirmed_rate": null,
+    "date_unverified": 0,
+    "date_unverified_rate": null,
+    "records_with_video": 0,
+    "records_with_video_rate": null,
+    "records_with_auditable_video_status": 0,
+    "records_with_auditable_video_status_rate": null,
+    "pending_category_review": 0,
+    "pending_category_review_rate": null
+  },
+  "media": {
+    "providers": {},
+    "access_statuses": {},
+    "stable_source_locators": 0,
+    "temporary_source_locators": 0,
+    "media_delivery_blocked": 0,
+    "contact_sheet_records": 0,
+    "contact_sheet_success": 0,
+    "contact_sheet_failure": 0,
+    "contact_sheet_success_rate": null,
+    "temporary_video_residue": 0
+  },
+  "classification": {
+    "industries": {},
+    "product_categories": {},
+    "candidate_statuses": {}
+  },
+  "visual_pre_review": {
+    "completed": 0,
+    "failed": 0,
+    "coverage_rate": null,
+    "content_natures": {},
+    "industry_candidates": {},
+    "product_category_candidates": {},
+    "exclusion_candidates": {}
+  },
+  "deduplication": {
+    "duplicate_source_records": 0,
+    "duplicate_video_assets": 0,
+    "duplicate_discovery_candidates": 0,
+    "canonical_masters_assigned": 0,
+    "unique_canonical_masters": 0,
+    "shared_canonical_masters": 0,
+    "alternate_cut_links": 0,
+    "alternate_aspect_ratio_links": 0,
+    "pending_canonical_review_links": 0
+  }
+}

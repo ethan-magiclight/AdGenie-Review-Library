@@ -165,8 +165,49 @@ function sourcePlatformLabel(value) {
     meta: "Meta",
     best_ads: "Best Ads",
     ads_of_the_world: "Ads of the World",
+    stash: "STASH",
     unknown: "未知平台",
   }[value] || value || "未知平台";
+}
+
+const platformFilterDefinitions = [
+  ["all", "全部平台"],
+  ["youtube", "YouTube"],
+  ["tiktok", "TikTok"],
+  ["instagram", "Instagram"],
+  ["meta", "Meta"],
+  ["best_ads", "Best Ads"],
+  ["ads_of_the_world", "Ads of the World"],
+  ["stash", "STASH"],
+  ["unknown", "未知平台"],
+];
+
+function sourceCollectionChannel(sourceCollection, id) {
+  return sourceCollection?.channels?.find((channel) => channel.id === id) || null;
+}
+
+function sourcePlatformCount(videos, platform) {
+  return (videos || []).filter((video) => normalizedSourcePlatform(video) === platform).length;
+}
+
+export function platformFilterItems(videos, sourceCollection) {
+  const stashCount = sourcePlatformCount(videos, "stash");
+  const stash = sourceCollectionChannel(sourceCollection, "stash");
+  return platformFilterDefinitions.map(([value, label]) => {
+    if (value !== "stash") return [value, label];
+    const incomplete = stashCount === 0 && stash?.status === "trial_incomplete";
+    return [value, `STASH（${stashCount}${incomplete ? " · 试采未完成" : ""}）`];
+  });
+}
+
+export function emptyVideosMessage(platform, videos, sourceCollection) {
+  const stashCount = sourcePlatformCount(videos, "stash");
+  const stash = sourceCollectionChannel(sourceCollection, "stash");
+  if (platform === "stash" && stashCount === 0 && stash?.status === "trial_incomplete") {
+    const status = String(stash.status_label || "10/10 媒体解析已通过；完整试采仍未完成，暂不扩量").replace(/。+$/, "");
+    return `STASH 当前 0 条可审核视频：${status}。详情见“方法论记录”。`;
+  }
+  return "没有符合条件的视频。";
 }
 
 function mediaProviderLabel(value) {
@@ -180,9 +221,18 @@ function mediaProviderLabel(value) {
   }[value] || value || "未知 provider";
 }
 
+function mediaSupportsRefresh(video) {
+  return video.media_provider === "best_ads_signed_mp4"
+    || (video.source_site === "stash" && video.media_provider === "hls");
+}
+
+export function mediaNeedsRefresh(video) {
+  return mediaSupportsRefresh(video) && !mediaLinkIsFresh(video);
+}
+
 function mediaActions(video, statusText = "") {
   const downloadUrl = video.media_download_url || "";
-  const refresh = video.media_provider === "best_ads_signed_mp4"
+  const refresh = mediaSupportsRefresh(video)
     ? `<button type="button" class="btn ghost" data-refresh-media>重新获取视频链接</button>`
     : "";
   return `
@@ -223,10 +273,10 @@ function renderMediaPreview(video) {
       </div>
     `;
   }
-  if (provider === "best_ads_signed_mp4" && !video._media_resolution_error) {
+  if (mediaNeedsRefresh(video) && !video._media_resolution_error) {
     return `
       <div class="media-preview" data-media-container="${escapeHtml(video.video_id)}" data-media-needs-refresh>
-        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新 Best Ads 视频链接…</strong><p>拿到当前签名后会自动切换为视频。</p></div>
+        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新视频链接…</strong><p>拿到当前有效地址后会自动切换为视频。</p></div>
         ${mediaFallback(video, true)}
         ${mediaActions(video, "正在连接来源站。")}
       </div>
@@ -858,7 +908,7 @@ function renderVideos() {
     `<option value="${escapeHtml(genre)}" ${state.filters.genre === genre ? "selected" : ""}>${genre === "all" ? "全部题材" : escapeHtml(genreShort(genre))}</option>`
   ).join("");
   const filterOptions = (items, selected) => items.map(([value, label]) => `<option value="${escapeHtml(value)}" ${selected === value ? "selected" : ""}>${escapeHtml(label)}</option>`).join("");
-  const platformOptions = filterOptions([["all", "全部平台"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["instagram", "Instagram"], ["meta", "Meta"], ["best_ads", "Best Ads"], ["ads_of_the_world", "Ads of the World"], ["unknown", "未知平台"]], state.filters.platform);
+  const platformOptions = filterOptions(platformFilterItems(state.data.videos, state.data.methodology?.source_collection), state.filters.platform);
   const platformFormatOptions = filterOptions([["all", "全部平台形态"], ["shorts", "Shorts"], ["videos", "Videos"], ["reels", "Reels"], ["feed", "Feed"], ["unknown", "未知形态"]], state.filters.platformFormat);
   const aspectRatioOptions = filterOptions([["all", "全部画幅"], ["9:16", "9:16 竖屏"], ["16:9", "16:9 横屏"], ["4:5", "4:5 竖版"], ["1:1", "1:1 方形"], ["unknown", "画幅未知"]], state.filters.aspectRatio);
   const recencyOptions = filterOptions([["all", "全部发布时间"], ["90", "近 90 天"], ["180", "近 180 天"], ["365", "近 1 年"], ["730", "近 2 年"], ["unknown", "日期未知"]], state.filters.recency);
@@ -905,7 +955,7 @@ function renderVideos() {
       <div class="table-shell">
         <table class="video-table">
           <thead><tr>${tableHead}</tr></thead>
-          <tbody>${rows || `<tr><td colspan="${visibleColumns.length}"><div class="muted">没有符合条件的视频。</div></td></tr>`}</tbody>
+          <tbody>${rows || `<tr><td colspan="${visibleColumns.length}"><div class="muted">${escapeHtml(emptyVideosMessage(state.filters.platform, state.data.videos, state.data.methodology?.source_collection))}</div></td></tr>`}</tbody>
         </table>
       </div>
     </div>
@@ -1736,4 +1786,4 @@ async function boot() {
   }
 }
 
-boot();
+if (typeof window !== "undefined") boot();

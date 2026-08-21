@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_from_state_updated_at": "2026-08-20T12:42:06.841Z",
-  "state_sha256": "ee83f60c73fbe2e33ba1cf3af55c13e21b3c54583145a549e747ac0d6465a5dd",
+  "generated_from_state_updated_at": "2026-08-21T08:12:45.058Z",
+  "state_sha256": "0cc5031a086d26b252d55421f09ed3634ea4d65d4bf6aa389b3145dd41be513b",
   "counts": {
     "videos": 843,
     "industries": 13,
@@ -464,6 +464,6 @@
   ],
   "package": {
     "files_excluding_manifest": 463,
-    "bytes_excluding_manifest": 63646145
+    "bytes_excluding_manifest": 63680564
   }
 }

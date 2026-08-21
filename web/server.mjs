@@ -8,6 +8,7 @@ import {
   MediaResolutionError,
   publicMediaFields,
   refreshBestAdsMedia,
+  refreshStashMediaWithFallback,
   validateBestAdsDirectMediaUrl,
 } from "./lib/media-resolver.mjs";
 
@@ -113,19 +114,28 @@ function cachedMediaIsFresh(entry) {
 }
 
 async function resolveVideoMedia(video, { force = false } = {}) {
-  if (video.media_provider !== "best_ads_signed_mp4") return { ...directMediaDescriptor(video), cached: true };
+  const isBestAds = video.media_provider === "best_ads_signed_mp4";
+  const isStash = video.source_site === "stash" && video.media_provider === "hls";
+  if (!isBestAds && !isStash) return { ...directMediaDescriptor(video), cached: true };
   const key = video.video_id || video.id;
   let stable = null;
-  try {
-    stable = { ...validateBestAdsDirectMediaUrl(video.original_media_url, video), cached: true };
-  } catch {
-    stable = null;
+  if (isBestAds) {
+    try {
+      stable = { ...validateBestAdsDirectMediaUrl(video.original_media_url, video), cached: true };
+    } catch {
+      stable = null;
+    }
   }
   if (!force && stable) return stable;
   const cached = mediaCache.get(key);
   if (!force && cachedMediaIsFresh(cached)) return { ...cached, cached: true };
   if (!force && mediaRefreshes.has(key)) return mediaRefreshes.get(key);
-  const refresh = refreshBestAdsMedia(video)
+  const refresh = (isBestAds
+    ? refreshBestAdsMedia(video)
+    : refreshStashMediaWithFallback(video, {
+      preferProxy: !process.env.VERCEL,
+      allowProxyFallback: !process.env.VERCEL,
+    }))
     .then((result) => {
       const next = { ...result, cached: false };
       mediaCache.set(key, next);

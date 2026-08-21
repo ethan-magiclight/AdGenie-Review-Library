@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "fallback_status": "pending_category_review",
   "fallback_reason": "No reliable AdGenie mapping from source labels alone; require product-subject visual review.",
   "mappings": [
@@ -142,6 +142,60 @@
       "status": "pending_category_review",
       "candidates": [
         { "industry": "Pet Supplies", "product_category": null, "confidence": 0.75, "evidence": ["Industry label supports Pet Supplies; subtype requires visual product evidence."] }
+      ]
+    },
+    {
+      "source_site": "stash",
+      "match_field": "source_categories",
+      "source_value": "Advertising: All",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": null, "product_category": null, "confidence": 0, "evidence": ["STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."] }
+      ]
+    },
+    {
+      "source_site": "stash",
+      "match_field": "source_categories",
+      "source_value": "Advertising: Comedy",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": null, "product_category": null, "confidence": 0, "evidence": ["Comedy is a creative treatment, not an industry or product category; visual evidence is required."] }
+      ]
+    },
+    {
+      "source_site": "stash",
+      "match_field": "source_categories",
+      "source_value": "Advertising: Holiday",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": null, "product_category": null, "confidence": 0, "evidence": ["Holiday is a campaign context, not an industry or product category; visual evidence is required."] }
+      ]
+    },
+    {
+      "source_site": "stash",
+      "match_field": "source_categories",
+      "source_value": "Advertising: Lifestyle",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": null, "product_category": null, "confidence": 0, "evidence": ["Lifestyle is a broad creative context; visual product evidence is required."] }
+      ]
+    },
+    {
+      "source_site": "stash",
+      "match_field": "source_categories",
+      "source_value": "Advertising: Food & Beverage",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Food & Beverage", "product_category": null, "confidence": 0.75, "evidence": ["The playlist supports the normalized industry, but product category still requires visual evidence."] }
+      ]
+    },
+    {
+      "source_site": "stash",
+      "match_field": "source_categories",
+      "source_value": "Advertising: Automotive",
+      "status": "pending_category_review",
+      "candidates": [
+        { "industry": "Other", "product_category": "Automotive & Vehicles", "confidence": 0.75, "evidence": ["The playlist supports an automotive candidate, but the advertised product must still be verified visually."] }
       ]
     }
   ]
