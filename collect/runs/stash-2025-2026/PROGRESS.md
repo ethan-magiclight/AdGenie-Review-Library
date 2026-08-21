@@ -26,3 +26,4 @@
 25. 10 条试采媒体门未通过：固定尝试 10 条且不补第 11 条，结果 1/10；`VID178:3` locator/resolver 通过，另 9 条后台直达详情没有生成 locator。正常页面点击单条验证 `VID178:4 → 1207188095` 成立，但随后 STASH 新 playlist 请求重定向 `/login/`，停止浏览器操作与扩量。
 26. 当前真实交付状态仍为 STASH=0：collector 保持 `pending_video`/`MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete`，不因单条 resolver 成功越过 10/10、10 帧、去重与恰好 100 条门禁；843 videos、118 review_events 尚未修改。
 27. 文件边界复核：完整 `/api/videos/:id/media` 接线需要修改 `web/server.mjs`，但任务白名单未包含该文件；越界草稿已撤回，生成包已重新同步。当前只交付允许范围内的 resolver library、测试和阻塞证据，不声称审核台 API 已接通。
+28. GitHub 交付更新（2026-08-21）：白名单 8 文件提交 `c6848eb` 已推送到正确仓库 `ethan-magiclight/AdGenie-Review-Library` 的 `codex/stash-source-ingestion`；Draft PR #2仍以 `codex/review-console-standalone` 为 base。该实现 HEAD 的 `verify-package`、Vercel Preview Comments 与两套 Vercel deployment 全部成功，未合并 main。
