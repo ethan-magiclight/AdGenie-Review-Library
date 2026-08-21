@@ -38,14 +38,14 @@ test("rejects progress that is not safe to continue from", async () => {
   ]);
 });
 
-test("surfaces the blocked zero-record STASH state in the platform filter and empty result", async () => {
+test("surfaces the incomplete zero-record STASH trial state in the platform filter and empty result", async () => {
   const methodology = JSON.parse(await fs.readFile(methodologyUrl, "utf8"));
   const { platformFilterItems, emptyVideosMessage } = await loadReviewUiModule();
   const stashOption = platformFilterItems([], methodology).find(([value]) => value === "stash");
 
-  assert.deepEqual(stashOption, ["stash", "STASH（0 · 媒体门阻塞）"]);
+  assert.deepEqual(stashOption, ["stash", "STASH（0 · 试采未完成）"]);
   assert.equal(
     emptyVideosMessage("stash", [], methodology),
-    "STASH 当前 0 条可审核视频：媒体稳定交付门未通过，已停止入库与扩量。详情见“方法论记录”。",
+    "STASH 当前 0 条可审核视频：10/10 媒体解析已通过；详情、10 帧、去重、导入与侧栏验收尚未完成，暂不扩量。详情见“方法论记录”。",
   );
 });

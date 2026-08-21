@@ -1,16 +1,23 @@
 # STASH 2025–2026 阻塞
 
-## MEDIA_RESOLVER_IMPLEMENTED_TRIAL_GATE_PENDING（2026-08-21）
+## MEDIA_RESOLVER_TRIAL_GATE_RESOLVED（2026-08-21）
 
 - 已确认 Best Ads 的可复用架构是“稳定 asset ID + 请求时解析”；STASH 对应稳定 locator 为 Vimeo ID。Vimeo player HTML 会下发同 ID 的短效 `/config/request`，其 `time + expires` 给出有效期，config 返回 Vimeo CDN HLS。
 - 已在 `web/lib/media-resolver.mjs` 实现无 Cookie 直连 resolver，并为本机 Node 到 Vimeo 的 `UND_ERR_CONNECT_TIMEOUT` 增加 CDP fallback；fallback 内两个媒体 fetch 都显式使用 `credentials:omit`，完成后关闭自建标签。短效 config URL、HLS URL、signature、Cookie 均不写状态或 Git。
 - 将 resolver 接入现有 `/api/videos/:id/media` 需要修改 `web/server.mjs`，但目标任务的“只允许修改”白名单不包含该文件。越界接线草稿已撤回；在白名单明确扩展前，审核台 API 仍未接通 STASH，不能把 library 单测或单条探针描述成端到端完成。
-- 单条真实证据通过：`stash:VID178:3`、Vimeo ID `1207188087` 成功解析为 HTTPS Vimeo CDN HLS，观察时剩余有效期约 3598 秒。该结果解除“完全没有合法 resolver”的旧结论，但不能替代 10/10 试采门。
-- 严格 10 条门结果为 `attempted=10 / passed=1 / failed=9`，未补第 11 条：`VID178:3` 通过；`VID178:4`、`178:6`、`178:13`、`178:19`、`178:24`、`VID177:1`、`177:4`、`177:6`、`177:7` 的后台直达详情均未生成 Vimeo locator，resolver 未运行。
-- 失败根因进一步定位为 STASH playlist 详情依赖已初始化页面的正常点击状态：在原页面点击 `VID178:4` 能取得 Vimeo ID `1207188095`；直接导航/同源 fetch 只返回 playlist 外壳。后续新 playlist 请求被 STASH 重定向到 `/login/`，两张 STASH 标签当前均停在登录页；浏览器操作已停止，未读取、填写或保存账号凭证。
-- 因 10/10 未通过，collector 继续将有稳定 Vimeo ID 的记录保持为 `pending_video`，失败原因为 `MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete`；正式 records、审核台 STASH 数量和扩量均保持 0。恢复条件是用户合法重新登录 STASH 后，从正常 playlist 交互状态完成剩余 9 条 locator/resolver 验证；仍不得操作 Subscription required 下载入口。
+- 用户合法重新登录后，严格固定原 10 条并通过已初始化 playlist 的正常点击完成剩余验证；没有补第 11 条，也没有直达详情、刷新主标签或操作 `Subscription required`。
+- 最终结果为 `attempted=10 / passed=10 / failed=0`：`VID178:3/4/6/13/19/24` 与 `VID177:1/4/6/7` 均取得稳定 Vimeo ID，resolver 全部返回可信 Vimeo CDN HLS，观察到的 TTL 下界为 3598 秒。
+- 部分详情同时显示主广告和 Behind the Scenes 播放器；验证只读取非 `#btsplayer` 的主播放器。`VID178:6` 主广告 ID 为 `1207188123`，BTS ID `1207418728` 被明确排除。主标签最终恢复到 `STASH 178.03 / 1207188087`。
+- 原 `MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete` 结论已解除。短效 config/HLS 仍只在内存；提交证据 `media-resolver-gate.json` 不含 Cookie、Token、signature query 或媒体路径。
 
-> 下方 2026-08-20 的 `MEDIA_DELIVERY_BLOCKED` 是历史证据。“稳定 resolver 完全不存在”已被本节的单条实测部分解除；“10/10 未通过，因此禁止入库/扩量”仍然有效。
+> 下方 2026-08-20 的 `MEDIA_DELIVERY_BLOCKED` 与“resolver 不存在”均为历史证据，已被本节 10/10 实测取代；完整试采未完成，所以禁止入库/扩量的结果不变。
+
+## TRIAL_COMPLETION_BLOCKED（2026-08-21）
+
+- 媒体解析门已通过，但完整 10 条试采还要求详情终态、真实 10 帧 Contact Sheet、人工视觉候选、跨源 canonical linking、增量导入和侧栏播放/下载验收；这些步骤尚未完成，STASH 必须保持 0 条。
+- 任务规矩限定最多 3 个详情采集批次，历史记录已确认 3 批耗尽；未获得明确扩展授权前，不得启动第 4 个详情批次。
+- 审核台端到端 `/api/videos/:id/media` 接线需要修改 `web/server.mjs`，但它不在任务白名单；resolver library 与 10/10 实测不能冒充 API 已接通。
+- 继续所需的最小用户授权是：允许第 4 个、且仅一个固定 10 条详情恢复批次；把 `web/server.mjs` 加入可修改白名单。授权前仍可维护证据和运行不改变采集状态的本地门禁，但不能完成试采、扩到 100 或宣称目标完成。
 
 ## CHROME_CDP_RESOLVED（2026-08-20）
 

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "gate": "stash_10_item_media_resolver",
+  "observed_at": "2026-08-21T04:40:27Z",
+  "result": "passed",
+  "attempted": 10,
+  "passed": 10,
+  "failed": 0,
+  "selection_policy": "fixed_original_ten_no_replacement",
+  "locator_discovery": "existing_lawful_stash_session_in_page_click",
+  "resolver_fetch_credentials": "omit",
+  "temporary_urls_persisted": false,
+  "subscription_download_used": false,
+  "restored_detail": "stash:VID178:3",
+  "items": [
+    { "source_key": "stash:VID178:3", "vimeo_id": "1207188087", "cdn_host": null, "cdn_host_class": "trusted_vimeo_cdn", "hls": true, "remaining_seconds_at_observation": 3598 },
+    { "source_key": "stash:VID178:4", "vimeo_id": "1207188095", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3598 },
+    { "source_key": "stash:VID178:6", "vimeo_id": "1207188123", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3598 },
+    { "source_key": "stash:VID178:13", "vimeo_id": "1207188527", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3599 },
+    { "source_key": "stash:VID178:19", "vimeo_id": "1207189161", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3599 },
+    { "source_key": "stash:VID178:24", "vimeo_id": "1207189364", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3598 },
+    { "source_key": "stash:VID177:1", "vimeo_id": "1190793709", "cdn_host": "skyfire.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3599 },
+    { "source_key": "stash:VID177:4", "vimeo_id": "1190793878", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3599 },
+    { "source_key": "stash:VID177:6", "vimeo_id": "1190793941", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3598 },
+    { "source_key": "stash:VID177:7", "vimeo_id": "1190793974", "cdn_host": "vod-adaptive-ak.vimeocdn.com", "hls": true, "remaining_seconds_at_observation": 3598 }
+  ],
+  "excluded_auxiliary_media": [
+    { "source_key": "stash:VID178:6", "vimeo_id": "1207418728", "reason": "behind_the_scenes_player" }
+  ]
+}

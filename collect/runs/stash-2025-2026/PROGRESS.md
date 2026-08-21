@@ -24,6 +24,9 @@
 23. 媒体 resolver 路径已实现（2026-08-21）：稳定 Vimeo ID → 无 Cookie 获取 player HTML → 提取短效 `/config/request` → 无 Cookie 获取 Vimeo CDN HLS；短效 config/HLS 仅在内存，ID、host、TTL 和 CDN 均严格校验。
 24. resolver 红→绿：缺导出 0/1 → 10/10 媒体测试通过；真实 `VID178:3 / 1207188087` 返回 HTTPS HLS，剩余约 3598 秒。本机 Node 直连 Vimeo 为 `UND_ERR_CONNECT_TIMEOUT`，resolver library 提供 CDP fallback，浏览器内两个 fetch 均为 `credentials:omit` 且标签自动关闭。
 25. 10 条试采媒体门未通过：固定尝试 10 条且不补第 11 条，结果 1/10；`VID178:3` locator/resolver 通过，另 9 条后台直达详情没有生成 locator。正常页面点击单条验证 `VID178:4 → 1207188095` 成立，但随后 STASH 新 playlist 请求重定向 `/login/`，停止浏览器操作与扩量。
-26. 当前真实交付状态仍为 STASH=0：collector 保持 `pending_video`/`MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete`，不因单条 resolver 成功越过 10/10、10 帧、去重与恰好 100 条门禁；843 videos、118 review_events 尚未修改。
+26. 当时真实交付状态仍为 STASH=0：collector 保持 `pending_video`/`MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete`，不因单条 resolver 成功越过 10/10、10 帧、去重与恰好 100 条门禁；843 videos、118 review_events 尚未修改。该媒体原因已由第 29 条的 10/10 实测取代。
 27. 文件边界复核：完整 `/api/videos/:id/media` 接线需要修改 `web/server.mjs`，但任务白名单未包含该文件；越界草稿已撤回，生成包已重新同步。当前只交付允许范围内的 resolver library、测试和阻塞证据，不声称审核台 API 已接通。
 28. GitHub 交付更新（2026-08-21）：白名单 8 文件提交 `c6848eb` 已推送到正确仓库 `ethan-magiclight/AdGenie-Review-Library` 的 `codex/stash-source-ingestion`；Draft PR #2仍以 `codex/review-console-standalone` 为 base。该实现 HEAD 的 `verify-package`、Vercel Preview Comments 与两套 Vercel deployment 全部成功，未合并 main。
+29. STASH 登录态恢复后媒体门完成（2026-08-21）：固定 10 条不补样本，`VID178:3/4/6/13/19/24` 与 `VID177:1/4/6/7` 全部从已初始化 playlist 的正常点击取得稳定 Vimeo ID，并由无凭证 resolver 解析为可信 Vimeo CDN HLS；`attempted=10 / passed=10 / failed=0`，主标签恢复到 `STASH 178.03`。
+30. 播放器判定修正：部分详情会同时装载主广告与 `#btsplayer` 幕后花絮播放器；媒体门只认非 BTS 主播放器，`VID178:6` 的主广告 ID=`1207188123`，不把花絮 ID=`1207418728` 错当母片。短效 config/HLS 始终仅在内存，证据文件只保存稳定 ID、CDN host、HLS 布尔值和 TTL 下界。
+31. 当前状态：媒体解析门已解除，但完整 10 条试采仍未完成；详情采集 3 批上限已耗尽，且审核台 API 接线所需 `web/server.mjs` 不在白名单。STASH 继续保持 0 条、843 videos、118 review_events、local_video_files=0，不扩量、不重做已通过的媒体门。

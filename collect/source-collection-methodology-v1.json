@@ -133,8 +133,8 @@
     {
       "id": "stash",
       "name": "STASH",
-      "status": "media_delivery_blocked",
-      "status_label": "媒体稳定交付门未通过，已停止入库与扩量",
+      "status": "trial_incomplete",
+      "status_label": "10/10 媒体解析已通过；详情、10 帧、去重、导入与侧栏验收尚未完成，暂不扩量",
       "objective": "从 STASH Advertising 的 2025/2026 Issue 中筛选真实品牌 TVC、Brand film 和 Product film，在稳定媒体、10 帧视觉预审与跨源去重全部通过后，使审核台达到 100 条可审核视频。",
       "scope": {
         "entry": "https://www.stashmedia.tv/watch/?category=3",
@@ -154,11 +154,11 @@
         "stable_key_verified": true,
         "detail_structure_verified": true,
         "trial_target": 10,
-        "trial_media_verified": 0,
+        "trial_media_verified": 10,
         "reviewable_total": 0,
         "imported": 0,
-        "media_delivery_gate_passed": false,
-        "blocker": "MEDIA_DELIVERY_BLOCKED"
+        "media_delivery_gate_passed": true,
+        "blocker": "TRIAL_COMPLETION_BLOCKED"
       },
       "collection_plan": [
         "只从 Advertising: All 完整发现列表读取含 fid、refnum、clipnum、pi 的候选，以 stash:{refnum}:{clipnum} 作为稳定来源键并用 checkpoint 保存终态。",
@@ -178,20 +178,21 @@
         "正式审核项必须有明确品牌、2025/2026 Issue 日期证据、真实视频、稳定无凭证交付、恰好 10 帧预审和至少一个 genre 候选。",
         "正式 source record 保持 genres 为空、approved=false、core_template_eligible=false；导入后状态统一 pending_review。",
         "重复 Vimeo ID、内容 SHA-256、10 帧指纹母片、剪辑版或画幅版不得重复增加母片供给。",
-        "当前 MEDIA_DELIVERY_BLOCKED 未解除前 reviewable_total 和 imported 必须保持 0，不得用图片、Contact Sheet 或短效签名冒充稳定视频。"
+        "10/10 媒体解析门已通过，但在详情、10 帧、去重、导入和侧栏播放全部验收前，reviewable_total 和 imported 必须保持 0，不得用媒体门结果冒充完整试采。"
       ],
       "continuation": {
         "resume_from": "collect/runs/stash-2025-2026/checkpoint.json",
         "before_next_run": [
           "先读取 collect/runs/stash-2025-2026/PROGRESS.md 与 BLOCKED.md，禁止重做已完成取证。",
-          "必须先用无 Cookie 环境证明连续 10 条可由稳定 URL 或审核台 resolver 播放和获取，且不得绕过 Subscription required。",
-          "媒体门通过后才允许生成 10 帧、运行 canonical linking、备份审核状态和增量导入；未通过时继续保持 0 条审核项。",
-          "详情采集最多 3 个批次；达到上限或再次确认媒体门失败时停止并更新阻塞证据。"
+          "10/10 无 Cookie resolver 媒体门已于 2026-08-21 通过，禁止重做；稳定 Vimeo ID 与不含短效地址的证据见 media-resolver-gate.json。",
+          "继续前需解决已耗尽的 3 个详情采集批次上限，再为同一固定 10 条完成详情、真实 10 帧、canonical linking、备份、增量导入和侧栏播放验收。",
+          "审核台 STASH resolver 的 API 接线需要 web/server.mjs；该文件未获当前任务白名单授权，授权扩大前不得修改。"
         ]
       },
       "evidence": [
         "collect/runs/stash-2025-2026/PROGRESS.md",
         "collect/runs/stash-2025-2026/BLOCKED.md",
+        "collect/runs/stash-2025-2026/media-resolver-gate.json",
         "collect/runs/stash-2025-2026/checkpoint.json",
         "collect/runs/stash-2025-2026/batch-report.json"
       ]

@@ -195,16 +195,16 @@ export function platformFilterItems(videos, sourceCollection) {
   const stash = sourceCollectionChannel(sourceCollection, "stash");
   return platformFilterDefinitions.map(([value, label]) => {
     if (value !== "stash") return [value, label];
-    const blocked = stashCount === 0 && stash?.status === "media_delivery_blocked";
-    return [value, `STASH（${stashCount}${blocked ? " · 媒体门阻塞" : ""}）`];
+    const incomplete = stashCount === 0 && stash?.status === "trial_incomplete";
+    return [value, `STASH（${stashCount}${incomplete ? " · 试采未完成" : ""}）`];
   });
 }
 
 export function emptyVideosMessage(platform, videos, sourceCollection) {
   const stashCount = sourcePlatformCount(videos, "stash");
   const stash = sourceCollectionChannel(sourceCollection, "stash");
-  if (platform === "stash" && stashCount === 0 && stash?.status === "media_delivery_blocked") {
-    const status = String(stash.status_label || "媒体稳定交付门未通过，已停止入库与扩量").replace(/。+$/, "");
+  if (platform === "stash" && stashCount === 0 && stash?.status === "trial_incomplete") {
+    const status = String(stash.status_label || "10/10 媒体解析已通过；完整试采仍未完成，暂不扩量").replace(/。+$/, "");
     return `STASH 当前 0 条可审核视频：${status}。详情见“方法论记录”。`;
   }
   return "没有符合条件的视频。";

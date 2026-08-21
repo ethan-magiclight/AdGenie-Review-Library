@@ -53,7 +53,7 @@ const scope = {
   issues: [...issueDates.keys()],
   years: [2025, 2026],
   allowed_types: ["TVC", "Brand film", "Product film"],
-  media_delivery_gate: "MEDIA_DELIVERY_BLOCKED",
+  media_delivery_gate: "MEDIA_RESOLVER_GATE_PASSED",
 };
 
 const listExpression = `JSON.stringify((()=>{const text=document.body?.innerText||"";const total=Number(text.match(/([0-9,]+) videos/i)?.[1]?.replaceAll(",","")||0);const rows=[...document.querySelectorAll(".collection-playlist a[href*='refnum'][href*='clipnum']")].map(a=>{try{const url=new URL(a.href,location.href);const refnum=url.searchParams.get("refnum");const clipnum=url.searchParams.get("clipnum");const pi=url.searchParams.get("pi");if(!refnum||!clipnum||pi===null)return null;url.hash="";const lines=(a.innerText||a.textContent||"").split(/\\n+/).map(x=>x.trim()).filter(Boolean);return {source_record_id:refnum+":"+clipnum,source_detail_url:url.href,refnum,clipnum:Number(clipnum),pi:Number(pi),fid:url.searchParams.get("fid"),listing_title:lines[0]||null,listing_raw_type:lines.slice(1).join(" ")||null}}catch{return null}}).filter(Boolean);const maxPi=Math.max(-1,...rows.map(row=>row.pi));const items=[...new Map(rows.map(row=>[row.source_record_id,row])).values()];return {title:document.title,total,raw_links:rows.length,max_pi:maxPi,items,unique_candidates:items.length,ready:document.readyState==="complete"&&total>0&&maxPi>=0&&items.length>0}})())`;
@@ -88,7 +88,7 @@ function detailDecision(candidate, detail) {
   if (!medium) return { status: "skipped", reason: "non_advertising_media_type", keepRecord: false };
   if (!detail.client) return { status: "skipped", reason: "brand_missing", keepRecord: false };
   if (!detail.vimeo_id) return { status: "skipped", reason: "video_missing", keepRecord: false };
-  return { status: "skipped", reason: "media_delivery_blocked", keepRecord: true };
+  return { status: "success", reason: "trial_completion_pending", keepRecord: true };
 }
 
 function detailRecord(candidate, detail, mapping) {
@@ -109,13 +109,13 @@ function detailRecord(candidate, detail, mapping) {
     width: null,
     height: null,
     aspect_ratio: null,
-    access_status: "error",
-    checked_at: collectedAt,
+    access_status: "unchecked",
+    checked_at: null,
     expires_at: null,
     locator_is_temporary: false,
     contact_sheet_path: null,
-    contact_sheet_status: "failed",
-    failure_reason: "MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete",
+    contact_sheet_status: "pending",
+    failure_reason: null,
   }] : [];
   return baseRecord({
     source_site: "stash",
@@ -166,7 +166,7 @@ function detailRecord(candidate, detail, mapping) {
       media_query_keys: detail.media_query_keys || [],
       signed_media_url_persisted: false,
       download_status: detail.download_required ? "subscription_required" : "not_observed",
-      media_delivery_status: "resolver_implemented_trial_gate_pending",
+      media_delivery_status: "resolver_gate_passed_item_refresh_pending",
     },
   });
 }
@@ -195,11 +195,11 @@ function runSelfTest() {
       passed: detailDecision(candidate, specDetail).reason === "spec_work",
     },
     {
-      case: "single_stable_vimeo_locator_does_not_bypass_trial_gate",
-      red: { status: "success", reason: "target_campaign_with_stash_vimeo_resolver" },
+      case: "stable_vimeo_locator_is_not_media_blocked",
+      red: { status: "skipped", reason: "media_delivery_blocked" },
       green: detailDecision(candidate, validDetail),
-      passed: detailDecision(candidate, validDetail).status === "skipped"
-        && detailDecision(candidate, validDetail).reason === "media_delivery_blocked",
+      passed: detailDecision(candidate, validDetail).status === "success"
+        && detailDecision(candidate, validDetail).reason === "trial_completion_pending",
     },
   ];
   return { ok: cases.every((item) => item.passed), red_to_green: cases };
@@ -265,7 +265,6 @@ async function run() {
             reason: decision.reason,
             attempts: store.priorFailures(candidate.source_record_id) + 1,
           });
-          if (decision.reason === "media_delivery_blocked") stopReason = "media_delivery_blocked";
         } catch (error) {
           store.run.detail_pages_visited += 1;
           store.addOutcome({

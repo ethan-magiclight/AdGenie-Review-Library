@@ -114,7 +114,7 @@ node collect/report-source-batch.mjs \
 
 Best Ads 范围固定为 United States of America、TV、2025/2026 与九个指定来源分类。AOTW 不限国家/Industry，但必须 Campaign published 为 2025/2026、Medium types 含 Film、至少一个真实视频；Student、无视频与年份越界只记 outcome，不生成审核项。STASH 只允许 Advertising 的 TVC、Brand film、Product film；spec、Music video、Broadcast design、Game trailer、学生作品、纯短片与 Behind the Scenes 必须带 reason 跳过。重复运行按 source record / media asset key 幂等，不重复新增。
 
-当前 STASH 状态为 `MEDIA_DELIVERY_BLOCKED`：登录态播放器中的 Vimeo progressive URL 含短效 `signature`，无 Cookie 页面不暴露 Vimeo ID 或 progressive locator，下载区为 `Subscription required`。在连续 10 条可由稳定 URL 或审核台 resolver 无凭证获取之前，`records.json` 中的证据记录只能保持 `pending_video`，不得执行 10 帧、正式导入或扩到 100，也不得保存 signed query。
+当前 STASH 的 10/10 媒体解析门已通过：在合法登录态 playlist 内只发现稳定 Vimeo ID，resolver 再以 `credentials: omit` 请求公开 player/config，并把短效 HLS 仅保留在内存；下载区 `Subscription required` 仍不操作、不绕过。完整 10 条试采尚缺详情终态、真实 10 帧、去重、导入和侧栏播放验收，因此 `records.json` 仍保持非正式待处理状态，审核台 STASH=0，禁止扩到 100。无短效地址的门禁证据见 `collect/runs/stash-2025-2026/media-resolver-gate.json`。
 
 AI 视觉预审写入媒体资产下的 `ai_visual_pre_review`，只允许行业、商品品类和题材候选：
 
