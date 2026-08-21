@@ -21,3 +21,8 @@
 20. GitHub 身份已修正（2026-08-21）：本机 GitHub CLI 已切换到仓库所有者 `ethan-magiclight`，API 实测目标仓库 `admin=true`、`push=true`；远端同名分支与 PR 均不存在。推送前 22 个变更文件仍全部命中任务白名单，计划以 `codex/review-console-standalone`（`ff1989b`）为 PR base，不合并 main。
 21. GitHub 交付已完成（2026-08-21）：分支首次推送到 `ethan-magiclight/AdGenie-Review-Library`，远端 SHA 与本地 `cee6dc2` 一致；以 `codex/review-console-standalone`（`ff1989b`）为 base 创建唯一 Draft PR #2。该 HEAD 的 `verify-package`、两套 Vercel deployment 与 Vercel Preview Comments 全部通过；PR 明确保持 draft、STASH=0、不得合并，等待发现完整性与稳定媒体交付门解除后再完成 10 帧预审和恰好 100 条入库。
 22. 审核台零记录状态已显式化（2026-08-21）：用户现场指出“平台筛选”无法证明实际收录；实时页面核验确认 STASH 选项存在但结果为 0。现已把选项改为 `STASH（0 · 媒体门阻塞）`，并在空表格说明停止入库原因与方法论入口；新增 UI 合同测试先红后绿，完整 build、独立包生成/校验与包内 21 项测试全绿，仍保持 843 videos、118 review_events、STASH=0、local_video_files=0。
+23. 媒体 resolver 路径已实现（2026-08-21）：稳定 Vimeo ID → 无 Cookie 获取 player HTML → 提取短效 `/config/request` → 无 Cookie 获取 Vimeo CDN HLS；短效 config/HLS 仅在内存，ID、host、TTL 和 CDN 均严格校验。
+24. resolver 红→绿：缺导出 0/1 → 10/10 媒体测试通过；真实 `VID178:3 / 1207188087` 返回 HTTPS HLS，剩余约 3598 秒。本机 Node 直连 Vimeo 为 `UND_ERR_CONNECT_TIMEOUT`，resolver library 提供 CDP fallback，浏览器内两个 fetch 均为 `credentials:omit` 且标签自动关闭。
+25. 10 条试采媒体门未通过：固定尝试 10 条且不补第 11 条，结果 1/10；`VID178:3` locator/resolver 通过，另 9 条后台直达详情没有生成 locator。正常页面点击单条验证 `VID178:4 → 1207188095` 成立，但随后 STASH 新 playlist 请求重定向 `/login/`，停止浏览器操作与扩量。
+26. 当前真实交付状态仍为 STASH=0：collector 保持 `pending_video`/`MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete`，不因单条 resolver 成功越过 10/10、10 帧、去重与恰好 100 条门禁；843 videos、118 review_events 尚未修改。
+27. 文件边界复核：完整 `/api/videos/:id/media` 接线需要修改 `web/server.mjs`，但任务白名单未包含该文件；越界草稿已撤回，生成包已重新同步。当前只交付允许范围内的 resolver library、测试和阻塞证据，不声称审核台 API 已接通。

@@ -1,5 +1,17 @@
 # STASH 2025–2026 阻塞
 
+## MEDIA_RESOLVER_IMPLEMENTED_TRIAL_GATE_PENDING（2026-08-21）
+
+- 已确认 Best Ads 的可复用架构是“稳定 asset ID + 请求时解析”；STASH 对应稳定 locator 为 Vimeo ID。Vimeo player HTML 会下发同 ID 的短效 `/config/request`，其 `time + expires` 给出有效期，config 返回 Vimeo CDN HLS。
+- 已在 `web/lib/media-resolver.mjs` 实现无 Cookie 直连 resolver，并为本机 Node 到 Vimeo 的 `UND_ERR_CONNECT_TIMEOUT` 增加 CDP fallback；fallback 内两个媒体 fetch 都显式使用 `credentials:omit`，完成后关闭自建标签。短效 config URL、HLS URL、signature、Cookie 均不写状态或 Git。
+- 将 resolver 接入现有 `/api/videos/:id/media` 需要修改 `web/server.mjs`，但目标任务的“只允许修改”白名单不包含该文件。越界接线草稿已撤回；在白名单明确扩展前，审核台 API 仍未接通 STASH，不能把 library 单测或单条探针描述成端到端完成。
+- 单条真实证据通过：`stash:VID178:3`、Vimeo ID `1207188087` 成功解析为 HTTPS Vimeo CDN HLS，观察时剩余有效期约 3598 秒。该结果解除“完全没有合法 resolver”的旧结论，但不能替代 10/10 试采门。
+- 严格 10 条门结果为 `attempted=10 / passed=1 / failed=9`，未补第 11 条：`VID178:3` 通过；`VID178:4`、`178:6`、`178:13`、`178:19`、`178:24`、`VID177:1`、`177:4`、`177:6`、`177:7` 的后台直达详情均未生成 Vimeo locator，resolver 未运行。
+- 失败根因进一步定位为 STASH playlist 详情依赖已初始化页面的正常点击状态：在原页面点击 `VID178:4` 能取得 Vimeo ID `1207188095`；直接导航/同源 fetch 只返回 playlist 外壳。后续新 playlist 请求被 STASH 重定向到 `/login/`，两张 STASH 标签当前均停在登录页；浏览器操作已停止，未读取、填写或保存账号凭证。
+- 因 10/10 未通过，collector 继续将有稳定 Vimeo ID 的记录保持为 `pending_video`，失败原因为 `MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete`；正式 records、审核台 STASH 数量和扩量均保持 0。恢复条件是用户合法重新登录 STASH 后，从正常 playlist 交互状态完成剩余 9 条 locator/resolver 验证；仍不得操作 Subscription required 下载入口。
+
+> 下方 2026-08-20 的 `MEDIA_DELIVERY_BLOCKED` 是历史证据。“稳定 resolver 完全不存在”已被本节的单条实测部分解除；“10/10 未通过，因此禁止入库/扩量”仍然有效。
+
 ## CHROME_CDP_RESOLVED（2026-08-20）
 
 - 用户提供的截图确认 **Allow remote debugging for this browser instance** 已启用，Chrome 显示服务运行于 `127.0.0.1:9222`。

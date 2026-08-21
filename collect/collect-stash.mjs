@@ -100,7 +100,7 @@ function detailRecord(candidate, detail, mapping) {
   const mediaAssets = detail.vimeo_id ? [{
     asset_id: detail.vimeo_id,
     media_type: "video",
-    provider: "vimeo",
+    provider: "hls",
     source_asset_id: detail.vimeo_id,
     original_url: stablePlayerUrl,
     playback_url: null,
@@ -115,7 +115,7 @@ function detailRecord(candidate, detail, mapping) {
     locator_is_temporary: false,
     contact_sheet_path: null,
     contact_sheet_status: "failed",
-    failure_reason: "MEDIA_DELIVERY_BLOCKED:no_cookie_resolver_unproven",
+    failure_reason: "MEDIA_DELIVERY_BLOCKED:ten_item_resolver_gate_incomplete",
   }] : [];
   return baseRecord({
     source_site: "stash",
@@ -166,7 +166,7 @@ function detailRecord(candidate, detail, mapping) {
       media_query_keys: detail.media_query_keys || [],
       signed_media_url_persisted: false,
       download_status: detail.download_required ? "subscription_required" : "not_observed",
-      media_delivery_status: "MEDIA_DELIVERY_BLOCKED",
+      media_delivery_status: "resolver_implemented_trial_gate_pending",
     },
   });
 }
@@ -195,10 +195,11 @@ function runSelfTest() {
       passed: detailDecision(candidate, specDetail).reason === "spec_work",
     },
     {
-      case: "unproven_media_is_not_success",
-      red: { status: "success" },
+      case: "single_stable_vimeo_locator_does_not_bypass_trial_gate",
+      red: { status: "success", reason: "target_campaign_with_stash_vimeo_resolver" },
       green: detailDecision(candidate, validDetail),
-      passed: detailDecision(candidate, validDetail).status === "skipped" && detailDecision(candidate, validDetail).reason === "media_delivery_blocked",
+      passed: detailDecision(candidate, validDetail).status === "skipped"
+        && detailDecision(candidate, validDetail).reason === "media_delivery_blocked",
     },
   ];
   return { ok: cases.every((item) => item.passed), red_to_green: cases };
