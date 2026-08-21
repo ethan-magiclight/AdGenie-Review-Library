@@ -46,7 +46,7 @@ test("surfaces the incomplete zero-record STASH trial state in the platform filt
   assert.deepEqual(stashOption, ["stash", "STASH（0 · 试采未完成）"]);
   assert.equal(
     emptyVideosMessage("stash", [], methodology),
-    "STASH 当前 0 条可审核视频：10/10 媒体解析已通过；详情、10 帧、去重、导入与侧栏验收尚未完成，暂不扩量。详情见“方法论记录”。",
+    "STASH 当前 0 条可审核视频：固定 10 条详情结果为 9 成功、1 条 spec 排除；当前未授权替换或第 5 批，完整试采未通过。详情见“方法论记录”。",
   );
 });
 
