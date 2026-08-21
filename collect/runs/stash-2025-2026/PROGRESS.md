@@ -31,3 +31,7 @@
 30. 播放器判定修正：部分详情会同时装载主广告与 `#btsplayer` 幕后花絮播放器；媒体门只认非 BTS 主播放器，`VID178:6` 的主广告 ID=`1207188123`，不把花絮 ID=`1207418728` 错当母片。短效 config/HLS 始终仅在内存，证据文件只保存稳定 ID、CDN host、HLS 布尔值和 TTL 下界。
 31. 当前状态：媒体解析门已解除，但完整 10 条试采仍未完成；详情采集 3 批上限已耗尽，且审核台 API 接线所需 `web/server.mjs` 不在白名单。STASH 继续保持 0 条、843 videos、118 review_events、local_video_files=0，不扩量、不重做已通过的媒体门。
 32. GitHub 交付更新（2026-08-21）：10/10 门禁证据与状态真相化提交 `068d6cc` 已推送到正确仓库并更新 Draft PR #2 正文；该 HEAD 的 `verify-package`、Vercel Preview Comments 与两套 Vercel deployment 全部成功。PR 保持 Draft，base 仍为 `codex/review-console-standalone`，未合并 main。
+33. 用户范围授权（2026-08-21）：允许第 4 个且仅一个固定原 10 条详情恢复批次，并把 `web/server.mjs` 加入本任务白名单；不授权第 5 批、替换样本或订阅下载绕过。采集器新增 `--trial-recovery --phase details --max-details 10` 硬门，联网前记录 batch 4，重复执行将直接拒绝。
+34. 唯一第 4 批已执行（2026-08-21）：固定 10 条全部完成详情判定，结果 `success=9 / skipped=1 / failed=0`；`VID177:6` 的页面原始类型为 `Brand film 1:16 (spec)`，按任务硬规则记录 `spec_work`，没有降标准接纳或补第 11 条。batch 4 状态为 `stopped / trial_recovery_incomplete`，进程退出码 1。
+35. 试采仍未越门：没有为 9 条生成 Contact Sheet、没有导入审核台、没有扩量；基线继续保持 843 videos、118 review_events、STASH=0。审核台 STASH HLS resolver API 接线已实现并通过本地测试，但没有用不完整试采冒充实际收录。
+36. 不受影响的交付门禁（2026-08-21）：9 条 records schema 校验为 `ok=true / invalid=0 / importable=0 / pending=9`；独立包仍为 843 videos、118 review_events、843 remote references、0 local video files，包内 27 项测试无 fail/skip/todo。完整 10 条门未过，因此不进入视觉、导入或 100 条扩量。

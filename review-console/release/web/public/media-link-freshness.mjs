@@ -14,6 +14,12 @@ export function isStableBestAdsCdnUrl(value) {
 
 export function mediaLinkIsFresh(video, nowMs = Date.now()) {
   if (!video.playback_url) return false;
+  if (video.source_site === "stash" && video.media_provider === "hls") {
+    const expiresAt = Date.parse(video.media_expires_at || "");
+    return video.media_access_status === "temporary"
+      && Number.isFinite(expiresAt)
+      && expiresAt > nowMs + 5 * 60_000;
+  }
   if (video.media_provider !== "best_ads_signed_mp4") return true;
   if (video.media_access_status === "available" && isStableBestAdsCdnUrl(video.playback_url)) return true;
   const expiresAt = Date.parse(video.media_expires_at || "");

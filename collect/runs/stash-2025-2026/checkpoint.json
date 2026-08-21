@@ -34,20 +34,1267 @@
       "Brand film",
       "Product film"
     ],
-    "media_delivery_gate": "MEDIA_DELIVERY_BLOCKED"
+    "media_delivery_gate": "MEDIA_RESOLVER_GATE_PASSED"
   },
   "created_at": "2026-08-20T14:07:00.254Z",
-  "updated_at": "2026-08-20T14:15:43.354Z",
+  "updated_at": "2026-08-21T07:52:25.203Z",
   "discovery": {
     "complete": false,
-    "candidates": [],
-    "completed_pages": [],
+    "candidates": [
+      {
+        "source_record_id": "VID178:3",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=3&pi=0&keyword=",
+        "refnum": "VID178",
+        "clipnum": 3,
+        "pi": 0,
+        "fid": "3540",
+        "listing_title": "FIFA WORLD CUP 2026 \"LET'S MAKE IT ICONIC\"",
+        "listing_raw_type": "TVC :51",
+        "expected_vimeo_id": "1207188087"
+      },
+      {
+        "source_record_id": "VID178:4",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=4&pi=1&keyword=",
+        "refnum": "VID178",
+        "clipnum": 4,
+        "pi": 1,
+        "fid": "3540",
+        "listing_title": "ERSTE BANK \"THE BIRD\"",
+        "listing_raw_type": "TVC :45",
+        "expected_vimeo_id": "1207188095"
+      },
+      {
+        "source_record_id": "VID178:6",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=6&pi=2&keyword=",
+        "refnum": "VID178",
+        "clipnum": 6,
+        "pi": 2,
+        "fid": "3540",
+        "listing_title": "LEXUS RZ \"DETAILS\"",
+        "listing_raw_type": "TVC 1:06",
+        "expected_vimeo_id": "1207188123"
+      },
+      {
+        "source_record_id": "VID178:13",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=13&pi=3&keyword=",
+        "refnum": "VID178",
+        "clipnum": 13,
+        "pi": 3,
+        "fid": "3540",
+        "listing_title": "ADOBE WOMEN'S FA CUP \"PURE FOOTBALL\"",
+        "listing_raw_type": "TVC :60",
+        "expected_vimeo_id": "1207188527"
+      },
+      {
+        "source_record_id": "VID178:19",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=19&pi=4&keyword=",
+        "refnum": "VID178",
+        "clipnum": 19,
+        "pi": 4,
+        "fid": "3540",
+        "listing_title": "FUTUREFRANK \"ARTIFEX CREATURA\"",
+        "listing_raw_type": "Brand film :35",
+        "expected_vimeo_id": "1207189161"
+      },
+      {
+        "source_record_id": "VID178:24",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=24&pi=5&keyword=",
+        "refnum": "VID178",
+        "clipnum": 24,
+        "pi": 5,
+        "fid": "3540",
+        "listing_title": "FINCH \"WHATEVER IT TAKES TO GET THROUGH THE DAY\"",
+        "listing_raw_type": "TVC :90",
+        "expected_vimeo_id": "1207189364"
+      },
+      {
+        "source_record_id": "VID177:1",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=1&pi=6&keyword=",
+        "refnum": "VID177",
+        "clipnum": 1,
+        "pi": 6,
+        "fid": "3540",
+        "listing_title": "COINBASE \"YOUR WAY OUT OF THEIR SYSTEM\"",
+        "listing_raw_type": "TVC 2:09",
+        "expected_vimeo_id": "1190793709"
+      },
+      {
+        "source_record_id": "VID177:4",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=4&pi=7&keyword=",
+        "refnum": "VID177",
+        "clipnum": 4,
+        "pi": 7,
+        "fid": "3540",
+        "listing_title": "WWF \"NATURE NEEDS US NOW\"",
+        "listing_raw_type": "Brand film :50",
+        "expected_vimeo_id": "1190793878"
+      },
+      {
+        "source_record_id": "VID177:6",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=6&pi=8&keyword=",
+        "refnum": "VID177",
+        "clipnum": 6,
+        "pi": 8,
+        "fid": "3540",
+        "listing_title": "GUCCI \"THE ALCHEMISTS GARDEN\"",
+        "listing_raw_type": "Brand film 1:16 (spec)",
+        "expected_vimeo_id": "1190793941"
+      },
+      {
+        "source_record_id": "VID177:7",
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=7&pi=9&keyword=",
+        "refnum": "VID177",
+        "clipnum": 7,
+        "pi": 9,
+        "fid": "3540",
+        "listing_title": "ADOBE \"DO THAT WITH ACROBAT\"",
+        "listing_raw_type": "Brand film :30",
+        "expected_vimeo_id": "1190793974"
+      }
+    ],
+    "completed_pages": [
+      "https://www.stashmedia.tv/playlist-flash/?fid=3540&pi=0&keyword="
+    ],
     "next_page": 1,
-    "total_reported": null,
-    "last_page": null
+    "total_reported": 686,
+    "last_page": 1,
+    "raw_links": 1328,
+    "enumerated_candidates": 662,
+    "max_pi": 663,
+    "reported_total_gap": 24
   },
-  "records": [],
-  "outcomes": [],
+  "records": [
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID178:3",
+      "description": "Blinkink director Nicos Livesey, whose stop-motion titles for BBC's coverage of the UEFA Women's EURO (Stash 173) nabbed a BAFTA this year, expands his animation canvas exponentially in this trailer for the World Cup on BBC Sport. Nicos Livesey: \"This is one of the most technical shoots we've ever taken on. With complex transitions, every object behaves differently and that's the magic! The imperfections, the fingerprints, the texture are what make it feel alive.\" From Blinkink: \"The campaign is rooted in a simple but powerful idea: that football belongs to its fans. \"Built around the shared anticipation of the global football community, the mixed-media film captures the build-up to the tournament through the physical language of fandom, elevating everyday artifacts into cinematic storytelling devices. \"The goal was to mix live-action and animation craft to create one seamless story. \"For the live-action, everything was shot with a documentary-style sensibility, where the footage feels intentionally intimate and unpolished and the camera moves with immediacy and intent. \"Drawing on the expertise of knitting experts, enamel badge makers, stop-motion animators, and illustrator Dan Evans, each sequence combines traditional fabrication techniques with carefully crafted animation and illustration, weaving together live-action fan moments and animated worlds.\"",
+      "agency": "BBC CREATIVE",
+      "production_companies": [
+        "BLINKINK"
+      ],
+      "campaign_published_at": "2026-07-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID178:3",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=3&pi=0&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "TVC"
+      ],
+      "primary_brand": "BBC",
+      "brands": [
+        "BBC"
+      ],
+      "campaign_title": "FIFA WORLD CUP 2026 \"LET'S MAKE IT ICONIC\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:13.607Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID178:3",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=3&pi=0&keyword=",
+          "source_asset_id": "1207188087",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:13.607Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1207188087",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1207188087",
+          "original_url": "https://player.vimeo.com/video/1207188087",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID178:3",
+        "fid": "3540",
+        "refnum": "VID178",
+        "clipnum": 3,
+        "pi": 0,
+        "issue": 178,
+        "issue_date_evidence": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "source_label": "STASH 178 JULY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID178"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "TVC :51",
+        "client": "BBC",
+        "agency": "BBC CREATIVE",
+        "directors": [
+          "NICOS LIVESEY"
+        ],
+        "production_companies": [
+          "BLINKINK"
+        ],
+        "description": "Blinkink director Nicos Livesey, whose stop-motion titles for BBC's coverage of the UEFA Women's EURO (Stash 173) nabbed a BAFTA this year, expands his animation canvas exponentially in this trailer for the World Cup on BBC Sport. Nicos Livesey: \"This is one of the most technical shoots we've ever taken on. With complex transitions, every object behaves differently and that's the magic! The imperfections, the fingerprints, the texture are what make it feel alive.\" From Blinkink: \"The campaign is rooted in a simple but powerful idea: that football belongs to its fans. \"Built around the shared anticipation of the global football community, the mixed-media film captures the build-up to the tournament through the physical language of fandom, elevating everyday artifacts into cinematic storytelling devices. \"The goal was to mix live-action and animation craft to create one seamless story. \"For the live-action, everything was shot with a documentary-style sensibility, where the footage feels intentionally intimate and unpolished and the camera moves with immediacy and intent. \"Drawing on the expertise of knitting experts, enamel badge makers, stop-motion animators, and illustrator Dan Evans, each sequence combines traditional fabrication techniques with carefully crafted animation and illustration, weaving together live-action fan moments and animated worlds.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=3&pi=0&keyword=",
+        "vimeo_id": "1207188087",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID178:4",
+      "description": "Launched in 2025 by creatives from MPC and The Mill, London VFX shop The Perlin team with directors DOM&NIC on a clever feathery escape for Austrian banking giant Erste thru Jung Von Matt Donau. DOM&NIC: \"At its heart, the story is about determination, resilience, and the refusal to give up and we wanted to bring the audience along on that journey in the most entertaining, cinematic and emotionally involving way possible. \"We wanted the audience to empathize with the bird as a character, but never lose the sense that this is a real bird in a real cage.\" From The Perlin: \"One of the biggest challenges was keeping the character performance appealing without anthropomorphizing it. \"The animation had to stay grounded in behavior that felt believable and true to life, so the audience could enjoy the fantasy while also feeling it could really happen. \"To achieve this, the team closely studied real bird movement and built reference libraries to capture specific behaviors for each moment in the film. \"The key was shaping performance, intent and timing without breaking realism. \"This was supported by a bespoke feather system developed in Houdini, with hand-keyed animation driving the main body and wing performance. \"A particular challenge was creating seamless transitions between open and folded wings, solved through complex simulation that allowed the feathers to fold naturally into one another.\"",
+      "agency": "JUNG VON MATT DONAU",
+      "production_companies": [
+        "KAISERSCHNITT FILM"
+      ],
+      "campaign_published_at": "2026-07-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID178:4",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=4&pi=1&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "TVC"
+      ],
+      "primary_brand": "ERSTE GROUP BANK",
+      "brands": [
+        "ERSTE GROUP BANK"
+      ],
+      "campaign_title": "ERSTE BANK \"THE BIRD\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:14.893Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID178:4",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=4&pi=1&keyword=",
+          "source_asset_id": "1207188095",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:14.893Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1207188095",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1207188095",
+          "original_url": "https://player.vimeo.com/video/1207188095",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID178:4",
+        "fid": "3540",
+        "refnum": "VID178",
+        "clipnum": 4,
+        "pi": 1,
+        "issue": 178,
+        "issue_date_evidence": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "source_label": "STASH 178 JULY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID178"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "TVC :45",
+        "client": "ERSTE GROUP BANK",
+        "agency": "JUNG VON MATT DONAU",
+        "directors": [
+          "DOM&NIC"
+        ],
+        "production_companies": [
+          "KAISERSCHNITT FILM"
+        ],
+        "description": "Launched in 2025 by creatives from MPC and The Mill, London VFX shop The Perlin team with directors DOM&NIC on a clever feathery escape for Austrian banking giant Erste thru Jung Von Matt Donau. DOM&NIC: \"At its heart, the story is about determination, resilience, and the refusal to give up and we wanted to bring the audience along on that journey in the most entertaining, cinematic and emotionally involving way possible. \"We wanted the audience to empathize with the bird as a character, but never lose the sense that this is a real bird in a real cage.\" From The Perlin: \"One of the biggest challenges was keeping the character performance appealing without anthropomorphizing it. \"The animation had to stay grounded in behavior that felt believable and true to life, so the audience could enjoy the fantasy while also feeling it could really happen. \"To achieve this, the team closely studied real bird movement and built reference libraries to capture specific behaviors for each moment in the film. \"The key was shaping performance, intent and timing without breaking realism. \"This was supported by a bespoke feather system developed in Houdini, with hand-keyed animation driving the main body and wing performance. \"A particular challenge was creating seamless transitions between open and folded wings, solved through complex simulation that allowed the feathers to fold naturally into one another.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=4&pi=1&keyword=",
+        "vimeo_id": "1207188095",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID178:6",
+      "description": "ETC director Michael ‘Chappers' Chapman leans into his background in CG and love of technical illustration to deconstruct the new Lexus R3 electric SUV in obsessive detail while maintaining a sense of aspirational elegance. Michael ‘Chappers' Chapman: \"I wanted the film to be grounded in the real world: fantastical elements juxtaposed with believability. \"Most importantly – the RZ needed to remain a tangible, sellable asset. We scoured over 300 locations across Europe to get it right, casting actors who brought an easy elegance and charm. \"Ahead of the shoot, we worked on storyboards, first creating a board-o-matic for timing, and then moving into a world where I'm most comfortable – Pre-viz – to illustrate the intention of each shot. \"The movements needed to feel elegant and the transitions seamless, so we recced the real environment which allowed us to bring it into 3D and test out camera moves accurately pre-shoot. \"Having a clear plan helped streamline communication with cast and crew on set (and helped my anxiety not spike on my health tracker). \"Pre my career in VFX & CG, I did a degree in technical illustration. So, the mention of macro scenes and exploded views are akin to mentioning ice cream to a child in the height of summer. \"The challenge was to produce a film that mirrored the craft of the vehicle itself. Effortlessly poised, blending live action and VFX in a totally seamless way. Just how deconstructed should we go, whilst ensuring it wasn't visually noisy? \"This led us to the use of parallax. We minimized the perceived animated movement between parts, instead using the movement of the camera to expand and contract the car. Each shot required layering – whether it being live action, full CG, or a bit of both. \"We also worked on set extension, cleanup, CG environment enhancement, as well as beauty work to the car itself, ensuring perfect matches for true authenticity. \"Finally, we finessed the edit and graded the live action and CG shots together, which helped bring harmony to a really special film.\"",
+      "agency": "THE & PARTNERSHIP",
+      "production_companies": [
+        "HOGARTH WORLDWIDE"
+      ],
+      "campaign_published_at": "2026-07-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID178:6",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=6&pi=2&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "TVC"
+      ],
+      "primary_brand": "LEXUS",
+      "brands": [
+        "LEXUS"
+      ],
+      "campaign_title": "LEXUS RZ \"DETAILS\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:16.175Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID178:6",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=6&pi=2&keyword=",
+          "source_asset_id": "1207188123",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:16.175Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1207188123",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1207188123",
+          "original_url": "https://player.vimeo.com/video/1207188123",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID178:6",
+        "fid": "3540",
+        "refnum": "VID178",
+        "clipnum": 6,
+        "pi": 2,
+        "issue": 178,
+        "issue_date_evidence": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "source_label": "STASH 178 JULY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID178"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "TVC 1:06",
+        "client": "LEXUS",
+        "agency": "THE & PARTNERSHIP",
+        "directors": [
+          "MICHAEL ‘CHAPPERS' CHAPMAN"
+        ],
+        "production_companies": [
+          "HOGARTH WORLDWIDE"
+        ],
+        "description": "ETC director Michael ‘Chappers' Chapman leans into his background in CG and love of technical illustration to deconstruct the new Lexus R3 electric SUV in obsessive detail while maintaining a sense of aspirational elegance. Michael ‘Chappers' Chapman: \"I wanted the film to be grounded in the real world: fantastical elements juxtaposed with believability. \"Most importantly – the RZ needed to remain a tangible, sellable asset. We scoured over 300 locations across Europe to get it right, casting actors who brought an easy elegance and charm. \"Ahead of the shoot, we worked on storyboards, first creating a board-o-matic for timing, and then moving into a world where I'm most comfortable – Pre-viz – to illustrate the intention of each shot. \"The movements needed to feel elegant and the transitions seamless, so we recced the real environment which allowed us to bring it into 3D and test out camera moves accurately pre-shoot. \"Having a clear plan helped streamline communication with cast and crew on set (and helped my anxiety not spike on my health tracker). \"Pre my career in VFX & CG, I did a degree in technical illustration. So, the mention of macro scenes and exploded views are akin to mentioning ice cream to a child in the height of summer. \"The challenge was to produce a film that mirrored the craft of the vehicle itself. Effortlessly poised, blending live action and VFX in a totally seamless way. Just how deconstructed should we go, whilst ensuring it wasn't visually noisy? \"This led us to the use of parallax. We minimized the perceived animated movement between parts, instead using the movement of the camera to expand and contract the car. Each shot required layering – whether it being live action, full CG, or a bit of both. \"We also worked on set extension, cleanup, CG environment enhancement, as well as beauty work to the car itself, ensuring perfect matches for true authenticity. \"Finally, we finessed the edit and graded the live action and CG shots together, which helped bring harmony to a really special film.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=6&pi=2&keyword=",
+        "vimeo_id": "1207188123",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID178:13",
+      "description": "Brad Smith, producer at Magna Studios in Los Angeles: \"Channel 4 approached Magna to collaborate with Deadhorses (James Topley and Ivo Beckett), to create a film in the duo's distinctive visual style. \"The ambition was to create a trailer that captures the raw, unfiltered grit of the Women's FA Cup, with no gloss and no sugar coating. \"It leans into the passion, chaos, and spectacle of grassroots football, brought to life through Deadhorse's signature aesthetic of controlled visual disorder. \"The main creative challenge was balancing a raw, grungy look in a way that would still meet the requirements for television broadcast. It became a careful balancing act for both the Channel 4 creatives and Deadhorses. \"The film is built from archive material and footage captured at live games using mixed media, including an Arri SR2, Bolex, Canon XL1, Kodak FunSavers, iPhones, and Sony Handycam. \"One of the biggest challenges, beyond blending these different formats together, was capturing the intensity of a live game on film. \"Overall, the project ran for over three months, with one shoot in January, another in February, and post-production continuing through to mid-March. \"For the ball-on-fire shot, we had to build a fake pitch in the car park at Dulwich Hamlet FC. It was surprisingly difficult and time-consuming, especially given we were constructing it right next to an actual football field.\"",
+      "agency": "4CREATIVE",
+      "production_companies": [],
+      "campaign_published_at": "2026-07-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID178:13",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=13&pi=3&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "TVC"
+      ],
+      "primary_brand": "CHANNEL 4",
+      "brands": [
+        "CHANNEL 4"
+      ],
+      "campaign_title": "ADOBE WOMEN'S FA CUP \"PURE FOOTBALL\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:17.474Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID178:13",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=13&pi=3&keyword=",
+          "source_asset_id": "1207188527",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:17.474Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1207188527",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1207188527",
+          "original_url": "https://player.vimeo.com/video/1207188527",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID178:13",
+        "fid": "3540",
+        "refnum": "VID178",
+        "clipnum": 13,
+        "pi": 3,
+        "issue": 178,
+        "issue_date_evidence": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "source_label": "STASH 178 JULY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID178"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "TVC :60",
+        "client": "CHANNEL 4",
+        "agency": "4CREATIVE",
+        "directors": [
+          "IVO BECKETT"
+        ],
+        "production_companies": [],
+        "description": "Brad Smith, producer at Magna Studios in Los Angeles: \"Channel 4 approached Magna to collaborate with Deadhorses (James Topley and Ivo Beckett), to create a film in the duo's distinctive visual style. \"The ambition was to create a trailer that captures the raw, unfiltered grit of the Women's FA Cup, with no gloss and no sugar coating. \"It leans into the passion, chaos, and spectacle of grassroots football, brought to life through Deadhorse's signature aesthetic of controlled visual disorder. \"The main creative challenge was balancing a raw, grungy look in a way that would still meet the requirements for television broadcast. It became a careful balancing act for both the Channel 4 creatives and Deadhorses. \"The film is built from archive material and footage captured at live games using mixed media, including an Arri SR2, Bolex, Canon XL1, Kodak FunSavers, iPhones, and Sony Handycam. \"One of the biggest challenges, beyond blending these different formats together, was capturing the intensity of a live game on film. \"Overall, the project ran for over three months, with one shoot in January, another in February, and post-production continuing through to mid-March. \"For the ball-on-fire shot, we had to build a fake pitch in the car park at Dulwich Hamlet FC. It was surprisingly difficult and time-consuming, especially given we were constructing it right next to an actual football field.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=13&pi=3&keyword=",
+        "vimeo_id": "1207188527",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID178:19",
+      "description": null,
+      "agency": null,
+      "production_companies": [
+        "JOAN MORENO"
+      ],
+      "campaign_published_at": "2026-07-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID178:19",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=19&pi=4&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "Brand film"
+      ],
+      "primary_brand": "FUTUREFRANK",
+      "brands": [
+        "FUTUREFRANK"
+      ],
+      "campaign_title": "FUTUREFRANK \"ARTIFEX CREATURA\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:18.818Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID178:19",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=19&pi=4&keyword=",
+          "source_asset_id": "1207189161",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:18.818Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1207189161",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1207189161",
+          "original_url": "https://player.vimeo.com/video/1207189161",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID178:19",
+        "fid": "3540",
+        "refnum": "VID178",
+        "clipnum": 19,
+        "pi": 4,
+        "issue": 178,
+        "issue_date_evidence": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "source_label": "STASH 178 JULY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID178"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "Brand film :35",
+        "client": "FUTUREFRANK",
+        "agency": null,
+        "directors": [
+          "JOAN MORENO"
+        ],
+        "production_companies": [
+          "JOAN MORENO"
+        ],
+        "description": null,
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=19&pi=4&keyword=",
+        "vimeo_id": "1207189161",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID178:24",
+      "description": "Marie Vaillant, producer at Mathematic in Paris: \"Finch wanted its very first brand campaign to feel radically different from traditional wellness advertising. \"Instead of presenting an idealized or overly polished version of self-care, the goal was to create something emotionally honest, funny, strange, and deeply human — inspired by the real rituals people rely on to get through the day. \"The project embraced specificity, vulnerability, absurd humour, and warmth all at once, while remaining emotionally sincere and relatable. \"One big creative challenge was finding the right balance between emotional honesty and absurd comedy. \"The film constantly shifts between grounded moments and surreal situations, so every sequence needed to feel expressive and handcrafted without losing emotional authenticity. \"Another challenge was preserving spontaneity and humanity throughout the visuals. We intentionally avoided an overly polished aesthetic to maintain the film's warmth and personality. \"The entire film was crafted fully by hand with no AI involvement, which required a very collaborative and precise pipeline across all departments. \"Mathematic handled the complete fabrication of the film, including character animation, environments, lighting, FX, rendering, and compositing. \"The production followed a fully digital animation pipeline. Early storyboards and animatics were developed in Photoshop before moving into full CG production. \"Mathematic created the 3D animation and environments in Maya, while final compositing and finishing were completed in Flame. \"At a moment where many productions increasingly rely on generative workflows and automation, the team chose to animate and fabricate every frame manually. \"This human approach became central to the emotional quality of the film. The subtle imperfections, expressive performances, and tactile feeling of the animation all come directly from artists crafting the work by hand. \"Kirsten Lepore's sensibility also played a huge role in shaping the tone of the project, blending emotional vulnerability, absurd humour, and visual experimentation in a way that immediately resonated with the entire team.\"",
+      "agency": "WEIRWORK",
+      "production_companies": [
+        "PRETTYBIRD US"
+      ],
+      "campaign_published_at": "2026-07-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID178:24",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=24&pi=5&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "TVC"
+      ],
+      "primary_brand": "FINCH",
+      "brands": [
+        "FINCH"
+      ],
+      "campaign_title": "FINCH \"WHATEVER IT TAKES TO GET THROUGH THE DAY\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:20.099Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID178:24",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=24&pi=5&keyword=",
+          "source_asset_id": "1207189364",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:20.099Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1207189364",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1207189364",
+          "original_url": "https://player.vimeo.com/video/1207189364",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID178:24",
+        "fid": "3540",
+        "refnum": "VID178",
+        "clipnum": 24,
+        "pi": 5,
+        "issue": 178,
+        "issue_date_evidence": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "source_label": "STASH 178 JULY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID178"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "TVC :90",
+        "client": "FINCH",
+        "agency": "WEIRWORK",
+        "directors": [
+          "KIRSTEN LEPORE"
+        ],
+        "production_companies": [
+          "PRETTYBIRD US"
+        ],
+        "description": "Marie Vaillant, producer at Mathematic in Paris: \"Finch wanted its very first brand campaign to feel radically different from traditional wellness advertising. \"Instead of presenting an idealized or overly polished version of self-care, the goal was to create something emotionally honest, funny, strange, and deeply human — inspired by the real rituals people rely on to get through the day. \"The project embraced specificity, vulnerability, absurd humour, and warmth all at once, while remaining emotionally sincere and relatable. \"One big creative challenge was finding the right balance between emotional honesty and absurd comedy. \"The film constantly shifts between grounded moments and surreal situations, so every sequence needed to feel expressive and handcrafted without losing emotional authenticity. \"Another challenge was preserving spontaneity and humanity throughout the visuals. We intentionally avoided an overly polished aesthetic to maintain the film's warmth and personality. \"The entire film was crafted fully by hand with no AI involvement, which required a very collaborative and precise pipeline across all departments. \"Mathematic handled the complete fabrication of the film, including character animation, environments, lighting, FX, rendering, and compositing. \"The production followed a fully digital animation pipeline. Early storyboards and animatics were developed in Photoshop before moving into full CG production. \"Mathematic created the 3D animation and environments in Maya, while final compositing and finishing were completed in Flame. \"At a moment where many productions increasingly rely on generative workflows and automation, the team chose to animate and fabricate every frame manually. \"This human approach became central to the emotional quality of the film. The subtle imperfections, expressive performances, and tactile feeling of the animation all come directly from artists crafting the work by hand. \"Kirsten Lepore's sensibility also played a huge role in shaping the tone of the project, blending emotional vulnerability, absurd humour, and visual experimentation in a way that immediately resonated with the entire team.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=24&pi=5&keyword=",
+        "vimeo_id": "1207189364",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID177:1",
+      "description": "The non-playable characters of the gaming world finally have their day as one of them breaks free in this Coinbase spot by MJZ director Oscar Hudson, which aired during the Academy Awards. Instead of replicating the low-poly look of the retro gaming characters in 3D, Hudson chose to suit up actors in highly convincing costumes and work with French choreographer Maeva Berthelot to refine their quirky motion and walk cycles. Toby Treyer-Evans, founder at Isle of Any: \"It felt important to allow the viewer to see themselves as that player in the middle of the screen. \"We wanted it to feel like a nod to the old world of video games, representing an old system, but also modern enough that you could relate to it in today's world. \"The attention to detail from a production perspective was incredible. \"Every suit button, lapel, and texture was 2D printed directly onto the suits; the sets were printed in a pixelated way, and each actor was trained to walk like a game character. \"It led to a world that felt entirely like a game, but with real humans walking around.\"",
+      "agency": "ISLE OF ANY",
+      "production_companies": [
+        "MJZ"
+      ],
+      "campaign_published_at": "2026-05-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID177:1",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=1&pi=6&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "TVC"
+      ],
+      "primary_brand": "COINBASE",
+      "brands": [
+        "COINBASE"
+      ],
+      "campaign_title": "COINBASE \"YOUR WAY OUT OF THEIR SYSTEM\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:21.375Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID177:1",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=1&pi=6&keyword=",
+          "source_asset_id": "1190793709",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:21.375Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1190793709",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1190793709",
+          "original_url": "https://player.vimeo.com/video/1190793709",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID177:1",
+        "fid": "3540",
+        "refnum": "VID177",
+        "clipnum": 1,
+        "pi": 6,
+        "issue": 177,
+        "issue_date_evidence": {
+          "value": "2026-05-15",
+          "precision": "day",
+          "source_label": "STASH 177 MAY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID177"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "TVC 2:09",
+        "client": "COINBASE",
+        "agency": "ISLE OF ANY",
+        "directors": [
+          "OSCAR HUDSON"
+        ],
+        "production_companies": [
+          "MJZ"
+        ],
+        "description": "The non-playable characters of the gaming world finally have their day as one of them breaks free in this Coinbase spot by MJZ director Oscar Hudson, which aired during the Academy Awards. Instead of replicating the low-poly look of the retro gaming characters in 3D, Hudson chose to suit up actors in highly convincing costumes and work with French choreographer Maeva Berthelot to refine their quirky motion and walk cycles. Toby Treyer-Evans, founder at Isle of Any: \"It felt important to allow the viewer to see themselves as that player in the middle of the screen. \"We wanted it to feel like a nod to the old world of video games, representing an old system, but also modern enough that you could relate to it in today's world. \"The attention to detail from a production perspective was incredible. \"Every suit button, lapel, and texture was 2D printed directly onto the suits; the sets were printed in a pixelated way, and each actor was trained to walk like a game character. \"It led to a world that felt entirely like a game, but with real humans walking around.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=1&pi=6&keyword=",
+        "vimeo_id": "1190793709",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID177:4",
+      "description": "Mikołaj Błoński, Managing Director & EP at BluBlu Studios in Kraków, Poland: \"WWF needed a hero film for their Nature Needs Us Now campaign, an urgent public call to action around nature conservation. \"The brief was built around a poem written and performed by WWF-US CEO Carter Roberts, which gave the project an unusually personal foundation from the start. \"The studio was given creative latitude to find an artistic form that matched the sincerity and emotional directness of the text. \"The central challenge was honouring the intimacy of Carter Roberts' voice and words without over-producing the piece. \"The temptation in campaign work is to reach for polish, but here, restraint was the craft. The team needed to find an aesthetic that felt genuinely human and tactile, not decorative. \"Working with London-based director Natasza Cetner, whose process centres on pencil and crayon drawings on paper, helped anchor that instinct. \"Protecting the analogue quality throughout the production pipeline — from scan to final delivery — without losing the texture and imperfection that made it work, required constant editorial discipline. \"We wouldn't frame this as a technical challenge, but finding the right medium to carry this particular message was a genuinely interesting creative exercise. \"In an era increasingly saturated with AI-generated visuals, the choice to work with pencil and crayon on paper felt both deliberate and necessary. \"The analogue process isn't a stylistic flourish here, it's the argument. The imperfections, the texture, and the hand of the artist are precisely what give the film its credibility and emotional weight. \"The music, composed by Jakub Tokarczyk and built around kalimba, woodblocks, and shakers, was chosen specifically to stay in the same register as the visuals: grounded, natural, unforced. The film is designed to be felt as much as watched.\"",
+      "agency": null,
+      "production_companies": [
+        "BLUBLU STUDIOS"
+      ],
+      "campaign_published_at": "2026-05-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID177:4",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=4&pi=7&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "Brand film"
+      ],
+      "primary_brand": "WORLD WILDLIFE FUND",
+      "brands": [
+        "WORLD WILDLIFE FUND"
+      ],
+      "campaign_title": "WWF \"NATURE NEEDS US NOW\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:22.652Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID177:4",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=4&pi=7&keyword=",
+          "source_asset_id": "1190793878",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:22.652Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1190793878",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1190793878",
+          "original_url": "https://player.vimeo.com/video/1190793878",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID177:4",
+        "fid": "3540",
+        "refnum": "VID177",
+        "clipnum": 4,
+        "pi": 7,
+        "issue": 177,
+        "issue_date_evidence": {
+          "value": "2026-05-15",
+          "precision": "day",
+          "source_label": "STASH 177 MAY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID177"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "Brand film :50",
+        "client": "WORLD WILDLIFE FUND",
+        "agency": null,
+        "directors": [
+          "NATASZA CETNER"
+        ],
+        "production_companies": [
+          "BLUBLU STUDIOS"
+        ],
+        "description": "Mikołaj Błoński, Managing Director & EP at BluBlu Studios in Kraków, Poland: \"WWF needed a hero film for their Nature Needs Us Now campaign, an urgent public call to action around nature conservation. \"The brief was built around a poem written and performed by WWF-US CEO Carter Roberts, which gave the project an unusually personal foundation from the start. \"The studio was given creative latitude to find an artistic form that matched the sincerity and emotional directness of the text. \"The central challenge was honouring the intimacy of Carter Roberts' voice and words without over-producing the piece. \"The temptation in campaign work is to reach for polish, but here, restraint was the craft. The team needed to find an aesthetic that felt genuinely human and tactile, not decorative. \"Working with London-based director Natasza Cetner, whose process centres on pencil and crayon drawings on paper, helped anchor that instinct. \"Protecting the analogue quality throughout the production pipeline — from scan to final delivery — without losing the texture and imperfection that made it work, required constant editorial discipline. \"We wouldn't frame this as a technical challenge, but finding the right medium to carry this particular message was a genuinely interesting creative exercise. \"In an era increasingly saturated with AI-generated visuals, the choice to work with pencil and crayon on paper felt both deliberate and necessary. \"The analogue process isn't a stylistic flourish here, it's the argument. The imperfections, the texture, and the hand of the artist are precisely what give the film its credibility and emotional weight. \"The music, composed by Jakub Tokarczyk and built around kalimba, woodblocks, and shakers, was chosen specifically to stay in the same register as the visuals: grounded, natural, unforced. The film is designed to be felt as much as watched.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=4&pi=7&keyword=",
+        "vimeo_id": "1190793878",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    },
+    {
+      "schema_version": "source-video-record-v1",
+      "campaign_id": "stash:VID177:7",
+      "description": "Netherlands-based designer-director duo HyperCulture set a relentlessly snappy pace in this many-layered product film showcasing the newest features of Adobe's Acrobat suite. Produced by Psyop through agency 72&Sunny. Luis Roca, lead animator for Psyop: \"We positioned the Acrobat interface as both the focal point and the driving force of the story, while rhythmic audio chants bring energy and flow. \"Visual inputs unfold into final layouts, with key moments linking sound and image to highlight the transformation from input to expressive outcome. \"A range of animation approaches and visual aesthetics were explored to define the tempo, mood, and overall look and feel of the pitch. \"Early tests focused on rhythm, transitions, and motion styles to see how each direction shifted the energy of the story.\"",
+      "agency": "72&SUNNY",
+      "production_companies": [
+        "PSYOP"
+      ],
+      "campaign_published_at": "2026-05-15",
+      "source_uploaded_at": null,
+      "canonical_master_id": null,
+      "review_status": "pending_review",
+      "approved": false,
+      "core_template_eligible": false,
+      "genres": [],
+      "source_site": "stash",
+      "source_record_id": "VID177:7",
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=7&pi=9&keyword=",
+      "source_categories": [
+        "Advertising: All"
+      ],
+      "source_industries": [],
+      "source_medium_types": [
+        "Brand film"
+      ],
+      "primary_brand": "ADOBE",
+      "brands": [
+        "ADOBE"
+      ],
+      "campaign_title": "ADOBE \"DO THAT WITH ACROBAT\"",
+      "country": null,
+      "publish_date_source": "stash_issue_date",
+      "publish_date_confidence": "confirmed",
+      "campaign_year_status": "confirmed_2026",
+      "collected_at": "2026-08-21T07:52:25.201Z",
+      "record_state": "pending_video",
+      "classification_candidate": {
+        "industry": null,
+        "product_category": null,
+        "status": "pending_category_review",
+        "confidence": 0,
+        "evidence": [
+          "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+        ],
+        "alternatives": [
+          {
+            "industry": null,
+            "product_category": null,
+            "confidence": 0,
+            "evidence": [
+              "STASH playlist proves advertising scope only; 10-frame visual evidence is required for industry and product category."
+            ]
+          }
+        ]
+      },
+      "source_refs": [
+        {
+          "source_site": "stash",
+          "source_record_id": "VID177:7",
+          "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=7&pi=9&keyword=",
+          "source_asset_id": "1190793974",
+          "relation": "primary",
+          "collected_at": "2026-08-21T07:52:25.201Z"
+        }
+      ],
+      "media_assets": [
+        {
+          "asset_id": "1190793974",
+          "media_type": "video",
+          "provider": "hls",
+          "source_asset_id": "1190793974",
+          "original_url": "https://player.vimeo.com/video/1190793974",
+          "playback_url": null,
+          "thumbnail_url": null,
+          "duration_seconds": null,
+          "width": null,
+          "height": null,
+          "aspect_ratio": null,
+          "access_status": "unchecked",
+          "checked_at": null,
+          "expires_at": null,
+          "locator_is_temporary": false,
+          "contact_sheet_path": null,
+          "contact_sheet_status": "pending",
+          "failure_reason": null
+        }
+      ],
+      "raw_source": {
+        "stable_source_key": "stash:VID177:7",
+        "fid": "3540",
+        "refnum": "VID177",
+        "clipnum": 7,
+        "pi": 9,
+        "issue": 177,
+        "issue_date_evidence": {
+          "value": "2026-05-15",
+          "precision": "day",
+          "source_label": "STASH 177 MAY 15/26",
+          "source_url": "https://www.stashmedia.tv/issue/?refnum=VID177"
+        },
+        "source_playlist": "Advertising: All",
+        "raw_type": "Brand film :30",
+        "client": "ADOBE",
+        "agency": "72&SUNNY",
+        "directors": [
+          "HYPERCULTURE"
+        ],
+        "production_companies": [
+          "PSYOP"
+        ],
+        "description": "Netherlands-based designer-director duo HyperCulture set a relentlessly snappy pace in this many-layered product film showcasing the newest features of Adobe's Acrobat suite. Produced by Psyop through agency 72&Sunny. Luis Roca, lead animator for Psyop: \"We positioned the Acrobat interface as both the focal point and the driving force of the story, while rhythmic audio chants bring energy and flow. \"Visual inputs unfold into final layouts, with key moments linking sound and image to highlight the transformation from input to expressive outcome. \"A range of animation approaches and visual aesthetics were explored to define the tempo, mood, and overall look and feel of the pitch. \"Early tests focused on rhythm, transitions, and motion styles to see how each direction shifted the energy of the story.\"",
+        "detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=7&pi=9&keyword=",
+        "vimeo_id": "1190793974",
+        "signed_media_url_persisted": false,
+        "download_status": "not_observed",
+        "media_delivery_status": "resolver_gate_passed_item_refresh_pending"
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "source_record_id": "VID178:3",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:13.608Z"
+    },
+    {
+      "source_record_id": "VID178:4",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:14.893Z"
+    },
+    {
+      "source_record_id": "VID178:6",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:16.175Z"
+    },
+    {
+      "source_record_id": "VID178:13",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:17.474Z"
+    },
+    {
+      "source_record_id": "VID178:19",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:18.818Z"
+    },
+    {
+      "source_record_id": "VID178:24",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:20.099Z"
+    },
+    {
+      "source_record_id": "VID177:1",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:21.375Z"
+    },
+    {
+      "source_record_id": "VID177:4",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:22.652Z"
+    },
+    {
+      "source_record_id": "VID177:6",
+      "status": "skipped",
+      "reason": "spec_work",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:23.927Z"
+    },
+    {
+      "source_record_id": "VID177:7",
+      "status": "success",
+      "reason": "trial_completion_pending",
+      "attempts": 1,
+      "recorded_at": "2026-08-21T07:52:25.201Z"
+    }
+  ],
   "runs": [
     {
       "started_at": "2026-08-20T14:07:00.255Z",
@@ -90,6 +1337,46 @@
       "detail_pages_visited": 0,
       "list_pages_visited": 0,
       "stop_reason": "collector_proxy_unavailable:ECONNREFUSED_3456"
+    },
+    {
+      "started_at": "2026-08-21T07:51:53.992Z",
+      "finished_at": "2026-08-21T07:52:25.203Z",
+      "dry_run": false,
+      "phase": "details",
+      "discovered": 10,
+      "success": 9,
+      "skipped": 1,
+      "failed": 0,
+      "retried": 0,
+      "detail_pages_visited": 10,
+      "list_pages_visited": 1,
+      "stop_reason": "trial_recovery_incomplete"
+    }
+  ],
+  "recovery_batches": [
+    {
+      "batch": 4,
+      "authorization": "user_authorized_fixed_original_ten_only",
+      "selection_policy": "fixed_original_ten_no_replacement",
+      "source_keys": [
+        "stash:VID178:3",
+        "stash:VID178:4",
+        "stash:VID178:6",
+        "stash:VID178:13",
+        "stash:VID178:19",
+        "stash:VID178:24",
+        "stash:VID177:1",
+        "stash:VID177:4",
+        "stash:VID177:6",
+        "stash:VID177:7"
+      ],
+      "started_at": "2026-08-21T07:51:53.993Z",
+      "finished_at": "2026-08-21T07:52:25.203Z",
+      "status": "stopped",
+      "success": 9,
+      "skipped": 1,
+      "failed": 0,
+      "stop_reason": "trial_recovery_incomplete"
     }
   ]
 }

@@ -49,3 +49,19 @@ test("surfaces the incomplete zero-record STASH trial state in the platform filt
     "STASH 当前 0 条可审核视频：10/10 媒体解析已通过；详情、10 帧、去重、导入与侧栏验收尚未完成，暂不扩量。详情见“方法论记录”。",
   );
 });
+
+test("marks unresolved STASH HLS for automatic resolver refresh", async () => {
+  const { mediaNeedsRefresh } = await loadReviewUiModule();
+  assert.equal(mediaNeedsRefresh({
+    source_site: "stash",
+    media_provider: "hls",
+    playback_url: null,
+  }), true);
+  assert.equal(mediaNeedsRefresh({
+    source_site: "stash",
+    media_provider: "hls",
+    playback_url: "https://skyfire.vimeocdn.com/video/fixture/playlist.m3u8",
+    media_access_status: "temporary",
+    media_expires_at: "2099-01-01T00:00:00.000Z",
+  }), false);
+});

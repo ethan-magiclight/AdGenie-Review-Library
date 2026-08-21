@@ -14,10 +14,19 @@
 
 ## TRIAL_COMPLETION_BLOCKED（2026-08-21）
 
-- 媒体解析门已通过，但完整 10 条试采还要求详情终态、真实 10 帧 Contact Sheet、人工视觉候选、跨源 canonical linking、增量导入和侧栏播放/下载验收；这些步骤尚未完成，STASH 必须保持 0 条。
-- 任务规矩限定最多 3 个详情采集批次，历史记录已确认 3 批耗尽；未获得明确扩展授权前，不得启动第 4 个详情批次。
-- 审核台端到端 `/api/videos/:id/media` 接线需要修改 `web/server.mjs`，但它不在任务白名单；resolver library 与 10/10 实测不能冒充 API 已接通。
-- 继续所需的最小用户授权是：允许第 4 个、且仅一个固定 10 条详情恢复批次；把 `web/server.mjs` 加入可修改白名单。授权前仍可维护证据和运行不改变采集状态的本地门禁，但不能完成试采、扩到 100 或宣称目标完成。
+### AUTHORIZATION_RESOLVED（2026-08-21）
+
+- 用户已明确允许第 4 个、且仅一个固定原 10 条详情恢复批次，并将 `web/server.mjs` 加入本任务白名单。
+- 本次授权只覆盖完成既定 10 条试采所需的详情恢复与审核台媒体 API 接线；不允许第 5 批、不允许替换样本、不允许绕过 `Subscription required`，也不自动授权扩量到 100 条。
+- 采集器必须使用一次性 `--trial-recovery --phase details --max-details 10`，且在任何 STASH 页面操作前把 batch 4 写入 canonical checkpoint；无论成功或失败都不得重跑。
+
+### FIXED_TEN_TRIAL_FAILED（2026-08-21）
+
+- 唯一授权的第 4 批已经执行并被一次性 checkpoint 锁消耗；固定 10 条详情结果为 `success=9 / skipped=1 / failed=0`，batch 状态为 `stopped`，`stop_reason=trial_recovery_incomplete`，命令退出码 1。
+- 被排除的固定样本是 `VID177:6 / GUCCI "THE ALCHEMISTS GARDEN"`；Advertising playlist 原始类型明确为 `Brand film 1:16 (spec)`。任务书规定 spec 必须形成 `skipped`，因此不能把它改成 success、不能降低门禁，也不能用第 11 条静默替换。
+- 当前授权明确不允许第 5 批或替换样本，因此完整 10 条试采无法继续。按“事实与授权安全 > 数量”停止 Contact Sheet、人工视觉、去重、导入和扩量；审核台保持 STASH=0，基线保持 843 videos / 118 review_events。
+- `web/server.mjs` 白名单与 API 接线授权已经落实；STASH HLS 的请求时 resolver、缓存和前端自动刷新测试全绿，但在 10 条数据门失败时不把 9 条不完整试采导入来冒充端到端完成。
+- 若要继续，必须另行明确授权：允许用一条满足 Advertising、2025/2026、非 spec 的候选替换 `VID177:6`，并允许一个只处理该替代条目的新增详情批次。当前授权不包含这两项。
 
 ## CHROME_CDP_RESOLVED（2026-08-20）
 

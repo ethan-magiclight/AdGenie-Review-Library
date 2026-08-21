@@ -1,3 +1,4 @@
+import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -16,12 +17,19 @@ import {
 const collectRoot = path.dirname(fileURLToPath(import.meta.url));
 const runRoot = path.join(collectRoot, "runs", "stash-2025-2026");
 const selfTestMode = process.argv.includes("--self-test");
-const args = parseCollectorArgs(process.argv.slice(2).filter((item) => item !== "--self-test"), {
+const trialRecoveryMode = process.argv.includes("--trial-recovery");
+const args = parseCollectorArgs(process.argv.slice(2).filter((item) => !new Set(["--self-test", "--trial-recovery"]).has(item)), {
   checkpoint: path.join(runRoot, "checkpoint.json"),
   output: path.join(runRoot, "records.json"),
 });
+if (trialRecoveryMode && (args.phase !== "details" || args.maxDetails !== 10 || args.dryRun)) {
+  throw new Error("--trial-recovery requires --phase details --max-details 10 and cannot be a dry run");
+}
+if (trialRecoveryMode && (args.checkpoint !== path.join(runRoot, "checkpoint.json") || args.output !== path.join(runRoot, "records.json"))) {
+  throw new Error("--trial-recovery must use the canonical STASH checkpoint and output paths");
+}
 if (args.help) {
-  console.log(`${collectorUsage("collect-stash.mjs")} [--self-test]`);
+  console.log(`${collectorUsage("collect-stash.mjs")} [--self-test] [--trial-recovery]`);
   process.exit(0);
 }
 
@@ -55,17 +63,74 @@ const scope = {
   allowed_types: ["TVC", "Brand film", "Product film"],
   media_delivery_gate: "MEDIA_RESOLVER_GATE_PASSED",
 };
+const mediaResolverGatePath = path.join(runRoot, "media-resolver-gate.json");
+const fixedTrialRecovery = [
+  ["VID178", 3],
+  ["VID178", 4],
+  ["VID178", 6],
+  ["VID178", 13],
+  ["VID178", 19],
+  ["VID178", 24],
+  ["VID177", 1],
+  ["VID177", 4],
+  ["VID177", 6],
+  ["VID177", 7],
+].map(([refnum, clipnum]) => ({
+  refnum,
+  clipnum,
+  source_record_id: `${refnum}:${clipnum}`,
+  source_key: stableSourceKey(refnum, clipnum),
+}));
 
 const listExpression = `JSON.stringify((()=>{const text=document.body?.innerText||"";const total=Number(text.match(/([0-9,]+) videos/i)?.[1]?.replaceAll(",","")||0);const rows=[...document.querySelectorAll(".collection-playlist a[href*='refnum'][href*='clipnum']")].map(a=>{try{const url=new URL(a.href,location.href);const refnum=url.searchParams.get("refnum");const clipnum=url.searchParams.get("clipnum");const pi=url.searchParams.get("pi");if(!refnum||!clipnum||pi===null)return null;url.hash="";const lines=(a.innerText||a.textContent||"").split(/\\n+/).map(x=>x.trim()).filter(Boolean);return {source_record_id:refnum+":"+clipnum,source_detail_url:url.href,refnum,clipnum:Number(clipnum),pi:Number(pi),fid:url.searchParams.get("fid"),listing_title:lines[0]||null,listing_raw_type:lines.slice(1).join(" ")||null}}catch{return null}}).filter(Boolean);const maxPi=Math.max(-1,...rows.map(row=>row.pi));const items=[...new Map(rows.map(row=>[row.source_record_id,row])).values()];return {title:document.title,total,raw_links:rows.length,max_pi:maxPi,items,unique_candidates:items.length,ready:document.readyState==="complete"&&total>0&&maxPi>=0&&items.length>0}})())`;
 
 function detailExpression(candidate) {
   const expectedIssue = Number(candidate.refnum.replace(/^VID/i, ""));
   const expectedClip = Number(candidate.clipnum);
-  return `JSON.stringify((()=>{const q=s=>document.querySelector(s);const name=(q("#name_div")?.innerText||"").trim();const nameMatch=name.match(/STASH\\s+(\\d+)\\.(\\d+)/i);const expectedMatch=Boolean(nameMatch)&&Number(nameMatch[1])===${expectedIssue}&&Number(nameMatch[2])===${expectedClip};const titleLines=(q("#title_div")?.innerText||"").split(/\\n+/).map(x=>x.trim()).filter(Boolean);const copy=q("#copy_div");const lines=(copy?.innerText||"").split(/\\n+/).map(x=>x.trim()).filter(Boolean);const valueAfter=labels=>{const index=lines.findIndex(line=>labels.includes(line));return index>=0?lines[index+1]||null:null};const client=valueAfter(["Client"]);const agency=valueAfter(["Agency"]);const director=valueAfter(["Director","Directors"]);const production=valueAfter(["Production / Animation","Production","Animation"]);let description=null;const start=copy?.querySelector(".summary-start");const finish=copy?.querySelector(".summary-finish");if(copy&&start){const range=document.createRange();range.setStartAfter(start);if(finish)range.setEndBefore(finish);else range.setEndAfter(copy.lastChild);const holder=document.createElement("div");holder.append(range.cloneContents());description=(holder.innerText||holder.textContent||"").replace(/\\s+/g," ").trim()||null}const video=q("#video")||q("video");const source=video?(video.currentSrc||video.src||video.querySelector("source")?.src||""):"";let vimeoId=null;let mediaQueryKeys=[];try{const mediaUrl=new URL(source);vimeoId=mediaUrl.pathname.match(/playback\\/(\\d+)/)?.[1]||null;mediaQueryKeys=[...mediaUrl.searchParams.keys()].sort()}catch{}let thumbnail=null;try{const poster=new URL(video?.poster||"");thumbnail=poster.origin+poster.pathname}catch{}const body=document.body?.innerText||"";return {ready:expectedMatch&&titleLines.length>0&&Boolean(copy),expected_match:expectedMatch,name,campaign_title:titleLines[0]||null,raw_type:titleLines.slice(1).join(" ")||null,client,agency,directors:director?[director]:[],production_companies:production?[production]:[],description,vimeo_id:vimeoId,media_query_keys:mediaQueryKeys,thumbnail_url:thumbnail,download_required:body.includes("Download - Subscription required")}})())`;
+  return `JSON.stringify((()=>{const q=s=>document.querySelector(s);const name=(q("#name_div")?.innerText||"").trim();const nameMatch=name.match(/STASH\\s+(\\d+)\\.(\\d+)/i);const expectedMatch=Boolean(nameMatch)&&Number(nameMatch[1])===${expectedIssue}&&Number(nameMatch[2])===${expectedClip};const titleLines=(q("#title_div")?.innerText||"").split(/\\n+/).map(x=>x.trim()).filter(Boolean);const copy=q("#copy_div");const lines=(copy?.innerText||"").split(/\\n+/).map(x=>x.trim()).filter(Boolean);const valueAfter=labels=>{const index=lines.findIndex(line=>labels.includes(line));return index>=0?lines[index+1]||null:null};const client=valueAfter(["Client"]);const agency=valueAfter(["Agency"]);const director=valueAfter(["Director","Directors"]);const production=valueAfter(["Production / Animation","Production","Animation"]);let description=null;const start=copy?.querySelector(".summary-start");const finish=copy?.querySelector(".summary-finish");if(copy&&start){const range=document.createRange();range.setStartAfter(start);if(finish)range.setEndBefore(finish);else range.setEndAfter(copy.lastChild);const holder=document.createElement("div");holder.append(range.cloneContents());description=(holder.innerText||holder.textContent||"").replace(/\\s+/g," ").trim()||null}const video=[...document.querySelectorAll("video")].find(item=>!item.closest("#btsplayer,.bts-html5-video-container"))||null;const source=video?(video.currentSrc||video.src||video.querySelector("source")?.src||""):"";let vimeoId=null;let mediaQueryKeys=[];try{const mediaUrl=new URL(source);vimeoId=mediaUrl.pathname.match(/playback\\/(\\d+)/)?.[1]||null;mediaQueryKeys=[...mediaUrl.searchParams.keys()].sort()}catch{}let thumbnail=null;try{const poster=new URL(video?.poster||"");thumbnail=poster.origin+poster.pathname}catch{}const body=document.body?.innerText||"";return {ready:expectedMatch&&titleLines.length>0&&Boolean(copy)&&Boolean(vimeoId),expected_match:expectedMatch,name,campaign_title:titleLines[0]||null,raw_type:titleLines.slice(1).join(" ")||null,client,agency,directors:director?[director]:[],production_companies:production?[production]:[],description,vimeo_id:vimeoId,media_query_keys:mediaQueryKeys,thumbnail_url:thumbnail,download_required:body.includes("Download - Subscription required")}})())`;
 }
 
 function stableSourceKey(refnum, clipnum) {
   return `stash:${refnum}:${Number(clipnum)}`;
+}
+
+async function fixedRecoveryGate() {
+  const gate = JSON.parse(await fs.readFile(mediaResolverGatePath, "utf8"));
+  const expectedKeys = fixedTrialRecovery.map((item) => item.source_key);
+  const actualKeys = (gate.items || []).map((item) => item.source_key);
+  const valid = gate.result === "passed"
+    && gate.selection_policy === "fixed_original_ten_no_replacement"
+    && gate.attempted === 10
+    && gate.passed === 10
+    && gate.failed === 0
+    && gate.temporary_urls_persisted === false
+    && gate.subscription_download_used === false
+    && JSON.stringify(actualKeys) === JSON.stringify(expectedKeys)
+    && (gate.items || []).every((item) => /^\d{6,}$/.test(String(item.vimeo_id || "")) && item.hls === true);
+  if (!valid) throw new Error("Fixed STASH 10-item media resolver gate is missing or does not match the authorized batch");
+  const ids = new Map(gate.items.map((item) => [item.source_key, String(item.vimeo_id)]));
+  return fixedTrialRecovery.map((item) => ({ ...item, expected_vimeo_id: ids.get(item.source_key) }));
+}
+
+function selectFixedRecoveryCandidates(items, authorizedItems) {
+  const discovered = new Map(items.map((item) => [stableSourceKey(item.refnum, item.clipnum), item]));
+  const selected = authorizedItems.map((authorized) => {
+    const candidate = discovered.get(authorized.source_key);
+    if (!candidate) throw new Error(`Authorized STASH detail is absent from the initialized playlist: ${authorized.source_key}`);
+    return { ...candidate, expected_vimeo_id: authorized.expected_vimeo_id };
+  });
+  if (new Set(selected.map((item) => item.source_record_id)).size !== 10) {
+    throw new Error("Authorized STASH detail recovery did not resolve to 10 unique records");
+  }
+  return selected;
+}
+
+function clickDetailExpression(candidate) {
+  return `JSON.stringify((()=>{const anchor=[...document.querySelectorAll(".collection-playlist a[href*='refnum'][href*='clipnum']")].find(a=>{try{const url=new URL(a.href,location.href);return url.searchParams.get("refnum")===${JSON.stringify(candidate.refnum)}&&Number(url.searchParams.get("clipnum"))===${Number(candidate.clipnum)}}catch{return false}});if(anchor)anchor.click();return {clicked:Boolean(anchor)}})())`;
+}
+
+function recoveryRunPassed(run, stopReason) {
+  return !stopReason && run.success === 10 && run.skipped === 0 && run.failed === 0;
 }
 
 function issueEvidence(candidate) {
@@ -163,7 +228,6 @@ function detailRecord(candidate, detail, mapping) {
       description: detail.description,
       detail_url: candidate.source_detail_url,
       vimeo_id: detail.vimeo_id,
-      media_query_keys: detail.media_query_keys || [],
       signed_media_url_persisted: false,
       download_status: detail.download_required ? "subscription_required" : "not_observed",
       media_delivery_status: "resolver_gate_passed_item_refresh_pending",
@@ -175,6 +239,16 @@ function runSelfTest() {
   const candidate = { refnum: "VID178", clipnum: 3, listing_raw_type: "TVC :51" };
   const validDetail = { raw_type: "TVC :51", client: "BBC", vimeo_id: "1207188087" };
   const specDetail = { ...validDetail, raw_type: "Brand film 1:16 (spec)" };
+  const authorized = fixedTrialRecovery.map((item, index) => ({ ...item, expected_vimeo_id: String(1200000000 + index) }));
+  const fixedSelection = selectFixedRecoveryCandidates(
+    [...authorized].reverse().map((item) => ({
+      refnum: item.refnum,
+      clipnum: item.clipnum,
+      source_record_id: item.source_record_id,
+      source_detail_url: `https://www.stashmedia.tv/playlist-flash/?refnum=${item.refnum}&clipnum=${item.clipnum}`,
+    })),
+    authorized,
+  );
   const cases = [
     {
       case: "stable_source_key",
@@ -201,6 +275,20 @@ function runSelfTest() {
       passed: detailDecision(candidate, validDetail).status === "success"
         && detailDecision(candidate, validDetail).reason === "trial_completion_pending",
     },
+    {
+      case: "fixed_ten_recovery_preserves_authorized_order_and_ids",
+      red: { count: 0, policy: "replacement_allowed" },
+      green: { count: fixedSelection.length, policy: "fixed_original_ten_no_replacement" },
+      passed: fixedSelection.length === 10
+        && fixedSelection.every((item, index) => item.source_record_id === authorized[index].source_record_id
+          && item.expected_vimeo_id === authorized[index].expected_vimeo_id),
+    },
+    {
+      case: "fixed_ten_recovery_rejects_policy_skip_as_incomplete",
+      red: { ok: true, success: 9, skipped: 1 },
+      green: { ok: recoveryRunPassed({ success: 9, skipped: 1, failed: 0 }, "trial_recovery_incomplete") },
+      passed: recoveryRunPassed({ success: 9, skipped: 1, failed: 0 }, "trial_recovery_incomplete") === false,
+    },
   ];
   return { ok: cases.every((item) => item.passed), red_to_green: cases };
 }
@@ -212,8 +300,56 @@ async function run() {
   const browser = new BrowserSession(args.proxy, args.delayMs);
   await store.load();
   let stopReason = null;
+  let recoveryEntry = null;
+  let authorizedItems = null;
+  if (trialRecoveryMode) {
+    authorizedItems = await fixedRecoveryGate();
+    store.state.recovery_batches ||= [];
+    if (store.state.recovery_batches.some((item) => item.batch === 4)) {
+      throw new Error("STASH detail recovery batch 4 is already recorded and cannot be rerun");
+    }
+    store.state.scope = scope;
+    recoveryEntry = {
+      batch: 4,
+      authorization: "user_authorized_fixed_original_ten_only",
+      selection_policy: "fixed_original_ten_no_replacement",
+      source_keys: authorizedItems.map((item) => item.source_key),
+      started_at: new Date().toISOString(),
+      finished_at: null,
+      status: "started",
+      success: 0,
+      skipped: 0,
+      failed: 0,
+    };
+    store.state.recovery_batches.push(recoveryEntry);
+    await store.save();
+  }
   try {
-    if (args.phase !== "details" && !store.state.discovery.complete) {
+    if (trialRecoveryMode) {
+      const page = await withRetries(async () => {
+        await browser.navigate(scope.discovery_url);
+        return browser.evaluateUntil(listExpression, (parsed) => parsed.ready, 30000);
+      }, args.retry, async (retryNumber) => {
+        store.run.retried += 1;
+        await browser.pause(retryNumber + 1);
+      });
+      const selected = selectFixedRecoveryCandidates(page.items, authorizedItems);
+      store.state.discovery.candidates = selected;
+      store.state.discovery.completed_pages = [scope.discovery_url];
+      store.state.discovery.total_reported = page.total;
+      store.state.discovery.raw_links = page.raw_links;
+      store.state.discovery.enumerated_candidates = page.unique_candidates;
+      store.state.discovery.max_pi = page.max_pi;
+      store.state.discovery.reported_total_gap = Math.max(0, page.total - page.unique_candidates);
+      store.state.discovery.last_page = 1;
+      store.state.discovery.next_page = 1;
+      store.state.discovery.complete = false;
+      store.run.discovered = selected.length;
+      store.run.list_pages_visited += 1;
+      await store.save();
+    }
+
+    if (!trialRecoveryMode && args.phase !== "details" && !store.state.discovery.complete) {
       if (args.maxListPages && args.maxListPages < 1) stopReason = "max_list_pages";
       if (!stopReason) {
         const page = await withRetries(async () => {
@@ -246,10 +382,18 @@ async function run() {
         if (runtimeExpired(startedAt, args.maxRuntimeMinutes)) { stopReason = "max_runtime"; break; }
         try {
           const detail = await withRetries(async () => {
-            await browser.navigate(candidate.source_detail_url);
+            if (trialRecoveryMode) {
+              const click = await browser.evaluate(clickDetailExpression(candidate));
+              if (!click.clicked) throw new Error(`Authorized STASH detail link was not found: ${candidate.source_record_id}`);
+              await browser.pause();
+            } else {
+              await browser.navigate(candidate.source_detail_url);
+            }
             return browser.evaluateUntil(
               detailExpression(candidate),
-              (parsed) => parsed.ready && parsed.expected_match,
+              (parsed) => parsed.ready
+                && parsed.expected_match
+                && (!trialRecoveryMode || parsed.vimeo_id === candidate.expected_vimeo_id),
               30000,
             );
           }, args.retry, async (retryNumber) => {
@@ -277,6 +421,9 @@ async function run() {
         await store.save();
       }
     }
+    if (trialRecoveryMode && (store.run.success !== 10 || store.run.skipped !== 0 || store.run.failed !== 0)) {
+      stopReason = "trial_recovery_incomplete";
+    }
   } catch (error) {
     store.run.failed += 1;
     if (!stopReason) {
@@ -287,9 +434,22 @@ async function run() {
     throw error;
   } finally {
     await browser.close();
+    if (recoveryEntry) {
+      recoveryEntry.finished_at = new Date().toISOString();
+      recoveryEntry.status = recoveryRunPassed(store.run, stopReason)
+        ? "completed"
+        : "stopped";
+      recoveryEntry.success = store.run.success;
+      recoveryEntry.skipped = store.run.skipped;
+      recoveryEntry.failed = store.run.failed;
+      recoveryEntry.stop_reason = stopReason;
+    }
     await store.finish(stopReason);
   }
-  console.log(JSON.stringify(store.summary(), null, 2));
+  const summary = store.summary();
+  if (trialRecoveryMode) summary.ok = recoveryRunPassed(store.run, stopReason);
+  console.log(JSON.stringify(summary, null, 2));
+  if (trialRecoveryMode && stopReason) process.exitCode = 1;
 }
 
 if (selfTestMode) {

@@ -5,6 +5,7 @@ import {
   MediaResolutionError,
   publicMediaFields,
   refreshStashMedia,
+  refreshStashMediaWithFallback,
   refreshStashMediaViaProxy,
   validateBestAdsDirectMediaUrl,
   validateBestAdsMediaUrl,
@@ -213,6 +214,44 @@ test("resolves STASH HLS through the local CDP fallback without credentials and 
     media_asset_id: "1207188087",
     original_media_url: playerUrl,
   }, { proxyFetchImpl, now: () => now });
+
+  assert.equal(result.playback_url, "https://skyfire.vimeocdn.com/video/fixture/playlist.m3u8");
+  assert.equal(proxyCalls.filter((call) => call.pathname === "/eval").length, 2);
+  assert.ok(proxyCalls.filter((call) => call.pathname === "/eval").every((call) => call.body.includes('credentials:"omit"')));
+  assert.equal(proxyCalls.at(-1).pathname, "/close");
+});
+
+test("falls back to the credential-free CDP resolver only when direct STASH network access fails", async () => {
+  const issuedAt = Math.floor(now / 1000);
+  const playerUrl = "https://player.vimeo.com/video/1207188087";
+  const configUrl = vimeoConfigRequestUrl("1207188087", issuedAt);
+  const proxyCalls = [];
+  let evaluation = 0;
+  const proxyFetchImpl = async (url, options = {}) => {
+    const parsed = new URL(url);
+    proxyCalls.push({ pathname: parsed.pathname, body: options.body || "" });
+    if (parsed.pathname === "/new") return Response.json({ targetId: "stash-fallback-tab" });
+    if (parsed.pathname === "/navigate" || parsed.pathname === "/close") return Response.json({ ok: true });
+    if (parsed.pathname === "/eval") {
+      evaluation += 1;
+      const body = evaluation === 1
+        ? `{"config_url":"${configUrl.replaceAll("&", "\\u0026")}"}`
+        : JSON.stringify({ files: { hls: { default_cdn: "fastly_skyfire", cdns: { fastly_skyfire: { url: "https://skyfire.vimeocdn.com/video/fixture/playlist.m3u8" } } } } });
+      return Response.json({ value: JSON.stringify({ ok: true, status: 200, body }) });
+    }
+    return Response.json({ ok: true });
+  };
+  const result = await refreshStashMediaWithFallback({
+    video_id: "stash:VID178:3:1207188087",
+    source_site: "stash",
+    media_provider: "hls",
+    media_asset_id: "1207188087",
+    original_media_url: playerUrl,
+  }, {
+    fetchImpl: async () => { throw new TypeError("direct network unavailable"); },
+    proxyFetchImpl,
+    now: () => now,
+  });
 
   assert.equal(result.playback_url, "https://skyfire.vimeocdn.com/video/fixture/playlist.m3u8");
   assert.equal(proxyCalls.filter((call) => call.pathname === "/eval").length, 2);

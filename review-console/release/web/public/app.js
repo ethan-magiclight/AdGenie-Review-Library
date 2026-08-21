@@ -221,9 +221,18 @@ function mediaProviderLabel(value) {
   }[value] || value || "未知 provider";
 }
 
+function mediaSupportsRefresh(video) {
+  return video.media_provider === "best_ads_signed_mp4"
+    || (video.source_site === "stash" && video.media_provider === "hls");
+}
+
+export function mediaNeedsRefresh(video) {
+  return mediaSupportsRefresh(video) && !mediaLinkIsFresh(video);
+}
+
 function mediaActions(video, statusText = "") {
   const downloadUrl = video.media_download_url || "";
-  const refresh = video.media_provider === "best_ads_signed_mp4"
+  const refresh = mediaSupportsRefresh(video)
     ? `<button type="button" class="btn ghost" data-refresh-media>重新获取视频链接</button>`
     : "";
   return `
@@ -264,10 +273,10 @@ function renderMediaPreview(video) {
       </div>
     `;
   }
-  if (provider === "best_ads_signed_mp4" && !video._media_resolution_error) {
+  if (mediaNeedsRefresh(video) && !video._media_resolution_error) {
     return `
       <div class="media-preview" data-media-container="${escapeHtml(video.video_id)}" data-media-needs-refresh>
-        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新 Best Ads 视频链接…</strong><p>拿到当前签名后会自动切换为视频。</p></div>
+        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新视频链接…</strong><p>拿到当前有效地址后会自动切换为视频。</p></div>
         ${mediaFallback(video, true)}
         ${mediaActions(video, "正在连接来源站。")}
       </div>

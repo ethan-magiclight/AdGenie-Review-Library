@@ -395,6 +395,37 @@ export async function refreshStashMediaViaProxy(video, {
   }
 }
 
+export async function refreshStashMediaWithFallback(video, {
+  fetchImpl = fetch,
+  proxy = process.env.WEB_ACCESS_PROXY || "http://localhost:3456",
+  proxyFetchImpl = fetch,
+  now = () => Date.now(),
+  preferProxy = false,
+  allowProxyFallback = true,
+} = {}) {
+  const direct = () => refreshStashMedia(video, { fetchImpl, now });
+  const throughProxy = () => refreshStashMediaViaProxy(video, { proxy, proxyFetchImpl, now });
+  if (preferProxy) {
+    try {
+      return await throughProxy();
+    } catch (error) {
+      if (!(error instanceof MediaResolutionError) || !new Set([
+        "MEDIA_REFRESH_PROXY_UNAVAILABLE",
+        "MEDIA_REFRESH_PROXY_ERROR",
+      ]).has(error.code)) throw error;
+      return direct();
+    }
+  }
+  try {
+    return await direct();
+  } catch (error) {
+    if (!allowProxyFallback
+      || !(error instanceof MediaResolutionError)
+      || error.code !== "MEDIA_REFRESH_REQUEST_FAILED") throw error;
+    return throughProxy();
+  }
+}
+
 export async function refreshBestAdsMedia(video, {
   proxy = process.env.WEB_ACCESS_PROXY || "http://localhost:3456",
   timeoutMs = 20_000,
