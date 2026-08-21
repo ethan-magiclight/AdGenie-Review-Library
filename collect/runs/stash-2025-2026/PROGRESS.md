@@ -30,3 +30,4 @@
 29. STASH 登录态恢复后媒体门完成（2026-08-21）：固定 10 条不补样本，`VID178:3/4/6/13/19/24` 与 `VID177:1/4/6/7` 全部从已初始化 playlist 的正常点击取得稳定 Vimeo ID，并由无凭证 resolver 解析为可信 Vimeo CDN HLS；`attempted=10 / passed=10 / failed=0`，主标签恢复到 `STASH 178.03`。
 30. 播放器判定修正：部分详情会同时装载主广告与 `#btsplayer` 幕后花絮播放器；媒体门只认非 BTS 主播放器，`VID178:6` 的主广告 ID=`1207188123`，不把花絮 ID=`1207418728` 错当母片。短效 config/HLS 始终仅在内存，证据文件只保存稳定 ID、CDN host、HLS 布尔值和 TTL 下界。
 31. 当前状态：媒体解析门已解除，但完整 10 条试采仍未完成；详情采集 3 批上限已耗尽，且审核台 API 接线所需 `web/server.mjs` 不在白名单。STASH 继续保持 0 条、843 videos、118 review_events、local_video_files=0，不扩量、不重做已通过的媒体门。
+32. GitHub 交付更新（2026-08-21）：10/10 门禁证据与状态真相化提交 `068d6cc` 已推送到正确仓库并更新 Draft PR #2 正文；该 HEAD 的 `verify-package`、Vercel Preview Comments 与两套 Vercel deployment 全部成功。PR 保持 Draft，base 仍为 `codex/review-console-standalone`，未合并 main。
