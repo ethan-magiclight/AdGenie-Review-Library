@@ -4,6 +4,25 @@ AdGenie 是一个处于早期阶段的 AI 品牌广告生成产品工作区。�
 
 当前仓库同时承载产品规划、静态 Demo、品牌广告样片采集与审核台、生成工作流实验和本地产物。它们是同一产品探索过程中的不同工作面，不代表完整生产产品已经集成完成。
 
+## `AdGenie-logo` 分支交付
+
+这个分支是供产品、数据和研发团队共同维护的**品牌归一映射与 Logo 资产库**，不包含首页、审核台或视频采集产品功能改造。它交付：
+
+1. 审核台 853 条模板视频的原始品牌字段到 269 个标准品牌的可追溯映射；
+2. 269 个标准品牌对应的身份来源、原始 Logo 证据和 224×224 透明 PNG 标准资产；
+3. 审核台出现新品牌后，继续执行品牌归一、官网发现、Logo 采集、格式标准化、人工复核和完整性校验的方法与脚本。
+
+团队接手请先阅读 [`collect/BRAND_LOGO_LIBRARY.md`](collect/BRAND_LOGO_LIBRARY.md)。它说明了权威文件、目录结构、正确品牌判定、Logo 来源优先级、新增品牌流程、运行环境和提交检查清单。完整采集规则见 [`collect/brand-logo-methodology-v3.md`](collect/brand-logo-methodology-v3.md)。
+
+克隆并切换到本分支后，可执行以下命令验证当前 853 条视频、269 个品牌和 269 份 Logo 资产是否闭环：
+
+```bash
+npm --prefix collect install
+npm --prefix collect run verify
+```
+
+本分支的当前资产版本是 v3。历史 v1/v2 Logo 文件不是新增开发入口；产品消费建议读取 `collect/brand-logo-catalog-v3.json`，人工巡检打开 `collect/brand-logo-review-v3.html`。
+
 ## 项目地图
 
 | 路径 | 当前角色 | 权威边界 |
