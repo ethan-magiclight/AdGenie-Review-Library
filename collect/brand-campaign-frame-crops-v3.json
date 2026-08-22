@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "updated_at": "2026-08-21",
+  "purpose": "Human-reviewed frame and crop instructions for campaign-derived logo fallbacks used only when no reliable official brand page can be verified.",
+  "brands": [
+    { "canonical_brand_id": "alex-apparels", "frame_seconds": 1380, "crop": { "x": 470, "y": 205, "width": 370, "height": 260 }, "background": { "color": "0xd3d5d6", "similarity": 0.09, "blend": 0.04 } },
+    { "canonical_brand_id": "cerveja-rio-carioca", "frame_seconds": 27, "crop": { "x": 620, "y": 275, "width": 210, "height": 175, "rotate": "clockwise" }, "background": null },
+    { "canonical_brand_id": "firepower", "frame_seconds": 29, "crop": { "x": 680, "y": 275, "width": 215, "height": 195 }, "background": null },
+    { "canonical_brand_id": "msm-campusos", "frame_seconds": 162, "crop": { "x": 185, "y": 215, "width": 900, "height": 285 }, "background": { "color": "0xffffff", "similarity": 0.08, "blend": 0.02 } },
+    { "canonical_brand_id": "sennalax-rapid", "frame_seconds": 33, "crop": { "x": 595, "y": 315, "width": 255, "height": 90 }, "background": { "color": "0xf7f3df", "similarity": 0.08, "blend": 0.02 } },
+    { "canonical_brand_id": "win-pens", "frame_seconds": 9.5, "crop": { "x": 520, "y": 300, "width": 245, "height": 120 }, "background": { "color": "0xffffff", "similarity": 0.08, "blend": 0.02 } }
+    ,{ "canonical_brand_id": "city-centre", "frame_seconds": 19, "crop": { "x": 535, "y": 270, "width": 210, "height": 135 }, "background": null }
+    ,{ "canonical_brand_id": "coors-light", "frame_seconds": 47, "crop": { "x": 280, "y": 245, "width": 720, "height": 125 }, "background": { "color": "0xffffff", "similarity": 0.06, "blend": 0.02 } }
+    ,{ "canonical_brand_id": "dicks-sporting-goods", "frame_seconds": 29.8, "crop": { "x": 585, "y": 455, "width": 345, "height": 145 }, "background": null }
+    ,{ "canonical_brand_id": "kit-kat", "frame_seconds": 27, "crop": { "x": 270, "y": 72, "width": 185, "height": 115 }, "background": null }
+  ]
+}

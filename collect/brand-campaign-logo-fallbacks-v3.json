@@ -1,0 +1,87 @@
+{
+  "version": 3,
+  "updated_at": "2026-08-21",
+  "purpose": "Identity and logo-source fallback for normalized brands without a reliably discoverable official website or media kit. These records preserve the original reviewed campaign evidence and must not be described as official-site assets.",
+  "brands": [
+    {
+      "canonical_brand_id": "alex-apparels",
+      "campaign_title": "30 Years of Success",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/30-years-of-success",
+      "media_url": "https://video.adsoftheworld.com/c8z2ki54fwhofb47e6lwf31jrpuv.mp4",
+      "suggested_frame_seconds": [1379, 1380, 1381, 1382],
+      "evidence": "Review-console campaign description identifies Alex Apparels, an Egyptian apparel manufacturer; no reliable official site was found."
+    },
+    {
+      "canonical_brand_id": "cerveja-rio-carioca",
+      "campaign_title": "Rio Carioca Beer Consumers",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/rio-carioca-beer-consumers",
+      "media_url": "https://video.adsoftheworld.com/8ql9xpnw78fgo3h4g5mpdrz7gkx7.mp4",
+      "suggested_frame_seconds": [20, 24, 26, 27, 28, 29],
+      "evidence": "Review-console campaign record identifies the Brazilian beer brand; no reliable official site was found."
+    },
+    {
+      "canonical_brand_id": "firepower",
+      "campaign_title": "Every Moment Gets Better",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/every-moment-gets-better",
+      "media_url": "https://video.adsoftheworld.com/704vj193h0s23tp3u8lpjaq8xe0o.mp4",
+      "suggested_frame_seconds": [26, 27, 28, 29],
+      "evidence": "Review-console description identifies an Iranian FirePower energy drink; the automated Global Firepower military site candidate is a different entity."
+    },
+    {
+      "canonical_brand_id": "msm-campusos",
+      "campaign_title": "Still Pending",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/still-pending",
+      "media_url": "https://video.adsoftheworld.com/rbom0x4xxh5ssrkncqisulbbeil3.mp4",
+      "suggested_frame_seconds": [160, 161, 162, 163, 164, 165],
+      "evidence": "Review-console description identifies MSM CampusOS and agency MSM Unify; no stable public product page was verified."
+    },
+    {
+      "canonical_brand_id": "sennalax-rapid",
+      "campaign_title": "When Comfort Comes First",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/when-comfort-comes-first",
+      "media_url": "https://video.adsoftheworld.com/x74d7cxrycuoz47enmbcxazamrrj.mp4",
+      "suggested_frame_seconds": [30, 31, 32, 33],
+      "evidence": "Review-console campaign record identifies the Romanian pharmaceutical brand SennaLax Rapid; no reliable official site was found."
+    },
+    {
+      "canonical_brand_id": "win-pens",
+      "campaign_title": "Bharat ke Har Jeet Mein Win Pens",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/bharat-ke-har-jeet-mein-win-pens",
+      "media_url": "https://video.adsoftheworld.com/lw2f8evem8rwc31qzaupmp9h65uu.mp4",
+      "suggested_frame_seconds": [8.5, 9, 9.5, 10],
+      "evidence": "Review-console campaign title and record identify the Indian writing-instrument brand Win Pens; no reliable official site was found."
+    },
+    {
+      "canonical_brand_id": "city-centre",
+      "campaign_title": "Skip The Drama",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/skip-the-drama-19588908-dbc9-4466-aad4-a812c2eb02cb",
+      "media_url": "https://video.adsoftheworld.com/kyp9rjaxlk97lqrsx6juyholt87u.mp4",
+      "suggested_frame_seconds": [18, 19, 20, 21],
+      "evidence": "Review-console campaign identifies City Centre. The official parent page rendered the Majid Al Futtaim corporate mark rather than the City Centre brand, so the campaign end card is the authoritative fallback."
+    },
+    {
+      "canonical_brand_id": "coors-light",
+      "campaign_title": "Mahomeses",
+      "campaign_page_url": "https://www.adsoftheworld.com/campaigns/mahomeses",
+      "media_url": "https://video.adsoftheworld.com/gf1ftwn052v4o24haiqhzc33obfq.mp4",
+      "suggested_frame_seconds": [46, 47, 48, 49],
+      "evidence": "Review-console campaign identifies Coors Light. The official Molson Coors page is age-gated and did not expose the product-brand artwork to the collector."
+    },
+    {
+      "canonical_brand_id": "dicks-sporting-goods",
+      "campaign_title": "New Year, New You Anthony Edwards",
+      "campaign_page_url": "https://www.bestadsontv.com/ad/185754/Adidas-DICKS-Sporting-Goods-New-Year-New-You-Anthony-Edwards",
+      "media_url": "https://bestads-files.b-cdn.net/download/033121d391.mp4",
+      "suggested_frame_seconds": [27, 28, 29, 29.8],
+      "evidence": "Review-console campaign is a joint official Adidas / DICK'S Sporting Goods advertisement; used as fallback because the DICK'S retail site rendered a Site Unavailable page."
+    },
+    {
+      "canonical_brand_id": "kit-kat",
+      "campaign_title": "Office",
+      "campaign_page_url": "https://www.bestadsontv.com/ad/175117/Kit-Kat-Office",
+      "media_url": "https://bestads-files.b-cdn.net/download/ef749.mp4",
+      "suggested_frame_seconds": [27, 28, 29, 29.8],
+      "evidence": "Review-console visual review confirms the KitKat bar and branded end frame; used because both the consumer site and official Nestlé page returned access interstitials to automated collectors."
+    }
+  ]
+}
