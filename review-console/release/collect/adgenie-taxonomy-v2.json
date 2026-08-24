@@ -1,0 +1,176 @@
+{
+  "version": "adgenie-taxonomy-v2",
+  "status": "candidate_with_safe_aliases",
+  "contract": {
+    "hierarchy": "industry_then_product_category",
+    "generic_category_policy": "Industry-only evidence is represented as an explicit General <Industry> category and remains pending_category_review.",
+    "parent_conflict_policy": "A category with more than one plausible industry parent is retained, annotated, and routed to manual review; it is not force-merged."
+  },
+  "canonical_industry_aliases": {
+    "Apparel & Fashion": "Apparel & Footwear",
+    "Entertainment & Media": "Media & Entertainment",
+    "Gaming & Entertainment": "Gaming",
+    "Healthcare": "Health & Pharmaceutical",
+    "Home & Garden": "Home & Living/Household",
+    "Home & Living": "Home & Living/Household",
+    "Outdoor & Recreation": "Sports & Outdoor",
+    "Pet Care": "Pet Supplies",
+    "Retail": "Retail Services",
+    "Sports & Fitness": "Sporting Goods & Fitness",
+    "Restaurants & Food Service": "Food & Beverage",
+    "Home Appliances & Living": "Home & Living/Household",
+    "Color Cosmetics": "Beauty & Personal Care",
+    "Fragrance": "Beauty & Personal Care",
+    "Personal Care": "Beauty & Personal Care",
+    "Skincare": "Beauty & Personal Care"
+  },
+  "conditional_industry_rules": [
+    {
+      "from": "Sportswear",
+      "to": "Apparel & Footwear",
+      "when_categories": [
+        "Athletic Apparel",
+        "Athletic Apparel & Footwear",
+        "Athletic Footwear",
+        "Basketball Footwear",
+        "Football Apparel & Footwear",
+        "Football Footwear",
+        "Football Jerseys",
+        "Lacrosse Footwear",
+        "Lifestyle Footwear",
+        "Running Footwear",
+        "Sustainable Apparel Manufacturing"
+      ],
+      "status": "pending_category_review",
+      "evidence": "The existing category is an apparel or footwear subtype; Sportswear is a legacy industry label, not a canonical top-level industry."
+    },
+    {
+      "from": "Luxury Goods",
+      "to": "Jewelry & Watches",
+      "when_categories": ["Jewelry & Watches", "Watches"],
+      "status": "pending_category_review",
+      "evidence": "The affected records advertise jewelry or watches; Luxury Goods is too broad to be a stable industry owner."
+    }
+  ],
+  "category_aliases": {
+    "5G Mobile Network": "Mobile Network Services",
+    "Animal Welfare Advocacy": "Animal Welfare",
+    "Biscuits & Cookies": "Cookies",
+    "Breakfast Cereals": "Breakfast Cereal",
+    "Broadband Internet": "Internet & Connectivity Services",
+    "Coffee & Espresso Machines": "Coffee & Coffee Machines",
+    "Dairy & Milk": "Milk & Dairy Products",
+    "Dairy & Yogurt": "Yogurt & Dairy Products",
+    "E-books & Publishing": "Book Publishing",
+    "Electric Bicycles": "Bicycles & E-Bikes",
+    "Furniture & Storage": "Furniture & Home Furnishings",
+    "Home Furnishings & Storage": "Furniture & Home Furnishings",
+    "Luxury Performance Vehicles": "Performance Cars",
+    "Luxury SUVs": "SUVs",
+    "Mobile & Connectivity Services": "Telecommunications Services",
+    "Mobile & Internet Services": "Telecommunications Services",
+    "Mobile & Roaming Services": "Telecommunications Services",
+    "Passenger Rail Travel": "Rail Transportation",
+    "Passenger Vehicles & Mobility": "Passenger Vehicles",
+    "Premium Audio & Headphones": "Headphones",
+    "Retail Banking & Contactless Payments": "Retail Banking",
+    "Running Shoes": "Running Footwear",
+    "Speakers & Audio": "Home Audio & Soundbars",
+    "Sports Cars": "Performance Cars",
+    "Tourism Destination": "Travel & Tourism",
+    "Wireless Home Audio": "Home Audio & Soundbars"
+  },
+  "category_industry_evidence": {
+    "Automotive & Vehicles": "Automotive & Vehicles",
+    "Animal Welfare": "Nonprofit & Advocacy",
+    "Environmental Advocacy": "Nonprofit & Advocacy",
+    "Energy & Utilities": "Energy & Utilities",
+    "Financial Services": "Financial Services",
+    "Home Appliances": "Home & Living/Household",
+    "Jewelry & Watches": "Jewelry & Watches",
+    "Media & Entertainment": "Media & Entertainment",
+    "Personal Care": "Beauty & Personal Care",
+    "Professional Services": "Professional Services",
+    "Rail Transportation": "Travel & Hospitality",
+    "Retail Services": "Retail Services"
+    ,"Travel & Tourism": "Travel & Hospitality"
+    ,"Toys & Games": "Toys & Games"
+  },
+  "category_parent_overrides": {
+    "Animal Welfare": "Nonprofit & Advocacy",
+    "Environmental Advocacy": "Nonprofit & Advocacy",
+    "Home Appliances": "Home & Living/Household",
+    "Rail Transportation": "Travel & Hospitality",
+    "Travel & Tourism": "Travel & Hospitality"
+  },
+  "category_parent_conflicts": {
+    "Bicycles & E-Bikes": {
+      "allowed_industries": ["Automotive & Vehicles", "Sports & Outdoor"],
+      "status": "pending_manual",
+      "reason": "Bicycles may be marketed as a mobility vehicle or as sporting/outdoor equipment."
+    },
+    "Digital Services & Technology": {
+      "allowed_industries": ["Consumer Electronics", "Education & Digital Services"],
+      "status": "pending_manual",
+      "reason": "The category spans software/digital services and consumer technology hardware."
+    },
+    "Game Consoles": {
+      "allowed_industries": ["Consumer Electronics", "Gaming"],
+      "status": "pending_manual",
+      "reason": "Console hardware and gaming entertainment are both defensible parents."
+    },
+    "Home Appliances": {
+      "allowed_industries": ["Consumer Electronics", "Home & Living/Household"],
+      "status": "pending_manual",
+      "reason": "The same appliance can be classified by device class or household use."
+    },
+    "Coffee & Coffee Machines": {
+      "allowed_industries": ["Food & Beverage", "Home & Living/Household"],
+      "status": "pending_manual",
+      "reason": "Coffee consumables and coffee-making hardware require different parent industries."
+    },
+    "Rail Transportation": {
+      "allowed_industries": ["Retail Services", "Travel & Hospitality"],
+      "status": "pending_manual",
+      "reason": "Rail campaigns may promote a transport operator service or a travel experience."
+    },
+    "Travel & Tourism": {
+      "allowed_industries": ["Retail Services", "Travel & Hospitality"],
+      "status": "pending_manual",
+      "reason": "Destination/operator services and hospitality experiences need record-level evidence."
+    }
+  },
+  "generic_categories": {
+    "Automotive & Vehicles": {"category": "General Automotive & Mobility", "zh": "汽车与出行（泛）"},
+    "Beauty & Personal Care": {"category": "General Beauty & Personal Care", "zh": "美妆与个人护理（泛）"},
+    "Energy & Utilities": {"category": "General Energy & Utilities", "zh": "能源与公用事业（泛）"},
+    "Financial Services": {"category": "General Financial Services", "zh": "金融服务（泛）"},
+    "Jewelry & Watches": {"category": "General Jewelry & Watches", "zh": "珠宝与腕表（泛）"},
+    "Media & Entertainment": {"category": "General Media & Entertainment", "zh": "媒体与娱乐（泛）"},
+    "Professional Services": {"category": "General Professional Services", "zh": "专业服务（泛）"},
+    "Retail Services": {"category": "General Retail Services", "zh": "零售服务（泛）"},
+    "Toys & Games": {"category": "General Toys & Games", "zh": "玩具与游戏（泛）"}
+  },
+  "category_inference_from_legacy_industry": {
+    "Color Cosmetics": "Makeup",
+    "Fragrance": "Fragrance",
+    "Skincare": "Skincare"
+  },
+  "manual_conflicts": [
+    "Bags & Accessories",
+    "Gaming & Lottery",
+    "Other",
+    "Banking Services",
+    "Bluetooth & Wireless Speakers",
+    "Premium Audio & Speakers",
+    "Transportation & Mobility",
+    "Sportswear without an apparel/footwear category",
+    "Luxury Goods without a jewelry/watch category"
+  ],
+  "legacy_youtube": {
+    "source_platform": "youtube",
+    "resolution": "inferred_from_watch_or_embed_url",
+    "discovery_method": "youtube_direct_search",
+    "verification_status": "legacy_source_unverified"
+  }
+}

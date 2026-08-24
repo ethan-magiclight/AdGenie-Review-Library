@@ -1,0 +1,1948 @@
+{
+  "audit": {
+    "rule_version": "brand-governance-audit-v1",
+    "generated_at": "2026-08-23T09:49:44.187Z",
+    "state_path": "__ADGENIE_WORKSPACE__/web/data/creative-library-state.json",
+    "state_sha256": "f202122825572a91149600e0dc868b20b6d4b3be2f0439b6a64234e1b6ba5d55",
+    "mutation_policy": "read_only",
+    "approval_policy": "No candidate is approved or promoted by this audit."
+  },
+  "scope": {
+    "included_source_sites": [
+      "ads_of_the_world",
+      "best_ads",
+      "stash"
+    ],
+    "historical_youtube_excluded": true,
+    "formal_records": 2673,
+    "excluded_records": 635,
+    "excluded_by_platform": {
+      "youtube": 635
+    },
+    "by_source": {
+      "ads_of_the_world": 1996,
+      "best_ads": 108,
+      "stash": 569
+    }
+  },
+  "field_quality": {
+    "unique_raw_brand_values": 1402,
+    "brand_missing_or_placeholder": 0,
+    "primary_brand_missing": 0,
+    "brands_empty": 0,
+    "brand_primary_mismatch": 0,
+    "brand_not_first_in_brands": 0,
+    "source_detail_url_present": 2673,
+    "contact_sheet_present": 2673,
+    "exact_ten_frame_review": 2673,
+    "dedicated_brand_evidence_fields": 0
+  },
+  "multi_brand_audit": {
+    "records": 316,
+    "campaigns": 169,
+    "by_array_length": {
+      "2": 143,
+      "3": 140,
+      "4": 24,
+      "5": 9
+    },
+    "explicit_agency_marker_records": 155,
+    "explicit_agency_marker_campaigns": 82,
+    "agency_marker_index_distribution": {
+      "1": 130,
+      "2": 22,
+      "3": 3
+    }
+  },
+  "identity_audit": {
+    "alias_groups": 51,
+    "alias_group_records": 287,
+    "cross_source_identity_groups": 65,
+    "cross_source_variant_groups": 48,
+    "cross_source_variant_records": 279,
+    "groups": [
+      {
+        "identity_key": "nike",
+        "record_count": 23,
+        "campaign_count": 23,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "NIKE",
+            "count": 12
+          },
+          {
+            "value": "Nike",
+            "count": 11
+          }
+        ]
+      },
+      {
+        "identity_key": "mars",
+        "record_count": 19,
+        "campaign_count": 6,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Mars",
+            "count": 18
+          },
+          {
+            "value": "MARS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "cocacola",
+        "record_count": 18,
+        "campaign_count": 14,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Coca-Cola",
+            "count": 12
+          },
+          {
+            "value": "COCA-COLA",
+            "count": 5
+          },
+          {
+            "value": "COCA COLA",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "audi",
+        "record_count": 15,
+        "campaign_count": 7,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Audi",
+            "count": 13
+          },
+          {
+            "value": "AUDI",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "hyundai",
+        "record_count": 12,
+        "campaign_count": 8,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Hyundai",
+            "count": 9
+          },
+          {
+            "value": "HYUNDAI",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "identity_key": "mcdonalds",
+        "record_count": 11,
+        "campaign_count": 10,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "McDonald's",
+            "count": 8
+          },
+          {
+            "value": "MCDONALD'S",
+            "count": 2
+          },
+          {
+            "value": "MCDONALDS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "toyota",
+        "record_count": 11,
+        "campaign_count": 7,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Toyota",
+            "count": 8
+          },
+          {
+            "value": "TOYOTA",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "identity_key": "mcdonaldsuk",
+        "record_count": 10,
+        "campaign_count": 6,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "McDonald's UK",
+            "count": 8
+          },
+          {
+            "value": "MCDONALD'S UK",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "honda",
+        "record_count": 8,
+        "campaign_count": 8,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "HONDA",
+            "count": 6
+          },
+          {
+            "value": "Honda",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "meta",
+        "record_count": 8,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Meta",
+            "count": 7
+          },
+          {
+            "value": "META",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "burgerking",
+        "record_count": 7,
+        "campaign_count": 5,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads"
+        ],
+        "variants": [
+          {
+            "value": "Burger King",
+            "count": 6
+          },
+          {
+            "value": "Burger king",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "samsung",
+        "record_count": 7,
+        "campaign_count": 7,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "SAMSUNG",
+            "count": 6
+          },
+          {
+            "value": "Samsung",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "adidas",
+        "record_count": 6,
+        "campaign_count": 4,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "adidas",
+            "count": 4
+          },
+          {
+            "value": "ADIDAS",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "audible",
+        "record_count": 6,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Audible",
+            "count": 5
+          },
+          {
+            "value": "AUDIBLE",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "doritos",
+        "record_count": 6,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Doritos",
+            "count": 5
+          },
+          {
+            "value": "DORITOS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "magnum",
+        "record_count": 6,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Magnum",
+            "count": 5
+          },
+          {
+            "value": "MAGNUM",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "pepsico",
+        "record_count": 6,
+        "campaign_count": 6,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "PEPSICO",
+            "count": 3
+          },
+          {
+            "value": "Pepsico",
+            "count": 2
+          },
+          {
+            "value": "PepsiCo",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "polestar",
+        "record_count": 6,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Polestar",
+            "count": 5
+          },
+          {
+            "value": "POLESTAR",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "telstra",
+        "record_count": 6,
+        "campaign_count": 5,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Telstra",
+            "count": 4
+          },
+          {
+            "value": "TELSTRA",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "cricketwireless",
+        "record_count": 5,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Cricket Wireless",
+            "count": 4
+          },
+          {
+            "value": "CRICKET WIRELESS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "liquiddeath",
+        "record_count": 5,
+        "campaign_count": 4,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Liquid Death",
+            "count": 4
+          },
+          {
+            "value": "LIQUID DEATH",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "mondelez",
+        "record_count": 5,
+        "campaign_count": 4,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "MONDELEZ",
+            "count": 2
+          },
+          {
+            "value": "Mondeléz",
+            "count": 2
+          },
+          {
+            "value": "Mondelēz",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "pringles",
+        "record_count": 5,
+        "campaign_count": 5,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Pringles",
+            "count": 4
+          },
+          {
+            "value": "PRINGLES",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "skoda",
+        "record_count": 5,
+        "campaign_count": 4,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Škoda",
+            "count": 3
+          },
+          {
+            "value": "SKODA",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "vodafone",
+        "record_count": 5,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Vodafone",
+            "count": 4
+          },
+          {
+            "value": "VODAFONE",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "dickssportinggoods",
+        "record_count": 4,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Dick's Sporting Goods",
+            "count": 3
+          },
+          {
+            "value": "DICKS SPORTING GOODS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "sanpellegrino",
+        "record_count": 4,
+        "campaign_count": 4,
+        "sources": [
+          "best_ads"
+        ],
+        "variants": [
+          {
+            "value": "San Pellegrino",
+            "count": 3
+          },
+          {
+            "value": "Sanpellegrino",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "volkswagen",
+        "record_count": 4,
+        "campaign_count": 4,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Volkswagen",
+            "count": 2
+          },
+          {
+            "value": "VOLKSWAGEN",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "identity_key": "amazon",
+        "record_count": 3,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Amazon",
+            "count": 2
+          },
+          {
+            "value": "AMAZON",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "apple",
+        "record_count": 3,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Apple",
+            "count": 2
+          },
+          {
+            "value": "APPLE",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "diageo",
+        "record_count": 3,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Diageo",
+            "count": 2
+          },
+          {
+            "value": "DIAGEO",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "heineken",
+        "record_count": 3,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Heineken",
+            "count": 2
+          },
+          {
+            "value": "HEINEKEN",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "huawei",
+        "record_count": 3,
+        "campaign_count": 3,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "HUAWEI",
+            "count": 2
+          },
+          {
+            "value": "Huawei",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "mountaindew",
+        "record_count": 3,
+        "campaign_count": 3,
+        "sources": [
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Mountain Dew",
+            "count": 2
+          },
+          {
+            "value": "MOUNTAIN DEW",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "tacobell",
+        "record_count": 3,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Taco Bell",
+            "count": 2
+          },
+          {
+            "value": "TACO BELL",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "thejmsmuckercompany",
+        "record_count": 3,
+        "campaign_count": 3,
+        "sources": [
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "THE J.M. SMUCKER COMPANY",
+            "count": 2
+          },
+          {
+            "value": "The J.M. Smucker Company",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "argos",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Argos",
+            "count": 1
+          },
+          {
+            "value": "ARGOS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "barilla",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Barilla",
+            "count": 1
+          },
+          {
+            "value": "BARILLA",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "disney",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Disney",
+            "count": 1
+          },
+          {
+            "value": "DISNEY",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "esteelauder",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "ESTEÉ LAUDER",
+            "count": 1
+          },
+          {
+            "value": "Estée Lauder",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "gatorade",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Gatorade",
+            "count": 1
+          },
+          {
+            "value": "GATORADE",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "leroymerlin",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Leroy Merlin",
+            "count": 1
+          },
+          {
+            "value": "LEROY MERLIN",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "losaltosfood",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads"
+        ],
+        "variants": [
+          {
+            "value": "Los Altos food",
+            "count": 1
+          },
+          {
+            "value": "Los Altos Food",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "manscaped",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "best_ads"
+        ],
+        "variants": [
+          {
+            "value": "Manscaped",
+            "count": 1
+          },
+          {
+            "value": "MANSCAPED",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "orange",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Orange",
+            "count": 1
+          },
+          {
+            "value": "ORANGE",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "sickkids",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "SICK KIDS",
+            "count": 1
+          },
+          {
+            "value": "SICKKIDS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "snickers",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "best_ads",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Snickers",
+            "count": 1
+          },
+          {
+            "value": "SNICKERS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "specsavers",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Specsavers",
+            "count": 1
+          },
+          {
+            "value": "SPECSAVERS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "underarmour",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Under Armour",
+            "count": 1
+          },
+          {
+            "value": "UNDER ARMOUR",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "vivo",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Vivo",
+            "count": 1
+          },
+          {
+            "value": "VIVO",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "identity_key": "walmart",
+        "record_count": 2,
+        "campaign_count": 2,
+        "sources": [
+          "ads_of_the_world",
+          "stash"
+        ],
+        "variants": [
+          {
+            "value": "Walmart",
+            "count": 1
+          },
+          {
+            "value": "WALMART",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "risk_rules": {
+    "identity_alias_group": {
+      "lane": "safe_auto",
+      "description": "Same punctuation-insensitive identity key has multiple source display values; only identity linking is safe automatically.",
+      "records": 287,
+      "campaigns": 214
+    },
+    "agency_marker_contamination": {
+      "lane": "safe_auto",
+      "description": "AOTW brands contains an explicit 'by ad agencies:' boundary; values from the marker onward are agency evidence, not brand aliases.",
+      "records": 155,
+      "campaigns": 82
+    },
+    "multi_brand_relation_unresolved": {
+      "lane": "manual_confirmation",
+      "description": "Multiple advertiser-side values remain and their primary/co-brand/parent/product-line relation is not encoded.",
+      "records": 186,
+      "campaigns": 100
+    },
+    "title_brand_mismatch": {
+      "lane": "manual_confirmation",
+      "description": "Best Ads or STASH title-prefix brand differs materially from the stored client-derived brand.",
+      "records": 99,
+      "campaigns": 99
+    },
+    "cross_source_title_brand_conflict": {
+      "lane": "manual_confirmation",
+      "description": "The title-prefix brand appears as a stored brand in another formal source while this record stores a different value.",
+      "records": 33,
+      "campaigns": 33
+    },
+    "scalar_composite_brand": {
+      "lane": "manual_confirmation",
+      "description": "The scalar brand contains an explicit slash or collaboration marker and should resolve to multiple brand identities.",
+      "records": 8,
+      "campaigns": 8
+    },
+    "brand_equals_campaign_title": {
+      "lane": "manual_confirmation",
+      "description": "Brand equals campaign title exactly; this may be valid but needs source confirmation rather than automatic acceptance.",
+      "records": 6,
+      "campaigns": 6
+    },
+    "company_suffix_brand": {
+      "lane": "manual_confirmation",
+      "description": "Stored brand is a legal/company-style entity; it must not be collapsed into a consumer brand by suffix stripping alone.",
+      "records": 33,
+      "campaigns": 28
+    },
+    "role_like_brand_value": {
+      "lane": "manual_confirmation",
+      "description": "Stored brand begins with a production or personnel role and is likely a source parser error.",
+      "records": 1,
+      "campaigns": 1
+    },
+    "missing_or_placeholder_brand": {
+      "lane": "cannot_determine",
+      "description": "Brand is empty or a placeholder.",
+      "records": 0,
+      "campaigns": 0
+    },
+    "brand_fields_inconsistent": {
+      "lane": "cannot_determine",
+      "description": "brand, primary_brand, and brands[0] do not represent the same stored source claim.",
+      "records": 0,
+      "campaigns": 0
+    },
+    "brand_evidence_unavailable": {
+      "lane": "cannot_determine",
+      "description": "The record lacks a source detail URL, contact sheet, or exact ten-frame visual review required for manual resolution.",
+      "records": 0,
+      "campaigns": 0
+    }
+  },
+  "resolution_lanes": {
+    "safe_auto": {
+      "records": 338,
+      "campaigns": 240
+    },
+    "manual_confirmation": {
+      "records": 330,
+      "campaigns": 239
+    },
+    "cannot_determine": {
+      "records": 0,
+      "campaigns": 0
+    },
+    "no_flag": {
+      "records": 2005,
+      "campaigns": 1318
+    }
+  },
+  "review_event_audit": {
+    "all_top_level_events": 119,
+    "formal_top_level_events": 1,
+    "top_level_events_with_brand_key_paths": 0,
+    "top_level_brand_event_paths": [],
+    "formal_embedded_events": 1,
+    "formal_embedded_events_with_brand_key_paths": 0,
+    "brand_manual_lock_fields": 0
+  },
+  "strong_cross_source_conflicts": [
+    {
+      "video_id": "stash:VID153:21:707986903",
+      "source_site": "stash",
+      "source_record_id": "VID153:21",
+      "campaign_title": "ADIDAS \"TRIPLE BLACK COLLECTION\"",
+      "stored_brand": "ADIDAS STUDIO A",
+      "title_brand_claim": "ADIDAS",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID153&clipnum=21&pi=208&keyword="
+    },
+    {
+      "video_id": "stash:VID156:9:800146922",
+      "source_site": "stash",
+      "source_record_id": "VID156:9",
+      "campaign_title": "HAVAIANAS \"THIS IS HAVAIANAS\"",
+      "stored_brand": "ALPARGATAS",
+      "title_brand_claim": "HAVAIANAS",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID156&clipnum=9&pi=188&keyword="
+    },
+    {
+      "video_id": "stash:VID163:8:901692191",
+      "source_site": "stash",
+      "source_record_id": "VID163:8",
+      "campaign_title": "NIKE \"WINTER SOLUTIONS 2023\"",
+      "stored_brand": "NIKE CHINA",
+      "title_brand_claim": "NIKE",
+      "matching_brand_sources": [
+        "ads_of_the_world",
+        "best_ads"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID163&clipnum=8&pi=136&keyword="
+    },
+    {
+      "video_id": "stash:VID154:23:728265942",
+      "source_site": "stash",
+      "source_record_id": "VID154:23",
+      "campaign_title": "ADIDAS \"MAN UNITED X PETER SAVILLE\"",
+      "stored_brand": "ADIDAS FOOTBALL",
+      "title_brand_claim": "ADIDAS",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID154&clipnum=23&pi=204&keyword="
+    },
+    {
+      "video_id": "stash:VID174:21:1134349149",
+      "source_site": "stash",
+      "source_record_id": "VID174:21",
+      "campaign_title": "ON \"CLOUDBOOM MAX\"",
+      "stored_brand": "ON HOLDING AG",
+      "title_brand_claim": "ON",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID174&clipnum=21&pi=40&keyword="
+    },
+    {
+      "video_id": "stash:VID174:6:1134347441",
+      "source_site": "stash",
+      "source_record_id": "VID174:6",
+      "campaign_title": "PUMA \"SPEEDCAT\"",
+      "stored_brand": "AMAZING RED",
+      "title_brand_claim": "PUMA",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID174&clipnum=6&pi=34&keyword="
+    },
+    {
+      "video_id": "stash:VID162:1:882040165",
+      "source_site": "stash",
+      "source_record_id": "VID162:1",
+      "campaign_title": "AUDI \"THE LAST DANCE\"",
+      "stored_brand": "AUDI MAGAZINE",
+      "title_brand_claim": "AUDI",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID162&clipnum=1&pi=139&keyword="
+    },
+    {
+      "video_id": "stash:VID172:2:1097961180",
+      "source_site": "stash",
+      "source_record_id": "VID172:2",
+      "campaign_title": "BMW \"HEART OF JOY: OCTOWALTZ\"",
+      "stored_brand": "BMW GROUP",
+      "title_brand_claim": "BMW",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID172&clipnum=2&pi=58&keyword="
+    },
+    {
+      "video_id": "stash:VID171:1:1083126444",
+      "source_site": "stash",
+      "source_record_id": "VID171:1",
+      "campaign_title": "GENESIS \"NO OLD IDEAS\"",
+      "stored_brand": "GENESIS MOTOR AMERICA",
+      "title_brand_claim": "GENESIS",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID171&clipnum=1&pi=68&keyword="
+    },
+    {
+      "video_id": "stash:VID161:1:862172515",
+      "source_site": "stash",
+      "source_record_id": "VID161:1",
+      "campaign_title": "MERCEDES-BENZ \"GLC RELAUNCH\"",
+      "stored_brand": "MERCEDES-BENZ USA",
+      "title_brand_claim": "MERCEDES-BENZ",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID161&clipnum=1&pi=145&keyword="
+    },
+    {
+      "video_id": "stash:VID165:23:942938133",
+      "source_site": "stash",
+      "source_record_id": "VID165:23",
+      "campaign_title": "SKODA \"DISCOVER A NEW KIND OF SPACE\"",
+      "stored_brand": "SKODA AUTO",
+      "title_brand_claim": "SKODA",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID165&clipnum=23&pi=122&keyword="
+    },
+    {
+      "video_id": "stash:VID125:5:233930626",
+      "source_site": "stash",
+      "source_record_id": "VID125:5",
+      "campaign_title": "MERCEDES-BENZ \"FIRST OF A NEW KIND\"",
+      "stored_brand": "MERCEDES-BENZ VANS",
+      "title_brand_claim": "MERCEDES-BENZ",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID125&clipnum=5&pi=421&keyword="
+    },
+    {
+      "video_id": "stash:VID159:3:825184010",
+      "source_site": "stash",
+      "source_record_id": "VID159:3",
+      "campaign_title": "ALIENWARE \"X16 LAPTOP\" (DIRECTOR'S CUT)",
+      "stored_brand": "DELL",
+      "title_brand_claim": "ALIENWARE",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID159&clipnum=3&pi=165&keyword="
+    },
+    {
+      "video_id": "stash:VID129:2:271202284",
+      "source_site": "stash",
+      "source_record_id": "VID129:2",
+      "campaign_title": "BUDWEISER \"LIGHT UP THE WORLD CUP\"",
+      "stored_brand": "ANHEUSER BUSCH",
+      "title_brand_claim": "BUDWEISER",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID129&clipnum=2&pi=390&keyword="
+    },
+    {
+      "video_id": "stash:VID169:4:1044133605",
+      "source_site": "stash",
+      "source_record_id": "VID169:4",
+      "campaign_title": "KELLOGG'S \"SEE YOU IN THE MORNING\"",
+      "stored_brand": "WK KELLOGG CO",
+      "title_brand_claim": "KELLOGG'S",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID169&clipnum=4&pi=83&keyword="
+    },
+    {
+      "video_id": "stash:VID150:1:643622901",
+      "source_site": "stash",
+      "source_record_id": "VID150:1",
+      "campaign_title": "DORITOS \"DIA DE LOS MUERTOS\"",
+      "stored_brand": "PEPSICO",
+      "title_brand_claim": "DORITOS",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID150&clipnum=1&pi=231&keyword="
+    },
+    {
+      "video_id": "best_ads:181763:9cb93",
+      "source_site": "best_ads",
+      "source_record_id": "181763",
+      "campaign_title": "Doritos: A Spicy But Not Too Spicy Plumber",
+      "stored_brand": "Pepsico",
+      "title_brand_claim": "Doritos",
+      "matching_brand_sources": [
+        "ads_of_the_world",
+        "stash"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/181763/Doritos-A-Spicy-But-Not-Too-Spicy-Plumber"
+    },
+    {
+      "video_id": "best_ads:185499:2227057d06",
+      "source_site": "best_ads",
+      "source_record_id": "185499",
+      "campaign_title": "Doritos: Doritos Telethon For Hawkins",
+      "stored_brand": "Doritos x Netflix",
+      "title_brand_claim": "Doritos",
+      "matching_brand_sources": [
+        "ads_of_the_world",
+        "stash"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/185499/Doritos-Doritos-Telethon-For-Hawkins"
+    },
+    {
+      "video_id": "best_ads:188899:0951219d4f",
+      "source_site": "best_ads",
+      "source_record_id": "188899",
+      "campaign_title": "Pringles: Pringleleo",
+      "stored_brand": "General Manager – Lyndsay Rogers",
+      "title_brand_claim": "Pringles",
+      "matching_brand_sources": [
+        "ads_of_the_world",
+        "stash"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/188899/Pringles-Pringleleo"
+    },
+    {
+      "video_id": "best_ads:192359:020010f3cb",
+      "source_site": "best_ads",
+      "source_record_id": "192359",
+      "campaign_title": "Snickers: Eulogy",
+      "stored_brand": "Mars",
+      "title_brand_claim": "Snickers",
+      "matching_brand_sources": [
+        "stash"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/192359/Snickers-Eulogy"
+    },
+    {
+      "video_id": "best_ads:191512:12413451f1",
+      "source_site": "best_ads",
+      "source_record_id": "191512",
+      "campaign_title": "Tootsie Roll: Chameleon 15",
+      "stored_brand": "Tootsie Roll Industries",
+      "title_brand_claim": "Tootsie Roll",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/191512/Tootsie-Roll-Chameleon-15"
+    },
+    {
+      "video_id": "best_ads:191511:124029a390",
+      "source_site": "best_ads",
+      "source_record_id": "191511",
+      "campaign_title": "Tootsie Roll: Chameleon 30",
+      "stored_brand": "Tootsie Roll Industries",
+      "title_brand_claim": "Tootsie Roll",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/191511/Tootsie-Roll-Chameleon-30"
+    },
+    {
+      "video_id": "best_ads:185079:1807343970",
+      "source_site": "best_ads",
+      "source_record_id": "185079",
+      "campaign_title": "Totino's: Nothing Else Adds Up",
+      "stored_brand": "General Mills",
+      "title_brand_claim": "Totino's",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/185079/Totinos-Nothing-Else-Adds-Up"
+    },
+    {
+      "video_id": "best_ads:185569:183825fb6c",
+      "source_site": "best_ads",
+      "source_record_id": "185569",
+      "campaign_title": "Totino's: Too Good To Share",
+      "stored_brand": "General Mills",
+      "title_brand_claim": "Totino's",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.bestadsontv.com/ad/185569/Totinos-Too-Good-To-Share"
+    },
+    {
+      "video_id": "stash:VID138:2:372696228",
+      "source_site": "stash",
+      "source_record_id": "VID138:2",
+      "campaign_title": "JIF \"BUNKER\"",
+      "stored_brand": "THE J.M. SMUCKER COMPANY",
+      "title_brand_claim": "JIF",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID138&clipnum=2&pi=334&keyword="
+    },
+    {
+      "video_id": "stash:VID144:19:478226889",
+      "source_site": "stash",
+      "source_record_id": "VID144:19",
+      "campaign_title": "DORITOS \"WASABI\"",
+      "stored_brand": "PEPSICO",
+      "title_brand_claim": "DORITOS",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID144&clipnum=19&pi=299&keyword="
+    },
+    {
+      "video_id": "stash:VID150:26:643630557",
+      "source_site": "stash",
+      "source_record_id": "VID150:26",
+      "campaign_title": "WWF \"EURYTHENES PLASTICUS\"",
+      "stored_brand": "WWF GERMANY",
+      "title_brand_claim": "WWF",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID150&clipnum=26&pi=241&keyword="
+    },
+    {
+      "video_id": "stash:VID164:6:921320597",
+      "source_site": "stash",
+      "source_record_id": "VID164:6",
+      "campaign_title": "WWF \"LOVE IT OR LOSE IT\"",
+      "stored_brand": "WORLD WILDLIFE FUND",
+      "title_brand_claim": "WWF",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID164&clipnum=6&pi=126&keyword="
+    },
+    {
+      "video_id": "stash:VID177:4:1190793878",
+      "source_site": "stash",
+      "source_record_id": "VID177:4",
+      "campaign_title": "WWF \"NATURE NEEDS US NOW\"",
+      "stored_brand": "WORLD WILDLIFE FUND",
+      "title_brand_claim": "WWF",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID177&clipnum=4&pi=7&keyword="
+    },
+    {
+      "video_id": "stash:VID178:3:1207188087",
+      "source_site": "stash",
+      "source_record_id": "VID178:3",
+      "campaign_title": "FIFA WORLD CUP 2026 \"LET'S MAKE IT ICONIC\"",
+      "stored_brand": "BBC",
+      "title_brand_claim": "FIFA WORLD CUP 2026",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID178&clipnum=3&pi=0&keyword="
+    },
+    {
+      "video_id": "stash:VID144:8:478225590",
+      "source_site": "stash",
+      "source_record_id": "VID144:8",
+      "campaign_title": "NIKE \"DEAR KOBE\"",
+      "stored_brand": "NIKE CHINA",
+      "title_brand_claim": "NIKE",
+      "matching_brand_sources": [
+        "ads_of_the_world",
+        "best_ads"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID144&clipnum=8&pi=297&keyword="
+    },
+    {
+      "video_id": "stash:VID168:8:1028486798",
+      "source_site": "stash",
+      "source_record_id": "VID168:8",
+      "campaign_title": "TELSTRA \"DUETS\"",
+      "stored_brand": "TESLTRA",
+      "title_brand_claim": "TELSTRA",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID168&clipnum=8&pi=97&keyword="
+    },
+    {
+      "video_id": "stash:VID143:1:457548386",
+      "source_site": "stash",
+      "source_record_id": "VID143:1",
+      "campaign_title": "LEGO \"DRIVE WHAT YOU LOVE\"",
+      "stored_brand": "THE LEGO AGENCY",
+      "title_brand_claim": "LEGO",
+      "matching_brand_sources": [
+        "ads_of_the_world"
+      ],
+      "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID143&clipnum=1&pi=304&keyword="
+    }
+  ],
+  "examples": {
+    "agency_marker_contamination": [
+      {
+        "video_id": "ads_of_the_world:rings-reimagined-ii:rings-reimagined-ii-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rings Reimagined II",
+        "stored_brand": "Audi",
+        "title_brand_claim": null,
+        "brands": [
+          "Audi",
+          "by ad agencies: BBH London",
+          "FutureDeluxe"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rings-reimagined-ii"
+      },
+      {
+        "video_id": "ads_of_the_world:rings-reimagined-ii:rings-reimagined-ii-video-2",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rings Reimagined II",
+        "stored_brand": "Audi",
+        "title_brand_claim": null,
+        "brands": [
+          "Audi",
+          "by ad agencies: BBH London",
+          "FutureDeluxe"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rings-reimagined-ii"
+      },
+      {
+        "video_id": "ads_of_the_world:rings-reimagined-ii:rings-reimagined-ii-video-3",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rings Reimagined II",
+        "stored_brand": "Audi",
+        "title_brand_claim": null,
+        "brands": [
+          "Audi",
+          "by ad agencies: BBH London",
+          "FutureDeluxe"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rings-reimagined-ii"
+      },
+      {
+        "video_id": "ads_of_the_world:rio-carioca-beer-consumers:rio-carioca-beer-consumers-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rio Carioca Beer Consumers",
+        "stored_brand": "Cerveja Rio Carioca",
+        "title_brand_claim": null,
+        "brands": [
+          "Cerveja Rio Carioca",
+          "Rio Carioca Beer",
+          "by ad agencies: 11:21",
+          "Onzevinteum"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rio-carioca-beer-consumers"
+      },
+      {
+        "video_id": "ads_of_the_world:game-face:game-face-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Game Face",
+        "stored_brand": "Café Bustelo",
+        "title_brand_claim": null,
+        "brands": [
+          "Café Bustelo",
+          "by ad agencies: BBH USA",
+          "PSOne"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/game-face"
+      },
+      {
+        "video_id": "ads_of_the_world:bharat-ke-har-jeet-mein-win-pens:bharat-ke-har-jeet-mein-win-pens-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Bharat ke Har Jeet Mein Win Pens",
+        "stored_brand": "Win Pens",
+        "title_brand_claim": null,
+        "brands": [
+          "Win Pens",
+          "by ad agencies: QED India",
+          "QED Live"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/bharat-ke-har-jeet-mein-win-pens"
+      }
+    ],
+    "multi_brand_relation_unresolved": [
+      {
+        "video_id": "ads_of_the_world:30-years-of-success:30-years-of-success-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "30 Years of Success",
+        "stored_brand": "Alex Apparels",
+        "title_brand_claim": null,
+        "brands": [
+          "Alex Apparels",
+          "Alpine"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/30-years-of-success"
+      },
+      {
+        "video_id": "ads_of_the_world:the-buttler:the-buttler-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "The Buttler Sweepstakes",
+        "stored_brand": "goodwipes",
+        "title_brand_claim": null,
+        "brands": [
+          "goodwipes",
+          "Liquid Death"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/the-buttler"
+      },
+      {
+        "video_id": "ads_of_the_world:emily-s-journey:emily-s-journey-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Emily's Journey",
+        "stored_brand": "Girls Academy",
+        "title_brand_claim": null,
+        "brands": [
+          "Girls Academy",
+          "VEO"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/emily-s-journey"
+      },
+      {
+        "video_id": "ads_of_the_world:prompts:prompts-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Prompts",
+        "stored_brand": "Wizard by Pearson",
+        "title_brand_claim": null,
+        "brands": [
+          "Wizard by Pearson",
+          "Wizard Idiomas"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/prompts"
+      },
+      {
+        "video_id": "ads_of_the_world:mahomeses:mahomeses-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Mahomeses",
+        "stored_brand": "Coors Light",
+        "title_brand_claim": null,
+        "brands": [
+          "Coors Light",
+          "Molson Coors"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/mahomeses"
+      },
+      {
+        "video_id": "ads_of_the_world:rio-carioca-beer-consumers:rio-carioca-beer-consumers-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rio Carioca Beer Consumers",
+        "stored_brand": "Cerveja Rio Carioca",
+        "title_brand_claim": null,
+        "brands": [
+          "Cerveja Rio Carioca",
+          "Rio Carioca Beer",
+          "by ad agencies: 11:21",
+          "Onzevinteum"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rio-carioca-beer-consumers"
+      }
+    ],
+    "title_brand_mismatch": [
+      {
+        "video_id": "stash:VID163:23:901694037",
+        "source_site": "stash",
+        "campaign_title": "OAKLEY MUZM \"MARS\"",
+        "stored_brand": "ESSILORLUXOTTICA",
+        "title_brand_claim": "OAKLEY MUZM",
+        "brands": [
+          "ESSILORLUXOTTICA"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID163&clipnum=23&pi=138&keyword="
+      },
+      {
+        "video_id": "stash:VID153:21:707986903",
+        "source_site": "stash",
+        "campaign_title": "ADIDAS \"TRIPLE BLACK COLLECTION\"",
+        "stored_brand": "ADIDAS STUDIO A",
+        "title_brand_claim": "ADIDAS",
+        "brands": [
+          "ADIDAS STUDIO A"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID153&clipnum=21&pi=208&keyword="
+      },
+      {
+        "video_id": "stash:VID148:17:574600905",
+        "source_site": "stash",
+        "campaign_title": "ADIDAS STAN SMITH MYLO \"MADE WITH NATURE\"",
+        "stored_brand": "ADIDAS GLOBAL BRAND DESIGN",
+        "title_brand_claim": "ADIDAS STAN SMITH MYLO",
+        "brands": [
+          "ADIDAS GLOBAL BRAND DESIGN"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID148&clipnum=17&pi=257&keyword="
+      },
+      {
+        "video_id": "stash:VID156:9:800146922",
+        "source_site": "stash",
+        "campaign_title": "HAVAIANAS \"THIS IS HAVAIANAS\"",
+        "stored_brand": "ALPARGATAS",
+        "title_brand_claim": "HAVAIANAS",
+        "brands": [
+          "ALPARGATAS"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID156&clipnum=9&pi=188&keyword="
+      },
+      {
+        "video_id": "stash:VID163:12:901693377",
+        "source_site": "stash",
+        "campaign_title": "NIKE GT SERIES \"JUMP\", \"CUT\", \"HUSTLE\"",
+        "stored_brand": "NIKE",
+        "title_brand_claim": "NIKE GT SERIES",
+        "brands": [
+          "NIKE"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID163&clipnum=12&pi=137&keyword="
+      },
+      {
+        "video_id": "stash:VID175:5:1151054393",
+        "source_site": "stash",
+        "campaign_title": "BARBOUR X WALLACE & GROMIT \"WE'VE GOT CHRISTMAS COVERED\"",
+        "stored_brand": "BARBOUR",
+        "title_brand_claim": "BARBOUR X WALLACE & GROMIT",
+        "brands": [
+          "BARBOUR"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID175&clipnum=5&pi=21&keyword="
+      }
+    ],
+    "cross_source_title_brand_conflict": [
+      {
+        "video_id": "stash:VID153:21:707986903",
+        "source_site": "stash",
+        "campaign_title": "ADIDAS \"TRIPLE BLACK COLLECTION\"",
+        "stored_brand": "ADIDAS STUDIO A",
+        "title_brand_claim": "ADIDAS",
+        "brands": [
+          "ADIDAS STUDIO A"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID153&clipnum=21&pi=208&keyword="
+      },
+      {
+        "video_id": "stash:VID156:9:800146922",
+        "source_site": "stash",
+        "campaign_title": "HAVAIANAS \"THIS IS HAVAIANAS\"",
+        "stored_brand": "ALPARGATAS",
+        "title_brand_claim": "HAVAIANAS",
+        "brands": [
+          "ALPARGATAS"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID156&clipnum=9&pi=188&keyword="
+      },
+      {
+        "video_id": "stash:VID163:8:901692191",
+        "source_site": "stash",
+        "campaign_title": "NIKE \"WINTER SOLUTIONS 2023\"",
+        "stored_brand": "NIKE CHINA",
+        "title_brand_claim": "NIKE",
+        "brands": [
+          "NIKE CHINA"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID163&clipnum=8&pi=136&keyword="
+      },
+      {
+        "video_id": "stash:VID154:23:728265942",
+        "source_site": "stash",
+        "campaign_title": "ADIDAS \"MAN UNITED X PETER SAVILLE\"",
+        "stored_brand": "ADIDAS FOOTBALL",
+        "title_brand_claim": "ADIDAS",
+        "brands": [
+          "ADIDAS FOOTBALL"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID154&clipnum=23&pi=204&keyword="
+      },
+      {
+        "video_id": "stash:VID174:21:1134349149",
+        "source_site": "stash",
+        "campaign_title": "ON \"CLOUDBOOM MAX\"",
+        "stored_brand": "ON HOLDING AG",
+        "title_brand_claim": "ON",
+        "brands": [
+          "ON HOLDING AG"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID174&clipnum=21&pi=40&keyword="
+      },
+      {
+        "video_id": "stash:VID174:6:1134347441",
+        "source_site": "stash",
+        "campaign_title": "PUMA \"SPEEDCAT\"",
+        "stored_brand": "AMAZING RED",
+        "title_brand_claim": "PUMA",
+        "brands": [
+          "AMAZING RED"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID174&clipnum=6&pi=34&keyword="
+      }
+    ],
+    "role_like_brand_value": [
+      {
+        "video_id": "best_ads:188899:0951219d4f",
+        "source_site": "best_ads",
+        "campaign_title": "Pringles: Pringleleo",
+        "stored_brand": "General Manager – Lyndsay Rogers",
+        "title_brand_claim": "Pringles",
+        "brands": [
+          "General Manager – Lyndsay Rogers"
+        ],
+        "source_detail_url": "https://www.bestadsontv.com/ad/188899/Pringles-Pringleleo"
+      }
+    ],
+    "identity_alias_group": [
+      {
+        "video_id": "ads_of_the_world:mercurial-superfly:mercurial-superfly-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Mercurial Superfly",
+        "stored_brand": "Nike",
+        "title_brand_claim": null,
+        "brands": [
+          "Nike"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/mercurial-superfly"
+      },
+      {
+        "video_id": "ads_of_the_world:mercurial-vapor:mercurial-vapor-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Mercurial Vapor",
+        "stored_brand": "Nike",
+        "title_brand_claim": null,
+        "brands": [
+          "Nike"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/mercurial-vapor"
+      },
+      {
+        "video_id": "ads_of_the_world:rings-reimagined-ii:rings-reimagined-ii-video-1",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rings Reimagined II",
+        "stored_brand": "Audi",
+        "title_brand_claim": null,
+        "brands": [
+          "Audi",
+          "by ad agencies: BBH London",
+          "FutureDeluxe"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rings-reimagined-ii"
+      },
+      {
+        "video_id": "ads_of_the_world:rings-reimagined-ii:rings-reimagined-ii-video-2",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rings Reimagined II",
+        "stored_brand": "Audi",
+        "title_brand_claim": null,
+        "brands": [
+          "Audi",
+          "by ad agencies: BBH London",
+          "FutureDeluxe"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rings-reimagined-ii"
+      },
+      {
+        "video_id": "ads_of_the_world:rings-reimagined-ii:rings-reimagined-ii-video-3",
+        "source_site": "ads_of_the_world",
+        "campaign_title": "Rings Reimagined II",
+        "stored_brand": "Audi",
+        "title_brand_claim": null,
+        "brands": [
+          "Audi",
+          "by ad agencies: BBH London",
+          "FutureDeluxe"
+        ],
+        "source_detail_url": "https://www.adsoftheworld.com/campaigns/rings-reimagined-ii"
+      },
+      {
+        "video_id": "stash:VID158:5:806501118",
+        "source_site": "stash",
+        "campaign_title": "NIKE \"BUNNY RUN\"",
+        "stored_brand": "NIKE",
+        "title_brand_claim": "NIKE",
+        "brands": [
+          "NIKE"
+        ],
+        "source_detail_url": "https://www.stashmedia.tv/playlist-flash/?fid=3540&refnum=VID158&clipnum=5&pi=173&keyword="
+      }
+    ]
+  },
+  "artifacts": {
+    "record_risks": "record-risks.json",
+    "markdown": "AUDIT.md",
+    "contract": "collect/brand-identity-contract-v1.md",
+    "record_risks_sha256": "a0c215376e4bf0962c70b4ca8860bf4fdbff73d73d7fb17fa9ed0405f0f8d472",
+    "record_risk_count": 668
+  }
+}

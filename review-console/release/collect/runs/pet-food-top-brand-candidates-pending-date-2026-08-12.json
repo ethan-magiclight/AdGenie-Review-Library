@@ -22775,7 +22775,7 @@
     {
       "source_id": "youtube-royal-canin",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@RoyalCanin/shorts\nERROR: [youtube:tab] @RoyalCanin/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@RoyalCanin/shorts\nERROR: [youtube:tab] @RoyalCanin/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-blue-buffalo",
@@ -22786,22 +22786,22 @@
     {
       "source_id": "youtube-hills-pet-nutrition",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@HillsPetNutrition/shorts\nERROR: [youtube:tab] @HillsPetNutrition/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@HillsPetNutrition/shorts\nERROR: [youtube:tab] @HillsPetNutrition/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-royal-canin",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@RoyalCanin/videos\nERROR: [youtube:tab] @RoyalCanin/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@RoyalCanin/videos\nERROR: [youtube:tab] @RoyalCanin/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-hills-pet-nutrition",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@HillsPetNutrition/videos\nERROR: [youtube:tab] @HillsPetNutrition/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@HillsPetNutrition/videos\nERROR: [youtube:tab] @HillsPetNutrition/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-sheba",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Sheba/shorts\nERROR: [youtube:tab] @Sheba: This channel does not have a shorts tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Sheba/shorts\nERROR: [youtube:tab] @Sheba: This channel does not have a shorts tab\n"
     },
     {
       "source_id": "youtube-blue-buffalo",
@@ -22812,37 +22812,37 @@
     {
       "source_id": "youtube-iams",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@IAMS/shorts\nERROR: [youtube:tab] @IAMS/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@IAMS/shorts\nERROR: [youtube:tab] @IAMS/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-iams",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@IAMS/videos\nERROR: [youtube:tab] @IAMS/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@IAMS/videos\nERROR: [youtube:tab] @IAMS/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-the-farmers-dog",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@TheFarmersDog/shorts\nERROR: [youtube:tab] @TheFarmersDog: This channel does not have a shorts tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@TheFarmersDog/shorts\nERROR: [youtube:tab] @TheFarmersDog: This channel does not have a shorts tab\n"
     },
     {
       "source_id": "youtube-sheba",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Sheba/videos\nERROR: [youtube:tab] @Sheba: This channel does not have a videos tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Sheba/videos\nERROR: [youtube:tab] @Sheba: This channel does not have a videos tab\n"
     },
     {
       "source_id": "youtube-greenies",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Greenies/videos\nERROR: [youtube:tab] @Greenies/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Greenies/videos\nERROR: [youtube:tab] @Greenies/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-greenies",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Greenies/shorts\nERROR: [youtube:tab] @Greenies/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Greenies/shorts\nERROR: [youtube:tab] @Greenies/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-the-farmers-dog",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@TheFarmersDog/videos\nERROR: [youtube:tab] @TheFarmersDog: This channel does not have a videos tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@TheFarmersDog/videos\nERROR: [youtube:tab] @TheFarmersDog: This channel does not have a videos tab\n"
     },
     {
       "source_id": "youtube-freshpet",

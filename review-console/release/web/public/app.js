@@ -1,5 +1,6 @@
 import { effectiveIndustry, effectiveProductCategory } from "./classification-fallbacks.mjs";
 import { mediaLinkIsFresh } from "./media-link-freshness.mjs";
+import { trustedVimeoEmbedUrl } from "./media-embed.mjs";
 
 const app = document.querySelector("#app");
 
@@ -18,12 +19,21 @@ const state = {
     sourceAccountType: "all",
     statusIds: [],
     statusMode: "include",
+    classificationMode: "all",
+    durationBand: "all",
+    statisticsIndustryValues: null,
+    statisticsCategoryValues: null,
+    statisticsScopeId: null,
   },
   selectedCategory: null,
   selectedVideoId: null,
   drawerTab: "reclass",
   matrixMode: "all",
   matrixAspectRatio: "all",
+  matrixScope: null,
+  matrixIndustry: "all",
+  matrixDimension: "industry",
+  matrixView: "supply",
   fieldMenuOpen: false,
   statusFilterOpen: false,
 };
@@ -59,6 +69,14 @@ const remakeStatusId = "needs_remake";
 const mvpTargetPerMatrixCell = 10;
 const pendingReviewStatusId = "pending_review";
 const remadeStatusId = "remade";
+const unknownIndustryFilterId = "__unknown_industry";
+const unknownCategoryFilterId = "__unknown_category";
+const reservedIndustryValues = new Set([
+  "other",
+  "unclassified",
+  "跨行业 / 方法参考",
+  "跨行业 / 奖项库",
+]);
 const workflowConclusionStatusIds = new Set(["needs_remake", "remade", "parked", "approved", "excluded", "blacklisted"]);
 const statusDefinitions = {
   pending_review: {
@@ -95,6 +113,7 @@ const statusDefinitions = {
   },
 };
 const mediaResolutionRequests = new Map();
+const stashResolutionTimeoutMs = 20_000;
 
 function loadVisibleColumns() {
   try {
@@ -129,9 +148,9 @@ function previewImage(video, className = "thumb", alt = "") {
   return `<img class="${escapeHtml(className)}${aspectClass}" src="${escapeHtml(src)}" data-fallback-src="${escapeHtml(fallback)}" alt="${escapeHtml(alt)}">`;
 }
 
-function normalizedSourcePlatform(video) {
+export function normalizedSourcePlatform(video) {
   if (video.source_platform) return String(video.source_platform).toLowerCase();
-  if (/youtu(?:\.be|be\.com)/i.test(video.url || "")) return "youtube";
+  if (video.source_site) return String(video.source_site).toLowerCase();
   return "unknown";
 }
 
@@ -139,6 +158,57 @@ function normalizedPlatformFormat(video) {
   if (video.platform_format) return String(video.platform_format).toLowerCase();
   if (/youtube\.com\/shorts\//i.test(video.url || "")) return "shorts";
   return "unknown";
+}
+
+const formalSourcePlatformIds = new Set(["ads_of_the_world", "best_ads", "stash"]);
+const taxonomyV3PreviewScopeId = "formal_three_sources_v3_preview";
+const formalThreeSourceStatisticsScopes = new Set(["formal_three_sources", taxonomyV3PreviewScopeId]);
+
+export function scopeUsesTaxonomyV3(scopeId) {
+  return scopeId === taxonomyV3PreviewScopeId;
+}
+
+export function scopeUsesFormalThreeSources(scopeId) {
+  return formalThreeSourceStatisticsScopes.has(scopeId);
+}
+
+export function taxonomyV3Candidate(video = {}) {
+  const candidate = video?.taxonomy_v3?.candidate;
+  if (!candidate || typeof candidate !== "object") return null;
+  return candidate;
+}
+
+export function classificationValuesForMode(video = {}, mode = "all") {
+  if (mode === "taxonomy_v3_candidate") {
+    const candidate = taxonomyV3Candidate(video);
+    return {
+      industry: candidate?.industry || "",
+      productCategory: candidate?.product_category || "",
+    };
+  }
+  if (mode === "confirmed") {
+    return {
+      industry: video.industry || "",
+      productCategory: video.product_category || "",
+    };
+  }
+  return {
+    industry: effectiveIndustry(video) || "",
+    productCategory: effectiveProductCategory(video) || "",
+  };
+}
+
+export function isFormalSourcePlatform(videoOrPlatform) {
+  const platform = typeof videoOrPlatform === "string"
+    ? videoOrPlatform.toLowerCase()
+    : normalizedSourcePlatform(videoOrPlatform || {});
+  return formalSourcePlatformIds.has(platform);
+}
+
+export function platformMatchesFilter(video, platform) {
+  if (platform === "all") return true;
+  if (platform === "three_sources") return isFormalSourcePlatform(video);
+  return normalizedSourcePlatform(video) === platform;
 }
 
 function normalizedAspectRatio(video) {
@@ -165,8 +235,55 @@ function sourcePlatformLabel(value) {
     meta: "Meta",
     best_ads: "Best Ads",
     ads_of_the_world: "Ads of the World",
+    stash: "STASH",
+    three_sources: "三渠道开发预览",
     unknown: "未知平台",
   }[value] || value || "未知平台";
+}
+
+const platformFilterDefinitions = [
+  ["all", "全部平台"],
+  ["three_sources", "三渠道开发预览"],
+  ["youtube", "YouTube"],
+  ["tiktok", "TikTok"],
+  ["instagram", "Instagram"],
+  ["meta", "Meta"],
+  ["best_ads", "Best Ads"],
+  ["ads_of_the_world", "Ads of the World"],
+  ["stash", "STASH"],
+  ["unknown", "未知平台"],
+];
+
+function sourceCollectionChannel(sourceCollection, id) {
+  return sourceCollection?.channels?.find((channel) => channel.id === id) || null;
+}
+
+function sourcePlatformCount(videos, platform) {
+  return (videos || []).filter((video) => normalizedSourcePlatform(video) === platform).length;
+}
+
+export function platformFilterItems(videos, sourceCollection) {
+  const formalCount = (videos || []).filter((video) => isFormalSourcePlatform(video)).length;
+  const stashCount = sourcePlatformCount(videos, "stash");
+  const stash = sourceCollectionChannel(sourceCollection, "stash");
+  return platformFilterDefinitions
+    .filter(([value]) => value === "all" || value === "three_sources" || sourcePlatformCount(videos, value) > 0)
+    .map(([value, label]) => {
+    if (value === "three_sources") return [value, `三渠道开发预览（${formalCount}）`];
+    if (value !== "stash") return [value, label];
+    const incomplete = stashCount === 0 && stash?.status === "trial_incomplete";
+    return [value, `STASH（${stashCount}${incomplete ? " · 试采未完成" : ""}）`];
+    });
+}
+
+export function emptyVideosMessage(platform, videos, sourceCollection) {
+  const stashCount = sourcePlatformCount(videos, "stash");
+  const stash = sourceCollectionChannel(sourceCollection, "stash");
+  if (platform === "stash" && stashCount === 0 && stash?.status === "trial_incomplete") {
+    const status = String(stash.status_label || "10/10 媒体解析已通过；完整试采仍未完成，暂不扩量").replace(/。+$/, "");
+    return `STASH 当前 0 条可审核视频：${status}。详情见“方法论记录”。`;
+  }
+  return "没有符合条件的视频。";
 }
 
 function mediaProviderLabel(value) {
@@ -180,17 +297,45 @@ function mediaProviderLabel(value) {
   }[value] || value || "未知 provider";
 }
 
+function mediaSupportsRefresh(video) {
+  return video.media_provider === "best_ads_signed_mp4"
+    || (video.source_site === "stash" && video.media_provider === "hls");
+}
+
+export function mediaNeedsRefresh(video) {
+  return mediaSupportsRefresh(video) && !mediaLinkIsFresh(video);
+}
+
 function mediaActions(video, statusText = "") {
+  const capability = video.media_download_capability || (video.media_provider === "hls"
+    ? "playback_only_hls"
+    : video.media_provider === "vimeo"
+      ? "runtime_progressive_or_hls"
+      : "direct_file");
+  const stableMediaUrl = video.media_playback_url || video.media_resolver_url || "";
   const downloadUrl = video.media_download_url || "";
-  const refresh = video.media_provider === "best_ads_signed_mp4"
+  const directDownload = capability === "direct_file";
+  const runtimeDownload = capability === "runtime_progressive_or_hls";
+  const refresh = mediaSupportsRefresh(video)
     ? `<button type="button" class="btn ghost" data-refresh-media>重新获取视频链接</button>`
     : "";
+  const mediaLink = directDownload && downloadUrl
+    ? `<a class="btn primary" target="_blank" rel="noreferrer" href="${escapeHtml(downloadUrl)}">获取 / 下载视频</a><button type="button" class="btn ghost" data-copy-media-link="${escapeHtml(downloadUrl)}">复制研发链接</button>`
+    : stableMediaUrl
+      ? `<a class="btn primary" target="_blank" rel="noreferrer" href="${escapeHtml(stableMediaUrl)}">获取当前播放地址</a><button type="button" class="btn ghost" data-copy-media-link="${escapeHtml(stableMediaUrl)}">复制播放接口</button>`
+      : "";
+  const downloadNote = capability === "playback_only_hls"
+    ? "当前为 HLS 播放流，不提供 MP4 文件下载。"
+    : runtimeDownload
+      ? "Vimeo 播放地址可运行时解析；仅在源站提供 progressive MP4 时可下载。"
+      : "";
   return `
     <div class="media-delivery">
       <div class="inline">
-        ${downloadUrl ? `<a class="btn primary" target="_blank" rel="noreferrer" href="${escapeHtml(downloadUrl)}">获取 / 下载视频</a><button type="button" class="btn ghost" data-copy-media-link="${escapeHtml(downloadUrl)}">复制研发链接</button>` : ""}
+        ${mediaLink}
         ${refresh}
       </div>
+      ${downloadNote ? `<p class="media-status">${escapeHtml(downloadNote)}</p>` : ""}
       <p class="media-status" data-media-status>${escapeHtml(statusText)}</p>
     </div>
   `;
@@ -203,11 +348,12 @@ function mediaFallback(video, hidden = false) {
   return `<div class="media-fallback" data-media-fallback ${hidden ? "hidden" : ""}>${preview}<a class="btn ghost" target="_blank" rel="noreferrer" href="${escapeHtml(video.source_detail_url || video.url)}">打开来源详情页</a></div>`;
 }
 
-function renderMediaPreview(video) {
+export function renderMediaPreview(video) {
   const provider = video.media_provider || normalizedSourcePlatform(video);
   const aspectClass = previewAspectClass(video);
-  if (["youtube", "vimeo"].includes(provider) && video.embed_url) {
-    return `<iframe class="video-frame ${aspectClass}" src="${escapeHtml(video.embed_url)}" allowfullscreen title="${escapeHtml(mediaProviderLabel(provider))} preview"></iframe>`;
+  const embedUrl = provider === "vimeo" ? trustedVimeoEmbedUrl(video) : video.embed_url;
+  if (["youtube", "vimeo"].includes(provider) && embedUrl) {
+    return `<iframe class="video-frame ${aspectClass}" src="${escapeHtml(embedUrl)}" allowfullscreen title="${escapeHtml(mediaProviderLabel(provider))} preview"></iframe>`;
   }
   if (["mp4", "hls", "aotw_cdn", "best_ads_signed_mp4"].includes(provider) && mediaLinkIsFresh(video)) {
     const type = provider === "hls" ? "application/vnd.apple.mpegurl" : "video/mp4";
@@ -223,11 +369,11 @@ function renderMediaPreview(video) {
       </div>
     `;
   }
-  if (provider === "best_ads_signed_mp4" && !video._media_resolution_error) {
+  if (mediaNeedsRefresh(video) && !video._media_resolution_error) {
     return `
       <div class="media-preview" data-media-container="${escapeHtml(video.video_id)}" data-media-needs-refresh>
-        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新 Best Ads 视频链接…</strong><p>拿到当前签名后会自动切换为视频。</p></div>
-        ${mediaFallback(video, true)}
+        <div class="media-resolve-card"><span class="media-spinner" aria-hidden="true"></span><strong>正在刷新视频链接…</strong><p>拿到当前有效地址后会自动切换为视频；Contact Sheet 可先用于审核。</p></div>
+        ${mediaFallback(video)}
         ${mediaActions(video, "正在连接来源站。")}
       </div>
     `;
@@ -280,7 +426,10 @@ function matchesRecency(video, selected) {
 }
 
 function industryMeta(industry) {
-  return (state.data.industries || []).find((entry) => entry.industry === industry);
+  return state.data.industry_options_by_scope?.[state.matrixScope]?.options?.find((entry) => (entry.industry || entry.value) === industry)
+    || state.data.industry_options?.options?.find((entry) => entry.industry === industry)
+    || (state.data.industries || []).find((entry) => entry.industry === industry)
+    || (state.data.videos || []).map(taxonomyV3Candidate).find((candidate) => candidate?.industry === industry);
 }
 
 const industryZhFallbacks = {
@@ -314,11 +463,19 @@ function industryLabel(industry) {
   if (!industry) return "Unknown / 未知行业";
   if (industry === "跨行业 / 方法参考") return "Cross-industry / 跨行业";
   const item = industryMeta(industry);
-  const zh = item?.zh || industryZhFallbacks[industry];
+  const zh = item?.zh || item?.industry_zh || industryZhFallbacks[industry];
   return `${industry} / ${zh || "待补中文"}`;
 }
 
 function industriesForData() {
+  const scopedModel = state.data.industry_options_by_scope?.[state.matrixScope];
+  const model = scopedModel || state.data.industry_options;
+  if (Array.isArray(model?.options)) {
+    return model.options.map((item) => item.industry || item.value).filter(Boolean);
+  }
+  if (scopeUsesTaxonomyV3(state.matrixScope)) {
+    return [...new Set((state.data.videos || []).map((video) => taxonomyV3Candidate(video)?.industry).filter(Boolean))].sort();
+  }
   const fromRegistry = (state.data.industries || []).map((item) => item.industry);
   const fromVideos = (state.data.videos || []).map((video) => video.industry).filter(Boolean);
   const fromCategories = (state.data.categories || []).map((category) => category.industry).filter(Boolean);
@@ -356,6 +513,31 @@ function duration(value, fallback = "—") {
   const mins = Math.floor(seconds / 60);
   const rest = seconds % 60;
   return mins ? `${mins}m ${rest}s` : `${rest}s`;
+}
+
+function durationBandForVideo(video) {
+  const seconds = Number(video?.duration_seconds);
+  if (!Number.isFinite(seconds) || seconds <= 0) return "duration_missing";
+  if (seconds <= 30) return "duration_le_30s";
+  if (seconds <= 60) return "duration_30_to_60s";
+  return "duration_gt_60s";
+}
+
+function isUnknownIndustryValue(value) {
+  const normalized = String(value || "").trim().toLowerCase();
+  return !normalized || reservedIndustryValues.has(normalized);
+}
+
+export function classificationMatches(value, selected, unknownId, options = {}) {
+  if (selected === "all") return true;
+  if (selected === unknownId) {
+    if (typeof options.unknownPredicate === "function") return options.unknownPredicate(options.rawValue ?? value);
+    return !value || String(value).trim() === "" || String(value).toLowerCase() === "unclassified";
+  }
+  if (Array.isArray(options.acceptedValues) && options.acceptedValues.length) {
+    return options.acceptedValues.includes(value) || options.acceptedValues.includes(options.rawValue);
+  }
+  return value === selected;
 }
 
 function metadataMissingCell(label = missingMetadataText) {
@@ -473,6 +655,18 @@ function genreDefinition(english) {
 
 function categoryMeta(category) {
   const industry = selectedIndustry();
+  const scopeId = state.filters.statisticsScopeId || state.matrixScope;
+  const v3Row = scopeUsesTaxonomyV3(scopeId)
+    ? (state.data.library_statistics?.scopes?.[scopeId]?.category_rows || []).find((entry) => (
+      entry.product_category === category
+      && (industry === "all" || !entry.industry || entry.industry === industry)
+    ))
+    : null;
+  if (v3Row) return {
+    industry: v3Row.industry,
+    category: v3Row.product_category,
+    zh: v3Row.product_category_zh,
+  };
   return state.data.categories.find((entry) => entry.category === category && (industry === "all" || !entry.industry || entry.industry === industry))
     || state.data.categories.find((entry) => entry.category === category);
 }
@@ -485,6 +679,61 @@ function categoryLabel(category) {
 function categoryInline(category) {
   const item = categoryMeta(category);
   return item?.zh ? `${item.category} / ${item.zh}` : category;
+}
+
+function productCategoryCandidateNames(video) {
+  return [...new Set([
+    video.product_category_candidate,
+    ...(video.product_category_candidates || []).map((candidate) =>
+      typeof candidate === "string" ? candidate : candidate?.category
+    ),
+    video.classification_candidate?.product_category,
+  ].filter(Boolean))];
+}
+
+export function categoryFilterItems(videos = [], registry = [], industry = "all", classificationMode = "all") {
+  const entries = registry.filter((item) => industry === "all" || !item.industry || item.industry === industry);
+  const knownCategories = new Set(registry.map((item) => item.category));
+  const candidates = new Map();
+  for (const video of videos) {
+    const values = classificationValuesForMode(video, classificationMode);
+    const videoIndustry = values.industry;
+    if (industry !== "all" && videoIndustry !== industry) continue;
+    const categoryValues = classificationMode === "taxonomy_v3_candidate"
+      ? [values.productCategory].filter(Boolean)
+      : productCategoryCandidateNames(video);
+    for (const category of categoryValues) {
+      if (knownCategories.has(category) || candidates.has(category)) continue;
+      candidates.set(category, {
+        industry: videoIndustry || null,
+        category,
+        zh: "待确认",
+        candidate: true,
+      });
+    }
+  }
+  return [...entries, ...[...candidates.values()].sort((left, right) => left.category.localeCompare(right.category))];
+}
+
+function categoryRegistryForFilters() {
+  if (state.filters.classificationMode !== "taxonomy_v3_candidate") return state.data.categories || [];
+  const scopeId = state.filters.statisticsScopeId || state.matrixScope;
+  const rows = state.data.library_statistics?.scopes?.[scopeId]?.category_rows || [];
+  const registry = rows.map((row) => ({
+    industry: row.industry || row.industry_key || null,
+    category: row.product_category || row.product_category_key || null,
+    zh: row.product_category_zh || "待确认",
+  })).filter((item) => item.category);
+  if (registry.length) return registry;
+  const candidates = (state.data.videos || []).map((video) => {
+    const candidate = taxonomyV3Candidate(video);
+    return candidate ? {
+      industry: candidate.industry || null,
+      category: candidate.product_category || null,
+      zh: candidate.product_category_zh || "待确认",
+    } : null;
+  }).filter((item) => item?.category);
+  return [...new Map(candidates.map((item) => [`${item.industry || ""}::${item.category}`, item])).values()];
 }
 
 function categoryHeader(category) {
@@ -517,6 +766,41 @@ function reviewGenreOptions(video, industry) {
 
 function candidateNote() {
   return `<div class="candidate-note">候选 · 待确认</div>`;
+}
+
+function bilingualTaxonomyLabel(value, zh) {
+  if (!value) return "待确认";
+  return zh && zh !== value ? `${value} / ${zh}` : value;
+}
+
+function taxonomyV3StatusLabel(video) {
+  const status = video?.taxonomy_v3?.classification_review_status || "pending_review";
+  return {
+    source_verified: "来源已核验",
+    visual_verified: "视觉已核验",
+    human_confirmed: "人工已确认",
+    candidate: "候选待确认",
+    manual_review: "需人工复核",
+    pending_review: "待人工确认",
+  }[status] || status;
+}
+
+function taxonomyV3CandidateCell(video, dimension) {
+  const candidate = taxonomyV3Candidate(video);
+  if (!candidate) return null;
+  const value = dimension === "industry" ? candidate?.industry : candidate?.product_category;
+  const zh = dimension === "industry" ? candidate.industry_zh : candidate.product_category_zh;
+  const formalValue = dimension === "industry" ? video.industry : video.product_category;
+  const formalLabel = dimension === "industry" ? industryLabel(formalValue) : categoryInline(formalValue);
+  const parent = dimension === "product_category" && candidate.industry
+    ? `<div class="subtext">${escapeHtml(bilingualTaxonomyLabel(candidate.industry, candidate.industry_zh))}</div>`
+    : "";
+  return `<div class="taxonomy-v3-cell">
+    <div>${escapeHtml(bilingualTaxonomyLabel(value, zh))}</div>
+    <div class="taxonomy-v3-candidate-note">Taxonomy v3 候选 · ${escapeHtml(taxonomyV3StatusLabel(video))}</div>
+    ${parent}
+    ${formalValue ? `<div class="taxonomy-formal-value">现正式：${escapeHtml(formalLabel || formalValue)}</div>` : ""}
+  </div>`;
 }
 
 function coreVideos() {
@@ -617,29 +901,86 @@ function goVideos(category = "all", genre = "all", statusId = "") {
   state.filters.category = category;
   state.filters.genre = genre;
   state.filters.aspectRatio = state.matrixAspectRatio;
+  state.filters.classificationMode = "all";
+  state.filters.statisticsIndustryValues = null;
+  state.filters.statisticsCategoryValues = null;
+  state.filters.statisticsScopeId = null;
   state.filters.statusIds = statusId ? [statusId] : [];
   state.filters.statusMode = "include";
   state.statusFilterOpen = false;
   render();
 }
 
+function openThreeSourceDelivery() {
+  const statisticsScopeId = scopeUsesTaxonomyV3(state.matrixScope) ? state.matrixScope : null;
+  state.view = "videos";
+  state.filters = {
+    industry: "all",
+    query: "",
+    category: "all",
+    genre: "all",
+    platform: "three_sources",
+    platformFormat: "all",
+    aspectRatio: "all",
+    recency: "all",
+    sourceAccountType: "all",
+    statusIds: [],
+    statusMode: "include",
+    classificationMode: statisticsScopeId ? "taxonomy_v3_candidate" : "all",
+    durationBand: "all",
+    statisticsIndustryValues: null,
+    statisticsCategoryValues: null,
+    statisticsScopeId,
+  };
+  state.statusFilterOpen = false;
+  state.fieldMenuOpen = false;
+  render();
+}
+
 function filteredVideos() {
   const query = state.filters.query.trim().toLowerCase();
   return state.data.videos.filter((video) => {
-    const industry = effectiveIndustry(video);
-    const productCategory = effectiveProductCategory(video);
+    const classification = classificationValuesForMode(video, state.filters.classificationMode);
+    const industry = classification.industry;
+    const productCategory = classification.productCategory;
+    const taxonomyCandidate = taxonomyV3Candidate(video);
+    if (state.filters.classificationMode === "taxonomy_v3_candidate" && !taxonomyCandidate) return false;
+    const rawIndustry = state.filters.classificationMode === "taxonomy_v3_candidate" ? industry : video.industry || "";
+    const rawProductCategory = state.filters.classificationMode === "taxonomy_v3_candidate" ? productCategory : video.product_category || "";
     if (query) {
-      const hay = [video.title, video.brand, industry, productCategory, video.video_id, video.url, video.source_account, video.imported_from, ...(video.genres || [])].join(" ").toLowerCase();
+      const hay = [
+        video.title,
+        video.brand,
+        industry,
+        productCategory,
+        taxonomyCandidate?.industry_zh,
+        taxonomyCandidate?.product_category_zh,
+        video.industry,
+        video.product_category,
+        video.video_id,
+        video.url,
+        video.source_account,
+        video.imported_from,
+        ...(video.genres || []),
+      ].join(" ").toLowerCase();
       if (!hay.includes(query)) return false;
     }
-    if (state.filters.industry !== "all" && industry !== state.filters.industry) return false;
-    if (state.filters.category !== "all" && productCategory !== state.filters.category) return false;
+    if (!classificationMatches(industry, state.filters.industry, unknownIndustryFilterId, {
+      rawValue: rawIndustry,
+      acceptedValues: state.filters.statisticsIndustryValues,
+      unknownPredicate: isUnknownIndustryValue,
+    })) return false;
+    if (!classificationMatches(productCategory, state.filters.category, unknownCategoryFilterId, {
+      rawValue: rawProductCategory,
+      acceptedValues: state.filters.statisticsCategoryValues,
+    })) return false;
     if (state.filters.genre !== "all" && !(video.genres || []).includes(state.filters.genre)) return false;
-    if (state.filters.platform !== "all" && normalizedSourcePlatform(video) !== state.filters.platform) return false;
+    if (!platformMatchesFilter(video, state.filters.platform)) return false;
     if (state.filters.platformFormat !== "all" && normalizedPlatformFormat(video) !== state.filters.platformFormat) return false;
     if (!matchesAspectRatio(video, state.filters.aspectRatio)) return false;
     if (!matchesRecency(video, state.filters.recency)) return false;
     if (state.filters.sourceAccountType !== "all" && String(video.source_account_type || video.publisher_role || "unknown") !== state.filters.sourceAccountType) return false;
+    if (state.filters.durationBand !== "all" && durationBandForVideo(video) !== state.filters.durationBand) return false;
     const statusIds = activeStatusIds();
     if (statusIds.length) {
       const hasSelectedStatus = statusIds.some((id) => (video.status_ids || []).includes(id));
@@ -714,7 +1055,7 @@ function pageTop(title, subtitle, actions = "") {
   `;
 }
 
-function renderMatrix() {
+function renderGenreMatrix() {
   const industry = selectedIndustry();
   const categories = categoriesForMatrix();
   const targetGenres = targetGenresForIndustry(industry);
@@ -762,7 +1103,7 @@ function renderMatrix() {
   }).join("");
 
   renderShell(`
-    ${pageTop("品牌广告样片矩阵", `当前行业：${escapeHtml(industry === "all" ? "全部行业" : industryLabel(industry))}；按商品品类 × 广告题材查看模板供给。`, `<button class="btn primary" data-view="videos">进入视频审核</button>`)}
+    ${pageTop("品牌广告题材矩阵", `当前行业：${escapeHtml(industry === "all" ? "全部行业" : industryLabel(industry))}；这是原有品类 × 题材视图，供模板复刻审核使用。`, `<button class="btn primary" data-supply-matrix>返回行业供给统计</button><button class="btn ghost" data-view="videos">进入全部视频审核</button>`)}
     <div class="content">
       <div class="hero-grid">
         <div class="metric"><div class="metric-label">全部视频</div><div class="metric-value">${state.data.videos.length}</div><div class="metric-note">含已入库、已排除、待审核</div></div>
@@ -800,12 +1141,434 @@ function renderMatrix() {
   `);
 }
 
+const statisticsDurationBands = [
+  ["duration_le_30s", "≤30s"],
+  ["duration_30_to_60s", "30–60s"],
+  ["duration_gt_60s", ">60s"],
+  ["duration_missing", "时长缺失"],
+];
+
+const statisticsDimensionTabs = [
+  ["industry", "行业总览"],
+  ["category", "商品品类"],
+  ["duration", "时长分布"],
+];
+
+export function statisticsRowsForDimension(stats = {}, dimension = "all") {
+  if (dimension === "industry") return Array.isArray(stats.industry_rows) ? stats.industry_rows : [];
+  if (dimension === "category") return Array.isArray(stats.category_rows) ? stats.category_rows : [];
+  if (dimension === "duration") return Array.isArray(stats.duration_rows) ? stats.duration_rows : [];
+  return Array.isArray(stats.rows) ? stats.rows : [];
+}
+
+function statisticsScope() {
+  const bundle = state.data.library_statistics || {};
+  const scopes = bundle.scopes || {};
+  const scopeId = scopes[state.matrixScope] ? state.matrixScope : bundle.default_scope || "formal_three_sources";
+  state.matrixScope = scopeId;
+  return scopes[scopeId] || {
+    scope: { id: scopeId, label: scopeId, source_platforms: [] },
+    rows: [],
+    industry_rows: [],
+    category_rows: [],
+    total: { record_count: 0, unique_master_count: 0 },
+  };
+}
+
+function statisticsScopeVideos(scopeId) {
+  const formal = new Set(["ads_of_the_world", "best_ads", "stash"]);
+  return state.data.videos.filter((video) => {
+    const platform = normalizedSourcePlatform(video);
+    if (scopeUsesFormalThreeSources(scopeId)) return formal.has(platform);
+    if (scopeId === "youtube_legacy") return platform === "youtube";
+    return true;
+  });
+}
+
+function statisticsRowKey(row) {
+  return row.industry_key || "__unknown_industry";
+}
+
+function statisticsCategoryKey(row) {
+  return row.product_category_key || "__unknown_category";
+}
+
+function statisticsIndustryLabel(row) {
+  if (!row?.industry_key) return row?.industry || "待确认行业";
+  return `${row.industry} / ${row.industry_zh || industryMeta(row.industry)?.zh || "待补中文"}`;
+}
+
+function statisticsCategoryLabel(row) {
+  if (!row?.product_category_key) return row?.product_category || "待确认品类";
+  return `${row.product_category} / ${row.product_category_zh || categoryMeta(row.product_category)?.zh || "待补中文"}`;
+}
+
+function statisticsRowMatchesIndustry(row, selected) {
+  if (selected === "all") return true;
+  if (selected === unknownIndustryFilterId) return !row.industry_key;
+  return row.industry_key === selected || row.industry === selected;
+}
+
+function statisticsSourceCounts(scopeId) {
+  const aggregate = state.data.library_statistics?.scopes?.[scopeId];
+  if (aggregate?.source_breakdown) return Object.entries(aggregate.source_breakdown).sort((left, right) => right[1] - left[1]);
+  const counts = new Map();
+  for (const video of statisticsScopeVideos(scopeId)) {
+    const platform = normalizedSourcePlatform(video);
+    counts.set(platform, (counts.get(platform) || 0) + 1);
+  }
+  return [...counts.entries()].sort((left, right) => right[1] - left[1]);
+}
+
+function statisticsCount(row, key) {
+  return Number(row?.[key] ?? row?.duration_bands?.[key] ?? 0);
+}
+
+function statisticsDimensionValues(row, type) {
+  const key = type === "industry" ? "industry" : "product_category";
+  const rawKey = type === "industry" ? "industry_raw_values" : "product_category_raw_values";
+  return [...new Set([
+    row?.[`${key}_key`],
+    row?.[key],
+    ...(Array.isArray(row?.[rawKey]) ? row[rawKey] : []),
+  ].filter((value) => value !== null && value !== undefined && String(value).trim() !== ""))].map(String);
+}
+
+function statisticsCell(row, key, scopeId, industryKey, categoryKey, bandOverride = null) {
+  const value = statisticsCount(row, key);
+  const isDuration = key.startsWith("duration_");
+  const band = bandOverride ?? (isDuration ? key : "");
+  const industryValues = industryKey ? statisticsDimensionValues(row, "industry") : [];
+  const categoryValues = categoryKey ? statisticsDimensionValues(row, "category") : [];
+  return `<td class="stat-num ${value ? "has-value" : "zero"}" data-stat-cell data-stat-scope="${escapeHtml(scopeId)}" data-stat-industry="${escapeHtml(industryKey || "")}" data-stat-category="${escapeHtml(categoryKey || "")}" data-stat-industry-label="${escapeHtml(row?.industry || "")}" data-stat-category-label="${escapeHtml(row?.product_category || "")}" data-stat-industry-values="${escapeHtml(JSON.stringify(industryValues))}" data-stat-category-values="${escapeHtml(JSON.stringify(categoryValues))}" data-stat-band="${escapeHtml(band)}" title="点击查看对应视频">${value}</td>`;
+}
+
+function statisticsMetricCell(row, key) {
+  const value = statisticsCount(row, key);
+  return `<td class="stat-num ${value ? "has-value" : "zero"}">${value}</td>`;
+}
+
+function statisticsClassificationReviewCount(row) {
+  return statisticsCount(row, "classification_candidate_count") + statisticsCount(row, "classification_unclassified_count");
+}
+
+function statisticsIndustryFilterKey(row, grandTotal = false) {
+  if (grandTotal) return "";
+  return row.industry_key || unknownIndustryFilterId;
+}
+
+function statisticsIndustryRowMarkup(row, scopeId, { grandTotal = false } = {}) {
+  const industryFilterKey = statisticsIndustryFilterKey(row, grandTotal);
+  const lowFrequency = row.low_frequency ? `<span class="stat-flag">低频</span>` : "—";
+  const label = grandTotal ? "当前范围总计" : statisticsIndustryLabel(row);
+  return `<tr class="${grandTotal ? "stat-grand-total" : "stat-industry-row"}" data-stat-row data-stat-scope="${escapeHtml(scopeId)}" data-stat-industry="${escapeHtml(row.industry_key || "")}">
+    <td><div class="stat-industry-name"><strong>${escapeHtml(label)}</strong>${grandTotal ? "" : `<span class="subtext">${escapeHtml(row.industry_id || "待确认键")}</span>`}</div></td>
+    ${statisticsCell(row, "record_count", scopeId, industryFilterKey, "")}
+    ${statisticsMetricCell(row, "unique_master_count")}
+    ${statisticsMetricCell(row, "unique_deliverable_master_count")}
+    ${statisticsMetricCell(row, "pending_review_count")}
+    <td class="stat-num">${statisticsClassificationReviewCount(row)}</td>
+    <td class="stat-num">${grandTotal ? "—" : lowFrequency}</td>
+  </tr>`;
+}
+
+function statisticsCategoryRowMarkup(row, scopeId, { grandTotal = false } = {}) {
+  const industryKey = row.industry_key || "";
+  const categoryKey = row.product_category_key || "";
+  const industryFilterKey = statisticsIndustryFilterKey(row, grandTotal);
+  const categoryFilterKey = grandTotal ? "" : categoryKey || unknownCategoryFilterId;
+  const lowFrequency = row.low_frequency ? `<span class="stat-flag">低频</span>` : "";
+  const conflict = statisticsCount(row, "dimension_conflict_count");
+  const label = grandTotal ? "当前范围总计" : statisticsCategoryLabel(row);
+  return `<tr class="${grandTotal ? "stat-grand-total" : "stat-category-row"}" data-stat-row data-stat-scope="${escapeHtml(scopeId)}" data-stat-industry="${escapeHtml(industryKey)}" data-stat-category="${escapeHtml(categoryKey)}">
+    <td><div class="stat-category-name"><strong>${escapeHtml(label)}</strong>${grandTotal ? "" : `<span class="subtext">${escapeHtml(row.dimension_key || "待确认键")}</span>`}</div></td>
+    <td class="stat-label-cell">${grandTotal ? "—" : escapeHtml(statisticsIndustryLabel(row))}</td>
+    ${statisticsCell(row, "record_count", scopeId, industryFilterKey, categoryFilterKey)}
+    ${statisticsMetricCell(row, "unique_master_count")}
+    ${statisticsMetricCell(row, "unique_deliverable_master_count")}
+    ${statisticsMetricCell(row, "pending_review_count")}
+    <td class="stat-num">${statisticsClassificationReviewCount(row)}</td>
+    <td class="stat-num">${grandTotal ? "—" : conflict ? `<span class="stat-flag danger">${conflict} 冲突</span>` : "无"}</td>
+    <td class="stat-num">${grandTotal ? "—" : lowFrequency || "—"}</td>
+  </tr>`;
+}
+
+function statisticsDurationRowsForSelection(stats, selectedIndustryValue) {
+  if (selectedIndustryValue === "all") return statisticsRowsForDimension(stats, "duration");
+  const group = (stats.duration_rows_by_industry || []).find((item) => statisticsRowMatchesIndustry(item, selectedIndustryValue));
+  return Array.isArray(group?.rows) ? group.rows : [];
+}
+
+function statisticsSelectedTotal(stats, selectedIndustryValue) {
+  if (selectedIndustryValue === "all") return stats.total || {};
+  return (stats.industry_rows || []).find((row) => statisticsRowMatchesIndustry(row, selectedIndustryValue)) || {};
+}
+
+function statisticsSourceTags(row) {
+  const values = Object.entries(row?.source_breakdown || {}).sort((left, right) => right[1] - left[1]);
+  return values.map(([platform, count]) => `<span class="tag">${escapeHtml(sourcePlatformLabel(platform))} ${count}</span>`).join("") || "—";
+}
+
+function statisticsDurationRowMarkup(row, scopeId, totalRecords) {
+  const band = row.duration_band_key || row.duration_band_id || "";
+  const percent = totalRecords > 0 ? `${((statisticsCount(row, "record_count") / totalRecords) * 100).toFixed(1)}%` : "0.0%";
+  const industryFilterKey = row.industry_id ? row.industry_key || unknownIndustryFilterId : "";
+  return `<tr class="stat-duration-row" data-stat-row data-stat-scope="${escapeHtml(scopeId)}" data-stat-band="${escapeHtml(band)}">
+    <td><strong>${escapeHtml(row.duration_label || statisticsDurationBands.find(([key]) => key === band)?.[1] || band)}</strong><span class="subtext">${escapeHtml(band)}</span></td>
+    ${statisticsCell(row, "record_count", scopeId, industryFilterKey, "", band)}
+    <td class="stat-num">${percent}</td>
+    ${statisticsMetricCell(row, "unique_master_count")}
+    ${statisticsMetricCell(row, "unique_deliverable_master_count")}
+    ${statisticsMetricCell(row, "pending_review_count")}
+    <td class="stat-num">${statisticsClassificationReviewCount(row)}</td>
+    <td><div class="tags">${statisticsSourceTags(row)}</div></td>
+  </tr>`;
+}
+
+function statisticsDurationTotalMarkup(row, scopeId, selectedIndustryValue) {
+  const grandTotal = selectedIndustryValue === "all";
+  const industryFilterKey = statisticsIndustryFilterKey(row, grandTotal);
+  return `<tr class="stat-grand-total">
+    <td><strong>当前范围总计</strong></td>
+    ${statisticsCell(row, "record_count", scopeId, industryFilterKey, "")}
+    <td class="stat-num">100.0%</td>
+    ${statisticsMetricCell(row, "unique_master_count")}
+    ${statisticsMetricCell(row, "unique_deliverable_master_count")}
+    ${statisticsMetricCell(row, "pending_review_count")}
+    <td class="stat-num">${statisticsClassificationReviewCount(row)}</td>
+    <td><div class="tags">${statisticsSourceTags(row)}</div></td>
+  </tr>`;
+}
+
+export function statisticsExportColumns(dimension = "all") {
+  const traceability = [
+    "view_id", "scope_id", "scope_label", "filter_industry_id", "filter_industry_key", "filter_industry", "include_blacklisted",
+    "generated_at", "statistics_version", "statistics_contract_path", "state_sha256", "taxonomy_version", "taxonomy_policy_sha256", "methodology_version",
+  ];
+  const metrics = [
+    "record_count", "unique_master_count", "deliverable_count", "unique_deliverable_master_count", "pending_review_count", "approved_count", "core_template_eligible_count", "excluded_count", "blacklisted_count",
+    "classification_confirmed_count", "classification_candidate_count", "classification_unclassified_count", "dimension_conflict_count", "canonical_mapping_count", "canonical_mapping_conflict_count", "canonical_mapping_rules", "canonical_mapping_conflicts", "source_breakdown", "low_frequency",
+  ];
+  const industry = ["row_type", "dimension_key", "industry_id", "industry_key", "industry", "industry_zh", "industry_classification_status", "industry_raw", "industry_raw_values", "reserved_industry_raw_values"];
+  const category = [...industry, "product_category_id", "product_category_key", "product_category", "product_category_zh", "product_category_raw", "product_category_raw_values"];
+  const duration = ["row_type", "dimension_key", "duration_band_id", "duration_band_key", "duration_label", "duration_order", "duration_min_exclusive_seconds", "duration_max_inclusive_seconds"];
+  if (dimension === "industry") return [...traceability, ...industry, ...metrics];
+  if (dimension === "category") return [...traceability, ...category, ...metrics];
+  if (dimension === "duration") return [...traceability, ...duration, ...metrics];
+  return [...traceability, ...category, ...duration.slice(2), ...metrics, "duration_le_30s", "duration_30_to_60s", "duration_gt_60s", "duration_missing"];
+}
+
+function delimitedValue(value, delimiter) {
+  if (value === null || value === undefined) return "";
+  const text = typeof value === "object" ? JSON.stringify(value) : String(value);
+  return text.includes(delimiter) || text.includes("\"") || /[\r\n]/.test(text)
+    ? `"${text.replaceAll("\"", "\"\"")}"`
+    : text;
+}
+
+function statisticsExportRows(stats, dimension, selectedIndustryValue) {
+  if (dimension === "duration") return statisticsDurationRowsForSelection(stats, selectedIndustryValue);
+  const rows = statisticsRowsForDimension(stats, dimension);
+  if (selectedIndustryValue === "all" || dimension === "all") return rows;
+  return rows.filter((row) => statisticsRowMatchesIndustry(row, selectedIndustryValue));
+}
+
+function statisticsIndustryFilterMetadata(stats, selectedIndustryValue) {
+  if (!selectedIndustryValue || selectedIndustryValue === "all") return {};
+  return (stats.industry_rows || []).find((row) => statisticsRowMatchesIndustry(row, selectedIndustryValue)) || {};
+}
+
+export function buildStatisticsExportText(stats = {}, bundle = {}, format = "csv", dimension = "all", selectedIndustryValue = "all") {
+  const columns = statisticsExportColumns(dimension);
+  const delimiter = format === "tsv" ? "\t" : ",";
+  const scope = stats.scope || {};
+  const filterIndustry = statisticsIndustryFilterMetadata(stats, selectedIndustryValue);
+  const viewIds = { industry: "industry_overview", category: "product_categories", duration: "duration_distribution", all: "mixed_legacy" };
+  const rows = statisticsExportRows(stats, dimension, selectedIndustryValue).map((row) => {
+    const output = {
+      view_id: viewIds[dimension] || dimension,
+      scope_id: scope.id || "",
+      scope_label: scope.label || "",
+      filter_industry_id: filterIndustry.industry_id || "",
+      filter_industry_key: filterIndustry.industry_key || "",
+      filter_industry: filterIndustry.industry || "",
+      include_blacklisted: false,
+      generated_at: stats.generated_at || bundle.generated_at || "",
+      statistics_version: stats.version || bundle.version || "",
+      statistics_contract_path: stats.statistics_contract_path || bundle.contract_path || "",
+      state_sha256: stats.state_sha256 || bundle.state_sha256 || "",
+      taxonomy_version: stats.taxonomy_version || "",
+      taxonomy_policy_sha256: stats.taxonomy_policy_sha256 || bundle.taxonomy_policy_sha256 || "",
+      methodology_version: stats.methodology_version || "",
+      ...row,
+    };
+    return columns.map((column) => delimitedValue(output[column], delimiter)).join(delimiter);
+  });
+  return [columns.join(delimiter), ...rows].join("\n");
+}
+
+function exportStatistics(format = "csv") {
+  const stats = statisticsScope();
+  const bundle = state.data.library_statistics || {};
+  const scope = stats.scope || {};
+  const dimension = state.matrixDimension || "industry";
+  const selectedIndustryValue = dimension === "industry" ? "all" : state.matrixIndustry || "all";
+  const content = buildStatisticsExportText(stats, bundle, format, dimension, selectedIndustryValue);
+  const blob = new Blob([content], { type: format === "tsv" ? "text/tab-separated-values;charset=utf-8" : "text/csv;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = `adgenie-library-statistics-${dimension}-${scope.id || "scope"}.${format}`;
+  anchor.click();
+  URL.revokeObjectURL(url);
+}
+
+function goStatisticsVideos(scopeId, industryKey, categoryKey, band = "", industryValues = [], categoryValues = [], industryLabelValue = "", categoryLabelValue = "") {
+  const normalizedIndustryValues = Array.isArray(industryValues) ? industryValues : [];
+  const normalizedCategoryValues = Array.isArray(categoryValues) ? categoryValues : [];
+  const preferredIndustry = industryKey === unknownIndustryFilterId
+    ? unknownIndustryFilterId
+    : industryLabelValue || industryKey || "all";
+  const preferredCategory = categoryKey === unknownCategoryFilterId
+    ? unknownCategoryFilterId
+    : categoryLabelValue || categoryKey || "all";
+  state.view = "videos";
+  state.matrixScope = scopeId;
+  state.filters.industry = preferredIndustry;
+  state.filters.category = preferredCategory;
+  state.filters.durationBand = band || "all";
+  state.filters.statisticsIndustryValues = normalizedIndustryValues.length ? normalizedIndustryValues : null;
+  state.filters.statisticsCategoryValues = normalizedCategoryValues.length ? normalizedCategoryValues : null;
+  state.filters.statisticsScopeId = scopeId;
+  state.filters.classificationMode = scopeUsesTaxonomyV3(scopeId)
+    ? "taxonomy_v3_candidate"
+    : categoryKey && categoryKey !== unknownCategoryFilterId ? "confirmed" : "all";
+  state.filters.platform = scopeUsesFormalThreeSources(scopeId) ? "three_sources" : scopeId === "youtube_legacy" ? "youtube" : "all";
+  state.filters.query = "";
+  state.filters.genre = "all";
+  state.filters.platformFormat = "all";
+  state.filters.aspectRatio = "all";
+  state.filters.recency = "all";
+  state.filters.sourceAccountType = "all";
+  state.filters.statusIds = ["blacklisted"];
+  state.filters.statusMode = "exclude";
+  render();
+}
+
+function renderMatrix() {
+  if (state.matrixView === "genre") return renderGenreMatrix();
+  const bundle = state.data.library_statistics;
+  if (!bundle?.scopes) return renderGenreMatrix();
+  const stats = statisticsScope();
+  const scopeId = stats.scope?.id || state.matrixScope;
+  const taxonomyV3Preview = scopeUsesTaxonomyV3(scopeId);
+  const validDimensions = new Set(statisticsDimensionTabs.map(([value]) => value));
+  const dimension = validDimensions.has(state.matrixDimension) ? state.matrixDimension : "industry";
+  state.matrixDimension = dimension;
+  const selectedIndustryValue = dimension === "industry" ? "all" : state.matrixIndustry || "all";
+  const industryRows = statisticsRowsForDimension(stats, "industry");
+  const categoryRows = statisticsRowsForDimension(stats, "category").filter((row) => statisticsRowMatchesIndustry(row, selectedIndustryValue));
+  const durationRows = statisticsDurationRowsForSelection(stats, selectedIndustryValue);
+  const total = stats.total || {};
+  const selectedTotal = statisticsSelectedTotal(stats, selectedIndustryValue);
+  const scopeOptions = Object.values(bundle.scopes).map((item) => `<option value="${escapeHtml(item.scope?.id || "")}" ${scopeId === item.scope?.id ? "selected" : ""}>${escapeHtml(item.scope?.label || item.scope?.id || "")}</option>`).join("");
+  const sourceBreakdown = statisticsSourceCounts(scopeId).map(([platform, count]) => `<span class="tag">${escapeHtml(sourcePlatformLabel(platform))} ${count}</span>`).join("");
+  const optionModel = state.data.industry_options_by_scope?.[scopeId] || state.data.industry_options || {};
+  const activeCount = optionModel.active?.length || 0;
+  const longTailCount = optionModel.long_tail?.length || 0;
+  const unknownIndustryCount = (stats.industry_rows || []).filter((row) => !row.industry_key).reduce((sum, row) => sum + statisticsCount(row, "record_count"), 0);
+  const unknownCategoryCount = (stats.category_rows || []).filter((row) => !row.product_category_key).reduce((sum, row) => sum + statisticsCount(row, "record_count"), 0);
+  const classificationReviewCount = statisticsCount(total, "classification_candidate_count") + statisticsCount(total, "classification_unclassified_count");
+  const tabs = statisticsDimensionTabs.map(([value, label]) => `<button type="button" role="tab" aria-selected="${dimension === value ? "true" : "false"}" class="${dimension === value ? "active" : ""}" data-stat-dimension="${value}">${label}</button>`).join("");
+  const dimensionCopy = {
+    industry: {
+      title: "行业总览",
+      note: taxonomyV3Preview
+        ? "每行按 Taxonomy v3 候选行业聚合；不代表正式分类或人工批准。"
+        : "每行只代表一个 canonical 行业；不混入商品品类子行或时长维度。",
+    },
+    category: {
+      title: "商品品类",
+      note: taxonomyV3Preview
+        ? "每行按 Taxonomy v3 候选行业 × 商品品类路径聚合；点击后按候选值进入视频。"
+        : "每行只代表一个行业 × 商品品类路径；父行业仅作路径标识，不插入行业小计。",
+    },
+    duration: {
+      title: "时长分布",
+      note: "固定四个互斥区间；可按行业切换上下文，母片与可交付口径由服务端统一聚合。",
+    },
+  }[dimension];
+  const lowFrequencyCategoryCount = categoryRows.filter((row) => row.low_frequency).length;
+  const categoryConflictCount = categoryRows.filter((row) => statisticsCount(row, "dimension_conflict_count") > 0).length;
+  const knownDurationCount = statisticsCount(selectedTotal, "record_count") - statisticsCount(selectedTotal, "duration_missing");
+  const dimensionMeta = dimension === "industry"
+    ? `<div><span>正常行业</span><strong>${activeCount}</strong></div><div><span>低频行业</span><strong>${longTailCount}</strong></div><div><span>待确认行业记录</span><strong>${unknownIndustryCount}</strong></div><div><span>源分布</span><div class="tags">${sourceBreakdown || "—"}</div></div>`
+    : dimension === "category"
+      ? `<div><span>品类路径</span><strong>${categoryRows.length}</strong></div><div><span>低频品类</span><strong>${lowFrequencyCategoryCount}</strong></div><div><span>父级冲突</span><strong>${categoryConflictCount}</strong></div><div><span>待确认品类记录</span><strong>${unknownCategoryCount}</strong></div>`
+      : `<div><span>互斥区间</span><strong>${durationRows.length}</strong></div><div><span>已有时长</span><strong>${knownDurationCount}</strong></div><div><span>时长缺失</span><strong>${statisticsCount(selectedTotal, "duration_missing")}</strong></div><div><span>当前过滤记录</span><strong>${statisticsCount(selectedTotal, "record_count")}</strong></div>`;
+  const emptyRow = (columns) => `<tr><td colspan="${columns}"><div class="muted">当前筛选没有统计行。</div></td></tr>`;
+  const industryTable = `<table class="matrix supply-matrix statistics-industry-table" data-statistics-table="industry">
+    <thead><tr><th>行业</th><th>记录数</th><th>canonical 母片</th><th>可交付母片</th><th>待审核</th><th>分类待确认</th><th>低频</th></tr></thead>
+    <tbody>${industryRows.map((row) => statisticsIndustryRowMarkup(row, scopeId)).join("") || emptyRow(7)}</tbody>
+    <tfoot>${statisticsIndustryRowMarkup(total, scopeId, { grandTotal: true })}</tfoot>
+  </table>`;
+  const categoryTable = `<table class="matrix supply-matrix statistics-category-table" data-statistics-table="category">
+    <thead><tr><th>商品品类</th><th>父行业路径</th><th>记录数</th><th>canonical 母片</th><th>可交付母片</th><th>待审核</th><th>分类待确认</th><th>父级冲突</th><th>低频</th></tr></thead>
+    <tbody>${categoryRows.map((row) => statisticsCategoryRowMarkup(row, scopeId)).join("") || emptyRow(9)}</tbody>
+    <tfoot>${statisticsCategoryRowMarkup(selectedTotal, scopeId, { grandTotal: true })}</tfoot>
+  </table>`;
+  const durationTable = `<table class="matrix supply-matrix statistics-duration-table" data-statistics-table="duration">
+    <thead><tr><th>时长区间</th><th>记录数</th><th>占比</th><th>canonical 母片</th><th>可交付母片</th><th>待审核</th><th>分类待确认</th><th>来源分布</th></tr></thead>
+    <tbody>${durationRows.map((row) => statisticsDurationRowMarkup(row, scopeId, statisticsCount(selectedTotal, "record_count"))).join("") || emptyRow(8)}</tbody>
+    <tfoot>${statisticsDurationTotalMarkup(selectedTotal, scopeId, selectedIndustryValue)}</tfoot>
+  </table>`;
+  const table = dimension === "industry" ? industryTable : dimension === "category" ? categoryTable : durationTable;
+
+  renderShell(`
+    ${pageTop("模板供给统计台", `当前范围：${escapeHtml(stats.scope?.label || scopeId)}；默认按行业查看，切换 Tab 后每张表只保留一个统计维度。`, `<button class="btn primary" data-export-statistics="csv">导出当前 Tab CSV</button><button class="btn ghost" data-export-statistics="tsv">导出当前 Tab TSV</button><button class="btn ghost" data-genre-matrix>查看题材矩阵</button><button class="btn ghost" data-three-source-delivery>三渠道视频</button>`)}
+    <div class="content">
+      <div class="hero-grid stats-hero-grid">
+        <div class="metric"><div class="metric-label">统计记录</div><div class="metric-value">${statisticsCount(total, "record_count")}</div><div class="metric-note">当前 scope；不含拉黑记录</div></div>
+        <div class="metric"><div class="metric-label">canonical 母片</div><div class="metric-value">${statisticsCount(total, "unique_master_count")}</div><div class="metric-note">按 canonical_master_id 去重</div></div>
+        <div class="metric"><div class="metric-label">可交付母片</div><div class="metric-value">${statisticsCount(total, "unique_deliverable_master_count") || statisticsCount(total, "deliverable_count")}</div><div class="metric-note">媒体可用 + Contact Sheet 证据</div></div>
+        <div class="metric"><div class="metric-label">分类待确认</div><div class="metric-value">${classificationReviewCount}</div><div class="metric-note">候选 ${statisticsCount(total, "classification_candidate_count")} · 未归类 ${statisticsCount(total, "classification_unclassified_count")}</div></div>
+      </div>
+      <section class="panel stats-panel">
+        <div class="statistics-tabs" role="tablist" aria-label="统计维度">${tabs}</div>
+        <div class="panel-head">
+          <div><h2>${dimensionCopy.title}</h2><p>${dimensionCopy.note}</p></div>
+          <div class="matrix-controls">
+            <select class="select industry-select" data-stat-scope>${scopeOptions}</select>
+            ${dimension === "industry" ? "" : renderIndustrySelect("matrix")}
+          </div>
+        </div>
+        <div class="stats-meta-strip">${dimensionMeta}</div>
+        <div class="stats-note">${taxonomyV3Preview ? "本表使用 Taxonomy v3 候选层；点击数字后仍以候选值筛选，正式行业与品类不会被改写。 " : ""}${unknownIndustryCount || unknownCategoryCount ? `待确认诊断：行业 ${unknownIndustryCount} 条、商品品类 ${unknownCategoryCount} 条；候选值保留为待确认，不冒充正式分类。` : "当前 scope 没有空行业或空品类记录。"} 低频阈值 ${optionModel.threshold || 10} 条 · 统计版本 ${escapeHtml(stats.version || bundle.version || "library-statistics-v1")} · 状态 SHA ${escapeHtml((stats.state_sha256 || bundle.state_sha256 || "").slice(0, 12))}…</div>
+        <div class="matrix-wrap">${table}</div>
+      </section>
+      <section class="stats-method-note"><strong>交付口径</strong><span>默认研发范围只含 Ads of the World、Best Ads、STASH；历史 YouTube 本轮不处理。行业、商品品类、时长分别导出，统计不代表人工批准，原审核状态完整保留。规则版本：taxonomy ${escapeHtml(stats.taxonomy_version || state.data.taxonomy?.version || state.data.stats?.taxonomy_version || "—")} · methodology ${escapeHtml(stats.methodology_version || state.data.methodology?.source_collection?.version || "—")} · statistics ${escapeHtml(stats.version || "library-statistics-v1")} · 合同 ${escapeHtml(taxonomyV3Preview ? state.data.taxonomy_v3?.contract_path || "collect/adgenie-taxonomy-contract-v3.md" : stats.statistics_contract_path || bundle.contract_path || "collect/library-statistics-contract-v1.md")}。</span></section>
+    </div>
+  `);
+}
+
 function renderIndustrySelect(context = "videos") {
+  const selectedValue = context === "matrix" ? state.matrixIndustry : state.filters.industry;
   const industries = industriesForData();
+  const unknownCount = context === "matrix"
+    ? (statisticsScope().industry_rows || [])
+      .filter((row) => !row.industry_key)
+      .reduce((sum, row) => sum + statisticsCount(row, "record_count"), 0)
+    : 0;
+  if (unknownCount > 0) industries.push(unknownIndustryFilterId);
   if (industries.length <= 1) return "";
-  const options = ["all", ...industries].map((industry) =>
-    `<option value="${escapeHtml(industry)}" ${state.filters.industry === industry ? "selected" : ""}>${industry === "all" ? "全部行业" : escapeHtml(industryLabel(industry))}</option>`
-  ).join("");
+  const model = state.data.industry_options_by_scope?.[state.matrixScope] || state.data.industry_options;
+  const optionMeta = new Map((model?.options || []).map((item) => [item.industry || item.value, item]));
+  const options = ["all", ...new Set(industries)].map((industry) => {
+    if (industry === "all") return `<option value="all" ${selectedValue === "all" ? "selected" : ""}>全部行业</option>`;
+    if (industry === unknownIndustryFilterId) return `<option value="${unknownIndustryFilterId}" ${selectedValue === unknownIndustryFilterId ? "selected" : ""}>待确认行业 · ${unknownCount}</option>`;
+    const meta = optionMeta.get(industry);
+    return `<option value="${escapeHtml(industry)}" ${selectedValue === industry ? "selected" : ""}>${escapeHtml(`${industryLabel(industry)} · ${meta?.count ?? "—"}${meta?.is_long_tail ? " · 低频" : ""}`)}</option>`;
+  }).join("");
   return `<select class="select industry-select" data-industry-select="${escapeHtml(context)}">${options}</select>`;
 }
 
@@ -846,21 +1609,162 @@ function renderStatusFilter() {
   `;
 }
 
+function brandGovernanceCandidate(video) {
+  const id = video?.video_id || video?.id;
+  return id ? state.data.brand_governance?.video_candidates?.[id] || null : null;
+}
+
+function displayableBrandLogo(candidate) {
+  return candidate?.logos?.find((logo) => logo.display_allowed && logo.logo_url) || null;
+}
+
+function brandCandidateNames(candidate) {
+  return (candidate?.canonical_brands || []).map((brand) => brand.name || brand.id).filter(Boolean);
+}
+
+const brandResolutionLaneLabels = {
+  manual_confirmation: "需人工确认",
+  safe_auto: "可安全关联候选",
+  cannot_determine: "证据不足",
+  no_flag: "当前规则无风险",
+  not_audited: "尚未完成审计",
+};
+
+const brandRiskLabels = {
+  identity_alias_group: "品牌别名待归一",
+  agency_marker_contamination: "代理商值混入品牌字段",
+  multi_brand_relation_unresolved: "多品牌关系未确认",
+  title_brand_mismatch: "标题品牌与存储品牌不一致",
+  company_suffix_brand: "公司实体与消费品牌边界待确认",
+  cross_source_title_brand_conflict: "跨来源品牌冲突",
+  scalar_composite_brand: "联名品牌被压成单值",
+  brand_equals_campaign_title: "品牌值疑似误取 Campaign",
+  role_like_brand_value: "品牌值疑似人员或职务",
+};
+
+function brandResolutionLabel(candidate) {
+  return brandResolutionLaneLabels[candidate?.resolution_lane] || "品牌状态待确认";
+}
+
+function brandRiskSummary(candidate) {
+  return (candidate?.risk_codes || []).map((code) => brandRiskLabels[code] || code).join("；");
+}
+
+function brandLogoUsageLabel(logo) {
+  if (!logo) return "没有 Logo 候选";
+  if (logo.usage_scope === "blocked") return "许可阻断";
+  if (logo.approved_for_product) return "产品发布已批准";
+  return "仅限内部研发预览";
+}
+
+function renderBrandCell(video) {
+  const candidate = brandGovernanceCandidate(video);
+  const logo = displayableBrandLogo(candidate);
+  const formal = isFormalSourcePlatform(video);
+  const status = candidate ? brandResolutionLabel(candidate) : formal ? "尚未完成审计" : "";
+  const canonical = brandCandidateNames(candidate).join(" / ");
+  return `<div class="brand-cell">
+    ${logo ? `<img class="brand-logo-candidate" src="${escapeHtml(logo.logo_url)}" alt="${escapeHtml(logo.display_name)} Logo 候选">` : `<span class="brand-logo-placeholder" aria-hidden="true">${escapeHtml(String(video.brand || "?").slice(0, 1).toUpperCase())}</span>`}
+    <div><strong>${escapeHtml(video.brand || "—")}</strong>${canonical && canonical !== video.brand ? `<span>${escapeHtml(canonical)}</span>` : ""}${status ? `<em class="brand-resolution ${escapeHtml(candidate?.resolution_lane || "not_audited")}">${escapeHtml(status)}</em>` : ""}</div>
+  </div>`;
+}
+
+function brandGovernancePanel(video) {
+  const candidate = brandGovernanceCandidate(video);
+  if (!isFormalSourcePlatform(video)) return "";
+  if (!candidate) {
+    return `<div class="brand-governance-card pending"><strong>品牌审计：尚未完成</strong><span>当前正式品牌值为 ${escapeHtml(video.brand || "—")}；没有可用的当前状态审计结果。</span></div>`;
+  }
+  const logo = displayableBrandLogo(candidate);
+  const blocked = (candidate.logos || []).some((item) => !item.display_allowed);
+  const canonical = brandCandidateNames(candidate).join(" / ") || "尚无 canonical brand 候选";
+  const riskSummary = brandRiskSummary(candidate);
+  const lane = candidate.resolution_lane || "not_audited";
+  const logoDownload = logo?.preview_download_url
+    ? `<a class="brand-logo-download" href="${escapeHtml(logo.preview_download_url)}">下载内部候选 PNG</a>`
+    : "";
+  return `<div class="brand-governance-card ${escapeHtml(lane)}">
+    ${logo ? `<img src="${escapeHtml(logo.logo_url)}" alt="${escapeHtml(logo.display_name)} Logo 候选">` : ""}
+    <div><strong>品牌字段：${escapeHtml(brandResolutionLabel(candidate))}</strong><span>正式原值：${escapeHtml(video.brand || "—")} · canonical 候选：${escapeHtml(canonical)}</span>${riskSummary ? `<span>风险：${escapeHtml(riskSummary)}</span>` : `<span>当前规则未发现品牌字段风险；这不等于人工确认或产品批准。</span>`}<span>候选键：${escapeHtml((candidate.brand_ids || []).join(" / ") || "—")} · 映射 ${escapeHtml(candidate.mapping_status || "unmapped")} · ${escapeHtml(candidate.mapping_method || "待补映射")}</span><span>${blocked ? "Logo 因明确许可门禁不展示。" : logo ? `${escapeHtml(brandLogoUsageLabel(logo))} · 许可状态 ${escapeHtml(logo.permission_status || "not_reviewed")}` : "当前没有可展示 Logo 候选。"}</span>${logoDownload}</div>
+  </div>`;
+}
+
+function taxonomyV3List(value) {
+  if (Array.isArray(value)) return value.map((item) => {
+    if (typeof item === "string") return item;
+    return item?.message || item?.code || JSON.stringify(item);
+  }).filter(Boolean);
+  if (!value || typeof value !== "object") return value ? [String(value)] : [];
+  return Object.entries(value).filter(([, item]) => {
+    if (Array.isArray(item)) return item.length > 0;
+    return Boolean(item);
+  }).map(([key, item]) => `${key}: ${typeof item === "string" ? item : JSON.stringify(item)}`);
+}
+
+function taxonomyV3CandidateCard(video) {
+  const taxonomy = video?.taxonomy_v3;
+  const candidate = taxonomyV3Candidate(video);
+  if (!taxonomy || !candidate) return "";
+  const confidence = Number(taxonomy.confidence);
+  const confidenceLabel = Number.isFinite(confidence)
+    ? `${Math.round((confidence <= 1 ? confidence * 100 : confidence))}%`
+    : "未提供";
+  const evidence = taxonomyV3List(taxonomy.evidence);
+  const conflicts = taxonomyV3List(taxonomy.conflicts);
+  return `<section class="taxonomy-v3-card">
+    <div class="taxonomy-v3-card-head">
+      <div><strong>Taxonomy v3 候选</strong><span>只读预览，不是正式分类，也不代表人工批准。</span></div>
+      <span class="taxonomy-v3-status ${taxonomy.manual_review_required ? "needs-review" : ""}">${escapeHtml(taxonomyV3StatusLabel(video))}</span>
+    </div>
+    <div class="taxonomy-v3-card-grid">
+      <div><span>候选行业</span><strong>${escapeHtml(bilingualTaxonomyLabel(candidate.industry, candidate.industry_zh))}</strong></div>
+      <div><span>候选商品品类</span><strong>${escapeHtml(bilingualTaxonomyLabel(candidate.product_category, candidate.product_category_zh))}</strong></div>
+      <div><span>置信度</span><strong>${escapeHtml(confidenceLabel)}</strong></div>
+      <div><span>人工复核</span><strong>${taxonomy.manual_review_required ? "需要" : "当前未要求"}</strong></div>
+    </div>
+    ${conflicts.length ? `<div class="taxonomy-v3-card-alert"><strong>冲突</strong><span>${escapeHtml(conflicts.join("；"))}</span></div>` : ""}
+    <div class="taxonomy-v3-card-evidence"><strong>候选证据</strong><span>${escapeHtml(evidence.join("；") || "未提供")}</span></div>
+  </section>`;
+}
+
 function renderVideos() {
   const videos = filteredVideos();
+  const brandSummary = state.data.brand_governance?.summary || {};
+  const taxonomyV3Preview = state.filters.classificationMode === "taxonomy_v3_candidate";
+  const threeSourceDeliveryNotice = state.filters.platform === "three_sources" ? `
+    <div class="metadata-notice">
+      <strong>三渠道开发预览版 · ${videos.length} 条</strong>
+      <span>包含 Ads of the World、Best Ads、STASH。品牌字段已审计 ${brandSummary.audited_record_count || 0}/${brandSummary.formal_record_count || 0}；映射记录 ${brandSummary.mapping_record_count || 0}，其中身份已确认品牌 ${brandSummary.identity_confirmed_brand_count || 0}、待身份复核品牌 ${brandSummary.identity_review_required_brand_count || 0}。记录级需人工确认 ${brandSummary.resolution_lane_counts?.manual_confirmation || 0}；可预览 Logo 候选 ${brandSummary.records_with_displayable_logo_candidate || 0}，产品批准 Logo ${brandSummary.records_with_product_approved_logo || 0}。候选不会写回正式品牌或伪装成批准结果。</span>
+    </div>
+  ` : "";
+  const taxonomyV3Notice = taxonomyV3Preview ? `
+    <div class="taxonomy-v3-list-notice">
+      <strong>当前按 Taxonomy v3 候选筛选</strong>
+      <span>行业和商品品类来自只读候选层，仅用于新版分类预览；现有正式分类、审核状态和人工纠错均未被覆盖。</span>
+    </div>
+  ` : "";
   const industryOptions = ["all", ...industriesForData()].map((industry) =>
     `<option value="${escapeHtml(industry)}" ${state.filters.industry === industry ? "selected" : ""}>${industry === "all" ? "全部行业" : escapeHtml(industryLabel(industry))}</option>`
   ).join("");
-  const categoryOptions = ["all", ...categoriesForCurrentIndustry().map((item) => item.category)].map((category) =>
-    `<option value="${escapeHtml(category)}" ${state.filters.category === category ? "selected" : ""}>${category === "all" ? "全部品类" : escapeHtml(categoryInline(category))}</option>`
+  const categoryRegistry = categoryRegistryForFilters();
+  const categoryFilterEntries = categoryFilterItems(state.data.videos, categoryRegistry, selectedIndustry(), state.filters.classificationMode);
+  const categoryOptions = [
+    { category: "all", label: "全部品类" },
+    ...categoryFilterEntries.map((item) => ({
+      category: item.category,
+      label: `${item.candidate ? "候选 · " : ""}${bilingualTaxonomyLabel(item.category, item.zh)}`,
+    })),
+  ].map((item) =>
+    `<option value="${escapeHtml(item.category)}" ${state.filters.category === item.category ? "selected" : ""}>${escapeHtml(item.label)}</option>`
   ).join("");
   const genreOptions = ["all", ...targetGenresForIndustry()].map((genre) =>
     `<option value="${escapeHtml(genre)}" ${state.filters.genre === genre ? "selected" : ""}>${genre === "all" ? "全部题材" : escapeHtml(genreShort(genre))}</option>`
   ).join("");
   const filterOptions = (items, selected) => items.map(([value, label]) => `<option value="${escapeHtml(value)}" ${selected === value ? "selected" : ""}>${escapeHtml(label)}</option>`).join("");
-  const platformOptions = filterOptions([["all", "全部平台"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["instagram", "Instagram"], ["meta", "Meta"], ["best_ads", "Best Ads"], ["ads_of_the_world", "Ads of the World"], ["unknown", "未知平台"]], state.filters.platform);
+  const platformOptions = filterOptions(platformFilterItems(state.data.videos, state.data.methodology?.source_collection), state.filters.platform);
   const platformFormatOptions = filterOptions([["all", "全部平台形态"], ["shorts", "Shorts"], ["videos", "Videos"], ["reels", "Reels"], ["feed", "Feed"], ["unknown", "未知形态"]], state.filters.platformFormat);
   const aspectRatioOptions = filterOptions([["all", "全部画幅"], ["9:16", "9:16 竖屏"], ["16:9", "16:9 横屏"], ["4:5", "4:5 竖版"], ["1:1", "1:1 方形"], ["unknown", "画幅未知"]], state.filters.aspectRatio);
+  const durationBandOptions = filterOptions([["all", "全部时长"], ["duration_le_30s", "≤30s"], ["duration_30_to_60s", "30–60s"], ["duration_gt_60s", ">60s"], ["duration_missing", "时长缺失"]], state.filters.durationBand);
   const recencyOptions = filterOptions([["all", "全部发布时间"], ["90", "近 90 天"], ["180", "近 180 天"], ["365", "近 1 年"], ["730", "近 2 年"], ["unknown", "日期未知"]], state.filters.recency);
   const accountTypeValues = [...new Set(state.data.videos.map((video) => String(video.source_account_type || video.publisher_role || "unknown")))].sort();
   const accountTypeOptions = filterOptions([["all", "全部账号类型"], ...accountTypeValues.map((value) => [value, sourceAccountTypeLabel(value)])], state.filters.sourceAccountType);
@@ -889,6 +1793,8 @@ function renderVideos() {
       </div>
     `)}
     <div class="content">
+      ${threeSourceDeliveryNotice}
+      ${taxonomyV3Notice}
       <div class="filters">
         <select class="select" data-filter="industry">${industryOptions}</select>
         <input class="input" data-filter="query" placeholder="搜索标题、品牌、视频 ID、题材…" value="${escapeHtml(state.filters.query)}">
@@ -897,6 +1803,7 @@ function renderVideos() {
         <select class="select" data-filter="platform">${platformOptions}</select>
         <select class="select" data-filter="platformFormat">${platformFormatOptions}</select>
         <select class="select" data-filter="aspectRatio">${aspectRatioOptions}</select>
+        <select class="select" data-filter="durationBand">${durationBandOptions}</select>
         <select class="select" data-filter="recency">${recencyOptions}</select>
         <select class="select" data-filter="sourceAccountType">${accountTypeOptions}</select>
         ${renderStatusFilter()}
@@ -905,7 +1812,7 @@ function renderVideos() {
       <div class="table-shell">
         <table class="video-table">
           <thead><tr>${tableHead}</tr></thead>
-          <tbody>${rows || `<tr><td colspan="${visibleColumns.length}"><div class="muted">没有符合条件的视频。</div></td></tr>`}</tbody>
+          <tbody>${rows || `<tr><td colspan="${visibleColumns.length}"><div class="muted">${escapeHtml(emptyVideosMessage(state.filters.platform, state.data.videos, state.data.methodology?.source_collection))}</div></td></tr>`}</tbody>
         </table>
       </div>
     </div>
@@ -914,14 +1821,21 @@ function renderVideos() {
 
 function renderCell(video, id) {
   if (id === "preview") return previewImage(video);
-  if (id === "title") return `<div class="title-link">${escapeHtml(video.title)}</div><div class="subtext">${escapeHtml(video.video_id)} · <a href="${escapeHtml(video.url)}" target="_blank" rel="noreferrer">${escapeHtml(sourcePlatformLabel(normalizedSourcePlatform(video)))} ↗</a></div>`;
-  if (id === "brand") return escapeHtml(video.brand || "—");
+  if (id === "title") {
+    const sourceUrl = video.source_detail_url || video.url || "#";
+    return `<div class="title-link">${escapeHtml(video.title)}</div><div class="subtext">${escapeHtml(video.video_id)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(sourcePlatformLabel(normalizedSourcePlatform(video)))} ↗</a></div>`;
+  }
+  if (id === "brand") return renderBrandCell(video);
   if (id === "industry") {
+    const v3Cell = taxonomyV3CandidateCell(video, "industry");
+    if (v3Cell) return v3Cell;
     if (video.industry) return escapeHtml(industryLabel(video.industry));
     const candidate = effectiveIndustry(video);
     return candidate ? `<div>${escapeHtml(industryLabel(candidate))}</div>${candidateNote()}` : "未知行业";
   }
   if (id === "product_category") {
+    const v3Cell = taxonomyV3CandidateCell(video, "product_category");
+    if (v3Cell) return v3Cell;
     if (video.product_category) return `<div>${escapeHtml(categoryInline(video.product_category))}</div><div class="subtext">${escapeHtml(industryLabel(video.industry))}</div>`;
     const candidate = effectiveProductCategory(video);
     const candidateIndustry = effectiveIndustry(video);
@@ -1075,6 +1989,8 @@ function drawerTabPanel(video, activeTab = "reclass") {
       <section class="tab-panel">
         <div class="panel-head compact"><div><h2>基础信息</h2><p>Campaign、来源事实、候选分类与媒体状态。</p></div><a class="btn ghost" target="_blank" rel="noreferrer" href="${escapeHtml(video.source_detail_url || video.url)}">打开来源详情页</a></div>
         <div class="drawer-body">
+          ${brandGovernancePanel(video)}
+          ${taxonomyV3CandidateCard(video)}
           <div class="detail-grid">
             ${kv("视频 ID", video.video_id)}
             ${kv("Campaign", video.campaign_title || video.title || "—")}
@@ -1108,7 +2024,12 @@ function drawerTabPanel(video, activeTab = "reclass") {
             ${kv("媒体失效时间", video.media_expires_at || "—")}
             ${kv("媒体失败原因", video.media_failure_reason || "—")}
             ${video.media_resolver_url ? kvLink("媒体解析接口", video.media_resolver_url, "获取当前播放链接") : ""}
-            ${video.media_download_url ? kvLink("研发稳定下载接口", video.media_download_url, "获取 / 下载视频") : ""}
+            ${video.media_download_url ? kvLink(
+              video.media_download_capability === "direct_file" ? "研发稳定下载接口" : "MP4 下载尝试接口",
+              video.media_download_url,
+              video.media_download_capability === "direct_file" ? "获取 / 下载视频" : "仅源站提供 MP4 时可用",
+            ) : ""}
+            ${video.media_download_capability === "playback_only_hls" ? kv("下载能力", "仅 HLS 播放，暂无 MP4 文件") : ""}
             ${kv("内容性质", video.content_nature || "—")}
             ${kv("AI 生成价值", video.ai_generation_value || "—")}
             ${kv("视觉质量分", video.quality_score ?? "—")}
@@ -1234,7 +2155,7 @@ function collectionProgressMetrics(channel) {
     ["扫描列表页", channel.progress.discovery_pages_scanned],
     ["发现候选", channel.progress.discovery_candidates_seen],
     ["已处理终态", channel.progress.terminal_outcomes],
-    ["目标", channel.scope.target_reviewable_total],
+    ["交接/正式", `${channel.scope.handoff_reviewable_total ?? channel.scope.target_reviewable_total ?? "—"}/${channel.scope.formal_merge_reviewable_total ?? channel.progress.reviewable_total ?? "—"}`],
     ["可审核", channel.progress.reviewable_total],
     ["本轮新增", channel.progress.selected_new_records],
   ];
@@ -1406,10 +2327,17 @@ async function resolveMediaPreview(video, force = false) {
   if (status) status.textContent = force ? "正在重新获取最新视频链接…" : "正在连接来源站…";
   if (refreshButton) refreshButton.disabled = true;
   delete video._media_resolution_error;
-  const request = api(`/api/videos/${encodeURIComponent(key)}/media${force ? "?refresh=1" : ""}`)
+  const isStash = video.source_site === "stash" && video.media_provider === "hls";
+  const controller = isStash ? new AbortController() : null;
+  const timeout = controller ? setTimeout(() => controller.abort(), stashResolutionTimeoutMs) : null;
+  const request = api(`/api/videos/${encodeURIComponent(key)}/media${force ? "?refresh=1" : ""}`, controller ? { signal: controller.signal } : {})
     .then((payload) => {
       Object.assign(video, {
         playback_url: payload.playback_url,
+        download_url: payload.download_url,
+        playback_kind: payload.playback_kind,
+        download_kind: payload.download_kind,
+        download_available: payload.download_available,
         media_checked_at: payload.checked_at,
         media_expires_at: payload.expires_at,
         media_access_status: payload.access_status,
@@ -1420,11 +2348,17 @@ async function resolveMediaPreview(video, force = false) {
     })
     .catch((error) => {
       video.playback_url = null;
-      video._media_resolution_error = `刷新失败：${error.message}`;
+      video.download_url = null;
+      video._media_resolution_error = controller?.signal.aborted
+        ? `刷新失败：STASH 媒体解析超过 ${stashResolutionTimeoutMs / 1000} 秒；Contact Sheet 已保留，可稍后重试。`
+        : `刷新失败：${error.message}`;
       replaceMediaPreview(video);
       return null;
     })
-    .finally(() => mediaResolutionRequests.delete(key));
+    .finally(() => {
+      if (timeout) clearTimeout(timeout);
+      mediaResolutionRequests.delete(key);
+    });
   mediaResolutionRequests.set(key, request);
   return request;
 }
@@ -1453,28 +2387,71 @@ function bindGlobal() {
   bindMediaFallbacks();
   bindMediaPreviewActions();
   document.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
+  document.querySelector("[data-genre-matrix]")?.addEventListener("click", () => {
+    state.matrixView = "genre";
+    renderMatrix();
+  });
+  document.querySelector("[data-supply-matrix]")?.addEventListener("click", () => {
+    state.matrixView = "supply";
+    renderMatrix();
+  });
+  document.querySelector("[data-three-source-delivery]")?.addEventListener("click", openThreeSourceDelivery);
   document.querySelectorAll("[data-matrix-mode]").forEach((button) => button.addEventListener("click", () => {
     state.matrixMode = button.dataset.matrixMode;
     renderMatrix();
+  }));
+  document.querySelectorAll("[data-stat-dimension]").forEach((button) => button.addEventListener("click", () => {
+    state.matrixDimension = button.dataset.statDimension;
+    if (state.matrixDimension === "industry") state.matrixIndustry = "all";
+    renderMatrix();
+  }));
+  document.querySelector("[data-stat-scope]")?.addEventListener("input", (event) => {
+    state.matrixScope = event.target.value;
+    state.matrixIndustry = "all";
+    renderMatrix();
+  });
+  document.querySelectorAll("[data-export-statistics]").forEach((button) => button.addEventListener("click", () => exportStatistics(button.dataset.exportStatistics)));
+  document.querySelectorAll("[data-stat-cell]").forEach((cell) => cell.addEventListener("click", () => {
+    let industryValues = [];
+    let categoryValues = [];
+    try {
+      industryValues = JSON.parse(cell.dataset.statIndustryValues || "[]");
+      categoryValues = JSON.parse(cell.dataset.statCategoryValues || "[]");
+    } catch {
+      industryValues = [];
+      categoryValues = [];
+    }
+    goStatisticsVideos(cell.dataset.statScope, cell.dataset.statIndustry, cell.dataset.statCategory, cell.dataset.statBand, industryValues, categoryValues, cell.dataset.statIndustryLabel, cell.dataset.statCategoryLabel);
   }));
   document.querySelector("[data-matrix-aspect]")?.addEventListener("input", (event) => {
     state.matrixAspectRatio = event.target.value;
     renderMatrix();
   });
   document.querySelector("[data-industry-select]")?.addEventListener("input", (event) => {
-    state.filters.industry = event.target.value;
-    state.filters.category = "all";
-    if (event.target.dataset.industrySelect === "matrix") renderMatrix();
-    else renderVideos();
+    if (event.target.dataset.industrySelect === "matrix") {
+      state.matrixIndustry = event.target.value;
+      renderMatrix();
+    } else {
+      state.filters.industry = event.target.value;
+      state.filters.category = "all";
+      state.filters.statisticsIndustryValues = null;
+      state.filters.statisticsCategoryValues = null;
+      renderVideos();
+    }
   });
   document.querySelectorAll("[data-goto-category]").forEach((el) => el.addEventListener("click", () => goVideos(el.dataset.gotoCategory, el.dataset.gotoGenre, el.dataset.gotoStatus)));
   document.querySelectorAll("[data-filter]").forEach((input) => input.addEventListener("input", () => {
     state.filters[input.dataset.filter] = input.value;
-    if (input.dataset.filter === "industry") state.filters.category = "all";
+    if (input.dataset.filter === "industry") {
+      state.filters.category = "all";
+      state.filters.statisticsIndustryValues = null;
+      state.filters.statisticsCategoryValues = null;
+    }
+    if (input.dataset.filter === "category") state.filters.statisticsCategoryValues = null;
     renderVideos();
   }));
   document.querySelector("[data-reset-filters]")?.addEventListener("click", () => {
-    state.filters = { industry: "all", query: "", category: "all", genre: "all", platform: "all", platformFormat: "all", aspectRatio: "all", recency: "all", sourceAccountType: "all", statusIds: [], statusMode: "include" };
+    state.filters = { industry: "all", query: "", category: "all", genre: "all", platform: "all", platformFormat: "all", aspectRatio: "all", recency: "all", sourceAccountType: "all", statusIds: [], statusMode: "include", durationBand: "all", classificationMode: "all", statisticsIndustryValues: null, statisticsCategoryValues: null, statisticsScopeId: null };
     state.statusFilterOpen = false;
     renderVideos();
   });
@@ -1736,4 +2713,4 @@ async function boot() {
   }
 }
 
-boot();
+if (typeof window !== "undefined") boot();

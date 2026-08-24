@@ -1,30 +1,53 @@
 {
   "version": "v1",
-  "updated_at": "2026-08-20",
+  "updated_at": "2026-08-22",
   "title": "专业广告渠道采集台账",
-  "purpose": "记录 Best Ads 与 Ads of the World 的目标范围、已完成进度、质量门、媒体交付方式和续跑前置条件。后续扩大数据范围前必须先读取并更新本台账。",
+  "purpose": "记录 Best Ads、Ads of the World 与 STASH 的当前范围、可审计交接进度、质量门、媒体交付方式和续跑前置条件。integration_partial 只能表示证据允许的可合并集合，不能宣称全站发现完成。",
   "shared_rules": {
-    "years": [2025, 2026],
+    "date_scope_is_channel_specific": true,
+    "year_scope_note": "年份范围由各渠道 scope 明确声明；shared years 只表示本项目允许的总边界，不代表每个渠道均已覆盖全边界。",
     "visual_review_frames": 10,
     "genres_defaulted_from_visual_candidates": true,
     "review_status_after_import": "pending_review",
     "media_delivery": "remote_links",
     "canonical_linking_required": true,
+    "canonical_taxonomy": "AdGenie canonical taxonomy v1; aliases and unresolved conflicts remain auditable",
+    "integration_status_policy": "PARTIAL whenever discovery, date, media, taxonomy, or cross-source review remains unresolved",
     "next_run_requires_ledger_update": true
+  },
+  "integration": {
+    "status": "PARTIAL",
+    "fact_source": "web/data/creative-library-state.json",
+    "handoff_contract": "source_site + source_record_id + media_asset_id + source_refs + evidence + pending review state",
+    "required_gates": [
+      "brand_and_campaign_evidence",
+      "source_detail_and_auditable_date",
+      "real_video_asset",
+      "real_ten_frame_contact_sheet",
+      "taxonomy_candidates_and_conflicts",
+      "visual_review",
+      "source_asset_and_canonical_deduplication"
+    ],
+    "pending_reasons": [
+      "AOTW detail backlog and relaxed-scope boundary samples",
+      "Best Ads campaign dates are source-uploaded only",
+      "STASH discovery count reconciliation, brand-missing review, and media failures",
+      "cross-source approximate canonical links and taxonomy manual confirmation"
+    ]
   },
   "channels": [
     {
       "id": "best_ads",
       "name": "Best Ads",
-      "status": "scope_complete",
-      "status_label": "约定范围已完整采集",
-      "objective": "完整采集当前约定的美国 TV 广告范围，并把可播放、可审计的 2025/2026 品牌广告送入审核台。",
+      "status": "integration_partial",
+      "status_label": "当前约定范围已形成交接包；Campaign 日期仍未核验",
+      "objective": "交付当前 Best Ads 美国 TV、2025/2026 范围内已发现且可播放的品牌广告；该集合不是 Best Ads 全站完成，Uploaded 日期不能代替 Campaign 日期。",
       "scope": {
         "country": "United States",
         "medium": "TV",
         "years": [2025, 2026],
         "categories": 9,
-        "completion_definition": "所有列表页候选均进入 success 或 skipped 终态，remaining_candidates 必须为 0。"
+        "completion_definition": "当前 213 个列表候选均进入 success 或 skipped 终态；108 条通过媒体与 10 帧门的交接记录可合并，但 Campaign 日期和全站覆盖仍是 PARTIAL。"
       },
       "progress": {
         "completed_pages": 42,
@@ -39,6 +62,12 @@
         "newly_imported": 88,
         "media_unavailable_excluded": 1,
         "current_failures": 0
+        ,"discovery_complete": true
+        ,"integration_records": 108
+        ,"visual_reviewed": 108
+        ,"contact_sheet_success": 108
+        ,"campaign_date_verified": 0
+        ,"partial_reasons": ["campaign_date_unverified", "scope_is_not_full_site", "30_taxonomy_records_need_manual_confirmation"]
       },
       "collection_plan": [
         "按 Best Ads 的 TV、国家、类别和 2025/2026 年份入口遍历列表页，并使用 checkpoint 保存每个候选的终态。",
@@ -75,59 +104,188 @@
     {
       "id": "ads_of_the_world",
       "name": "Ads of the World",
-      "status": "target_complete",
-      "status_label": "100 条目标已完成",
-      "objective": "从 Ads of the World 的专业 Film 广告中筛选 2025/2026 样片，使审核台该渠道达到 100 条可审核视频。",
+      "status": "integration_partial",
+      "status_label": "当前 handoff 有 2008 条可合并视频；全站详情仍未完成",
+      "objective": "从 Ads of the World Film 入口交付当前已验证的品牌广告视频；2008 条是可合并 handoff 集合，不是全站采尽，也不再受历史 100 条目标限制。",
       "scope": {
         "medium": "Film",
-        "years": [2025, 2026],
+        "years": [2021, 2026],
         "professional_campaign_only": true,
-        "target_reviewable_total": 100,
-        "completion_definition": "审核台 Ads of the World 平台筛选结果必须准确等于 100 条；这不是全站采尽。"
+        "year_range": {"min": 2021, "max": 2026},
+        "handoff_reviewable_total": 2008,
+        "formal_merge_reviewable_total": 1956,
+        "duration_boundary_hold_total": 52,
+        "duration_policy": "保留 AOTW 当前 40 秒门；manifest.filtered_duration 或 duration_seconds > 40 的 handoff 资产从正式合并集合 hold，只有显式范围决策和人工复核后才可恢复。",
+        "completion_definition": "当前 handoff 有 2008 条记录，其中 1956 条通过正式合并门，52 条因 filtered_duration/超过 40 秒 hold；AOTW 仍有 83451 个已发现 Campaign 详情待处理，因此 channel status 必须保持 PARTIAL。"
       },
       "progress": {
-        "discovery_pages_scanned": 495,
-        "discovery_candidates_seen": 29680,
-        "terminal_outcomes": 560,
-        "source_success": 535,
-        "selected_new_records": 80,
-        "existing_before_run": 20,
-        "reviewable_total": 100,
-        "contact_sheet_success": 80,
-        "media_available": 80,
-        "current_failures": 0
+        "discovery_pages_scanned": 1465,
+        "discovery_candidates_seen": 88146,
+        "official_reported_candidates": 87866,
+        "terminal_outcomes": 4695,
+        "source_success": 4548,
+        "selected_new_records": 2008,
+        "existing_before_run": 0,
+        "reviewable_total": 2008,
+        "formal_merge_reviewable_total": 1956,
+        "duration_boundary_hold": 52,
+        "contact_sheet_success": 2008,
+        "current_failures": 0,
+        "discovery_complete": true,
+        "details_remaining": 83451,
+        "detail_outcomes": 4695,
+        "source_records": 4624,
+        "integration_records": 2008,
+        "visual_reviewed": 2008,
+        "media_available": 2008,
+        "media_errors": 308,
+        "filtered_duration": 1505,
+        "provider_link_only": 3201,
+        "classification_pending": 559,
+        "partial_reasons": ["83451_detail_records_unprocessed", "52_duration_boundary_holds", "relaxed_scope_136_legacy_validator_exceptions", "559_taxonomy_records_need_manual_confirmation"]
       },
       "collection_plan": [
         "从 Ads of the World Film 入口逐页发现 Campaign 详情页，并用 checkpoint 记录已处理候选。",
         "详情页必须提取专业 Campaign 声明、品牌、Campaign 名、发布时间句子、国家、行业/类别、Agency、详情页链接和视频地址。",
-        "只保留 2025/2026 的 professional campaign；学生作品、年份超范围、缺品牌或缺视频的记录进入带原因的 skipped 终态。",
+        "当前 handoff 覆盖已核验的 2021–2026 professional campaign；学生作品、缺品牌或缺视频的记录进入带原因的 skipped 终态，历史 2025/2026 目标门不再作为全量硬门。",
         "直接验证 video.adsoftheworld.com 等来源 CDN 视频，不把缩略图或联系表误当成视频。",
         "每条选中视频生成并人工查看 10 帧联系表，写入行业/品类候选与至少一个正式 genre 默认值。",
         "完成来源去重、视频资产去重和 canonical master 关联后，以 pending_review 状态增量导入审核台。"
       ],
       "metadata_policy": [
-        "使用详情页 published sentence 解析 Campaign 发布时间，只有明确落在 2025/2026 才进入本轮目标。",
+        "使用详情页 published sentence 解析 Campaign 发布时间；日期与 Film 标签作为候选证据，超出历史 2025/2026 门的记录保留 scope exception，不静默删除。",
         "来源行业和类别仅作分类证据；审核台行业、商品品类和 genres 仍以 10 帧视觉预审候选为准。"
       ],
       "quality_and_exclusion_rules": [
         "必须是 professional campaign 的 Film 视频，不使用仅图片、学生作品或非广告页面。",
         "必须有品牌、详情页、确认日期和可直接访问的远程视频链接。",
         "必须完成恰好 10 帧视觉预审，并至少写入一个 genre 默认值。",
+        "正式合并集合沿用 40 秒门；manifest.filtered_duration 或 duration_seconds > 40 的资产保持 duration boundary hold，不得静默进入审核台。",
         "同 Campaign 多个独立视频可以分别进入审核，但重复媒体资产和重复来源键必须排除。"
       ],
       "continuation": {
         "resume_from": "collect/runs/aotw-film-2025-2026/checkpoint.json",
         "before_next_run": [
-          "当前目标已经达到 100 条；扩大范围前先在本台账写清新的数量、国家、年份、Medium 或品类目标。",
-          "优先从 checkpoint 未进入目标集的成功候选继续筛选，不重复抓取已完成详情页。",
+          "当前 handoff 仅代表 2008 条可合并集合；AOTW 仍有 83451 个已发现详情待处理，任何扩展都必须先更新本台账。",
+          "若继续补齐，优先从 checkpoint 未进入目标集的成功候选继续筛选，不重复抓取已完成详情页。",
           "先备份审核台状态，再执行媒体验证、10 帧预审、canonical 关联和增量导入。",
           "完成后更新 reviewable_total、selected_new_records、失败原因和证据路径。"
         ]
       },
       "evidence": [
-        "collect/runs/aotw-target-100-review-2025-2026/batch-report.json",
-        "collect/runs/aotw-target-100-review-2025-2026/visually-reviewed-records.json",
-        "collect/runs/source-expansion-2025-2026-linked.json"
+        "collect/runs/aotw-best-ads-integration-handoff/README.md",
+        "collect/runs/aotw-best-ads-integration-handoff/summary.json",
+        "collect/runs/aotw-best-ads-integration-handoff/aotw-records.json",
+        "collect/runs/aotw-best-ads-integration-handoff/exclusions-and-failures.json",
+        "collect/runs/aotw-best-ads-integration-handoff/validator-results.json"
+      ]
+    },
+    {
+      "id": "stash",
+      "name": "STASH",
+      "status": "integration_partial",
+      "status_label": "STASH 已交付 569 条可合并记录；发现缺口与失败仍未闭合",
+      "objective": "在当前可验证的 STASH Advertising 六个播放列表范围内处理品牌广告候选，在详情取证、稳定媒体、真实 10 帧视觉复核和 STASH 单渠道去重通过后，将可交付记录增量交给总领线程；未解释缺口保持 PARTIAL。",
+      "scope": {
+        "entry": "https://www.stashmedia.tv/watch/?category=3",
+        "discovery_playlist": "Advertising: All",
+        "playlists": ["Advertising: All", "Advertising: Comedy", "Advertising: Holiday", "Advertising: Lifestyle", "Advertising: Food & Beverage", "Advertising: Automotive"],
+        "issues": ["VID96–VID178"],
+        "years": [2012, 2026],
+        "target_reviewable_total": 569,
+        "completion_definition": "670 个跨列表唯一候选已有当前终态，但 reported 686 与 DOM/union 计数尚未解释；只有 569 条通过稳定媒体、真实 10 帧视觉复核和 STASH 内部去重的记录可进入交接。"
+      },
+      "progress": {
+        "playlist_reported_videos": 686,
+        "playlist_enumerated_candidates": 664,
+        "dom_rows": 664,
+        "enumerated_unique_all": 662,
+        "cross_playlist_unique_candidates": 670,
+        "reported_total_gap": 22,
+        "discovery_complete": false,
+        "discovery_unresolved": true,
+        "issue_dates_verified": 9,
+        "stable_key_verified": true,
+        "detail_structure_verified": true,
+        "trial_target": 10,
+        "trial_media_verified": 10,
+        "trial_detail_success": 10,
+        "trial_detail_skipped": 1,
+        "trial_detail_failed": 0,
+        "trial_replacement_success": 1,
+        "fixed_trial_complete": true,
+        "strict_accepted": 569,
+        "strict_skipped": 70,
+        "strict_failed": 31,
+        "full_detail_records": 600,
+        "terminal_excluded": 70,
+        "media_available": 569,
+        "media_failed": 31,
+        "visual_pre_review_complete": 569,
+        "canonical_masters": 569,
+        "reviewable_total": 569,
+        "imported": 569,
+        "media_delivery_gate_passed": true,
+        "stable_locator_verified": 569,
+        "api_media_verified": 0,
+        "api_media_refresh_verified": 0,
+        "runtime_media_gate_passed": false,
+        "media_verification_note": "569 条只有稳定 Vimeo locator、媒体清单和真实 Contact Sheet 证据；当前 resolver/API 运行时尚未恢复，不能把 locator 当作可播放成功。",
+        "side_panel_playback_verified": 1,
+        "blocker": "STASH_INTEGRATION_PARTIAL: reported/DOM/playlist counts are not reconciled; 22 brand-missing, 31 media-failed candidates, and runtime resolver verification remain unresolved.",
+        "integration_records": 569,
+        "media_recovered_this_pass": 0,
+        "media_still_failed": 31,
+        "brand_missing_unresolved": 22,
+        "visual_reviewed": 569,
+        "taxonomy_manual_confirmation": 96,
+        "partial_reasons": ["discovery_count_reconciliation", "22_brand_missing_review", "31_media_failures", "96_taxonomy_conflicts", "runtime_resolver_unverified"]
+      },
+      "collection_plan": [
+        "对 Advertising 六个播放列表完整发现含 fid、refnum、clipnum、pi 的候选，以 stash:{refnum}:{clipnum} 作为稳定来源键并用 checkpoint 保存终态。",
+        "详情页异步内容必须等到 STASH Issue/clip 与目标 refnum/clipnum 对齐后，才提取 Client、Agency、Director、Production/Animation、描述、原始类型和 Vimeo 数值 locator。",
+        "Issue 170–176 使用 All Issues 的月份事实；177/178 使用各自 Issue 页的 MAY 15/26 与 JULY 15/26，禁止使用通用 2021 OG 日期。",
+        "spec、无品牌、非 Advertising/Brand film/Product film/Online film/Cinema ad/Branded content/TVC、Music video、Broadcast design、Game trailer、学生作品、纯短片、Behind the Scenes、无视频和年份越界进入带 reason 的 skipped 终态。",
+        "短效 Vimeo URL 只允许在内存中验证，不保存 signature；下载区 Subscription required 不操作、不绕过。",
+        "只有无 Cookie 环境可通过稳定 URL 或 /api/videos/:id/media resolver 获取的媒体才进入 10 帧预审；媒体门失败项保持不可入库。",
+        "媒体门通过后生成真实 10 帧 Contact Sheet、完成人工视觉候选、运行 STASH 单渠道 canonical linking，并以 pending_review 增量导入。"
+      ],
+      "metadata_policy": [
+        "campaign_published_at 只来自已验证的 STASH Issue 日期证据，publish_date_source 固定为 stash_issue_date，证据保存在 raw_source.issue_date_evidence。",
+        "月份级 Issue 证据保持 YYYY-MM 精度，不用虚构日；原始类型、Client、Agency、Director、Production/Animation、描述、fid、refnum、clipnum 和 pi 全部保留。",
+        "来源 playlist 只提供广告范围证据，行业、商品品类和 genres 必须由真实 10 帧视觉预审产生候选。"
+      ],
+      "quality_and_exclusion_rules": [
+        "正式审核项必须有明确品牌、已核验 STASH Issue 日期证据、真实视频、稳定无凭证交付、恰好 10 帧预审和至少一个 genre 候选。",
+        "正式 source record 保持 genres 为空、approved=false、core_template_eligible=false；导入后状态统一 pending_review。",
+        "重复 Vimeo ID、内容 SHA-256、10 帧指纹母片、剪辑版或画幅版不得重复增加母片供给。",
+        "原固定样本 VID177:6 因 spec_work 被合规排除；经用户授权，仅用 VID177:21 补位。最终试采 10 条均完成真实 10 帧预审、形成独立母片并通过侧栏播放。",
+        "全量阶段对六个 Advertising playlist 的 670 个唯一候选执行同一门禁：600 条取得完整详情，70 条明确排除；600 条中 569 条通过稳定媒体、10 帧与单渠道去重，31 条媒体失败保持不可入库。"
+      ],
+      "continuation": {
+        "resume_from": "collect/runs/stash-2025-2026/checkpoint.json",
+        "before_next_run": [
+          "先读取 collect/runs/stash-2025-2026/PROGRESS.md、BLOCKED.md 与 integration-handoff，禁止重做已完成取证。",
+          "历史 73/73 无 Cookie resolver 媒体接口检查已通过；这不是当前 569 条全量媒体成功证明，短效地址仍只允许在内存中使用，禁止写入状态或 Git。",
+          "唯一授权的第 4 个固定 10 条详情恢复批次已执行并锁定，不得重跑；结果为 9 success / 1 spec_work skipped / 0 failed。",
+          "用户授权的唯一单条补位批次已用 VID177:21 成功替换 VID177:6；batch 5 已锁定，不得重跑。",
+          "六个 Advertising playlist 的 670 个唯一候选已有终态；569 条可交付、70 条明确排除、31 条媒体失败；reported 686 与实际枚举的差额仍需 reconciliation，不得把失败项用图片冒充视频。",
+          "审核台已增量导入到 1412 videos、119 review_events、STASH=569；后续仅需对新增的 STASH 来源变化执行增量检查。"
+        ]
+      },
+      "evidence": [
+        "collect/runs/stash-2025-2026/PROGRESS.md",
+        "collect/runs/stash-2025-2026/BLOCKED.md",
+        "collect/runs/stash-2025-2026/media-resolver-gate.json",
+        "collect/runs/stash-2025-2026/checkpoint.json",
+        "collect/runs/stash-2025-2026/batch-report.json",
+        "collect/runs/stash-2025-2026/visual-reviews.json",
+        "collect/runs/stash-2025-2026/visually-reviewed-records.json",
+        "collect/runs/stash-2025-2026/visually-reviewed-records-linked.json",
+        "collect/runs/stash-2025-2026/full-inventory-reviewed-import.json",
+        "collect/runs/stash-2025-2026/full-inventory-visual-reviews.json",
+        "collect/runs/stash-2025-2026/contact-sheets/manifest-full.json",
+        "collect/runs/stash-2025-2026/source-expansion-with-stash-linked.json"
       ]
     }
   ]

@@ -137,6 +137,9 @@ function report(recordsPayload, checkpoint, contactSheets, inputs) {
   const sheetFailure = sheetRecords.filter((item) => item.status !== "ok" || item.sheet_validation?.frame_count !== 10).length;
   const visualReviews = videos.map(({ asset }) => asset.ai_visual_pre_review).filter(Boolean);
   const completedVisualReviews = visualReviews.filter((review) => review.status === "completed");
+  const stableMediaLocators = videos.filter(({ asset }) => asset.source_asset_id && !asset.locator_is_temporary).length;
+  const temporaryMediaLocators = videos.filter(({ asset }) => asset.locator_is_temporary).length;
+  const mediaDeliveryBlocked = videos.filter(({ asset }) => String(asset.failure_reason || "").startsWith("MEDIA_DELIVERY_BLOCKED")).length;
   const outcomes = checkpoint?.outcomes || [];
   const outcomeSummary = summarizeOutcomes(outcomes);
   const candidates = checkpoint?.discovery?.candidates || [];
@@ -167,6 +170,8 @@ function report(recordsPayload, checkpoint, contactSheets, inputs) {
       historical_failures: outcomeSummary.historical_failures,
       current_failures: outcomeSummary.current_failures,
       resolved_failures: outcomeSummary.resolved_failures,
+      run_failures: (checkpoint.runs || []).reduce((total, run) => total + Number(run.failed || 0), 0),
+      run_stop_reasons: distribution((checkpoint.runs || []).map((run) => run.stop_reason).filter(Boolean)),
       retries: (checkpoint.runs || []).reduce((total, run) => total + Number(run.retried || 0), 0),
     } : null,
     coverage: {
@@ -190,6 +195,9 @@ function report(recordsPayload, checkpoint, contactSheets, inputs) {
     media: {
       providers: distribution(videos.map(({ asset }) => asset.provider)),
       access_statuses: distribution(videos.map(({ asset }) => asset.access_status)),
+      stable_source_locators: stableMediaLocators,
+      temporary_source_locators: temporaryMediaLocators,
+      media_delivery_blocked: mediaDeliveryBlocked,
       contact_sheet_records: sheetRecords.length,
       contact_sheet_success: sheetSuccess,
       contact_sheet_failure: sheetFailure,

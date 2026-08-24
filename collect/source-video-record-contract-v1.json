@@ -36,7 +36,7 @@
   ],
   "properties": {
     "schema_version": { "const": "source-video-record-v1" },
-    "source_site": { "enum": ["best_ads", "ads_of_the_world"] },
+    "source_site": { "enum": ["best_ads", "ads_of_the_world", "stash"] },
     "source_record_id": { "type": "string", "minLength": 1 },
     "source_detail_url": { "type": "string", "format": "uri" },
     "source_categories": { "type": "array", "items": { "type": "string" } },
@@ -53,7 +53,7 @@
     "campaign_published_at": { "type": ["string", "null"] },
     "source_uploaded_at": { "type": ["string", "null"] },
     "publish_date_source": {
-      "enum": ["campaign_published_date", "independent_campaign_evidence", "source_uploaded_only", "unknown"]
+      "enum": ["campaign_published_date", "independent_campaign_evidence", "source_uploaded_only", "stash_issue_date", "unknown"]
     },
     "publish_date_confidence": { "enum": ["confirmed", "high", "medium", "unverified", "unknown"] },
     "campaign_year_status": {
@@ -101,7 +101,7 @@
       "type": "object",
       "required": ["source_site", "source_record_id", "source_detail_url", "source_asset_id", "relation", "collected_at"],
       "properties": {
-        "source_site": { "enum": ["best_ads", "ads_of_the_world"] },
+        "source_site": { "enum": ["best_ads", "ads_of_the_world", "stash"] },
         "source_record_id": { "type": "string", "minLength": 1 },
         "source_detail_url": { "type": "string", "format": "uri" },
         "source_asset_id": { "type": ["string", "null"] },
@@ -177,6 +177,8 @@
   "x-adgenie-rules": {
     "aotw_year_field": "campaign_published_at",
     "best_ads_uploaded_is_source_time_only": true,
+    "stash_year_field": "verified_issue_date",
+    "stash_signed_media_must_not_be_persisted": true,
     "confirmed_years": [2025, 2026],
     "new_records_require_pending_review": true,
     "ai_cannot_set_formal_genres_or_approval": true,

@@ -45,3 +45,20 @@ test("keeps other direct providers immediately playable", () => {
     playback_url: "https://video.adsoftheworld.com/example.mp4",
   }, now), true);
 });
+
+test("keeps temporary STASH HLS subject to its resolver expiry", () => {
+  assert.equal(mediaLinkIsFresh({
+    source_site: "stash",
+    media_provider: "hls",
+    media_access_status: "temporary",
+    playback_url: "https://skyfire.vimeocdn.com/video/fixture/playlist.m3u8",
+    media_expires_at: "2026-08-20T08:04:00.000Z",
+  }, now), false);
+  assert.equal(mediaLinkIsFresh({
+    source_site: "stash",
+    media_provider: "hls",
+    media_access_status: "temporary",
+    playback_url: "https://skyfire.vimeocdn.com/video/fixture/playlist.m3u8",
+    media_expires_at: "2026-08-20T09:00:00.000Z",
+  }, now), true);
+});
