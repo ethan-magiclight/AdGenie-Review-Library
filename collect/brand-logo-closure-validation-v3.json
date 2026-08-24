@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "allow_incomplete": false,
+  "baseline_checked": true,
+  "checked_at": "2026-08-22",
+  "counts": {
+    "review_console_videos": 853,
+    "video_mapping_records": 853,
+    "canonical_brands": 269,
+    "identity_source_records": 269,
+    "asset_records": 269,
+    "normalized_files": 269,
+    "incomplete_assets": 0
+  },
+  "errors": [],
+  "warnings": []
+}

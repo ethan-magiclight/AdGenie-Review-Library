@@ -1,5 +1,16 @@
 # 品牌广告样片采集工作区
 
+## 品牌映射与 Logo 资产库
+
+审核台模板视频的品牌归一结果、269 个标准品牌 Logo 资产，以及新增品牌的搜集与标准化流程，统一从 [`BRAND_LOGO_LIBRARY.md`](./BRAND_LOGO_LIBRARY.md) 进入。当前交付使用 v3 资产和目录；历史 v1/v2 Logo 文件不作为新增开发入口。
+
+快速验证：
+
+```bash
+npm --prefix collect install
+npm --prefix collect run verify
+```
+
 ## 当前单一事实源
 
 | 文件 | 角色 |

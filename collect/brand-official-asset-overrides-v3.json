@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "updated_at": "2026-08-21",
+  "purpose": "Human-verified exact asset URLs exposed by authoritative official pages when generic page extraction selects a parent-company lockup or other non-target artwork.",
+  "brands": [
+    {
+      "canonical_brand_id": "shark",
+      "evidence_page_url": "https://www.sharkninja.jp/pages/home",
+      "asset_url": "https://www.sharkninja.jp/cdn/shop/files/assets_images_utils_logo__logo_shark.svg?v=14444048961006696377",
+      "evidence": "Official SharkNinja Japan page exposes this standalone SVG with alt text 'Shark®'; explicitly preferred over the combined Shark | Ninja corporate lockup."
+    }
+  ]
+}

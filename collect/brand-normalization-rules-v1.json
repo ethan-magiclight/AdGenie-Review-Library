@@ -1,0 +1,708 @@
+{
+  "version": 2,
+  "updated_at": "2026-08-22",
+  "purpose": "Map raw review-library brand labels to canonical brand identities without overwriting source evidence.",
+  "principles": [
+    "The raw brand value remains immutable source evidence.",
+    "A regional or official channel may map to a canonical brand, but the channel identity is retained as an alias.",
+    "Creators, publishers, agencies and collaborations are not silently converted into a single brand.",
+    "Every source value receives an explicit processing outcome; unverified review-console brand fields become proposed candidates, never verified identities.",
+    "A proposed identity cannot enter product UI until an official logo source and visual/legal review are recorded."
+  ],
+  "unmatched_brand_policy": {
+    "entity_type": "brand_candidate",
+    "status": "proposed",
+    "note": "Proposed directly from the review-console brand field; official identity and logo source remain required"
+  },
+  "registry_sources": [
+    "consumer-electronics-top-brands-v1.json",
+    "industry-top-brands-v2.json",
+    "pet-supplies-top-brands-v1.json",
+    "sporting-goods-fitness-top-brands-v1.json"
+  ],
+  "canonical_overrides": [
+    {
+      "canonical_brand_id": "apple",
+      "display_name": "Apple",
+      "aliases": ["Apple"],
+      "status": "verified",
+      "evidence": "Existing consumer-electronics brand registry"
+    },
+    {
+      "canonical_brand_id": "beats",
+      "display_name": "Beats",
+      "aliases": ["Beats", "Beats by Dre"],
+      "status": "verified",
+      "evidence": "Existing consumer-electronics brand registry"
+    },
+    {
+      "canonical_brand_id": "samsung",
+      "display_name": "Samsung",
+      "aliases": [
+        "Samsung",
+        "Samsung US",
+        "Samsung UK",
+        "Samsung Philippines",
+        "Samsung Bangladesh",
+        "Samsung Canada",
+        "Samsung Gulf",
+        "Samsung India",
+        "Samsung Levant",
+        "Samsung Malaysia",
+        "Samsung New Zealand"
+      ],
+      "status": "proposed",
+      "evidence": "Registry aliases plus explicit regional Samsung channel labels"
+    },
+    {
+      "canonical_brand_id": "sony",
+      "display_name": "Sony",
+      "aliases": [
+        "Sony",
+        "Sony Electronics",
+        "Sony Europe",
+        "Sony India",
+        "Sony Malaysia",
+        "Sony - Support JP",
+        "Sony Center Cy"
+      ],
+      "status": "proposed",
+      "evidence": "Registry aliases plus regional/support/reseller labels; non-registry channels require account verification"
+    },
+    {
+      "canonical_brand_id": "huawei",
+      "display_name": "Huawei",
+      "aliases": [
+        "Huawei",
+        "Huawei Mobile",
+        "Huawei Arabia",
+        "Huawei Mobile MY",
+        "Huawei Mobile SG",
+        "HUAWEI Mobile Canada",
+        "Huawei Mobile PH",
+        "Huawei Mobile Polska",
+        "Huawei Mobile UK",
+        "Huawei New Zealand"
+      ],
+      "status": "proposed",
+      "evidence": "Registry aliases plus explicit regional Huawei channel labels"
+    },
+    {
+      "canonical_brand_id": "xiaomi",
+      "display_name": "Xiaomi",
+      "aliases": ["Xiaomi", "Xiaomi India", "Xiaomi UK", "Xiaomi Training Vídeos"],
+      "status": "proposed",
+      "evidence": "Registry aliases plus explicit regional/training Xiaomi channel labels"
+    },
+    {
+      "canonical_brand_id": "baseus",
+      "display_name": "Baseus",
+      "aliases": ["Baseus", "Baseus KZ", "Baseus UAE"],
+      "status": "proposed",
+      "evidence": "Canonical Baseus brand plus explicit regional channel labels"
+    },
+    {
+      "canonical_brand_id": "belkin",
+      "display_name": "Belkin",
+      "aliases": ["Belkin", "Belkin EMEA", "Belkin HK"],
+      "status": "proposed",
+      "evidence": "Registry aliases plus explicit regional Belkin channel label"
+    },
+    {
+      "canonical_brand_id": "ugreen",
+      "display_name": "UGREEN",
+      "aliases": ["UGREEN", "UGREEN Official", "UGREEN Sri Lanka"],
+      "status": "proposed",
+      "evidence": "Registry aliases plus explicit regional UGREEN channel label"
+    },
+    {
+      "canonical_brand_id": "sennheiser",
+      "display_name": "Sennheiser",
+      "aliases": ["Sennheiser", "Sennheiser India"],
+      "status": "proposed",
+      "evidence": "Canonical Sennheiser brand plus explicit regional channel label"
+    },
+    {
+      "canonical_brand_id": "google",
+      "display_name": "Google",
+      "aliases": ["Google", "Made by Google"],
+      "status": "proposed",
+      "evidence": "Made by Google is a Google product channel label"
+    },
+    {
+      "canonical_brand_id": "shiseido",
+      "display_name": "Shiseido",
+      "aliases": ["Shiseido", "SHISEIDO_USA"],
+      "status": "proposed",
+      "evidence": "Case and regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "ponds",
+      "display_name": "POND'S",
+      "aliases": ["POND'S", "POND'S PH"],
+      "status": "proposed",
+      "evidence": "Regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "s-pellegrino",
+      "display_name": "S.Pellegrino",
+      "aliases": ["S.Pellegrino", "San Pellegrino", "Sanpellegrino"],
+      "status": "proposed",
+      "evidence": "Brand-name spelling normalization; official asset still requires verification"
+    },
+    {
+      "canonical_brand_id": "estee-lauder",
+      "display_name": "Estée Lauder",
+      "aliases": ["Estee Lauder", "Estée Lauder"],
+      "status": "proposed",
+      "evidence": "Diacritic normalization"
+    },
+    {
+      "canonical_brand_id": "lancome",
+      "display_name": "Lancôme",
+      "aliases": ["Lancome", "Lancôme"],
+      "status": "proposed",
+      "evidence": "Diacritic normalization"
+    },
+    {
+      "canonical_brand_id": "hermes",
+      "display_name": "Hermès",
+      "aliases": ["Hermes", "Hermès"],
+      "status": "proposed",
+      "evidence": "Diacritic normalization"
+    },
+    {
+      "canonical_brand_id": "haagen-dazs",
+      "display_name": "Häagen-Dazs",
+      "aliases": ["Haagen-Dazs", "Häagen-Dazs"],
+      "status": "proposed",
+      "evidence": "Diacritic normalization"
+    },
+    {
+      "canonical_brand_id": "snickers",
+      "display_name": "Snickers",
+      "aliases": ["Snickers", "Snickers UK"],
+      "status": "proposed",
+      "evidence": "Regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "tesco",
+      "display_name": "Tesco",
+      "aliases": ["Tesco", "Tesco Ireland"],
+      "status": "proposed",
+      "evidence": "Regional-brand normalization"
+    },
+    {
+      "canonical_brand_id": "adidas",
+      "display_name": "adidas",
+      "aliases": ["adidas", "Adidas"],
+      "status": "proposed",
+      "evidence": "Case normalization"
+    },
+    {
+      "canonical_brand_id": "chanel",
+      "display_name": "CHANEL",
+      "aliases": ["CHANEL", "Chanel"],
+      "status": "proposed",
+      "evidence": "Case normalization"
+    },
+    {
+      "canonical_brand_id": "samsung",
+      "display_name": "Samsung",
+      "aliases": ["Samsung Singapore"],
+      "status": "proposed",
+      "evidence": "Regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "apple",
+      "display_name": "Apple",
+      "aliases": ["Apple India", "Apple Memories"],
+      "status": "proposed",
+      "evidence": "Regional channel and Apple-product campaign source labels"
+    },
+    {
+      "canonical_brand_id": "bose",
+      "display_name": "Bose",
+      "aliases": ["Bose Product Support"],
+      "status": "proposed",
+      "evidence": "Official support-channel label normalization"
+    },
+    {
+      "canonical_brand_id": "jbl",
+      "display_name": "JBL",
+      "aliases": ["JBL and JBL Support"],
+      "status": "proposed",
+      "evidence": "Brand and support-channel label normalization"
+    },
+    {
+      "canonical_brand_id": "audi",
+      "display_name": "Audi",
+      "aliases": ["Audi", "Audi Australia"],
+      "status": "proposed",
+      "evidence": "Regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "kia",
+      "display_name": "Kia",
+      "aliases": ["Kia", "Kia America"],
+      "status": "proposed",
+      "evidence": "Regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "laneige",
+      "display_name": "LANEIGE",
+      "aliases": ["LANEIGE", "LANEIGE US"],
+      "status": "proposed",
+      "evidence": "Regional-channel normalization"
+    },
+    {
+      "canonical_brand_id": "channel-4",
+      "display_name": "Channel 4",
+      "aliases": ["Channel 4", "CHANNEL 4"],
+      "status": "proposed",
+      "evidence": "Case normalization"
+    },
+    {
+      "canonical_brand_id": "burger-king",
+      "display_name": "Burger King",
+      "aliases": ["Burger King", "Burger king"],
+      "status": "proposed",
+      "evidence": "Case normalization"
+    },
+    {
+      "canonical_brand_id": "pepsico",
+      "display_name": "PepsiCo",
+      "aliases": ["PepsiCo", "Pepsico"],
+      "status": "proposed",
+      "evidence": "Case normalization for the corporate identity; product campaigns use record-level overrides"
+    },
+    {
+      "canonical_brand_id": "cmf",
+      "display_name": "CMF by Nothing",
+      "aliases": ["CMF", "CMF by Nothing"],
+      "status": "proposed",
+      "evidence": "Sub-brand label normalization"
+    }
+  ],
+  "raw_mapping_overrides": [
+    {
+      "raw_brand": "Christian Dior",
+      "canonical_brand_id": "dior",
+      "display_name": "Dior",
+      "entity_type": "brand",
+      "status": "proposed",
+      "note": "Christian Dior source label is normalized to the consumer-facing Dior identity"
+    }
+  ],
+  "raw_entity_overrides": [
+    {
+      "raw_brand": "iJustine",
+      "entity_type": "creator",
+      "status": "verified",
+      "note": "Creator/uploader identity, not the advertised product brand"
+    },
+    {
+      "raw_brand": "Mrwhosetheboss",
+      "entity_type": "creator",
+      "status": "verified",
+      "note": "Creator/uploader identity; referenced video compares multiple brands"
+    },
+    {
+      "raw_brand": "Yuka Ohishi",
+      "entity_type": "creator",
+      "status": "verified",
+      "note": "Creator/uploader identity, not the advertised product brand"
+    },
+    {
+      "raw_brand": "Pia Shah",
+      "entity_type": "creator",
+      "status": "verified",
+      "note": "Creator/uploader identity, not the advertised product brand"
+    },
+    {
+      "raw_brand": "Tetiana | AI Creator",
+      "entity_type": "creator",
+      "status": "verified",
+      "note": "AI creator credit; no real advertised brand is established"
+    },
+    {
+      "raw_brand": "General Manager – Lyndsay Rogers",
+      "entity_type": "metadata_error",
+      "status": "verified",
+      "note": "Person/job-title metadata was imported into the brand field"
+    },
+    {
+      "raw_brand": "System1 Group",
+      "entity_type": "publisher_or_researcher",
+      "status": "proposed",
+      "note": "Uploader/source identity for a Snickers commercial"
+    },
+    {
+      "raw_brand": "IDEART",
+      "entity_type": "creator_or_publisher",
+      "status": "proposed",
+      "note": "Uploader/source identity for an OMEGA commercial"
+    },
+    {
+      "raw_brand": "Alex Gaboury",
+      "entity_type": "creator",
+      "status": "verified",
+      "note": "Creator/uploader identity; the advertised product brand is resolved per video"
+    },
+    {
+      "raw_brand": "Fahad A. Chaudhry",
+      "entity_type": "creator",
+      "status": "proposed",
+      "note": "Uploader identity; the advertised product brand is resolved per video"
+    },
+    {
+      "raw_brand": "FINCH",
+      "entity_type": "production_company",
+      "status": "proposed",
+      "note": "Stash production-company/source identity; excluded from the consumer-brand logo queue"
+    },
+    {
+      "raw_brand": "FUTUREFRANK",
+      "entity_type": "production_company",
+      "status": "proposed",
+      "note": "Stash production-company/source identity; excluded from the consumer-brand logo queue"
+    },
+    {
+      "raw_brand": "UPDATE",
+      "entity_type": "metadata_error",
+      "status": "proposed",
+      "note": "Non-brand placeholder imported into the brand field; requires source correction"
+    }
+  ],
+  "record_overrides": [
+    {
+      "video_id": "best_ads:185754:033121d391",
+      "canonical_brand_ids": ["adidas", "dicks-sporting-goods"],
+      "canonical_brand_names": ["adidas", "DICK'S Sporting Goods"],
+      "primary_brand_id": "adidas",
+      "status": "proposed",
+      "method": "collaboration_metadata",
+      "note": "Joint adidas and DICK'S Sporting Goods campaign"
+    },
+    {
+      "video_id": "best_ads:185753:03311614cf",
+      "canonical_brand_ids": ["adidas", "dicks-sporting-goods"],
+      "canonical_brand_names": ["adidas", "DICK'S Sporting Goods"],
+      "primary_brand_id": "adidas",
+      "status": "proposed",
+      "method": "collaboration_metadata",
+      "note": "Joint adidas and DICK'S Sporting Goods campaign"
+    },
+    {
+      "video_id": "best_ads:185752:03312441e6",
+      "canonical_brand_ids": ["adidas", "dicks-sporting-goods"],
+      "canonical_brand_names": ["adidas", "DICK'S Sporting Goods"],
+      "primary_brand_id": "adidas",
+      "status": "proposed",
+      "method": "collaboration_metadata",
+      "note": "Joint adidas and DICK'S Sporting Goods campaign"
+    },
+    {
+      "video_id": "hkoWCX8sQf4",
+      "canonical_brand_ids": ["apple"],
+      "primary_brand_id": "apple",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "AirPods Max video uploaded by iJustine"
+    },
+    {
+      "video_id": "C-HJICW6QI8",
+      "canonical_brand_ids": ["nothing"],
+      "primary_brand_id": "nothing",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "Nothing Phone launch video uploaded by Yuka Ohishi"
+    },
+    {
+      "video_id": "undwfOwhVsw",
+      "canonical_brand_ids": ["samsung", "apple"],
+      "primary_brand_id": null,
+      "status": "proposed",
+      "method": "multi_brand_title_inference",
+      "note": "Comparison video, so no single primary advertised brand is asserted"
+    },
+    {
+      "video_id": "undwfOwhVsw",
+      "canonical_brand_names": ["Samsung", "Apple"]
+    },
+    {
+      "video_id": "best_ads:185499:2227057d06",
+      "canonical_brand_ids": ["doritos", "netflix"],
+      "canonical_brand_names": ["Doritos", "Netflix"],
+      "primary_brand_id": "doritos",
+      "status": "proposed",
+      "method": "collaboration_metadata",
+      "note": "Doritos campaign collaboration with Netflix"
+    },
+    {
+      "video_id": "best_ads:188899:0951219d4f",
+      "canonical_brand_ids": ["pringles"],
+      "primary_brand_id": "pringles",
+      "status": "verified",
+      "method": "source_title_correction",
+      "note": "Source title explicitly identifies Pringles; raw brand contains a person's job title"
+    },
+    {
+      "video_id": "best_ads:185293:065505af21",
+      "canonical_brand_ids": ["liquid-death", "boost-mobile"],
+      "canonical_brand_names": ["Liquid Death", "Boost Mobile"],
+      "primary_brand_id": "liquid-death",
+      "status": "proposed",
+      "method": "collaboration_metadata",
+      "note": "Joint Liquid Death and Boost Mobile campaign"
+    },
+    {
+      "video_id": "best_ads:185292:065449e89a",
+      "canonical_brand_ids": ["liquid-death", "boost-mobile"],
+      "canonical_brand_names": ["Liquid Death", "Boost Mobile"],
+      "primary_brand_id": "liquid-death",
+      "status": "proposed",
+      "method": "collaboration_metadata",
+      "note": "Joint Liquid Death and Boost Mobile campaign"
+    },
+    {
+      "video_id": "qgjjKGfWP54",
+      "canonical_brand_ids": ["snickers"],
+      "primary_brand_id": "snickers",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "Snickers commercial uploaded by System1 Group"
+    },
+    {
+      "video_id": "7ttyaS42E18",
+      "canonical_brand_ids": [],
+      "primary_brand_id": null,
+      "status": "verified",
+      "method": "non_brand_creator_content",
+      "note": "AI creator sample with no confirmed real product brand"
+    },
+    {
+      "video_id": "T76ilV2X64A",
+      "canonical_brand_ids": ["omega"],
+      "primary_brand_id": "omega",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "OMEGA commercial uploaded by IDEART"
+    },
+    {
+      "video_id": "6XmHoGr29us",
+      "canonical_brand_ids": ["dyson"],
+      "primary_brand_id": "dyson",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "Dyson Airwrap video uploaded by Pia Shah"
+    },
+    {
+      "video_id": "9STe5EZyNsA",
+      "canonical_brand_ids": ["dyson"],
+      "canonical_brand_names": ["Dyson"],
+      "primary_brand_id": "dyson",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "Dyson Airwrap tutorial uploaded by creator Alex Gaboury"
+    },
+    {
+      "video_id": "kQcq3rpne78",
+      "canonical_brand_ids": ["apple"],
+      "canonical_brand_names": ["Apple"],
+      "primary_brand_id": "apple",
+      "status": "proposed",
+      "method": "title_and_product_inference",
+      "note": "iPhone comparison video uploaded by a creator"
+    },
+    {
+      "video_id": "best_ads:188842:1519484dfb",
+      "canonical_brand_ids": ["ortega"],
+      "canonical_brand_names": ["Ortega"],
+      "primary_brand_id": "ortega",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company B&G Foods; campaign title identifies Ortega"
+    },
+    {
+      "video_id": "best_ads:188844:1521525280",
+      "canonical_brand_ids": ["ortega"],
+      "canonical_brand_names": ["Ortega"],
+      "primary_brand_id": "ortega",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company B&G Foods; campaign title identifies Ortega"
+    },
+    {
+      "video_id": "best_ads:188843:152048385d",
+      "canonical_brand_ids": ["ortega"],
+      "canonical_brand_names": ["Ortega"],
+      "primary_brand_id": "ortega",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company B&G Foods; campaign title identifies Ortega"
+    },
+    {
+      "video_id": "best_ads:190520:01274682c6",
+      "canonical_brand_ids": ["weiman"],
+      "canonical_brand_names": ["Weiman"],
+      "primary_brand_id": "weiman",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company PurposeBuilt Brands; campaign title identifies Weiman"
+    },
+    {
+      "video_id": "best_ads:190521:012842238f",
+      "canonical_brand_ids": ["weiman"],
+      "canonical_brand_names": ["Weiman"],
+      "primary_brand_id": "weiman",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company PurposeBuilt Brands; campaign title identifies Weiman"
+    },
+    {
+      "video_id": "best_ads:190519:0125318e59",
+      "canonical_brand_ids": ["weiman"],
+      "canonical_brand_names": ["Weiman"],
+      "primary_brand_id": "weiman",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company PurposeBuilt Brands; campaign title identifies Weiman"
+    },
+    {
+      "video_id": "best_ads:185079:1807343970",
+      "canonical_brand_ids": ["totinos"],
+      "canonical_brand_names": ["Totino's"],
+      "primary_brand_id": "totinos",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company General Mills; campaign title identifies Totino's"
+    },
+    {
+      "video_id": "best_ads:185569:183825fb6c",
+      "canonical_brand_ids": ["totinos"],
+      "canonical_brand_names": ["Totino's"],
+      "primary_brand_id": "totinos",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source brand field contains parent company General Mills; campaign title identifies Totino's"
+    },
+    {
+      "video_id": "best_ads:190285:050037e366",
+      "canonical_brand_ids": ["fever-tree"],
+      "canonical_brand_names": ["Fever-Tree"],
+      "primary_brand_id": "fever-tree",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Campaign title identifies Fever-Tree; the source company field is not used as the display brand"
+    },
+    {
+      "video_id": "best_ads:190284:0500333ee6",
+      "canonical_brand_ids": ["fever-tree"],
+      "canonical_brand_names": ["Fever-Tree"],
+      "primary_brand_id": "fever-tree",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Campaign title identifies Fever-Tree; the source company field is not used as the display brand"
+    },
+    {
+      "video_id": "best_ads:181763:9cb93",
+      "canonical_brand_ids": ["doritos"],
+      "canonical_brand_names": ["Doritos"],
+      "primary_brand_id": "doritos",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is PepsiCo; campaign title identifies Doritos"
+    },
+    {
+      "video_id": "best_ads:188805:0444229548",
+      "canonical_brand_ids": ["pepsi"],
+      "canonical_brand_names": ["Pepsi"],
+      "primary_brand_id": "pepsi",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is PepsiCo; campaign title identifies Pepsi"
+    },
+    {
+      "video_id": "best_ads:181571:bb8d0",
+      "canonical_brand_ids": ["cheetos"],
+      "canonical_brand_names": ["Cheetos"],
+      "primary_brand_id": "cheetos",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is Frito-Lay; campaign title identifies Cheetos"
+    },
+    {
+      "video_id": "best_ads:190301:075048c250",
+      "canonical_brand_ids": ["kotex"],
+      "canonical_brand_names": ["Kotex"],
+      "primary_brand_id": "kotex",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is Kimberly-Clark; campaign title identifies Kotex"
+    },
+    {
+      "video_id": "best_ads:186668:075302fc6b",
+      "canonical_brand_ids": ["ritz"],
+      "canonical_brand_names": ["Ritz"],
+      "primary_brand_id": "ritz",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is Mondelēz; campaign title identifies Ritz"
+    },
+    {
+      "video_id": "best_ads:185745:0255533247",
+      "canonical_brand_ids": ["sprite"],
+      "canonical_brand_names": ["Sprite"],
+      "primary_brand_id": "sprite",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is The Coca-Cola Company; campaign title identifies Sprite"
+    },
+    {
+      "video_id": "best_ads:192322:020642bbc9",
+      "canonical_brand_ids": ["reeses", "oreo"],
+      "canonical_brand_names": ["Reese's", "OREO"],
+      "primary_brand_id": "reeses",
+      "status": "proposed",
+      "method": "collaboration_title_metadata",
+      "note": "Campaign title identifies a Reese's and OREO product collaboration"
+    },
+    {
+      "video_id": "best_ads:189176:0841101458",
+      "canonical_brand_ids": ["folgers"],
+      "canonical_brand_names": ["Folgers"],
+      "primary_brand_id": "folgers",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is The J.M. Smucker Company; campaign title identifies Folgers"
+    },
+    {
+      "video_id": "best_ads:185096:071655157f",
+      "canonical_brand_ids": ["stonefire"],
+      "canonical_brand_names": ["Stonefire"],
+      "primary_brand_id": "stonefire",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is FGF Brands; campaign title identifies Stonefire"
+    },
+    {
+      "video_id": "best_ads:192186:073812b83d",
+      "canonical_brand_ids": ["extra"],
+      "canonical_brand_names": ["Extra"],
+      "primary_brand_id": "extra",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is Mars; campaign title identifies Extra Gum"
+    },
+    {
+      "video_id": "best_ads:192359:020010f3cb",
+      "canonical_brand_ids": ["snickers"],
+      "canonical_brand_names": ["Snickers"],
+      "primary_brand_id": "snickers",
+      "status": "proposed",
+      "method": "source_title_product_brand",
+      "note": "Source company is Mars; campaign title identifies Snickers"
+    }
+  ]
+}

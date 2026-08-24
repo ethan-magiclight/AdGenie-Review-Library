@@ -1,0 +1,667 @@
+{
+  "version": 3,
+  "updated_at": "2026-08-21",
+  "purpose": "Manual official-site decisions for ambiguous normalized brand identities. Empty until a candidate needs human adjudication.",
+  "brands": [
+    {
+      "canonical_brand_id": "nothing",
+      "official_page_url": "https://us.nothing.tech/",
+      "official_domains": ["nothing.tech", "us.nothing.tech"],
+      "evidence": "Current official site identifies Nothing products and company navigation"
+    },
+    {
+      "canonical_brand_id": "technogym",
+      "official_page_url": "https://www.technogym.com/",
+      "official_domains": ["technogym.com", "www.technogym.com"],
+      "evidence": "Official domain confirmed by the existing sporting-goods registry and current search result; static fetch returns 403"
+    },
+    {
+      "canonical_brand_id": "adidas",
+      "official_page_url": "https://www.adidas.com/",
+      "official_domains": ["adidas.com", "www.adidas.com", "brand.assets.adidas.com"],
+      "evidence": "Current official adidas storefront and official brand-assets host"
+    },
+    {
+      "canonical_brand_id": "dior",
+      "official_page_url": "https://www.dior.com/",
+      "official_domains": ["dior.com", "www.dior.com"],
+      "evidence": "Current DIOR official location selector"
+    },
+    {
+      "canonical_brand_id": "estee-lauder",
+      "official_page_url": "https://www.esteelauder.com/",
+      "official_domains": ["esteelauder.com", "www.esteelauder.com"],
+      "evidence": "Current Estée Lauder official site"
+    },
+    {
+      "canonical_brand_id": "new-balance",
+      "official_page_url": "https://www.newbalance.com/",
+      "official_domains": ["newbalance.com", "www.newbalance.com"],
+      "evidence": "Current New Balance official storefront"
+    },
+    {
+      "canonical_brand_id": "the-farmers-dog",
+      "official_page_url": "https://www.thefarmersdog.com/",
+      "official_domains": ["thefarmersdog.com", "www.thefarmersdog.com"],
+      "evidence": "Current The Farmer's Dog official site"
+    },
+    {
+      "canonical_brand_id": "chuckit",
+      "official_page_url": "https://www.chuckit-toys.com/",
+      "official_domains": ["chuckit-toys.com", "www.chuckit-toys.com", "chuckit-toys.co.uk", "www.chuckit-toys.co.uk"],
+      "evidence": "Current Chuckit! official product site and its regional redirect"
+    },
+    {
+      "canonical_brand_id": "purina",
+      "official_page_url": "https://www.purina.com/",
+      "official_domains": ["purina.com", "www.purina.com"],
+      "evidence": "Current Purina US official site"
+    },
+    {
+      "canonical_brand_id": "rimowa",
+      "official_page_url": "https://www.rimowa.com/",
+      "official_domains": ["rimowa.com", "www.rimowa.com"],
+      "evidence": "Current RIMOWA official global storefront"
+    },
+    {
+      "canonical_brand_id": "s-pellegrino",
+      "official_page_url": "https://www.sanpellegrino.com/",
+      "official_domains": ["sanpellegrino.com", "www.sanpellegrino.com"],
+      "evidence": "Current Sanpellegrino official brand site"
+    },
+    {
+      "canonical_brand_id": "zesty-paws",
+      "official_page_url": "https://zestypaws.com/",
+      "official_domains": ["zestypaws.com", "www.zestypaws.com"],
+      "evidence": "Current Zesty Paws official storefront"
+    },
+    {
+      "canonical_brand_id": "bottega-veneta",
+      "official_page_url": "https://www.bottegaveneta.com/",
+      "official_domains": ["bottegaveneta.com", "www.bottegaveneta.com"],
+      "evidence": "Current Bottega Veneta official location selector and storefront"
+    },
+    {
+      "canonical_brand_id": "google",
+      "official_page_url": "https://www.google.com/",
+      "official_domains": ["google.com", "www.google.com", "about.google"],
+      "evidence": "Current Google service homepage; brand assets require separate official brand-resource source"
+    },
+    {
+      "canonical_brand_id": "hills-pet-nutrition",
+      "official_page_url": "https://www.hillspet.com/",
+      "official_domains": ["hillspet.com", "www.hillspet.com"],
+      "evidence": "Current Hill's Pet Nutrition official site"
+    },
+    {
+      "canonical_brand_id": "pringles",
+      "official_page_url": "https://www.pringles.com/",
+      "official_domains": ["pringles.com", "www.pringles.com"],
+      "evidence": "Current Pringles official brand site"
+    },
+    {
+      "canonical_brand_id": "dicks-sporting-goods",
+      "official_page_url": "https://www.dickssportinggoods.com/",
+      "official_domains": ["dickssportinggoods.com", "www.dickssportinggoods.com"],
+      "evidence": "Current DICK'S Sporting Goods official storefront"
+    },
+    {
+      "canonical_brand_id": "lululemon",
+      "official_page_url": "https://shop.lululemon.com/",
+      "official_domains": ["lululemon.com", "shop.lululemon.com"],
+      "evidence": "Current lululemon official storefront"
+    },
+    {
+      "canonical_brand_id": "lume-deodorant",
+      "official_page_url": "https://lumedeodorant.com/",
+      "official_domains": ["lumedeodorant.com", "www.lumedeodorant.com"],
+      "evidence": "Current Lume whole-body deodorant official site"
+    },
+    {
+      "canonical_brand_id": "stanley-steemer",
+      "official_page_url": "https://www.stanleysteemer.com/",
+      "official_domains": ["stanleysteemer.com", "www.stanleysteemer.com"],
+      "evidence": "Current Stanley Steemer official service site; disambiguates the brand from Stanley 1913"
+    },
+    {
+      "canonical_brand_id": "stella-artois",
+      "official_page_url": "https://www.stellaartois.com/",
+      "official_domains": ["stellaartois.com", "www.stellaartois.com"],
+      "evidence": "Current Stella Artois official brand site"
+    },
+    {
+      "canonical_brand_id": "the-north-face",
+      "official_page_url": "https://www.thenorthface.com/",
+      "official_domains": ["thenorthface.com", "www.thenorthface.com"],
+      "evidence": "Current The North Face official storefront"
+    },
+    {
+      "canonical_brand_id": "tidy-cats",
+      "official_page_url": "https://www.purina.com/tidy-cats/",
+      "official_domains": ["purina.com", "www.purina.com"],
+      "evidence": "Current official Tidy Cats brand page hosted by parent company Purina"
+    },
+    {
+      "canonical_brand_id": "zales",
+      "official_page_url": "https://www.zales.com/",
+      "official_domains": ["zales.com", "www.zales.com"],
+      "evidence": "Current Zales official storefront"
+    },
+    {
+      "canonical_brand_id": "doritos",
+      "official_page_url": "https://www.doritos.com/",
+      "official_domains": ["doritos.com", "www.doritos.com"],
+      "evidence": "Current Doritos official brand site"
+    },
+    {
+      "canonical_brand_id": "kotex",
+      "official_page_url": "https://www.kotex.com/",
+      "official_domains": ["kotex.com", "www.kotex.com"],
+      "evidence": "Current Kotex official domain; the current page may return a temporary error state"
+    },
+    {
+      "canonical_brand_id": "grand-seiko",
+      "official_page_url": "https://www.grand-seiko.com/us-en/",
+      "official_domains": ["grand-seiko.com", "www.grand-seiko.com"],
+      "evidence": "Current Grand Seiko official regional site; replaces an invalid root-only canonical URL"
+    },
+    {
+      "canonical_brand_id": "pnc-bank",
+      "official_page_url": "https://www.pnc.com/",
+      "official_domains": ["pnc.com", "www.pnc.com"],
+      "evidence": "Current PNC Bank official domain"
+    },
+    {
+      "canonical_brand_id": "rolex",
+      "official_page_url": "https://www.rolex.com/",
+      "official_domains": ["rolex.com", "www.rolex.com"],
+      "evidence": "Current Rolex official site; excludes watch retailers"
+    },
+    {
+      "canonical_brand_id": "vans",
+      "official_page_url": "https://www.vans.com/",
+      "official_domains": ["vans.com", "www.vans.com"],
+      "evidence": "Current Vans official storefront"
+    },
+    {
+      "canonical_brand_id": "wonderful-pistachios",
+      "official_page_url": "https://www.wonderfulpistachios.com/",
+      "official_domains": ["wonderfulpistachios.com", "www.wonderfulpistachios.com"],
+      "evidence": "Current Wonderful Pistachios official brand site"
+    },
+    {
+      "canonical_brand_id": "adobe",
+      "official_page_url": "https://www.adobe.com/",
+      "official_domains": ["adobe.com", "www.adobe.com"],
+      "evidence": "Current Adobe official site"
+    },
+    {
+      "canonical_brand_id": "31c",
+      "official_page_url": "https://31c.io/",
+      "official_domains": ["31c.io"],
+      "evidence": "Official 31C next-generation DPI platform site, matching The Purple Feed technology campaign"
+    },
+    {
+      "canonical_brand_id": "amazon",
+      "official_page_url": "https://www.amazon.com/",
+      "official_domains": ["amazon.com", "www.amazon.com"],
+      "evidence": "Current Amazon official storefront"
+    },
+    {
+      "canonical_brand_id": "amnesty-international-south-africa",
+      "official_page_url": "https://amnesty.org.za/",
+      "official_domains": ["amnesty.org.za"],
+      "evidence": "Official Amnesty International South Africa site"
+    },
+    {
+      "canonical_brand_id": "aparat-sport",
+      "official_page_url": "https://www.aparat.com/sport",
+      "official_domains": ["aparat.com", "www.aparat.com"],
+      "evidence": "Official Aparat Sport channel on the Aparat platform"
+    },
+    {
+      "canonical_brand_id": "asb",
+      "official_page_url": "https://www.asb.co.nz/",
+      "official_domains": ["asb.co.nz", "www.asb.co.nz"],
+      "evidence": "Official ASB New Zealand bank site, matching the sports campaign context; excludes American Savings Bank"
+    },
+    {
+      "canonical_brand_id": "asics",
+      "official_page_url": "https://www.asics.com/",
+      "official_domains": ["asics.com", "www.asics.com"],
+      "evidence": "Current ASICS official site; excludes retail resellers"
+    },
+    {
+      "canonical_brand_id": "bang-and-olufsen",
+      "official_page_url": "https://www.bang-olufsen.com/",
+      "official_domains": ["bang-olufsen.com", "www.bang-olufsen.com"],
+      "evidence": "Current Bang & Olufsen official site"
+    },
+    {
+      "canonical_brand_id": "beyond-meat",
+      "official_page_url": "https://www.beyondmeat.com/",
+      "official_domains": ["beyondmeat.com", "www.beyondmeat.com"],
+      "evidence": "Current Beyond Meat official site"
+    },
+    {
+      "canonical_brand_id": "bodyarmor",
+      "official_page_url": "https://www.drinkbodyarmor.com/",
+      "official_domains": ["drinkbodyarmor.com", "www.drinkbodyarmor.com"],
+      "evidence": "Current BODYARMOR official brand site"
+    },
+    {
+      "canonical_brand_id": "burger-king",
+      "official_page_url": "https://www.bk.com/",
+      "official_domains": ["bk.com", "www.bk.com"],
+      "evidence": "Current Burger King official US site"
+    },
+    {
+      "canonical_brand_id": "carhartt",
+      "official_page_url": "https://www.carhartt.com/",
+      "official_domains": ["carhartt.com", "www.carhartt.com"],
+      "evidence": "Current Carhartt official workwear site; excludes the separate WIP line"
+    },
+    {
+      "canonical_brand_id": "cashin",
+      "official_page_url": "https://cashin.sa/",
+      "official_domains": ["cashin.sa"],
+      "evidence": "Official CASHIN Saudi digital-transformation site, matching The Journey of a Riyal campaign"
+    },
+    {
+      "canonical_brand_id": "cheetos",
+      "official_page_url": "https://www.cheetos.com/",
+      "official_domains": ["cheetos.com", "www.cheetos.com"],
+      "evidence": "Current Cheetos official brand site"
+    },
+    {
+      "canonical_brand_id": "city-centre",
+      "official_page_url": "https://www.majidalfuttaim.com/en/what-we-do/our-industries/shopping-malls/city-centre",
+      "official_domains": ["majidalfuttaim.com", "www.majidalfuttaim.com"],
+      "evidence": "Official Majid Al Futtaim City Centre malls portfolio, matching the UAE retail campaign"
+    },
+    {
+      "canonical_brand_id": "cmf",
+      "official_page_url": "https://cmf.tech/",
+      "official_domains": ["cmf.tech"],
+      "evidence": "Current official CMF by Nothing site"
+    },
+    {
+      "canonical_brand_id": "detran-go",
+      "official_page_url": "https://goias.gov.br/detran/",
+      "official_domains": ["goias.gov.br"],
+      "evidence": "Official Goiás state DETRAN portal"
+    },
+    {
+      "canonical_brand_id": "doordash-canada",
+      "official_page_url": "https://www.doordash.com/en-CA/",
+      "official_domains": ["doordash.com", "www.doordash.com"],
+      "evidence": "Current DoorDash Canada official consumer site"
+    },
+    {
+      "canonical_brand_id": "extra",
+      "official_page_url": "https://www.extragum.com/",
+      "official_domains": ["extragum.com", "www.extragum.com"],
+      "evidence": "Official Extra gum brand site, matching the Mars food campaign; excludes Extra TV"
+    },
+    {
+      "canonical_brand_id": "financial-conduct-authority",
+      "official_page_url": "https://www.fca.org.uk/",
+      "official_domains": ["fca.org.uk", "www.fca.org.uk"],
+      "evidence": "Official UK Financial Conduct Authority site"
+    },
+    {
+      "canonical_brand_id": "ford",
+      "official_page_url": "https://www.ford.com/",
+      "official_domains": ["ford.com", "www.ford.com"],
+      "evidence": "Current Ford official site"
+    },
+    {
+      "canonical_brand_id": "gatorade",
+      "official_page_url": "https://www.gatorade.com/",
+      "official_domains": ["gatorade.com", "www.gatorade.com"],
+      "evidence": "Current Gatorade official brand site"
+    },
+    {
+      "canonical_brand_id": "girls-academy",
+      "official_page_url": "https://girlsacademyleague.com/",
+      "official_domains": ["girlsacademyleague.com"],
+      "evidence": "Official Girls Academy League site, matching Emily's Journey campaign"
+    },
+    {
+      "canonical_brand_id": "goom",
+      "official_page_url": "https://www.goom.ae/",
+      "official_domains": ["goom.ae", "www.goom.ae"],
+      "evidence": "Official GOOM UAE activity platform site, matching Let the Game Begin campaign"
+    },
+    {
+      "canonical_brand_id": "hanes",
+      "official_page_url": "https://www.hanes.com/",
+      "official_domains": ["hanes.com", "www.hanes.com"],
+      "evidence": "Current Hanes official storefront"
+    },
+    {
+      "canonical_brand_id": "huggies",
+      "official_page_url": "https://www.huggies.com/",
+      "official_domains": ["huggies.com", "www.huggies.com"],
+      "evidence": "Current Huggies official site; excludes retail pharmacy product pages"
+    },
+    {
+      "canonical_brand_id": "kelloggs",
+      "official_page_url": "https://www.kelloggs.com/",
+      "official_domains": ["kelloggs.com", "www.kelloggs.com"],
+      "evidence": "Current Kellogg's official site"
+    },
+    {
+      "canonical_brand_id": "kfc",
+      "official_page_url": "https://www.kfc.com/",
+      "official_domains": ["kfc.com", "www.kfc.com"],
+      "evidence": "Current KFC official site"
+    },
+    {
+      "canonical_brand_id": "kiehls",
+      "official_page_url": "https://www.kiehls.com/",
+      "official_domains": ["kiehls.com", "www.kiehls.com"],
+      "evidence": "Current Kiehl's official site"
+    },
+    {
+      "canonical_brand_id": "kit-kat",
+      "official_page_url": "https://www.kitkat.com/",
+      "official_domains": ["kitkat.com", "www.kitkat.com"],
+      "evidence": "Current KitKat official brand site"
+    },
+    {
+      "canonical_brand_id": "la-ganga",
+      "official_page_url": "https://www.almaceneslaganga.com/",
+      "official_domains": ["almaceneslaganga.com", "www.almaceneslaganga.com"],
+      "evidence": "Official Almacenes La Ganga consumer-electronics retailer site"
+    },
+    {
+      "canonical_brand_id": "los-altos-food",
+      "official_page_url": "https://www.losaltosfoods.com/",
+      "official_domains": ["losaltosfoods.com", "www.losaltosfoods.com"],
+      "evidence": "Current Los Altos Foods official site"
+    },
+    {
+      "canonical_brand_id": "lotto",
+      "official_page_url": "https://www.lotto.it/",
+      "official_domains": ["lotto.it", "www.lotto.it"],
+      "evidence": "Official Lotto Sport Italia site, matching the apparel campaign"
+    },
+    {
+      "canonical_brand_id": "m-and-ms",
+      "official_page_url": "https://www.mms.com/",
+      "official_domains": ["mms.com", "www.mms.com"],
+      "evidence": "Current M&M'S official brand site"
+    },
+    {
+      "canonical_brand_id": "mackenzie-investments",
+      "official_page_url": "https://www.mackenzieinvestments.com/",
+      "official_domains": ["mackenzieinvestments.com", "www.mackenzieinvestments.com"],
+      "evidence": "Official Mackenzie Investments site"
+    },
+    {
+      "canonical_brand_id": "meta",
+      "official_page_url": "https://about.meta.com/",
+      "official_domains": ["meta.com", "about.meta.com"],
+      "evidence": "Current Meta corporate official site"
+    },
+    {
+      "canonical_brand_id": "neater-feeder",
+      "official_page_url": "https://neaterpets.com/",
+      "official_domains": ["neaterpets.com", "www.neaterpets.com"],
+      "evidence": "Official Neater Pets site for the Neater Feeder product brand"
+    },
+    {
+      "canonical_brand_id": "netflix",
+      "official_page_url": "https://www.netflix.com/",
+      "official_domains": ["netflix.com", "www.netflix.com"],
+      "evidence": "Current Netflix official site; mapped from the Doritos x Netflix campaign"
+    },
+    {
+      "canonical_brand_id": "nutrl",
+      "official_page_url": "https://nutrlusa.com/",
+      "official_domains": ["nutrlusa.com", "www.nutrlusa.com"],
+      "evidence": "Current NÜTRL official US brand site"
+    },
+    {
+      "canonical_brand_id": "pam",
+      "official_page_url": "https://www.pamcookingspray.com/",
+      "official_domains": ["pamcookingspray.com", "www.pamcookingspray.com"],
+      "evidence": "Official PAM cooking spray site, matching the household campaign"
+    },
+    {
+      "canonical_brand_id": "panago-pizza",
+      "official_page_url": "https://www.panago.com/",
+      "official_domains": ["panago.com", "www.panago.com"],
+      "evidence": "Current Panago Pizza official site"
+    },
+    {
+      "canonical_brand_id": "parodontax",
+      "official_page_url": "https://www.parodontax.com/",
+      "official_domains": ["parodontax.com", "www.parodontax.com"],
+      "evidence": "Current Parodontax official brand site"
+    },
+    {
+      "canonical_brand_id": "pentera",
+      "official_page_url": "https://pentera.io/",
+      "official_domains": ["pentera.io", "www.pentera.io"],
+      "evidence": "Current Pentera security-validation official site"
+    },
+    {
+      "canonical_brand_id": "pepsi",
+      "official_page_url": "https://www.pepsi.com/",
+      "official_domains": ["pepsi.com", "www.pepsi.com"],
+      "evidence": "Current Pepsi consumer brand site; replaces the parent-company candidate"
+    },
+    {
+      "canonical_brand_id": "ponds",
+      "official_page_url": "https://www.ponds.com/",
+      "official_domains": ["ponds.com", "www.ponds.com"],
+      "evidence": "Current POND'S official brand site"
+    },
+    {
+      "canonical_brand_id": "prime-bank-plc",
+      "official_page_url": "https://www.primebank.com.bd/",
+      "official_domains": ["primebank.com.bd", "www.primebank.com.bd"],
+      "evidence": "Official Prime Bank PLC Bangladesh site"
+    },
+    {
+      "canonical_brand_id": "principe-pio",
+      "official_page_url": "https://principe-pio.klepierre.es/",
+      "official_domains": ["klepierre.es", "principe-pio.klepierre.es"],
+      "evidence": "Official Príncipe Pío shopping-centre site operated by Klépierre"
+    },
+    {
+      "canonical_brand_id": "reeses",
+      "official_page_url": "https://www.hersheyland.com/reeses",
+      "official_domains": ["hersheyland.com", "www.hersheyland.com"],
+      "evidence": "Official Hershey REESE'S brand page"
+    },
+    {
+      "canonical_brand_id": "ritz",
+      "official_page_url": "https://www.ritzcrackers.com/",
+      "official_domains": ["ritzcrackers.com", "www.ritzcrackers.com"],
+      "evidence": "Current RITZ Crackers official brand site"
+    },
+    {
+      "canonical_brand_id": "samsonite",
+      "official_page_url": "https://shop.samsonite.com/",
+      "official_domains": ["samsonite.com", "shop.samsonite.com"],
+      "evidence": "Official Samsonite storefront; replaces a suspicious lookalike domain"
+    },
+    {
+      "canonical_brand_id": "sonos",
+      "official_page_url": "https://www.sonos.com/",
+      "official_domains": ["sonos.com", "www.sonos.com"],
+      "evidence": "Current Sonos official storefront"
+    },
+    {
+      "canonical_brand_id": "south-carolina-education-lottery",
+      "official_page_url": "https://www.sceducationlottery.com/",
+      "official_domains": ["sceducationlottery.com", "www.sceducationlottery.com"],
+      "evidence": "Official South Carolina Education Lottery site"
+    },
+    {
+      "canonical_brand_id": "starbucks",
+      "official_page_url": "https://www.starbucks.com/",
+      "official_domains": ["starbucks.com", "www.starbucks.com"],
+      "evidence": "Current Starbucks consumer official site"
+    },
+    {
+      "canonical_brand_id": "tesco",
+      "official_page_url": "https://www.tesco.ie/",
+      "official_domains": ["tesco.ie", "www.tesco.ie"],
+      "evidence": "Official Tesco Ireland site, matching the source brand value"
+    },
+    {
+      "canonical_brand_id": "tom-ford",
+      "official_page_url": "https://www.tomfordbeauty.com/",
+      "official_domains": ["tomfordbeauty.com", "www.tomfordbeauty.com"],
+      "evidence": "Official TOM FORD Beauty site, matching the fragrance campaign"
+    },
+    {
+      "canonical_brand_id": "tropicana",
+      "official_page_url": "https://www.tropicana.com/",
+      "official_domains": ["tropicana.com", "www.tropicana.com"],
+      "evidence": "Official Tropicana juice brand site; excludes hotels and casinos"
+    },
+    {
+      "canonical_brand_id": "tumi",
+      "official_page_url": "https://www.tumi.com/",
+      "official_domains": ["tumi.com", "www.tumi.com"],
+      "evidence": "Current TUMI official storefront"
+    },
+    {
+      "canonical_brand_id": "un-women-uk",
+      "official_page_url": "https://www.unwomenuk.org/",
+      "official_domains": ["unwomenuk.org", "www.unwomenuk.org"],
+      "evidence": "Official UN Women UK site"
+    },
+    {
+      "canonical_brand_id": "versace",
+      "official_page_url": "https://www.versace.com/",
+      "official_domains": ["versace.com", "www.versace.com"],
+      "evidence": "Current Versace official storefront; replaces a lookalike domain"
+    },
+    {
+      "canonical_brand_id": "volvo-trucks",
+      "official_page_url": "https://www.volvotrucks.com/",
+      "official_domains": ["volvotrucks.com", "www.volvotrucks.com"],
+      "evidence": "Current Volvo Trucks official global site"
+    },
+    {
+      "canonical_brand_id": "wizard-by-pearson",
+      "official_page_url": "https://www.wizard.com.br/",
+      "official_domains": ["wizard.com.br", "www.wizard.com.br"],
+      "evidence": "Official Wizard language-school site; brand identified as Wizard by Pearson in the source campaign"
+    },
+    {
+      "canonical_brand_id": "wook",
+      "official_page_url": "https://www.wook.pt/",
+      "official_domains": ["wook.pt", "www.wook.pt"],
+      "evidence": "Official Wook Portuguese books retailer site"
+    },
+    {
+      "canonical_brand_id": "world-wildlife-fund",
+      "official_page_url": "https://www.worldwildlife.org/",
+      "official_domains": ["worldwildlife.org", "www.worldwildlife.org"],
+      "evidence": "Official World Wildlife Fund US site"
+    },
+    {
+      "canonical_brand_id": "xfinity",
+      "official_page_url": "https://www.xfinity.com/",
+      "official_domains": ["xfinity.com", "www.xfinity.com"],
+      "evidence": "Current Xfinity official site"
+    },
+    {
+      "canonical_brand_id": "xl",
+      "official_page_url": "https://www.xl.co.id/",
+      "official_domains": ["xl.co.id", "www.xl.co.id"],
+      "evidence": "Official XL Axiata telecommunications site, matching the network campaign"
+    },
+    {
+      "canonical_brand_id": "ypf",
+      "official_page_url": "https://www.ypf.com/",
+      "official_domains": ["ypf.com", "www.ypf.com"],
+      "evidence": "Official YPF corporate site, matching the Argentina campaign"
+    },
+    {
+      "canonical_brand_id": "esr",
+      "official_page_url": "https://www.esrgear.com/",
+      "official_domains": ["esrgear.com", "www.esrgear.com"],
+      "evidence": "Official ESR consumer-electronics accessories site; excludes the unrelated ESR real-asset manager"
+    },
+    {
+      "canonical_brand_id": "native",
+      "official_page_url": "https://www.nativecos.com/",
+      "official_domains": ["nativecos.com", "www.nativecos.com"],
+      "evidence": "Official Native personal-care site; excludes the unrelated Native Design agency"
+    },
+    {
+      "canonical_brand_id": "rennie",
+      "official_page_url": "https://www.rennie.co.uk/",
+      "official_domains": ["rennie.co.uk", "www.rennie.co.uk"],
+      "evidence": "Official Rennie antacid brand site; excludes the unrelated Canadian real-estate company"
+    },
+    {
+      "canonical_brand_id": "shark",
+      "official_page_url": "https://www.sharkclean.com/",
+      "official_domains": ["sharkclean.com", "www.sharkclean.com"],
+      "evidence": "Official Shark home-appliance site; excludes the unrelated Greg Norman apparel site"
+    },
+    {
+      "canonical_brand_id": "pemina",
+      "official_page_url": "https://solico-group.com/brand/%D9%BE%D9%85%DB%8C%D9%86%D8%A7/",
+      "official_domains": ["solico-group.com", "www.solico-group.com"],
+      "evidence": "Official Solico Group brand page identifies Pemina as its frozen-food brand; replaces the campaign-frame fallback after official parent-company evidence was found"
+    },
+    {
+      "canonical_brand_id": "adidas",
+      "official_page_url": "https://www.adidas-group.com/en/media/pictures-and-videos",
+      "official_domains": ["adidas-group.com", "www.adidas-group.com"],
+      "evidence": "Official adidas Group multimedia center includes a dedicated downloadable Logos section; replaces the blocked retail homepage for asset collection"
+    },
+    {
+      "canonical_brand_id": "asics",
+      "official_page_url": "https://corp.asics.com/en/focus/ip/brand",
+      "official_domains": ["corp.asics.com", "asics.com"],
+      "evidence": "Official ASICS corporate Brand & Trademark page documents the current and historical ASICS logos"
+    },
+    {
+      "canonical_brand_id": "city-centre",
+      "official_page_url": "https://www.majidalfuttaim.com/en/media-centre",
+      "official_domains": ["majidalfuttaim.com", "www.majidalfuttaim.com"],
+      "evidence": "Official parent-company media center exposes media kits for Majid Al Futtaim brands including the City Centre shopping-mall portfolio; replaces a redirect-looping portfolio URL"
+    },
+    {
+      "canonical_brand_id": "coors-light",
+      "official_page_url": "https://www.molsoncoors.com/brands/our-brands/coors-light?region=951",
+      "official_domains": ["molsoncoors.com", "www.molsoncoors.com"],
+      "evidence": "Official Molson Coors brand page for Coors Light; replaces the age-gated consumer site"
+    },
+    {
+      "canonical_brand_id": "kfc",
+      "official_page_url": "https://global.kfc.com/media-assets",
+      "official_domains": ["global.kfc.com", "kfc.com"],
+      "evidence": "Official KFC Brand Assets page provides the primary KFC logo and wordmark with usage restrictions"
+    },
+    {
+      "canonical_brand_id": "kit-kat",
+      "official_page_url": "https://www.nestle.com/brands/chocolate-confectionery/kitkat",
+      "official_domains": ["nestle.com", "www.nestle.com"],
+      "evidence": "Official Nestlé global KitKat brand page includes the current KitKat logo; replaces a temporarily unavailable consumer site"
+    },
+    {
+      "canonical_brand_id": "shark",
+      "official_page_url": "https://www.sharkninja.jp/pages/home",
+      "official_domains": ["sharkninja.jp", "www.sharkninja.jp"],
+      "evidence": "Official SharkNinja Japan brand page contains a dedicated Shark brand section; selected to avoid using the combined SharkNinja corporate mark from the unified US storefront"
+    },
+    {
+      "canonical_brand_id": "un-women-uk",
+      "official_page_url": "https://www.unwomen.org/en",
+      "official_domains": ["unwomen.org", "www.unwomen.org"],
+      "evidence": "Official UN Women global site used as the authoritative identity source when the UK chapter site is protected by an interstitial; logo use requires prior written permission"
+    }
+  ]
+}

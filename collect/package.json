@@ -1,0 +1,19 @@
+{
+  "name": "adgenie-brand-logo-tooling",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check brand-logo-runtime-v3.mjs && node --check build-brand-normalization.mjs && node --check discover-brand-official-sites-v3.mjs && node --check collect-brand-official-logos-v3.mjs && node --check collect-brand-rendered-page-logos-v3.mjs && node --check collect-brand-campaign-frame-logos-v3.mjs && node --check restandardize-imported-brand-assets-v3.mjs && node --check build-brand-logo-catalog-v3.mjs && node --check validate-brand-logo-closure-v3.mjs",
+    "catalog": "node build-brand-logo-catalog-v3.mjs",
+    "validate": "node validate-brand-logo-closure-v3.mjs",
+    "validate:baseline": "node validate-brand-logo-closure-v3.mjs --baseline",
+    "verify": "npm run check && npm run catalog && npm run validate:baseline"
+  },
+  "dependencies": {
+    "playwright-core": "1.62.1",
+    "sharp": "0.35.3"
+  }
+}
