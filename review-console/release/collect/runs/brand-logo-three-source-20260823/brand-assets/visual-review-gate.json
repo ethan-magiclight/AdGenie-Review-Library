@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-08-23T15:12:41Z",
+  "scope": "bounded_three_source_candidate_logo_staging",
+  "source_registry": "../official-site-registry.json",
+  "asset_registry": "registry.json",
+  "asset_registry_sha256": "ed49c53ef1d295bce575fcc1b4a4f9816ce6b374837933ae420cd99c47be57b2",
+  "rules": {
+    "require_clear_brand_identity": true,
+    "reject_campaign_or_page_artwork": true,
+    "reject_favicon_or_touch_icon_as_final_logo": true,
+    "reject_identity_mismatch": true,
+    "require_224x224_normalized_png": true,
+    "require_identity_and_legal_review": true,
+    "automatic_product_approval": false
+  },
+  "summary": {
+    "reviewed": 5,
+    "overlay_eligible": 0,
+    "rejected_or_upgrade_required": 5,
+    "approved_for_product": 0
+  },
+  "excluded_candidate_brand_ids": [
+    "doordash",
+    "toyota",
+    "consumer-cellular",
+    "ibm",
+    "bubba-burger"
+  ],
+  "brands": [
+    {
+      "canonical_brand_id": "doordash",
+      "pipeline_status": "official_asset_candidate_quality_upgrade_required",
+      "visual_decision": "reject_pending_higher_quality_official_logo",
+      "overlay_eligible": false,
+      "approved_for_product": false,
+      "reason": "The mark is recognizable as DoorDash, but the official source is a 32x32 favicon and fails the non-favicon and source-quality gates.",
+      "normalized_file": "doordash/output/doordash-icon@4x.png",
+      "normalized_sha256": "f5e359fd8c7dd26f7456c2ed1ce73d0482da68e4d9e9a7200037c0fd34367bb8",
+      "normalized_dimensions": "224x224",
+      "source_dimensions": "32x32"
+    },
+    {
+      "canonical_brand_id": "toyota",
+      "pipeline_status": "official_asset_candidate_pending_identity_review",
+      "visual_decision": "reject_campaign_lockup_not_brand_logo",
+      "overlay_eligible": false,
+      "approved_for_product": false,
+      "reason": "The normalized artwork reads NATIONAL SALES EVENT and is campaign artwork rather than a Toyota brand logo.",
+      "normalized_file": "toyota/output/toyota-icon@4x.png",
+      "normalized_sha256": "ee33bfbcd9ca4d006d88482e227fa41496afb4c270645ff2e96c5cda5a837b40",
+      "normalized_dimensions": "224x224"
+    },
+    {
+      "canonical_brand_id": "consumer-cellular",
+      "pipeline_status": "official_asset_candidate_pending_identity_review",
+      "visual_decision": "reject_touch_icon_not_clear_brand_logo",
+      "overlay_eligible": false,
+      "approved_for_product": false,
+      "reason": "The asset is an Apple touch icon containing only a generic letter C and does not provide a sufficiently clear Consumer Cellular brand identity for delivery.",
+      "normalized_file": "consumer-cellular/output/consumer-cellular-icon@4x.png",
+      "normalized_sha256": "3c80a8a347a0b3e04cf7f0da44aa8398036847811d83200c3aa14cd232bc3559",
+      "normalized_dimensions": "224x224"
+    },
+    {
+      "canonical_brand_id": "ibm",
+      "pipeline_status": "official_asset_candidate_pending_identity_review",
+      "visual_decision": "reject_page_artwork_not_brand_logo",
+      "overlay_eligible": false,
+      "approved_for_product": false,
+      "reason": "The asset is a purple-blue circular page illustration and is not the IBM wordmark or corporate brand mark.",
+      "normalized_file": "ibm/output/ibm-icon@4x.png",
+      "normalized_sha256": "02091172033f1cab01d59a8741ffd8980b413b19dec96bb9658df7ae34e7664e",
+      "normalized_dimensions": "224x224"
+    },
+    {
+      "canonical_brand_id": "bubba-burger",
+      "pipeline_status": "official_asset_candidate_pending_identity_review",
+      "visual_decision": "reject_brand_identity_mismatch",
+      "overlay_eligible": false,
+      "approved_for_product": false,
+      "reason": "The candidate is the BUBBA'S Hawaii restaurant logo from bubbaburger.com and does not establish identity with the advertised BUBBA burger packaged-food brand.",
+      "normalized_file": "bubba-burger/output/bubba-burger-icon@4x.png",
+      "normalized_sha256": "d9bf839f33ae3a094c7d7929a97e6d8ddc64630a4066476dee4585b5a7b151bc",
+      "normalized_dimensions": "224x224"
+    }
+  ],
+  "protected_baselines": {
+    "creative_library_state_sha256": "f202122825572a91149600e0dc868b20b6d4b3be2f0439b6a64234e1b6ba5d55",
+    "legacy_official_site_registry_sha256": "18a991e7ca12296e4ca2eec8e4f0d25a9d3438318e3522ed8018253e4f9cdbd6",
+    "legacy_asset_registry_sha256": "c901d43fc8ba320cd0a0421986ff88be199673e64e448a80b35701354f87e432"
+  }
+}

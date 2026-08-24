@@ -25249,27 +25249,27 @@
     {
       "source_id": "youtube-furbo",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@FurboDogCamera/videos\nERROR: [youtube:tab] @FurboDogCamera/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@FurboDogCamera/videos\nERROR: [youtube:tab] @FurboDogCamera/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-furbo",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@FurboDogCamera/shorts\nERROR: [youtube:tab] @FurboDogCamera/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@FurboDogCamera/shorts\nERROR: [youtube:tab] @FurboDogCamera/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)\n"
     },
     {
       "source_id": "youtube-whistle",
       "format": "videos",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Whistle/videos\nERROR: [youtube:tab] @Whistle: This channel does not have a videos tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Whistle/videos\nERROR: [youtube:tab] @Whistle: This channel does not have a videos tab\n"
     },
     {
       "source_id": "youtube-whistle",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Whistle/shorts\nERROR: [youtube:tab] @Whistle: This channel does not have a shorts tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Whistle/shorts\nERROR: [youtube:tab] @Whistle: This channel does not have a shorts tab\n"
     },
     {
       "source_id": "youtube-tractive",
       "format": "shorts",
-      "error": "Command failed: /Users/hakunamatata/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Tractive/shorts\nERROR: [youtube:tab] @Tractive: This channel does not have a shorts tab\n"
+      "error": "Command failed: __USER_HOME__/.local/bin/yt-dlp --flat-playlist --dump-single-json --playlist-end 20 --no-warnings https://www.youtube.com/@Tractive/shorts\nERROR: [youtube:tab] @Tractive: This channel does not have a shorts tab\n"
     },
     {
       "query": "Litter-Robot Litter-Robot 4 official commercial 2026",

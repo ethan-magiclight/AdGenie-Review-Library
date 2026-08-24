@@ -66,10 +66,11 @@ GitHub 首版默认不提交临时下载的原片和媒体缓存。审核台按�
 
 ## 视频链接刷新与研发接入
 
-`GET /api/bootstrap` 会为可交付的 MP4/HLS 审核项动态补充两个字段，不会改写 `web/data/creative-library-state.json`：
+`GET /api/bootstrap` 会为可交付的 MP4/HLS 审核项动态补充媒体入口字段，不会改写 `web/data/creative-library-state.json`：
 
-- `media_resolver_url`：返回当前可播放/可下载地址、检查时间和失效时间的 JSON 接口。
-- `media_download_url`：稳定下载入口；请求时解析当前媒体地址并以 `302` 跳转，调用方需要跟随重定向。
+- `media_playback_url` / `media_resolver_url`：返回当前播放地址、播放类型和失效时间的 JSON 接口。
+- `media_download_url`：稳定 MP4 下载尝试入口；直接文件会以 `302` 跳转，Vimeo progressive 会在运行时尝试，HLS-only 返回 `409 MEDIA_DOWNLOAD_NOT_AVAILABLE`，绝不把 `.m3u8` 冒充 MP4。
+- `media_download_capability`：`direct_file`、`runtime_progressive_or_hls` 或 `playback_only_hls`。
 
 例如，研发可以直接执行：
 
@@ -77,7 +78,7 @@ GitHub 首版默认不提交临时下载的原片和媒体缓存。审核台按�
 curl -L -o video.mp4 'http://127.0.0.1:4173/api/videos/best_ads%3A185499%3A2227057d06/media/download'
 ```
 
-审核台打开 Best Ads 侧边预览时会自动请求 `GET /api/videos/:video_id/media`；需要强制换新签名时，可请求 `POST /api/videos/:video_id/media` 或在页面点击“重新获取视频链接”。Best Ads 的 `token` 只保存在服务端内存缓存和当次 API 响应中，过期前 5 分钟自动换新，不写入审核数据；AOTW 等已有直接媒体地址的 provider 会立即返回现有地址。
+审核台打开 Best Ads 侧边预览时会自动请求 `GET /api/videos/:video_id/media`；需要强制换新签名时，可请求 `POST /api/videos/:video_id/media` 或在页面点击“重新获取视频链接”。Best Ads 的 `token` 只保存在服务端内存缓存和当次 API 响应中，过期前 5 分钟自动换新，不写入审核数据；AOTW 等已有直接媒体地址的 provider 会立即返回现有地址。STASH 和没有 progressive 文件的 Vimeo 记录可以播放 HLS，但没有 MP4 文件下载能力。
 
 Best Ads 刷新依赖浏览器访问服务，默认地址为 `WEB_ACCESS_PROXY=http://localhost:3456`，需要支持 `/targets`、`/new`、`/eval` 与 `/close`。服务不可用时接口返回 `503` 和明确原因，审核台继续展示 Contact Sheet，并保留重试和来源详情页入口。
 

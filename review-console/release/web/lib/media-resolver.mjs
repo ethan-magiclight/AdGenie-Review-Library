@@ -1,6 +1,10 @@
 const bestAdsMediaHost = "bestads-files.b-cdn.net";
 const bestAdsDetailHosts = new Set(["bestadsontv.com", "www.bestadsontv.com"]);
 const vimeoPlayerHost = "player.vimeo.com";
+const stashDirectTimeoutMs = 8_000;
+const stashProxyTimeoutMs = 8_000;
+const stashProxyHealthTimeoutMs = 3_000;
+const defaultProxyTimeoutMs = 60_000;
 
 export class MediaResolutionError extends Error {
   constructor(message, { code = "MEDIA_RESOLUTION_FAILED", status = 502 } = {}) {
@@ -35,7 +39,7 @@ function expectedAssetIds(video) {
 function expectedVimeoId(video) {
   const ids = expectedAssetIds(video).filter((value) => /^\d{6,}$/.test(value));
   if (ids.length !== 1) {
-    throw new MediaResolutionError("STASH 视频缺少唯一 Vimeo ID", {
+    throw new MediaResolutionError("视频记录缺少唯一 Vimeo ID", {
       code: "MEDIA_ASSET_ID_MISSING",
       status: 422,
     });
@@ -43,23 +47,36 @@ function expectedVimeoId(video) {
   return ids[0];
 }
 
+function vimeoPlayerLocator(video) {
+  return video.media_provider === "vimeo"
+    ? video.playback_url || video.original_media_url
+    : video.original_media_url;
+}
+
 function validateStashPlayerUrl(value, video) {
-  const url = httpUrl(value, "STASH Vimeo 播放页");
+  const url = httpUrl(value, "Vimeo 播放页");
   const id = expectedVimeoId(video);
   const actualId = url.pathname.match(/^\/video\/(\d{6,})\/?$/)?.[1] || null;
   if (url.protocol !== "https:" || url.hostname !== vimeoPlayerHost) {
-    throw new MediaResolutionError("STASH Vimeo 播放页不在允许范围", {
+    throw new MediaResolutionError("Vimeo 播放页不在允许范围", {
       code: "UNTRUSTED_SOURCE_URL",
       status: 422,
     });
   }
   if (actualId !== id) {
-    throw new MediaResolutionError("STASH Vimeo ID 与审核记录不匹配", {
+    throw new MediaResolutionError("Vimeo ID 与审核记录不匹配", {
       code: "MEDIA_ASSET_MISMATCH",
       status: 422,
     });
   }
-  url.search = "";
+  const unsupportedQueryKeys = [...url.searchParams.keys()].filter((key) => key !== "h");
+  const privateVideoHash = url.searchParams.get("h");
+  if (unsupportedQueryKeys.length || (privateVideoHash && !/^[a-z0-9]+$/i.test(privateVideoHash))) {
+    throw new MediaResolutionError("Vimeo 播放页包含不受支持的查询参数", {
+      code: "UNTRUSTED_SOURCE_URL",
+      status: 422,
+    });
+  }
   url.hash = "";
   return { href: url.href, id };
 }
@@ -123,6 +140,18 @@ function validateStashHlsUrl(value) {
   return url.href;
 }
 
+function validateVimeoProgressiveUrl(value) {
+  const url = httpUrl(value, "Vimeo MP4 地址");
+  const trustedHost = url.hostname.endsWith(".vimeocdn.com") || url.hostname.endsWith(".akamaized.net");
+  if (url.protocol !== "https:" || !trustedHost || !/\.mp4$/i.test(url.pathname)) {
+    throw new MediaResolutionError("Vimeo MP4 地址不在允许的 CDN", {
+      code: "UNTRUSTED_MEDIA_HOST",
+      status: 502,
+    });
+  }
+  return url.href;
+}
+
 function hlsUrlFromConfig(config) {
   const hls = config?.files?.hls;
   const cdns = hls?.cdns;
@@ -152,14 +181,32 @@ function hlsUrlFromConfig(config) {
   });
 }
 
-async function fetchStashMediaResource(fetchImpl, url, accept) {
+function progressiveUrlFromConfig(config) {
+  const candidates = Array.isArray(config?.files?.progressive)
+    ? [...config.files.progressive]
+      .filter((entry) => entry && typeof entry.url === "string")
+      .sort((left, right) => (Number(right.width) || 0) - (Number(left.width) || 0))
+    : [];
+  let lastError = null;
+  for (const candidate of candidates) {
+    try {
+      return validateVimeoProgressiveUrl(candidate.url);
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  if (lastError && candidates.length && !config?.files?.hls?.cdns) throw lastError;
+  return null;
+}
+
+async function fetchStashMediaResource(fetchImpl, url, accept, timeoutMs = stashDirectTimeoutMs) {
   let response;
   try {
     response = await fetchImpl(url, {
       credentials: "omit",
       headers: { Accept: accept },
       redirect: "error",
-      signal: AbortSignal.timeout(20_000),
+      signal: AbortSignal.timeout(timeoutMs),
     });
   } catch {
     throw new MediaResolutionError("STASH 媒体刷新请求失败", {
@@ -179,12 +226,13 @@ async function fetchStashMediaResource(fetchImpl, url, accept) {
 export async function refreshStashMedia(video, {
   fetchImpl = fetch,
   now = () => Date.now(),
+  timeoutMs = stashDirectTimeoutMs,
 } = {}) {
   const nowMs = now();
-  const player = validateStashPlayerUrl(video.original_media_url, video);
-  const playerResponse = await fetchStashMediaResource(fetchImpl, player.href, "text/html");
+  const player = validateStashPlayerUrl(vimeoPlayerLocator(video), video);
+  const playerResponse = await fetchStashMediaResource(fetchImpl, player.href, "text/html", timeoutMs);
   const configRequest = configRequestFromPlayerHtml(await playerResponse.text(), player.id, nowMs);
-  const configResponse = await fetchStashMediaResource(fetchImpl, configRequest.href, "application/json");
+  const configResponse = await fetchStashMediaResource(fetchImpl, configRequest.href, "application/json", timeoutMs);
   let config;
   try {
     config = await configResponse.json();
@@ -194,17 +242,38 @@ export async function refreshStashMedia(video, {
       status: 502,
     });
   }
-  return stashMediaDescriptor(hlsUrlFromConfig(config), configRequest.expiresAtMs, nowMs);
+  return vimeoMediaDescriptor(config, configRequest.expiresAtMs, nowMs);
 }
 
-function stashMediaDescriptor(playbackUrl, expiresAtMs, nowMs) {
+function vimeoMediaDescriptor(config, expiresAtMs, nowMs) {
+  const progressiveUrl = progressiveUrlFromConfig(config);
+  const hlsUrl = progressiveUrl ? null : hlsUrlFromConfig(config);
+  const playbackUrl = progressiveUrl || hlsUrl;
   return {
     playback_url: playbackUrl,
-    download_url: playbackUrl,
+    download_url: progressiveUrl,
+    playback_kind: progressiveUrl ? "progressive_mp4" : "hls",
+    download_kind: progressiveUrl ? "progressive_mp4" : null,
+    download_available: Boolean(progressiveUrl),
     checked_at: new Date(nowMs).toISOString(),
     expires_at: new Date(expiresAtMs).toISOString(),
     expires_at_ms: expiresAtMs,
     access_status: "temporary",
+  };
+}
+
+function directDescriptor(playbackUrl, downloadUrl, checkedAt, expiresAt, accessStatus) {
+  const isMp4 = /\.mp4(?:$|\?)/i.test(playbackUrl);
+  return {
+    playback_url: playbackUrl,
+    download_url: downloadUrl,
+    playback_kind: isMp4 ? "progressive_mp4" : "direct_media",
+    download_kind: downloadUrl ? "direct_file" : null,
+    download_available: Boolean(downloadUrl),
+    checked_at: checkedAt,
+    expires_at: expiresAt,
+    expires_at_ms: expiresAt ? Date.parse(expiresAt) : null,
+    access_status: accessStatus,
   };
 }
 
@@ -236,6 +305,9 @@ export function validateBestAdsMediaUrl(value, video, nowMs = Date.now()) {
   return {
     playback_url: url.href,
     download_url: url.href,
+    playback_kind: "progressive_mp4",
+    download_kind: "progressive_mp4",
+    download_available: true,
     checked_at: new Date(nowMs).toISOString(),
     expires_at: new Date(expiresAtMs).toISOString(),
     expires_at_ms: expiresAtMs,
@@ -248,6 +320,9 @@ export function validateBestAdsDirectMediaUrl(value, video, nowMs = Date.now()) 
   return {
     playback_url: url.href,
     download_url: url.href,
+    playback_kind: "progressive_mp4",
+    download_kind: "direct_file",
+    download_available: true,
     checked_at: video.media_checked_at || new Date(nowMs).toISOString(),
     expires_at: null,
     expires_at_ms: null,
@@ -263,12 +338,12 @@ function validateBestAdsDetailUrl(value) {
   return url.href;
 }
 
-async function proxyRequest(proxy, pathname, options = {}, fetchImpl = fetch) {
+async function proxyRequest(proxy, pathname, options = {}, fetchImpl = fetch, timeoutMs = defaultProxyTimeoutMs) {
   let response;
   try {
     response = await fetchImpl(`${proxy.replace(/\/$/, "")}${pathname}`, {
       ...options,
-      signal: AbortSignal.timeout(60_000),
+      signal: AbortSignal.timeout(timeoutMs),
     });
   } catch {
     throw new MediaResolutionError("媒体刷新服务不可用，请启动 web-access CDP Proxy", {
@@ -322,17 +397,20 @@ export async function refreshStashMediaViaProxy(video, {
   proxy = process.env.WEB_ACCESS_PROXY || "http://localhost:3456",
   proxyFetchImpl = fetch,
   now = () => Date.now(),
+  proxyTimeoutMs = stashProxyTimeoutMs,
+  proxyHealthTimeoutMs = stashProxyHealthTimeoutMs,
 } = {}) {
   const nowMs = now();
-  const player = validateStashPlayerUrl(video.original_media_url, video);
+  const player = validateStashPlayerUrl(vimeoPlayerLocator(video), video);
   let targetId = null;
   try {
-    await proxyRequest(proxy, "/targets", {}, proxyFetchImpl);
+    await proxyRequest(proxy, "/targets", {}, proxyFetchImpl, proxyHealthTimeoutMs);
     const opened = await proxyRequest(
       proxy,
       `/new?${new URLSearchParams({ url: "about:blank" })}`,
       {},
       proxyFetchImpl,
+      proxyTimeoutMs,
     );
     targetId = opened.targetId;
     if (!targetId) {
@@ -346,6 +424,7 @@ export async function refreshStashMediaViaProxy(video, {
       `/navigate?${new URLSearchParams({ target: targetId, url: player.href })}`,
       {},
       proxyFetchImpl,
+      proxyTimeoutMs,
     );
     const playerResult = await proxyRequest(
       proxy,
@@ -356,6 +435,7 @@ export async function refreshStashMediaViaProxy(video, {
         body: browserFetchExpression(player.href, "text/html"),
       },
       proxyFetchImpl,
+      proxyTimeoutMs,
     );
     const configRequest = configRequestFromPlayerHtml(
       evaluatedFetchResponse(playerResult),
@@ -371,6 +451,7 @@ export async function refreshStashMediaViaProxy(video, {
         body: browserFetchExpression(configRequest.href, "application/json"),
       },
       proxyFetchImpl,
+      proxyTimeoutMs,
     );
     let config;
     try {
@@ -382,7 +463,7 @@ export async function refreshStashMediaViaProxy(video, {
         status: 502,
       });
     }
-    return stashMediaDescriptor(hlsUrlFromConfig(config), configRequest.expiresAtMs, nowMs);
+    return vimeoMediaDescriptor(config, configRequest.expiresAtMs, nowMs);
   } finally {
     if (targetId) {
       await proxyRequest(
@@ -390,6 +471,7 @@ export async function refreshStashMediaViaProxy(video, {
         `/close?target=${encodeURIComponent(targetId)}`,
         {},
         proxyFetchImpl,
+        proxyHealthTimeoutMs,
       ).catch(() => {});
     }
   }
@@ -402,9 +484,18 @@ export async function refreshStashMediaWithFallback(video, {
   now = () => Date.now(),
   preferProxy = false,
   allowProxyFallback = true,
+  directTimeoutMs = stashDirectTimeoutMs,
+  proxyTimeoutMs = stashProxyTimeoutMs,
+  proxyHealthTimeoutMs = stashProxyHealthTimeoutMs,
 } = {}) {
-  const direct = () => refreshStashMedia(video, { fetchImpl, now });
-  const throughProxy = () => refreshStashMediaViaProxy(video, { proxy, proxyFetchImpl, now });
+  const direct = () => refreshStashMedia(video, { fetchImpl, now, timeoutMs: directTimeoutMs });
+  const throughProxy = () => refreshStashMediaViaProxy(video, {
+    proxy,
+    proxyFetchImpl,
+    now,
+    proxyTimeoutMs,
+    proxyHealthTimeoutMs,
+  });
   if (preferProxy) {
     try {
       return await throughProxy();
@@ -474,22 +565,27 @@ export function directMediaDescriptor(video, nowMs = Date.now()) {
     throw new MediaResolutionError("该视频没有可交付的媒体地址", { code: "MEDIA_URL_MISSING", status: 404 });
   }
   const url = httpUrl(mediaUrl, "视频地址");
-  return {
-    playback_url: url.href,
-    download_url: url.href,
-    checked_at: video.media_checked_at || new Date(nowMs).toISOString(),
-    expires_at: video.media_expires_at || null,
-    expires_at_ms: video.media_expires_at ? Date.parse(video.media_expires_at) : null,
-    access_status: video.media_access_status || "available",
-  };
+  return directDescriptor(
+    url.href,
+    url.href,
+    video.media_checked_at || new Date(nowMs).toISOString(),
+    video.media_expires_at || null,
+    video.media_access_status || "available",
+  );
 }
 
 export function publicMediaFields(video) {
   const provider = video.media_provider || "";
-  if (!new Set(["mp4", "hls", "aotw_cdn", "best_ads_signed_mp4"]).has(provider)) return {};
+  if (!new Set(["mp4", "hls", "vimeo", "aotw_cdn", "best_ads_signed_mp4"]).has(provider)) return {};
   const encodedId = encodeURIComponent(video.video_id || video.id);
   return {
+    media_playback_url: `/api/videos/${encodedId}/media`,
     media_resolver_url: `/api/videos/${encodedId}/media`,
     media_download_url: `/api/videos/${encodedId}/media/download`,
+    media_download_capability: provider === "hls"
+      ? "playback_only_hls"
+      : provider === "vimeo"
+        ? "runtime_progressive_or_hls"
+        : "direct_file",
   };
 }

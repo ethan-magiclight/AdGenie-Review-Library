@@ -1,0 +1,2691 @@
+{
+  "schema_version": "adgenie-taxonomy-contract-v3",
+  "taxonomy_version": "3.0.0",
+  "status": "candidate_closed_registry",
+  "created_at": "2026-08-23",
+  "contract_path": "collect/adgenie-taxonomy-contract-v3.md",
+  "purpose": "Closed two-level taxonomy for advertiser-facing AdGenie template supply planning and review-console classification.",
+  "registry_contract": {
+    "mode": "closed",
+    "hierarchy": ["industry", "product_category"],
+    "industry_count": 20,
+    "product_category_parent_cardinality": 1,
+    "classification_basis": "Classify the primary product, service, experience, cause, or institution being advertised; do not classify from visual setting, celebrity, media format, retailer channel, or source-site label alone.",
+    "unknown_policy": "Unresolved records remain candidate-only with null formal IDs. A fallback label is never a formal industry or product category.",
+    "new_source_policy": "A new source may emit raw labels and candidates, but may not append industries or product categories to this registry.",
+    "forbidden_formal_labels": [
+      "General",
+      "Other",
+      "Unclassified",
+      "Unknown",
+      "Miscellaneous",
+      "Cross-Category",
+      "General <Industry>"
+    ]
+  },
+  "classification_contract": {
+    "raw_evidence_fields": [
+      "source_industries",
+      "source_categories",
+      "source_detail_url",
+      "campaign_description",
+      "primary_brand",
+      "contact_sheet",
+      "visual_evidence"
+    ],
+    "candidate_fields": [
+      "classification_candidate.taxonomy_version",
+      "classification_candidate.industry_id",
+      "classification_candidate.product_category_id",
+      "classification_candidate.confidence",
+      "classification_candidate.evidence",
+      "classification_candidate.alternatives",
+      "classification_candidate.status"
+    ],
+    "formal_fields": [
+      "industry_id",
+      "product_category_id",
+      "classification_status",
+      "classification_confirmed_by",
+      "classification_confirmed_at",
+      "classification_lock"
+    ],
+    "candidate_statuses": [
+      "candidate",
+      "registry_unresolved",
+      "evidence_insufficient",
+      "manual_confirmation_required",
+      "migration_review_required"
+    ],
+    "formal_status": "confirmed",
+    "promotion_policy": {
+      "automatic_formal_write_allowed": false,
+      "minimum_independent_evidence_classes": 2,
+      "required_checks": [
+        "industry_id exists in this version",
+        "product_category_id exists in this version",
+        "product category parent_industry_id equals industry_id",
+        "evidence identifies the advertised offer rather than only the visual setting or distribution channel",
+        "a human confirmation event or approved version-migration decision is recorded"
+      ],
+      "source_taxonomy_alone_is_sufficient": false,
+      "brand_name_alone_is_sufficient": false,
+      "high_confidence_ai_alone_is_sufficient": false
+    },
+    "lock_policy": {
+      "lock_after_confirmation": true,
+      "locked_fields": [
+        "industry_id",
+        "product_category_id",
+        "classification_status",
+        "classification_confirmed_by",
+        "classification_confirmed_at"
+      ],
+      "automated_jobs_may_override_locked_fields": false,
+      "reclassification_requires_new_review_event": true
+    }
+  },
+  "legacy_industry_aliases": {
+    "Apparel & Fashion": "ind_apparel_footwear_accessories",
+    "Apparel & Footwear": "ind_apparel_footwear_accessories",
+    "Bags & Accessories": "ind_apparel_footwear_accessories",
+    "Jewelry & Watches": "ind_apparel_footwear_accessories",
+    "Color Cosmetics": "ind_beauty_personal_care",
+    "Personal Care": "ind_beauty_personal_care",
+    "Skincare": "ind_beauty_personal_care",
+    "Fragrance": "ind_beauty_personal_care",
+    "Beauty & Personal Care": "ind_beauty_personal_care",
+    "Food & Beverage": "ind_food_beverage",
+    "Restaurants & Food Service": "ind_food_beverage",
+    "Home & Garden": "ind_home_living",
+    "Home & Living": "ind_home_living",
+    "Home & Living/Household": "ind_home_living",
+    "Home Appliances & Living": "ind_home_living",
+    "Consumer Electronics": "ind_consumer_electronics",
+    "Retail": "ind_retail_commerce",
+    "Automotive": "ind_automotive_mobility",
+    "Automotive & Vehicles": "ind_automotive_mobility",
+    "Financial Services": "ind_financial_services",
+    "Healthcare": "ind_healthcare_pharmaceuticals",
+    "Health & Pharmaceutical": "ind_healthcare_pharmaceuticals",
+    "Sporting Goods & Fitness": "ind_sports_fitness_outdoor",
+    "Sports & Fitness": "ind_sports_fitness_outdoor",
+    "Outdoor & Recreation": "ind_sports_fitness_outdoor",
+    "Entertainment & Media": "ind_media_arts_entertainment",
+    "Media & Entertainment": "ind_media_arts_entertainment",
+    "Arts & Culture": "ind_media_arts_entertainment",
+    "Gaming": "ind_gaming_toys",
+    "Gaming & Entertainment": "ind_gaming_toys",
+    "Gaming & Lottery": "ind_gaming_toys",
+    "Toys & Games": "ind_gaming_toys",
+    "Software & Technology": "ind_software_digital_services",
+    "Telecommunications": "ind_telecommunications",
+    "Travel & Hospitality": "ind_travel_hospitality",
+    "Industrial & Manufacturing": "ind_business_industrial_services",
+    "Government & Public Services": "ind_public_sector_social_impact",
+    "Nonprofit & Advocacy": "ind_public_sector_social_impact",
+    "Pet Care": "ind_pet_care_supplies",
+    "Pet Supplies": "ind_pet_care_supplies",
+    "Energy & Utilities": "ind_energy_utilities"
+  },
+  "legacy_industry_manual_review": [
+    {
+      "label": "Education & Digital Services",
+      "candidate_industry_ids": ["ind_education_learning", "ind_software_digital_services"],
+      "reason": "Education is an advertised outcome, while digital delivery is only a channel or technology; record-level offer evidence is required."
+    },
+    {
+      "label": "Sportswear",
+      "candidate_industry_ids": ["ind_apparel_footwear_accessories", "ind_sports_fitness_outdoor"],
+      "reason": "Apparel and footwear remain in fashion; equipment, training, and outdoor recreation remain in sports."
+    },
+    {
+      "label": "Luxury Goods",
+      "candidate_industry_ids": ["ind_apparel_footwear_accessories", "ind_automotive_mobility", "ind_home_living"],
+      "reason": "Luxury is a market position, not an industry. The advertised offer determines the industry."
+    },
+    {
+      "label": "Transportation & Mobility",
+      "candidate_industry_ids": ["ind_automotive_mobility", "ind_travel_hospitality", "ind_business_industrial_services"],
+      "reason": "Vehicle products, passenger travel, and freight services have different industry owners."
+    },
+    {
+      "label": "Retail Services",
+      "candidate_industry_ids": ["ind_retail_commerce", "ind_travel_hospitality", "ind_automotive_mobility", "ind_business_industrial_services"],
+      "reason": "The legacy value mixes retail destinations, travel services, delivery or mobility, and business logistics; an explicit product-category mapping is required."
+    },
+    {
+      "label": "Professional Services",
+      "candidate_industry_ids": ["ind_business_industrial_services", "ind_public_sector_social_impact", "ind_software_digital_services", "ind_telecommunications", "ind_energy_utilities"],
+      "reason": "The legacy bucket contains commercial services as well as public, software, telecom, energy, and other incorrectly promoted records."
+    },
+    {
+      "label": "Sports & Outdoor",
+      "candidate_industry_ids": ["ind_sports_fitness_outdoor", "ind_media_arts_entertainment", "ind_apparel_footwear_accessories", "ind_travel_hospitality"],
+      "reason": "The legacy bucket mixes sports products, spectator media or events, sportswear, and outdoor travel; a specific advertised offer is required."
+    }
+  ],
+  "legacy_category_mappings": {
+    "safe_aliases": {
+      "Clothing & Apparel": "cat_apparel_clothing",
+      "Footwear": "cat_apparel_footwear",
+      "Running Footwear": "cat_apparel_sportswear",
+      "Running Shoes": "cat_apparel_sportswear",
+      "Athletic Apparel": "cat_apparel_sportswear",
+      "Athletic Apparel & Footwear": "cat_apparel_sportswear",
+      "Athletic Footwear": "cat_apparel_sportswear",
+      "Sportswear": "cat_apparel_sportswear",
+      "Fashion Accessories": "cat_apparel_fashion_accessories",
+      "Bags & Accessories": "cat_apparel_bags_leather",
+      "Jewelry & Watches": "cat_apparel_jewelry_watches",
+      "Watches": "cat_apparel_jewelry_watches",
+      "Cosmetics": "cat_beauty_makeup",
+      "Makeup": "cat_beauty_makeup",
+      "Skincare": "cat_beauty_skincare",
+      "Hair Care": "cat_beauty_haircare",
+      "Fragrance": "cat_beauty_fragrance",
+      "Toiletries & Personal Hygiene": "cat_beauty_hygiene_oral",
+      "Oral Care": "cat_beauty_hygiene_oral",
+      "Confectionery & Snacks": "cat_food_snacks_confectionery",
+      "Biscuits & Cookies": "cat_food_snacks_confectionery",
+      "Cookies": "cat_food_snacks_confectionery",
+      "Breakfast Cereals": "cat_food_packaged_food",
+      "Breakfast Cereal": "cat_food_packaged_food",
+      "Non-Alcoholic Beverages": "cat_food_non_alcoholic_beverages",
+      "Alcoholic Beverages": "cat_food_alcoholic_beverages",
+      "Beer": "cat_food_alcoholic_beverages",
+      "Dairy & Milk": "cat_food_dairy_alternatives",
+      "Milk & Dairy Products": "cat_food_dairy_alternatives",
+      "Dairy & Yogurt": "cat_food_dairy_alternatives",
+      "Yogurt & Dairy Products": "cat_food_dairy_alternatives",
+      "Quick-Service Restaurants": "cat_food_restaurants_foodservice",
+      "Restaurants & Food Service": "cat_food_restaurants_foodservice",
+      "Household Care": "cat_home_household_care",
+      "Furniture & Storage": "cat_home_furniture_furnishings",
+      "Home Furnishings & Storage": "cat_home_furniture_furnishings",
+      "Furniture & Home Furnishings": "cat_home_furniture_furnishings",
+      "Home & Garden": "cat_home_improvement_garden",
+      "Home Appliances": "cat_home_appliances",
+      "Smartphones": "cat_electronics_mobile_computing",
+      "Tablets": "cat_electronics_mobile_computing",
+      "Laptops": "cat_electronics_mobile_computing",
+      "Premium Audio & Headphones": "cat_electronics_audio",
+      "Headphones": "cat_electronics_audio",
+      "Speakers & Audio": "cat_electronics_audio",
+      "Wireless Home Audio": "cat_electronics_audio",
+      "Home Audio & Soundbars": "cat_electronics_audio",
+      "Digital & Instant Cameras": "cat_electronics_imaging",
+      "Action Cameras": "cat_electronics_imaging",
+      "Webcams": "cat_electronics_imaging",
+      "Smartwatches": "cat_electronics_wearables",
+      "Smart Bands": "cat_electronics_wearables",
+      "Smart Trackers": "cat_electronics_wearables",
+      "VR/AR Headsets": "cat_electronics_wearables",
+      "Game Consoles": "cat_electronics_gaming_hardware",
+      "Department Stores": "cat_retail_multicategory",
+      "Grocery Retail": "cat_retail_grocery",
+      "Passenger Vehicles & Mobility": "cat_auto_passenger_vehicles",
+      "Passenger Vehicles": "cat_auto_passenger_vehicles",
+      "Luxury Performance Vehicles": "cat_auto_passenger_vehicles",
+      "Performance Cars": "cat_auto_passenger_vehicles",
+      "Sports Cars": "cat_auto_passenger_vehicles",
+      "Luxury SUVs": "cat_auto_passenger_vehicles",
+      "SUVs": "cat_auto_passenger_vehicles",
+      "Retail Banking & Contactless Payments": "cat_finance_banking_payments",
+      "Retail Banking": "cat_finance_banking_payments",
+      "Insurance Services": "cat_finance_insurance",
+      "Healthcare Services": "cat_health_providers",
+      "Fitness Equipment": "cat_sports_fitness_equipment",
+      "Cardio & Connected Fitness Equipment": "cat_sports_fitness_equipment",
+      "Strength Training Equipment": "cat_sports_fitness_equipment",
+      "Fitness Accessories & Mobility": "cat_sports_fitness_equipment",
+      "Recovery & Massage Equipment": "cat_sports_recovery",
+      "Sports Broadcasting": "cat_media_sports_media",
+      "Streaming & Broadcast Services": "cat_media_film_tv_streaming",
+      "E-books & Publishing": "cat_media_publishing_news",
+      "Book Publishing": "cat_media_publishing_news",
+      "Mobile Network Services": "cat_telecom_mobile_network",
+      "5G Mobile Network": "cat_telecom_mobile_network",
+      "Broadband Internet": "cat_telecom_broadband",
+      "Internet & Connectivity Services": "cat_telecom_broadband",
+      "Passenger Rail Travel": "cat_travel_rail_coach",
+      "Rail Transportation": "cat_travel_rail_coach",
+      "Tourism Destination": "cat_travel_destinations_tourism",
+      "Environmental Advocacy": "cat_public_environmental_advocacy",
+      "Animal Welfare Advocacy": "cat_public_social_advocacy",
+      "Animal Welfare": "cat_public_social_advocacy",
+      "Pet Food & Treats": "cat_pet_food_treats",
+      "Cat Litter & Toileting": "cat_pet_hygiene_grooming",
+      "Pet Grooming & Hygiene": "cat_pet_hygiene_grooming",
+      "Collars, Leashes & Harnesses": "cat_pet_accessories_play",
+      "Pet Toys & Enrichment": "cat_pet_accessories_play",
+      "Pet Tech & Smart Devices": "cat_pet_tech_devices",
+      "Health, Supplements & Care": "cat_pet_health_veterinary",
+      "Beds, Crates & Furniture": "cat_pet_housing_travel",
+      "Travel & Carriers": "cat_pet_housing_travel"
+    },
+    "manual_review": {
+      "Food Products": {
+        "candidate_category_ids": ["cat_food_packaged_food", "cat_food_snacks_confectionery", "cat_food_dairy_alternatives", "cat_food_restaurants_foodservice", "cat_food_coffee_tea"],
+        "reason": "The legacy value does not distinguish packaged food, snacks, dairy, restaurants, or coffee and tea."
+      },
+      "General Automotive & Mobility": {
+        "candidate_category_ids": ["cat_auto_passenger_vehicles", "cat_auto_commercial_vehicles", "cat_auto_motorcycles_scooters", "cat_auto_commuter_micromobility", "cat_auto_mobility_services", "cat_auto_parts_aftermarket"],
+        "reason": "Industry-only evidence is not a formal product category."
+      },
+      "General Financial Services": {
+        "candidate_category_ids": ["cat_finance_banking_payments", "cat_finance_credit_lending", "cat_finance_insurance", "cat_finance_investment_wealth", "cat_finance_fintech", "cat_finance_business_finance"],
+        "reason": "Industry-only evidence is not a formal product category."
+      },
+      "General Retail Services": {
+        "candidate_category_ids": ["cat_retail_multicategory", "cat_retail_grocery", "cat_retail_specialty", "cat_retail_marketplaces_classifieds", "cat_retail_delivery_commerce_platforms", "cat_retail_loyalty_shopping_services", "cat_travel_booking_tours", "cat_auto_mobility_services", "cat_business_logistics_freight"],
+        "reason": "The legacy bucket mixes retail, travel, mobility, and logistics and cannot be promoted from an industry-only label."
+      },
+      "General Professional Services": {
+        "candidate_category_ids": ["cat_business_consulting_professional", "cat_business_marketing_services", "cat_business_workforce_facilities", "cat_software_enterprise_operations", "cat_telecom_business_connectivity", "cat_energy_industrial_energy", "cat_public_government_services"],
+        "reason": "The legacy bucket contains commercial and incorrectly promoted non-commercial or technology records."
+      },
+      "General Media & Entertainment": {
+        "candidate_category_ids": ["cat_media_film_tv_streaming", "cat_media_music_audio", "cat_media_publishing_news", "cat_media_arts_culture", "cat_media_live_entertainment", "cat_media_sports_media"],
+        "reason": "Industry-only evidence is not a formal product category."
+      },
+      "General Jewelry & Watches": {
+        "candidate_category_ids": ["cat_apparel_jewelry_watches", "cat_apparel_fashion_accessories"],
+        "reason": "The legacy generic label requires product evidence and cannot be promoted automatically."
+      },
+      "General Energy & Utilities": {
+        "candidate_category_ids": ["cat_energy_electric_gas_utilities", "cat_energy_renewables_storage", "cat_energy_fuels_lubricants", "cat_energy_ev_charging", "cat_energy_industrial_energy", "cat_energy_water_waste"],
+        "reason": "Industry-only evidence is not a formal product category."
+      },
+      "Travel & Tourism": {
+        "candidate_category_ids": ["cat_travel_destinations_tourism", "cat_travel_booking_tours", "cat_travel_lodging", "cat_travel_rail_coach", "cat_travel_cruises"],
+        "reason": "The legacy value mixes destination marketing, booking, lodging, and passenger travel."
+      },
+      "Delivery Services": {
+        "candidate_category_ids": ["cat_retail_delivery_commerce_platforms", "cat_business_logistics_freight", "cat_auto_mobility_services"],
+        "reason": "Consumer multi-merchant delivery, B2B freight, and local mobility are distinct offers."
+      },
+      "Sports & Recreation": {
+        "candidate_category_ids": ["cat_sports_fitness_equipment", "cat_sports_sporting_goods", "cat_sports_outdoor_recreation", "cat_sports_gyms_training", "cat_sports_recovery", "cat_sports_performance_cycling", "cat_media_sports_media"],
+        "reason": "The legacy value mixes products, training, outdoor recreation, broadcasts, leagues, and spectator events."
+      },
+      "Public Interest Campaign": {
+        "candidate_category_ids": ["cat_public_charity_nonprofit", "cat_public_social_advocacy", "cat_public_environmental_advocacy", "cat_public_health_safety_awareness", "cat_public_civic_political", "cat_public_government_services"],
+        "reason": "Public-interest intent does not identify the specific social-impact category."
+      },
+      "Education Services": {
+        "candidate_category_ids": ["cat_education_early_k12", "cat_education_higher", "cat_education_vocational_professional", "cat_education_online_learning", "cat_education_tutoring_testing", "cat_education_learning_materials"],
+        "reason": "The legacy value does not identify the education level or service."
+      },
+      "Digital Services & Technology": {
+        "candidate_category_ids": ["cat_software_productivity_collaboration", "cat_software_enterprise_operations", "cat_software_cloud_ai_developer", "cat_software_consumer_digital_utilities", "cat_education_online_learning", "cat_electronics_mobile_computing"],
+        "reason": "The legacy value mixes software, education technology, and hardware."
+      },
+      "Telecommunications Services": {
+        "candidate_category_ids": ["cat_telecom_mobile_network", "cat_telecom_broadband", "cat_telecom_converged_services", "cat_telecom_satellite_connectivity", "cat_telecom_business_connectivity"],
+        "reason": "The legacy value identifies the industry but not a unique telecom product category."
+      },
+      "Mobile & Connectivity Services": {
+        "candidate_category_ids": ["cat_telecom_mobile_network", "cat_telecom_broadband", "cat_telecom_converged_services"],
+        "reason": "The legacy value does not distinguish mobile, fixed, or bundled connectivity."
+      },
+      "Mobile & Internet Services": {
+        "candidate_category_ids": ["cat_telecom_mobile_network", "cat_telecom_broadband", "cat_telecom_converged_services"],
+        "reason": "The legacy value does not distinguish mobile, fixed, or bundled connectivity."
+      },
+      "Mobile & Roaming Services": {
+        "candidate_category_ids": ["cat_telecom_mobile_network", "cat_telecom_converged_services"],
+        "reason": "The advertised plan or bundle must be confirmed from record-level evidence."
+      },
+      "Coffee & Coffee Machines": {
+        "candidate_category_ids": ["cat_food_coffee_tea", "cat_home_appliances"],
+        "reason": "Coffee consumables and coffee-making hardware have different parents."
+      },
+      "Bicycles & E-Bikes": {
+        "candidate_category_ids": ["cat_auto_commuter_micromobility", "cat_sports_performance_cycling"],
+        "reason": "Transportation use and performance recreation require different categories."
+      },
+      "Electric Bicycles": {
+        "candidate_category_ids": ["cat_auto_commuter_micromobility", "cat_sports_performance_cycling"],
+        "reason": "Electric drive alone does not determine commuter versus performance use."
+      }
+    },
+    "missing_value_policy": {
+      "status": "evidence_insufficient",
+      "formal_product_category_id": null,
+      "industry_only_candidate_allowed": true,
+      "automatic_registry_expansion_allowed": false,
+      "reason": "A missing or blank legacy product category must remain candidate-only until product-level evidence identifies one v3 category."
+    }
+  },
+  "industry_definitions": [
+    {
+      "id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "zh": "服装、鞋履与配饰",
+      "name_en": "Apparel, Footwear & Accessories",
+      "name_zh": "服装、鞋履与配饰",
+      "definition": "Brands primarily advertising wearable fashion products and personal accessories.",
+      "includes": ["clothing", "footwear", "sportswear as a wearable product", "bags", "jewelry", "watches", "fashion accessories"],
+      "excludes": ["cosmetics and personal care", "sports equipment", "wearable electronics", "retailers whose main offer is the store or marketplace"],
+      "product_categories": [
+        {
+          "id": "cat_apparel_clothing",
+          "parent_industry_id": "ind_apparel_footwear_accessories",
+          "name_en": "Clothing & Apparel",
+          "name_zh": "服装",
+          "definition": "Everyday, formal, work, children’s, and occasion clothing sold as the primary product.",
+          "includes": ["tops", "bottoms", "dresses", "outerwear", "underwear", "workwear"],
+          "excludes": ["athletic footwear", "bags", "jewelry", "retail-store brand campaigns without a featured apparel offer"]
+        },
+        {
+          "id": "cat_apparel_footwear",
+          "parent_industry_id": "ind_apparel_footwear_accessories",
+          "name_en": "Footwear",
+          "name_zh": "鞋履",
+          "definition": "Casual, formal, lifestyle, and occupational shoes sold as the primary product.",
+          "includes": ["sneakers", "boots", "sandals", "dress shoes", "work shoes"],
+          "excludes": ["sports equipment", "foot-care medicine", "shoe retailers advertising the store rather than a product line"]
+        },
+        {
+          "id": "cat_apparel_sportswear",
+          "parent_industry_id": "ind_apparel_footwear_accessories",
+          "name_en": "Sportswear & Athletic Footwear",
+          "name_zh": "运动服饰与运动鞋",
+          "definition": "Athletic clothing, jerseys, and performance footwear whose advertised object is wearable apparel.",
+          "includes": ["running shoes", "football jerseys", "training apparel", "athletic footwear", "teamwear"],
+          "excludes": ["fitness equipment", "sports leagues", "gyms", "outdoor hard goods"]
+        },
+        {
+          "id": "cat_apparel_bags_leather",
+          "parent_industry_id": "ind_apparel_footwear_accessories",
+          "name_en": "Bags & Leather Goods",
+          "name_zh": "箱包与皮具",
+          "definition": "Personal carry products and leather accessories sold primarily for fashion or everyday use.",
+          "includes": ["handbags", "backpacks", "wallets", "luggage", "leather accessories"],
+          "excludes": ["pet carriers", "industrial cases", "travel services"]
+        },
+        {
+          "id": "cat_apparel_jewelry_watches",
+          "parent_industry_id": "ind_apparel_footwear_accessories",
+          "name_en": "Jewelry & Watches",
+          "name_zh": "珠宝与腕表",
+          "definition": "Decorative jewelry and non-computing watches marketed as personal accessories.",
+          "includes": ["fine jewelry", "fashion jewelry", "mechanical watches", "luxury watches"],
+          "excludes": ["smartwatches", "medical wearables", "generic luxury positioning without product evidence"]
+        },
+        {
+          "id": "cat_apparel_fashion_accessories",
+          "parent_industry_id": "ind_apparel_footwear_accessories",
+          "name_en": "Fashion Accessories",
+          "name_zh": "时尚配饰",
+          "definition": "Wearable or carried fashion accessories not covered by clothing, footwear, bags, jewelry, or watches.",
+          "includes": ["eyewear", "belts", "scarves", "hats", "fashion accessories"],
+          "excludes": ["medical eyewear services", "consumer electronics", "sporting equipment"]
+        }
+      ]
+    },
+    {
+      "id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "zh": "美妆与个人护理",
+      "name_en": "Beauty & Personal Care",
+      "name_zh": "美妆与个人护理",
+      "definition": "Consumer products for appearance, grooming, hygiene, fragrance, and routine oral care.",
+      "includes": ["makeup", "skincare", "hair care", "fragrance", "personal hygiene", "oral care", "grooming tools"],
+      "excludes": ["prescription treatments", "clinical medical devices", "pet grooming", "fashion accessories"],
+      "product_categories": [
+        {
+          "id": "cat_beauty_makeup",
+          "parent_industry_id": "ind_beauty_personal_care",
+          "name_en": "Makeup & Color Cosmetics",
+          "name_zh": "彩妆",
+          "definition": "Cosmetic products primarily used to alter or enhance visible appearance.",
+          "includes": ["foundation", "lip color", "eye makeup", "nail color", "cosmetic palettes"],
+          "excludes": ["clinical dermatology", "fragrance", "beauty retailers advertising the store"]
+        },
+        {
+          "id": "cat_beauty_skincare",
+          "parent_industry_id": "ind_beauty_personal_care",
+          "name_en": "Skincare",
+          "name_zh": "护肤",
+          "definition": "Non-prescription products for cleansing, moisturizing, protecting, or improving skin appearance.",
+          "includes": ["cleansers", "moisturizers", "serums", "sunscreen", "masks"],
+          "excludes": ["prescription dermatology", "medical wound care", "makeup"]
+        },
+        {
+          "id": "cat_beauty_haircare",
+          "parent_industry_id": "ind_beauty_personal_care",
+          "name_en": "Hair Care & Styling",
+          "name_zh": "头发护理与造型",
+          "definition": "Consumer products and tools for washing, treating, coloring, or styling hair.",
+          "includes": ["shampoo", "conditioner", "hair color", "styling products", "hair dryers"],
+          "excludes": ["salon business services", "prescription hair-loss medicine", "pet grooming"]
+        },
+        {
+          "id": "cat_beauty_fragrance",
+          "parent_industry_id": "ind_beauty_personal_care",
+          "name_en": "Fragrance",
+          "name_zh": "香水与香氛",
+          "definition": "Personal fragrance products applied to the body.",
+          "includes": ["perfume", "eau de toilette", "body fragrance", "cologne"],
+          "excludes": ["home fragrance", "air fresheners", "generic luxury campaigns without fragrance evidence"]
+        },
+        {
+          "id": "cat_beauty_hygiene_oral",
+          "parent_industry_id": "ind_beauty_personal_care",
+          "name_en": "Personal Hygiene & Oral Care",
+          "name_zh": "个人卫生与口腔护理",
+          "definition": "Routine consumer hygiene and oral-care products, including non-clinical electric tools.",
+          "includes": ["deodorant", "body wash", "sanitary care", "toothpaste", "manual and electric toothbrushes", "mouthwash"],
+          "excludes": ["dental clinics", "diagnostic dental devices", "prescription treatments", "household cleaning"]
+        },
+        {
+          "id": "cat_beauty_grooming_tools",
+          "parent_industry_id": "ind_beauty_personal_care",
+          "name_en": "Grooming & Beauty Tools",
+          "name_zh": "美容与理容工具",
+          "definition": "Consumer devices and tools whose primary purpose is personal grooming or cosmetic treatment.",
+          "includes": ["shavers", "trimmers", "epilators", "facial brushes", "beauty styling tools"],
+          "excludes": ["clinical aesthetic devices", "general consumer electronics", "salon services"]
+        }
+      ]
+    },
+    {
+      "id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "zh": "食品与饮料",
+      "name_en": "Food & Beverage",
+      "name_zh": "食品与饮料",
+      "definition": "Brands advertising human food, drinks, ingredients, or prepared foodservice offers.",
+      "includes": ["packaged food", "snacks", "drinks", "alcohol", "dairy", "restaurants", "coffee and tea"],
+      "excludes": ["pet food", "grocery retailers advertising the store", "medical nutrition", "kitchen appliances"],
+      "product_categories": [
+        {
+          "id": "cat_food_packaged_food",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Packaged Food & Ingredients",
+          "name_zh": "包装食品与食材",
+          "definition": "Packaged foods, pantry products, ingredients, and meal components for human consumption.",
+          "includes": ["cereal", "sauces", "frozen food", "bread", "cooking ingredients", "prepared meals"],
+          "excludes": ["snacks and confectionery", "pet food", "grocery retail services"]
+        },
+        {
+          "id": "cat_food_snacks_confectionery",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Snacks & Confectionery",
+          "name_zh": "零食与糖果",
+          "definition": "Sweet and savory snack foods sold for immediate or occasional consumption.",
+          "includes": ["chocolate", "candy", "cookies", "chips", "snack bars"],
+          "excludes": ["complete meals", "sports supplements", "pet treats"]
+        },
+        {
+          "id": "cat_food_non_alcoholic_beverages",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Non-Alcoholic Beverages",
+          "name_zh": "非酒精饮料",
+          "definition": "Ready-to-drink or mixable beverages without alcohol.",
+          "includes": ["soft drinks", "water", "juice", "energy drinks", "sports drinks"],
+          "excludes": ["alcohol", "prescription nutrition", "coffee machines"]
+        },
+        {
+          "id": "cat_food_alcoholic_beverages",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Alcoholic Beverages",
+          "name_zh": "酒精饮料",
+          "definition": "Beer, wine, spirits, and alcoholic ready-to-drink products.",
+          "includes": ["beer", "wine", "spirits", "cider", "alcoholic cocktails"],
+          "excludes": ["non-alcoholic beverages", "bars advertising a venue experience"]
+        },
+        {
+          "id": "cat_food_dairy_alternatives",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Dairy & Dairy Alternatives",
+          "name_zh": "乳制品与植物替代品",
+          "definition": "Milk, yogurt, cheese, and plant-based substitutes marketed as food or drink.",
+          "includes": ["milk", "yogurt", "cheese", "plant milk", "dairy desserts"],
+          "excludes": ["infant clinical nutrition", "pet dairy products"]
+        },
+        {
+          "id": "cat_food_restaurants_foodservice",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Restaurants & Foodservice",
+          "name_zh": "餐饮与食品服务",
+          "definition": "Restaurants, cafés, quick-service chains, and prepared-meal services advertising food or dining.",
+          "includes": ["quick-service restaurants", "casual dining", "cafés", "meal services", "food delivery kitchens"],
+          "excludes": ["multi-merchant delivery marketplaces", "hotel stays", "grocery retailers"]
+        },
+        {
+          "id": "cat_food_coffee_tea",
+          "parent_industry_id": "ind_food_beverage",
+          "name_en": "Coffee & Tea",
+          "name_zh": "咖啡与茶",
+          "definition": "Coffee, tea, and related consumables marketed as beverages or ingredients.",
+          "includes": ["coffee beans", "coffee pods", "tea", "instant coffee", "ready-to-brew products"],
+          "excludes": ["coffee machines", "cafés advertising the venue", "energy drinks"]
+        }
+      ]
+    },
+    {
+      "id": "ind_home_living",
+      "industry": "Home & Living",
+      "zh": "家居与生活",
+      "name_en": "Home & Living",
+      "name_zh": "家居与生活",
+      "definition": "Products and services primarily used to furnish, maintain, improve, or access the home.",
+      "includes": ["home appliances", "furniture", "household care", "home improvement", "kitchenware", "residential property"],
+      "excludes": ["consumer computing", "industrial property", "hotel stays", "personal care"],
+      "product_categories": [
+        {
+          "id": "cat_home_appliances",
+          "parent_industry_id": "ind_home_living",
+          "name_en": "Home Appliances",
+          "name_zh": "家用电器",
+          "definition": "Large and small appliances whose primary function serves household tasks.",
+          "includes": ["refrigerators", "washing machines", "vacuum cleaners", "air conditioners", "coffee machines"],
+          "excludes": ["phones and computers", "industrial machinery", "home entertainment devices"]
+        },
+        {
+          "id": "cat_home_furniture_furnishings",
+          "parent_industry_id": "ind_home_living",
+          "name_en": "Furniture & Home Furnishings",
+          "name_zh": "家具与家居陈设",
+          "definition": "Furniture, bedding, décor, lighting, storage, and non-electronic home furnishings.",
+          "includes": ["sofas", "beds", "mattresses", "lighting", "storage", "home décor"],
+          "excludes": ["commercial office furniture", "consumer electronics", "construction materials"]
+        },
+        {
+          "id": "cat_home_household_care",
+          "parent_industry_id": "ind_home_living",
+          "name_en": "Household Cleaning & Laundry",
+          "name_zh": "家庭清洁与洗护",
+          "definition": "Products for cleaning, disinfecting, laundering, and maintaining household spaces and textiles.",
+          "includes": ["laundry detergent", "surface cleaners", "dish care", "air care", "household disinfectants"],
+          "excludes": ["personal hygiene", "industrial cleaning services", "pet grooming"]
+        },
+        {
+          "id": "cat_home_improvement_garden",
+          "parent_industry_id": "ind_home_living",
+          "name_en": "Home Improvement & Garden",
+          "name_zh": "家装、维修与园艺",
+          "definition": "Consumer home renovation, repair, DIY, garden, and residential building products.",
+          "includes": ["paint", "tools", "fixtures", "garden equipment", "DIY materials"],
+          "excludes": ["industrial construction equipment", "commercial engineering services", "outdoor sports equipment"]
+        },
+        {
+          "id": "cat_home_kitchen_cookware",
+          "parent_industry_id": "ind_home_living",
+          "name_en": "Kitchenware & Cookware",
+          "name_zh": "厨具与餐厨用品",
+          "definition": "Non-food products for cooking, serving, and kitchen organization.",
+          "includes": ["cookware", "knives", "tableware", "food storage", "kitchen accessories"],
+          "excludes": ["food ingredients", "electric kitchen appliances", "restaurant services"]
+        },
+        {
+          "id": "cat_home_residential_property_services",
+          "parent_industry_id": "ind_home_living",
+          "name_en": "Residential Property & Home Services",
+          "name_zh": "住宅地产与家庭服务",
+          "definition": "Consumer-facing residential property, moving, maintenance, and in-home services.",
+          "includes": ["residential real estate", "home builders", "moving services", "home maintenance", "home security services"],
+          "excludes": ["commercial property", "hotel accommodation", "industrial facility management"]
+        }
+      ]
+    },
+    {
+      "id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "zh": "消费电子",
+      "name_en": "Consumer Electronics",
+      "name_zh": "消费电子",
+      "definition": "Consumer hardware for computing, communication, entertainment, imaging, audio, and connected living.",
+      "includes": ["phones", "computers", "audio devices", "cameras", "wearables", "smart-home electronics", "gaming hardware"],
+      "excludes": ["software-only services", "telecom network plans", "home-task appliances", "medical devices"],
+      "product_categories": [
+        {
+          "id": "cat_electronics_mobile_computing",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Mobile & Personal Computing",
+          "name_zh": "移动与个人计算设备",
+          "definition": "Phones, tablets, laptops, desktops, and personal computing hardware.",
+          "includes": ["smartphones", "tablets", "laptops", "desktop computers", "monitors"],
+          "excludes": ["mobile network plans", "productivity software", "industrial computers"]
+        },
+        {
+          "id": "cat_electronics_audio",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Personal & Home Audio",
+          "name_zh": "个人与家庭音频",
+          "definition": "Consumer devices for listening, recording, and home audio playback.",
+          "includes": ["earbuds", "headphones", "speakers", "soundbars", "microphones"],
+          "excludes": ["music streaming services", "professional venue sound systems", "hearing aids"]
+        },
+        {
+          "id": "cat_electronics_imaging",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Cameras & Imaging Devices",
+          "name_zh": "相机与影像设备",
+          "definition": "Consumer cameras and imaging hardware whose primary function is capturing photos or video.",
+          "includes": ["digital cameras", "action cameras", "instant cameras", "webcams", "consumer drones with imaging focus"],
+          "excludes": ["smartphones", "medical imaging", "security services"]
+        },
+        {
+          "id": "cat_electronics_wearables",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Smart Wearables",
+          "name_zh": "智能穿戴设备",
+          "definition": "Connected wearable hardware with computing, communication, or general wellness functions.",
+          "includes": ["smartwatches", "smart bands", "smart trackers", "VR/AR headsets", "smart glasses"],
+          "excludes": ["mechanical watches", "medical monitors", "sportswear"]
+        },
+        {
+          "id": "cat_electronics_home_entertainment_smart_home",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Home Entertainment & Smart Home",
+          "name_zh": "家庭娱乐与智能家居电子",
+          "definition": "Connected electronics for home entertainment, automation, and monitoring.",
+          "includes": ["televisions", "streaming hardware", "smart displays", "smart speakers", "home cameras", "smart hubs"],
+          "excludes": ["streaming subscriptions", "home-task appliances", "home security service contracts"]
+        },
+        {
+          "id": "cat_electronics_accessories_power",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Device Accessories, Power & Connectivity",
+          "name_zh": "设备配件、供电与连接",
+          "definition": "Accessories and hardware used to power, connect, store, or extend consumer electronic devices.",
+          "includes": ["chargers", "power banks", "cables", "docks", "routers", "storage devices", "computer peripherals"],
+          "excludes": ["electric utility services", "vehicle charging networks", "industrial networking"]
+        },
+        {
+          "id": "cat_electronics_gaming_hardware",
+          "parent_industry_id": "ind_consumer_electronics",
+          "name_en": "Gaming Hardware",
+          "name_zh": "游戏硬件",
+          "definition": "Physical consumer hardware primarily used to play or control video games.",
+          "includes": ["game consoles", "controllers", "gaming peripherals", "handheld gaming devices"],
+          "excludes": ["video games", "esports events", "toys without computing hardware"]
+        }
+      ]
+    },
+    {
+      "id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "zh": "零售与商业平台",
+      "name_en": "Retail & Commerce",
+      "name_zh": "零售与商业平台",
+      "definition": "Retailers and commerce platforms advertising the shopping destination, assortment, transaction, or consumer delivery proposition as the primary offer.",
+      "includes": ["multi-category retailers", "grocery retailers", "specialty retailers", "marketplaces", "commerce platforms", "consumer delivery platforms"],
+      "excludes": ["manufacturer product campaigns sold through a retailer", "restaurants selling their own food", "B2B freight", "software whose core offer is not shopping"],
+      "product_categories": [
+        {
+          "id": "cat_retail_multicategory",
+          "parent_industry_id": "ind_retail_commerce",
+          "name_en": "Multi-Category Retail",
+          "name_zh": "综合零售",
+          "definition": "Department stores, mass merchants, and multi-category retailers advertising their store or assortment.",
+          "includes": ["department stores", "mass retail", "warehouse clubs", "multi-category ecommerce retailers"],
+          "excludes": ["single-product manufacturer campaigns", "marketplaces without owned retail proposition"]
+        },
+        {
+          "id": "cat_retail_grocery",
+          "parent_industry_id": "ind_retail_commerce",
+          "name_en": "Grocery Retail",
+          "name_zh": "食品杂货零售",
+          "definition": "Supermarkets and grocery retailers advertising the store, assortment, price, or shopping service.",
+          "includes": ["supermarkets", "grocery chains", "online grocery stores", "food retail memberships"],
+          "excludes": ["packaged food brands", "restaurants", "single-brand beverage campaigns"]
+        },
+        {
+          "id": "cat_retail_specialty",
+          "parent_industry_id": "ind_retail_commerce",
+          "name_en": "Specialty Retail",
+          "name_zh": "专业零售",
+          "definition": "Retail businesses specializing in a product domain while advertising the store or assortment rather than a manufacturer product.",
+          "includes": ["fashion retailers", "electronics retailers", "home retailers", "pharmacies as retail destinations", "pet retailers"],
+          "excludes": ["the featured manufacturer product", "clinical pharmacy services", "single-brand DTC product campaigns"]
+        },
+        {
+          "id": "cat_retail_marketplaces_classifieds",
+          "parent_industry_id": "ind_retail_commerce",
+          "name_en": "Marketplaces & Classifieds",
+          "name_zh": "交易市场与分类信息平台",
+          "definition": "Platforms primarily matching buyers and sellers or enabling multi-merchant transactions.",
+          "includes": ["online marketplaces", "resale platforms", "classifieds", "auction platforms"],
+          "excludes": ["social networks without a primary commerce offer", "real estate agencies", "financial trading platforms"]
+        },
+        {
+          "id": "cat_retail_delivery_commerce_platforms",
+          "parent_industry_id": "ind_retail_commerce",
+          "name_en": "Consumer Delivery & Commerce Platforms",
+          "name_zh": "消费者配送与商业平台",
+          "definition": "Consumer platforms whose primary offer is ordering and last-mile delivery across multiple merchants or product types.",
+          "includes": ["multi-restaurant delivery", "same-day consumer delivery", "shopping super-apps", "consumer courier platforms"],
+          "excludes": ["a restaurant’s own delivery offer", "B2B freight", "postal public services"]
+        },
+        {
+          "id": "cat_retail_loyalty_shopping_services",
+          "parent_industry_id": "ind_retail_commerce",
+          "name_en": "Shopping, Loyalty & Merchant Services",
+          "name_zh": "购物、会员与商户服务",
+          "definition": "Consumer-facing shopping memberships, loyalty programs, coupons, and merchant-linked commerce services.",
+          "includes": ["loyalty programs", "shopping memberships", "coupon services", "cashback shopping services"],
+          "excludes": ["general-purpose payment cards", "enterprise commerce software", "retailer campaigns not centered on the service"]
+        }
+      ]
+    },
+    {
+      "id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "zh": "汽车与出行",
+      "name_en": "Automotive & Mobility",
+      "name_zh": "汽车与出行",
+      "definition": "Vehicles, personal mobility products, and consumer services for local road-based mobility.",
+      "includes": ["cars", "commercial vehicles", "motorcycles", "commuter micromobility", "ride-hailing", "vehicle rental", "automotive services"],
+      "excludes": ["airlines and destination travel", "freight logistics", "sports cycling equipment", "energy utilities"],
+      "product_categories": [
+        {
+          "id": "cat_auto_passenger_vehicles",
+          "parent_industry_id": "ind_automotive_mobility",
+          "name_en": "Passenger Vehicles",
+          "name_zh": "乘用车",
+          "definition": "Cars and light passenger vehicles sold for personal or household transportation.",
+          "includes": ["sedans", "SUVs", "sports cars", "electric cars", "hybrids"],
+          "excludes": ["commercial fleets", "motorcycles", "ride-hailing services"]
+        },
+        {
+          "id": "cat_auto_commercial_vehicles",
+          "parent_industry_id": "ind_automotive_mobility",
+          "name_en": "Commercial Vehicles",
+          "name_zh": "商用车辆",
+          "definition": "Road vehicles sold primarily for commercial transport, work, or fleet use.",
+          "includes": ["trucks", "vans", "buses", "fleet vehicles", "work vehicles"],
+          "excludes": ["freight service providers", "industrial machinery", "passenger cars"]
+        },
+        {
+          "id": "cat_auto_motorcycles_scooters",
+          "parent_industry_id": "ind_automotive_mobility",
+          "name_en": "Motorcycles & Motor Scooters",
+          "name_zh": "摩托车与机动踏板车",
+          "definition": "Motorized two- and three-wheel vehicles marketed for transport or recreation.",
+          "includes": ["motorcycles", "motor scooters", "electric scooters", "three-wheel motor vehicles"],
+          "excludes": ["non-motorized sports bicycles", "mobility rental services", "children’s ride-on toys"]
+        },
+        {
+          "id": "cat_auto_commuter_micromobility",
+          "parent_industry_id": "ind_automotive_mobility",
+          "name_en": "Commuter Bicycles & Micromobility",
+          "name_zh": "通勤自行车与微出行",
+          "definition": "Bicycles and lightweight mobility products advertised primarily for everyday transportation.",
+          "includes": ["commuter bicycles", "e-bikes", "cargo bikes", "urban micromobility devices"],
+          "excludes": ["performance cycling equipment", "motorcycles", "bike-sharing services"]
+        },
+        {
+          "id": "cat_auto_mobility_services",
+          "parent_industry_id": "ind_automotive_mobility",
+          "name_en": "Ride-Hailing, Rental & Mobility Services",
+          "name_zh": "网约车、租赁与出行服务",
+          "definition": "Consumer services providing temporary access to vehicles or local point-to-point mobility.",
+          "includes": ["ride-hailing", "car rental", "car sharing", "bike sharing", "driver services"],
+          "excludes": ["airlines", "rail tourism", "B2B fleet logistics", "vehicle manufacturers"]
+        },
+        {
+          "id": "cat_auto_parts_aftermarket",
+          "parent_industry_id": "ind_automotive_mobility",
+          "name_en": "Automotive Parts, Care & Aftermarket",
+          "name_zh": "汽车零部件、养护与后市场",
+          "definition": "Consumer vehicle components, tires, accessories, maintenance, repair, and car-care offers.",
+          "includes": ["tires", "replacement parts", "car accessories", "repair services", "car wash", "vehicle care products"],
+          "excludes": ["fuel and charging networks", "industrial fleet services", "vehicle insurance"]
+        }
+      ]
+    },
+    {
+      "id": "ind_financial_services",
+      "industry": "Financial Services",
+      "zh": "金融服务",
+      "name_en": "Financial Services",
+      "name_zh": "金融服务",
+      "definition": "Regulated or financial-purpose services for money, payments, credit, risk, investment, and business finance.",
+      "includes": ["banking", "payments", "credit", "insurance", "investing", "financial technology", "business finance"],
+      "excludes": ["shopping loyalty", "generic enterprise software", "cryptocurrency games", "government tax campaigns"],
+      "product_categories": [
+        {
+          "id": "cat_finance_banking_payments",
+          "parent_industry_id": "ind_financial_services",
+          "name_en": "Banking, Accounts & Payments",
+          "name_zh": "银行账户与支付",
+          "definition": "Consumer bank accounts, cards, wallets, transfers, and payment services.",
+          "includes": ["retail banking", "debit cards", "credit cards", "digital wallets", "money transfer", "contactless payments"],
+          "excludes": ["retailer loyalty cards", "merchant ecommerce software", "investment products"]
+        },
+        {
+          "id": "cat_finance_credit_lending",
+          "parent_industry_id": "ind_financial_services",
+          "name_en": "Credit & Lending",
+          "name_zh": "信贷与借贷",
+          "definition": "Consumer and small-business borrowing products whose core offer is credit.",
+          "includes": ["personal loans", "mortgages", "auto loans", "buy-now-pay-later", "small-business loans"],
+          "excludes": ["bank accounts", "real estate sales", "financial education campaigns"]
+        },
+        {
+          "id": "cat_finance_insurance",
+          "parent_industry_id": "ind_financial_services",
+          "name_en": "Insurance",
+          "name_zh": "保险",
+          "definition": "Products transferring financial risk for individuals, property, health, travel, vehicles, or businesses.",
+          "includes": ["life insurance", "health insurance", "auto insurance", "home insurance", "travel insurance", "business insurance"],
+          "excludes": ["healthcare providers", "vehicle repair", "warranty-only retail services"]
+        },
+        {
+          "id": "cat_finance_investment_wealth",
+          "parent_industry_id": "ind_financial_services",
+          "name_en": "Investment, Wealth & Retirement",
+          "name_zh": "投资、财富与养老",
+          "definition": "Investment products, brokerage, asset management, retirement, and wealth-advisory offers.",
+          "includes": ["brokerage", "funds", "wealth management", "pensions", "retirement accounts"],
+          "excludes": ["gambling", "real estate brokerage", "general financial news"]
+        },
+        {
+          "id": "cat_finance_fintech",
+          "parent_industry_id": "ind_financial_services",
+          "name_en": "Fintech & Digital Financial Platforms",
+          "name_zh": "金融科技与数字金融平台",
+          "definition": "Technology-led services whose primary user outcome is financial rather than general software productivity.",
+          "includes": ["digital banks", "financial apps", "crypto exchanges", "personal finance platforms", "payment fintech"],
+          "excludes": ["generic SaaS", "shopping marketplaces", "video games with virtual currency"]
+        },
+        {
+          "id": "cat_finance_business_finance",
+          "parent_industry_id": "ind_financial_services",
+          "name_en": "Business & Institutional Finance",
+          "name_zh": "企业与机构金融",
+          "definition": "Financial services whose primary customer is a business or institution.",
+          "includes": ["commercial banking", "merchant acquiring", "trade finance", "institutional investment", "business payments"],
+          "excludes": ["accounting services", "enterprise software", "consumer retail banking"]
+        }
+      ]
+    },
+    {
+      "id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "zh": "医疗健康与制药",
+      "name_en": "Healthcare & Pharmaceuticals",
+      "name_zh": "医疗健康与制药",
+      "definition": "Human healthcare services, medicines, medical devices, diagnostics, and evidence-based health products.",
+      "includes": ["healthcare providers", "prescription drugs", "OTC medicine", "medical devices", "diagnostics", "supplements", "dental and vision care", "mental health"],
+      "excludes": ["routine beauty and hygiene", "pet healthcare", "non-medical sports recovery", "public-health advocacy without a healthcare offer"],
+      "product_categories": [
+        {
+          "id": "cat_health_providers",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "Healthcare Providers & Clinical Services",
+          "name_zh": "医疗机构与临床服务",
+          "definition": "Hospitals, clinics, telehealth, laboratories, and licensed clinical care services.",
+          "includes": ["hospitals", "clinics", "telemedicine", "laboratory services", "specialist care"],
+          "excludes": ["health insurance", "public awareness campaigns", "beauty salons"]
+        },
+        {
+          "id": "cat_health_prescription_pharma",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "Prescription Pharmaceuticals",
+          "name_zh": "处方药",
+          "definition": "Prescription medicines and branded therapies intended for treatment under professional supervision.",
+          "includes": ["prescription drugs", "vaccines", "branded therapies", "specialty medicines"],
+          "excludes": ["OTC medicine", "supplements", "public disease-awareness campaigns without a product"]
+        },
+        {
+          "id": "cat_health_otc_consumer_health",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "OTC Medicine & Consumer Health",
+          "name_zh": "非处方药与大众健康",
+          "definition": "Non-prescription medicines and evidence-based consumer health products used to prevent or relieve symptoms.",
+          "includes": ["pain relief", "cold and allergy medicine", "digestive remedies", "first aid", "smoking cessation"],
+          "excludes": ["routine personal hygiene", "beauty skincare", "prescription medicine"]
+        },
+        {
+          "id": "cat_health_devices_diagnostics",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "Medical Devices & Diagnostics",
+          "name_zh": "医疗器械与诊断",
+          "definition": "Devices and tests primarily intended for diagnosis, treatment, monitoring, or clinical rehabilitation.",
+          "includes": ["diagnostic tests", "medical monitors", "hearing aids", "clinical rehabilitation devices", "treatment equipment"],
+          "excludes": ["general wellness wearables", "electric toothbrushes", "non-medical massage devices"]
+        },
+        {
+          "id": "cat_health_supplements_wellness",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "Vitamins, Supplements & Wellness",
+          "name_zh": "维生素、营养补充与健康管理",
+          "definition": "Human dietary supplements and wellness products marketed around health maintenance rather than food enjoyment.",
+          "includes": ["vitamins", "minerals", "dietary supplements", "probiotics", "nutrition supplements"],
+          "excludes": ["sports drinks", "ordinary packaged food", "pet supplements", "prescription drugs"]
+        },
+        {
+          "id": "cat_health_dental_vision",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "Dental, Vision & Specialist Care",
+          "name_zh": "牙科、视力与专科护理",
+          "definition": "Clinical dental, optical, and specialist-care services or treatment products.",
+          "includes": ["dentists", "orthodontics", "optometry", "corrective lenses as clinical care", "specialist clinics"],
+          "excludes": ["routine toothpaste and toothbrushes", "fashion eyewear", "general hospitals"]
+        },
+        {
+          "id": "cat_health_mental_health",
+          "parent_industry_id": "ind_healthcare_pharmaceuticals",
+          "name_en": "Mental Health & Behavioral Care",
+          "name_zh": "心理健康与行为护理",
+          "definition": "Clinical or professional services and products for mental and behavioral health support.",
+          "includes": ["therapy services", "mental-health platforms", "behavioral care", "addiction treatment"],
+          "excludes": ["general meditation content", "social advocacy without a care service", "entertainment wellness apps"]
+        }
+      ]
+    },
+    {
+      "id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "zh": "运动、健身与户外",
+      "name_en": "Sports, Fitness & Outdoor",
+      "name_zh": "运动、健身与户外",
+      "definition": "Hard goods, equipment, facilities, and services for sport, exercise, outdoor recreation, and non-clinical recovery.",
+      "includes": ["sports equipment", "fitness equipment", "outdoor gear", "gyms", "training services", "recovery equipment", "performance cycling equipment"],
+      "excludes": ["sportswear and athletic footwear", "sports broadcasting", "medical rehabilitation", "commuter micromobility"],
+      "product_categories": [
+        {
+          "id": "cat_sports_fitness_equipment",
+          "parent_industry_id": "ind_sports_fitness_outdoor",
+          "name_en": "Fitness Equipment & Accessories",
+          "name_zh": "健身设备与辅具",
+          "definition": "Equipment and accessories used primarily for structured exercise and fitness training.",
+          "includes": ["cardio machines", "strength equipment", "weights", "yoga mats", "resistance bands"],
+          "excludes": ["sportswear", "medical rehabilitation devices", "fitness subscriptions without equipment"]
+        },
+        {
+          "id": "cat_sports_sporting_goods",
+          "parent_industry_id": "ind_sports_fitness_outdoor",
+          "name_en": "Sporting Goods & Team Equipment",
+          "name_zh": "体育用品与团队装备",
+          "definition": "Hard goods and protective equipment used to play organized or recreational sports.",
+          "includes": ["balls", "rackets", "clubs", "protective gear", "team equipment"],
+          "excludes": ["uniforms and footwear", "sports media", "toys not intended for sport"]
+        },
+        {
+          "id": "cat_sports_outdoor_recreation",
+          "parent_industry_id": "ind_sports_fitness_outdoor",
+          "name_en": "Outdoor & Adventure Equipment",
+          "name_zh": "户外与探险装备",
+          "definition": "Hard goods and equipment for camping, hiking, climbing, water, snow, and adventure recreation.",
+          "includes": ["camping gear", "hiking equipment", "climbing equipment", "water-sport gear", "snow-sport equipment"],
+          "excludes": ["outdoor apparel", "tourism destinations", "motor vehicles"]
+        },
+        {
+          "id": "cat_sports_gyms_training",
+          "parent_industry_id": "ind_sports_fitness_outdoor",
+          "name_en": "Gyms, Training & Fitness Services",
+          "name_zh": "健身房、训练与健身服务",
+          "definition": "Facilities, memberships, coaching, and services whose primary offer is exercise or sports training.",
+          "includes": ["gyms", "fitness memberships", "personal training", "sports academies", "connected training subscriptions"],
+          "excludes": ["education credentials", "sports leagues", "healthcare rehabilitation"]
+        },
+        {
+          "id": "cat_sports_recovery",
+          "parent_industry_id": "ind_sports_fitness_outdoor",
+          "name_en": "Sports Recovery & Massage Equipment",
+          "name_zh": "运动恢复与按摩设备",
+          "definition": "Non-clinical products used for routine athletic recovery, mobility, and massage.",
+          "includes": ["massage guns", "foam rollers", "compression recovery", "cold and heat recovery products"],
+          "excludes": ["medical rehabilitation devices", "prescription pain treatment", "beauty massage tools"]
+        },
+        {
+          "id": "cat_sports_performance_cycling",
+          "parent_industry_id": "ind_sports_fitness_outdoor",
+          "name_en": "Performance Cycling Equipment",
+          "name_zh": "竞技与运动自行车装备",
+          "definition": "Bicycles and equipment advertised primarily for sport, racing, trail, or performance recreation.",
+          "includes": ["road racing bicycles", "mountain bikes", "cycling equipment", "performance bike components"],
+          "excludes": ["commuter bicycles", "bike-sharing services", "motorcycles"]
+        }
+      ]
+    },
+    {
+      "id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "zh": "媒体、艺术与娱乐",
+      "name_en": "Media, Arts & Entertainment",
+      "name_zh": "媒体、艺术与娱乐",
+      "definition": "Content, subscriptions, cultural institutions, live entertainment, and media experiences offered to audiences.",
+      "includes": ["film and TV", "streaming", "music", "publishing", "news", "arts and culture", "live entertainment", "sports media"],
+      "excludes": ["video games", "software tools", "consumer media hardware", "tourism destinations"],
+      "product_categories": [
+        {
+          "id": "cat_media_film_tv_streaming",
+          "parent_industry_id": "ind_media_arts_entertainment",
+          "name_en": "Film, Television & Streaming",
+          "name_zh": "影视与流媒体",
+          "definition": "Audiovisual content, broadcasters, studios, and subscription video services.",
+          "includes": ["films", "TV shows", "streaming services", "broadcasters", "cinema releases"],
+          "excludes": ["streaming hardware", "video games", "advertising production companies"]
+        },
+        {
+          "id": "cat_media_music_audio",
+          "parent_industry_id": "ind_media_arts_entertainment",
+          "name_en": "Music, Radio & Audio Content",
+          "name_zh": "音乐、广播与音频内容",
+          "definition": "Recorded music, radio, podcasts, and audio-content services.",
+          "includes": ["music streaming", "radio", "podcasts", "record labels", "audio subscriptions"],
+          "excludes": ["headphones and speakers", "concert venues", "audio production software"]
+        },
+        {
+          "id": "cat_media_publishing_news",
+          "parent_industry_id": "ind_media_arts_entertainment",
+          "name_en": "Publishing, Books & News",
+          "name_zh": "出版、图书与新闻",
+          "definition": "Books, magazines, newspapers, news brands, and publishing services offered as content.",
+          "includes": ["books", "ebooks", "magazines", "newspapers", "news subscriptions"],
+          "excludes": ["educational courses", "office software", "retail bookstores advertising the store"]
+        },
+        {
+          "id": "cat_media_arts_culture",
+          "parent_industry_id": "ind_media_arts_entertainment",
+          "name_en": "Arts, Museums & Culture",
+          "name_zh": "艺术、博物馆与文化",
+          "definition": "Cultural institutions, exhibitions, and artistic experiences offered to audiences.",
+          "includes": ["museums", "galleries", "theatre", "cultural institutions", "art exhibitions"],
+          "excludes": ["public advocacy", "tourism destination campaigns", "commercial design services"]
+        },
+        {
+          "id": "cat_media_live_entertainment",
+          "parent_industry_id": "ind_media_arts_entertainment",
+          "name_en": "Live Entertainment & Attractions",
+          "name_zh": "现场娱乐与休闲场所",
+          "definition": "Ticketed live events and entertainment attractions whose primary offer is audience experience.",
+          "includes": ["concerts", "festivals", "theme parks", "entertainment venues", "ticketing for live entertainment"],
+          "excludes": ["sports training", "travel destinations", "hotel stays"]
+        },
+        {
+          "id": "cat_media_sports_media",
+          "parent_industry_id": "ind_media_arts_entertainment",
+          "name_en": "Sports Media & Spectator Events",
+          "name_zh": "体育媒体与观赛活动",
+          "definition": "Sports leagues, broadcasts, spectator events, and fan-content services sold as entertainment.",
+          "includes": ["sports broadcasting", "leagues", "spectator tickets", "fan media", "esports broadcasts"],
+          "excludes": ["sports equipment", "gyms", "sportswear"]
+        }
+      ]
+    },
+    {
+      "id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "zh": "游戏与玩具",
+      "name_en": "Gaming & Toys",
+      "name_zh": "游戏与玩具",
+      "definition": "Interactive games, toys, play products, collectibles, and regulated betting or lottery entertainment.",
+      "includes": ["video games", "mobile games", "tabletop games", "toys", "collectibles", "lotteries", "betting"],
+      "excludes": ["gaming hardware", "sports broadcasts", "investment products", "education-only learning tools"],
+      "product_categories": [
+        {
+          "id": "cat_gaming_video_games",
+          "parent_industry_id": "ind_gaming_toys",
+          "name_en": "Video Games & Interactive Entertainment",
+          "name_zh": "电子游戏与互动娱乐",
+          "definition": "Console, PC, cloud, and immersive games sold as interactive entertainment software.",
+          "includes": ["console games", "PC games", "cloud gaming", "VR games", "game subscriptions"],
+          "excludes": ["game consoles", "esports broadcasts", "gamified education software"]
+        },
+        {
+          "id": "cat_gaming_mobile_social",
+          "parent_industry_id": "ind_gaming_toys",
+          "name_en": "Mobile & Social Games",
+          "name_zh": "移动与社交游戏",
+          "definition": "Games primarily distributed through mobile devices or social platforms.",
+          "includes": ["mobile games", "casual games", "social games", "free-to-play game services"],
+          "excludes": ["social networks", "financial apps", "children’s learning apps"]
+        },
+        {
+          "id": "cat_gaming_tabletop",
+          "parent_industry_id": "ind_gaming_toys",
+          "name_en": "Board, Card & Tabletop Games",
+          "name_zh": "桌游、卡牌与棋类",
+          "definition": "Physical games played with boards, cards, pieces, or tabletop systems.",
+          "includes": ["board games", "card games", "trading card games", "puzzles", "tabletop role-playing games"],
+          "excludes": ["digital games", "casino betting", "educational textbooks"]
+        },
+        {
+          "id": "cat_gaming_toys_play",
+          "parent_industry_id": "ind_gaming_toys",
+          "name_en": "Toys & Children’s Play",
+          "name_zh": "玩具与儿童娱乐",
+          "definition": "Physical toys and play products primarily intended for children.",
+          "includes": ["dolls", "construction toys", "action figures", "ride-on toys", "children’s playsets"],
+          "excludes": ["sporting goods", "educational courses", "consumer electronics"]
+        },
+        {
+          "id": "cat_gaming_collectibles_hobby",
+          "parent_industry_id": "ind_gaming_toys",
+          "name_en": "Collectibles & Hobby Products",
+          "name_zh": "收藏品与爱好产品",
+          "definition": "Physical collectibles and hobby products sold for fandom, making, or collection.",
+          "includes": ["collectible figures", "model kits", "hobby sets", "licensed collectibles"],
+          "excludes": ["fine art", "jewelry", "financial collectibles or investments"]
+        },
+        {
+          "id": "cat_gaming_betting_lottery",
+          "parent_industry_id": "ind_gaming_toys",
+          "name_en": "Betting, Casino & Lottery",
+          "name_zh": "博彩、赌场与彩票",
+          "definition": "Regulated wagering, casino, and lottery products offered as entertainment.",
+          "includes": ["lotteries", "sports betting", "casino services", "wagering apps"],
+          "excludes": ["investment trading", "video games without wagering", "sports broadcasts"]
+        }
+      ]
+    },
+    {
+      "id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "zh": "教育与学习",
+      "name_en": "Education & Learning",
+      "name_zh": "教育与学习",
+      "definition": "Institutions, services, and products whose primary advertised outcome is teaching, learning, skills, or credentials.",
+      "includes": ["schools", "universities", "vocational training", "online learning", "tutoring", "testing", "education services"],
+      "excludes": ["generic software", "book publishing without a learning service", "public awareness campaigns"],
+      "product_categories": [
+        {
+          "id": "cat_education_early_k12",
+          "parent_industry_id": "ind_education_learning",
+          "name_en": "Early Childhood & K–12 Education",
+          "name_zh": "幼儿与基础教育",
+          "definition": "Formal early-childhood, primary, and secondary education institutions and services.",
+          "includes": ["preschools", "primary schools", "secondary schools", "school networks", "K–12 programs"],
+          "excludes": ["toys", "public child-welfare campaigns", "higher education"]
+        },
+        {
+          "id": "cat_education_higher",
+          "parent_industry_id": "ind_education_learning",
+          "name_en": "Higher Education",
+          "name_zh": "高等教育",
+          "definition": "Universities, colleges, and degree-granting post-secondary institutions.",
+          "includes": ["universities", "colleges", "graduate programs", "degree programs"],
+          "excludes": ["short vocational courses", "student finance", "research equipment"]
+        },
+        {
+          "id": "cat_education_vocational_professional",
+          "parent_industry_id": "ind_education_learning",
+          "name_en": "Vocational & Professional Training",
+          "name_zh": "职业与专业培训",
+          "definition": "Skills, certification, workforce, and professional-development education.",
+          "includes": ["vocational schools", "certification programs", "workforce training", "professional development"],
+          "excludes": ["staffing services", "enterprise software onboarding", "higher-education degrees"]
+        },
+        {
+          "id": "cat_education_online_learning",
+          "parent_industry_id": "ind_education_learning",
+          "name_en": "Online Learning & Educational Technology",
+          "name_zh": "在线学习与教育科技",
+          "definition": "Digital products whose primary user outcome is structured learning or education delivery.",
+          "includes": ["online courses", "learning platforms", "language-learning apps", "classroom technology", "learning management for learners"],
+          "excludes": ["general productivity software", "entertainment content", "social networks"]
+        },
+        {
+          "id": "cat_education_tutoring_testing",
+          "parent_industry_id": "ind_education_learning",
+          "name_en": "Tutoring, Test Preparation & Assessment",
+          "name_zh": "辅导、备考与测评",
+          "definition": "Services focused on tutoring, academic preparation, testing, and learner assessment.",
+          "includes": ["tutoring", "test preparation", "language testing", "academic assessment", "admissions preparation"],
+          "excludes": ["employment assessment", "clinical diagnostics", "general schools"]
+        },
+        {
+          "id": "cat_education_learning_materials",
+          "parent_industry_id": "ind_education_learning",
+          "name_en": "Learning Materials & Educational Services",
+          "name_zh": "学习材料与教育服务",
+          "definition": "Curriculum-led materials and education support services whose primary function is learning.",
+          "includes": ["textbooks", "curriculum products", "educational kits", "student support services"],
+          "excludes": ["general book publishing", "children’s toys", "office supplies"]
+        }
+      ]
+    },
+    {
+      "id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "zh": "软件与数字服务",
+      "name_en": "Software & Digital Services",
+      "name_zh": "软件与数字服务",
+      "definition": "Software, cloud, AI, cybersecurity, and digital platforms whose primary offer is a reusable technology service.",
+      "includes": ["productivity software", "enterprise applications", "cloud and AI", "cybersecurity", "creative software", "social platforms", "digital utilities"],
+      "excludes": ["financial services", "education-first learning products", "telecom connectivity", "human-led consulting"],
+      "product_categories": [
+        {
+          "id": "cat_software_productivity_collaboration",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Productivity & Collaboration Software",
+          "name_zh": "生产力与协作软件",
+          "definition": "Software for documents, communication, meetings, project work, and personal or team productivity.",
+          "includes": ["office suites", "project tools", "video meetings", "team collaboration", "note-taking"],
+          "excludes": ["telecom plans", "education platforms", "human consulting"]
+        },
+        {
+          "id": "cat_software_enterprise_operations",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Enterprise Operations Software",
+          "name_zh": "企业运营软件",
+          "definition": "Software supporting business operations, commerce, customer management, finance operations, or workforce processes.",
+          "includes": ["CRM", "ERP", "HR software", "commerce software", "business automation"],
+          "excludes": ["human outsourcing", "regulated financial products", "retail marketplaces"]
+        },
+        {
+          "id": "cat_software_cloud_ai_developer",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Cloud, AI & Developer Platforms",
+          "name_zh": "云、人工智能与开发者平台",
+          "definition": "Infrastructure, AI, data, and developer platforms offered primarily as technology services.",
+          "includes": ["cloud computing", "AI platforms", "developer tools", "data platforms", "hosting"],
+          "excludes": ["telecom network access", "industrial hardware", "consulting-only services"]
+        },
+        {
+          "id": "cat_software_cybersecurity",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Cybersecurity & Privacy Software",
+          "name_zh": "网络安全与隐私软件",
+          "definition": "Digital security products protecting identities, devices, networks, data, or transactions.",
+          "includes": ["antivirus", "identity security", "network security", "privacy tools", "fraud-prevention software"],
+          "excludes": ["physical home security", "government cybersecurity awareness", "security consulting without a software product"]
+        },
+        {
+          "id": "cat_software_creative_content_tools",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Creative & Content Software",
+          "name_zh": "创意与内容软件",
+          "definition": "Software for creating, editing, designing, publishing, or managing digital content.",
+          "includes": ["design software", "video editing", "audio creation", "website creation", "content management"],
+          "excludes": ["media content subscriptions", "advertising agencies", "consumer cameras"]
+        },
+        {
+          "id": "cat_software_social_communication",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Social & Communication Platforms",
+          "name_zh": "社交与通信平台",
+          "definition": "Digital platforms whose primary offer is user communication, social interaction, or community participation.",
+          "includes": ["social networks", "messaging apps", "community platforms", "dating apps"],
+          "excludes": ["mobile network plans", "news publishers", "commerce marketplaces"]
+        },
+        {
+          "id": "cat_software_consumer_digital_utilities",
+          "parent_industry_id": "ind_software_digital_services",
+          "name_en": "Consumer Digital Utilities",
+          "name_zh": "消费者数字工具",
+          "definition": "Consumer software and online services providing a practical non-financial, non-education utility.",
+          "includes": ["navigation software", "storage services", "search tools", "digital assistants", "utility apps"],
+          "excludes": ["banking apps", "travel booking", "online learning", "media subscriptions"]
+        }
+      ]
+    },
+    {
+      "id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "zh": "电信与连接服务",
+      "name_en": "Telecommunications",
+      "name_zh": "电信与连接服务",
+      "definition": "Connectivity services and network operators selling access to mobile, fixed, satellite, or business communications networks.",
+      "includes": ["mobile networks", "broadband", "telecom bundles", "satellite connectivity", "business connectivity"],
+      "excludes": ["phones and routers", "social messaging software", "cloud platforms", "broadcast media"],
+      "product_categories": [
+        {
+          "id": "cat_telecom_mobile_network",
+          "parent_industry_id": "ind_telecommunications",
+          "name_en": "Mobile Network Services",
+          "name_zh": "移动通信服务",
+          "definition": "Consumer cellular voice, data, roaming, and mobile-network plans.",
+          "includes": ["mobile plans", "5G services", "prepaid service", "roaming", "mobile data"],
+          "excludes": ["smartphones", "mobile apps", "home broadband"]
+        },
+        {
+          "id": "cat_telecom_broadband",
+          "parent_industry_id": "ind_telecommunications",
+          "name_en": "Broadband & Fixed Internet",
+          "name_zh": "宽带与固定互联网",
+          "definition": "Consumer fixed-line internet and home connectivity services.",
+          "includes": ["fiber broadband", "cable internet", "fixed wireless access", "home internet"],
+          "excludes": ["routers", "cloud hosting", "mobile-only plans"]
+        },
+        {
+          "id": "cat_telecom_converged_services",
+          "parent_industry_id": "ind_telecommunications",
+          "name_en": "Converged Telecom & Bundles",
+          "name_zh": "融合通信与套餐",
+          "definition": "Operator bundles combining mobile, internet, voice, television access, or household connectivity.",
+          "includes": ["quad-play bundles", "mobile plus broadband", "operator family plans", "telecom bundles"],
+          "excludes": ["standalone streaming subscriptions", "consumer hardware", "utilities"]
+        },
+        {
+          "id": "cat_telecom_satellite_connectivity",
+          "parent_industry_id": "ind_telecommunications",
+          "name_en": "Satellite & Remote Connectivity",
+          "name_zh": "卫星与偏远地区连接",
+          "definition": "Connectivity services delivered primarily through satellite or specialized remote networks.",
+          "includes": ["satellite internet", "remote connectivity", "maritime connectivity", "aviation connectivity"],
+          "excludes": ["satellite television content", "space tourism", "consumer GPS devices"]
+        },
+        {
+          "id": "cat_telecom_business_connectivity",
+          "parent_industry_id": "ind_telecommunications",
+          "name_en": "Business Connectivity & Network Services",
+          "name_zh": "企业连接与网络服务",
+          "definition": "Managed network access and communications connectivity sold primarily to organizations.",
+          "includes": ["enterprise connectivity", "managed networks", "business voice", "carrier services"],
+          "excludes": ["cloud software", "IT consulting", "consumer broadband"]
+        }
+      ]
+    },
+    {
+      "id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "zh": "旅游与酒店服务",
+      "name_en": "Travel & Hospitality",
+      "name_zh": "旅游与酒店服务",
+      "definition": "Passenger travel, accommodation, destinations, and trip-planning services whose primary offer is a journey or stay.",
+      "includes": ["airlines", "hotels", "tourism destinations", "travel booking", "rail and coach travel", "cruises"],
+      "excludes": ["local ride-hailing", "freight", "travel insurance", "entertainment venues without a trip proposition"],
+      "product_categories": [
+        {
+          "id": "cat_travel_airlines",
+          "parent_industry_id": "ind_travel_hospitality",
+          "name_en": "Airlines & Air Travel",
+          "name_zh": "航空与空中旅行",
+          "definition": "Passenger airlines and air-travel services advertising routes, cabins, fares, or flight experience.",
+          "includes": ["airlines", "air routes", "flight services", "airline loyalty tied to travel"],
+          "excludes": ["aircraft manufacturers", "airport public services", "travel booking platforms"]
+        },
+        {
+          "id": "cat_travel_lodging",
+          "parent_industry_id": "ind_travel_hospitality",
+          "name_en": "Hotels, Resorts & Lodging",
+          "name_zh": "酒店、度假村与住宿",
+          "definition": "Temporary accommodation and hospitality stays sold to travelers.",
+          "includes": ["hotels", "resorts", "hostels", "vacation rentals", "lodging brands"],
+          "excludes": ["residential real estate", "restaurants without lodging", "booking marketplaces"]
+        },
+        {
+          "id": "cat_travel_destinations_tourism",
+          "parent_industry_id": "ind_travel_hospitality",
+          "name_en": "Destinations & Tourism",
+          "name_zh": "目的地与旅游推广",
+          "definition": "Places and tourism organizations advertising travel to a destination.",
+          "includes": ["country tourism", "city tourism", "regional destinations", "tourism boards"],
+          "excludes": ["local government public-service campaigns", "museums advertising a single exhibition", "airlines"]
+        },
+        {
+          "id": "cat_travel_booking_tours",
+          "parent_industry_id": "ind_travel_hospitality",
+          "name_en": "Travel Booking & Tour Services",
+          "name_zh": "旅行预订与旅游服务",
+          "definition": "Platforms and operators whose primary offer is planning, booking, packaging, or guiding travel.",
+          "includes": ["online travel agencies", "tour operators", "travel packages", "travel planning services"],
+          "excludes": ["general marketplaces", "local ride-hailing", "travel insurance"]
+        },
+        {
+          "id": "cat_travel_rail_coach",
+          "parent_industry_id": "ind_travel_hospitality",
+          "name_en": "Rail, Coach & Passenger Transport",
+          "name_zh": "铁路、客运与旅客运输",
+          "definition": "Scheduled passenger transport sold as an intercity or travel experience.",
+          "includes": ["passenger rail", "intercity coach", "ferry travel", "long-distance passenger transport"],
+          "excludes": ["local ride-hailing", "freight rail", "vehicle products"]
+        },
+        {
+          "id": "cat_travel_cruises",
+          "parent_industry_id": "ind_travel_hospitality",
+          "name_en": "Cruises & Packaged Journeys",
+          "name_zh": "邮轮与组合旅程",
+          "definition": "Cruise lines and journey products combining transport, stay, and leisure experience.",
+          "includes": ["ocean cruises", "river cruises", "cruise packages", "rail journey packages"],
+          "excludes": ["ferry transport", "hotels sold independently", "tourism destinations"]
+        }
+      ]
+    },
+    {
+      "id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "zh": "商业与工业服务",
+      "name_en": "Business & Industrial Services",
+      "name_zh": "商业与工业服务",
+      "definition": "Human-led professional services, workplace operations, industrial products, manufacturing inputs, freight, construction, and other primarily B2B offers.",
+      "includes": ["consulting", "legal and accounting", "marketing services", "staffing", "industrial equipment", "manufacturing materials", "B2B logistics", "commercial construction"],
+      "excludes": ["software products", "regulated finance", "consumer home services", "consumer delivery platforms"],
+      "product_categories": [
+        {
+          "id": "cat_business_consulting_professional",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "Consulting, Legal & Professional Services",
+          "name_zh": "咨询、法律与专业服务",
+          "definition": "Human-led expertise sold to organizations or individuals as a professional service.",
+          "includes": ["management consulting", "legal services", "accounting", "audit", "architecture services"],
+          "excludes": ["software tools", "financial products", "education credentials"]
+        },
+        {
+          "id": "cat_business_marketing_services",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "Marketing, Advertising & Business Services",
+          "name_zh": "营销、广告与商业服务",
+          "definition": "Human-led agency and business support services sold primarily to organizations.",
+          "includes": ["advertising agencies", "media agencies", "market research", "public relations", "business support services"],
+          "excludes": ["ad-tech software", "media content", "consumer marketplaces"]
+        },
+        {
+          "id": "cat_business_workforce_facilities",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "Workforce, Staffing & Facility Services",
+          "name_zh": "人力、招聘与设施服务",
+          "definition": "Services providing people, workplace operations, facilities, or outsourced business functions.",
+          "includes": ["staffing", "recruitment", "facility management", "commercial cleaning", "outsourcing"],
+          "excludes": ["HR software", "vocational training", "residential home services"]
+        },
+        {
+          "id": "cat_business_industrial_equipment",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "Industrial Machinery & Equipment",
+          "name_zh": "工业机械与设备",
+          "definition": "Machinery and equipment primarily purchased for industrial, construction, agricultural, or commercial operations.",
+          "includes": ["factory machinery", "construction equipment", "commercial tools", "industrial automation hardware", "agricultural equipment"],
+          "excludes": ["consumer appliances", "commercial vehicles", "enterprise software"]
+        },
+        {
+          "id": "cat_business_manufacturing_materials",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "Manufacturing, Materials & Industrial Inputs",
+          "name_zh": "制造、材料与工业投入品",
+          "definition": "Manufactured components, raw materials, chemicals, and inputs sold primarily to organizations.",
+          "includes": ["industrial materials", "components", "packaging materials", "industrial chemicals", "manufacturing services"],
+          "excludes": ["consumer packaged goods", "energy commodities", "home-improvement retail products"]
+        },
+        {
+          "id": "cat_business_logistics_freight",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "B2B Logistics, Freight & Supply Chain",
+          "name_zh": "企业物流、货运与供应链",
+          "definition": "Freight, warehousing, and supply-chain services whose primary customer is an organization.",
+          "includes": ["freight forwarding", "cargo shipping", "warehousing", "supply-chain services", "B2B parcel logistics"],
+          "excludes": ["consumer delivery marketplaces", "passenger travel", "vehicle manufacturers"]
+        },
+        {
+          "id": "cat_business_construction_commercial_property",
+          "parent_industry_id": "ind_business_industrial_services",
+          "name_en": "Construction, Engineering & Commercial Property",
+          "name_zh": "建筑、工程与商业地产",
+          "definition": "B2B construction, engineering, infrastructure, and commercial-property products or services.",
+          "includes": ["engineering firms", "commercial construction", "infrastructure services", "commercial real estate", "property development for business"],
+          "excludes": ["residential property", "home DIY products", "public infrastructure awareness campaigns"]
+        }
+      ]
+    },
+    {
+      "id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "zh": "公共部门与社会影响",
+      "name_en": "Public Sector & Social Impact",
+      "name_zh": "公共部门与社会影响",
+      "definition": "Government institutions, public services, nonprofits, charities, and cause-led campaigns whose primary offer is civic or social impact rather than a commercial product.",
+      "includes": ["government services", "charities", "nonprofits", "advocacy", "environmental causes", "public safety", "civic campaigns"],
+      "excludes": ["commercial healthcare", "education institutions selling courses", "energy providers", "brand purpose campaigns still centered on a product"],
+      "product_categories": [
+        {
+          "id": "cat_public_government_services",
+          "parent_industry_id": "ind_public_sector_social_impact",
+          "name_en": "Government & Public Services",
+          "name_zh": "政府与公共服务",
+          "definition": "Government agencies and public institutions communicating access to civic services or programs.",
+          "includes": ["public administration", "municipal services", "tax services", "public transport information", "government programs"],
+          "excludes": ["political campaigning", "commercial utilities", "tourism boards"]
+        },
+        {
+          "id": "cat_public_charity_nonprofit",
+          "parent_industry_id": "ind_public_sector_social_impact",
+          "name_en": "Charity, Fundraising & Nonprofit Services",
+          "name_zh": "慈善、募款与非营利服务",
+          "definition": "Nonprofit organizations seeking donations, volunteers, membership, or use of social services.",
+          "includes": ["charities", "fundraising", "humanitarian organizations", "community nonprofits", "social services"],
+          "excludes": ["commercial donation platforms", "brand-purpose advertising", "government programs"]
+        },
+        {
+          "id": "cat_public_social_advocacy",
+          "parent_industry_id": "ind_public_sector_social_impact",
+          "name_en": "Social Advocacy & Human Rights",
+          "name_zh": "社会倡导与人权",
+          "definition": "Cause-led campaigns seeking awareness or action on social, equality, welfare, or human-rights issues.",
+          "includes": ["gender equality", "anti-violence", "animal welfare advocacy", "human rights", "social inclusion"],
+          "excludes": ["commercial pet products", "political candidate advertising", "clinical care services"]
+        },
+        {
+          "id": "cat_public_environmental_advocacy",
+          "parent_industry_id": "ind_public_sector_social_impact",
+          "name_en": "Environmental & Climate Advocacy",
+          "name_zh": "环境与气候倡导",
+          "definition": "Noncommercial campaigns seeking environmental protection, climate action, or conservation behavior.",
+          "includes": ["climate advocacy", "wildlife conservation", "pollution awareness", "environmental nonprofits"],
+          "excludes": ["renewable-energy providers", "green consumer products", "tourism nature campaigns"]
+        },
+        {
+          "id": "cat_public_health_safety_awareness",
+          "parent_industry_id": "ind_public_sector_social_impact",
+          "name_en": "Public Health & Safety Awareness",
+          "name_zh": "公共健康与安全倡导",
+          "definition": "Noncommercial campaigns promoting public-health, safety, prevention, or emergency behavior without selling a healthcare offer.",
+          "includes": ["disease awareness", "road safety", "emergency preparedness", "anti-smoking public campaigns", "public-health guidance"],
+          "excludes": ["medicines", "clinics", "insurance", "vehicle safety features sold as products"]
+        },
+        {
+          "id": "cat_public_civic_political",
+          "parent_industry_id": "ind_public_sector_social_impact",
+          "name_en": "Civic Participation & Political Campaigns",
+          "name_zh": "公民参与与政治传播",
+          "definition": "Campaigns seeking voting, civic participation, policy support, or political representation.",
+          "includes": ["voter participation", "election campaigns", "civic engagement", "public-policy advocacy"],
+          "excludes": ["government service announcements", "commercial brand activism", "news media"]
+        }
+      ]
+    },
+    {
+      "id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "zh": "宠物护理与用品",
+      "name_en": "Pet Care & Supplies",
+      "name_zh": "宠物护理与用品",
+      "definition": "Products and services primarily intended for companion animals and their caregivers.",
+      "includes": ["pet food", "pet hygiene", "pet accessories", "pet technology", "pet health", "veterinary care", "pet housing and mobility"],
+      "excludes": ["human food", "animal-welfare advocacy", "livestock industrial inputs", "general household products"],
+      "product_categories": [
+        {
+          "id": "cat_pet_food_treats",
+          "parent_industry_id": "ind_pet_care_supplies",
+          "name_en": "Pet Food & Treats",
+          "name_zh": "宠物食品与零食",
+          "definition": "Food, treats, and routine nutrition products for companion animals.",
+          "includes": ["dry food", "wet food", "pet treats", "functional treats", "pet nutrition"],
+          "excludes": ["human food", "veterinary prescription medicine", "animal-welfare campaigns"]
+        },
+        {
+          "id": "cat_pet_hygiene_grooming",
+          "parent_industry_id": "ind_pet_care_supplies",
+          "name_en": "Pet Hygiene, Grooming & Toileting",
+          "name_zh": "宠物卫生、洗护与如厕",
+          "definition": "Products and services for pet cleaning, grooming, odor control, and toileting.",
+          "includes": ["cat litter", "pet shampoo", "grooming tools", "dental care", "pet cleaning services"],
+          "excludes": ["household cleaning", "human personal care", "veterinary treatment"]
+        },
+        {
+          "id": "cat_pet_accessories_play",
+          "parent_industry_id": "ind_pet_care_supplies",
+          "name_en": "Pet Accessories, Walking & Play",
+          "name_zh": "宠物配件、牵引与玩具",
+          "definition": "Non-electronic accessories for walking, feeding, training, play, and enrichment.",
+          "includes": ["collars", "leashes", "harnesses", "bowls", "pet toys", "training accessories"],
+          "excludes": ["smart pet devices", "children’s toys", "sports equipment"]
+        },
+        {
+          "id": "cat_pet_tech_devices",
+          "parent_industry_id": "ind_pet_care_supplies",
+          "name_en": "Pet Tech & Smart Devices",
+          "name_zh": "智能宠物设备",
+          "definition": "Electronic and connected devices designed primarily for pet care, monitoring, feeding, or location.",
+          "includes": ["smart feeders", "pet cameras", "GPS collars", "smart litter boxes", "connected pet devices"],
+          "excludes": ["general home cameras", "human wearables", "non-electronic bowls"]
+        },
+        {
+          "id": "cat_pet_health_veterinary",
+          "parent_industry_id": "ind_pet_care_supplies",
+          "name_en": "Pet Health, Supplements & Veterinary Care",
+          "name_zh": "宠物健康、营养补充与兽医护理",
+          "definition": "Health products, medicines, supplements, insurance-adjacent care, and veterinary services for companion animals.",
+          "includes": ["pet supplements", "flea and tick care", "pet medicines", "veterinary clinics", "preventive pet health"],
+          "excludes": ["human healthcare", "routine grooming", "animal-welfare advocacy"]
+        },
+        {
+          "id": "cat_pet_housing_travel",
+          "parent_industry_id": "ind_pet_care_supplies",
+          "name_en": "Pet Housing, Furniture & Travel",
+          "name_zh": "宠物居住、家具与出行",
+          "definition": "Products for pet rest, containment, transport, travel, and integration into the home.",
+          "includes": ["pet beds", "crates", "carriers", "pet furniture", "travel accessories"],
+          "excludes": ["human furniture", "travel services", "pet-sharing mobility services"]
+        }
+      ]
+    },
+    {
+      "id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "zh": "能源与公用事业",
+      "name_en": "Energy & Utilities",
+      "name_zh": "能源与公用事业",
+      "definition": "Energy, water, waste, fuel, charging, and utility services or infrastructure sold to consumers or organizations.",
+      "includes": ["electricity and gas utilities", "renewable energy", "fuel", "EV charging", "industrial energy", "water and waste services"],
+      "excludes": ["consumer electronics chargers", "environmental advocacy", "vehicle products", "home appliances"],
+      "product_categories": [
+        {
+          "id": "cat_energy_electric_gas_utilities",
+          "parent_industry_id": "ind_energy_utilities",
+          "name_en": "Electricity & Gas Utilities",
+          "name_zh": "电力与燃气公用事业",
+          "definition": "Regulated or commercial services supplying electricity or gas to homes and organizations.",
+          "includes": ["electric utilities", "gas utilities", "energy tariffs", "utility customer services"],
+          "excludes": ["home appliances", "public energy-conservation campaigns", "industrial fuel products"]
+        },
+        {
+          "id": "cat_energy_renewables_storage",
+          "parent_industry_id": "ind_energy_utilities",
+          "name_en": "Renewable Energy & Storage",
+          "name_zh": "可再生能源与储能",
+          "definition": "Products and services generating or storing renewable energy for homes, businesses, or grids.",
+          "includes": ["solar energy", "wind energy", "home batteries", "grid storage", "renewable-energy plans"],
+          "excludes": ["consumer power banks", "environmental advocacy", "electric vehicles"]
+        },
+        {
+          "id": "cat_energy_fuels_lubricants",
+          "parent_industry_id": "ind_energy_utilities",
+          "name_en": "Fuels & Lubricants",
+          "name_zh": "燃料与润滑产品",
+          "definition": "Consumer and commercial fuels, lubricants, and energy products used to power or maintain vehicles and machinery.",
+          "includes": ["petrol", "diesel", "aviation fuel", "motor oil", "industrial lubricants"],
+          "excludes": ["vehicle products", "automotive repair services", "household cleaning oils"]
+        },
+        {
+          "id": "cat_energy_ev_charging",
+          "parent_industry_id": "ind_energy_utilities",
+          "name_en": "EV Charging & Energy Networks",
+          "name_zh": "电动车充电与能源网络",
+          "definition": "Public, fleet, or home-connected charging networks and energy services for electric mobility.",
+          "includes": ["charging networks", "public chargers", "fleet charging", "charging subscriptions", "energy-linked home chargers"],
+          "excludes": ["electric vehicles", "consumer phone chargers", "standalone electronics accessories"]
+        },
+        {
+          "id": "cat_energy_industrial_energy",
+          "parent_industry_id": "ind_energy_utilities",
+          "name_en": "Industrial Energy & Resource Services",
+          "name_zh": "工业能源与资源服务",
+          "definition": "Energy production, resource, and efficiency services sold primarily to industrial or commercial customers.",
+          "includes": ["industrial energy", "oil and gas services", "energy management", "resource extraction services"],
+          "excludes": ["industrial machinery", "business consulting", "consumer utility plans"]
+        },
+        {
+          "id": "cat_energy_water_waste",
+          "parent_industry_id": "ind_energy_utilities",
+          "name_en": "Water, Waste & Environmental Utilities",
+          "name_zh": "水务、废弃物与环境公用事业",
+          "definition": "Utility and infrastructure services for water, waste collection, recycling, and environmental operations.",
+          "includes": ["water utilities", "waste collection", "recycling services", "wastewater", "environmental utility operations"],
+          "excludes": ["environmental advocacy", "household cleaning products", "industrial materials"]
+        }
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "zh": "服装、鞋履与配饰"
+    },
+    {
+      "id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "zh": "美妆与个人护理"
+    },
+    {
+      "id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "zh": "食品与饮料"
+    },
+    {
+      "id": "ind_home_living",
+      "industry": "Home & Living",
+      "zh": "家居与生活"
+    },
+    {
+      "id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "zh": "消费电子"
+    },
+    {
+      "id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "zh": "零售与商业平台"
+    },
+    {
+      "id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "zh": "汽车与出行"
+    },
+    {
+      "id": "ind_financial_services",
+      "industry": "Financial Services",
+      "zh": "金融服务"
+    },
+    {
+      "id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "zh": "医疗健康与制药"
+    },
+    {
+      "id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "zh": "运动、健身与户外"
+    },
+    {
+      "id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "zh": "媒体、艺术与娱乐"
+    },
+    {
+      "id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "zh": "游戏与玩具"
+    },
+    {
+      "id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "zh": "教育与学习"
+    },
+    {
+      "id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "zh": "软件与数字服务"
+    },
+    {
+      "id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "zh": "电信与连接服务"
+    },
+    {
+      "id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "zh": "旅游与酒店服务"
+    },
+    {
+      "id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "zh": "商业与工业服务"
+    },
+    {
+      "id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "zh": "公共部门与社会影响"
+    },
+    {
+      "id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "zh": "宠物护理与用品"
+    },
+    {
+      "id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "zh": "能源与公用事业"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_apparel_clothing",
+      "industry_id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "category": "Clothing & Apparel",
+      "zh": "服装"
+    },
+    {
+      "id": "cat_apparel_footwear",
+      "industry_id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "category": "Footwear",
+      "zh": "鞋履"
+    },
+    {
+      "id": "cat_apparel_sportswear",
+      "industry_id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "category": "Sportswear & Athletic Footwear",
+      "zh": "运动服饰与运动鞋"
+    },
+    {
+      "id": "cat_apparel_bags_leather",
+      "industry_id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "category": "Bags & Leather Goods",
+      "zh": "箱包与皮具"
+    },
+    {
+      "id": "cat_apparel_jewelry_watches",
+      "industry_id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "category": "Jewelry & Watches",
+      "zh": "珠宝与腕表"
+    },
+    {
+      "id": "cat_apparel_fashion_accessories",
+      "industry_id": "ind_apparel_footwear_accessories",
+      "industry": "Apparel, Footwear & Accessories",
+      "category": "Fashion Accessories",
+      "zh": "时尚配饰"
+    },
+    {
+      "id": "cat_beauty_makeup",
+      "industry_id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "category": "Makeup & Color Cosmetics",
+      "zh": "彩妆"
+    },
+    {
+      "id": "cat_beauty_skincare",
+      "industry_id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "category": "Skincare",
+      "zh": "护肤"
+    },
+    {
+      "id": "cat_beauty_haircare",
+      "industry_id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "category": "Hair Care & Styling",
+      "zh": "头发护理与造型"
+    },
+    {
+      "id": "cat_beauty_fragrance",
+      "industry_id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "category": "Fragrance",
+      "zh": "香水与香氛"
+    },
+    {
+      "id": "cat_beauty_hygiene_oral",
+      "industry_id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "category": "Personal Hygiene & Oral Care",
+      "zh": "个人卫生与口腔护理"
+    },
+    {
+      "id": "cat_beauty_grooming_tools",
+      "industry_id": "ind_beauty_personal_care",
+      "industry": "Beauty & Personal Care",
+      "category": "Grooming & Beauty Tools",
+      "zh": "美容与理容工具"
+    },
+    {
+      "id": "cat_food_packaged_food",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Packaged Food & Ingredients",
+      "zh": "包装食品与食材"
+    },
+    {
+      "id": "cat_food_snacks_confectionery",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Snacks & Confectionery",
+      "zh": "零食与糖果"
+    },
+    {
+      "id": "cat_food_non_alcoholic_beverages",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Non-Alcoholic Beverages",
+      "zh": "非酒精饮料"
+    },
+    {
+      "id": "cat_food_alcoholic_beverages",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Alcoholic Beverages",
+      "zh": "酒精饮料"
+    },
+    {
+      "id": "cat_food_dairy_alternatives",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Dairy & Dairy Alternatives",
+      "zh": "乳制品与植物替代品"
+    },
+    {
+      "id": "cat_food_restaurants_foodservice",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Restaurants & Foodservice",
+      "zh": "餐饮与食品服务"
+    },
+    {
+      "id": "cat_food_coffee_tea",
+      "industry_id": "ind_food_beverage",
+      "industry": "Food & Beverage",
+      "category": "Coffee & Tea",
+      "zh": "咖啡与茶"
+    },
+    {
+      "id": "cat_home_appliances",
+      "industry_id": "ind_home_living",
+      "industry": "Home & Living",
+      "category": "Home Appliances",
+      "zh": "家用电器"
+    },
+    {
+      "id": "cat_home_furniture_furnishings",
+      "industry_id": "ind_home_living",
+      "industry": "Home & Living",
+      "category": "Furniture & Home Furnishings",
+      "zh": "家具与家居陈设"
+    },
+    {
+      "id": "cat_home_household_care",
+      "industry_id": "ind_home_living",
+      "industry": "Home & Living",
+      "category": "Household Cleaning & Laundry",
+      "zh": "家庭清洁与洗护"
+    },
+    {
+      "id": "cat_home_improvement_garden",
+      "industry_id": "ind_home_living",
+      "industry": "Home & Living",
+      "category": "Home Improvement & Garden",
+      "zh": "家装、维修与园艺"
+    },
+    {
+      "id": "cat_home_kitchen_cookware",
+      "industry_id": "ind_home_living",
+      "industry": "Home & Living",
+      "category": "Kitchenware & Cookware",
+      "zh": "厨具与餐厨用品"
+    },
+    {
+      "id": "cat_home_residential_property_services",
+      "industry_id": "ind_home_living",
+      "industry": "Home & Living",
+      "category": "Residential Property & Home Services",
+      "zh": "住宅地产与家庭服务"
+    },
+    {
+      "id": "cat_electronics_mobile_computing",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Mobile & Personal Computing",
+      "zh": "移动与个人计算设备"
+    },
+    {
+      "id": "cat_electronics_audio",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Personal & Home Audio",
+      "zh": "个人与家庭音频"
+    },
+    {
+      "id": "cat_electronics_imaging",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Cameras & Imaging Devices",
+      "zh": "相机与影像设备"
+    },
+    {
+      "id": "cat_electronics_wearables",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Smart Wearables",
+      "zh": "智能穿戴设备"
+    },
+    {
+      "id": "cat_electronics_home_entertainment_smart_home",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Home Entertainment & Smart Home",
+      "zh": "家庭娱乐与智能家居电子"
+    },
+    {
+      "id": "cat_electronics_accessories_power",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Device Accessories, Power & Connectivity",
+      "zh": "设备配件、供电与连接"
+    },
+    {
+      "id": "cat_electronics_gaming_hardware",
+      "industry_id": "ind_consumer_electronics",
+      "industry": "Consumer Electronics",
+      "category": "Gaming Hardware",
+      "zh": "游戏硬件"
+    },
+    {
+      "id": "cat_retail_multicategory",
+      "industry_id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "category": "Multi-Category Retail",
+      "zh": "综合零售"
+    },
+    {
+      "id": "cat_retail_grocery",
+      "industry_id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "category": "Grocery Retail",
+      "zh": "食品杂货零售"
+    },
+    {
+      "id": "cat_retail_specialty",
+      "industry_id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "category": "Specialty Retail",
+      "zh": "专业零售"
+    },
+    {
+      "id": "cat_retail_marketplaces_classifieds",
+      "industry_id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "category": "Marketplaces & Classifieds",
+      "zh": "交易市场与分类信息平台"
+    },
+    {
+      "id": "cat_retail_delivery_commerce_platforms",
+      "industry_id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "category": "Consumer Delivery & Commerce Platforms",
+      "zh": "消费者配送与商业平台"
+    },
+    {
+      "id": "cat_retail_loyalty_shopping_services",
+      "industry_id": "ind_retail_commerce",
+      "industry": "Retail & Commerce",
+      "category": "Shopping, Loyalty & Merchant Services",
+      "zh": "购物、会员与商户服务"
+    },
+    {
+      "id": "cat_auto_passenger_vehicles",
+      "industry_id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "category": "Passenger Vehicles",
+      "zh": "乘用车"
+    },
+    {
+      "id": "cat_auto_commercial_vehicles",
+      "industry_id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "category": "Commercial Vehicles",
+      "zh": "商用车辆"
+    },
+    {
+      "id": "cat_auto_motorcycles_scooters",
+      "industry_id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "category": "Motorcycles & Motor Scooters",
+      "zh": "摩托车与机动踏板车"
+    },
+    {
+      "id": "cat_auto_commuter_micromobility",
+      "industry_id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "category": "Commuter Bicycles & Micromobility",
+      "zh": "通勤自行车与微出行"
+    },
+    {
+      "id": "cat_auto_mobility_services",
+      "industry_id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "category": "Ride-Hailing, Rental & Mobility Services",
+      "zh": "网约车、租赁与出行服务"
+    },
+    {
+      "id": "cat_auto_parts_aftermarket",
+      "industry_id": "ind_automotive_mobility",
+      "industry": "Automotive & Mobility",
+      "category": "Automotive Parts, Care & Aftermarket",
+      "zh": "汽车零部件、养护与后市场"
+    },
+    {
+      "id": "cat_finance_banking_payments",
+      "industry_id": "ind_financial_services",
+      "industry": "Financial Services",
+      "category": "Banking, Accounts & Payments",
+      "zh": "银行账户与支付"
+    },
+    {
+      "id": "cat_finance_credit_lending",
+      "industry_id": "ind_financial_services",
+      "industry": "Financial Services",
+      "category": "Credit & Lending",
+      "zh": "信贷与借贷"
+    },
+    {
+      "id": "cat_finance_insurance",
+      "industry_id": "ind_financial_services",
+      "industry": "Financial Services",
+      "category": "Insurance",
+      "zh": "保险"
+    },
+    {
+      "id": "cat_finance_investment_wealth",
+      "industry_id": "ind_financial_services",
+      "industry": "Financial Services",
+      "category": "Investment, Wealth & Retirement",
+      "zh": "投资、财富与养老"
+    },
+    {
+      "id": "cat_finance_fintech",
+      "industry_id": "ind_financial_services",
+      "industry": "Financial Services",
+      "category": "Fintech & Digital Financial Platforms",
+      "zh": "金融科技与数字金融平台"
+    },
+    {
+      "id": "cat_finance_business_finance",
+      "industry_id": "ind_financial_services",
+      "industry": "Financial Services",
+      "category": "Business & Institutional Finance",
+      "zh": "企业与机构金融"
+    },
+    {
+      "id": "cat_health_providers",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "Healthcare Providers & Clinical Services",
+      "zh": "医疗机构与临床服务"
+    },
+    {
+      "id": "cat_health_prescription_pharma",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "Prescription Pharmaceuticals",
+      "zh": "处方药"
+    },
+    {
+      "id": "cat_health_otc_consumer_health",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "OTC Medicine & Consumer Health",
+      "zh": "非处方药与大众健康"
+    },
+    {
+      "id": "cat_health_devices_diagnostics",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "Medical Devices & Diagnostics",
+      "zh": "医疗器械与诊断"
+    },
+    {
+      "id": "cat_health_supplements_wellness",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "Vitamins, Supplements & Wellness",
+      "zh": "维生素、营养补充与健康管理"
+    },
+    {
+      "id": "cat_health_dental_vision",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "Dental, Vision & Specialist Care",
+      "zh": "牙科、视力与专科护理"
+    },
+    {
+      "id": "cat_health_mental_health",
+      "industry_id": "ind_healthcare_pharmaceuticals",
+      "industry": "Healthcare & Pharmaceuticals",
+      "category": "Mental Health & Behavioral Care",
+      "zh": "心理健康与行为护理"
+    },
+    {
+      "id": "cat_sports_fitness_equipment",
+      "industry_id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "category": "Fitness Equipment & Accessories",
+      "zh": "健身设备与辅具"
+    },
+    {
+      "id": "cat_sports_sporting_goods",
+      "industry_id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "category": "Sporting Goods & Team Equipment",
+      "zh": "体育用品与团队装备"
+    },
+    {
+      "id": "cat_sports_outdoor_recreation",
+      "industry_id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "category": "Outdoor & Adventure Equipment",
+      "zh": "户外与探险装备"
+    },
+    {
+      "id": "cat_sports_gyms_training",
+      "industry_id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "category": "Gyms, Training & Fitness Services",
+      "zh": "健身房、训练与健身服务"
+    },
+    {
+      "id": "cat_sports_recovery",
+      "industry_id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "category": "Sports Recovery & Massage Equipment",
+      "zh": "运动恢复与按摩设备"
+    },
+    {
+      "id": "cat_sports_performance_cycling",
+      "industry_id": "ind_sports_fitness_outdoor",
+      "industry": "Sports, Fitness & Outdoor",
+      "category": "Performance Cycling Equipment",
+      "zh": "竞技与运动自行车装备"
+    },
+    {
+      "id": "cat_media_film_tv_streaming",
+      "industry_id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "category": "Film, Television & Streaming",
+      "zh": "影视与流媒体"
+    },
+    {
+      "id": "cat_media_music_audio",
+      "industry_id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "category": "Music, Radio & Audio Content",
+      "zh": "音乐、广播与音频内容"
+    },
+    {
+      "id": "cat_media_publishing_news",
+      "industry_id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "category": "Publishing, Books & News",
+      "zh": "出版、图书与新闻"
+    },
+    {
+      "id": "cat_media_arts_culture",
+      "industry_id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "category": "Arts, Museums & Culture",
+      "zh": "艺术、博物馆与文化"
+    },
+    {
+      "id": "cat_media_live_entertainment",
+      "industry_id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "category": "Live Entertainment & Attractions",
+      "zh": "现场娱乐与休闲场所"
+    },
+    {
+      "id": "cat_media_sports_media",
+      "industry_id": "ind_media_arts_entertainment",
+      "industry": "Media, Arts & Entertainment",
+      "category": "Sports Media & Spectator Events",
+      "zh": "体育媒体与观赛活动"
+    },
+    {
+      "id": "cat_gaming_video_games",
+      "industry_id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "category": "Video Games & Interactive Entertainment",
+      "zh": "电子游戏与互动娱乐"
+    },
+    {
+      "id": "cat_gaming_mobile_social",
+      "industry_id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "category": "Mobile & Social Games",
+      "zh": "移动与社交游戏"
+    },
+    {
+      "id": "cat_gaming_tabletop",
+      "industry_id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "category": "Board, Card & Tabletop Games",
+      "zh": "桌游、卡牌与棋类"
+    },
+    {
+      "id": "cat_gaming_toys_play",
+      "industry_id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "category": "Toys & Children’s Play",
+      "zh": "玩具与儿童娱乐"
+    },
+    {
+      "id": "cat_gaming_collectibles_hobby",
+      "industry_id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "category": "Collectibles & Hobby Products",
+      "zh": "收藏品与爱好产品"
+    },
+    {
+      "id": "cat_gaming_betting_lottery",
+      "industry_id": "ind_gaming_toys",
+      "industry": "Gaming & Toys",
+      "category": "Betting, Casino & Lottery",
+      "zh": "博彩、赌场与彩票"
+    },
+    {
+      "id": "cat_education_early_k12",
+      "industry_id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "category": "Early Childhood & K–12 Education",
+      "zh": "幼儿与基础教育"
+    },
+    {
+      "id": "cat_education_higher",
+      "industry_id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "category": "Higher Education",
+      "zh": "高等教育"
+    },
+    {
+      "id": "cat_education_vocational_professional",
+      "industry_id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "category": "Vocational & Professional Training",
+      "zh": "职业与专业培训"
+    },
+    {
+      "id": "cat_education_online_learning",
+      "industry_id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "category": "Online Learning & Educational Technology",
+      "zh": "在线学习与教育科技"
+    },
+    {
+      "id": "cat_education_tutoring_testing",
+      "industry_id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "category": "Tutoring, Test Preparation & Assessment",
+      "zh": "辅导、备考与测评"
+    },
+    {
+      "id": "cat_education_learning_materials",
+      "industry_id": "ind_education_learning",
+      "industry": "Education & Learning",
+      "category": "Learning Materials & Educational Services",
+      "zh": "学习材料与教育服务"
+    },
+    {
+      "id": "cat_software_productivity_collaboration",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Productivity & Collaboration Software",
+      "zh": "生产力与协作软件"
+    },
+    {
+      "id": "cat_software_enterprise_operations",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Enterprise Operations Software",
+      "zh": "企业运营软件"
+    },
+    {
+      "id": "cat_software_cloud_ai_developer",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Cloud, AI & Developer Platforms",
+      "zh": "云、人工智能与开发者平台"
+    },
+    {
+      "id": "cat_software_cybersecurity",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Cybersecurity & Privacy Software",
+      "zh": "网络安全与隐私软件"
+    },
+    {
+      "id": "cat_software_creative_content_tools",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Creative & Content Software",
+      "zh": "创意与内容软件"
+    },
+    {
+      "id": "cat_software_social_communication",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Social & Communication Platforms",
+      "zh": "社交与通信平台"
+    },
+    {
+      "id": "cat_software_consumer_digital_utilities",
+      "industry_id": "ind_software_digital_services",
+      "industry": "Software & Digital Services",
+      "category": "Consumer Digital Utilities",
+      "zh": "消费者数字工具"
+    },
+    {
+      "id": "cat_telecom_mobile_network",
+      "industry_id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "category": "Mobile Network Services",
+      "zh": "移动通信服务"
+    },
+    {
+      "id": "cat_telecom_broadband",
+      "industry_id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "category": "Broadband & Fixed Internet",
+      "zh": "宽带与固定互联网"
+    },
+    {
+      "id": "cat_telecom_converged_services",
+      "industry_id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "category": "Converged Telecom & Bundles",
+      "zh": "融合通信与套餐"
+    },
+    {
+      "id": "cat_telecom_satellite_connectivity",
+      "industry_id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "category": "Satellite & Remote Connectivity",
+      "zh": "卫星与偏远地区连接"
+    },
+    {
+      "id": "cat_telecom_business_connectivity",
+      "industry_id": "ind_telecommunications",
+      "industry": "Telecommunications",
+      "category": "Business Connectivity & Network Services",
+      "zh": "企业连接与网络服务"
+    },
+    {
+      "id": "cat_travel_airlines",
+      "industry_id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "category": "Airlines & Air Travel",
+      "zh": "航空与空中旅行"
+    },
+    {
+      "id": "cat_travel_lodging",
+      "industry_id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "category": "Hotels, Resorts & Lodging",
+      "zh": "酒店、度假村与住宿"
+    },
+    {
+      "id": "cat_travel_destinations_tourism",
+      "industry_id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "category": "Destinations & Tourism",
+      "zh": "目的地与旅游推广"
+    },
+    {
+      "id": "cat_travel_booking_tours",
+      "industry_id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "category": "Travel Booking & Tour Services",
+      "zh": "旅行预订与旅游服务"
+    },
+    {
+      "id": "cat_travel_rail_coach",
+      "industry_id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "category": "Rail, Coach & Passenger Transport",
+      "zh": "铁路、客运与旅客运输"
+    },
+    {
+      "id": "cat_travel_cruises",
+      "industry_id": "ind_travel_hospitality",
+      "industry": "Travel & Hospitality",
+      "category": "Cruises & Packaged Journeys",
+      "zh": "邮轮与组合旅程"
+    },
+    {
+      "id": "cat_business_consulting_professional",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "Consulting, Legal & Professional Services",
+      "zh": "咨询、法律与专业服务"
+    },
+    {
+      "id": "cat_business_marketing_services",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "Marketing, Advertising & Business Services",
+      "zh": "营销、广告与商业服务"
+    },
+    {
+      "id": "cat_business_workforce_facilities",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "Workforce, Staffing & Facility Services",
+      "zh": "人力、招聘与设施服务"
+    },
+    {
+      "id": "cat_business_industrial_equipment",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "Industrial Machinery & Equipment",
+      "zh": "工业机械与设备"
+    },
+    {
+      "id": "cat_business_manufacturing_materials",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "Manufacturing, Materials & Industrial Inputs",
+      "zh": "制造、材料与工业投入品"
+    },
+    {
+      "id": "cat_business_logistics_freight",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "B2B Logistics, Freight & Supply Chain",
+      "zh": "企业物流、货运与供应链"
+    },
+    {
+      "id": "cat_business_construction_commercial_property",
+      "industry_id": "ind_business_industrial_services",
+      "industry": "Business & Industrial Services",
+      "category": "Construction, Engineering & Commercial Property",
+      "zh": "建筑、工程与商业地产"
+    },
+    {
+      "id": "cat_public_government_services",
+      "industry_id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "category": "Government & Public Services",
+      "zh": "政府与公共服务"
+    },
+    {
+      "id": "cat_public_charity_nonprofit",
+      "industry_id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "category": "Charity, Fundraising & Nonprofit Services",
+      "zh": "慈善、募款与非营利服务"
+    },
+    {
+      "id": "cat_public_social_advocacy",
+      "industry_id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "category": "Social Advocacy & Human Rights",
+      "zh": "社会倡导与人权"
+    },
+    {
+      "id": "cat_public_environmental_advocacy",
+      "industry_id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "category": "Environmental & Climate Advocacy",
+      "zh": "环境与气候倡导"
+    },
+    {
+      "id": "cat_public_health_safety_awareness",
+      "industry_id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "category": "Public Health & Safety Awareness",
+      "zh": "公共健康与安全倡导"
+    },
+    {
+      "id": "cat_public_civic_political",
+      "industry_id": "ind_public_sector_social_impact",
+      "industry": "Public Sector & Social Impact",
+      "category": "Civic Participation & Political Campaigns",
+      "zh": "公民参与与政治传播"
+    },
+    {
+      "id": "cat_pet_food_treats",
+      "industry_id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "category": "Pet Food & Treats",
+      "zh": "宠物食品与零食"
+    },
+    {
+      "id": "cat_pet_hygiene_grooming",
+      "industry_id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "category": "Pet Hygiene, Grooming & Toileting",
+      "zh": "宠物卫生、洗护与如厕"
+    },
+    {
+      "id": "cat_pet_accessories_play",
+      "industry_id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "category": "Pet Accessories, Walking & Play",
+      "zh": "宠物配件、牵引与玩具"
+    },
+    {
+      "id": "cat_pet_tech_devices",
+      "industry_id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "category": "Pet Tech & Smart Devices",
+      "zh": "智能宠物设备"
+    },
+    {
+      "id": "cat_pet_health_veterinary",
+      "industry_id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "category": "Pet Health, Supplements & Veterinary Care",
+      "zh": "宠物健康、营养补充与兽医护理"
+    },
+    {
+      "id": "cat_pet_housing_travel",
+      "industry_id": "ind_pet_care_supplies",
+      "industry": "Pet Care & Supplies",
+      "category": "Pet Housing, Furniture & Travel",
+      "zh": "宠物居住、家具与出行"
+    },
+    {
+      "id": "cat_energy_electric_gas_utilities",
+      "industry_id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "category": "Electricity & Gas Utilities",
+      "zh": "电力与燃气公用事业"
+    },
+    {
+      "id": "cat_energy_renewables_storage",
+      "industry_id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "category": "Renewable Energy & Storage",
+      "zh": "可再生能源与储能"
+    },
+    {
+      "id": "cat_energy_fuels_lubricants",
+      "industry_id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "category": "Fuels & Lubricants",
+      "zh": "燃料与润滑产品"
+    },
+    {
+      "id": "cat_energy_ev_charging",
+      "industry_id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "category": "EV Charging & Energy Networks",
+      "zh": "电动车充电与能源网络"
+    },
+    {
+      "id": "cat_energy_industrial_energy",
+      "industry_id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "category": "Industrial Energy & Resource Services",
+      "zh": "工业能源与资源服务"
+    },
+    {
+      "id": "cat_energy_water_waste",
+      "industry_id": "ind_energy_utilities",
+      "industry": "Energy & Utilities",
+      "category": "Water, Waste & Environmental Utilities",
+      "zh": "水务、废弃物与环境公用事业"
+    }
+  ]
+}
