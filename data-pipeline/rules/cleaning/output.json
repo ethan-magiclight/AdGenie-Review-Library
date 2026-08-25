@@ -1,0 +1,5 @@
+{
+  "id": "output",
+  "write_mode": "atomic_replace",
+  "keep_history": false
+}

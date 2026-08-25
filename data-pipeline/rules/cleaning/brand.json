@@ -1,0 +1,6 @@
+{
+  "id": "brand",
+  "mapping": "../mapping/brand-normalization-map.json",
+  "require_mapped_value": true,
+  "unmapped": "exclude_from_result"
+}

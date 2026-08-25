@@ -1,0 +1,13 @@
+{
+  "name": "adgenie-json-data-pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "merge": "node scripts/merge-source.mjs",
+    "normalize:source": "node scripts/normalize-source.mjs",
+    "resources:manifest": "node scripts/build-resource-manifest.mjs",
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "refresh": "npm run normalize:source && npm run resources:manifest && npm run build && npm run validate"
+  }
+}

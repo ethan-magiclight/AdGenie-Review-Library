@@ -1,0 +1,6 @@
+{
+  "id": "duration",
+  "maximum_seconds": 60,
+  "over_limit": "exclude_from_result",
+  "missing": "accept_with_flag"
+}

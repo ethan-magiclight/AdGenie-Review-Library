@@ -1,0 +1,6 @@
+{
+  "id": "product_category",
+  "registry": "../mapping/product-category-map.json",
+  "safe_aliases_only": true,
+  "unmapped": "keep_record_with_null_category"
+}

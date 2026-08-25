@@ -1,0 +1,7 @@
+{
+  "id": "crawl_time",
+  "field": "crawl_collected_at",
+  "source_field": "collected_at",
+  "missing": "accept_with_flag",
+  "backfill_policy": "never_invent_historical_time"
+}

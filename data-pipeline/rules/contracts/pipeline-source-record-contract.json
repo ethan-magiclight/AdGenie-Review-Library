@@ -1,0 +1,23 @@
+{
+  "purpose": "Fields added or required by data-pipeline source records",
+  "fields": {
+    "source_site": {
+      "type": ["string", "null"],
+      "description": "Normalized source channel"
+    },
+    "source_record_id": {
+      "type": ["string", "null"],
+      "description": "Stable record identifier supplied by the source"
+    },
+    "collected_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Original crawl timestamp when the historical source supplied one"
+    },
+    "crawl_collected_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Unified crawl timestamp copied from collected_at; remains null when historical time is unknown"
+    }
+  }
+}

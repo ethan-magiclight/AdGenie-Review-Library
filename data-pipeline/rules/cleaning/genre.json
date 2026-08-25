@@ -1,0 +1,6 @@
+{
+  "id": "genre",
+  "registry": "../taxonomy/ad-video-genres.json",
+  "unknown_value": "remove_value",
+  "missing": "accept"
+}

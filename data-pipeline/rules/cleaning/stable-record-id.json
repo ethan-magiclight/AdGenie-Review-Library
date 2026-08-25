@@ -1,0 +1,10 @@
+{
+  "id": "stable_record_id",
+  "required": true,
+  "keys_in_priority_order": [
+    "video_id",
+    "id",
+    "source_channel+source_record_id"
+  ],
+  "missing": "exclude_from_result"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "deduplication",
+  "exact_record_id": "keep_first",
+  "canonical_master_id": "preserve_relation_only",
+  "alternate_cut": "preserve",
+  "alternate_aspect_ratio": "preserve"
+}

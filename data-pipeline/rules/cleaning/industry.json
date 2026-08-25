@@ -1,0 +1,6 @@
+{
+  "id": "industry",
+  "registry": "../mapping/industry-map.json",
+  "require_mapped_value": true,
+  "unmapped": "exclude_from_result"
+}

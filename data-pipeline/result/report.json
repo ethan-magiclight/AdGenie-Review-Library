@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-08-25T07:05:50.698Z",
+  "policy": {
+    "brand": {
+      "id": "brand",
+      "mapping": "../mapping/brand-normalization-map.json",
+      "require_mapped_value": true,
+      "unmapped": "exclude_from_result"
+    },
+    "crawl_time": {
+      "id": "crawl_time",
+      "field": "crawl_collected_at",
+      "source_field": "collected_at",
+      "missing": "accept_with_flag",
+      "backfill_policy": "never_invent_historical_time"
+    },
+    "deduplication": {
+      "id": "deduplication",
+      "exact_record_id": "keep_first",
+      "canonical_master_id": "preserve_relation_only",
+      "alternate_cut": "preserve",
+      "alternate_aspect_ratio": "preserve"
+    },
+    "duration": {
+      "id": "duration",
+      "maximum_seconds": 60,
+      "over_limit": "exclude_from_result",
+      "missing": "accept_with_flag"
+    },
+    "genre": {
+      "id": "genre",
+      "registry": "../taxonomy/ad-video-genres.json",
+      "unknown_value": "remove_value",
+      "missing": "accept"
+    },
+    "industry": {
+      "id": "industry",
+      "registry": "../mapping/industry-map.json",
+      "require_mapped_value": true,
+      "unmapped": "exclude_from_result"
+    },
+    "output": {
+      "id": "output",
+      "write_mode": "atomic_replace",
+      "keep_history": false
+    },
+    "product_category": {
+      "id": "product_category",
+      "registry": "../mapping/product-category-map.json",
+      "safe_aliases_only": true,
+      "unmapped": "keep_record_with_null_category"
+    },
+    "stable_record_id": {
+      "id": "stable_record_id",
+      "required": true,
+      "keys_in_priority_order": [
+        "video_id",
+        "id",
+        "source_channel+source_record_id"
+      ],
+      "missing": "exclude_from_result"
+    }
+  },
+  "source": 3320,
+  "result": 2068,
+  "channels": {
+    "ads_of_the_world": {
+      "input": 2008,
+      "accepted": 1332,
+      "filtered": 676,
+      "filtered_by_reason": {
+        "industry_unmapped": 641,
+        "duration_over_limit": 31,
+        "brand_unmapped": 4
+      },
+      "accepted_with_missing_crawl_time": 0,
+      "accepted_with_missing_duration": 0
+    },
+    "best_ads": {
+      "input": 108,
+      "accepted": 75,
+      "filtered": 33,
+      "filtered_by_reason": {
+        "brand_unmapped": 4,
+        "duration_over_limit": 29
+      },
+      "accepted_with_missing_crawl_time": 0,
+      "accepted_with_missing_duration": 0
+    },
+    "stash": {
+      "input": 569,
+      "accepted": 158,
+      "filtered": 411,
+      "filtered_by_reason": {
+        "duration_over_limit": 393,
+        "industry_unmapped": 18
+      },
+      "accepted_with_missing_crawl_time": 0,
+      "accepted_with_missing_duration": 0
+    },
+    "youtube": {
+      "input": 635,
+      "accepted": 503,
+      "filtered": 132,
+      "filtered_by_reason": {
+        "brand_unmapped": 9,
+        "duration_over_limit": 98,
+        "industry_unmapped": 25
+      },
+      "accepted_with_missing_crawl_time": 408,
+      "accepted_with_missing_duration": 265
+    }
+  }
+}

@@ -31,6 +31,7 @@ npm --prefix collect run verify
 | `demo/` | 本地静态产品 Demo 和设计参考 | 目录被 Git 忽略，只用于本机原型验证，不作为协作事实源 |
 | `web/` | 可本地启动的品牌广告样片审核台 | 运行命令与数据行为以 `web/package.json`、代码和 `web/README.md` 为准 |
 | `collect/` | 采集方法论、题材与品类定义、Best Ads / AOTW Campaign 视频源、样片数据和历史快照 | 当前事实源与退役入口以 `collect/README.md` 为准 |
+| `data-pipeline/` | 按渠道保存源 JSON，并生成无需人工审核的最新清洗结果 | 页面和后续系统读取 `data-pipeline/result/creative-library.json`；处理方法见 `data-pipeline/README.md` |
 | `workflows/` | 耳机广告生成工作流实验 | 每个目录的 contract、`workflow-status.json` 和 QA 记录只证明该次实验状态 |
 | `runs/` | 充电宝等生成运行记录 | 属于本地实验现场，不等于产品能力或线上状态 |
 | `outputs/` | 工作簿预览和历史渲染输出 | 可再生成的本地产物，已被 Git 忽略 |
@@ -68,6 +69,7 @@ npm run build
 - 审核台怎么启动和维护：`web/README.md`、`web/package.json`。
 - 审核台当前导入数据版本：`web/scripts/import-seed.mjs`。
 - 采集方法论、题材、品类、Best Ads / AOTW 来源合同和活动采集入口：`collect/README.md` 及其中列出的 JSON 事实源。
+- 自动清洗后的最新聚合数据：`data-pipeline/result/creative-library.json`；各渠道源数据、结果和过滤报告均在 `data-pipeline/` 内。
 - 产品规划：`docs/` 中标明状态和日期的文档；尚未拍板的多个方案保持 `pending`，不能写成已实现能力。
 - 单次生成实验：对应 `workflow-status.json`、`run-report.json`、contract 和 QA 记录。
 

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adgenie.local/contracts/source-video-record.json",
+  "title": "AdGenie source video record",
+  "type": "object",
+  "anyOf": [
+    {
+      "required": [
+        "video_id"
+      ]
+    },
+    {
+      "required": [
+        "id"
+      ]
+    },
+    {
+      "required": [
+        "source_record_id"
+      ]
+    }
+  ],
+  "properties": {
+    "video_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_record_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_site": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_platform": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_detail_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "brands": {
+      "type": "array"
+    },
+    "industry": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "product_category": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "genres": {
+      "type": "array"
+    },
+    "duration_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "collected_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "crawl_collected_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
